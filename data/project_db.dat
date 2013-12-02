@@ -1,4 +1,5 @@
-map{ id = "outside_a1", description = "Outside A1" }
+map{ id = "outside_a1", description = "Outside A1 (Desert)" }
+map{ id = "outside_b1", description = "Outside B1 (Mountains)" }
 
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "dark_world", description = "Dark World" }
@@ -209,6 +210,8 @@ item{ id = "piece_of_heart", description = "Piece of heart" }
 item{ id = "red_potion", description = "Red potion" }
 item{ id = "green_potion", description = "Green potion" }
 item{ id = "blue_potion", description = "Blue potion" }
+
+
 
 language{ id = "en", description = "English" }
 language{ id = "fr", description = "Français" }
