@@ -11582,6 +11582,33 @@ tile{
   pattern = 296,
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = 1356,
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = 1356,
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = 1356,
+}
+
 destructible{
   layer = 0,
   x = 280,

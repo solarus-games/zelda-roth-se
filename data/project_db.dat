@@ -1,5 +1,6 @@
 map{ id = "outside_a1", description = "Outside A1 (Desert)" }
 map{ id = "outside_b1", description = "Outside B1 (Mountains)" }
+map{ id = "outside_c1", description = "Outside C1 (Forest)" }
 
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "dark_world", description = "Dark World" }
