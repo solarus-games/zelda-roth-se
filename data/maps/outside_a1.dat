@@ -5642,6 +5642,17 @@ destructible{
   treasure_name = "random",
 }
 
+teletransporter{
+  layer = 0,
+  x = 2240,
+  y = 0,
+  width = 16,
+  height = 720,
+  transition = 2,
+  destination_map = "outside_b1",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 224,

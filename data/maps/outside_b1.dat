@@ -12372,6 +12372,28 @@ destructible{
   treasure_name = "random",
 }
 
+teletransporter{
+  layer = 0,
+  x = 1920,
+  y = 0,
+  width = 16,
+  height = 720,
+  transition = 2,
+  destination_map = "outside_c1",
+  destination = "from_link_house",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 720,
+  transition = 2,
+  destination_map = "outside_a1",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 328,

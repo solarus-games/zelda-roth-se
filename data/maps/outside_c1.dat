@@ -3025,15 +3025,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 432,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = 42,
-}
-
-tile{
-  layer = 0,
   x = 64,
   y = 1184,
   width = 16,
@@ -9170,6 +9161,15 @@ tile{
   pattern = 1279,
 }
 
+tile{
+  layer = 0,
+  x = 432,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = 43,
+}
+
 destructible{
   layer = 0,
   x = 24,
@@ -9475,6 +9475,25 @@ door{
   sprite = "entities/door_weak_wall",
   savegame_variable = "outside_c1_weak_wall",
   opening_method = "explosion",
+}
+
+destination{
+  layer = 0,
+  x = 480,
+  y = 605,
+  name = "from_link_house",
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 720,
+  transition = 2,
+  destination_map = "outside_b1",
+  destination = "_side",
 }
 
 tile{
