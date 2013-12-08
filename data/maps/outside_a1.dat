@@ -5075,6 +5075,33 @@ tile{
   pattern = 387,
 }
 
+tile{
+  layer = 0,
+  x = 224,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = 44,
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = 44,
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = 44,
+}
+
 destructible{
   layer = 0,
   x = 168,

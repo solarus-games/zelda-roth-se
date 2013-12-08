@@ -1,14 +1,15 @@
--- This is the main Lua script of your project.
--- You will probably make a title screen and then start a game.
--- See the Lua API! http://www.solarus-games.org/solarus/documentation/
-
--- This is just an example of quest that shows the Solarus logo
--- and then does nothing.
--- Feel free to change this!
+-- Main Lua script of the quest.
 
 local game_manager = require("scripts/game_manager")
+local debug = require("scripts/debug")
 
 function sol.main:on_started()
+
+  -- If there is a file called "debug" in the write directory,
+  -- enable debugging features.
+  if sol.file.exists("debug") then
+    sol.menu.start(self, debug)
+  end
 
   -- Setting a language is useful to display text and dialogs.
   sol.language.set_language("fr")
@@ -28,9 +29,15 @@ function sol.main:on_started()
   end
 
   title_screen.on_finished = function()
-    local game = game_manager:create("save1.dat")
-    game:start()
+    sol.main:start_savegame(game_manager:create("save1.dat"))
   end
 
+end
+
+-- Starts a game.
+function sol.main:start_savegame(game)
+
+  sol.main.game = game
+  game_manager:play_game(game)
 end
 

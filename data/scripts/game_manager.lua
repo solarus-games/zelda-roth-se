@@ -21,12 +21,18 @@ function game_manager:create(file)
     game:set_life(game:get_max_life())
 
   end
-  
+ 
+  return game
+end
+
+-- Initializes a game and runs it.
+function game_manager:play_game(game)
+ 
   function game:on_started()
     game:get_hero():set_walking_speed(96)
   end
 
-  return game
+  game:start()
 end
 
 return game_manager
