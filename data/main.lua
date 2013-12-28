@@ -2,8 +2,12 @@
 
 local game_manager = require("scripts/game_manager")
 local debug = require("scripts/debug")
+local quest_manager = require("quest_manager")
 
 function sol.main:on_started()
+
+  -- Make quest-specific initializations.
+  quest_manager:initialize_quest()
 
   -- If there is a file called "debug" in the write directory,
   -- enable debugging features.
