@@ -4,6 +4,8 @@ map{ id = "outside_c1", description = "Outside C1 (Forest)" }
 map{ id = "outside_a2", description = "Outside A2 (Castle)" }
 map{ id = "dungeon_1_1f", description = "Dungeon 1 1F" }
 map{ id = "dungeon_1_b1", description = "Dungeon 1 B1" }
+map{ id = "dungeon_2_1f", description = "Dungeon 2 1F" }
+map{ id = "dungeon_3_1f", description = "Dungeon 3 1F" }
 
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "dark_world", description = "Dark World" }
