@@ -5867,7 +5867,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 720,
-  transition = 2,
+  transition = "scrolling",
   destination_map = "outside_b1",
   destination = "_side",
 }

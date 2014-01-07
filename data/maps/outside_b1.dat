@@ -12651,7 +12651,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 720,
-  transition = 2,
+  transition = "scrolling",
   destination_map = "outside_c1",
   destination = "from_link_house",
 }
@@ -12662,7 +12662,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 720,
-  transition = 2,
+  transition = "scrolling",
   destination_map = "outside_a1",
   destination = "_side",
 }
