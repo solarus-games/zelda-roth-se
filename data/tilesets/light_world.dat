@@ -4762,7 +4762,7 @@ tile_pattern{
 tile_pattern{
   id = 795,
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 304,
   y = 136,
   width = 8,
@@ -4772,7 +4772,7 @@ tile_pattern{
 tile_pattern{
   id = 796,
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 312,
   y = 136,
   width = 8,
@@ -4782,7 +4782,7 @@ tile_pattern{
 tile_pattern{
   id = 797,
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 320,
   y = 136,
   width = 8,
@@ -8917,5 +8917,35 @@ tile_pattern{
   y = 128,
   width = 8,
   height = 16,
+}
+
+tile_pattern{
+  id = 1387,
+  ground = "wall",
+  default_layer = 0,
+  x = 304,
+  y = 192,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = 1388,
+  ground = "wall",
+  default_layer = 0,
+  x = 320,
+  y = 192,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = 1389,
+  ground = "ladder",
+  default_layer = 0,
+  x = 312,
+  y = 192,
+  width = 8,
+  height = 8,
 }
 

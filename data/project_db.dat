@@ -2,6 +2,7 @@ map{ id = "outside_a1", description = "Outside A1 (Desert)" }
 map{ id = "outside_b1", description = "Outside B1 (Mountains)" }
 map{ id = "outside_c1", description = "Outside C1 (Forest)" }
 map{ id = "outside_a2", description = "Outside A2 (Castle)" }
+map{ id = "outside_b2", description = "Outside B2 (Village)" }
 map{ id = "dungeon_1_1f", description = "Dungeon 1 1F" }
 map{ id = "dungeon_1_b1", description = "Dungeon 1 B1" }
 map{ id = "dungeon_2_1f", description = "Dungeon 2 1F" }
@@ -36,6 +37,9 @@ sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
 sprite{ id = "entities/bush", description = "Bush (from tileset)" }
+sprite{ id = "entities/bush_green", description = "Bush (green)" }
+sprite{ id = "entities/bush_purple", description = "Bush (purple)" }
+sprite{ id = "entities/bush_yellow", description = "Bush (yellow)" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/big_chest", description = "Chest (big)" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
@@ -59,6 +63,7 @@ sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/solid_switch", description = "Solid switch" }
 sprite{ id = "entities/star", description = "Star" }
+sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/stone_small_black", description = "Stone (black)" }
 sprite{ id = "entities/stone_small_white", description = "Stone (white)" }
 sprite{ id = "entities/switch", description = "Switch" }
@@ -79,9 +84,6 @@ sprite{ id = "hero/ground2", description = "Shallow water under hero" }
 sprite{ id = "hero/trail", description = "Hero trail" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
-sprite{ id = "entities/bush_green", description = "Bush (green)" }
-sprite{ id = "entities/bush_yellow", description = "Bush (yellow)" }
-sprite{ id = "entities/bush_purple", description = "Bush (purple)" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }
