@@ -34,7 +34,7 @@ sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
-sprite{ id = "entities/bush", description = "Bush" }
+sprite{ id = "entities/bush", description = "Bush (from tileset)" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/big_chest", description = "Chest (big)" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
@@ -78,6 +78,9 @@ sprite{ id = "hero/ground2", description = "Shallow water under hero" }
 sprite{ id = "hero/trail", description = "Hero trail" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
+sprite{ id = "entities/bush_green", description = "Bush (green)" }
+sprite{ id = "entities/bush_yellow", description = "Bush (yellow)" }
+sprite{ id = "entities/bush_purple", description = "Bush (purple)" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }
