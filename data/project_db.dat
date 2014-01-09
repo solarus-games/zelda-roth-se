@@ -7,6 +7,7 @@ map{ id = "dungeon_1_b1", description = "Dungeon 1 B1" }
 map{ id = "dungeon_2_1f", description = "Dungeon 2 1F" }
 map{ id = "dungeon_3_1f", description = "Dungeon 3 1F" }
 map{ id = "dungeon_3_2f", description = "Dungeon 3 2F" }
+map{ id = "dungeon_4_1f", description = "Dungeon 4 1F" }
 
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "dark_world", description = "Dark World" }
@@ -185,6 +186,7 @@ sound{ id = "victory", description = "victory" }
 sound{ id = "walk_on_grass", description = "walk_on_grass" }
 sound{ id = "walk_on_water", description = "walk_on_water" }
 sound{ id = "wrong", description = "wrong" }
+sound{ id = "running_obstacle", description = "running_obstacle" }
 
 item{ id = "random", description = "(Random)" }
 item{ id = "bombs_counter", description = "Bombs counter" }
@@ -226,4 +228,3 @@ item{ id = "blue_potion", description = "Blue potion" }
 language{ id = "en", description = "English" }
 language{ id = "fr", description = "Français" }
 
-sound{ id = "running_obstacle", description = "running_obstacle" }

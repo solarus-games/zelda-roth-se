@@ -1799,7 +1799,6 @@ door{
   sprite = "entities/door_big_key",
   opening_method = "interaction_if_item",
   opening_condition = "boss_key",
-  opening_condition_consumed = true,
 }
 
 destructible{

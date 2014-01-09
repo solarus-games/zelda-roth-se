@@ -4,7 +4,7 @@ properties{
   width = 2560,
   height = 1920,
   world = "dungeon_3",
-  floor = 1,
+  floor = 0,
   tileset = "green_dungeon_lw",
   music = "same",
 }
@@ -10070,7 +10070,6 @@ door{
   sprite = "entities/door_boss_key",
   opening_method = "interaction_if_item",
   opening_condition = "boss_key",
-  opening_condition_consumed = true,
 }
 
 custom{
