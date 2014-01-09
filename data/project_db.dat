@@ -226,3 +226,4 @@ item{ id = "blue_potion", description = "Blue potion" }
 language{ id = "en", description = "English" }
 language{ id = "fr", description = "Français" }
 
+sound{ id = "running_obstacle", description = "running_obstacle" }
