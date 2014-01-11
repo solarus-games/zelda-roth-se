@@ -2933,6 +2933,78 @@ tile{
   pattern = 801,
 }
 
+tile{
+  layer = 0,
+  x = 384,
+  y = 216,
+  width = 8,
+  height = 64,
+  pattern = 798,
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 288,
+  width = 8,
+  height = 16,
+  pattern = 791,
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 296,
+  width = 32,
+  height = 8,
+  pattern = 793,
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 288,
+  width = 8,
+  height = 16,
+  pattern = 792,
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 288,
+  width = 32,
+  height = 8,
+  pattern = 794,
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 208,
+  width = 8,
+  height = 80,
+  pattern = 799,
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = 800,
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = 802,
+}
+
 destructible{
   layer = 0,
   x = 424,
@@ -3078,6 +3150,24 @@ tile{
   width = 8,
   height = 8,
   pattern = 797,
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 280,
+  width = 24,
+  height = 8,
+  pattern = 796,
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = 795,
 }
 
 tile{

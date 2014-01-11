@@ -3772,7 +3772,7 @@ tile_pattern{
 tile_pattern{
   id = 682,
   ground = "wall",
-  default_layer = 2,
+  default_layer = 1,
   x = 272,
   y = 40,
   width = 32,
@@ -8947,5 +8947,25 @@ tile_pattern{
   y = 192,
   width = 8,
   height = 8,
+}
+
+tile_pattern{
+  id = 1390,
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 264,
+  width = 32,
+  height = 32,
+}
+
+tile_pattern{
+  id = 1391,
+  ground = "wall",
+  default_layer = 1,
+  x = 272,
+  y = 240,
+  width = 32,
+  height = 24,
 }
 
