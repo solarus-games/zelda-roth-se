@@ -9307,105 +9307,6 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 248,
-  y = 1165,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 936,
-  y = 1165,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 936,
-  y = 1181,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 920,
-  y = 1181,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 104,
-  y = 797,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 120,
-  y = 797,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 376,
-  y = 413,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 392,
-  y = 413,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 408,
-  y = 413,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 568,
   y = 621,
   treasure_name = "random",
@@ -9438,94 +9339,6 @@ wall{
   stops_blocks = true,
 }
 
-destructible{
-  layer = 0,
-  x = 344,
-  y = 669,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 344,
-  y = 685,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 360,
-  y = 685,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 344,
-  y = 701,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 360,
-  y = 701,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 664,
-  y = 829,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 664,
-  y = 845,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 24,
-  y = 493,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
 npc{
   layer = 0,
   x = 824,
@@ -9533,28 +9346,6 @@ npc{
   direction = 3,
   subtype = "0",
   sprite = "entities/sign",
-}
-
-destructible{
-  layer = 0,
-  x = 168,
-  y = 61,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 184,
-  y = 61,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
 }
 
 dynamic_tile{
@@ -9596,6 +9387,270 @@ teletransporter{
   transition = "scrolling",
   destination_map = "outside_b1",
   destination = "_side",
+}
+
+destructible{
+  layer = 0,
+  x = 168,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 376,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 376,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 392,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 493,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 669,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 685,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 685,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 701,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 797,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 797,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 664,
+  y = 829,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 664,
+  y = 829,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 120,
+  y = 797,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 120,
+  y = 797,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 1165,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 1165,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 920,
+  y = 1181,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 920,
+  y = 1181,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 936,
+  y = 1181,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 936,
+  y = 1165,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 664,
+  y = 845,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
 }
 
 tile{

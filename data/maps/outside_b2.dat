@@ -2674,33 +2674,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 448,
-  y = 336,
-  width = 8,
-  height = 48,
-  pattern = 1387,
-}
-
-tile{
-  layer = 0,
-  x = 456,
-  y = 336,
-  width = 32,
-  height = 48,
-  pattern = 1389,
-}
-
-tile{
-  layer = 0,
-  x = 488,
-  y = 336,
-  width = 8,
-  height = 48,
-  pattern = 1388,
-}
-
-tile{
-  layer = 0,
   x = 160,
   y = 368,
   width = 16,
@@ -5513,7 +5486,7 @@ tile{
   y = 480,
   width = 32,
   height = 32,
-  pattern = 1390,
+  pattern = 1399,
 }
 
 destructible{
@@ -7657,15 +7630,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 464,
-  y = 456,
-  width = 32,
-  height = 24,
-  pattern = 1391,
-}
-
-tile{
-  layer = 1,
   x = 864,
   y = 264,
   width = 8,
@@ -7743,5 +7707,14 @@ tile{
   width = 80,
   height = 24,
   pattern = 717,
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 456,
+  width = 32,
+  height = 24,
+  pattern = 1400,
 }
 
