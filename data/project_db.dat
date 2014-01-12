@@ -4,6 +4,7 @@ map{ id = "outside_b1", description = "Outside B1 (Mountains)" }
 map{ id = "outside_c1", description = "Outside C1 (Forest)" }
 map{ id = "outside_a2", description = "Outside A2 (Castle)" }
 map{ id = "outside_b2", description = "Outside B2 (Village)" }
+map{ id = "outside_c2", description = "Outside C2 (Plains)" }
 map{ id = "dungeon_1_1f", description = "Dungeon 1 1F" }
 map{ id = "dungeon_1_b1", description = "Dungeon 1 B1" }
 map{ id = "dungeon_2_1f", description = "Dungeon 2 1F" }
