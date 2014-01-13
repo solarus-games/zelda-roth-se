@@ -58,6 +58,8 @@ sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/grass", description = "Grass" }
+sprite{ id = "entities/hammer_stake_green", description = "Hammer stake (green)" }
+sprite{ id = "entities/hammer_stake_yellow", description = "Hammer stake (yellow)" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/pot", description = "Pot" }

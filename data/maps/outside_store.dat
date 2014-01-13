@@ -8038,7 +8038,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
+  x = 16,
   y = 848,
   width = 16,
   height = 16,
@@ -8074,11 +8074,20 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
+  x = 32,
   y = 848,
   width = 16,
   height = 16,
   pattern = 525,
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = 1039,
 }
 
 destructible{
@@ -8116,7 +8125,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 40,
+  x = 24,
   y = 861,
   treasure_name = "random",
   sprite = "entities/stone_small_white",
@@ -8127,13 +8136,22 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 56,
+  x = 40,
   y = 861,
   treasure_name = "random",
   sprite = "entities/stone_small_black",
   destruction_sound = "stone",
   weight = 2,
   damage_on_enemies = 4,
+}
+
+npc{
+  layer = 0,
+  x = 56,
+  y = 861,
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/sign",
 }
 
 tile{
