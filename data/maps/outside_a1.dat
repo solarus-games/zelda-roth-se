@@ -5617,6 +5617,28 @@ destructible{
   can_be_cut = true,
 }
 
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 720,
+  width = 1600,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside_a2",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1600,
+  y = 720,
+  width = 640,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside_b2",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 1624,
