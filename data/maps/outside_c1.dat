@@ -9209,22 +9209,6 @@ destructible{
   damage_on_enemies = 2,
 }
 
-npc{
-  layer = 0,
-  x = 88,
-  y = 205,
-  direction = 3,
-  subtype = "1",
-}
-
-npc{
-  layer = 0,
-  x = 88,
-  y = 221,
-  direction = 3,
-  subtype = "1",
-}
-
 destructible{
   layer = 0,
   x = 328,
@@ -9673,6 +9657,28 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_green",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_green",
+  model = "hammer_stake",
 }
 
 tile{

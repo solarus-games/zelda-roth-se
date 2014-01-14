@@ -7082,78 +7082,6 @@ tile{
   pattern = 1401,
 }
 
-crystal_block{
-  layer = 0,
-  x = 224,
-  y = 112,
-  width = 48,
-  height = 16,
-  subtype = "0",
-}
-
-crystal_block{
-  layer = 0,
-  x = 208,
-  y = 128,
-  width = 16,
-  height = 16,
-  subtype = "0",
-}
-
-crystal_block{
-  layer = 0,
-  x = 192,
-  y = 144,
-  width = 16,
-  height = 48,
-  subtype = "0",
-}
-
-crystal_block{
-  layer = 0,
-  x = 208,
-  y = 192,
-  width = 16,
-  height = 16,
-  subtype = "0",
-}
-
-crystal_block{
-  layer = 0,
-  x = 224,
-  y = 208,
-  width = 48,
-  height = 16,
-  subtype = "0",
-}
-
-crystal_block{
-  layer = 0,
-  x = 272,
-  y = 192,
-  width = 16,
-  height = 16,
-  subtype = "0",
-}
-
-crystal_block{
-  layer = 0,
-  x = 288,
-  y = 144,
-  width = 16,
-  height = 48,
-  subtype = "0",
-}
-
-crystal_block{
-  layer = 0,
-  x = 272,
-  y = 128,
-  width = 16,
-  height = 16,
-  subtype = "0",
-}
-
 npc{
   layer = 0,
   x = 984,
@@ -7665,6 +7593,182 @@ teletransporter{
   transition = "scrolling",
   destination_map = "outside_b2",
   destination = "_side",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 264,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 264,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
 }
 
 tile{

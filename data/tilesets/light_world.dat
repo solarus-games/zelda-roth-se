@@ -9159,3 +9159,23 @@ tile_pattern{
   height = 40,
 }
 
+tile_pattern{
+  id = 1418,
+  ground = "wall",
+  default_layer = 0,
+  x = 464,
+  y = 16,
+  width = 32,
+  height = 32,
+}
+
+tile_pattern{
+  id = 1419,
+  ground = "wall",
+  default_layer = 1,
+  x = 464,
+  y = 0,
+  width = 32,
+  height = 16,
+}
+

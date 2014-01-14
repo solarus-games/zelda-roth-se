@@ -11768,14 +11768,6 @@ destructible{
   damage_on_enemies = 2,
 }
 
-npc{
-  layer = 0,
-  x = 1896,
-  y = 493,
-  direction = 3,
-  subtype = "1",
-}
-
 destructible{
   layer = 0,
   x = 1896,
@@ -12841,6 +12833,17 @@ teletransporter{
   transition = "scrolling",
   destination_map = "outside_b2",
   destination = "_side",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1896,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_yellow",
+  model = "hammer_stake",
 }
 
 tile{

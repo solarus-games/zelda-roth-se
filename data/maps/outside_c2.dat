@@ -12713,7 +12713,7 @@ teletransporter{
   destination = "_side",
 }
 
-custom{
+custom_entity{
   layer = 0,
   x = 40,
   y = 525,
