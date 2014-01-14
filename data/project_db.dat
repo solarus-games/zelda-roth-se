@@ -230,6 +230,7 @@ item{ id = "green_potion", description = "Green potion" }
 item{ id = "blue_potion", description = "Blue potion" }
 
 
+entity{ id = "hammer_stake", description = "Hammer stake" }
 
 language{ id = "en", description = "English" }
 language{ id = "fr", description = "Français" }

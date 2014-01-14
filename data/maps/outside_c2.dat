@@ -12136,15 +12136,6 @@ destructible{
   can_be_cut = true,
 }
 
-crystal_block{
-  layer = 0,
-  x = 32,
-  y = 512,
-  width = 16,
-  height = 16,
-  subtype = "0",
-}
-
 destructible{
   layer = 0,
   x = 1240,
@@ -12720,6 +12711,17 @@ teletransporter{
   transition = "scrolling",
   destination_map = "outside_c1",
   destination = "_side",
+}
+
+custom{
+  layer = 0,
+  x = 40,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_green",
+  model = "hammer_stake",
 }
 
 tile{
