@@ -9119,3 +9119,43 @@ tile_pattern{
   height = 8,
 }
 
+tile_pattern{
+  id = 1414,
+  ground = "wall",
+  default_layer = 0,
+  x = 496,
+  y = 0,
+  width = 16,
+  height = 48,
+}
+
+tile_pattern{
+  id = 1415,
+  ground = "wall",
+  default_layer = 0,
+  x = 336,
+  y = 272,
+  width = 32,
+  height = 40,
+}
+
+tile_pattern{
+  id = 1416,
+  ground = "wall",
+  default_layer = 0,
+  x = 368,
+  y = 272,
+  width = 32,
+  height = 40,
+}
+
+tile_pattern{
+  id = 1417,
+  ground = "wall",
+  default_layer = 0,
+  x = 400,
+  y = 272,
+  width = 48,
+  height = 40,
+}
+

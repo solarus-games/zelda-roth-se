@@ -5,6 +5,7 @@ map{ id = "outside_c1", description = "Outside C1 (Forest)" }
 map{ id = "outside_a2", description = "Outside A2 (Castle)" }
 map{ id = "outside_b2", description = "Outside B2 (Village)" }
 map{ id = "outside_c2", description = "Outside C2 (Plains)" }
+map{ id = "outside_a3", description = "Outside A3 (Ruins)" }
 map{ id = "dungeon_1_1f", description = "Dungeon 1 1F" }
 map{ id = "dungeon_1_b1", description = "Dungeon 1 B1" }
 map{ id = "dungeon_2_1f", description = "Dungeon 2 1F" }
@@ -13,7 +14,6 @@ map{ id = "dungeon_3_2f", description = "Dungeon 3 2F" }
 map{ id = "dungeon_4_1f", description = "Dungeon 4 1F" }
 
 tileset{ id = "light_world", description = "Light World" }
-tileset{ id = "dark_world", description = "Dark World" }
 tileset{ id = "cave", description = "Cave" }
 tileset{ id = "house", description = "House" }
 tileset{ id = "blue_dungeon_lw", description = "Blue dungeon (LW)" }
@@ -28,10 +28,7 @@ tileset{ id = "graybrown_dungeon_dw", description = "Gray-brown dungeon (DW)" }
 tileset{ id = "grayblue_dungeon_dw", description = "Gray-blue dungeon (DW)" }
 tileset{ id = "castle", description = "Castle" }
 tileset{ id = "ice_dungeon", description = "Ice dungeon" }
-tileset{ id = "forest_dungeon", description = "Forest dungeon" }
-tileset{ id = "lighthouse", description = "Lighthouse" }
 tileset{ id = "final_dungeon", description = "Final dungeon" }
-tileset{ id = "old_school_dungeon", description = "Old school dungeon" }
 tileset{ id = "intro", description = "Intro" }
 
 sprite{ id = "entities/arrow", description = "Arrow" }

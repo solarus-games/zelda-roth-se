@@ -4821,16 +4821,6 @@ destructible{
   damage_on_enemies = 2,
 }
 
-door{
-  layer = 0,
-  x = 2104,
-  y = 400,
-  direction = 1,
-  sprite = "entities/door_very_weak_wall",
-  savegame_variable = "outside_a1_weak_wall",
-  opening_method = "explosion",
-}
-
 destructible{
   layer = 0,
   x = 760,
@@ -5637,6 +5627,28 @@ teletransporter{
   transition = "scrolling",
   destination_map = "outside_b2",
   destination = "_side",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 2096,
+  y = 400,
+  width = 32,
+  height = 16,
+  name = "weak_wall_closed",
+  pattern = 314,
+  enabled_at_start = true,
+}
+
+door{
+  layer = 0,
+  x = 2104,
+  y = 400,
+  name = "weak_wall",
+  direction = 1,
+  sprite = "entities/door_very_weak_wall",
+  savegame_variable = "outside_a1_weak_wall",
+  opening_method = "explosion",
 }
 
 tile{

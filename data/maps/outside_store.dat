@@ -1417,7 +1417,7 @@ tile{
   x = 48,
   y = 24,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = 190,
 }
 
@@ -3568,7 +3568,7 @@ tile{
   x = 48,
   y = 200,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = 190,
 }
 
@@ -4324,7 +4324,7 @@ tile{
   x = 48,
   y = 376,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = 190,
 }
 
@@ -8090,6 +8090,303 @@ tile{
   pattern = 1039,
 }
 
+tile{
+  layer = 0,
+  x = 744,
+  y = 296,
+  width = 16,
+  height = 8,
+  pattern = 1264,
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = 1263,
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = 1265,
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = 1275,
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 288,
+  width = 8,
+  height = 8,
+  pattern = 1279,
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 288,
+  width = 8,
+  height = 8,
+  pattern = 1278,
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 464,
+  width = 16,
+  height = 8,
+  pattern = 1275,
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = 1279,
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = 1278,
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 112,
+  width = 16,
+  height = 8,
+  pattern = 1275,
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = 1279,
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = 1278,
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 120,
+  width = 16,
+  height = 8,
+  pattern = 1276,
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = 1261,
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = 1262,
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 472,
+  width = 8,
+  height = 8,
+  pattern = 1268,
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 472,
+  width = 16,
+  height = 8,
+  pattern = 1267,
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 472,
+  width = 8,
+  height = 8,
+  pattern = 1266,
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 520,
+  width = 16,
+  height = 8,
+  pattern = 812,
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 520,
+  width = 8,
+  height = 8,
+  pattern = 810,
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 520,
+  width = 8,
+  height = 8,
+  pattern = 811,
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 280,
+  width = 16,
+  height = 24,
+  pattern = 325,
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 280,
+  width = 8,
+  height = 24,
+  pattern = 324,
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 280,
+  width = 8,
+  height = 24,
+  pattern = 323,
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 272,
+  width = 32,
+  height = 8,
+  pattern = 489,
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 448,
+  width = 32,
+  height = 8,
+  pattern = 489,
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 456,
+  width = 16,
+  height = 24,
+  pattern = 398,
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 456,
+  width = 8,
+  height = 24,
+  pattern = 397,
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 456,
+  width = 8,
+  height = 24,
+  pattern = 396,
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 104,
+  width = 16,
+  height = 24,
+  pattern = 67,
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 104,
+  width = 8,
+  height = 24,
+  pattern = 488,
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 104,
+  width = 8,
+  height = 24,
+  pattern = 487,
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 96,
+  width = 32,
+  height = 8,
+  pattern = 489,
+}
+
 destructible{
   layer = 0,
   x = 24,
@@ -8152,6 +8449,72 @@ npc{
   direction = 3,
   subtype = "0",
   sprite = "entities/sign",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 736,
+  y = 288,
+  width = 32,
+  height = 16,
+  name = "weak_wall_closed",
+  pattern = 314,
+  enabled_at_start = true,
+}
+
+door{
+  layer = 0,
+  x = 744,
+  y = 288,
+  name = "weak_wall",
+  direction = 1,
+  sprite = "entities/door_very_weak_wall",
+  savegame_variable = "outside_a1_weak_wall",
+  opening_method = "explosion",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 736,
+  y = 112,
+  width = 32,
+  height = 16,
+  name = "weak_wall_3_closed",
+  pattern = 177,
+  enabled_at_start = true,
+}
+
+door{
+  layer = 0,
+  x = 744,
+  y = 112,
+  name = "weak_wall_3",
+  direction = 1,
+  sprite = "entities/door_very_weak_wall",
+  savegame_variable = "outside_a1_weak_wall",
+  opening_method = "explosion",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 736,
+  y = 464,
+  width = 32,
+  height = 16,
+  name = "weak_wall_2_closed",
+  pattern = 387,
+  enabled_at_start = true,
+}
+
+door{
+  layer = 0,
+  x = 744,
+  y = 464,
+  name = "weak_wall_2",
+  direction = 1,
+  sprite = "entities/door_very_weak_wall",
+  savegame_variable = "outside_a1_weak_wall",
+  opening_method = "explosion",
 }
 
 tile{
@@ -8710,5 +9073,32 @@ tile{
   width = 48,
   height = 40,
   pattern = 511,
+}
+
+tile{
+  layer = 2,
+  x = 736,
+  y = 280,
+  width = 32,
+  height = 8,
+  pattern = 1280,
+}
+
+tile{
+  layer = 2,
+  x = 736,
+  y = 456,
+  width = 32,
+  height = 8,
+  pattern = 1280,
+}
+
+tile{
+  layer = 2,
+  x = 736,
+  y = 104,
+  width = 32,
+  height = 8,
+  pattern = 1280,
 }
 
