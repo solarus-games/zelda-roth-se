@@ -9978,6 +9978,28 @@ custom_entity{
   model = "hammer_stake",
 }
 
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 960,
+  width = 1920,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside_a4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1920,
+  y = 0,
+  width = 16,
+  height = 960,
+  transition = "scrolling",
+  destination_map = "outside_b3",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 1040,

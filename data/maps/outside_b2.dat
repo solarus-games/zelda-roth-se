@@ -6052,6 +6052,28 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 320,
+  y = 960,
+  width = 640,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside_b3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 960,
+  width = 320,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside_a3",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 248,

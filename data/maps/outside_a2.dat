@@ -7771,6 +7771,17 @@ custom_entity{
   model = "hammer_stake",
 }
 
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 960,
+  width = 1600,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside_a3",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 1192,

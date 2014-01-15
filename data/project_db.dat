@@ -6,6 +6,10 @@ map{ id = "outside_a2", description = "Outside A2 (Castle)" }
 map{ id = "outside_b2", description = "Outside B2 (Village)" }
 map{ id = "outside_c2", description = "Outside C2 (Plains)" }
 map{ id = "outside_a3", description = "Outside A3 (Ruins)" }
+map{ id = "outside_b3", description = "Outside B3 (Lake)" }
+map{ id = "outside_c3", description = "Outside C3 (Cemetary)" }
+map{ id = "outside_a4", description = "Outside A4 (South-West)" }
+map{ id = "outside_b4", description = "Outside B4 (South-East)" }
 map{ id = "dungeon_1_1f", description = "Dungeon 1 1F" }
 map{ id = "dungeon_1_b1", description = "Dungeon 1 B1" }
 map{ id = "dungeon_2_1f", description = "Dungeon 2 1F" }

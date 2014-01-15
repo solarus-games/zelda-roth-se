@@ -8254,28 +8254,28 @@ tile{
 
 tile{
   layer = 0,
-  x = 24,
-  y = 520,
+  x = 120,
+  y = 672,
   width = 16,
-  height = 8,
+  height = 32,
   pattern = 812,
 }
 
 tile{
   layer = 0,
-  x = 16,
-  y = 520,
+  x = 112,
+  y = 672,
   width = 8,
-  height = 8,
+  height = 32,
   pattern = 810,
 }
 
 tile{
   layer = 0,
-  x = 40,
-  y = 520,
+  x = 136,
+  y = 672,
   width = 8,
-  height = 8,
+  height = 32,
   pattern = 811,
 }
 
@@ -8385,6 +8385,33 @@ tile{
   width = 32,
   height = 8,
   pattern = 489,
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 704,
+  width = 16,
+  height = 24,
+  pattern = 815,
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 704,
+  width = 8,
+  height = 24,
+  pattern = 814,
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 704,
+  width = 8,
+  height = 24,
+  pattern = 813,
 }
 
 destructible{

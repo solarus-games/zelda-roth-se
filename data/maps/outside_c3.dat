@@ -1,0 +1,54 @@
+properties{
+  x = 4160,
+  y = 1200,
+  width = 960,
+  height = 1440,
+  world = "outside",
+  tileset = "light_world",
+  music = "same",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 960,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside_c1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 1440,
+  width = 960,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside_b4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 480,
+  transition = "scrolling",
+  destination_map = "outside_c2",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 480,
+  width = 16,
+  height = 960,
+  transition = "scrolling",
+  destination_map = "outside_b3",
+  destination = "_side",
+}
+
