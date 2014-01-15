@@ -7231,7 +7231,7 @@ destructible{
   x = 568,
   y = 477,
   treasure_name = "random",
-  sprite = "entities/stone_small_white",
+  sprite = "entities/stone_white",
   destruction_sound = "stone",
   weight = 1,
   damage_on_enemies = 2,
