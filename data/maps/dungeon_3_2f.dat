@@ -5602,36 +5602,40 @@ door{
   opening_method = "explosion",
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 1552,
-  y = 752,
+  x = 1560,
+  y = 765,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 992,
-  y = 752,
+  x = 1000,
+  y = 765,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 992,
-  y = 1152,
+  x = 1000,
+  y = 1165,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 1552,
-  y = 1152,
+  x = 1560,
+  y = 1165,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
 door{

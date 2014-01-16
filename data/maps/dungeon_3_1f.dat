@@ -10030,36 +10030,40 @@ door{
   opening_method = "explosion",
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 2272,
-  y = 1712,
+  x = 2280,
+  y = 1725,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 2512,
-  y = 1712,
+  x = 2520,
+  y = 1725,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 2512,
-  y = 1872,
+  x = 2520,
+  y = 1885,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 2272,
-  y = 1872,
+  x = 2280,
+  y = 1885,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
 door{
@@ -10072,36 +10076,40 @@ door{
   opening_condition = "boss_key",
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 1232,
-  y = 1712,
+  x = 1240,
+  y = 1725,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 1232,
-  y = 1872,
+  x = 1240,
+  y = 1885,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 992,
-  y = 1872,
+  x = 1000,
+  y = 1885,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 992,
-  y = 1712,
+  x = 1000,
+  y = 1725,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
 door{
@@ -10126,84 +10134,94 @@ door{
   opening_condition_consumed = true,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 32,
-  y = 1712,
+  x = 40,
+  y = 1725,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 272,
-  y = 1712,
+  x = 280,
+  y = 1725,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 272,
-  y = 1872,
+  x = 280,
+  y = 1885,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 32,
-  y = 1872,
+  x = 40,
+  y = 1885,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 32,
-  y = 992,
+  x = 40,
+  y = 1005,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 32,
-  y = 1152,
+  x = 40,
+  y = 1165,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 592,
-  y = 992,
+  x = 600,
+  y = 1005,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 592,
-  y = 1152,
+  x = 600,
+  y = 1165,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 672,
-  y = 992,
+  x = 680,
+  y = 1005,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 912,
-  y = 992,
+  x = 920,
+  y = 1005,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
 door{
@@ -10228,108 +10246,121 @@ door{
   opening_condition_consumed = true,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 144,
-  y = 608,
+  x = 152,
+  y = 621,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 144,
-  y = 448,
+  x = 152,
+  y = 461,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 144,
-  y = 496,
+  x = 152,
+  y = 509,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 144,
-  y = 336,
+  x = 152,
+  y = 349,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 32,
-  y = 32,
+  x = 40,
+  y = 45,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 272,
-  y = 32,
+  x = 280,
+  y = 45,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 272,
-  y = 192,
+  x = 280,
+  y = 205,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 32,
-  y = 192,
+  x = 40,
+  y = 205,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 368,
-  y = 112,
+  x = 376,
+  y = 125,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 496,
-  y = 96,
+  x = 504,
+  y = 109,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 624,
-  y = 80,
+  x = 632,
+  y = 93,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 896,
-  y = 112,
+  x = 904,
+  y = 125,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 768,
-  y = 96,
+  x = 776,
+  y = 109,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
 door{
@@ -10354,20 +10385,22 @@ door{
   opening_condition_consumed = true,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 1232,
-  y = 512,
+  x = 1240,
+  y = 525,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 992,
-  y = 512,
+  x = 1000,
+  y = 525,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
 door{
@@ -10402,36 +10435,40 @@ door{
   sprite = "entities/door_normal",
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 2272,
-  y = 32,
+  x = 2280,
+  y = 45,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 2512,
-  y = 32,
+  x = 2520,
+  y = 45,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 2512,
-  y = 192,
+  x = 2520,
+  y = 205,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
-custom{
+custom_entity{
   layer = 1,
-  x = 2272,
-  y = 192,
+  x = 2280,
+  y = 205,
   width = 16,
   height = 16,
+  direction = 0,
 }
 
 tile{
