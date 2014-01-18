@@ -20,20 +20,14 @@ map{ id = "dungeon_4_1f", description = "Dungeon 4 1F" }
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "cave", description = "Cave" }
 tileset{ id = "house", description = "House" }
-tileset{ id = "blue_dungeon_lw", description = "Blue dungeon (LW)" }
-tileset{ id = "green_dungeon_lw", description = "Green dungeon (LW)" }
-tileset{ id = "brown_dungeon_lw", description = "Brown dungeon (LW)" }
-tileset{ id = "pink_dungeon_lw", description = "Pink dungeon (LW)" }
-tileset{ id = "blue_dungeon_dw", description = "Blue dungeon (DW)" }
-tileset{ id = "green_dungeon_dw", description = "Green dungeon (DW)" }
-tileset{ id = "orange_dungeon_dw", description = "Orange dungeon (DW)" }
-tileset{ id = "gray_dungeon_dw", description = "Gray dungeon (DW)" }
-tileset{ id = "graybrown_dungeon_dw", description = "Gray-brown dungeon (DW)" }
-tileset{ id = "grayblue_dungeon_dw", description = "Gray-blue dungeon (DW)" }
-tileset{ id = "castle", description = "Castle" }
-tileset{ id = "ice_dungeon", description = "Ice dungeon" }
-tileset{ id = "final_dungeon", description = "Final dungeon" }
-tileset{ id = "intro", description = "Intro" }
+tileset{ id = "blue_dungeon_lw", description = "Temple (blue)" }
+tileset{ id = "green_dungeon_lw", description = "Temple (green)" }
+tileset{ id = "castle", description = "Temple (yellow)" }
+tileset{ id = "blue_dungeon_dw", description = "Dungeon (blue)" }
+tileset{ id = "graybrown_dungeon_dw", description = "Dungeon (gray-brown)" }
+tileset{ id = "grayblue_dungeon_dw", description = "Dungeon (gray-blue)" }
+tileset{ id = "ice_dungeon", description = "Ice (bright blue)" }
+tileset{ id = "final_dungeon", description = "Palace (purple)" }
 
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block" }

@@ -12846,6 +12846,28 @@ custom_entity{
   model = "hammer_stake",
 }
 
+destructible{
+  layer = 0,
+  x = 584,
+  y = 333,
+  treasure_name = "random",
+  sprite = "entities/bush_purple",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 600,
+  y = 333,
+  treasure_name = "random",
+  sprite = "entities/bush_purple",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
 tile{
   layer = 2,
   x = 328,
