@@ -20,14 +20,14 @@ map{ id = "dungeon_4_1f", description = "Dungeon 4 1F" }
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "cave", description = "Cave" }
 tileset{ id = "house", description = "House" }
-tileset{ id = "blue_dungeon_lw", description = "Temple (blue)" }
-tileset{ id = "green_dungeon_lw", description = "Temple (green)" }
-tileset{ id = "castle", description = "Temple (yellow)" }
-tileset{ id = "blue_dungeon_dw", description = "Dungeon (blue)" }
-tileset{ id = "graybrown_dungeon_dw", description = "Dungeon (gray-brown)" }
-tileset{ id = "grayblue_dungeon_dw", description = "Dungeon (gray-blue)" }
-tileset{ id = "ice_dungeon", description = "Ice (bright blue)" }
-tileset{ id = "final_dungeon", description = "Palace (purple)" }
+tileset{ id = "temple_blue", description = "Temple (blue)" }
+tileset{ id = "temple_green", description = "Temple (green)" }
+tileset{ id = "temple_yellow", description = "Temple (yellow)" }
+tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
+tileset{ id = "dungeon_graybrown", description = "Dungeon (gray-brown)" }
+tileset{ id = "dungeon_grayblue", description = "Dungeon (gray-blue)" }
+tileset{ id = "ice_brightblue", description = "Ice (bright blue)" }
+tileset{ id = "palace_purple", description = "Palace (purple)" }
 
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block" }
