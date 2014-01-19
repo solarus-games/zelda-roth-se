@@ -5,7 +5,7 @@ properties{
   height = 1920,
   world = "dungeon_3",
   floor = 1,
-  tileset = "green_dungeon_lw",
+  tileset = "temple_green",
   music = "same",
 }
 
