@@ -9692,6 +9692,15 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 472,
+  y = 576,
+  width = 16,
+  height = 16,
+  destination_map = "link_house",
+}
+
 tile{
   layer = 1,
   x = 616,
