@@ -3829,7 +3829,7 @@ tile_pattern{
 tile_pattern{
   id = 693,
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = { 32, 48, 64, 48 },
   y = { 240, 240, 240, 240 },
   width = 16,

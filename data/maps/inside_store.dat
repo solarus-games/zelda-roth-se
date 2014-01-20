@@ -277,6 +277,105 @@ tile{
   pattern = 660,
 }
 
+tile{
+  layer = 1,
+  x = 264,
+  y = 312,
+  width = 8,
+  height = 16,
+  pattern = 684,
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = 686,
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 312,
+  width = 8,
+  height = 16,
+  pattern = 685,
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 280,
+  width = 64,
+  height = 24,
+  pattern = 687,
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 304,
+  width = 24,
+  height = 32,
+  pattern = 701,
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 304,
+  width = 24,
+  height = 32,
+  pattern = 702,
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 280,
+  width = 8,
+  height = 24,
+  pattern = 568,
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 280,
+  width = 8,
+  height = 24,
+  pattern = 568,
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 272,
+  width = 80,
+  height = 8,
+  pattern = 568,
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 288,
+  width = 32,
+  height = 24,
+  pattern = 683,
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = 660,
+}
+
 destructible{
   layer = 1,
   x = 32,
@@ -346,6 +445,15 @@ tile{
   layer = 2,
   x = 48,
   y = 296,
+  width = 32,
+  height = 8,
+  pattern = 432,
+}
+
+tile{
+  layer = 2,
+  x = 264,
+  y = 328,
   width = 32,
   height = 8,
   pattern = 432,
