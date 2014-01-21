@@ -407,6 +407,15 @@ destructible{
 
 tile{
   layer = 2,
+  x = 264,
+  y = 328,
+  width = 32,
+  height = 8,
+  pattern = 663,
+}
+
+tile{
+  layer = 2,
   x = 128,
   y = 304,
   width = 96,
