@@ -171,7 +171,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 40,
+  x = 56,
   y = 368,
   width = 16,
   height = 16,
@@ -376,6 +376,15 @@ tile{
   pattern = 660,
 }
 
+tile{
+  layer = 1,
+  x = 88,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = 676,
+}
+
 destructible{
   layer = 1,
   x = 32,
@@ -388,7 +397,7 @@ destructible{
 
 destructible{
   layer = 1,
-  x = 48,
+  x = 64,
   y = 381,
   treasure_name = "random",
   sprite = "entities/vase_skull",
@@ -457,5 +466,14 @@ tile{
   width = 32,
   height = 8,
   pattern = 432,
+}
+
+tile{
+  layer = 2,
+  x = 88,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = 694,
 }
 

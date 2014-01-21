@@ -3186,6 +3186,177 @@ tile{
   pattern = 660,
 }
 
+tile{
+  layer = 1,
+  x = 432,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = 676,
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = 676,
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = 676,
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = 676,
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
+tile{
+  layer = 1,
+  x = 912,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = 693,
+}
+
 dynamic_tile{
   layer = 1,
   x = 136,
@@ -3612,5 +3783,41 @@ tile{
   width = 32,
   height = 8,
   pattern = 432,
+}
+
+tile{
+  layer = 2,
+  x = 592,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = 694,
+}
+
+tile{
+  layer = 2,
+  x = 672,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = 694,
+}
+
+tile{
+  layer = 2,
+  x = 672,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = 694,
+}
+
+tile{
+  layer = 2,
+  x = 592,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = 694,
 }
 
