@@ -29,6 +29,7 @@ tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
 tileset{ id = "dungeon_graybrown", description = "Dungeon (gray-brown)" }
 tileset{ id = "dungeon_grayblue", description = "Dungeon (gray-blue)" }
 tileset{ id = "ice_brightblue", description = "Ice (bright blue)" }
+tileset{ id = "ice_brown", description = "Ice (brown)" }
 tileset{ id = "palace_purple", description = "Palace (purple)" }
 
 sprite{ id = "entities/arrow", description = "Arrow" }
