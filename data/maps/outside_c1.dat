@@ -9256,6 +9256,7 @@ npc{
   direction = 3,
   subtype = "0",
   sprite = "entities/sign",
+  behavior = "dialog#outside_c1.link_house_sign",
 }
 
 destructible{

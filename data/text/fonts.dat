@@ -1,4 +1,9 @@
 font{
+  id = "alttp",
+  file = "text/alttp.png",
+}
+
+font{
   id = "fixed",
   file = "text/minecraftia.ttf",
   size = 8,

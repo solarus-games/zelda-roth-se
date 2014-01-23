@@ -1,0 +1,10 @@
+-- Pancarte devant chez Link.
+dialog{
+  id = "outside_c1.link_house_sign",
+  text = [[
+N : Maison de Link
+O : Plaine d'Hyrule
+E : Temple de la Forêt
+]]
+}
+

@@ -18,8 +18,8 @@ map{ id = "dungeon_3_1f", description = "Dungeon 3 1F" }
 map{ id = "dungeon_3_2f", description = "Dungeon 3 2F" }
 map{ id = "dungeon_4_1f", description = "Dungeon 4 1F" }
 map{ id = "dungeon_4_2f", description = "Dungeon 4 2F" }
-map{ id = "link_house", description = "Link's house" }
 map{ id = "dungeon_4_3f", description = "Dungeon 4 3F" }
+map{ id = "link_house", description = "Link's house" }
 
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "house", description = "House" }
