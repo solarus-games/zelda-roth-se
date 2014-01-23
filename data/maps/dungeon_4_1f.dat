@@ -7974,6 +7974,24 @@ tile{
   pattern = 693,
 }
 
+tile{
+  layer = 1,
+  x = 1104,
+  y = 832,
+  width = 32,
+  height = 8,
+  pattern = 287,
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 832,
+  width = 32,
+  height = 8,
+  pattern = 595,
+}
+
 door{
   layer = 1,
   x = 1432,
@@ -8188,15 +8206,6 @@ destructible{
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-}
-
-tile{
-  layer = 2,
-  x = 1104,
-  y = 832,
-  width = 32,
-  height = 8,
-  pattern = 287,
 }
 
 tile{

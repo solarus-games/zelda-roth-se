@@ -11,6 +11,24 @@ properties{
 
 tile{
   layer = 1,
+  x = 32,
+  y = 512,
+  width = 256,
+  height = 176,
+  pattern = 533,
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 576,
+  width = 32,
+  height = 8,
+  pattern = 287,
+}
+
+tile{
+  layer = 1,
   x = 352,
   y = 272,
   width = 576,
@@ -58,15 +76,6 @@ tile{
   layer = 1,
   x = 32,
   y = 752,
-  width = 256,
-  height = 176,
-  pattern = 533,
-}
-
-tile{
-  layer = 1,
-  x = 32,
-  y = 512,
   width = 256,
   height = 176,
   pattern = 533,
@@ -1701,6 +1710,51 @@ tile{
   pattern = 676,
 }
 
+tile{
+  layer = 1,
+  x = 144,
+  y = 576,
+  width = 32,
+  height = 8,
+  pattern = 595,
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 464,
+  width = 32,
+  height = 8,
+  pattern = 287,
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 464,
+  width = 32,
+  height = 8,
+  pattern = 595,
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 576,
+  width = 32,
+  height = 8,
+  pattern = 287,
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 576,
+  width = 32,
+  height = 8,
+  pattern = 595,
+}
+
 door{
   layer = 1,
   x = 632,
@@ -1795,33 +1849,6 @@ tile{
   width = 320,
   height = 480,
   pattern = 170,
-}
-
-tile{
-  layer = 2,
-  x = 144,
-  y = 576,
-  width = 32,
-  height = 8,
-  pattern = 287,
-}
-
-tile{
-  layer = 2,
-  x = 1104,
-  y = 576,
-  width = 32,
-  height = 8,
-  pattern = 287,
-}
-
-tile{
-  layer = 2,
-  x = 624,
-  y = 464,
-  width = 32,
-  height = 8,
-  pattern = 287,
 }
 
 tile{
