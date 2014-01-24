@@ -8090,46 +8090,6 @@ door{
 
 destructible{
   layer = 1,
-  x = 360,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 360,
-  y = 205,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1240,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1240,
-  y = 205,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
   x = 1240,
   y = 1005,
   treasure_name = "random",
@@ -8170,11 +8130,67 @@ destructible{
 
 destructible{
   layer = 1,
+  x = 360,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 1240,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 1240,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 360,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 360,
+  y = 1005,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
   x = 600,
   y = 1005,
   treasure_name = "random",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
+  weight = 1,
   damage_on_enemies = 2,
 }
 
@@ -8185,6 +8201,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
+  weight = 1,
   damage_on_enemies = 2,
 }
 
@@ -8195,16 +8212,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 360,
-  y = 1005,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
+  weight = 1,
   damage_on_enemies = 2,
 }
 

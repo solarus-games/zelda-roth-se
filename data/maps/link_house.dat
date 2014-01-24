@@ -501,6 +501,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/vase",
   destruction_sound = "stone",
+  weight = 1,
   damage_on_enemies = 2,
 }
 
@@ -511,6 +512,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/vase",
   destruction_sound = "stone",
+  weight = 1,
   damage_on_enemies = 2,
 }
 
@@ -521,6 +523,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/vase",
   destruction_sound = "stone",
+  weight = 1,
   damage_on_enemies = 2,
 }
 
