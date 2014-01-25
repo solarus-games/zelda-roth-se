@@ -34,5 +34,14 @@ function quest_manager:initialize_quest()
   initialize_entities()
 end
 
+-- Returns the id of the font to use for the dialog box
+-- depending on the current language.
+function quest_manager:get_dialog_font()
+
+  -- This quest use the "alttp" bitmap font,
+  -- no matter the current language.
+  return "alttp"
+end
+
 return quest_manager
 

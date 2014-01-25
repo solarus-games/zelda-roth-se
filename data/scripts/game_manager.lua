@@ -19,20 +19,34 @@ function game_manager:create(file)
     game:set_max_money(100)  -- TODO check this
     game:set_max_life(12)
     game:set_life(game:get_max_life())
-
   end
  
-  return game
-end
+  local dialog_box_manager = require("scripts/dialog_box")
+  local dialog_box
 
--- Initializes a game and runs it.
-function game_manager:play_game(game)
- 
+  -- Function called when the player runs this game.
   function game:on_started()
+
+    -- Prepare the dialog box menu.
+    dialog_box = dialog_box_manager:create(game)
+
+    -- Initialize the hero.
     game:get_hero():set_walking_speed(96)
   end
 
-  game:start()
+  -- Function called when the game stops.
+  function game:on_finished()
+
+    -- Clean the dialog box.
+    dialog_box:quit()
+    dialog_box = nil
+  end
+
+  function game:get_dialog_box()
+    return dialog_box
+  end
+
+  return game
 end
 
 return game_manager

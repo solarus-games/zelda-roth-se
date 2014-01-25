@@ -116,7 +116,7 @@ function debug:on_update()
 
     if game:is_dialog_enabled() then
       if sol.input.is_key_pressed("left shift") or sol.input.is_key_pressed("right shift") then
-        game.dialog_box:show_all_now()
+        game:get_dialog_box():show_all_now()
       end
     end
 

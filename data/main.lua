@@ -2,7 +2,7 @@
 
 local game_manager = require("scripts/game_manager")
 local debug = require("scripts/debug")
-local quest_manager = require("quest_manager")
+local quest_manager = require("scripts/quest_manager")
 
 function sol.main:on_started()
 
@@ -42,6 +42,6 @@ end
 function sol.main:start_savegame(game)
 
   sol.main.game = game
-  game_manager:play_game(game)
+  game:start()
 end
 
