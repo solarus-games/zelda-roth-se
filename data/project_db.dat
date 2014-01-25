@@ -19,6 +19,9 @@ map{ id = "dungeon_3_2f", description = "Dungeon 3 2F" }
 map{ id = "dungeon_4_1f", description = "Dungeon 4 1F" }
 map{ id = "dungeon_4_2f", description = "Dungeon 4 2F" }
 map{ id = "dungeon_4_3f", description = "Dungeon 4 3F" }
+map{ id = "dungeon_5_1f", description = "Dungeon 5 1F" }
+map{ id = "dungeon_5_b1", description = "Dungeon 5 B1" }
+map{ id = "dungeon_5_b2", description = "Dungeon 5 B2" }
 map{ id = "link_house", description = "Link's house" }
 
 tileset{ id = "light_world", description = "Light World" }
@@ -60,6 +63,7 @@ sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/hammer_stake_green", description = "Hammer stake (green)" }
 sprite{ id = "entities/hammer_stake_yellow", description = "Hammer stake (yellow)" }
+sprite{ id = "entities/hammer_stake_brown", description = "Hammer stake (brown)" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/shadow", description = "Shadow" }

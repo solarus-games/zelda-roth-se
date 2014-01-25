@@ -8074,7 +8074,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 864,
+  y = 880,
   width = 16,
   height = 16,
   pattern = 525,
@@ -8091,7 +8091,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
+  x = 40,
   y = 832,
   width = 16,
   height = 16,
@@ -8100,7 +8100,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
+  x = 64,
   y = 832,
   width = 16,
   height = 16,
@@ -8109,8 +8109,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
-  y = 864,
+  x = 40,
+  y = 880,
   width = 16,
   height = 16,
   pattern = 525,
@@ -8119,7 +8119,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 880,
+  y = 896,
   width = 16,
   height = 16,
   pattern = 1039,
@@ -8451,8 +8451,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
-  y = 864,
+  x = 64,
+  y = 880,
   width = 16,
   height = 16,
   pattern = 525,
@@ -8460,8 +8460,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
-  y = 864,
+  x = 88,
+  y = 880,
   width = 16,
   height = 16,
   pattern = 525,
@@ -8732,7 +8732,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 56,
+  x = 72,
   y = 845,
   treasure_name = "random",
   sprite = "entities/bush_purple",
@@ -8743,7 +8743,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 40,
+  x = 48,
   y = 845,
   treasure_name = "random",
   sprite = "entities/bush_yellow",
@@ -8755,7 +8755,7 @@ destructible{
 destructible{
   layer = 0,
   x = 24,
-  y = 877,
+  y = 893,
   treasure_name = "random",
   sprite = "entities/stone_white",
   destruction_sound = "stone",
@@ -8765,8 +8765,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 40,
-  y = 877,
+  x = 48,
+  y = 893,
   treasure_name = "random",
   sprite = "entities/stone_black",
   destruction_sound = "stone",
@@ -8777,7 +8777,7 @@ destructible{
 npc{
   layer = 0,
   x = 24,
-  y = 893,
+  y = 917,
   direction = 3,
   subtype = "0",
   sprite = "entities/sign",
@@ -8852,7 +8852,7 @@ door{
 custom_entity{
   layer = 0,
   x = 24,
-  y = 861,
+  y = 869,
   width = 16,
   height = 16,
   direction = 3,
@@ -8862,8 +8862,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 40,
-  y = 861,
+  x = 48,
+  y = 869,
   width = 16,
   height = 16,
   direction = 3,
@@ -8873,8 +8873,8 @@ custom_entity{
 
 destructible{
   layer = 0,
-  x = 56,
-  y = 877,
+  x = 72,
+  y = 893,
   treasure_name = "random",
   sprite = "entities/stone_white_skull",
   destruction_sound = "stone",
@@ -8884,8 +8884,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 72,
-  y = 877,
+  x = 96,
+  y = 893,
   treasure_name = "random",
   sprite = "entities/stone_black_skull",
   destruction_sound = "stone",
@@ -9647,6 +9647,17 @@ tile{
   width = 64,
   height = 56,
   pattern = 1082,
+}
+
+custom_entity{
+  layer = 1,
+  x = 72,
+  y = 869,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/hammer_stake_brown",
+  model = "hammer_stake",
 }
 
 tile{
