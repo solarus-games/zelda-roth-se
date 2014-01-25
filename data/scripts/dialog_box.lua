@@ -21,30 +21,33 @@ function dialog_box_manager:create(game)
     skip_mode = nil,             -- "none", "current", "all" or "unchanged".
     info = nil,                  -- Parameter passed to start_dialog().
     skipped = false,             -- Whether the player skipped the dialog.
-    selected_answer = nil,       -- Selected answer (1 or 2) or nil if there is no question.
+    choices = {},                -- Whether there is a choice on each line. If yes,
+                                 -- the value is the char index of the cursor.
+    selected_choice = nil,       -- Selected line (1 is the first one) or nil if there is no question.
 
     -- Displaying text gradually.
     next_line = nil,             -- Next line to display or nil.
     line_it = nil,               -- Iterator over of all lines of the dialog.
-    lines = {},                  -- Array of the text of the 3 visible lines.
-    line_surfaces = {},          -- Array of the 3 text surfaces.
+    lines = {},                  -- Array of the text of the visible lines.
+    line_surfaces = {},          -- Array of the nb_visible_lines text surfaces.
     line_index = nil,            -- Line currently being shown.
     char_index = nil,            -- Next character to show in the current line.
     char_delay = nil,            -- Delay between two characters in milliseconds.
-    full = false,                -- Whether the 3 visible lines have shown all content.
+    full = false,                -- Whether the visible lines have shown all their content.
     need_letter_sound = false,   -- Whether a sound should be played with the next character.
     gradual = true,              -- Whether text is displayed gradually.
 
     -- Graphics.
-    dialog_surface = nil,
-    box_img = nil,
+    dialog_surface = nil,        -- Intermediate surface where we draw the dialog.
+    box_img = nil,               -- Image of the dialog box frame.
     box_dst_position = nil,      -- Destination coordinates of the dialog box.
-    answer_img = nil,            -- Icon representing the selected choice in a question.
-    answer_dst_position = nil,   -- Destination coordinates of the answer icon.
+    choice_cursor_img = nil,     -- Icon representing the selected choice in a question.
+    choice_cursor_dst_position = -- Destination coordinates of the cursor icon.
+        nil,
   }
 
   -- Constants.
-  local nb_visible_lines = 3     -- Maximum number of lines in the dialog box.
+  local nb_visible_lines = 4     -- Maximum number of lines in the dialog box.
   local char_delays = {
     slow = 60,
     medium = 40,
@@ -66,7 +69,9 @@ function dialog_box_manager:create(game)
   end
   dialog_box.dialog_surface = sol.surface.create(sol.video.get_quest_size())
   dialog_box.box_img = sol.surface.create("hud/dialog_box.png")
-  dialog_box.answer_img = sol.text_surface.create{
+  dialog_box.choice_cursor_img = sol.text_surface.create{
+    horizontal_alignment = "left",
+    vertical_alignment = "top",
     font = dialog_font,
     text = ">",
   }
@@ -132,7 +137,7 @@ function dialog_box_manager:create(game)
       if game.set_custom_command_effect ~= nil then
         if dialog_box:has_more_lines()
             or dialog_box.dialog.next ~= nil
-            or dialog_box.selected_answer ~= nil then
+            or dialog_box.selected_choice ~= nil then
           game:set_custom_command_effect("action", "next")
         else
           game:set_custom_command_effect("action", "return")
@@ -149,7 +154,7 @@ function dialog_box_manager:create(game)
     -- Subsequent dialogs in the same sequence do not reset them.
     self.skip_mode = "none"
     self.char_delay = char_delays["fast"]
-    self.selected_answer = nil
+    self.selected_choice = nil
 
     -- Determine the position of the dialog box on the screen.
     local map = game:get_map()
@@ -170,7 +175,7 @@ function dialog_box_manager:create(game)
     local y = top and x or (camera_height - x - box_height)
 
     self.box_dst_position = { x = x, y = y }
-    self.answer_dst_position = { x = x + 18, y = y + 27 }
+    self.choice_cursor_dst_position = { x = 0, y = 0 }
 
     self:show_dialog()
   end
@@ -206,15 +211,11 @@ function dialog_box_manager:create(game)
     self.skipped = false
     self.full = false
     self.need_letter_sound = self.style ~= "empty"
+    self.selected_choice = nil
 
     if dialog.skip ~= nil then
       -- The skip mode changes for this dialog.
       self.skip_mode = dialog.skip
-    end
-
-    if dialog.question == "1" then
-      -- This dialog is a question.
-      self.selected_answer = 1  -- The answer will be 1 or 2.
     end
 
     -- Start displaying text.
@@ -222,7 +223,7 @@ function dialog_box_manager:create(game)
   end
 
   -- Returns whether there are more lines remaining to display after the current
-  -- 3 lines.
+  -- group of nb_visible_lines lines.
   function dialog_box:has_more_lines()
     return self.next_line ~= nil
   end
@@ -237,7 +238,7 @@ function dialog_box_manager:create(game)
     end
   end
 
-  -- Returns whether all 3 current lines of the dialog box are entirely
+  -- Returns whether all current lines of the dialog box are entirely
   -- displayed.
   function dialog_box:is_full()
     return self.full
@@ -247,37 +248,30 @@ function dialog_box_manager:create(game)
   -- Closes the dialog box if there is no next dialog.
   function dialog_box:show_next_dialog()
 
-    local next_dialog_id
-    if self.selected_answer ~= 2 then
-      -- No question or first answer.
-      next_dialog_id = self.dialog.next
-    else
-      -- Second answer.
-      next_dialog_id = self.dialog.next2
-    end
+    local next_dialog_id = self.dialog.next
 
-    if next_dialog_id ~= nil and next_dialog_id ~= "_unknown" then
+    if next_dialog_id ~= nil then
       -- Show the next dialog.
       self.first = false
-      self.selected_answer = nil
+      self.selected_choice = nil
       self.dialog = sol.language.get_dialog(next_dialog_id)
       self:show_dialog()
     else
-      -- Finish the dialog, returning the answer or nil if there was no question.
-      local status = self.selected_answer
+      -- Finish the dialog, returning the choice or nil if there was no question.
+      local status = self.selected_choice
 
       -- Conform to the built-in handling of shop treasures.
       if self.dialog.id == "_shop.question" then
         -- The engine expects a boolean answer after the "do you want to buy"
         -- shop treasure dialog.
-        status = self.selected_answer == 1
+        status = self.selected_choice == 2  -- "Yes" is on the second line.
       end
 
       game:stop_dialog(status)
     end
   end
 
-  -- Starts showing a new group of 3 lines in the dialog.
+  -- Starts showing a new group of nb_visible_lines lines in the dialog.
   -- Shows the next dialog (if any) if there are no remaining lines.
   function dialog_box:show_more_lines()
 
@@ -299,7 +293,7 @@ function dialog_box_manager:create(game)
       end
     end
 
-    -- Prepare the 3 lines.
+    -- Prepare the lines.
     for i = 1, nb_visible_lines do
       self.line_surfaces[i]:set_text("")
       if self:has_more_lines() then
@@ -335,6 +329,7 @@ function dialog_box_manager:create(game)
     -- - $1, $2 and $3: slow, medium and fast
     -- - $0: pause
     -- - $v: variable
+    -- - $?: cursor for a choice
     -- - space: don't add the delay
     -- - 110xxxx: multibyte character
 
@@ -362,6 +357,11 @@ function dialog_box_manager:create(game)
         -- Fast.
         self.char_delay = char_delays["fast"]
 
+      elseif current_char == "?" then
+        -- Cursor for a choice.
+        self:add_choice(self.line_index, self.char_index - 2)
+        current_char = " "
+        special = false
       else
         -- Not a special char, actually.
         text_surface:set_text(text_surface:get_text() .. "$")
@@ -403,8 +403,9 @@ function dialog_box_manager:create(game)
     end
   end
 
-  -- Stops displaying gradually the current 3 lines, shows them immediately.
-  -- If the 3 lines were already finished, the next group of 3 lines starts
+  -- Stops displaying gradually the current lines,
+  -- shows them immediately.
+  -- If the lines were already finished, the next group of lines starts
   -- (if any).
   function dialog_box:show_all_now()
 
@@ -428,6 +429,27 @@ function dialog_box_manager:create(game)
         end
         self:check_full()
       end
+    end
+  end
+
+  -- Marks that a line contains a selectable choice.
+  -- A cursor will be displayed at the specified index when this
+  -- line is selected.
+  function dialog_box:add_choice(line_index, char_index)
+
+    self.choices[line_index] = char_index
+    if self.selected_choice == nil then
+      self:set_selected_choice(line_index)
+    end
+  end
+
+  function dialog_box:set_selected_choice(line_index)
+
+    self.selected_choice = line_index
+
+    if line_index ~= nil then
+      self.choice_cursor_dst_position.x = self.box_dst_position.x + self.choices[line_index] * 7
+      self.choice_cursor_dst_position.y = self.box_dst_position.y - 8 + line_index * 16
     end
   end
 
@@ -456,13 +478,25 @@ function dialog_box_manager:create(game)
 
     elseif command == "up" or command == "down" then
 
-      if self.selected_answer ~= nil
+      if self.selected_choice ~= nil
           and not self:has_more_lines()
           and self:is_full() then
+
         sol.audio.play_sound("cursor")
-        self.selected_answer = 3 - self.selected_answer  -- Switch between 1 and 2.
-        self.answer_dst_position.y = self.box_dst_position.y +
-            (self.selected_answer == 1 and 27 or 40)
+        local line_index = self.selected_choice
+
+        if command == "down" then
+          -- Move the cursor downwards.
+          repeat
+            line_index = line_index % nb_visible_lines + 1
+          until self.choices[line_index] ~= nil
+        else
+          -- Move the cursor upwards.
+          repeat
+            line_index = (line_index - 2) % nb_visible_lines + 1
+          until self.choices[line_index] ~= nil
+        end
+        self:set_selected_choice(line_index)
       end
     end
 
@@ -488,22 +522,14 @@ function dialog_box_manager:create(game)
     local text_x = x + 8
     local text_y = y + 8
     for i = 1, nb_visible_lines do
-      if self.selected_answer ~= nil
-          and i == nb_visible_lines - 1
-          and not self:has_more_lines() then
-        -- The last two lines are the answer to a question.
-        text_x = text_x + 24
-      end
       self.line_surfaces[i]:draw(self.dialog_surface, text_x, text_y)
       text_y = text_y + 16
     end
 
     -- Draw the answer arrow.
-    if self.selected_answer ~= nil
-        and self:is_full()
-        and not self:has_more_lines() then
-      self.answer_img:draw(self.dialog_surface,
-          self.answer_dst_position.x, self.answer_dst_position.y)
+    if self.selected_choice ~= nil then
+      self.choice_cursor_img:draw(self.dialog_surface,
+          self.choice_cursor_dst_position.x, self.choice_cursor_dst_position.y)
     end
 
     -- Final blit.

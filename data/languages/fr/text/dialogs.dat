@@ -1,3 +1,18 @@
+-- Maximum characters on a line: 40
+
+-- Sauvegarder & Quitter
+
+dialog{
+  id = "save_quit",
+  skip = "current",
+  text = [[
+             Déjà fatigué ?
+             $? Continuer
+       $? Sauvegarder et quitter
+      $? Quitter sans sauvegarder
+]]
+}
+
 -- Pancarte devant chez Link.
 dialog{
   id = "outside_c1.link_house_sign",

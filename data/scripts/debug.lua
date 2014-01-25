@@ -93,6 +93,25 @@ function debug:on_key_pressed(key, modifiers)
       else
         hero:set_walking_speed(300)
       end
+    elseif key == "escape" then
+      -- TODO this is temporary while there is no pause menu.
+      if not game:is_dialog_enabled() then
+        game:start_dialog("save_quit", function(answer)
+          if answer == 2 then
+            -- Continue.
+            sol.audio.play_sound("danger")
+          elseif answer == 3 then
+            -- Save and quit.
+            sol.audio.play_sound("quit")
+            game:save()
+            sol.main.reset()
+          else
+            -- Quit without saving.
+            sol.audio.play_sound("quit")
+            sol.main.reset()
+          end
+        end)
+      end
     else
       -- Not a known in-game debug key.
       handled = false
