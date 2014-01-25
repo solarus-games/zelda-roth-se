@@ -531,6 +531,8 @@ chest{
   layer = 1,
   x = 248,
   y = 173,
+  treasure_name = "shield",
+  treasure_savegame_variable = "link_house_shield_chest",
   sprite = "entities/chest",
 }
 
@@ -538,6 +540,7 @@ destination{
   layer = 1,
   x = 160,
   y = 221,
+  name = "from_outside",
   direction = 1,
 }
 
@@ -549,6 +552,15 @@ teletransporter{
   height = 16,
   destination_map = "outside_c1",
   destination = "from_link_house",
+}
+
+destination{
+  layer = 1,
+  x = 96,
+  y = 45,
+  name = "start_position",
+  direction = 3,
+  default = true,
 }
 
 tile{

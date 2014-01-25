@@ -1,7 +1,23 @@
 -- Maximum characters on a line: 40
 
--- Sauvegarder & Quitter
+-- ---------------------
+-- Obtention d'un trésor
+-- ---------------------
+-- 
+-- Les messages ci-dessous sont affichés lorsque le joueur obtient
+-- un trésor, généralement en ouvrant un coffre ou en l'achetant
+-- dans un magasin.
 
+-- Bouclier.
+dialog{
+  id = "_treasure.shield.1",
+  text = [[
+Tu as trouvé un bouclier !!!
+
+Ta défense augmente d'un point !
+]]
+}
+-- Sauvegarder & Quitter
 dialog{
   id = "save_quit",
   skip = "current",
