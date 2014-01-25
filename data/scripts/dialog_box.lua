@@ -17,7 +17,7 @@ function dialog_box_manager:create(game)
     dialog = nil,                -- Dialog being displayed or nil.
     first = true,                -- Whether this is the first dialog of a sequence.
     style = nil,                 -- "box" or "empty".
-    vertical_position = "auto",  -- "auto", "top" or "bottom".
+    vertical_position = "bottom",-- "auto", "top" or "bottom".
     skip_mode = nil,             -- "none", "current", "all" or "unchanged".
     info = nil,                  -- Parameter passed to start_dialog().
     skipped = false,             -- Whether the player skipped the dialog.
@@ -112,9 +112,9 @@ function dialog_box_manager:create(game)
 
   -- Sets the vertical position of the dialog box for subsequent dialogs.
   -- vertical_position must be one of:
-  -- - "auto" (default): Choose automatically so that the hero is not hidden.
+  -- - "auto": Choose automatically so that the hero is not hidden.
   -- - "top": Top of the screen.
-  -- - "bottom": Botton of the screen.
+  -- - "bottom" (default): Bottom of the screen.
   function dialog_box:set_vertical_position(vertical_position)
     dialog_box.vertical_position = vertical_position
   end
