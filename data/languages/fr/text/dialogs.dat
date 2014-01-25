@@ -17,6 +17,20 @@ Tu as trouvé un bouclier !!!
 Ta défense augmente d'un point !
 ]]
 }
+
+-- Épée.
+dialog{
+  id = "_treasure.sword.1",
+  text = [[
+Tu as trouvé une épée !!!
+
+Tu vas pouvoir te défendre face aux
+monstres avec la touche C !
+Maintiens C enfoncé pour charger une
+attaque cyclone !!!
+]]
+}
+
 -- Sauvegarder & Quitter
 dialog{
   id = "save_quit",

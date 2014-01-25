@@ -10,6 +10,10 @@ local game_manager = {}
 -- Creates a game ready to be played.
 function game_manager:create(file)
 
+  -- Game constants.
+  local normal_walking_speed = 96
+  local fast_walking_speed = 192
+
   -- Create the game (but do not start it).
   local exists = sol.game.exists(file)
   local game = sol.game.load(file)
@@ -31,7 +35,7 @@ function game_manager:create(file)
     dialog_box = dialog_box_manager:create(game)
 
     -- Initialize the hero.
-    game:get_hero():set_walking_speed(96)
+    game:get_hero():set_walking_speed(normal_walking_speed)
   end
 
   -- Function called when the game stops.
@@ -40,6 +44,39 @@ function game_manager:create(file)
     -- Clean the dialog box.
     dialog_box:quit()
     dialog_box = nil
+  end
+
+  -- Changes the walking speed of the hero depending on whether
+  -- shift is pressed or caps lock is active.
+  local function update_walking_speed()
+
+    local hero = game:get_hero()
+    local modifiers = sol.input.get_key_modifiers()
+    local speed = normal_walking_speed
+    if modifiers["shift"] or modifiers["caps lock"] then
+      speed = fast_walking_speed
+    end
+    if hero:get_walking_speed() ~= speed then
+      hero:set_walking_speed(speed)
+    end
+  end
+
+  function game:on_key_pressed(key)
+
+    if key == "left shift"
+        or key == "right shift"
+        or key == "caps lock" then
+      update_walking_speed()
+    end
+  end
+
+  function game:on_key_released(key)
+
+    if key == "left shift"
+        or key == "right shift"
+        or key == "caps lock" then
+      update_walking_speed()
+    end
   end
 
   function game:get_dialog_box()

@@ -88,10 +88,11 @@ function debug:on_key_pressed(key, modifiers)
 	hero:set_position(x, y, layer + 1)
       end
     elseif key == "r" then
-      if hero:get_walking_speed() == 300 then
-        hero:set_walking_speed(88)
+      if hero:get_walking_speed() == 384 then
+        hero:set_walking_speed(debug.normal_walking_speed)
       else
-        hero:set_walking_speed(300)
+        debug.normal_walking_speed = hero:get_walking_speed()
+        hero:set_walking_speed(384)
       end
     elseif key == "escape" then
       -- TODO this is temporary while there is no pause menu.

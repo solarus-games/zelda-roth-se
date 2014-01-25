@@ -152,7 +152,7 @@ function dialog_box_manager:create(game)
 
     -- Set the initial properties.
     -- Subsequent dialogs in the same sequence do not reset them.
-    self.skip_mode = "none"
+    self.skip_mode = "current"
     self.char_delay = char_delays["fast"]
     self.selected_choice = nil
 

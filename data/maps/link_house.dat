@@ -5,7 +5,7 @@ properties{
   height = 240,
   world = "inside",
   tileset = "house",
-  music = "same",
+  music = "village",
 }
 
 tile{
