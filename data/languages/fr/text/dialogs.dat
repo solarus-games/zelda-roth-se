@@ -34,12 +34,75 @@ attaque cyclone !!!
 -- Sauvegarder & Quitter
 dialog{
   id = "save_quit",
-  skip = "current",
   text = [[
              Déjà fatigué ?
              $? Continuer
        $? Sauvegarder et quitter
       $? Quitter sans sauvegarder
+]]
+}
+
+-- Intro.
+-- Maximum 34 characters by line in the intro.
+dialog{
+  id = "intro.fresco_1",
+  text = [[
+Le Royaume d'Hyrule était en paix
+depuis que Link, dernier chevalier
+hylien, avait vaincu le maléfique
+
+Ganon et lui avait repris la
+précieuse Triforce.
+]]
+}
+
+dialog{
+  id = "intro.fresco_2",
+  text = [[
+Nul ne sait quel voeu fit Link en
+touchant la Triforce, mais il eut
+comme effet de réunifier le monde
+
+de la lumière et celui des
+ténèbres, et ramena à la vie les
+descendants des 7 sages.
+]]
+}
+
+dialog{
+  id = "intro.fresco_3",
+  text = [[
+Link remit ensuite à la princesse
+Zelda la Triforce et l'épée
+Excalibur, et le peuple se mit à
+
+croire que la paix durerait.
+Mais le peuple se trompait...
+]]
+}
+
+dialog{
+  id = "intro.fresco_4",
+  text = [[
+Le souhait de Link à la Triforce
+eu hélas de fâcheux effets. Ganon
+et ses sbires furent ainsi
+
+ressuscités et s'apprêtèrent à
+attaquer.
+]]
+}
+
+dialog{
+  id = "intro.fresco_5",
+  text = [[
+Quelque part dans la forêt
+d'Hyrule, Link dort sans se
+douter que Ganon est passé à
+
+l'attaque, jusqu'à ce qu'une
+voix familière lui parle dans son
+sommeil...
 ]]
 }
 

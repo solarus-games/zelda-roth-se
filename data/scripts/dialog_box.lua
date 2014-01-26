@@ -17,7 +17,7 @@ function dialog_box_manager:create(game)
     dialog = nil,                -- Dialog being displayed or nil.
     first = true,                -- Whether this is the first dialog of a sequence.
     style = nil,                 -- "box" or "empty".
-    vertical_position = "bottom",-- "auto", "top" or "bottom".
+    position = "bottom",         -- "auto", "top", "bottom" or an x,y table.
     skip_mode = nil,             -- "none", "current", "all" or "unchanged".
     info = nil,                  -- Parameter passed to start_dialog().
     skipped = false,             -- Whether the player skipped the dialog.
@@ -111,12 +111,13 @@ function dialog_box_manager:create(game)
   end
 
   -- Sets the vertical position of the dialog box for subsequent dialogs.
-  -- vertical_position must be one of:
+  -- position must be one of:
   -- - "auto": Choose automatically so that the hero is not hidden.
   -- - "top": Top of the screen.
   -- - "bottom" (default): Bottom of the screen.
-  function dialog_box:set_vertical_position(vertical_position)
-    dialog_box.vertical_position = vertical_position
+  -- - a table with x and y integer fields.
+  function dialog_box:set_position(position)
+    dialog_box.position = position
   end
 
   local function repeat_show_character()
@@ -160,9 +161,9 @@ function dialog_box_manager:create(game)
     local map = game:get_map()
     local camera_x, camera_y, camera_width, camera_height = map:get_camera_position()
     local top = false
-    if self.vertical_position == "top" then
+    if self.position == "top" then
       top = true
-    elseif self.vertical_position == "auto" then
+    elseif self.position == "auto" then
       local hero_x, hero_y = map:get_entity("hero"):get_position()
       if hero_y >= camera_y + (camera_height / 2 + 10) then
         top = true
@@ -174,7 +175,12 @@ function dialog_box_manager:create(game)
     local x = camera_width / 2 - box_width / 2
     local y = top and x or (camera_height - x - box_height)
 
-    self.box_dst_position = { x = x, y = y }
+    if type(self.position) == "table" then
+      -- Custom position.
+      self.box_dst_position = self.position
+    else
+      self.box_dst_position = { x = x, y = y }
+    end
     self.choice_cursor_dst_position = { x = 0, y = 0 }
 
     self:show_dialog()
@@ -210,7 +216,7 @@ function dialog_box_manager:create(game)
     self.char_index = 1
     self.skipped = false
     self.full = false
-    self.need_letter_sound = self.style ~= "empty"
+    self.need_letter_sound = true
     self.selected_choice = nil
 
     if dialog.skip ~= nil then
@@ -510,10 +516,7 @@ function dialog_box_manager:create(game)
 
     self.dialog_surface:clear()
 
-    if self.style == "empty" then
-      -- Draw a dark rectangle.
-      dst_surface:fill_color({0, 0, 0}, x, y, 220, 60)
-    else
+    if self.style == "box" then
       -- Draw the dialog box.
       self.box_img:draw(self.dialog_surface, x, y)
     end

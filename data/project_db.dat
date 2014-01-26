@@ -23,6 +23,7 @@ map{ id = "dungeon_5_1f", description = "Dungeon 5 1F" }
 map{ id = "dungeon_5_b1", description = "Dungeon 5 B1" }
 map{ id = "dungeon_5_b2", description = "Dungeon 5 B2" }
 map{ id = "link_house", description = "Link's house" }
+map{ id = "intro", description = "Intro" }
 
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "house", description = "House" }

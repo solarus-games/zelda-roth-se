@@ -19,7 +19,7 @@ function game_manager:create(file)
   local game = sol.game.load(file)
   if not exists then
     -- This is a new savegame file.
-    game:set_starting_location("outside_c1", "from_link_house")
+    game:set_starting_location("intro")
     game:set_max_money(100)  -- TODO check this
     game:set_max_life(12)
     game:set_life(game:get_max_life())
