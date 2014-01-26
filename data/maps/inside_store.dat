@@ -8,84 +8,12 @@ properties{
 }
 
 tile{
-  layer = 0,
+  layer = 1,
   x = 624,
   y = 32,
   width = 592,
   height = 672,
   pattern = 303,
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = 255,
-}
-
-tile{
-  layer = 0,
-  x = 1200,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = 256,
-}
-
-tile{
-  layer = 0,
-  x = 1200,
-  y = 688,
-  width = 16,
-  height = 16,
-  pattern = 257,
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 688,
-  width = 16,
-  height = 16,
-  pattern = 258,
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 32,
-  width = 560,
-  height = 16,
-  pattern = 259,
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 48,
-  width = 16,
-  height = 640,
-  pattern = 260,
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 688,
-  width = 560,
-  height = 16,
-  pattern = 262,
-}
-
-tile{
-  layer = 0,
-  x = 1200,
-  y = 48,
-  width = 16,
-  height = 640,
-  pattern = 261,
 }
 
 tile{
@@ -1490,6 +1418,78 @@ tile{
   width = 24,
   height = 672,
   pattern = 51,
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 48,
+  width = 16,
+  height = 640,
+  pattern = 260,
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = 258,
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 32,
+  width = 560,
+  height = 16,
+  pattern = 259,
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = 256,
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 688,
+  width = 560,
+  height = 16,
+  pattern = 262,
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = 255,
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 48,
+  width = 16,
+  height = 640,
+  pattern = 261,
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = 257,
 }
 
 destructible{
