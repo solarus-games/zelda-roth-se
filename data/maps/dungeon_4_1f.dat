@@ -8051,7 +8051,7 @@ door{
   x = 792,
   y = 728,
   direction = 1,
-  sprite = "entities/door_boss_key",
+  sprite = "entities/door_big_key",
   opening_method = "interaction_if_item",
   opening_condition = "boss_key",
 }
