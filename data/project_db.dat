@@ -238,6 +238,7 @@ item{ id = "red_potion", description = "Red potion" }
 item{ id = "green_potion", description = "Green potion" }
 item{ id = "blue_potion", description = "Blue potion" }
 
+enemy{ id = "tentacle", description = "Tentacle" }
 
 entity{ id = "hammer_stake", description = "Hammer stake" }
 

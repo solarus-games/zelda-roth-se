@@ -6,7 +6,7 @@ properties{
   world = "dungeon_1",
   floor = 0,
   tileset = "dungeon_grayblue",
-  music = "same",
+  music = "light_world_dungeon",
 }
 
 tile{
@@ -3363,7 +3363,7 @@ dynamic_tile{
   y = 960,
   width = 48,
   height = 24,
-  name = "tile_4",
+  name = "weak_wall_b_closed_2",
   pattern = 49,
   enabled_at_start = true,
 }
@@ -3374,7 +3374,7 @@ dynamic_tile{
   y = 936,
   width = 48,
   height = 24,
-  name = "tile_3",
+  name = "weak_wall_b_closed",
   pattern = 52,
   enabled_at_start = true,
 }
@@ -3385,7 +3385,7 @@ dynamic_tile{
   y = 1064,
   width = 24,
   height = 48,
-  name = "tile_2",
+  name = "weak_wall_a_closed",
   pattern = 51,
   enabled_at_start = true,
 }
@@ -3396,7 +3396,7 @@ dynamic_tile{
   y = 1064,
   width = 24,
   height = 48,
-  name = "tile",
+  name = "weak_wall_a_closed_2",
   pattern = 50,
   enabled_at_start = true,
 }
@@ -3405,101 +3405,24 @@ door{
   layer = 1,
   x = 472,
   y = 968,
+  name = "door_a",
   direction = 1,
   sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
+  savegame_variable = "dungeon_1_1f_door_a",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_1_small_keys",
   opening_condition_consumed = true,
-}
-
-door{
-  layer = 1,
-  x = 472,
-  y = 936,
-  direction = 3,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
-  layer = 1,
-  x = 936,
-  y = 832,
-  direction = 0,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
-  layer = 1,
-  x = 968,
-  y = 832,
-  direction = 2,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
-  layer = 1,
-  x = 936,
-  y = 352,
-  direction = 0,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
-  layer = 1,
-  x = 968,
-  y = 352,
-  direction = 2,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
-  layer = 1,
-  x = 296,
-  y = 1080,
-  direction = 0,
-  sprite = "entities/door_very_weak_wall",
-  opening_method = "explosion",
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
   layer = 1,
   x = 328,
   y = 1080,
+  name = "weak_wall_a",
   direction = 2,
   sprite = "entities/door_very_weak_wall",
-  opening_method = "explosion",
-}
-
-door{
-  layer = 1,
-  x = 152,
-  y = 968,
-  direction = 1,
-  sprite = "entities/door_very_weak_wall",
-  opening_method = "explosion",
-}
-
-door{
-  layer = 1,
-  x = 152,
-  y = 936,
-  direction = 3,
-  sprite = "entities/door_very_weak_wall",
+  savegame_variable = "dungeon_1_1f_weak_wall_a",
   opening_method = "explosion",
 }
 
@@ -3536,40 +3459,143 @@ destructible{
   damage_on_enemies = 2,
 }
 
-tile{
-  layer = 2,
-  x = 112,
-  y = 960,
-  width = 96,
-  height = 8,
-  pattern = 662,
+destination{
+  layer = 1,
+  x = 160,
+  y = 1181,
+  name = "from_outside_west",
+  direction = 1,
 }
 
-tile{
-  layer = 2,
-  x = 112,
-  y = 952,
-  width = 96,
-  height = 8,
-  pattern = 663,
+destination{
+  layer = 1,
+  x = 640,
+  y = 1189,
+  name = "from_outside_east",
+  direction = 1,
 }
 
-tile{
-  layer = 2,
-  x = 312,
-  y = 1040,
-  width = 8,
-  height = 96,
-  pattern = 669,
+teletransporter{
+  layer = 1,
+  x = 152,
+  y = 1184,
+  width = 16,
+  height = 16,
+  destination_map = "outside_c1",
+  destination = "from_dungeon_1_west",
 }
 
-tile{
-  layer = 2,
-  x = 320,
-  y = 1040,
-  width = 8,
-  height = 96,
-  pattern = 668,
+teletransporter{
+  layer = 1,
+  x = 632,
+  y = 1192,
+  width = 16,
+  height = 16,
+  destination_map = "outside_c1",
+  destination = "from_dungeon_1_east",
+}
+
+door{
+  layer = 1,
+  x = 472,
+  y = 936,
+  name = "door_a_2",
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_1_1f_door_a",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_1_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
+}
+
+door{
+  layer = 1,
+  x = 936,
+  y = 832,
+  name = "door_b",
+  direction = 0,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_1_1f_door_b",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_1_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
+}
+
+door{
+  layer = 1,
+  x = 968,
+  y = 832,
+  name = "door_b_2",
+  direction = 2,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_1_1f_door_b",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_1_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
+}
+
+door{
+  layer = 1,
+  x = 936,
+  y = 352,
+  name = "door_c",
+  direction = 0,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_1_1f_door_c",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_1_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
+}
+
+door{
+  layer = 1,
+  x = 968,
+  y = 352,
+  name = "door_c_2",
+  direction = 2,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_1_1f_door_c",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_1_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
+}
+
+door{
+  layer = 1,
+  x = 296,
+  y = 1080,
+  name = "weak_wall_a_2",
+  direction = 0,
+  sprite = "entities/door_very_weak_wall",
+  savegame_variable = "dungeon_1_1f_weak_wall_a",
+  opening_method = "explosion",
+}
+
+door{
+  layer = 1,
+  x = 152,
+  y = 968,
+  name = "weak_wall_b_2",
+  direction = 1,
+  sprite = "entities/door_very_weak_wall",
+  savegame_variable = "dungeon_1_1f_weak_wall_b",
+  opening_method = "explosion",
+}
+
+door{
+  layer = 1,
+  x = 152,
+  y = 936,
+  name = "weak_wall_b",
+  direction = 3,
+  sprite = "entities/door_very_weak_wall",
+  savegame_variable = "dungeon_1_1f_weak_wall_b",
+  opening_method = "explosion",
 }
 
 tile{
@@ -4119,5 +4145,93 @@ tile{
   width = 8,
   height = 32,
   pattern = 162,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 312,
+  y = 1040,
+  width = 8,
+  height = 96,
+  name = "weak_wall_a_closed_3",
+  pattern = 669,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 320,
+  y = 1040,
+  width = 8,
+  height = 96,
+  name = "weak_wall_a_closed_4",
+  pattern = 668,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 312,
+  y = 1072,
+  width = 8,
+  height = 32,
+  name = "weak_wall_a_open",
+  pattern = 355,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 320,
+  y = 1072,
+  width = 8,
+  height = 32,
+  name = "weak_wall_a_open_2",
+  pattern = 354,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 112,
+  y = 952,
+  width = 96,
+  height = 8,
+  name = "weak_wall_b_open_3",
+  pattern = 663,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 112,
+  y = 960,
+  width = 96,
+  height = 8,
+  name = "weak_wall_b_open_4",
+  pattern = 662,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 144,
+  y = 960,
+  width = 32,
+  height = 8,
+  name = "weak_wall_b_open_2",
+  pattern = 187,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 144,
+  y = 952,
+  width = 32,
+  height = 8,
+  name = "weak_wall_b_open",
+  pattern = 188,
+  enabled_at_start = true,
 }
 

@@ -11654,6 +11654,33 @@ tile{
   pattern = 12,
 }
 
+tile{
+  layer = 0,
+  x = 424,
+  y = 704,
+  width = 16,
+  height = 8,
+  pattern = 1490,
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 704,
+  width = 16,
+  height = 8,
+  pattern = 1489,
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 704,
+  width = 16,
+  height = 8,
+  pattern = 1488,
+}
+
 destructible{
   layer = 0,
   x = 40,
@@ -12026,15 +12053,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1400,
-  y = 560,
-  width = 48,
-  height = 24,
-  pattern = 1362,
-}
-
-tile{
-  layer = 1,
   x = 408,
   y = 648,
   width = 48,
@@ -12083,8 +12101,8 @@ tile{
   x = 408,
   y = 688,
   width = 48,
-  height = 24,
-  pattern = 1362,
+  height = 16,
+  pattern = 1487,
 }
 
 tile{
