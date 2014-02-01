@@ -5,8 +5,27 @@ local quest_manager = {}
 -- Initializes map entity related behaviors.
 local function initialize_entities()
 
-  -- Nothing to do in this quest.
-  -- Destructibles don't show dialogs when the hero fails to lift or cut them.
+  -- Redefine how to calculate the damage received by the hero.
+  local hero_meta = sol.main.get_metatable("hero")
+
+  function hero_meta:on_taking_damage(damage)
+
+    -- Here, self is the hero.
+    local game = self:get_game()
+
+    -- In the parameter, the damage unit is 1/4 of a heart.
+
+    local defense = game:get_value("defense") or 0
+    if defense == 0 then
+      -- Multiply the damage by two if the hero has no defense at all.
+      damage = damage * 2
+    else
+      damage = damage / defense
+    end
+
+    game:remove_life(damage)
+  end
+
 end
 
 -- Performs global initializations specific to this quest.

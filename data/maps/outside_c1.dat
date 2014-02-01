@@ -9800,6 +9800,24 @@ enemy{
   treasure_name = "random",
 }
 
+enemy{
+  layer = 0,
+  x = 728,
+  y = 477,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 872,
+  y = 477,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 616,
