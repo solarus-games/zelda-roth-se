@@ -9782,6 +9782,24 @@ teletransporter{
   destination = "from_outside_east",
 }
 
+enemy{
+  layer = 0,
+  x = 600,
+  y = 1077,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 600,
+  y = 1093,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 616,

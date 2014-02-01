@@ -3470,7 +3470,7 @@ destination{
 destination{
   layer = 1,
   x = 640,
-  y = 1189,
+  y = 1181,
   name = "from_outside_east",
   direction = 1,
 }
@@ -3488,7 +3488,7 @@ teletransporter{
 teletransporter{
   layer = 1,
   x = 632,
-  y = 1192,
+  y = 1184,
   width = 16,
   height = 16,
   destination_map = "outside_c1",
