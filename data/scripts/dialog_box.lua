@@ -454,7 +454,7 @@ function dialog_box_manager:create(game)
     self.selected_choice = line_index
 
     if line_index ~= nil then
-      self.choice_cursor_dst_position.x = self.box_dst_position.x + self.choices[line_index] * 7
+      self.choice_cursor_dst_position.x = self.box_dst_position.x + self.choices[line_index] * 6
       self.choice_cursor_dst_position.y = self.box_dst_position.y - 8 + line_index * 16
     end
   end
