@@ -1,4 +1,4 @@
--- Maximum characters on a line: 40
+-- Maximum characters on a line: 48
 
 -- ---------------------
 -- Obtention d'un trésor
@@ -24,10 +24,10 @@ dialog{
   text = [[
 Tu as trouvé une épée !!!
 
-Tu vas pouvoir te défendre face aux
-monstres avec la touche C !
-Maintiens C enfoncé pour charger une
-attaque cyclone !!!
+Tu vas pouvoir te défendre face aux monstres
+avec la touche C !
+Maintiens C enfoncé pour charger une attaque
+cyclone !!!
 ]]
 }
 
@@ -35,24 +35,24 @@ attaque cyclone !!!
 dialog{
   id = "save_quit",
   text = [[
-             Déjà fatigué ?
-             $? Continuer
-       $? Sauvegarder et quitter
-      $? Quitter sans sauvegarder
+                 Déjà fatigué ?
+                 $? Continuer
+           $? Sauvegarder et quitter
+          $? Quitter sans sauvegarder
 ]]
 }
 
 -- Intro.
--- Maximum 34 characters by line in the intro.
+-- Maximum 40 characters by line in the intro.
 dialog{
   id = "intro.fresco_1",
   text = [[
 Le Royaume d'Hyrule était en paix
 depuis que Link, dernier chevalier
-hylien, avait vaincu le maléfique
+hylien, avait vaincu le maléfique Ganon
 
-Ganon et lui avait repris la
-précieuse Triforce.
+et lui avait repris la précieuse
+Triforce.
 ]]
 }
 
@@ -60,23 +60,23 @@ dialog{
   id = "intro.fresco_2",
   text = [[
 Nul ne sait quel voeu fit Link en
-touchant la Triforce, mais il eut
-comme effet de réunifier le monde
+touchant la Triforce, mais il eut comme
+effet de réunifier le monde de la
 
-de la lumière et celui des
-ténèbres, et ramena à la vie les
-descendants des 7 sages.
+lumière et celui des ténèbres, et
+ramena à la vie les descendants des 7
+sages.
 ]]
 }
 
 dialog{
   id = "intro.fresco_3",
   text = [[
-Link remit ensuite à la princesse
-Zelda la Triforce et l'épée
-Excalibur, et le peuple se mit à
+Link remit ensuite à la princesse Zelda
+la Triforce et l'épée Excalibur, et le
+peuple se mit à croire que la paix
 
-croire que la paix durerait.
+durerait.
 Mais le peuple se trompait...
 ]]
 }
@@ -84,23 +84,21 @@ Mais le peuple se trompait...
 dialog{
   id = "intro.fresco_4",
   text = [[
-Le souhait de Link à la Triforce
-eu hélas de fâcheux effets. Ganon
-et ses sbires furent ainsi
+Le souhait de Link à la Triforce eu
+hélas de fâcheux effets. Ganon et ses
+sbires furent ainsi ressuscités et
 
-ressuscités et s'apprêtèrent à
-attaquer.
+s'apprêtèrent à attaquer.
 ]]
 }
 
 dialog{
   id = "intro.fresco_5",
   text = [[
-Quelque part dans la forêt
-d'Hyrule, Link dort sans se
-douter que Ganon est passé à
+Quelque part dans la forêt d'Hyrule,
+Link dort sans se douter que Ganon est
+passé à l'attaque, jusqu'à ce qu'une
 
-l'attaque, jusqu'à ce qu'une
 voix familière lui parle dans son
 sommeil...
 ]]
@@ -109,24 +107,19 @@ sommeil...
 dialog{
   id = "link_house.zelda_message",
   text = [[
-A l'aide ! A l'aide ! C'est moi !
-C'est Zelda !
+A l'aide !
+A l'aide !
+C'est moi ! C'est Zelda !
 Je te parle par télépathie.
-
-Je suis retenue prisonnière dans le
-donjon du château ! J'ai besoin de ton
-aide !
-
-Ganon est de retour, et il a
-certainement dû trouver la Triforce à
-l'heure qu'il est...
-
-Viens vite au château Link, tu es mon
-seul espoir...
+Je suis retenue prisonnière dans le donjon du
+château ! J'ai besoin de ton aide !
+Ganon est de retour, et il a certainement dû
+trouver la Triforce à l'heure qu'il est...
+Viens vite au château Link, tu es mon seul
+espoir...
 
 
-AIDE : Appuie sur F1 pour consulter
-l'aide.
+AIDE : Appuie sur F1 pour consulter l'aide.
 ]]
 }
 
