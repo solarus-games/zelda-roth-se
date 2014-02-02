@@ -238,6 +238,7 @@ item{ id = "red_potion", description = "Red potion" }
 item{ id = "green_potion", description = "Green potion" }
 item{ id = "blue_potion", description = "Blue potion" }
 
+enemy{ id = "blue_spider", description = "Blue Spider" }
 enemy{ id = "skeleton", description = "Skeleton" }
 enemy{ id = "tentacle", description = "Tentacle" }
 

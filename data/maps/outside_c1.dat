@@ -9818,6 +9818,33 @@ enemy{
   treasure_name = "random",
 }
 
+enemy{
+  layer = 0,
+  x = 152,
+  y = 989,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 24,
+  y = 637,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 892,
+  y = 845,
+  direction = 3,
+  breed = "blue_spider",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 616,
