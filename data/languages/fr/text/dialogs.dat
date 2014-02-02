@@ -106,6 +106,30 @@ sommeil...
 ]]
 }
 
+dialog{
+  id = "link_house.zelda_message",
+  text = [[
+A l'aide ! A l'aide ! C'est moi !
+C'est Zelda !
+Je te parle par télépathie.
+
+Je suis retenue prisonnière dans le
+donjon du château ! J'ai besoin de ton
+aide !
+
+Ganon est de retour, et il a
+certainement dû trouver la Triforce à
+l'heure qu'il est...
+
+Viens vite au château Link, tu es mon
+seul espoir...
+
+
+AIDE : Appuie sur F1 pour consulter
+l'aide.
+]]
+}
+
 -- Pancarte devant chez Link.
 dialog{
   id = "outside_c1.link_house_sign",
@@ -113,6 +137,16 @@ dialog{
 N : Maison de Link
 O : Plaine d'Hyrule
 E : Temple de la Forêt
+]]
+}
+
+-- Pancarte devant le Temple de la Forêt.
+dialog{
+  id = "outside_c1.temple_sign",
+  text = [[
+Temple de la Forêt
+
+Sauvez les arbres, mangez du castor !!!
 ]]
 }
 

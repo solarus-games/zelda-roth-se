@@ -9358,6 +9358,7 @@ npc{
   direction = 3,
   subtype = "0",
   sprite = "entities/sign",
+  behavior = "dialog#outside_c1.temple_sign",
 }
 
 dynamic_tile{
@@ -9840,6 +9841,24 @@ enemy{
   layer = 0,
   x = 892,
   y = 845,
+  direction = 3,
+  breed = "blue_spider",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 924,
+  y = 1125,
+  direction = 3,
+  breed = "blue_spider",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 884,
+  y = 1173,
   direction = 3,
   breed = "blue_spider",
   treasure_name = "random",

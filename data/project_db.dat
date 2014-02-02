@@ -65,10 +65,12 @@ sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/hammer_stake_green", description = "Hammer stake (green)" }
 sprite{ id = "entities/hammer_stake_yellow", description = "Hammer stake (yellow)" }
 sprite{ id = "entities/hammer_stake_brown", description = "Hammer stake (brown)" }
+sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
+sprite{ id = "entities/snores", description = "Snoring (zzz)" }
 sprite{ id = "entities/solid_switch", description = "Solid switch" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
@@ -94,8 +96,11 @@ sprite{ id = "hero/shield3", description = "Hero shield 3" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
 sprite{ id = "hero/trail", description = "Hero trail" }
-sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
+sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/blue_spider", description = "Enemy: Blue Spider" }
+sprite{ id = "enemies/skeleton", description = "Enemy: Skeleton" }
+sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }

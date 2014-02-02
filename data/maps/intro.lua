@@ -64,7 +64,7 @@ local function next_fresco()
     hero:unfreeze()
 
     -- Go to the first map.
-    hero:teleport("link_house")
+    hero:teleport("link_house", "from_intro")
   end
 end
 

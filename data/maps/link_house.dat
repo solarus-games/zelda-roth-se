@@ -554,11 +554,39 @@ teletransporter{
   destination = "from_link_house",
 }
 
+npc{
+  layer = 1,
+  x = 64,
+  y = 37,
+  name = "bed",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/bed",
+}
+
+destination{
+  layer = 1,
+  x = 64,
+  y = 37,
+  name = "from_intro",
+  direction = 3,
+}
+
+npc{
+  layer = 1,
+  x = 72,
+  y = 29,
+  name = "snores",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/snores",
+}
+
 destination{
   layer = 1,
   x = 96,
   y = 45,
-  name = "start_position",
+  name = "from_savegame",
   direction = 3,
   default = true,
 }
