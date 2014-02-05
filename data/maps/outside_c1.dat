@@ -7031,9 +7031,9 @@ tile{
 tile{
   layer = 0,
   x = 352,
-  y = 416,
+  y = 424,
   width = 240,
-  height = 16,
+  height = 8,
   pattern = 194,
 }
 
@@ -7616,9 +7616,9 @@ tile{
 tile{
   layer = 0,
   x = 368,
-  y = 624,
+  y = 632,
   width = 224,
-  height = 16,
+  height = 8,
   pattern = 194,
 }
 
@@ -7697,27 +7697,27 @@ tile{
 tile{
   layer = 0,
   x = 472,
-  y = 624,
+  y = 632,
   width = 16,
-  height = 48,
+  height = 40,
   pattern = 812,
 }
 
 tile{
   layer = 0,
   x = 488,
-  y = 624,
+  y = 632,
   width = 8,
-  height = 48,
+  height = 40,
   pattern = 811,
 }
 
 tile{
   layer = 0,
   x = 464,
-  y = 624,
+  y = 632,
   width = 8,
-  height = 48,
+  height = 40,
   pattern = 810,
 }
 

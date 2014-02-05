@@ -70,6 +70,14 @@ animation{
 }
 
 animation{
+  name = "hammer",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 128, y = 0, frame_width = 24, frame_height = 24, origin_x = 8, origin_y = 21 },
+  },
+}
+
+animation{
   name = "bottle_2",
   src_image = "entities/items.png",
   directions = {

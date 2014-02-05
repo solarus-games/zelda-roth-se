@@ -31,6 +31,15 @@ cyclone !!!
 ]]
 }
 
+-- Marteau.
+dialog{
+  id = "_treasure.hammer.1",
+  text = [[
+Tu as trouvé le marteau magique !!!
+Utilise-le pour écraser les obstacles.
+]]
+}
+
 -- Sauvegarder & Quitter
 dialog{
   id = "save_quit",
