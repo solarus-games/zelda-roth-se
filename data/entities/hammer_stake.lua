@@ -1,13 +1,13 @@
 local stake = ...
 
-local function test_collision_with_hero_hammer(entity)
+local function test_collision_with_hero_hammer(stake, entity)
 
   if entity:get_type() ~= "hero" then
     -- Ignore collisions with entities other than the hero.
     return false
   end
 
-  if hero:get_animation() != "hammer" then
+  if hero:get_animation() ~= "hammer" then
     -- Don't bother testing collisions if the hero is not currently
     -- using the hammer.
     return false
@@ -43,12 +43,12 @@ local function test_collision_with_hero_hammer(entity)
       and y >= stake_top_left_y and y < stake_top_left_y + stake_height
 end
 
-stake:add_collision_detector(test_collision_with_hero_hammer, function(entity)
+stake:add_collision_test(test_collision_with_hero_hammer, function(stake, entity)
 
   -- Change the animation to down.
   stake:get_sprite():set_animation("down")
 
   -- Tell the hammer it has just successfully pushed something.
   game:get_item("hammer"):set_pushed_stake(true)
-end
+end)
 
