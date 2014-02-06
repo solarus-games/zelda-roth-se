@@ -1,4 +1,6 @@
 local stake = ...
+local game = stake:get_game()
+local hero = game:get_hero()
 
 local function test_collision_with_hero_hammer(stake, entity)
 
@@ -18,29 +20,20 @@ local function test_collision_with_hero_hammer(stake, entity)
   local x, y = entity:get_center_position()
   if hero_direction == 0 then
     -- Right.
-    x = x + 16
+    x = x + 12
   elseif hero_direction == 1 then
     -- Up.
-    y = y - 16
+    y = y - 12
   elseif hero_direction == 2 then
     -- Left.
-    x = x - 16
+    x = x - 12
   else
     -- Down.
-    y = y + 16
+    y = y + 12
   end
 
-  -- Test if this point overlaps the stake.
-  -- TODO add a function entity:get_bounding_box()
-  -- TODO add a function entity:overlaps(x, y, [width, height])
-  -- and then just do: return stake:overlaps(x, y)
-  local stake_x, stake_y = stake:get_position()
-  local stake_origin_x, stake_origin_y = stake:get_origin()
-  local stake_top_left_x, stake_top_left_y = stake_x - stake_origin_x, stake_y - stake_origin_y
-  local stake_width, stake_height = stake:get_size()
-
-  return x >= stake_top_left_x and x < stake_top_left_x + stake_width
-      and y >= stake_top_left_y and y < stake_top_left_y + stake_height
+  -- Test if this point is inside the stake.
+  return stake:overlaps(x, y)
 end
 
 stake:add_collision_test(test_collision_with_hero_hammer, function(stake, entity)
@@ -50,5 +43,8 @@ stake:add_collision_test(test_collision_with_hero_hammer, function(stake, entity
 
   -- Tell the hammer it has just successfully pushed something.
   game:get_item("hammer"):set_pushed_stake(true)
+
+  -- Disable collision detection, this is no longer needed.
+  stake:clear_collision_tests()
 end)
 
