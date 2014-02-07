@@ -2,6 +2,9 @@ local stake = ...
 local game = stake:get_game()
 local hero = game:get_hero()
 
+-- Initially, the stake is an obstacle for any entity.
+stake:set_traversable_by(false)
+
 local function test_collision_with_hero_hammer(stake, entity)
 
   if entity:get_type() ~= "hero" then
@@ -43,6 +46,9 @@ stake:add_collision_test(test_collision_with_hero_hammer, function(stake, entity
 
   -- Tell the hammer it has just successfully pushed something.
   game:get_item("hammer"):set_pushed_stake(true)
+
+  -- Allow entities to traverse this.
+  stake:set_traversable_by(true)
 
   -- Disable collision detection, this is no longer needed.
   stake:clear_collision_tests()
