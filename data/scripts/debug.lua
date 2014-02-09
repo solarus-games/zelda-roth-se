@@ -8,19 +8,16 @@ function debug:on_key_pressed(key, modifiers)
   if key == "f1" then
     if sol.game.exists("save1.dat") then
       sol.main.game = sol.game.load("save1.dat")
-      sol.menu.stop_all(sol.main)
       sol.main:start_savegame(sol.main.game)
     end
   elseif key == "f2" then
     if sol.game.exists("save2.dat") then
       sol.main.game = sol.game.load("save2.dat")
-      sol.menu.stop_all(sol.main)
       sol.main:start_savegame(sol.main.game)
     end
   elseif key == "f3" then
     if sol.game.exists("save3.dat") then
       sol.main.game = sol.game.load("save3.dat")
-      sol.menu.stop_all(sol.main)
       sol.main:start_savegame(sol.main.game)
     end
   elseif key == "f12" and not console.enabled then

@@ -4,6 +4,8 @@ local game_manager = require("scripts/game_manager")
 local debug = require("scripts/debug")
 local quest_manager = require("scripts/quest_manager")
 
+local initial_menus  -- Menus before starting a game.
+
 function sol.main:on_started()
 
   -- Make quest-specific initializations.
@@ -21,18 +23,25 @@ function sol.main:on_started()
   local solarus_logo = require("menus/solarus_logo")
   local presentation_screen = require("menus/presentation_screen")
   local title_screen = require("menus/title_screen")
+  initial_menus = {
+    solarus_logo,
+    presentation_screen,
+    title_screen
+  }
 
   -- Show the Solarus logo initially.
-  sol.menu.start(self, solarus_logo)
-  solarus_logo.on_finished = function()
-    sol.menu.start(self, presentation_screen)
+  local current_menu = initial_menus[1]
+  sol.menu.start(self, current_menu)
+  for i, menu in ipairs(initial_menus) do
+    if i ~= 1 then
+      current_menu.on_finished = function()
+        sol.menu.start(self, menu)
+      end
+      current_menu = menu
+    end
   end
 
-  presentation_screen.on_finished = function()
-    sol.menu.start(self, title_screen)
-  end
-
-  title_screen.on_finished = function()
+  initial_menus[#initial_menus].on_finished = function()
     sol.main:start_savegame(game_manager:create("save1.dat"))
   end
 
@@ -40,6 +49,10 @@ end
 
 -- Starts a game.
 function sol.main:start_savegame(game)
+
+  for _, menu in ipairs(initial_menus) do
+    sol.menu.stop(menu)
+  end
 
   sol.main.game = game
   game:start()
