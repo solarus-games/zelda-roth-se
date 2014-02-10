@@ -35,13 +35,29 @@ local function initialize_sensor()
   function sensor_meta:on_activated()
 
     local hero = self:get_map():get_hero()
+    local name = self:get_name()
 
     -- Sensors named "to_layer_X_sensor" move the hero on that layer.
-    -- TODO a custom entity instead to block enemies and thrown items?
-    local layer = self:get_name():match("to_layer_([0-9])_sensor")
+    -- TODO a custom entity or a wall to block enemies and thrown items?
+    local layer = name:match("^to_layer_([0-9])_sensor")
     if layer ~= nil then
       local x, y = hero:get_position()
       hero:set_position(x, y, layer)
+    end
+  end
+end
+
+-- Initialize dynamic tile behavior specific to this quest.
+local function initialize_dynamic_tile()
+
+  local dynamic_tile_meta = sol.main.get_metatable("dynamic_tile")
+
+  function dynamic_tile_meta:on_created()
+
+    local name = self:get_name()
+
+    if name:match("^invisible_tile") then
+      self:set_visible(false)
     end
   end
 end
@@ -51,6 +67,7 @@ local function initialize_entities()
 
   initialize_hero()
   initialize_sensor()
+  initialize_dynamic_tile()
 end
 
 -- Performs global initializations specific to this quest.

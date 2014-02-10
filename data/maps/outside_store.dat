@@ -8719,6 +8719,33 @@ tile{
   pattern = 1088,
 }
 
+tile{
+  layer = 0,
+  x = 64,
+  y = 104,
+  width = 16,
+  height = 40,
+  pattern = 812,
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 104,
+  width = 8,
+  height = 40,
+  pattern = 811,
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 104,
+  width = 8,
+  height = 40,
+  pattern = 810,
+}
+
 destructible{
   layer = 0,
   x = 24,
@@ -8891,6 +8918,27 @@ destructible{
   destruction_sound = "stone",
   weight = 2,
   damage_on_enemies = 4,
+}
+
+wall{
+  layer = 0,
+  x = 64,
+  y = 104,
+  width = 16,
+  height = 40,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  layer = 0,
+  x = 72,
+  y = 133,
+  width = 16,
+  height = 16,
+  name = "to_layer_1_sensor",
 }
 
 tile{
@@ -9658,6 +9706,59 @@ custom_entity{
   direction = 3,
   sprite = "entities/hammer_stake_brown",
   model = "hammer_stake",
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 56,
+  y = 104,
+  width = 8,
+  height = 40,
+  name = "invisible_tile",
+  pattern = 810,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 64,
+  y = 104,
+  width = 16,
+  height = 40,
+  name = "invisible_tile_2",
+  pattern = 812,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 80,
+  y = 104,
+  width = 8,
+  height = 40,
+  name = "invisible_tile_3",
+  pattern = 811,
+  enabled_at_start = true,
+}
+
+sensor{
+  layer = 1,
+  x = 72,
+  y = 141,
+  width = 16,
+  height = 16,
+  name = "to_layer_0_sensor",
+}
+
+wall{
+  layer = 1,
+  x = 64,
+  y = 104,
+  width = 16,
+  height = 40,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
 }
 
 tile{
