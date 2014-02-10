@@ -8837,6 +8837,42 @@ tile{
   pattern = 810,
 }
 
+tile{
+  layer = 0,
+  x = 464,
+  y = 632,
+  width = 8,
+  height = 8,
+  pattern = 810,
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 632,
+  width = 8,
+  height = 8,
+  pattern = 811,
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 632,
+  width = 16,
+  height = 8,
+  pattern = 812,
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 640,
+  width = 16,
+  height = 8,
+  pattern = 1497,
+}
+
 destructible{
   layer = 0,
   x = 24,
@@ -9443,6 +9479,24 @@ enemy{
   treasure_name = "random",
 }
 
+sensor{
+  layer = 0,
+  x = 480,
+  y = 661,
+  width = 16,
+  height = 16,
+  name = "to_layer_1_sensor",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 632,
+  width = 96,
+  height = 8,
+  pattern = 194,
+}
+
 tile{
   layer = 1,
   x = 576,
@@ -9486,15 +9540,6 @@ tile{
   width = 224,
   height = 96,
   pattern = 7,
-}
-
-tile{
-  layer = 1,
-  x = 368,
-  y = 632,
-  width = 224,
-  height = 8,
-  pattern = 194,
 }
 
 tile{
@@ -10033,8 +10078,17 @@ tile{
   x = 472,
   y = 632,
   width = 16,
+  height = 32,
+  pattern = 1499,
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 632,
+  width = 96,
   height = 8,
-  pattern = 812,
+  pattern = 194,
 }
 
 tile{
@@ -10042,8 +10096,8 @@ tile{
   x = 464,
   y = 632,
   width = 8,
-  height = 8,
-  pattern = 810,
+  height = 40,
+  pattern = 1500,
 }
 
 tile{
@@ -10051,8 +10105,8 @@ tile{
   x = 488,
   y = 632,
   width = 8,
-  height = 8,
-  pattern = 811,
+  height = 40,
+  pattern = 1500,
 }
 
 destructible{
@@ -10105,6 +10159,15 @@ destination{
   y = 605,
   name = "from_link_house",
   direction = 3,
+}
+
+sensor{
+  layer = 1,
+  x = 480,
+  y = 669,
+  width = 16,
+  height = 16,
+  name = "to_layer_0_sensor",
 }
 
 tile{

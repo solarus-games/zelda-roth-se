@@ -2,8 +2,8 @@
 -- that is, things not related to a particular savegame.
 local quest_manager = {}
 
--- Initializes map entity related behaviors.
-local function initialize_entities()
+-- Initialize hero behavior specific to this quest.
+local function initialize_hero()
 
   -- Redefine how to calculate the damage received by the hero.
   local hero_meta = sol.main.get_metatable("hero")
@@ -25,7 +25,32 @@ local function initialize_entities()
 
     game:remove_life(damage)
   end
+end
 
+-- Initialize sensor behavior specific to this quest.
+local function initialize_sensor()
+
+  local sensor_meta = sol.main.get_metatable("sensor")
+
+  function sensor_meta:on_activated()
+
+    local hero = self:get_map():get_hero()
+
+    -- Sensors named "to_layer_X_sensor" move the hero on that layer.
+    -- TODO a custom entity instead to block enemies and thrown items?
+    local layer = self:get_name():match("to_layer_([0-9])_sensor")
+    if layer ~= nil then
+      local x, y = hero:get_position()
+      hero:set_position(x, y, layer)
+    end
+  end
+end
+
+-- Initializes map entity related behaviors.
+local function initialize_entities()
+
+  initialize_hero()
+  initialize_sensor()
 end
 
 -- Performs global initializations specific to this quest.
@@ -38,7 +63,7 @@ end
 -- depending on the current language.
 function quest_manager:get_dialog_font()
 
-  -- This quest use the "alttp" bitmap font,
+  -- This quest uses the "alttp" bitmap font,
   -- no matter the current language.
   return "alttp"
 end
