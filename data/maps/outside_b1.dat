@@ -12868,6 +12868,173 @@ destructible{
   can_be_cut = true,
 }
 
+custom_entity{
+  layer = 0,
+  x = 616,
+  y = 653,
+  width = 104,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 720,
+  y = 645,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 728,
+  y = 589,
+  width = 8,
+  height = 56,
+  direction = 2,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 736,
+  y = 581,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 744,
+  y = 573,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 752,
+  y = 565,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 760,
+  y = 557,
+  width = 96,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 856,
+  y = 565,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 864,
+  y = 573,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 872,
+  y = 581,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 880,
+  y = 589,
+  width = 8,
+  height = 56,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 888,
+  y = 645,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+destination{
+  layer = 0,
+  x = 808,
+  y = 605,
+  direction = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 896,
+  y = 653,
+  width = 464,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 952,
+  y = 581,
+  width = 352,
+  height = 8,
+  direction = 3,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 936,
+  y = 517,
+  width = 8,
+  height = 56,
+  direction = 2,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 944,
+  y = 573,
+  width = 8,
+  height = 8,
+  direction = 3,
+  model = "cliff",
+}
+
 tile{
   layer = 2,
   x = 328,
