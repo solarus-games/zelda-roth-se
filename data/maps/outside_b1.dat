@@ -10027,9 +10027,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 1464,
+  x = 1480,
   y = 320,
-  width = 400,
+  width = 384,
   height = 16,
   pattern = 1239,
 }
@@ -10146,7 +10146,7 @@ tile{
   layer = 0,
   x = 1416,
   y = 320,
-  width = 16,
+  width = 32,
   height = 16,
   pattern = 1239,
 }
@@ -10234,7 +10234,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1432,
+  x = 1448,
   y = 320,
   width = 8,
   height = 16,
@@ -10243,7 +10243,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1456,
+  x = 1472,
   y = 320,
   width = 8,
   height = 16,
@@ -10252,7 +10252,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1440,
+  x = 1456,
   y = 320,
   width = 16,
   height = 16,
@@ -10261,7 +10261,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1440,
+  x = 1456,
   y = 328,
   width = 16,
   height = 8,
@@ -12870,9 +12870,60 @@ destructible{
 
 destination{
   layer = 0,
-  x = 808,
-  y = 605,
+  x = 568,
+  y = 709,
   direction = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 488,
+  y = 581,
+  width = 176,
+  height = 8,
+  direction = 3,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 424,
+  y = 517,
+  width = 176,
+  height = 8,
+  direction = 3,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 552,
+  y = 685,
+  width = 224,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 0,
+  x = 552,
+  y = 653,
+  width = 160,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+destructible{
+  layer = 0,
+  x = 1432,
+  y = 349,
+  treasure_name = "random",
+  sprite = "entities/bush_purple",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
 }
 
 tile{

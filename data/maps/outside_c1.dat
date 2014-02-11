@@ -10166,8 +10166,8 @@ destructible{
 
 destination{
   layer = 1,
-  x = 136,
-  y = 213,
+  x = 480,
+  y = 605,
   name = "from_link_house",
   direction = 3,
 }
