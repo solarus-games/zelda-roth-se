@@ -7655,10 +7655,10 @@ wall{
   y = 632,
   width = 16,
   height = 40,
-  stops_hero = true,
   stops_enemies = true,
   stops_npcs = true,
   stops_blocks = true,
+  stops_projectiles = true,
 }
 
 destructible{
@@ -8097,7 +8097,7 @@ sensor{
   y = 661,
   width = 16,
   height = 16,
-  name = "to_layer_1_sensor",
+  name = "layer_up_sensor",
 }
 
 destructible{
@@ -10089,23 +10089,34 @@ tile{
 
 dynamic_tile{
   layer = 1,
-  x = 464,
-  y = 632,
-  width = 8,
-  height = 40,
-  name = "invisible_tile_2",
-  pattern = 810,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 1,
   x = 472,
   y = 632,
   width = 16,
   height = 40,
   name = "invisible_tile",
   pattern = 812,
+  enabled_at_start = true,
+}
+
+wall{
+  layer = 1,
+  x = 472,
+  y = 632,
+  width = 16,
+  height = 40,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 464,
+  y = 632,
+  width = 8,
+  height = 40,
+  name = "invisible_tile_2",
+  pattern = 810,
   enabled_at_start = true,
 }
 
@@ -10178,19 +10189,7 @@ sensor{
   y = 669,
   width = 16,
   height = 16,
-  name = "to_layer_0_sensor",
-}
-
-wall{
-  layer = 1,
-  x = 472,
-  y = 632,
-  width = 16,
-  height = 40,
-  stops_hero = true,
-  stops_enemies = true,
-  stops_npcs = true,
-  stops_blocks = true,
+  name = "layer_down_sensor",
 }
 
 destructible{

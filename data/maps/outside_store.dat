@@ -9697,6 +9697,28 @@ tile{
   pattern = 1082,
 }
 
+dynamic_tile{
+  layer = 1,
+  x = 64,
+  y = 104,
+  width = 16,
+  height = 40,
+  name = "invisible_tile_2",
+  pattern = 812,
+  enabled_at_start = true,
+}
+
+wall{
+  layer = 1,
+  x = 64,
+  y = 104,
+  width = 16,
+  height = 40,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
 custom_entity{
   layer = 1,
   x = 72,
@@ -9721,17 +9743,6 @@ dynamic_tile{
 
 dynamic_tile{
   layer = 1,
-  x = 64,
-  y = 104,
-  width = 16,
-  height = 40,
-  name = "invisible_tile_2",
-  pattern = 812,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 1,
   x = 80,
   y = 104,
   width = 8,
@@ -9748,17 +9759,6 @@ sensor{
   width = 16,
   height = 16,
   name = "to_layer_0_sensor",
-}
-
-wall{
-  layer = 1,
-  x = 64,
-  y = 104,
-  width = 16,
-  height = 40,
-  stops_enemies = true,
-  stops_npcs = true,
-  stops_blocks = true,
 }
 
 tile{

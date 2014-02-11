@@ -39,10 +39,16 @@ local function initialize_sensor()
 
     -- Sensors named "to_layer_X_sensor" move the hero on that layer.
     -- TODO a custom entity or a wall to block enemies and thrown items?
-    local layer = name:match("^to_layer_([0-9])_sensor")
-    if layer ~= nil then
-      local x, y = hero:get_position()
-      hero:set_position(x, y, layer)
+    if name:match("^layer_up_sensor") then
+      local x, y, layer = hero:get_position()
+      if layer < 2 then
+        hero:set_position(x, y, layer + 1)
+      end
+    elseif name:match("^layer_down_sensor") then
+      local x, y, layer = hero:get_position()
+      if layer > 0 then
+        hero:set_position(x, y, layer - 1)
+      end
     end
   end
 end
