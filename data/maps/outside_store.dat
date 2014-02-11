@@ -911,7 +911,7 @@ tile{
   layer = 0,
   x = 48,
   y = 104,
-  width = 48,
+  width = 16,
   height = 8,
   pattern = 194,
 }
@@ -8721,7 +8721,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
+  x = 72,
   y = 104,
   width = 16,
   height = 40,
@@ -8730,7 +8730,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 80,
+  x = 88,
   y = 104,
   width = 8,
   height = 40,
@@ -8739,7 +8739,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 56,
+  x = 64,
   y = 104,
   width = 8,
   height = 40,
@@ -8922,7 +8922,7 @@ destructible{
 
 wall{
   layer = 0,
-  x = 64,
+  x = 72,
   y = 104,
   width = 16,
   height = 40,
@@ -8934,7 +8934,7 @@ wall{
 
 sensor{
   layer = 0,
-  x = 72,
+  x = 80,
   y = 133,
   width = 16,
   height = 16,
@@ -9699,7 +9699,7 @@ tile{
 
 dynamic_tile{
   layer = 1,
-  x = 64,
+  x = 72,
   y = 104,
   width = 16,
   height = 40,
@@ -9710,7 +9710,7 @@ dynamic_tile{
 
 wall{
   layer = 1,
-  x = 64,
+  x = 72,
   y = 104,
   width = 16,
   height = 40,
@@ -9732,7 +9732,7 @@ custom_entity{
 
 dynamic_tile{
   layer = 1,
-  x = 56,
+  x = 64,
   y = 104,
   width = 8,
   height = 40,
@@ -9743,7 +9743,7 @@ dynamic_tile{
 
 dynamic_tile{
   layer = 1,
-  x = 80,
+  x = 88,
   y = 104,
   width = 8,
   height = 40,
@@ -9754,7 +9754,7 @@ dynamic_tile{
 
 sensor{
   layer = 1,
-  x = 72,
+  x = 80,
   y = 141,
   width = 16,
   height = 16,
