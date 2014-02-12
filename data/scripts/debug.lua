@@ -1,4 +1,5 @@
 local console = require("scripts/console")
+local game_manager = require("scripts/game_manager")
 
 local debug = {}
 
@@ -7,18 +8,15 @@ function debug:on_key_pressed(key, modifiers)
   local handled = true
   if key == "f1" then
     if sol.game.exists("save1.dat") then
-      sol.main.game = sol.game.load("save1.dat")
-      sol.main:start_savegame(sol.main.game)
+      sol.main:start_savegame(game_manager:create("save1.dat"))
     end
   elseif key == "f2" then
     if sol.game.exists("save2.dat") then
-      sol.main.game = sol.game.load("save2.dat")
-      sol.main:start_savegame(sol.main.game)
+      sol.main:start_savegame(game_manager:create("save2.dat"))
     end
   elseif key == "f3" then
     if sol.game.exists("save3.dat") then
-      sol.main.game = sol.game.load("save3.dat")
-      sol.main:start_savegame(sol.main.game)
+      sol.main:start_savegame(game_manager:create("save3.dat"))
     end
   elseif key == "f12" and not console.enabled then
     sol.menu.start(sol.main, console)
