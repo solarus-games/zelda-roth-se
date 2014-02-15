@@ -41,6 +41,17 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 1200,
+  width = 960,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside_c3",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 368,
@@ -8404,17 +8415,6 @@ tile{
 
 teletransporter{
   layer = 1,
-  x = 0,
-  y = 1200,
-  width = 960,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "outside_c3",
-  destination = "_side",
-}
-
-teletransporter{
-  layer = 1,
   x = -16,
   y = 0,
   width = 16,
@@ -9447,6 +9447,17 @@ custom_entity{
   height = 8,
   direction = 3,
   model = "cliff",
+}
+
+teletransporter{
+  layer = 1,
+  x = 0,
+  y = 1200,
+  width = 960,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside_c3",
+  destination = "_side",
 }
 
 tile{
@@ -10827,5 +10838,16 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 1200,
+  width = 960,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside_c3",
+  destination = "_side",
 }
 
