@@ -1835,42 +1835,6 @@ tile{
   pattern = 190,
 }
 
-tile{
-  layer = 0,
-  x = 1888,
-  y = 48,
-  width = 32,
-  height = 32,
-  pattern = 49,
-}
-
-tile{
-  layer = 0,
-  x = 1888,
-  y = 32,
-  width = 32,
-  height = 16,
-  pattern = 387,
-}
-
-tile{
-  layer = 0,
-  x = 1904,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = 1321,
-}
-
-tile{
-  layer = 0,
-  x = 1888,
-  y = 48,
-  width = 8,
-  height = 32,
-  pattern = 304,
-}
-
 teletransporter{
   layer = 0,
   x = 1920,
@@ -1934,15 +1898,6 @@ sensor{
   width = 16,
   height = 16,
   name = "layer_up_sensor_5",
-}
-
-sensor{
-  layer = 0,
-  x = 1912,
-  y = 61,
-  width = 16,
-  height = 16,
-  name = "layer_up_sensor_6",
 }
 
 tile{
@@ -7453,15 +7408,40 @@ tile{
   pattern = 295,
 }
 
-dynamic_tile{
+tile{
   layer = 1,
   x = 1888,
   y = 48,
   width = 32,
   height = 32,
-  name = "invisible_tile_18",
   pattern = 49,
-  enabled_at_start = true,
+}
+
+tile{
+  layer = 1,
+  x = 1904,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = 1321,
+}
+
+tile{
+  layer = 1,
+  x = 1888,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = 387,
+}
+
+tile{
+  layer = 1,
+  x = 1888,
+  y = 48,
+  width = 8,
+  height = 32,
+  pattern = 304,
 }
 
 wall{
@@ -8310,39 +8290,6 @@ sensor{
   width = 16,
   height = 16,
   name = "layer_down_sensor_5",
-}
-
-dynamic_tile{
-  layer = 1,
-  x = 1888,
-  y = 32,
-  width = 32,
-  height = 16,
-  name = "invisible_tile_16",
-  pattern = 387,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 1,
-  x = 1888,
-  y = 48,
-  width = 8,
-  height = 32,
-  name = "invisible_tile_17",
-  pattern = 304,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 1,
-  x = 1904,
-  y = 64,
-  width = 16,
-  height = 16,
-  name = "invisible_tile_19",
-  pattern = 1321,
-  enabled_at_start = true,
 }
 
 tile{
