@@ -8,7 +8,7 @@ local background_img
 -- Returns the image containing most graphics needed for the GUI:
 -- menus/gui.png.
 local function get_frames_img()
-  
+
   if frames_img == nil then
     frames_img = sol.surface.create("menus/gui.png")
   end
