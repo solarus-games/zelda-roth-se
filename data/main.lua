@@ -4,7 +4,10 @@ local game_manager = require("scripts/game_manager")
 local debug = require("scripts/debug")
 local quest_manager = require("scripts/quest_manager")
 
-local initial_menus  -- Menus before starting a game.
+local solarus_logo = require("menus/solarus_logo")
+local presentation_screen = require("menus/presentation_screen")
+local title_screen = require("menus/title_screen")
+local savegames_menu = require("menus/savegames")
 
 function sol.main:on_started()
 
@@ -20,29 +23,18 @@ function sol.main:on_started()
   -- Setting a language is useful to display text and dialogs.
   sol.language.set_language("fr")
 
-  local solarus_logo = require("menus/solarus_logo")
-  local presentation_screen = require("menus/presentation_screen")
-  local title_screen = require("menus/title_screen")
-  initial_menus = {
-    solarus_logo,
-    presentation_screen,
-    title_screen
-  }
-
   -- Show the Solarus logo initially.
-  local current_menu = initial_menus[1]
-  sol.menu.start(self, current_menu)
-  for i, menu in ipairs(initial_menus) do
-    if i ~= 1 then
-      current_menu.on_finished = function()
-        sol.menu.start(self, menu)
-      end
-      current_menu = menu
-    end
+  sol.menu.start(self, solarus_logo)
+  solarus_logo.on_finished = function()
+    sol.menu.start(self, presentation_screen)
   end
 
-  initial_menus[#initial_menus].on_finished = function()
-    sol.main:start_savegame(game_manager:create("save1.dat"))
+  presentation_screen.on_finished = function()
+    sol.menu.start(self, title_screen)
+  end
+
+  title_screen.on_finished = function()
+    sol.menu.start(self, savegames_menu)
   end
 
 end
@@ -50,8 +42,12 @@ end
 -- Starts a game.
 function sol.main:start_savegame(game)
 
+  -- Stop initial menus if any.
   for _, menu in ipairs(initial_menus) do
-    sol.menu.stop(menu)
+    sol.menu.stop(solarus_logo)
+    sol.menu.stop(presentation_screen)
+    sol.menu.stop(title_screen)
+    sol.menu.stop(savegames_menu)
   end
 
   sol.main.game = game

@@ -1,1 +1,4 @@
+text{ key = "savegames_menu.title", value = "ECRAN DE SELECTION" }
+text{ key = "savegames_menu.options", value = "OPTIONS" }
+text{ key = "savegames_menu.records", value = "RECORDS" }
 
