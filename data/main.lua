@@ -43,12 +43,10 @@ end
 function sol.main:start_savegame(game)
 
   -- Stop initial menus if any.
-  for _, menu in ipairs(initial_menus) do
-    sol.menu.stop(solarus_logo)
-    sol.menu.stop(presentation_screen)
-    sol.menu.stop(title_screen)
-    sol.menu.stop(savegames_menu)
-  end
+  sol.menu.stop(solarus_logo)
+  sol.menu.stop(presentation_screen)
+  sol.menu.stop(title_screen)
+  sol.menu.stop(savegames_menu)
 
   sol.main.game = game
   game:start()

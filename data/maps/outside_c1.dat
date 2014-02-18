@@ -8413,6 +8413,15 @@ tile{
   pattern = 58,
 }
 
+tile{
+  layer = 1,
+  x = 432,
+  y = 528,
+  width = 96,
+  height = 48,
+  pattern = 1497,
+}
+
 teletransporter{
   layer = 1,
   x = -16,
@@ -9025,18 +9034,6 @@ destination{
   y = 605,
   name = "from_link_house",
   direction = 3,
-}
-
-wall{
-  layer = 1,
-  x = 432,
-  y = 528,
-  width = 96,
-  height = 48,
-  stops_hero = true,
-  stops_enemies = true,
-  stops_npcs = true,
-  stops_blocks = true,
 }
 
 custom_entity{
