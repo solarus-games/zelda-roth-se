@@ -118,6 +118,17 @@ function gui_designer:create(width, height)
     text_surface:draw(canvas, x, y)
   end
 
+  -- Adds an image.
+  function widget:make_image(src_surface, dst_x, dst_y)
+    local src_width, src_height = src_surface:get_size()
+    widget:make_image_region(src_surface, 0, 0, src_width, src_height, dst_x, dst_y)
+  end
+
+  -- Adds a region of an image.
+  function widget:make_image_region(src_surface, src_x, src_y, src_width, src_height, dst_x, dst_y)
+    src_surface:draw(src_x, src_y, src_width, src_height, canvas, dst_x, dst_y)
+  end
+
   -- Draws the widget.
   function widget:draw(dst_surface)
     canvas:draw(dst_surface)

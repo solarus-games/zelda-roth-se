@@ -42,7 +42,7 @@ end
 -- Starts a game.
 function sol.main:start_savegame(game)
 
-  -- Stop initial menus if any.
+  -- Skip initial menus if any.
   sol.menu.stop(solarus_logo)
   sol.menu.stop(presentation_screen)
   sol.menu.stop(title_screen)
