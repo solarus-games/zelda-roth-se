@@ -2,13 +2,11 @@ local savegames_menu = {}
 
 local gui_designer = require("menus/lib/gui_designer")
 local layout
+local savegame_surfaces = {}
 local tr = sol.language.get_string
 
-function savegames_menu:on_started()
+local function build_layout()
 
-  sol.audio.play_music("game_over")
-
-  -- Build the layout.
   layout = gui_designer:create(320, 240)
 
   layout:make_background()
@@ -26,6 +24,30 @@ function savegames_menu:on_started()
   layout:make_text("3.", 44, 152)
 end
 
+local function read_savegames()
+
+  for i = 1, 3 do
+    local file_name = "save" .. i .. ".dat"
+    local savegame = sol.game.load(slot.file_name)
+    local surface = sol.surface.create(272, 16)
+    savegames_surfaces[i] = surface
+
+    if sol.game.exists(slot.file_name) then
+      -- Existing file.
+
+
+    end
+  end
+end
+
+function savegames_menu:on_started()
+
+  sol.audio.play_music("game_over")
+
+  build_layout()
+  read_savegames()
+end
+
 function savegames_menu:on_finished()
   layout = nil
 end
@@ -33,6 +55,9 @@ end
 function savegames_menu:on_draw(dst_surface)
 
   layout:draw(dst_surface)
+  for i = 1, 3 do
+    savegame_surfaces[i]:draw(dst_surface)
+  end
 end
 
 return savegames_menu
