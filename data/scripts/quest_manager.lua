@@ -13,7 +13,7 @@ local function initialize_hero()
     -- Here, self is the hero.
     local game = self:get_game()
 
-    -- In the parameter, the damage unit is 1/4 of a heart.
+    -- In the parameter, the damage unit is 1/2 of a heart.
 
     local defense = game:get_value("defense") or 0
     if defense == 0 then

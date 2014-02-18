@@ -3,7 +3,7 @@ local enemy = ...
 -- Skeletor: goes in a random direction.
 
 enemy:set_life(3)
-enemy:set_damage(4)
+enemy:set_damage(2)
 
 local sprite = enemy:create_sprite("enemies/skeleton")
 
