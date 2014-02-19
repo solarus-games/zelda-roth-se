@@ -1,6 +1,7 @@
 local savegames_menu = {}
 
 local gui_designer = require("menus/lib/gui_designer")
+local game_manager = require("scripts/game_manager")
 local layout
 local savegames_surfaces = {}
 local games = {}
@@ -32,7 +33,8 @@ end
 local function draw_hearts(game, game_surface)
 
   local life = game:get_life()
-  for j = 1, 40 do
+  local max_life = game:get_max_life()
+  for j = 1, max_life do
     if j % 2 == 0 then
       local x, y
       if j <= 20 then
@@ -72,7 +74,7 @@ local function read_savegames()
 
     if sol.game.exists(file_name) then
       -- Existing file.
-      local game = sol.game.load(file_name)
+      local game = game_manager:create(file_name)
       games[i] = game
 
       -- Triforce icon.
@@ -156,10 +158,19 @@ function savegames_menu:on_key_pressed(key)
     sol.audio.play_sound("cursor")
     handled = true
   elseif key == "space" then
-    if cursor_position <= 3 and games[cursor_position] ~= nil then
-      sol.audio.play_sound("ok")
-      sol.main:start_savegame(games[cursor_position])
-      handled = true
+    if cursor_position <= 3 then
+
+      if games[cursor_position] ~= nil then
+        -- Start an existing savegame.
+        sol.audio.play_sound("ok")
+        sol.main:start_savegame(games[cursor_position])
+        handled = true
+      else
+        -- Create a new savegame.
+        local game = game_manager:create("save" .. cursor_position .. ".dat")
+        sol.main:start_savegame(game)
+      end
+
     end
   end
   return handled
