@@ -65,6 +65,12 @@ function gui_designer:create(width, height)
   -- Makes a frame of the specified size with a normal border.
   function widget:make_frame(x, y, width, height)
 
+    if x == nil then
+      -- Use the entire widget by default.
+      x, y = 0, 0
+      width, height = canvas:get_size()
+    end
+
     -- Black background.
     draw_tiled_region(get_frames_img(), 8, 32, 8, 8, canvas, x + 8, y + 8, width - 16, height - 16)
 
@@ -130,8 +136,8 @@ function gui_designer:create(width, height)
   end
 
   -- Draws the widget.
-  function widget:draw(dst_surface)
-    canvas:draw(dst_surface)
+  function widget:draw(dst_surface, dst_x, dst_y)
+    canvas:draw(dst_surface, dst_x, dst_y)
   end
 
   return widget

@@ -1,4 +1,10 @@
 text{ key = "savegames_menu.title", value = "ECRAN DE SELECTION" }
 text{ key = "savegames_menu.options", value = "OPTIONS" }
 text{ key = "savegames_menu.records", value = "RECORDS" }
+text{ key = "savegames_menu.load", value = "CHARGER" }
+text{ key = "savegames_menu.delete", value = "EFFACER" }
+text{ key = "savegames_menu.cancel", value = "ANNULER" }
+text{ key = "savegames_menu.delete_question", value = "EFFACER ?" }
+text{ key = "savegames_menu.yes", value = "OUI" }
+text{ key = "savegames_menu.no", value = "NON" }
 

@@ -8,8 +8,15 @@ local games = {}
 local icons_img = sol.surface.create("menus/icons.png")
 local hearts_img = sol.surface.create("hud/hearts.png")
 local cursor_img = sol.surface.create("menus/link_cursor.png")
+local fairy_img = sol.surface.create("menus/fairy_cursor.png")
 local cursor_position = 1
-local tr = sol.language.get_string
+local show_savegame_action_box
+local show_confirm_delete_box
+
+local function get_savegame_file_name(index)
+
+  return "save" .. index .. ".dat"
+end
 
 local function build_layout()
 
@@ -17,14 +24,14 @@ local function build_layout()
 
   layout:make_background()
   layout:make_big_frame(16, 8, 160, 32)
-  layout:make_text(tr("savegames_menu.title"), 96, 16, "center")
+  layout:make_text(sol.language.get_string("savegames_menu.title"), 96, 16, "center")
   layout:make_frame(16, 48, 288, 32)
   layout:make_frame(16, 96, 288, 32)
   layout:make_frame(16, 144, 288, 32)
   layout:make_frame(16, 192, 136, 32)
   layout:make_frame(168, 192, 136, 32)
-  layout:make_text(tr("savegames_menu.options"), 84, 200, "center")
-  layout:make_text(tr("savegames_menu.records"), 236, 200, "center")
+  layout:make_text(sol.language.get_string("savegames_menu.options"), 84, 200, "center")
+  layout:make_text(sol.language.get_string("savegames_menu.records"), 236, 200, "center")
   layout:make_text("1.", 44, 56)
   layout:make_text("2.", 44, 104)
   layout:make_text("3.", 44, 152)
@@ -67,12 +74,14 @@ end
 local function read_savegames()
 
   for i = 1, 3 do
-    local file_name = "save" .. i .. ".dat"
+    local file_name = get_savegame_file_name(i)
     local surface = sol.surface.create(272, 16)
     surface:set_xy(24, 8 + i * 48)
     savegames_surfaces[i] = surface
 
-    if sol.game.exists(file_name) then
+    if not sol.game.exists(file_name) then
+      games[i] = nil
+    else
       -- Existing file.
       local game = game_manager:create(file_name)
       games[i] = game
@@ -80,8 +89,6 @@ local function read_savegames()
       -- Triforce icon.
       if game:get_value("game_finished") then
         icons_img:draw_region(0, 0, 32, 16, surface, 240, 0)
-      else
-        icons_img:draw_region(32, 0, 32, 16, surface, 240, 0)
       end
 
       -- Crystals.
@@ -159,21 +166,124 @@ function savegames_menu:on_key_pressed(key)
     handled = true
   elseif key == "space" then
     if cursor_position <= 3 then
+      if games[cursor_position] == nil then
+        -- Create a new savegame.
+        local game = game_manager:create(get_savegame_file_name(cursor_position))
+        sol.main:start_savegame(game)
+      else
+        -- Show actions for an existing savegame.
+        show_savegame_action_box(cursor_position)
+      end
+    end
+    handled = true
+  end
+  return handled
+end
 
-      if games[cursor_position] ~= nil then
-        -- Start an existing savegame.
+-- Creates a popup that lets the user choose between load, delete or cancel
+-- for a savegame.
+function show_savegame_action_box(savegame_index)
+
+  local action_box_menu = {}
+  local fairy_cursor_position = 1
+  local layout = gui_designer:create(112, 72)
+  layout:make_frame()
+  layout:make_text(sol.language.get_string("savegames_menu.load"), 56, 8, "center")
+  layout:make_text(sol.language.get_string("savegames_menu.delete"), 56, 28, "center")
+  layout:make_text(sol.language.get_string("savegames_menu.cancel"), 56, 48, "center")
+
+  function action_box_menu:on_key_pressed(key)
+
+    if key == "up" then
+      sol.audio.play_sound("cursor")
+      if fairy_cursor_position > 1 then
+        fairy_cursor_position = fairy_cursor_position - 1
+      else
+        fairy_cursor_position = 3
+      end
+
+    elseif key == "down" then
+      sol.audio.play_sound("cursor")
+      if fairy_cursor_position < 3 then
+        fairy_cursor_position = fairy_cursor_position + 1
+      else
+        fairy_cursor_position = 1
+      end
+
+    elseif key == "space" then
+
+      if fairy_cursor_position == 1 then
+        -- Load.
         sol.audio.play_sound("ok")
         sol.main:start_savegame(games[cursor_position])
-        handled = true
+
+      elseif fairy_cursor_position == 2 then
+        -- Delete.
+        sol.menu.stop(action_box_menu)
+        show_confirm_delete_box(function()
+          sol.audio.play_sound("boss_killed")
+          sol.game.delete(get_savegame_file_name(savegame_index))
+          read_savegames()
+        end)
+
       else
-        -- Create a new savegame.
-        local game = game_manager:create("save" .. cursor_position .. ".dat")
-        sol.main:start_savegame(game)
+        -- Cancel.
+        sol.menu.stop(action_box_menu)
       end
 
     end
+
+    return true
   end
-  return handled
+
+  function action_box_menu:on_draw(dst_surface)
+
+    layout:draw(dst_surface, 104, 84)
+    fairy_img:draw(dst_surface, 112, 72 + fairy_cursor_position * 20)
+  end
+
+  sol.audio.play_sound("pause_closed")
+  sol.menu.start(savegames_menu, action_box_menu)
+end
+
+-- Creates a popup that ask confirmation to delete something.
+function show_confirm_delete_box(action)
+
+  local delete_box_menu = {}
+  local fairy_cursor_position = 2
+  local layout = gui_designer:create(112, 72)
+  layout:make_frame()
+  layout:make_text(sol.language.get_string("savegames_menu.delete_question"), 56, 8, "center")
+  layout:make_text(sol.language.get_string("savegames_menu.yes"), 56, 28, "center")
+  layout:make_text(sol.language.get_string("savegames_menu.no"), 56, 48, "center")
+
+  function delete_box_menu:on_key_pressed(key)
+
+    if key == "up" or key == "down" then
+      sol.audio.play_sound("cursor")
+      fairy_cursor_position = 3 - fairy_cursor_position
+
+    elseif key == "space" then
+
+      if fairy_cursor_position == 1 then
+        -- Yes: do the action.
+        action()
+      end
+      sol.menu.stop(delete_box_menu)
+
+    end
+
+    return true
+  end
+
+  function delete_box_menu:on_draw(dst_surface)
+
+    layout:draw(dst_surface, 104, 84)
+    fairy_img:draw(dst_surface, 112, 92 + fairy_cursor_position * 20)
+  end
+
+  sol.audio.play_sound("pause_closed")
+  sol.menu.start(savegames_menu, delete_box_menu)
 end
 
 return savegames_menu
