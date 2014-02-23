@@ -12,6 +12,7 @@ end
 function title_screen:on_key_pressed(key)
 
   if key == "return" or key == "space" then
+    sol.audio.play_sound("pause_closed")
     sol.menu.stop(title_screen)
   end
 end

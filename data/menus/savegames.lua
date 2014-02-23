@@ -214,20 +214,21 @@ function show_savegame_action_box(savegame_index)
 
       if fairy_cursor_position == 1 then
         -- Load.
-        sol.audio.play_sound("ok")
+        sol.audio.play_sound("pause_closed")
         sol.main:start_savegame(games[cursor_position])
 
       elseif fairy_cursor_position == 2 then
         -- Delete.
         sol.menu.stop(action_box_menu)
         show_confirm_delete_box(function()
-          sol.audio.play_sound("boss_killed")
+          sol.audio.play_sound("pause_open")
           sol.game.delete(get_savegame_file_name(savegame_index))
           read_savegames()
         end)
 
       else
         -- Cancel.
+        sol.audio.play_sound("pause_closed")
         sol.menu.stop(action_box_menu)
       end
 
@@ -268,6 +269,8 @@ function show_confirm_delete_box(action)
       if fairy_cursor_position == 1 then
         -- Yes: do the action.
         action()
+      else
+        sol.audio.play_sound("pause_closed")
       end
       sol.menu.stop(delete_box_menu)
 
