@@ -21,6 +21,7 @@ function rupees_builder:new(game)
 
     local need_rebuild = false
     local money = game:get_money()
+    local max_money = game:get_max_money()
 
     -- Current money.
     if money ~= money_displayed then
@@ -45,6 +46,13 @@ function rupees_builder:new(game)
     -- Update the text if something has changed.
     if need_rebuild then
       digits_text:set_text(string.format("%03d", money_displayed))
+
+      -- Show in green if the maximum is reached.
+      if money_displayed == max_money then
+        digits_text:set_font("green_digits")
+      else
+        digits_text:set_font("white_digits")
+      end
     end
 
     -- Schedule the next check.

@@ -5,6 +5,7 @@ function item:on_created()
   self:set_savegame_variable("possession_bomb_counter")
   self:set_amount_savegame_variable("amount_bomb_counter")
   self:set_assignable(true)
+  self:set_max_amount(30)
 end
 
 -- Called when the player uses the bombs of his inventory by pressing the corresponding item key.
