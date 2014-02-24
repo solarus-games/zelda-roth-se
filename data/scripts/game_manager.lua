@@ -20,7 +20,7 @@ function game_manager:create(file)
   if not exists then
     -- This is a new savegame file.
     game:set_starting_location("intro")
-    game:set_max_money(100)  -- TODO check this
+    game:set_max_money(999)
     game:set_max_life(6)
     game:set_life(game:get_max_life())
   end

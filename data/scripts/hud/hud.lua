@@ -17,10 +17,15 @@ function hud_manager:create(game)
 
   -- Create each element of the HUD.
   local hearts_builder = require("scripts/hud/hearts")
+  local rupees_builder = require("scripts/hud/rupees")
 
   local hearts = hearts_builder:new(game)
   hearts:set_dst_position(-88, 0)
   hud.elements[#hud.elements + 1] = hearts
+
+  local rupees = rupees_builder:new(game)
+  rupees:set_dst_position(121, 10)
+  hud.elements[#hud.elements + 1] = rupees
 
   -- Destroys the HUD.
   function hud:quit()
