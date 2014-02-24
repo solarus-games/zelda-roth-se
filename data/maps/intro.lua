@@ -5,6 +5,8 @@ local game = map:get_game()
 
 local map_width, map_height = map:get_size()
 
+game:set_hud_enabled(false)
+
 -- Scrolling backgrounds.
 local bg1_img = sol.surface.create("menus/intro/bg1.png")
 local bg1_width, bg1_height = bg1_img:get_size()

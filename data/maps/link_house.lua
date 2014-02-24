@@ -32,6 +32,7 @@ function map:on_started(destination)
           hero:set_visible(true)
           hero:start_jumping(0, 24, true)
           game:set_pause_allowed(true)
+          game:set_hud_enabled(true)
           bed:get_sprite():set_animation("empty_open")
           sol.audio.play_sound("hero_lands")
 
