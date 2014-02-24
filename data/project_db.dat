@@ -214,10 +214,8 @@ sound{ id = "running_obstacle", description = "running_obstacle" }
 item{ id = "random", description = "(Random)" }
 item{ id = "bombs_counter", description = "Bombs counter" }
 item{ id = "bomb", description = "Bombs (x1 / x3 / x8)" }
-item{ id = "bomb_bag", description = "Bomb bag (small / large / huge)" }
 item{ id = "bow", description = "Bow" }
 item{ id = "arrow", description = "Arrows (x1 / x5 / x10)" }
-item{ id = "quiver", description = "Quiver (small / large / huge)" }
 item{ id = "boomerang", description = "Boomerang" }
 item{ id = "lamp", description = "Lamp" }
 item{ id = "hookshot", description = "Hookshot" }
@@ -232,7 +230,6 @@ item{ id = "glove", description = "Iron glove / Golden glove" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
 item{ id = "sword", description = "Sword" }
 item{ id = "shield", description = "Shield" }
-item{ id = "rupee_bag", description = "Rupee bag (small / large / huge)" }
 item{ id = "magic_bar", description = "Maximum of magic (none / half / full)" }
 item{ id = "map", description = "Dungeon map" }
 item{ id = "compass", description = "Dungeon compass" }

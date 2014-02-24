@@ -1,4 +1,5 @@
 local item = ...
+local game = item:get_game()
 
 function item:on_created()
 
@@ -25,7 +26,7 @@ end
 function item:on_amount_changed(amount)
 
   if self:get_variant() ~= 0 then
-    -- update the icon (with or without arrow)
+    -- update the icon (with or without arrow).
     if amount == 0 then
       self:set_variant(1)
     else
@@ -36,10 +37,20 @@ end
 
 function item:on_obtaining(variant, savegame_variable)
 
-  local quiver = self:get_game():get_item("quiver")
-  if not quiver:has_variant() then
-    -- Give the first quiver automatically with the bow.
-    quiver:set_variant(1)
+  local arrow = game:get_item("arrow")
+
+  if variant > 0 then
+    self:set_max_amount(30)
+    -- Variant 1: bow without arrow.
+    -- Variant 2: bow with arrows.
+    if variant > 1 then
+      self:set_amount(self:get_max_amount())
+    end
+    arrow:set_obtainable(true)
+  else
+    -- Variant 0: no bow and arrows are not obtainable.
+    self:set_max_amount(0)
+    arrow:set_obtainable(false)
   end
 end
 

@@ -40,6 +40,14 @@ Utilise-le pour atteindre des cibles éloignées.
 ]]
 }
 
+dialog{
+  id = "_treasure.bow.2",
+  text = [[
+Tu as obtenu l'arc !!!
+Utilise-le pour atteindre des cibles éloignées.
+]]
+}
+
 -- Marteau.
 dialog{
   id = "_treasure.hammer.1",

@@ -19,6 +19,7 @@ function hud_manager:create(game)
   local hearts_builder = require("scripts/hud/hearts")
   local rupees_builder = require("scripts/hud/rupees")
   local bombs_builder = require("scripts/hud/bombs")
+  local arrows_builder = require("scripts/hud/arrows")
   local item_builder = require("scripts/hud/item")
 
   local hearts = hearts_builder:new(game)
@@ -32,6 +33,10 @@ function hud_manager:create(game)
   local bombs = bombs_builder:new(game)
   bombs:set_dst_position(153, 10)
   hud.elements[#hud.elements + 1] = bombs
+
+  local arrows = arrows_builder:new(game)
+  arrows:set_dst_position(178, 10)
+  hud.elements[#hud.elements + 1] = arrows
 
   local item = item_builder:new(game, 1)
   item:set_dst_position(27, 15)
