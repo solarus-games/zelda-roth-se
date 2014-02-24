@@ -15,7 +15,7 @@ function arrows_builder:new(game)
   })
   local bow = game:get_item("bow")
   local amount_displayed = bow:get_amount()
-  local amount_displayed = bow:get_max_amount()
+  local max_amount_displayed = bow:get_max_amount()
 
   -- Checks whether the view displays correct information
   -- and updates it if necessary.
