@@ -5,6 +5,11 @@
 -- local game = game_manager:create("savegame_file_name")
 -- game:start()
 
+local dialog_box_manager = require("scripts/dialog_box")
+local hud_manager = require("scripts/hud/hud")
+local dungeon_manager = require("scripts/dungeons")
+local equipment_manager = require("scripts/equipment")
+
 local game_manager = {}
 
 -- Creates a game ready to be played.
@@ -25,15 +30,14 @@ function game_manager:create(file)
     game:set_life(game:get_max_life())
   end
  
-  local dialog_box_manager = require("scripts/dialog_box")
   local dialog_box
-  local hud_manager = require("scripts/hud/hud")
   local hud
 
   -- Function called when the player runs this game.
   function game:on_started()
 
-    -- Prepare the dialog box menu.
+    dungeon_manager:create(game)
+    equipment_manager:create(game)
     dialog_box = dialog_box_manager:create(game)
     hud = hud_manager:create(game)
 
