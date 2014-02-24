@@ -15,45 +15,6 @@ function item_icon_builder:new(game, slot)
     item_icon.item_sprite = sol.sprite.create("entities/items")
     item_icon.item_displayed = nil
     item_icon.item_variant_displayed = 0
-
-    item_icon:check()
-    item_icon:rebuild_surface()
-  end
-
-  function item_icon:check()
-
-    local need_rebuild = false
-
-    -- Item assigned.
-    local item = game:get_item_assigned(item_icon.slot)
-    if item_icon.item_displayed ~= item then
-      need_rebuild = true
-      item_icon.item_displayed = item
-      item_icon.item_variant_displayed = nil
-      if item ~= nil then
-        item_icon.item_sprite:set_animation(item:get_name())
-      end
-    end
-
-    if item ~= nil then
-      -- Variant of the item.
-      local item_variant = item:get_variant()
-      if item_icon.item_variant_displayed ~= item_variant then
-        need_rebuild = true
-        item_icon.item_variant_displayed = item_variant
-        item_icon.item_sprite:set_direction(item_variant - 1)
-      end
-    end
-
-    -- Redraw the surface only if something has changed.
-    if need_rebuild then
-      item_icon:rebuild_surface()
-    end
-
-    -- Schedule the next check.
-    sol.timer.start(game, 50, function()
-      item_icon:check()
-    end)
   end
 
   function item_icon:rebuild_surface()
@@ -89,7 +50,45 @@ function item_icon_builder:new(game, slot)
     item_icon.surface:draw(dst_surface, x, y)
   end
 
+  local function check()
+
+    local need_rebuild = false
+
+    -- Item assigned.
+    local item = game:get_item_assigned(item_icon.slot)
+    if item_icon.item_displayed ~= item then
+      need_rebuild = true
+      item_icon.item_displayed = item
+      item_icon.item_variant_displayed = nil
+      if item ~= nil then
+        item_icon.item_sprite:set_animation(item:get_name())
+      end
+    end
+
+    if item ~= nil then
+      -- Variant of the item.
+      local item_variant = item:get_variant()
+      if item_icon.item_variant_displayed ~= item_variant then
+        need_rebuild = true
+        item_icon.item_variant_displayed = item_variant
+        item_icon.item_sprite:set_direction(item_variant - 1)
+      end
+    end
+
+    -- Redraw the surface only if something has changed.
+    if need_rebuild then
+      item_icon:rebuild_surface()
+    end
+
+    return true  -- Repeat the timer.
+  end
+
   item_icon:initialize()
+
+  -- Periodically check.
+  check()
+  sol.timer.start(game, 50, check)
+  item_icon:rebuild_surface()
 
   return item_icon
 end

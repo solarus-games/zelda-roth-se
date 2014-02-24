@@ -17,9 +17,34 @@ function arrows_builder:new(game)
   local amount_displayed = bow:get_amount()
   local max_amount_displayed = bow:get_max_amount()
 
+  function arrows:set_dst_position(x, y)
+    arrows.dst_x = x
+    arrows.dst_y = y
+  end
+
+  function arrows:on_draw(dst_surface)
+
+    -- Don't show the counter before the player has the bow.
+    if not bow:has_variant() then
+      return
+    end
+
+    local x, y = arrows.dst_x, arrows.dst_y
+    local width, height = dst_surface:get_size()
+    if x < 0 then
+      x = width + x
+    end
+    if y < 0 then
+      y = height + y
+    end
+
+    arrow_icon_img:draw(dst_surface, x, y)
+    digits_text:draw(dst_surface, x, y + 10)
+  end
+
   -- Checks whether the view displays correct information
   -- and updates it if necessary.
-  function arrows:check()
+  local function check()
 
     local need_rebuild = false
     local amount = bow:get_amount()
@@ -57,38 +82,12 @@ function arrows_builder:new(game)
       end
     end
 
-    -- Schedule the next check.
-    sol.timer.start(game, 40, function()
-      arrows:check()
-    end)
+    return true  -- Repeat the timer.
   end
 
-  function arrows:set_dst_position(x, y)
-    arrows.dst_x = x
-    arrows.dst_y = y
-  end
-
-  function arrows:on_draw(dst_surface)
-
-    -- Don't show the counter before the player has the bow.
-    if not bow:has_variant() then
-      return
-    end
-
-    local x, y = arrows.dst_x, arrows.dst_y
-    local width, height = dst_surface:get_size()
-    if x < 0 then
-      x = width + x
-    end
-    if y < 0 then
-      y = height + y
-    end
-
-    arrow_icon_img:draw(dst_surface, x, y)
-    digits_text:draw(dst_surface, x, y + 10)
-  end
-
-  arrows:check()
+  -- Periodically check.
+  check()
+  sol.timer.start(game, 40, check)
 
   return arrows
 end

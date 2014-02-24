@@ -15,9 +15,29 @@ function rupees_builder:new(game)
   })
   local money_displayed = game:get_money()
 
+  function rupees:set_dst_position(x, y)
+    rupees.dst_x = x
+    rupees.dst_y = y
+  end
+
+  function rupees:on_draw(dst_surface)
+
+    local x, y = rupees.dst_x, rupees.dst_y
+    local width, height = dst_surface:get_size()
+    if x < 0 then
+      x = width + x
+    end
+    if y < 0 then
+      y = height + y
+    end
+
+    rupee_icon_img:draw(dst_surface, x + 8, y)
+    digits_text:draw(dst_surface, x, y + 10)
+  end
+
   -- Checks whether the view displays correct information
   -- and updates it if necessary.
-  function rupees:check()
+  local function check()
 
     local need_rebuild = false
     local money = game:get_money()
@@ -55,33 +75,12 @@ function rupees_builder:new(game)
       end
     end
 
-    -- Schedule the next check.
-    sol.timer.start(game, 40, function()
-      rupees:check()
-    end)
+    return true  -- Repeat the timer.
   end
 
-  function rupees:set_dst_position(x, y)
-    rupees.dst_x = x
-    rupees.dst_y = y
-  end
-
-  function rupees:on_draw(dst_surface)
-
-    local x, y = rupees.dst_x, rupees.dst_y
-    local width, height = dst_surface:get_size()
-    if x < 0 then
-      x = width + x
-    end
-    if y < 0 then
-      y = height + y
-    end
-
-    rupee_icon_img:draw(dst_surface, x + 8, y)
-    digits_text:draw(dst_surface, x, y + 10)
-  end
-
-  rupees:check()
+  -- Periodically check.
+  check()
+  sol.timer.start(game, 40, check)
 
   return rupees
 end

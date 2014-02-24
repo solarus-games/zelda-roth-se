@@ -16,9 +16,29 @@ function bombs_builder:new(game)
   local bombs_counter = game:get_item("bombs_counter")
   local amount_displayed = bombs_counter:get_amount()
 
+  function bombs:set_dst_position(x, y)
+    bombs.dst_x = x
+    bombs.dst_y = y
+  end
+
+  function bombs:on_draw(dst_surface)
+
+    local x, y = bombs.dst_x, bombs.dst_y
+    local width, height = dst_surface:get_size()
+    if x < 0 then
+      x = width + x
+    end
+    if y < 0 then
+      y = height + y
+    end
+
+    bomb_icon_img:draw(dst_surface, x + 4, y)
+    digits_text:draw(dst_surface, x, y + 10)
+  end
+
   -- Checks whether the view displays correct information
   -- and updates it if necessary.
-  function bombs:check()
+  local function check()
 
     local need_rebuild = false
     local amount = bombs_counter:get_amount()
@@ -50,33 +70,12 @@ function bombs_builder:new(game)
       end
     end
 
-    -- Schedule the next check.
-    sol.timer.start(game, 40, function()
-      bombs:check()
-    end)
+    return true  -- Repeat the timer.
   end
 
-  function bombs:set_dst_position(x, y)
-    bombs.dst_x = x
-    bombs.dst_y = y
-  end
-
-  function bombs:on_draw(dst_surface)
-
-    local x, y = bombs.dst_x, bombs.dst_y
-    local width, height = dst_surface:get_size()
-    if x < 0 then
-      x = width + x
-    end
-    if y < 0 then
-      y = height + y
-    end
-
-    bomb_icon_img:draw(dst_surface, x + 4, y)
-    digits_text:draw(dst_surface, x, y + 10)
-  end
-
-  bombs:check()
+  -- Periodically check.
+  check()
+  sol.timer.start(game, 40, check)
 
   return bombs
 end

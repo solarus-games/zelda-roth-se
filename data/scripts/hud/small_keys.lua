@@ -42,8 +42,7 @@ function small_keys_builder:new(game)
     digits_text:draw(dst_surface, x, y + 10)
   end
 
-  -- Periodically check the number of small keys.
-  sol.timer.start(game, 40, function()
+  local function check()
 
     if game:are_small_keys_enabled() then
       local num_small_keys = game:get_num_small_keys()
@@ -54,7 +53,11 @@ function small_keys_builder:new(game)
     end
 
     return true  -- Repeat the timer.
-  end)
+  end
+
+  -- Periodically check the number of small keys.
+  check()
+  sol.timer.start(game, 40, check)
 
   return small_keys
 end
