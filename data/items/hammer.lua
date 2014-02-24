@@ -37,10 +37,10 @@ function item:on_using()
   -- Detect enemies with an invisible custom entity.
   local x, y, layer = hero:get_position()
   local direction4 = hero:get_direction()
-  if direction4 == 0 then x = x + 16
-  elseif direction4 == 1 then y = y - 16
-  elseif direction4 == 2 then x = x - 16
-  else y = y + 16
+  if direction4 == 0 then x = x + 12
+  elseif direction4 == 1 then y = y - 12
+  elseif direction4 == 2 then x = x - 12
+  else y = y + 12
   end
 
   local hammer = game:get_map():create_custom_entity{
@@ -59,7 +59,7 @@ function item:on_using()
     end
 
     if entity:is_vulnerable_to_hammer() then
-      entity:hurt(2)
+      entity:hurt(3)
     end
   end)
 
