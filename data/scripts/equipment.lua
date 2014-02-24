@@ -6,6 +6,8 @@
 
 local equipment_manager = {}
 
+local num_bottles = 3
+
 function equipment_manager:create(game)
 
   -- Returns whether a small key counter exists on the current map.
@@ -83,7 +85,7 @@ function equipment_manager:create(game)
   -- Returns a bottle with the specified content, or nil.
   function game:get_first_bottle_with(variant)
 
-    for i = 1, 4 do
+    for i = 1, num_bottles do
       local item = game:get_item("bottle_" .. i)
       if item:get_variant() == variant then
         return item
@@ -99,7 +101,7 @@ function equipment_manager:create(game)
 
   function game:has_bottle()
 
-    for i = 1, 4 do
+    for i = 1, num_bottles do
       if game:has_item("bottle_" .. i) then
         return true
       end
