@@ -30,6 +30,9 @@ function dungeon_manager:create(game)
   function game:get_dungeon_index()
 
     local world = game:get_map():get_world()
+    if world == nil then
+      return nil
+    end
     local index = tonumber(world:match("^dungeon_([0-9]+)$"))
     return index
   end
