@@ -1,6 +1,6 @@
 local savegames_menu = {}
 
-local gui_designer = require("menus/lib/gui_designer")
+local gui_designer = require("scripts/menus/lib/gui_designer")
 local game_manager = require("scripts/game_manager")
 local layout
 local savegames_surfaces = {}

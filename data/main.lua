@@ -4,10 +4,10 @@ local game_manager = require("scripts/game_manager")
 local debug = require("scripts/debug")
 local quest_manager = require("scripts/quest_manager")
 
-local solarus_logo = require("menus/solarus_logo")
-local presentation_screen = require("menus/presentation_screen")
-local title_screen = require("menus/title_screen")
-local savegames_menu = require("menus/savegames")
+local solarus_logo = require("scripts/menus/solarus_logo")
+local presentation_screen = require("scripts/menus/presentation_screen")
+local title_screen = require("scripts/menus/title_screen")
+local savegames_menu = require("scripts/menus/savegames")
 
 function sol.main:on_started()
 
