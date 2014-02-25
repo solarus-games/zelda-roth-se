@@ -159,6 +159,26 @@ function gui_designer:create(width, height)
     canvas:draw(dst_surface, dst_x, dst_y)
   end
 
+  -- Moves the widget.
+  function widget:start_movement(movement, callback)
+    movement:start(canvas, callback)
+  end
+
+  -- Gets the widget coordinates.
+  function widget:get_xy(x, y)
+    return canvas:get_xy(x, y)
+  end
+
+  -- Sets the widget coordinates.
+  function widget:set_xy(x, y)
+    canvas:set_xy(x, y)
+  end
+
+  -- Returns the encapsulated surface.
+  function widget:get_surface()
+    return canvas
+  end
+
   return widget
 end
 
