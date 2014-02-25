@@ -7,6 +7,7 @@
 
 local dialog_box_manager = require("scripts/dialog_box")
 local hud_manager = require("scripts/hud/hud")
+local pause_manager = require("scripts/menus/pause")
 local dungeon_manager = require("scripts/dungeons")
 local equipment_manager = require("scripts/equipment")
 
@@ -32,6 +33,7 @@ function game_manager:create(file)
  
   local dialog_box
   local hud
+  local pause_menu
 
   -- Function called when the player runs this game.
   function game:on_started()
@@ -40,6 +42,7 @@ function game_manager:create(file)
     equipment_manager:create(game)
     dialog_box = dialog_box_manager:create(game)
     hud = hud_manager:create(game)
+    pause_menu = pause_manager:create(game)
 
     -- Initialize the hero.
     game:get_hero():set_walking_speed(normal_walking_speed)
@@ -48,11 +51,11 @@ function game_manager:create(file)
   -- Function called when the game stops.
   function game:on_finished()
 
-    -- Clean the dialog box and the HUD.
     dialog_box:quit()
     dialog_box = nil
     hud:quit()
     hud = nil
+    pause_menu = nil
   end
 
   -- Changes the walking speed of the hero depending on whether
@@ -75,6 +78,9 @@ function game_manager:create(file)
 
     -- Tell the HUD we are paused.
     hud:on_paused()
+
+    -- Start the pause menu.
+    sol.menu.start(game, pause_menu)
   end
 
   -- Function called when the game is paused.
@@ -82,12 +88,15 @@ function game_manager:create(file)
 
     -- Tell the HUD we are no longer paused.
     hud:on_unpaused()
+
+    -- Stop the pause menu.
+    sol.menu.stop(pause_menu)
   end
 
   -- Function called when the player goes to another map.
   function game:on_map_changed(map)
 
-    -- Notify the HUD (some HUD elements need to know that).
+    -- Notify the HUD (some HUD elements may want to know that).
     hud:on_map_changed(map)
   end
 
