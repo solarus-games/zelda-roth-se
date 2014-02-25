@@ -45,6 +45,34 @@ local function draw_tiled(src_surface, dst_surface, dst_x, dst_y, dst_width, dst
   draw_tiled_region(src_surface, 0, 0, src_width, src_height, dst_x, dst_y, dst_width, dst_height)
 end
 
+-- Makes a frame of the specified size with the border specified by
+-- border_x and border_y from gui.png.
+-- border_x and border_y are the upper left coordinates of a standard 24x24
+-- rectangle containing the border graphics.
+local function draw_frame_8_8(border_x, border_y, canvas, x, y, width, height)
+
+  if x == nil then
+    -- Use the entire widget by default.
+    x, y = 0, 0
+    width, height = canvas:get_size()
+  end
+
+  -- Black background.
+  draw_tiled_region(get_frames_img(), border_x + 8, border_y + 8, 8, 8, canvas, x + 8, y + 8, width - 16, height - 16)
+
+  -- Angles.
+  get_frames_img():draw_region(border_x, border_y, 8, 8, canvas, x, y)
+  get_frames_img():draw_region(border_x + 16, border_y, 8, 8, canvas, x + width - 8, y)
+  get_frames_img():draw_region(border_x, border_y + 16, 8, 8, canvas, x, y + height - 8)
+  get_frames_img():draw_region(border_x + 16, border_y + 16, 8, 8, canvas, x + width - 8, y + height - 8)
+
+  -- Sides.
+  draw_tiled_region(get_frames_img(), border_x + 8, border_y, 8, 8, canvas, x + 8, y, width - 16, 8)
+  draw_tiled_region(get_frames_img(), border_x + 8, border_y + 16, 8, 8, canvas, x + 8, y + height - 8, width - 16, 8)
+  draw_tiled_region(get_frames_img(), border_x, border_y + 8, 8, 8, canvas, x, y + 8, 8, height - 16)
+  draw_tiled_region(get_frames_img(), border_x + 16, border_y + 8, 8, 8, canvas, x + width - 8, y + 8, 8, height - 16)
+end
+
 -- Create a new widget.
 -- A widget basically wraps a surface. It provides features to easily draw
 -- on this surface high-level ALTTP-like objects like a frame with some text.
@@ -59,11 +87,24 @@ function gui_designer:create(width, height)
 
   -- Fills the entire widget with the background pattern.
   function widget:make_background()
-    draw_tiled_region(get_frames_img(), 24, 24, 16, 16, canvas, 0, 0, width, height)
+    draw_tiled_region(get_frames_img(), 72, 8, 16, 16, canvas, 0, 0, width, height)
   end
 
-  -- Makes a frame of the specified size with a normal border.
-  function widget:make_frame(x, y, width, height)
+  -- Makes a frame of the specified size with a wooden border.
+  function widget:make_wooden_frame(x, y, width, height)
+    draw_frame_8_8(48, 0, canvas, x, y, width, height)
+  end
+
+  -- Makes a frame of the specified size with a green border.
+  function widget:make_green_frame(x, y, width, height)
+    draw_frame_8_8(0, 24, canvas, x, y, width, height)
+  end
+
+  -- Makes a wooden frame of the specified size
+  -- with a bigger border and a shadow.
+  -- The height parameter is the height of the frame without the shadow.
+  -- The shadow is added below the frame.
+  function widget:make_big_wooden_frame(x, y, width, height)
 
     if x == nil then
       -- Use the entire widget by default.
@@ -72,29 +113,7 @@ function gui_designer:create(width, height)
     end
 
     -- Black background.
-    draw_tiled_region(get_frames_img(), 8, 32, 8, 8, canvas, x + 8, y + 8, width - 16, height - 16)
-
-    -- Angles.
-    get_frames_img():draw_region(0, 24, 8, 8, canvas, x, y)
-    get_frames_img():draw_region(16, 24, 8, 8, canvas, x + width - 8, y)
-    get_frames_img():draw_region(0, 40, 8, 8, canvas, x, y + height - 8)
-    get_frames_img():draw_region(16, 40, 8, 8, canvas, x + width - 8, y + height - 8)
-
-    -- Sides.
-    draw_tiled_region(get_frames_img(), 8, 24, 8, 8, canvas, x + 8, y, width - 16, 8)
-    draw_tiled_region(get_frames_img(), 8, 40, 8, 8, canvas, x + 8, y + height - 8, width - 16, 8)
-    draw_tiled_region(get_frames_img(), 0, 32, 8, 8, canvas, x, y + 8, 8, height - 16)
-    draw_tiled_region(get_frames_img(), 16, 32, 8, 8, canvas, x + width - 8, y + 8, 8, height - 16)
-
-  end
-
-  -- Makes a frame of the specified size with a bigger border and a shadow.
-  -- The height parameter is the height of the frame without the shadow.
-  -- The shadow is added below the frame.
-  function widget:make_big_frame(x, y, width, height)
-
-    -- Black background.
-    draw_tiled_region(get_frames_img(), 8, 32, 8, 8, canvas, x + 8, y + 8, width - 16, height - 16)
+    draw_tiled_region(get_frames_img(), 56, 8, 8, 8, canvas, x + 8, y + 8, width - 16, height - 16)
 
     -- Angles.
     get_frames_img():draw_region(0, 0, 16, 8, canvas, x, y)
@@ -109,7 +128,7 @@ function gui_designer:create(width, height)
     draw_tiled_region(get_frames_img(), 32, 8, 16, 8, canvas, x + width - 16, y + 8, 16, height - 16)
 
     -- Shadow.
-    draw_tiled_region(get_frames_img(), 24, 40, 16, 8, canvas, x, y + height, width, 8)
+    draw_tiled_region(get_frames_img(), 72, 0, 16, 8, canvas, x, y + height, width, 8)
   end
 
   -- Adds some text.
