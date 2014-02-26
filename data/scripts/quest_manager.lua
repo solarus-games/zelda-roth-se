@@ -27,6 +27,26 @@ local function initialize_hero()
   end
 end
 
+-- Initialize enemy behavior specific to this quest.
+local function initialize_enemy()
+
+  -- Redefine how to calculate the damage inflicted by the sword.
+  local enemy_meta = sol.main.get_metatable("enemy")
+
+  function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
+
+    local force = hero:get_game():get_value("force") or 0
+    local reaction = self:get_attack_consequence_sprite(enemy_sprite, "sword")
+    -- Multiply the sword consequence by the force of the hero.
+    local life_lost = reaction * force 
+    if hero:get_state() == "spin_attack" then
+      -- And multiply this by 2 during a spin attack.
+      life_lost = life_lost * 2
+    end
+    self:remove_life(life_lost)
+  end
+end
+
 -- Initialize sensor behavior specific to this quest.
 local function initialize_sensor()
 
@@ -72,6 +92,7 @@ end
 local function initialize_entities()
 
   initialize_hero()
+  initialize_enemy()
   initialize_sensor()
   initialize_dynamic_tile()
 end

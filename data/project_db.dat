@@ -221,10 +221,14 @@ item{ id = "lamp", description = "Lamp" }
 item{ id = "hookshot", description = "Hookshot" }
 item{ id = "fire_rod", description = "Fire rod" }
 item{ id = "ice_rod", description = "Ice rod" }
+item{ id = "hammer", description = "Magic hammer" }
+item{ id = "mudora_book", description = "Mudora's book" }
+item{ id = "din_medallion", description = "Din medallion" }
+item{ id = "nayru_medallion", description = "Nayru medallion" }
+item{ id = "farore_medallion", description = "Farore medallion" }
 item{ id = "bottle_1", description = "Bottle 1" }
 item{ id = "bottle_2", description = "Bottle 2" }
 item{ id = "bottle_3", description = "Bottle 3" }
-item{ id = "hammer", description = "Magic hammer" }
 item{ id = "flippers", description = "Flippers" }
 item{ id = "glove", description = "Iron glove / Golden glove" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }

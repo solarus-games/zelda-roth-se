@@ -12,3 +12,18 @@ function item:on_variant_changed(variant)
   self:get_game():set_ability("sword", variant)
 end
 
+function item:on_obtaining(variant)
+
+  -- Obtaining the shield increases the force.
+  local game = item:get_game()
+  local force = game:get_value("force") or 0
+  if variant == 1 then
+    force = 1
+  elseif variant == 2 then
+    force = 3
+  else
+    force = 5  -- TODO check this
+  end
+  game:set_value("force", force)
+end
+

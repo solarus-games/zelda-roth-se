@@ -19,6 +19,7 @@ local item_names = {
 }
 
 local icons_img = sol.surface.create("menus/icons.png")
+local items_img = sol.surface.create("entities/items.png")
 local movement_speed = 800
 local movement_distance = 160
 
@@ -48,8 +49,10 @@ end
 
 local function create_status_widget(game)
   local widget = gui_designer:create(160, 144)
-  local force = game:get_item("sword"):get_variant()
-  local defense = game:get_value("defense")
+  local sword = game:get_item("sword"):get_variant()
+  local shield = game:get_item("shield"):get_variant()
+  local force = game:get_value("force") or 0
+  local defense = game:get_value("defense") or 0
   local life = game:get_life() .. "/" .. game:get_max_life()
   local magic = game:get_magic() .. "/" .. game:get_max_magic()
   local time = ""  -- TODO
@@ -66,6 +69,25 @@ local function create_status_widget(game)
   widget:make_text(": " .. defense, 65, 76, "left")
   widget:make_text(sol.language.get_string("pause.inventory.time"), 5, 92, "left")
   widget:make_text(":" .. time, 65, 92, "left")
+
+  if sword > 0 then
+    widget:make_image_region(items_img, 528, 32 + 16 * sword, 16, 16, 12, 120)
+  end
+  if shield > 0 then
+    widget:make_image_region(items_img, 544, 32 + 16 * shield, 16, 16, 36, 120)
+  end
+  if game:has_item("din_medallion") then
+    widget:make_image_region(items_img, 176, 0, 16, 16, 60, 120)
+  end
+  if game:has_item("farore_medallion") then
+    widget:make_image_region(items_img, 192, 0, 16, 16, 84, 120)
+  end
+  if game:has_item("nayru_medallion") then
+    widget:make_image_region(items_img, 208, 0, 16, 16, 108, 120)
+  end
+  if game:has_item("mudora_book") then
+    widget:make_image_region(items_img, 160, 0, 16, 16, 132, 120)
+  end
   return widget
 end
 
