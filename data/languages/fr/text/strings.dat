@@ -7,4 +7,11 @@ text{ key = "savegames_menu.cancel", value = "ANNULER" }
 text{ key = "savegames_menu.delete_question", value = "EFFACER ?" }
 text{ key = "savegames_menu.yes", value = "OUI" }
 text{ key = "savegames_menu.no", value = "NON" }
+text{ key = "pause.inventory.crystals", value = "CRISTAUX :" }
+text{ key = "pause.inventory.status", value = "STATUT :" }
+text{ key = "pause.inventory.life", value = "VIE" }
+text{ key = "pause.inventory.magic", value = "MAGIE" }
+text{ key = "pause.inventory.force", value = "FORCE" }
+text{ key = "pause.inventory.defense", value = "DEFENSE" }
+text{ key = "pause.inventory.time", value = "TEMPS" }
 

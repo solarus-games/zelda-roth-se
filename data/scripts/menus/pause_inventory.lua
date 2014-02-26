@@ -18,8 +18,86 @@ local item_names = {
   "bottle_3",
 }
 
+local icons_img = sol.surface.create("menus/icons.png")
 local movement_speed = 800
 local movement_distance = 160
+
+local function create_item_widget(game)
+  local widget = gui_designer:create(112, 144)
+  widget:set_xy(16 - movement_distance, 16)
+  widget:make_green_frame()
+  local items_surface = widget:get_surface()
+  for i, item_name in ipairs(item_names) do
+    local variant = game:get_item(item_name):get_variant()
+    if variant > 0 then
+      local column = (i - 1) % 3 + 1
+      local row = (i - 1) / 3 + 1
+      -- Draw the sprite statically. This is okay as long as
+      -- item sprites are not animated.
+      -- If they become animated one day, they will have to be
+      -- drawn at each frame instead (in on_draw()).
+      local item_sprite = sol.sprite.create("entities/items")
+      item_sprite:set_animation(item_name)
+      item_sprite:set_direction(variant - 1)
+      item_sprite:set_xy(-8 + column * 32, -3 + row * 32)
+      item_sprite:draw(items_surface)
+    end
+  end
+  return widget
+end
+
+local function create_status_widget(game)
+  local widget = gui_designer:create(160, 144)
+  local force = game:get_item("sword"):get_variant()
+  local defense = game:get_value("defense")
+  local life = game:get_life() .. "/" .. game:get_max_life()
+  local magic = game:get_magic() .. "/" .. game:get_max_magic()
+  local time = ""  -- TODO
+  widget:set_xy(144, 16 - movement_distance)
+  widget:make_green_frame()
+  widget:make_text(sol.language.get_string("pause.inventory.status"), 5, 4, "left")
+  widget:make_text(sol.language.get_string("pause.inventory.life"), 5, 28, "left")
+  widget:make_text(": " .. life, 65, 28, "left")
+  widget:make_text(sol.language.get_string("pause.inventory.magic"), 5, 44, "left")
+  widget:make_text(": " .. magic, 65, 44, "left")
+  widget:make_text(sol.language.get_string("pause.inventory.force"), 5, 60, "left")
+  widget:make_text(": " .. force, 65, 60, "left")
+  widget:make_text(sol.language.get_string("pause.inventory.defense"), 5, 76, "left")
+  widget:make_text(": " .. defense, 65, 76, "left")
+  widget:make_text(sol.language.get_string("pause.inventory.time"), 5, 92, "left")
+  widget:make_text(":" .. time, 65, 92, "left")
+  return widget
+end
+
+local function create_crystals_widget(game)
+
+  local widget = gui_designer:create(224, 48)
+  widget:set_xy(16, 176 + movement_distance)
+  widget:make_green_frame()
+  widget:make_text(sol.language.get_string("pause.inventory.crystals"), 5, 4, "left")
+
+  for i = 1, 7 do
+    local src_x, src_y
+    if game:is_dungeon_finished(i) then
+      src_x, src_y = 0, 16
+    else
+      src_x, src_y = 16, 16
+    end
+    widget:make_image_region(icons_img, src_x, src_y, 16, 16, -13 + 29 * i, 22)
+  end
+
+  return widget
+
+end
+
+local function create_pieces_of_heart_widget(game)
+  local widget = gui_designer:create(48, 48)
+  widget:set_xy(256 + movement_distance, 176)
+  widget:make_green_frame()
+  local num_pieces_of_heart = game:get_value("num_pieces_of_heart") or 0
+  widget:make_image_region(icons_img, num_pieces_of_heart * 16, 32, 16, 16, 16, 16)
+  return widget
+end
 
 function inventory_manager:new(game)
 
@@ -27,22 +105,11 @@ function inventory_manager:new(game)
 
   local state = "opening"  -- "opening", "ready" or "closing".
 
-  local item_widget = gui_designer:create(112, 144)
-  item_widget:set_xy(16 - movement_distance, 16)
-  item_widget:make_green_frame()
-
-  local status_widget = gui_designer:create(160, 144)
-  status_widget:set_xy(144, 16 - movement_distance)
-  status_widget:make_green_frame()
-
-  local crystals_widget = gui_designer:create(224, 48)
-  crystals_widget:set_xy(16, 176 + movement_distance)
-  crystals_widget:make_green_frame()
-
-  local pieces_of_heart_widget = gui_designer:create(48, 48)
-  pieces_of_heart_widget:set_xy(256 + movement_distance, 176)
-  pieces_of_heart_widget:make_green_frame()
-
+  local item_widget = create_item_widget(game)
+  local status_widget = create_status_widget(game)
+  local crystals_widget = create_crystals_widget(game)
+  local pieces_of_heart_widget = create_pieces_of_heart_widget(game)
+  
   -- Rapidly moves the inventory widgets towards or away from the screen.
   local function move_widgets(callback)
 

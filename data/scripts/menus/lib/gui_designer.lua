@@ -151,7 +151,7 @@ function gui_designer:create(width, height)
 
   -- Adds a region of an image.
   function widget:make_image_region(src_surface, src_x, src_y, src_width, src_height, dst_x, dst_y)
-    src_surface:draw(src_x, src_y, src_width, src_height, canvas, dst_x, dst_y)
+    src_surface:draw_region(src_x, src_y, src_width, src_height, canvas, dst_x, dst_y)
   end
 
   -- Draws the widget.

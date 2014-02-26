@@ -2,7 +2,7 @@ local item = ...
 
 function item:on_created()
 
-  self:set_savegame_variable("i1125")
+  self:set_savegame_variable("possession_glove")
 end
 
 function item:on_variant_changed(variant)

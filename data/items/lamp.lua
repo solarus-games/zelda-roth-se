@@ -6,7 +6,7 @@ item.was_dark_room = false
 
 function item:on_created()
 
-  self:set_savegame_variable("i1104")
+  self:set_savegame_variable("possession_lamp")
   self:set_assignable(true)
 end
 

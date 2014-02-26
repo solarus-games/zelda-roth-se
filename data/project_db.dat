@@ -219,11 +219,11 @@ item{ id = "arrow", description = "Arrows (x1 / x5 / x10)" }
 item{ id = "boomerang", description = "Boomerang" }
 item{ id = "lamp", description = "Lamp" }
 item{ id = "hookshot", description = "Hookshot" }
+item{ id = "fire_rod", description = "Fire rod" }
+item{ id = "ice_rod", description = "Ice rod" }
 item{ id = "bottle_1", description = "Bottle 1" }
 item{ id = "bottle_2", description = "Bottle 2" }
 item{ id = "bottle_3", description = "Bottle 3" }
-item{ id = "bottle_4", description = "Bottle 4" }
-item{ id = "pegasus_shoes", description = "Pegasus shoes" }
 item{ id = "hammer", description = "Magic hammer" }
 item{ id = "flippers", description = "Flippers" }
 item{ id = "glove", description = "Iron glove / Golden glove" }
