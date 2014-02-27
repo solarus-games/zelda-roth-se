@@ -21,7 +21,11 @@ function pause_manager:create(game)
     pause_submenus = {  -- Array of submenus (inventory, map, etc.).
       inventory_builder:new(game),
       -- For now there is only the inventory submenu.
-      -- Add other pause submenus here.
+      -- TODO Add other pause submenus here:
+      -- - monsters
+      -- - help
+      -- - map
+      -- - options
     }
 
     -- Select the submenu that was saved if any.
