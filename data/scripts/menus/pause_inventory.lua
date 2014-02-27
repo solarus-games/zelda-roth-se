@@ -17,6 +17,8 @@ local item_names = {
   "bottle_2",
   "bottle_3",
 }
+local items_num_columns = 3
+local items_num_rows = math.ceil(#item_names / items_num_columns)
 
 local icons_img = sol.surface.create("menus/icons.png")
 local items_img = sol.surface.create("entities/items.png")
@@ -31,8 +33,8 @@ local function create_item_widget(game)
   for i, item_name in ipairs(item_names) do
     local variant = game:get_item(item_name):get_variant()
     if variant > 0 then
-      local column = (i - 1) % 3 + 1
-      local row = (i - 1) / 3 + 1
+      local column = (i - 1) % items_num_columns + 1
+      local row = (i - 1) / items_num_columns + 1
       -- Draw the sprite statically. This is okay as long as
       -- item sprites are not animated.
       -- If they become animated one day, they will have to be
@@ -130,21 +132,22 @@ function inventory_manager:new(game)
   local crystals_widget = create_crystals_widget(game)
   local pieces_of_heart_widget = create_pieces_of_heart_widget(game)
   
-  local item_cursor_green_sprite = sol.sprite.create("menus/item_cursor")
-  item_cursor_green_sprite:set_animation("green")
-  local item_cursor_gray_sprite = sol.sprite.create("menus/item_cursor")
-  item_cursor_gray_sprite:set_animation("gray")
+  local item_cursor_fixed_sprite = sol.sprite.create("menus/item_cursor")
+  item_cursor_fixed_sprite:set_animation("solid_fixed")
+  local item_cursor_moving_sprite = sol.sprite.create("menus/item_cursor")
+  item_cursor_moving_sprite:set_animation("dashed_blinking")
 
   -- Determine the place of the item currently assigned if any.
-  local item_assigned_row, item_assigned_column
+  local item_assigned_row, item_assigned_column, item_assigned_index
   local item_assigned = game:get_item_assigned(1)
   if item_assigned ~= nil then
     local item_name_assigned = item_assigned:get_name()
     for i, item_name in ipairs(item_names) do
 
       if item_name == item_name_assigned then
-        item_assigned_column = (i - 1) % 3
-        item_assigned_row = (i - 1) / 3
+        item_assigned_column = (i - 1) % items_num_columns
+        item_assigned_row = (i - 1) / items_num_columns
+        item_assigned_index = i - 1
       end
     end
   end
@@ -205,27 +208,42 @@ function inventory_manager:new(game)
   end
 
   local cursor_index = game:get_value("pause_inventory_last_item_index") or 0
-  local cursor_row = math.floor(cursor_index / 3)
-  local cursor_column = cursor_index % 3
+  local cursor_row = math.floor(cursor_index / items_num_columns)
+  local cursor_column = cursor_index % items_num_columns
 
   -- Draws cursors on the selected and on the assigned items.
   local function draw_item_cursors(dst_surface)
 
     -- Selected item.
     local widget_x, widget_y = item_widget:get_xy()
-    item_cursor_green_sprite:draw(
+    item_cursor_moving_sprite:draw(
         dst_surface,
         widget_x + 24 + 32 * cursor_column,
         widget_y + 24 + 32 * cursor_row
     )
 
-    -- Item assigned.
+    -- Item assigned (only if different from the selected one).
     if item_assigned_row ~= nil then
-      item_cursor_gray_sprite:draw(
-          dst_surface,
-          widget_x + 24 + 32 * item_assigned_column,
-          widget_y + 24 + 32 * item_assigned_row
-      )
+      if item_assigned_index ~= cursor_index then
+        item_cursor_fixed_sprite:draw(
+            dst_surface,
+            widget_x + 24 + 32 * item_assigned_column,
+            widget_y + 24 + 32 * item_assigned_row
+        )
+      end
+    end
+  end
+
+  -- Changes the position of the item cursor.
+  local function set_cursor_position(row, column)
+    cursor_row = row
+    cursor_column = column
+    cursor_index = cursor_row * items_num_columns + cursor_column
+    if cursor_index == item_assigned_index then
+      item_cursor_moving_sprite:set_animation("solid_blinking")
+      item_cursor_moving_sprite:set_frame(1)
+    else
+      item_cursor_moving_sprite:set_animation("dashed_blinking")
     end
   end
 
@@ -245,15 +263,67 @@ function inventory_manager:new(game)
 
   function inventory:on_command_pressed(command)
 
-    if command == "pause" then
-      if state == "ready" then
-        -- Close the pause menu.
-        state = "closing"
-        sol.audio.play_sound("pause_closed")
-        move_widgets(function() game:set_paused(false) end)
-      end
+    if state ~= "ready" then
       return true
     end
+
+    local handled = false
+
+    if command == "pause" then
+      -- Close the pause menu.
+      state = "closing"
+      sol.audio.play_sound("pause_closed")
+      move_widgets(function() game:set_paused(false) end)
+      handled = true
+
+    elseif command == "item_1" or command == "action" then
+      -- Assign an item.
+      local item = game:get_item(item_names[cursor_index + 1])
+      if cursor_index ~= item_assigned_index
+        and item:has_variant() then
+        sol.audio.play_sound("ok")
+        game:set_item_assigned(1, item)
+        item_assigned_row, item_assigned_column = cursor_row, cursor_column
+        item_assigned_index = cursor_row * items_num_rows + cursor_column
+        item_cursor_moving_sprite:set_animation("solid_blinking")
+        item_cursor_moving_sprite:set_frame(0)
+      end
+      handled = true
+
+    elseif command == "right" then
+      if cursor_column < items_num_columns - 1 then
+        sol.audio.play_sound("cursor")
+        set_cursor_position(cursor_row, cursor_column + 1)
+      end
+      handled = true
+
+    elseif command == "up" then
+      sol.audio.play_sound("cursor")
+      if cursor_row > 0 then
+        set_cursor_position(cursor_row - 1, cursor_column)
+      else
+        set_cursor_position(items_num_rows - 1, cursor_column)
+      end
+      handled = true
+
+    elseif command == "left" then
+      if cursor_column > 0 then
+        sol.audio.play_sound("cursor")
+        set_cursor_position(cursor_row, cursor_column - 1)
+      end
+      handled = true
+
+    elseif command == "down" then
+      sol.audio.play_sound("cursor")
+      if cursor_row < items_num_rows - 1 then
+        set_cursor_position(cursor_row + 1, cursor_column)
+      else
+        set_cursor_position(0, cursor_column)
+      end
+      handled = true
+    end
+
+    return handled
   end
 
   function inventory:on_finished()
