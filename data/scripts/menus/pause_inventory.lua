@@ -51,11 +51,10 @@ local function create_status_widget(game)
   local widget = gui_designer:create(160, 144)
   local sword = game:get_item("sword"):get_variant()
   local shield = game:get_item("shield"):get_variant()
-  local force = game:get_value("force") or 0
-  local defense = game:get_value("defense") or 0
+  local force = game:get_value("force")
+  local defense = game:get_value("defense")
   local life = game:get_life() .. "/" .. game:get_max_life()
   local magic = game:get_magic() .. "/" .. game:get_max_magic()
-  local time = ""  -- TODO
   widget:set_xy(144, 16 - movement_distance)
   widget:make_green_frame()
   widget:make_text(sol.language.get_string("pause.inventory.status"), 5, 4, "left")
@@ -68,7 +67,6 @@ local function create_status_widget(game)
   widget:make_text(sol.language.get_string("pause.inventory.defense"), 5, 76, "left")
   widget:make_text(": " .. defense, 65, 76, "left")
   widget:make_text(sol.language.get_string("pause.inventory.time"), 5, 92, "left")
-  widget:make_text(":" .. time, 65, 92, "left")
 
   if sword > 0 then
     widget:make_image_region(items_img, 528, 32 + 16 * sword, 16, 16, 12, 120)
@@ -167,12 +165,35 @@ function inventory_manager:new(game)
 
   end
 
+  local time_played_text = sol.text_surface.create{
+    font = "alttp",
+    horizontal_alignment = "left",
+    vertical_alignment = "top",
+  }
+
+  -- Draws the time played on the status widget.
+  local function draw_time_played(dst_surface)
+    local milliseconds = game:get_value("time_played")
+    local total_seconds = math.floor(milliseconds / 1000)
+    local seconds = total_seconds % 60
+    local total_minutes = math.floor(total_seconds / 60)
+    local minutes = total_minutes % 60
+    local total_hours = math.floor(total_minutes / 60)
+    local time_string = string.format(": %02d:%02d:%02d", total_hours, minutes, seconds)
+    time_played_text:set_text(time_string)
+    local status_x, status_y = status_widget:get_xy()
+    time_played_text:draw(dst_surface, status_x + 65, status_y + 92)
+  end
+
   function inventory:on_draw(dst_surface)
 
     item_widget:draw(dst_surface)
     status_widget:draw(dst_surface)
     crystals_widget:draw(dst_surface)
     pieces_of_heart_widget:draw(dst_surface)
+
+    -- Show the time played.
+    draw_time_played(dst_surface)
   end
 
   function inventory:on_command_pressed(command)

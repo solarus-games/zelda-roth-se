@@ -15,7 +15,7 @@ local function initialize_hero()
 
     -- In the parameter, the damage unit is 1/2 of a heart.
 
-    local defense = game:get_value("defense") or 0
+    local defense = game:get_value("defense")
     if defense == 0 then
       -- Multiply the damage by two if the hero has no defense at all.
       damage = damage * 2
@@ -35,7 +35,7 @@ local function initialize_enemy()
 
   function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
 
-    local force = hero:get_game():get_value("force") or 0
+    local force = hero:get_game():get_value("force")
     local reaction = self:get_attack_consequence_sprite(enemy_sprite, "sword")
     -- Multiply the sword consequence by the force of the hero.
     local life_lost = reaction * force 
@@ -58,7 +58,7 @@ local function initialize_sensor()
     local name = self:get_name()
 
     -- Sensors named "to_layer_X_sensor" move the hero on that layer.
-    -- TODO a custom entity or a wall to block enemies and thrown items?
+    -- TODO use a custom entity or a wall to block enemies and thrown items?
     if name:match("^layer_up_sensor") then
       local x, y, layer = hero:get_position()
       if layer < 2 then

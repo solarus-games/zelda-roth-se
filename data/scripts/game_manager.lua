@@ -13,6 +13,29 @@ local equipment_manager = require("scripts/equipment")
 
 local game_manager = {}
 
+-- Sets initial values for a new savegame of this quest.
+local function initialize_new_savegame(game)
+  game:set_starting_location("intro")
+  game:set_max_money(999)
+  game:set_max_life(6)
+  game:set_life(game:get_max_life())
+  game:set_value("force", 0)
+  game:set_value("defense", 0)
+  game:set_value("time_played", 0)
+end
+
+-- Measures the time played in this savegame.
+local function run_chronometer(game)
+
+  local timer = sol.timer.start(game, 100, function()
+    local time = game:get_value("time_played")
+    time = time + 100
+    game:set_value("time_played", time)
+    return true  -- Repeat the timer.
+  end)
+  timer:set_suspended_with_map(false)
+end
+
 -- Creates a game ready to be played.
 function game_manager:create(file)
 
@@ -25,10 +48,7 @@ function game_manager:create(file)
   local game = sol.game.load(file)
   if not exists then
     -- This is a new savegame file.
-    game:set_starting_location("intro")
-    game:set_max_money(999)
-    game:set_max_life(6)
-    game:set_life(game:get_max_life())
+    initialize_new_savegame(game)
   end
  
   local dialog_box
@@ -46,6 +66,9 @@ function game_manager:create(file)
 
     -- Initialize the hero.
     game:get_hero():set_walking_speed(normal_walking_speed)
+
+    -- Measure the time played.
+    run_chronometer(game)
   end
 
   -- Function called when the game stops.
