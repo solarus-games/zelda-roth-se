@@ -130,6 +130,25 @@ function inventory_manager:new(game)
   local crystals_widget = create_crystals_widget(game)
   local pieces_of_heart_widget = create_pieces_of_heart_widget(game)
   
+  local item_cursor_green_sprite = sol.sprite.create("menus/item_cursor")
+  item_cursor_green_sprite:set_animation("green")
+  local item_cursor_gray_sprite = sol.sprite.create("menus/item_cursor")
+  item_cursor_gray_sprite:set_animation("gray")
+
+  -- Determine the place of the item currently assigned if any.
+  local item_assigned_row, item_assigned_column
+  local item_assigned = game:get_item_assigned(1)
+  if item_assigned ~= nil then
+    local item_name_assigned = item_assigned:get_name()
+    for i, item_name in ipairs(item_names) do
+
+      if item_name == item_name_assigned then
+        item_assigned_column = (i - 1) % 3
+        item_assigned_row = (i - 1) / 3
+      end
+    end
+  end
+
   -- Rapidly moves the inventory widgets towards or away from the screen.
   local function move_widgets(callback)
 
@@ -185,6 +204,31 @@ function inventory_manager:new(game)
     time_played_text:draw(dst_surface, status_x + 65, status_y + 92)
   end
 
+  local cursor_index = game:get_value("pause_inventory_last_item_index") or 0
+  local cursor_row = math.floor(cursor_index / 3)
+  local cursor_column = cursor_index % 3
+
+  -- Draws cursors on the selected and on the assigned items.
+  local function draw_item_cursors(dst_surface)
+
+    -- Selected item.
+    local widget_x, widget_y = item_widget:get_xy()
+    item_cursor_green_sprite:draw(
+        dst_surface,
+        widget_x + 24 + 32 * cursor_column,
+        widget_y + 24 + 32 * cursor_row
+    )
+
+    -- Item assigned.
+    if item_assigned_row ~= nil then
+      item_cursor_gray_sprite:draw(
+          dst_surface,
+          widget_x + 24 + 32 * item_assigned_column,
+          widget_y + 24 + 32 * item_assigned_row
+      )
+    end
+  end
+
   function inventory:on_draw(dst_surface)
 
     item_widget:draw(dst_surface)
@@ -194,6 +238,9 @@ function inventory_manager:new(game)
 
     -- Show the time played.
     draw_time_played(dst_surface)
+
+    -- Show the item cursors.
+    draw_item_cursors(dst_surface)
   end
 
   function inventory:on_command_pressed(command)
@@ -207,6 +254,11 @@ function inventory_manager:new(game)
       end
       return true
     end
+  end
+
+  function inventory:on_finished()
+    -- Store the cursor position.
+    game:set_value("pause_inventory_last_item_index", cursor_index)
   end
 
   move_widgets(function() state = "ready" end)
