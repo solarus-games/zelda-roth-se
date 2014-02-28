@@ -31,6 +31,50 @@ cyclone !!!
 ]]
 }
 
+-- Fragment de Coeur.
+dialog{
+  id = "_treasure.piece_of_heart.1",
+  text = [[
+Tu as trouvé un quart de coeur !!!
+]]
+}
+
+-- Fragment de Coeur (suite 1).
+dialog{
+  id = "found_piece_of_heart.first
+  text = [[
+Encore 3 et tu gagneras un coeur
+supplémentaire !!!
+]]
+}
+
+-- Fragment de Coeur (suite 2).
+dialog{
+  id = "found_piece_of_heart.second
+  text = [[
+Encore 2 et tu gagneras un coeur
+supplémentaire !!!
+]]
+}
+
+-- Fragment de Coeur (suite 3).
+dialog{
+  id = "found_piece_of_heart.third
+  text = [[
+Encore 3 et tu gagneras un coeur
+supplémentaire !!!
+]]
+}
+
+-- Fragment de Coeur (suite 4).
+dialog{
+  id = "found_piece_of_heart.fourth
+  text = [[
+Ton nombre de coeurs vient
+d'augmenter !!!
+]]
+}
+
 -- Arc.
 dialog{
   id = "_treasure.bow.1",
