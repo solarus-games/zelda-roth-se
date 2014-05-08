@@ -1,6 +1,6 @@
 local enemy = ...
 
--- Skeletor: goes in a random direction.
+-- Skeleton: goes in a random direction.
 
 enemy:set_life(3)
 enemy:set_damage(2)

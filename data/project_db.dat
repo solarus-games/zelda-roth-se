@@ -100,6 +100,8 @@ sprite{ id = "hero/trail", description = "Hero trail" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/blue_spider", description = "Enemy: Blue Spider" }
+sprite{ id = "enemies/keese", description = "Enemy: Keese" }
+sprite{ id = "enemies/pike_auto", description = "Enemy: Pike (always moving)" }
 sprite{ id = "enemies/skeleton", description = "Enemy: Skeleton" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 
@@ -249,6 +251,8 @@ item{ id = "green_potion", description = "Green potion" }
 item{ id = "blue_potion", description = "Blue potion" }
 
 enemy{ id = "blue_spider", description = "Blue Spider" }
+enemy{ id = "keese", description = "Keese" }
+enemy{ id = "pike_auto", description = "Pike (always moving)" }
 enemy{ id = "skeleton", description = "Skeleton" }
 enemy{ id = "tentacle", description = "Tentacle" }
 

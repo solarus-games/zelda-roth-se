@@ -92,6 +92,16 @@ Utilise-le pour atteindre des cibles éloignées.
 ]]
 }
 
+-- Gants.
+dialog{
+  id = "_treasure.glove.1",
+  text = [[
+Tu as trouvé les gants !!!
+Utilise-les pour soulever des objets en
+appuyant sur la touche Action.
+]]
+}
+
 -- Marteau.
 dialog{
   id = "_treasure.hammer.1",
@@ -100,6 +110,47 @@ Tu as trouvé le marteau magique !!!
 Utilise-le pour écraser les obstacles.
 ]]
 }
+
+-- Carte.
+dialog{
+  id = "_treasure.map.1",
+  text = [[
+Tu as trouvé la carte du donjon !!!
+Affiche-la dans l'écran de pause pour voir
+le plan.
+]]
+}
+
+-- Boussole.
+dialog{
+  id = "_treasure.compass.1",
+  text = [[
+Tu as trouvé la boussole !!!
+Tu peux localiser le boss et les coffres sur
+le plan.
+]]
+}
+
+-- Clé du boss.
+dialog{
+  id = "_treasure.boss_key.1",
+  text = [[
+Tu as trouvé la clé du boss !!!
+]]
+}
+
+-- Petite clé.
+dialog{
+  id = "_treasure.small_key.1",
+  text = [[
+Tu as trouvé une petite clé !
+Appuie sur la touche Action devant une porte
+verrouillée pour l'ouvrir.
+]]
+}
+
+
+
 
 -- Sauvegarder & Quitter
 dialog{
@@ -210,6 +261,16 @@ dialog{
 Temple de la Forêt
 
 Sauvez les arbres, mangez du castor !!!
+]]
+}
+
+-- Entrée du Temple de la Forêt.
+dialog{
+  id = "dungeon_1.welcome",
+  text = [[
+                   Niveau 1
+
+              Temple de la Forêt
 ]]
 }
 

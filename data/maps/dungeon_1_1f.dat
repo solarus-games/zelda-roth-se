@@ -3357,6 +3357,76 @@ tile{
   pattern = 693,
 }
 
+wall{
+  layer = 1,
+  x = 152,
+  y = 1176,
+  width = 16,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 632,
+  y = 1176,
+  width = 16,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 152,
+  y = 936,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 472,
+  y = 936,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 296,
+  y = 1080,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 936,
+  y = 832,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 936,
+  y = 352,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
 dynamic_tile{
   layer = 1,
   x = 136,
@@ -3596,6 +3666,267 @@ door{
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "dungeon_1_1f_weak_wall_b",
   opening_method = "explosion",
+}
+
+enemy{
+  layer = 1,
+  x = 72,
+  y = 1045,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 248,
+  y = 1045,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 72,
+  y = 797,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+chest{
+  layer = 1,
+  x = 160,
+  y = 365,
+  treasure_name = "boss_key",
+  treasure_savegame_variable = "dungeon_1_boss_key_chest",
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 1,
+  x = 1120,
+  y = 365,
+  treasure_name = "glove",
+  treasure_savegame_variable = "dungeon_1_glove_chest",
+  sprite = "entities/chest",
+}
+
+wall{
+  layer = 1,
+  x = 936,
+  y = 592,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 936,
+  y = 1072,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 296,
+  y = 832,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 296,
+  y = 592,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 296,
+  y = 352,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 472,
+  y = 216,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 216,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 936,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 152,
+  y = 696,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+enemy{
+  layer = 1,
+  x = 640,
+  y = 349,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 680,
+  y = 493,
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+chest{
+  layer = 1,
+  x = 808,
+  y = 1085,
+  treasure_name = "map",
+  treasure_savegame_variable = "dungeon_1_map_chest",
+  sprite = "entities/chest",
+}
+
+enemy{
+  layer = 1,
+  x = 808,
+  y = 1077,
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+chest{
+  layer = 1,
+  x = 1120,
+  y = 1085,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_1_1f_se_key_chest",
+  sprite = "entities/chest",
+}
+
+enemy{
+  layer = 1,
+  x = 1120,
+  y = 1077,
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 632,
+  y = 813,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 728,
+  y = 749,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 600,
+  y = 493,
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 824,
+  y = 109,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 488,
+  y = 109,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+chest{
+  layer = 1,
+  x = 624,
+  y = 109,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_1_1f_n_key_chest",
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 1,
+  x = 1120,
+  y = 845,
+  treasure_name = "compass",
+  treasure_savegame_variable = "dungeon_1_compass_chest",
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 1,
+  x = 56,
+  y = 893,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_1_1f_sw_key_chest",
+  sprite = "entities/chest",
 }
 
 tile{
@@ -4233,5 +4564,69 @@ dynamic_tile{
   name = "weak_wall_b_open",
   pattern = 188,
   enabled_at_start = true,
+}
+
+separator{
+  layer = 2,
+  x = 312,
+  y = 0,
+  width = 16,
+  height = 1200,
+}
+
+separator{
+  layer = 2,
+  x = 952,
+  y = 0,
+  width = 16,
+  height = 1200,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 232,
+  width = 1280,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 952,
+  width = 1280,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 472,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 712,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 960,
+  y = 712,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 960,
+  y = 472,
+  width = 320,
+  height = 16,
 }
 

@@ -22,6 +22,7 @@ local function initialize_new_savegame(game)
   game:set_value("force", 0)
   game:set_value("defense", 0)
   game:set_value("time_played", 0)
+  game:get_item("bombs_counter"):set_variant(1)
 end
 
 -- Measures the time played in this savegame.

@@ -8615,17 +8615,6 @@ destructible{
 
 destructible{
   layer = 1,
-  x = 664,
-  y = 829,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
   x = 120,
   y = 797,
   treasure_name = "random",
@@ -8795,7 +8784,7 @@ enemy{
 enemy{
   layer = 1,
   x = 892,
-  y = 845,
+  y = 821,
   direction = 3,
   breed = "blue_spider",
   treasure_name = "random",
@@ -9455,6 +9444,14 @@ teletransporter{
   transition = "scrolling",
   destination_map = "outside_c3",
   destination = "_side",
+}
+
+pickable{
+  layer = 1,
+  x = 296,
+  y = 285,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_c1_piece_of_heart_a",
 }
 
 tile{
@@ -10846,5 +10843,21 @@ teletransporter{
   transition = "scrolling",
   destination_map = "outside_c3",
   destination = "_side",
+}
+
+pickable{
+  layer = 2,
+  x = 152,
+  y = 909,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_c1_piece_of_heart_b",
+}
+
+pickable{
+  layer = 2,
+  x = 152,
+  y = 1181,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_c1_piece_of_heart_c",
 }
 

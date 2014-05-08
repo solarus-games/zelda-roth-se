@@ -17,6 +17,8 @@ local behavior = {}
 --   hurt_style = "normal",
 --   push_hero_on_sword = false,
 --   pushed_when_hurt = true,
+--   ignore_obstacles = false,
+--   detection_distance = 100,
 --   movement_create = function()
 --     local m = sol.movement.create("random_path")
 --     return m
@@ -52,6 +54,12 @@ function behavior:create(enemy, properties)
   end
   if properties.push_hero_on_sword == nil then
     properties.push_hero_on_sword = false
+  end
+  if properties.ignore_obstacles == nil then
+    properties.ignore_obstacles = false
+  end
+  if properties.detection_distance == nil then
+    properties.detection_distance = 160
   end
   if properties.movement_create == nil then
     properties.movement_create = function()
@@ -98,7 +106,8 @@ function behavior:create(enemy, properties)
     local _, _, layer = self:get_position()
     local _, _, hero_layer = hero:get_position()
     local near_hero = layer == hero_layer
-      and self:get_distance(hero) < 100
+      and self:get_distance(hero) < properties.detection_distance
+      and self:is_in_same_region(hero)
 
     if near_hero and not going_hero then
       self:go_hero()
@@ -111,17 +120,25 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:go_random()
-    local m = properties.movement_create()
-    m:set_speed(properties.normal_speed)
-    m:start(self)
     going_hero = false
+    local m = properties.movement_create()
+    if m == nil then
+      -- No movement.
+      self:get_sprite():set_animation("stopped")
+    else
+      m:set_speed(properties.normal_speed)
+      m:set_ignore_obstacles(properties.ignore_obstacles)
+      m:start(self)
+    end
   end
 
   function enemy:go_hero()
+    going_hero = true
     local m = sol.movement.create("target")
     m:set_speed(properties.faster_speed)
+    m:set_ignore_obstacles(properties.ignore_obstacles)
     m:start(self)
-    going_hero = true
+    self:get_sprite():set_animation("walking")
   end
 end
 

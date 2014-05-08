@@ -1755,6 +1755,26 @@ tile{
   pattern = 595,
 }
 
+wall{
+  layer = 1,
+  x = 632,
+  y = 216,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 1112,
+  y = 696,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
 door{
   layer = 1,
   x = 632,
@@ -1834,6 +1854,147 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_1_boss_key",
   cannot_open_dialog = "boss_key_required",
+}
+
+enemy{
+  layer = 1,
+  x = 184,
+  y = 845,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 488,
+  y = 765,
+  direction = 3,
+  breed = "pike_auto",
+}
+
+enemy{
+  layer = 1,
+  x = 520,
+  y = 813,
+  direction = 3,
+  breed = "pike_auto",
+}
+
+enemy{
+  layer = 1,
+  x = 552,
+  y = 861,
+  direction = 3,
+  breed = "pike_auto",
+}
+
+enemy{
+  layer = 1,
+  x = 688,
+  y = 821,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 744,
+  y = 765,
+  direction = 3,
+  breed = "pike_auto",
+}
+
+enemy{
+  layer = 1,
+  x = 776,
+  y = 813,
+  direction = 3,
+  breed = "pike_auto",
+}
+
+enemy{
+  layer = 1,
+  x = 808,
+  y = 861,
+  direction = 3,
+  breed = "pike_auto",
+}
+
+enemy{
+  layer = 1,
+  x = 1120,
+  y = 845,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+wall{
+  layer = 1,
+  x = 152,
+  y = 696,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 296,
+  y = 832,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 936,
+  y = 832,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+enemy{
+  layer = 1,
+  x = 480,
+  y = 613,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 800,
+  y = 613,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 800,
+  y = 373,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 480,
+  y = 373,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
 }
 
 tile{
@@ -2140,5 +2301,69 @@ tile{
   width = 8,
   height = 32,
   pattern = 162,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 472,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 712,
+  width = 1280,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 960,
+  y = 472,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 792,
+  y = 0,
+  width = 16,
+  height = 240,
+}
+
+separator{
+  layer = 2,
+  x = 472,
+  y = 0,
+  width = 16,
+  height = 240,
+}
+
+separator{
+  layer = 2,
+  x = 312,
+  y = 240,
+  width = 16,
+  height = 720,
+}
+
+separator{
+  layer = 2,
+  x = 952,
+  y = 240,
+  width = 16,
+  height = 720,
+}
+
+separator{
+  layer = 2,
+  x = 320,
+  y = 232,
+  width = 640,
+  height = 16,
 }
 
