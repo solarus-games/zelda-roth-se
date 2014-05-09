@@ -125,6 +125,11 @@ function behavior:create(enemy, properties)
     if m == nil then
       -- No movement.
       self:get_sprite():set_animation("stopped")
+      m = self:get_movement()
+      if m ~= nil then
+        -- Stop the previous movement.
+        m:stop()
+      end
     else
       m:set_speed(properties.normal_speed)
       m:set_ignore_obstacles(properties.ignore_obstacles)
