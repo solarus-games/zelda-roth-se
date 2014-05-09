@@ -3672,6 +3672,7 @@ enemy{
   layer = 1,
   x = 72,
   y = 1045,
+  name = "auto_enemy_9",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random",
@@ -3681,6 +3682,7 @@ enemy{
   layer = 1,
   x = 248,
   y = 1045,
+  name = "auto_enemy_10",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random",
@@ -3690,6 +3692,7 @@ enemy{
   layer = 1,
   x = 72,
   y = 797,
+  name = "auto_enemy_8",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random",
@@ -3807,6 +3810,7 @@ enemy{
   layer = 1,
   x = 640,
   y = 349,
+  name = "auto_enemy_3",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
@@ -3816,6 +3820,7 @@ enemy{
   layer = 1,
   x = 680,
   y = 493,
+  name = "auto_enemy_5",
   direction = 3,
   breed = "keese",
   treasure_name = "random",
@@ -3834,6 +3839,7 @@ enemy{
   layer = 1,
   x = 808,
   y = 1077,
+  name = "auto_enemy_11",
   direction = 3,
   breed = "keese",
   treasure_name = "random",
@@ -3852,6 +3858,7 @@ enemy{
   layer = 1,
   x = 1120,
   y = 1077,
+  name = "auto_enemy_12",
   direction = 3,
   breed = "keese",
   treasure_name = "random",
@@ -3861,6 +3868,7 @@ enemy{
   layer = 1,
   x = 632,
   y = 813,
+  name = "auto_enemy_7",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random",
@@ -3870,6 +3878,7 @@ enemy{
   layer = 1,
   x = 728,
   y = 749,
+  name = "auto_enemy_6",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
@@ -3879,6 +3888,7 @@ enemy{
   layer = 1,
   x = 600,
   y = 493,
+  name = "auto_enemy_4",
   direction = 3,
   breed = "keese",
   treasure_name = "random",
@@ -3888,6 +3898,7 @@ enemy{
   layer = 1,
   x = 824,
   y = 109,
+  name = "auto_enemy_2",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
@@ -3897,6 +3908,7 @@ enemy{
   layer = 1,
   x = 488,
   y = 109,
+  name = "auto_enemy",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
@@ -3927,6 +3939,84 @@ chest{
   treasure_name = "small_key",
   treasure_savegame_variable = "dungeon_1_1f_sw_key_chest",
   sprite = "entities/chest",
+}
+
+destination{
+  layer = 1,
+  x = 160,
+  y = 589,
+  name = "from_b1_w",
+  direction = 3,
+}
+
+destination{
+  layer = 1,
+  x = 640,
+  y = 477,
+  name = "from_b1_c",
+  direction = 3,
+}
+
+destination{
+  layer = 1,
+  x = 1120,
+  y = 589,
+  name = "from_b1_e",
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 152,
+  y = 576,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_1_b1",
+  destination = "from_1f_w",
+}
+
+teletransporter{
+  layer = 1,
+  x = 632,
+  y = 464,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_1_b1",
+  destination = "from_1f_c",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1112,
+  y = 576,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_1_b1",
+  destination = "from_1f_c",
+}
+
+stairs{
+  layer = 1,
+  x = 152,
+  y = 576,
+  direction = 3,
+  subtype = "3",
+}
+
+stairs{
+  layer = 1,
+  x = 632,
+  y = 464,
+  direction = 3,
+  subtype = "3",
+}
+
+stairs{
+  layer = 1,
+  x = 1112,
+  y = 576,
+  direction = 3,
+  subtype = "3",
 }
 
 tile{
@@ -4572,6 +4662,7 @@ separator{
   y = 0,
   width = 16,
   height = 1200,
+  name = "auto_separator_7",
 }
 
 separator{
@@ -4580,6 +4671,7 @@ separator{
   y = 0,
   width = 16,
   height = 1200,
+  name = "auto_separator_8",
 }
 
 separator{
@@ -4588,6 +4680,7 @@ separator{
   y = 232,
   width = 1280,
   height = 16,
+  name = "auto_separator",
 }
 
 separator{
@@ -4596,6 +4689,7 @@ separator{
   y = 952,
   width = 1280,
   height = 16,
+  name = "auto_separator_4",
 }
 
 separator{
@@ -4604,6 +4698,7 @@ separator{
   y = 472,
   width = 320,
   height = 16,
+  name = "auto_separator_2",
 }
 
 separator{
@@ -4612,6 +4707,7 @@ separator{
   y = 712,
   width = 320,
   height = 16,
+  name = "auto_separator_3",
 }
 
 separator{
@@ -4620,6 +4716,7 @@ separator{
   y = 712,
   width = 320,
   height = 16,
+  name = "auto_separator_5",
 }
 
 separator{
@@ -4628,5 +4725,6 @@ separator{
   y = 472,
   width = 320,
   height = 16,
+  name = "auto_separator_6",
 }
 
