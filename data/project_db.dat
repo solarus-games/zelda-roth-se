@@ -213,7 +213,10 @@ sound{ id = "walk_on_water", description = "walk_on_water" }
 sound{ id = "wrong", description = "wrong" }
 sound{ id = "running_obstacle", description = "running_obstacle" }
 
-item{ id = "random", description = "(Random)" }
+item{ id = "random", description = "Random" }
+item{ id = "random_heart", description = "Random, often heart)" }
+item{ id = "random_rupee", description = "Random, often rupee)" }
+item{ id = "random_magic", description = "Random, often magic)" }
 item{ id = "bombs_counter", description = "Bombs counter" }
 item{ id = "bomb", description = "Bombs (x1 / x3 / x8)" }
 item{ id = "bow", description = "Bow" }
