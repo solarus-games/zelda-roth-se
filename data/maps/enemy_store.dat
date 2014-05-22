@@ -1,0 +1,57 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 640,
+  height = 480,
+  tileset = "temple_blue",
+  music = "same",
+}
+
+enemy{
+  layer = 1,
+  x = 24,
+  y = 37,
+  name = "auto_enemy",
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 24,
+  y = 157,
+  direction = 3,
+  breed = "pike_auto",
+}
+
+enemy{
+  layer = 1,
+  x = 56,
+  y = 157,
+  name = "auto_enemy_13",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  layer = 1,
+  x = 136,
+  y = 37,
+  name = "auto_enemy_4",
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  layer = 1,
+  x = 92,
+  y = 37,
+  name = "auto_enemy_3",
+  direction = 3,
+  breed = "blue_spider",
+  treasure_name = "random_heart",
+}
+

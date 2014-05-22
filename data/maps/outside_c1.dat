@@ -8733,7 +8733,7 @@ enemy{
   y = 1077,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -8742,7 +8742,7 @@ enemy{
   y = 1093,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -8769,7 +8769,7 @@ enemy{
   y = 989,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -8778,7 +8778,7 @@ enemy{
   y = 637,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -8787,7 +8787,7 @@ enemy{
   y = 821,
   direction = 3,
   breed = "blue_spider",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -8796,7 +8796,7 @@ enemy{
   y = 1125,
   direction = 3,
   breed = "blue_spider",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -8805,7 +8805,7 @@ enemy{
   y = 1173,
   direction = 3,
   breed = "blue_spider",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 destructible{

@@ -3675,7 +3675,7 @@ enemy{
   name = "auto_enemy_9",
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -3685,7 +3685,7 @@ enemy{
   name = "auto_enemy_10",
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -3695,7 +3695,7 @@ enemy{
   name = "auto_enemy_8",
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 chest{
@@ -3823,7 +3823,7 @@ enemy{
   name = "auto_enemy_5",
   direction = 3,
   breed = "keese",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 chest{
@@ -3842,7 +3842,7 @@ enemy{
   name = "auto_enemy_11",
   direction = 3,
   breed = "keese",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 chest{
@@ -3861,7 +3861,7 @@ enemy{
   name = "auto_enemy_12",
   direction = 3,
   breed = "keese",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -3871,7 +3871,7 @@ enemy{
   name = "auto_enemy_7",
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -3891,7 +3891,7 @@ enemy{
   name = "auto_enemy_4",
   direction = 3,
   breed = "keese",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
