@@ -42,7 +42,7 @@ function bg1_movement:on_position_changed(x, y)
   if y <= -bg1_height then
     bg1_movement:set_xy(0, 0)
   end
-    
+
 end
 
 function bg2_movement:on_position_changed(x, y)
