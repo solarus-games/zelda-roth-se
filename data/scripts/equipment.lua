@@ -22,7 +22,7 @@ function equipment_manager:create(game)
     local map = game:get_map()
 
     if map ~= nil then
-      -- Does the map explicitly defines a small key counter?
+      -- Does the map explicitly define a small key counter?
       if map.small_keys_savegame_variable ~= nil then
         return map.small_keys_savegame_variable
       end
