@@ -760,7 +760,7 @@ tile{
   y = 408,
   width = 8,
   height = 24,
-  pattern = "floor.border_2",
+  pattern = "floor_border.2",
 }
 
 tile{
@@ -769,7 +769,7 @@ tile{
   y = 408,
   width = 8,
   height = 24,
-  pattern = "floor.border_2",
+  pattern = "floor_border.2",
 }
 
 tile{
@@ -778,7 +778,7 @@ tile{
   y = 400,
   width = 80,
   height = 8,
-  pattern = "floor.border_2",
+  pattern = "floor_border.2",
 }
 
 tile{
@@ -814,7 +814,7 @@ tile{
   y = 488,
   width = 8,
   height = 24,
-  pattern = "stairs_inner_down.2.border.2",
+  pattern = "stairs_down.2.border.2",
 }
 
 tile{
@@ -823,7 +823,7 @@ tile{
   y = 488,
   width = 16,
   height = 24,
-  pattern = "stairs_inner_down.2",
+  pattern = "stairs_down.2",
 }
 
 tile{
@@ -832,7 +832,7 @@ tile{
   y = 488,
   width = 8,
   height = 24,
-  pattern = "stairs_inner_down.2.border.3",
+  pattern = "stairs_down.2.border.3",
 }
 
 tile{
@@ -841,7 +841,7 @@ tile{
   y = 512,
   width = 32,
   height = 8,
-  pattern = "stairs_inner_down.2.border.1",
+  pattern = "stairs_down.2.border.1",
 }
 
 tile{

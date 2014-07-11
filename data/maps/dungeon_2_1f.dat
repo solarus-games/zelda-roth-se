@@ -10149,7 +10149,7 @@ tile{
   y = 1384,
   width = 8,
   height = 24,
-  pattern = "floor.border_2",
+  pattern = "floor_border.2",
 }
 
 tile{
@@ -10158,7 +10158,7 @@ tile{
   y = 1384,
   width = 8,
   height = 24,
-  pattern = "floor.border_2",
+  pattern = "floor_border.2",
 }
 
 tile{
@@ -10167,7 +10167,7 @@ tile{
   y = 1376,
   width = 80,
   height = 8,
-  pattern = "floor.border_2",
+  pattern = "floor_border.2",
 }
 
 tile{
