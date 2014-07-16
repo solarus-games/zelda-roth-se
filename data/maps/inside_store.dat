@@ -859,7 +859,7 @@ tile{
   y = 496,
   width = 8,
   height = 24,
-  pattern = "stairs_inner_up.1.bannister.1",
+  pattern = "stairs_inner_up.1.border.1",
 }
 
 tile{
@@ -868,7 +868,7 @@ tile{
   y = 496,
   width = 8,
   height = 24,
-  pattern = "stairs_inner_up.1.bannister.2",
+  pattern = "stairs_inner_up.1.border.2",
 }
 
 tile{

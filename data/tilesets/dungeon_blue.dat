@@ -2117,7 +2117,7 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "stairs_inner_up.1.bannister.1",
+  id = "stairs_inner_up.1.border.1",
   ground = "wall",
   default_layer = 0,
   x = 96,
@@ -2127,7 +2127,7 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "stairs_inner_up.1.bannister.2",
+  id = "stairs_inner_up.1.border.2",
   ground = "wall",
   default_layer = 0,
   x = 120,
