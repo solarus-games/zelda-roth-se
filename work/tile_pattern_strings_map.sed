@@ -8,8 +8,8 @@ s/pattern = "\?47"\?,$/pattern = "wall.corner.3",/
 s/pattern = "\?48"\?,$/pattern = "wall.corner.4",/
 s/pattern = "\?49"\?,$/pattern = "wall.1",/
 s/pattern = "\?50"\?,$/pattern = "wall.4",/
-s/pattern = "\?51"\?,$/pattern = "wall.2",/
-s/pattern = "\?52"\?,$/pattern = "wall.3",/
+s/pattern = "\?51"\?,$/pattern = "wall.3",/
+s/pattern = "\?52"\?,$/pattern = "wall.2",/
 s/pattern = "\?53"\?,$/pattern = "wall.corner_reverse.4",/
 s/pattern = "\?54"\?,$/pattern = "wall.corner_reverse.3",/
 s/pattern = "\?55"\?,$/pattern = "wall.corner_reverse.2",/

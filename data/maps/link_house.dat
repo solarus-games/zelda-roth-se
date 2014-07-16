@@ -14,7 +14,7 @@ tile{
   y = 216,
   width = 272,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -68,7 +68,7 @@ tile{
   y = 24,
   width = 24,
   height = 192,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{

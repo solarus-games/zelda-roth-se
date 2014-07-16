@@ -8,8 +8,8 @@ s/id = "\?47"\?,$/id = "wall.corner.3",/
 s/id = "\?48"\?,$/id = "wall.corner.4",/
 s/id = "\?49"\?,$/id = "wall.1",/
 s/id = "\?50"\?,$/id = "wall.4",/
-s/id = "\?51"\?,$/id = "wall.2",/
-s/id = "\?52"\?,$/id = "wall.3",/
+s/id = "\?51"\?,$/id = "wall.3",/
+s/id = "\?52"\?,$/id = "wall.2",/
 s/id = "\?53"\?,$/id = "wall.corner_reverse.4",/
 s/id = "\?54"\?,$/id = "wall.corner_reverse.3",/
 s/id = "\?55"\?,$/id = "wall.corner_reverse.2",/
