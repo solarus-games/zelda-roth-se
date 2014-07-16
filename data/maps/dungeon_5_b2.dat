@@ -9735,7 +9735,9 @@ switch{
   layer = 1,
   x = 1104,
   y = 352,
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
