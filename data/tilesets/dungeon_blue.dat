@@ -20,7 +20,7 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "barrier.junction",
+  id = "barrier.border",
   ground = "wall",
   default_layer = 1,
   x = 48,
@@ -50,7 +50,7 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "barrier_big.junction.1",
+  id = "barrier_big.border.1",
   ground = "wall",
   default_layer = 1,
   x = 32,
@@ -60,7 +60,7 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "barrier_big.junction.2",
+  id = "barrier_big.border.2",
   ground = "wall",
   default_layer = 1,
   x = 32,
