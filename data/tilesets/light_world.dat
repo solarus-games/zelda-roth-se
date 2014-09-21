@@ -1,395 +1,5 @@
 background_color{ 104, 184, 104 }
 tile_pattern{
-  id = "1146",
-  ground = "traversable",
-  default_layer = 0,
-  x = 320,
-  y = 448,
-  width = 16,
-  height = 24,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1147",
-  ground = "traversable",
-  default_layer = 0,
-  x = 320,
-  y = 472,
-  width = 16,
-  height = 16,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1148",
-  ground = "traversable",
-  default_layer = 1,
-  x = 336,
-  y = 448,
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1149",
-  ground = "traversable",
-  default_layer = 1,
-  x = 336,
-  y = 456,
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1150",
-  ground = "traversable",
-  default_layer = 1,
-  x = 336,
-  y = 472,
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1151",
-  ground = "traversable",
-  default_layer = 1,
-  x = 336,
-  y = 480,
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1152",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 344, 344, 344 },
-  y = { 448, 456, 464 },
-  width = 16,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1153",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 360, 360, 360 },
-  y = { 448, 456, 464 },
-  width = 16,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1170",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 376, 376, 376 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1171",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 384, 384, 384 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1172",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 392, 392, 392 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1173",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 400, 400, 400 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1174",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 408, 408, 408 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1175",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 416, 416, 416 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1177",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 424, 424, 424 },
-  y = { 448, 456, 464 },
-  width = 16,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1178",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 440, 440, 440 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1179",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 448, 448, 448 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1180",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 456, 456, 456 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1181",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 464, 464, 464 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1182",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 472, 472, 472 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1183",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 480, 480, 480 },
-  y = { 448, 456, 464 },
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "1185",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 344, 344, 344 },
-  y = { 472, 480, 488 },
-  width = 16,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1186",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 360, 360, 360 },
-  y = { 472, 480, 488 },
-  width = 16,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1187",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 376, 376, 376 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1188",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 384, 384, 384 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1189",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 392, 392, 392 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1190",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 400, 400, 400 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1191",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 408, 408, 408 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1192",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 416, 416, 416 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1193",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 424, 424, 424 },
-  y = { 472, 480, 488 },
-  width = 16,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1195",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 456, 456, 456 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1196",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 464, 464, 464 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1197",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 440, 440, 440 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1198",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 448, 448, 448 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1199",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 472, 472, 472 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1200",
-  ground = "traversable",
-  default_layer = 1,
-  x = { 480, 480, 480 },
-  y = { 472, 480, 488 },
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
-  id = "1201",
-  ground = "traversable",
-  default_layer = 0,
-  x = 320,
-  y = 488,
-  width = 8,
-  height = 8,
-  scrolling = "parallax",
-}
-
-tile_pattern{
   id = "barrier.border",
   ground = "wall",
   default_layer = 0,
@@ -1927,6 +1537,363 @@ tile_pattern{
   y = 168,
   width = 8,
   height = 8,
+}
+
+tile_pattern{
+  id = "clouds",
+  ground = "traversable",
+  default_layer = 1,
+  x = 336,
+  y = 448,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.1",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 344, 344, 344 },
+  y = { 448, 456, 464 },
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.2",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 360, 360, 360 },
+  y = { 448, 456, 464 },
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.3",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 376, 376, 376 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.3b",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 392, 392, 392 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.4",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 384, 384, 384 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.4b",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 400, 400, 400 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.diag.3",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 408, 408, 408 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.diag.4",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 416, 416, 416 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.shadow",
+  ground = "traversable",
+  default_layer = 1,
+  x = 336,
+  y = 456,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.shadow.2",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 424, 424, 424 },
+  y = { 448, 456, 464 },
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.shadow.3",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 456, 456, 456 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.shadow.3b",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 472, 472, 472 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.shadow.4",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 464, 464, 464 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.shadow.4b",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 480, 480, 480 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.shadow.diag.3",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 440, 440, 440 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds.shadow.diag.4",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 448, 448, 448 },
+  y = { 448, 456, 464 },
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "clouds_parallax",
+  ground = "traversable",
+  default_layer = 1,
+  x = 336,
+  y = 472,
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.1",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 344, 344, 344 },
+  y = { 472, 480, 488 },
+  width = 16,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.2",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 360, 360, 360 },
+  y = { 472, 480, 488 },
+  width = 16,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.3",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 376, 376, 376 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.3b",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 392, 392, 392 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.4",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 384, 384, 384 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.4b",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 400, 400, 400 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.diag.3",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 408, 408, 408 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.diag.4",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 416, 416, 416 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.shadow",
+  ground = "traversable",
+  default_layer = 1,
+  x = 336,
+  y = 480,
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.shadow.2",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 424, 424, 424 },
+  y = { 472, 480, 488 },
+  width = 16,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.shadow.3",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 456, 456, 456 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.shadow.3b",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 472, 472, 472 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.shadow.4",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 464, 464, 464 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.shadow.4b",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 480, 480, 480 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.shadow.diag.3",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 440, 440, 440 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "clouds_parallax.shadow.diag.4",
+  ground = "traversable",
+  default_layer = 1,
+  x = { 448, 448, 448 },
+  y = { 472, 480, 488 },
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
 }
 
 tile_pattern{
@@ -4077,6 +4044,39 @@ tile_pattern{
   y = 408,
   width = 32,
   height = 32,
+}
+
+tile_pattern{
+  id = "forest_parallax.soil",
+  ground = "traversable",
+  default_layer = 0,
+  x = 320,
+  y = 488,
+  width = 8,
+  height = 8,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "forest_parallax.tree",
+  ground = "traversable",
+  default_layer = 0,
+  x = 320,
+  y = 448,
+  width = 16,
+  height = 24,
+  scrolling = "parallax",
+}
+
+tile_pattern{
+  id = "forest_parallax.trees",
+  ground = "traversable",
+  default_layer = 0,
+  x = 320,
+  y = 472,
+  width = 16,
+  height = 16,
+  scrolling = "parallax",
 }
 
 tile_pattern{
