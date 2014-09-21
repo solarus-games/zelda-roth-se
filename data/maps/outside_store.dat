@@ -895,7 +895,7 @@ tile{
   y = 128,
   width = 48,
   height = 16,
-  pattern = "grass.cliff.bottom.1",
+  pattern = "grass.cliff.1",
 }
 
 tile{
@@ -904,7 +904,7 @@ tile{
   y = 112,
   width = 48,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -931,7 +931,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.1",
+  pattern = "grass.cliff.diag.1",
 }
 
 tile{
@@ -940,7 +940,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -967,7 +967,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.1",
+  pattern = "grass.cliff.diag.1",
 }
 
 tile{
@@ -994,7 +994,7 @@ tile{
   y = 48,
   width = 16,
   height = 48,
-  pattern = "grass.cliff.bottom.3",
+  pattern = "grass.cliff.3",
 }
 
 tile{
@@ -1012,7 +1012,7 @@ tile{
   y = 128,
   width = 80,
   height = 16,
-  pattern = "grass.cliff.bottom.1",
+  pattern = "grass.cliff.1",
 }
 
 tile{
@@ -1021,7 +1021,7 @@ tile{
   y = 112,
   width = 80,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -1048,7 +1048,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.1",
+  pattern = "grass.cliff.diag.1",
 }
 
 tile{
@@ -1075,7 +1075,7 @@ tile{
   y = 32,
   width = 16,
   height = 80,
-  pattern = "grass.cliff.bottom.3",
+  pattern = "grass.cliff.3",
 }
 
 tile{
@@ -1138,7 +1138,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.2",
+  pattern = "grass.cliff.diag.2",
 }
 
 tile{
@@ -1147,7 +1147,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.2",
+  pattern = "grass.cliff.diag.2",
 }
 
 tile{
@@ -1165,7 +1165,7 @@ tile{
   y = 48,
   width = 16,
   height = 48,
-  pattern = "grass.cliff.bottom.4",
+  pattern = "grass.cliff.4",
 }
 
 tile{
@@ -1201,7 +1201,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -1210,7 +1210,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.2",
+  pattern = "grass.cliff.diag.2",
 }
 
 tile{
@@ -1228,7 +1228,7 @@ tile{
   y = 32,
   width = 16,
   height = 80,
-  pattern = "grass.cliff.bottom.4",
+  pattern = "grass.cliff.4",
 }
 
 tile{
@@ -1300,7 +1300,7 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.4",
+  pattern = "grass.cliff.diag.4",
 }
 
 tile{
@@ -1309,7 +1309,7 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.3",
+  pattern = "grass.cliff.diag.3",
 }
 
 tile{
@@ -1318,7 +1318,7 @@ tile{
   y = 16,
   width = 80,
   height = 8,
-  pattern = "grass.cliff.bottom.2",
+  pattern = "grass.cliff.2",
 }
 
 tile{
@@ -1327,7 +1327,7 @@ tile{
   y = 24,
   width = 80,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -1426,7 +1426,7 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.4",
+  pattern = "grass.cliff.diag.4",
 }
 
 tile{
@@ -1435,7 +1435,7 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.3",
+  pattern = "grass.cliff.diag.3",
 }
 
 tile{
@@ -1444,7 +1444,7 @@ tile{
   y = 16,
   width = 48,
   height = 8,
-  pattern = "grass.cliff.bottom.2",
+  pattern = "grass.cliff.2",
 }
 
 tile{
@@ -1453,7 +1453,7 @@ tile{
   y = 24,
   width = 48,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -1480,7 +1480,7 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.3",
+  pattern = "grass.cliff.diag.3",
 }
 
 tile{
@@ -1489,7 +1489,7 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.4",
+  pattern = "grass.cliff.diag.4",
 }
 
 tile{
@@ -1543,7 +1543,7 @@ tile{
   y = 64,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.4",
+  pattern = "grass.cliff.diag.4",
 }
 
 tile{
@@ -1552,7 +1552,7 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.4",
+  pattern = "grass.cliff.diag.4",
 }
 
 tile{
@@ -1588,7 +1588,7 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.4",
+  pattern = "grass.cliff.diag.4",
 }
 
 tile{
@@ -1642,7 +1642,7 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.3",
+  pattern = "grass.cliff.diag.3",
 }
 
 tile{
@@ -1651,7 +1651,7 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.3",
+  pattern = "grass.cliff.diag.3",
 }
 
 tile{
@@ -1660,7 +1660,7 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.3",
+  pattern = "grass.cliff.diag.3",
 }
 
 tile{
@@ -1696,7 +1696,7 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.4",
+  pattern = "grass.cliff.diag.4",
 }
 
 tile{
@@ -1777,7 +1777,7 @@ tile{
   y = 64,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.3",
+  pattern = "grass.cliff.diag.3",
 }
 
 tile{
@@ -1876,7 +1876,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.2",
+  pattern = "grass.cliff.diag.2",
 }
 
 tile{
@@ -1885,7 +1885,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.2",
+  pattern = "grass.cliff.diag.2",
 }
 
 tile{
@@ -1894,7 +1894,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -1930,7 +1930,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -1939,7 +1939,7 @@ tile{
   y = 144,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.2",
+  pattern = "grass.cliff.diag.2",
 }
 
 tile{
@@ -1975,7 +1975,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.2",
+  pattern = "grass.cliff.diag.2",
 }
 
 tile{
@@ -1984,7 +1984,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -1993,7 +1993,7 @@ tile{
   y = 144,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.1",
+  pattern = "grass.cliff.diag.1",
 }
 
 tile{
@@ -2002,7 +2002,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.1",
+  pattern = "grass.cliff.diag.1",
 }
 
 tile{
@@ -2011,7 +2011,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.1",
+  pattern = "grass.cliff.diag.1",
 }
 
 tile{
@@ -2020,7 +2020,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.1",
+  pattern = "grass.cliff.diag.1",
 }
 
 tile{
@@ -2029,7 +2029,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -2038,7 +2038,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -2047,7 +2047,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -2119,7 +2119,7 @@ tile{
   y = 48,
   width = 32,
   height = 16,
-  pattern = "grass.cliff.bottom.1",
+  pattern = "grass.cliff.1",
 }
 
 tile{
@@ -2137,7 +2137,7 @@ tile{
   y = 32,
   width = 32,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -2155,7 +2155,7 @@ tile{
   y = 64,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.1",
+  pattern = "grass.cliff.diag.1",
 }
 
 tile{
@@ -2164,7 +2164,7 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -2236,7 +2236,7 @@ tile{
   y = 80,
   width = 16,
   height = 32,
-  pattern = "grass.cliff.bottom.3",
+  pattern = "grass.cliff.3",
 }
 
 tile{
@@ -2353,7 +2353,7 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -2362,7 +2362,7 @@ tile{
   y = 64,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.2",
+  pattern = "grass.cliff.diag.2",
 }
 
 tile{
@@ -2461,7 +2461,7 @@ tile{
   y = 80,
   width = 16,
   height = 32,
-  pattern = "grass.cliff.bottom.4",
+  pattern = "grass.cliff.4",
 }
 
 tile{
@@ -2497,7 +2497,7 @@ tile{
   y = 128,
   width = 32,
   height = 16,
-  pattern = "grass.cliff.bottom.2",
+  pattern = "grass.cliff.2",
 }
 
 tile{
@@ -2506,7 +2506,7 @@ tile{
   y = 136,
   width = 32,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -2533,7 +2533,7 @@ tile{
   y = 24,
   width = 16,
   height = 8,
-  pattern = "cliff.middle.corner_reverse.diag.3",
+  pattern = "cliff.corner_reverse.diag.3",
 }
 
 tile{
@@ -2542,7 +2542,7 @@ tile{
   y = 24,
   width = 16,
   height = 8,
-  pattern = "cliff.middle.corner_reverse.diag.4",
+  pattern = "cliff.corner_reverse.diag.4",
 }
 
 tile{
@@ -2560,7 +2560,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.4",
+  pattern = "grass.cliff.diag.4",
 }
 
 tile{
@@ -2686,7 +2686,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.bottom.diag.3",
+  pattern = "grass.cliff.diag.3",
 }
 
 tile{
@@ -2821,7 +2821,7 @@ tile{
   y = 48,
   width = 32,
   height = 16,
-  pattern = "grass.cliff.bottom.1",
+  pattern = "grass.cliff.1",
 }
 
 tile{
@@ -2839,7 +2839,7 @@ tile{
   y = 32,
   width = 32,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -2875,7 +2875,7 @@ tile{
   y = 64,
   width = 16,
   height = 32,
-  pattern = "grass.cliff.bottom.3",
+  pattern = "grass.cliff.3",
 }
 
 tile{
@@ -3037,7 +3037,7 @@ tile{
   y = 64,
   width = 16,
   height = 32,
-  pattern = "grass.cliff.bottom.4",
+  pattern = "grass.cliff.4",
 }
 
 tile{
@@ -3073,7 +3073,7 @@ tile{
   y = 96,
   width = 32,
   height = 16,
-  pattern = "grass.cliff.bottom.2",
+  pattern = "grass.cliff.2",
 }
 
 tile{
@@ -3082,7 +3082,7 @@ tile{
   y = 104,
   width = 32,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -3325,7 +3325,7 @@ tile{
   y = 288,
   width = 48,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -3343,7 +3343,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -3370,7 +3370,7 @@ tile{
   y = 288,
   width = 80,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -3451,7 +3451,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -3514,7 +3514,7 @@ tile{
   y = 200,
   width = 80,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -3604,7 +3604,7 @@ tile{
   y = 200,
   width = 48,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -3676,7 +3676,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -3694,7 +3694,7 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -3703,7 +3703,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -3712,7 +3712,7 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -3721,7 +3721,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -3730,7 +3730,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -3766,7 +3766,7 @@ tile{
   y = 208,
   width = 32,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -3775,7 +3775,7 @@ tile{
   y = 224,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -3829,7 +3829,7 @@ tile{
   y = 224,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -3865,7 +3865,7 @@ tile{
   y = 312,
   width = 32,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -3928,7 +3928,7 @@ tile{
   y = 208,
   width = 32,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -3991,7 +3991,7 @@ tile{
   y = 280,
   width = 32,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -4081,7 +4081,7 @@ tile{
   y = 464,
   width = 48,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -4099,7 +4099,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -4126,7 +4126,7 @@ tile{
   y = 464,
   width = 80,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -4207,7 +4207,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -4270,7 +4270,7 @@ tile{
   y = 376,
   width = 80,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -4360,7 +4360,7 @@ tile{
   y = 376,
   width = 48,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -4432,7 +4432,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -4450,7 +4450,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -4459,7 +4459,7 @@ tile{
   y = 448,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -4468,7 +4468,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -4477,7 +4477,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -4486,7 +4486,7 @@ tile{
   y = 448,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -4522,7 +4522,7 @@ tile{
   y = 384,
   width = 32,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -4531,7 +4531,7 @@ tile{
   y = 400,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.1",
+  pattern = "cliff.diag.1",
 }
 
 tile{
@@ -4585,7 +4585,7 @@ tile{
   y = 400,
   width = 16,
   height = 16,
-  pattern = "cliff.middle.diag.2",
+  pattern = "cliff.diag.2",
 }
 
 tile{
@@ -4621,7 +4621,7 @@ tile{
   y = 488,
   width = 32,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -4639,7 +4639,7 @@ tile{
   y = 376,
   width = 16,
   height = 8,
-  pattern = "cliff.middle.corner_reverse.diag.4",
+  pattern = "cliff.corner_reverse.diag.4",
 }
 
 tile{
@@ -4693,7 +4693,7 @@ tile{
   y = 384,
   width = 32,
   height = 16,
-  pattern = "cliff.middle.1",
+  pattern = "cliff.1",
 }
 
 tile{
@@ -4756,7 +4756,7 @@ tile{
   y = 456,
   width = 32,
   height = 8,
-  pattern = "cliff.middle.2",
+  pattern = "cliff.2",
 }
 
 tile{
@@ -4873,7 +4873,7 @@ tile{
   y = 192,
   width = 48,
   height = 8,
-  pattern = "sand.cliff.bottom.2",
+  pattern = "sand.cliff.2",
 }
 
 tile{
@@ -4882,7 +4882,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.3",
+  pattern = "sand.cliff.diag.3",
 }
 
 tile{
@@ -4945,7 +4945,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.4",
+  pattern = "sand.cliff.diag.4",
 }
 
 tile{
@@ -4954,7 +4954,7 @@ tile{
   y = 200,
   width = 16,
   height = 8,
-  pattern = "cliff.middle.corner_reverse.diag.4",
+  pattern = "cliff.corner_reverse.diag.4",
 }
 
 tile{
@@ -4963,7 +4963,7 @@ tile{
   y = 200,
   width = 16,
   height = 8,
-  pattern = "cliff.middle.corner_reverse.diag.3",
+  pattern = "cliff.corner_reverse.diag.3",
 }
 
 tile{
@@ -4972,7 +4972,7 @@ tile{
   y = 184,
   width = 8,
   height = 8,
-  pattern = "358",
+  pattern = "sand.shadow.diag.4",
 }
 
 tile{
@@ -4981,7 +4981,7 @@ tile{
   y = 184,
   width = 8,
   height = 8,
-  pattern = "360",
+  pattern = "sand.shadow.diag.3",
 }
 
 tile{
@@ -4990,7 +4990,7 @@ tile{
   y = 200,
   width = 8,
   height = 8,
-  pattern = "360",
+  pattern = "sand.shadow.diag.3",
 }
 
 tile{
@@ -4999,7 +4999,7 @@ tile{
   y = 200,
   width = 8,
   height = 8,
-  pattern = "358",
+  pattern = "sand.shadow.diag.4",
 }
 
 tile{
@@ -5008,7 +5008,7 @@ tile{
   y = 208,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.4",
+  pattern = "sand.cliff.diag.4",
 }
 
 tile{
@@ -5017,7 +5017,7 @@ tile{
   y = 208,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.3",
+  pattern = "sand.cliff.diag.3",
 }
 
 tile{
@@ -5026,7 +5026,7 @@ tile{
   y = 304,
   width = 48,
   height = 16,
-  pattern = "sand.cliff.bottom.1",
+  pattern = "sand.cliff.1",
 }
 
 tile{
@@ -5035,7 +5035,7 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.1",
+  pattern = "sand.cliff.diag.1",
 }
 
 tile{
@@ -5044,7 +5044,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.1",
+  pattern = "sand.cliff.diag.1",
 }
 
 tile{
@@ -5053,7 +5053,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = "320",
+  pattern = "sand.cliff.corner_reverse.diag.2",
 }
 
 tile{
@@ -5062,7 +5062,7 @@ tile{
   y = 224,
   width = 16,
   height = 48,
-  pattern = "sand.cliff.bottom.3",
+  pattern = "sand.cliff.3",
 }
 
 tile{
@@ -5071,7 +5071,7 @@ tile{
   y = 224,
   width = 16,
   height = 48,
-  pattern = "sand.cliff.bottom.4",
+  pattern = "sand.cliff.4",
 }
 
 tile{
@@ -5080,7 +5080,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = "319",
+  pattern = "sand.cliff.corner_reverse.diag.1",
 }
 
 tile{
@@ -5089,7 +5089,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.2",
+  pattern = "sand.cliff.diag.2",
 }
 
 tile{
@@ -5098,7 +5098,7 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.2",
+  pattern = "sand.cliff.diag.2",
 }
 
 tile{
@@ -5107,7 +5107,7 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.2",
+  pattern = "sand.cliff.diag.2",
 }
 
 tile{
@@ -5116,7 +5116,7 @@ tile{
   y = 304,
   width = 80,
   height = 16,
-  pattern = "sand.cliff.bottom.1",
+  pattern = "sand.cliff.1",
 }
 
 tile{
@@ -5125,7 +5125,7 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.1",
+  pattern = "sand.cliff.diag.1",
 }
 
 tile{
@@ -5143,7 +5143,7 @@ tile{
   y = 192,
   width = 80,
   height = 8,
-  pattern = "sand.cliff.bottom.2",
+  pattern = "sand.cliff.2",
 }
 
 tile{
@@ -5152,7 +5152,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.3",
+  pattern = "sand.cliff.diag.3",
 }
 
 tile{
@@ -5161,7 +5161,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.4",
+  pattern = "sand.cliff.diag.4",
 }
 
 tile{
@@ -5170,7 +5170,7 @@ tile{
   y = 200,
   width = 16,
   height = 8,
-  pattern = "cliff.middle.corner_reverse.diag.4",
+  pattern = "cliff.corner_reverse.diag.4",
 }
 
 tile{
@@ -5179,7 +5179,7 @@ tile{
   y = 200,
   width = 16,
   height = 8,
-  pattern = "cliff.middle.corner_reverse.diag.3",
+  pattern = "cliff.corner_reverse.diag.3",
 }
 
 tile{
@@ -5188,7 +5188,7 @@ tile{
   y = 184,
   width = 8,
   height = 8,
-  pattern = "358",
+  pattern = "sand.shadow.diag.4",
 }
 
 tile{
@@ -5197,7 +5197,7 @@ tile{
   y = 184,
   width = 8,
   height = 8,
-  pattern = "360",
+  pattern = "sand.shadow.diag.3",
 }
 
 tile{
@@ -5206,7 +5206,7 @@ tile{
   y = 208,
   width = 16,
   height = 80,
-  pattern = "sand.cliff.bottom.3",
+  pattern = "sand.cliff.3",
 }
 
 tile{
@@ -5215,7 +5215,7 @@ tile{
   y = 208,
   width = 16,
   height = 80,
-  pattern = "sand.cliff.bottom.4",
+  pattern = "sand.cliff.4",
 }
 
 tile{
@@ -5224,7 +5224,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "320",
+  pattern = "sand.cliff.corner_reverse.diag.2",
 }
 
 tile{
@@ -5233,7 +5233,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "319",
+  pattern = "sand.cliff.corner_reverse.diag.1",
 }
 
 tile{
@@ -5278,7 +5278,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.2",
+  pattern = "sand.cliff.diag.2",
 }
 
 tile{
@@ -5287,7 +5287,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.2",
+  pattern = "sand.cliff.diag.2",
 }
 
 tile{
@@ -5296,7 +5296,7 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.2",
+  pattern = "sand.cliff.diag.2",
 }
 
 tile{
@@ -5305,7 +5305,7 @@ tile{
   y = 320,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.2",
+  pattern = "sand.cliff.diag.2",
 }
 
 tile{
@@ -5314,7 +5314,7 @@ tile{
   y = 320,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.1",
+  pattern = "sand.cliff.diag.1",
 }
 
 tile{
@@ -5323,7 +5323,7 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.1",
+  pattern = "sand.cliff.diag.1",
 }
 
 tile{
@@ -5332,7 +5332,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.1",
+  pattern = "sand.cliff.diag.1",
 }
 
 tile{
@@ -5341,7 +5341,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.1",
+  pattern = "sand.cliff.diag.1",
 }
 
 tile{
@@ -5350,7 +5350,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.3",
+  pattern = "sand.cliff.diag.3",
 }
 
 tile{
@@ -5359,7 +5359,7 @@ tile{
   y = 208,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.3",
+  pattern = "sand.cliff.diag.3",
 }
 
 tile{
@@ -5368,7 +5368,7 @@ tile{
   y = 224,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.3",
+  pattern = "sand.cliff.diag.3",
 }
 
 tile{
@@ -5377,7 +5377,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.3",
+  pattern = "sand.cliff.diag.3",
 }
 
 tile{
@@ -5386,7 +5386,7 @@ tile{
   y = 184,
   width = 8,
   height = 8,
-  pattern = "360",
+  pattern = "sand.shadow.diag.3",
 }
 
 tile{
@@ -5395,7 +5395,7 @@ tile{
   y = 200,
   width = 8,
   height = 8,
-  pattern = "360",
+  pattern = "sand.shadow.diag.3",
 }
 
 tile{
@@ -5404,7 +5404,7 @@ tile{
   y = 216,
   width = 8,
   height = 8,
-  pattern = "360",
+  pattern = "sand.shadow.diag.3",
 }
 
 tile{
@@ -5413,7 +5413,7 @@ tile{
   y = 232,
   width = 8,
   height = 8,
-  pattern = "360",
+  pattern = "sand.shadow.diag.3",
 }
 
 tile{
@@ -5422,7 +5422,7 @@ tile{
   y = 184,
   width = 8,
   height = 8,
-  pattern = "358",
+  pattern = "sand.shadow.diag.4",
 }
 
 tile{
@@ -5431,7 +5431,7 @@ tile{
   y = 200,
   width = 8,
   height = 8,
-  pattern = "358",
+  pattern = "sand.shadow.diag.4",
 }
 
 tile{
@@ -5440,7 +5440,7 @@ tile{
   y = 216,
   width = 8,
   height = 8,
-  pattern = "358",
+  pattern = "sand.shadow.diag.4",
 }
 
 tile{
@@ -5449,7 +5449,7 @@ tile{
   y = 232,
   width = 8,
   height = 8,
-  pattern = "358",
+  pattern = "sand.shadow.diag.4",
 }
 
 tile{
@@ -5458,7 +5458,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.4",
+  pattern = "sand.cliff.diag.4",
 }
 
 tile{
@@ -5467,7 +5467,7 @@ tile{
   y = 224,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.4",
+  pattern = "sand.cliff.diag.4",
 }
 
 tile{
@@ -5476,7 +5476,7 @@ tile{
   y = 208,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.4",
+  pattern = "sand.cliff.diag.4",
 }
 
 tile{
@@ -5485,7 +5485,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.4",
+  pattern = "sand.cliff.diag.4",
 }
 
 tile{
@@ -6178,7 +6178,7 @@ tile{
   y = 256,
   width = 16,
   height = 32,
-  pattern = "sand.cliff.bottom.3",
+  pattern = "sand.cliff.3",
 }
 
 tile{
@@ -6187,7 +6187,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.3",
+  pattern = "sand.cliff.diag.3",
 }
 
 tile{
@@ -6196,7 +6196,7 @@ tile{
   y = 280,
   width = 8,
   height = 8,
-  pattern = "360",
+  pattern = "sand.shadow.diag.3",
 }
 
 tile{
@@ -6205,7 +6205,7 @@ tile{
   y = 280,
   width = 8,
   height = 8,
-  pattern = "358",
+  pattern = "sand.shadow.diag.4",
 }
 
 tile{
@@ -6214,7 +6214,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.4",
+  pattern = "sand.cliff.diag.4",
 }
 
 tile{
@@ -6223,7 +6223,7 @@ tile{
   y = 256,
   width = 16,
   height = 32,
-  pattern = "sand.cliff.bottom.4",
+  pattern = "sand.cliff.4",
 }
 
 tile{
@@ -6241,7 +6241,7 @@ tile{
   y = 304,
   width = 32,
   height = 8,
-  pattern = "sand.cliff.bottom.2",
+  pattern = "sand.cliff.2",
 }
 
 tile{
@@ -6250,7 +6250,7 @@ tile{
   y = 224,
   width = 32,
   height = 16,
-  pattern = "sand.cliff.bottom.1",
+  pattern = "sand.cliff.1",
 }
 
 tile{
@@ -6259,7 +6259,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.1",
+  pattern = "sand.cliff.diag.1",
 }
 
 tile{
@@ -6268,7 +6268,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "sand.cliff.bottom.diag.2",
+  pattern = "sand.cliff.diag.2",
 }
 
 tile{
@@ -6277,7 +6277,7 @@ tile{
   y = 240,
   width = 16,
   height = 32,
-  pattern = "sand.cliff.bottom.4",
+  pattern = "sand.cliff.4",
 }
 
 tile{
@@ -6286,7 +6286,7 @@ tile{
   y = 240,
   width = 16,
   height = 32,
-  pattern = "sand.cliff.bottom.3",
+  pattern = "sand.cliff.3",
 }
 
 tile{
@@ -6295,7 +6295,7 @@ tile{
   y = 224,
   width = 32,
   height = 16,
-  pattern = "sand.cliff.bottom.1",
+  pattern = "sand.cliff.1",
 }
 
 tile{
@@ -6313,7 +6313,7 @@ tile{
   y = 272,
   width = 32,
   height = 8,
-  pattern = "sand.cliff.bottom.2",
+  pattern = "sand.cliff.2",
 }
 
 tile{
@@ -6610,7 +6610,7 @@ tile{
   y = 480,
   width = 48,
   height = 16,
-  pattern = "387",
+  pattern = "dirt.cliff.1",
 }
 
 tile{
@@ -6619,7 +6619,7 @@ tile{
   y = 480,
   width = 80,
   height = 16,
-  pattern = "387",
+  pattern = "dirt.cliff.1",
 }
 
 tile{
@@ -6628,7 +6628,7 @@ tile{
   y = 400,
   width = 32,
   height = 16,
-  pattern = "387",
+  pattern = "dirt.cliff.1",
 }
 
 tile{
@@ -6637,7 +6637,7 @@ tile{
   y = 400,
   width = 32,
   height = 16,
-  pattern = "387",
+  pattern = "dirt.cliff.1",
 }
 
 tile{
@@ -6682,7 +6682,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = "388",
+  pattern = "dirt.cliff.diag.1",
 }
 
 tile{
@@ -6691,7 +6691,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "388",
+  pattern = "dirt.cliff.diag.1",
 }
 
 tile{
@@ -6700,7 +6700,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = "388",
+  pattern = "dirt.cliff.diag.1",
 }
 
 tile{
@@ -6709,7 +6709,7 @@ tile{
   y = 496,
   width = 16,
   height = 16,
-  pattern = "388",
+  pattern = "dirt.cliff.diag.1",
 }
 
 tile{
@@ -6718,7 +6718,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = "388",
+  pattern = "dirt.cliff.diag.1",
 }
 
 tile{
@@ -6727,7 +6727,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "388",
+  pattern = "dirt.cliff.diag.1",
 }
 
 tile{
@@ -6736,7 +6736,7 @@ tile{
   y = 448,
   width = 16,
   height = 16,
-  pattern = "388",
+  pattern = "dirt.cliff.diag.1",
 }
 
 tile{
@@ -6745,7 +6745,7 @@ tile{
   y = 416,
   width = 16,
   height = 16,
-  pattern = "388",
+  pattern = "dirt.cliff.diag.1",
 }
 
 tile{
@@ -6754,7 +6754,7 @@ tile{
   y = 496,
   width = 16,
   height = 16,
-  pattern = "386",
+  pattern = "dirt.cliff.diag.2",
 }
 
 tile{
@@ -6763,7 +6763,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = "386",
+  pattern = "dirt.cliff.diag.2",
 }
 
 tile{
@@ -6772,7 +6772,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "386",
+  pattern = "dirt.cliff.diag.2",
 }
 
 tile{
@@ -6781,7 +6781,7 @@ tile{
   y = 448,
   width = 16,
   height = 16,
-  pattern = "386",
+  pattern = "dirt.cliff.diag.2",
 }
 
 tile{
@@ -6790,7 +6790,7 @@ tile{
   y = 416,
   width = 16,
   height = 16,
-  pattern = "386",
+  pattern = "dirt.cliff.diag.2",
 }
 
 tile{
@@ -6799,7 +6799,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = "386",
+  pattern = "dirt.cliff.diag.2",
 }
 
 tile{
@@ -6808,7 +6808,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = "386",
+  pattern = "dirt.cliff.diag.2",
 }
 
 tile{
@@ -6817,7 +6817,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "386",
+  pattern = "dirt.cliff.diag.2",
 }
 
 tile{
@@ -6826,7 +6826,7 @@ tile{
   y = 448,
   width = 16,
   height = 16,
-  pattern = "389",
+  pattern = "dirt.cliff.corner_reverse.diag.1",
 }
 
 tile{
@@ -6835,7 +6835,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "389",
+  pattern = "dirt.cliff.corner_reverse.diag.1",
 }
 
 tile{
@@ -6844,7 +6844,7 @@ tile{
   y = 448,
   width = 16,
   height = 16,
-  pattern = "390",
+  pattern = "dirt.cliff.corner_reverse.diag.2",
 }
 
 tile{
@@ -6853,7 +6853,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "390",
+  pattern = "dirt.cliff.corner_reverse.diag.2",
 }
 
 tile{
@@ -6862,7 +6862,7 @@ tile{
   y = 400,
   width = 16,
   height = 48,
-  pattern = "391",
+  pattern = "dirt.cliff.4",
 }
 
 tile{
@@ -6871,7 +6871,7 @@ tile{
   y = 384,
   width = 16,
   height = 80,
-  pattern = "391",
+  pattern = "dirt.cliff.4",
 }
 
 tile{
@@ -6880,7 +6880,7 @@ tile{
   y = 432,
   width = 16,
   height = 32,
-  pattern = "391",
+  pattern = "dirt.cliff.4",
 }
 
 tile{
@@ -6889,7 +6889,7 @@ tile{
   y = 416,
   width = 16,
   height = 32,
-  pattern = "391",
+  pattern = "dirt.cliff.4",
 }
 
 tile{
@@ -6898,7 +6898,7 @@ tile{
   y = 416,
   width = 16,
   height = 32,
-  pattern = "392",
+  pattern = "dirt.cliff.3",
 }
 
 tile{
@@ -6907,7 +6907,7 @@ tile{
   y = 432,
   width = 16,
   height = 32,
-  pattern = "392",
+  pattern = "dirt.cliff.3",
 }
 
 tile{
@@ -6916,7 +6916,7 @@ tile{
   y = 384,
   width = 16,
   height = 80,
-  pattern = "392",
+  pattern = "dirt.cliff.3",
 }
 
 tile{
@@ -6925,7 +6925,7 @@ tile{
   y = 400,
   width = 16,
   height = 48,
-  pattern = "392",
+  pattern = "dirt.cliff.3",
 }
 
 tile{
@@ -6934,7 +6934,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = "393",
+  pattern = "dirt.cliff.diag.3",
 }
 
 tile{
@@ -6943,7 +6943,7 @@ tile{
   y = 384,
   width = 16,
   height = 16,
-  pattern = "393",
+  pattern = "dirt.cliff.diag.3",
 }
 
 tile{
@@ -6952,7 +6952,7 @@ tile{
   y = 376,
   width = 16,
   height = 8,
-  pattern = "cliff.middle.corner_reverse.diag.3",
+  pattern = "cliff.corner_reverse.diag.3",
 }
 
 tile{
@@ -6961,7 +6961,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = "395",
+  pattern = "dirt.cliff.diag.4",
 }
 
 tile{
@@ -6970,7 +6970,7 @@ tile{
   y = 384,
   width = 16,
   height = 16,
-  pattern = "395",
+  pattern = "dirt.cliff.diag.4",
 }
 
 tile{
@@ -6979,7 +6979,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = "395",
+  pattern = "dirt.cliff.diag.4",
 }
 
 tile{
@@ -6988,7 +6988,7 @@ tile{
   y = 416,
   width = 16,
   height = 16,
-  pattern = "395",
+  pattern = "dirt.cliff.diag.4",
 }
 
 tile{
@@ -6997,7 +6997,7 @@ tile{
   y = 400,
   width = 16,
   height = 16,
-  pattern = "395",
+  pattern = "dirt.cliff.diag.4",
 }
 
 tile{
@@ -7006,7 +7006,7 @@ tile{
   y = 384,
   width = 16,
   height = 16,
-  pattern = "395",
+  pattern = "dirt.cliff.diag.4",
 }
 
 tile{
@@ -7015,7 +7015,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = "395",
+  pattern = "dirt.cliff.diag.4",
 }
 
 tile{
@@ -7024,7 +7024,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "395",
+  pattern = "dirt.cliff.diag.4",
 }
 
 tile{
@@ -7033,7 +7033,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "393",
+  pattern = "dirt.cliff.diag.3",
 }
 
 tile{
@@ -7042,7 +7042,7 @@ tile{
   y = 416,
   width = 16,
   height = 16,
-  pattern = "393",
+  pattern = "dirt.cliff.diag.3",
 }
 
 tile{
@@ -7051,7 +7051,7 @@ tile{
   y = 400,
   width = 16,
   height = 16,
-  pattern = "393",
+  pattern = "dirt.cliff.diag.3",
 }
 
 tile{
@@ -7060,7 +7060,7 @@ tile{
   y = 384,
   width = 16,
   height = 16,
-  pattern = "393",
+  pattern = "dirt.cliff.diag.3",
 }
 
 tile{
@@ -7069,7 +7069,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = "393",
+  pattern = "dirt.cliff.diag.3",
 }
 
 tile{
@@ -7078,7 +7078,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = "393",
+  pattern = "dirt.cliff.diag.3",
 }
 
 tile{
@@ -8077,7 +8077,7 @@ tile{
   y = 880,
   width = 16,
   height = 16,
-  pattern = "grass.under_rock",
+  pattern = "grass.under_stone",
 }
 
 tile{
@@ -8113,7 +8113,7 @@ tile{
   y = 880,
   width = 16,
   height = 16,
-  pattern = "grass.under_rock",
+  pattern = "grass.under_stone",
 }
 
 tile{
@@ -8131,7 +8131,7 @@ tile{
   y = 296,
   width = 16,
   height = 8,
-  pattern = "1264",
+  pattern = "sand.cave_entrance_blast",
 }
 
 tile{
@@ -8140,7 +8140,7 @@ tile{
   y = 296,
   width = 8,
   height = 8,
-  pattern = "1263",
+  pattern = "sand.cave_entrance_blast.border.1",
 }
 
 tile{
@@ -8149,7 +8149,7 @@ tile{
   y = 296,
   width = 8,
   height = 8,
-  pattern = "1265",
+  pattern = "sand.cave_entrance_blast.border.2",
 }
 
 tile{
@@ -8158,7 +8158,7 @@ tile{
   y = 288,
   width = 16,
   height = 8,
-  pattern = "1275",
+  pattern = "cave_entrance_blast",
 }
 
 tile{
@@ -8167,7 +8167,7 @@ tile{
   y = 288,
   width = 8,
   height = 8,
-  pattern = "1279",
+  pattern = "cave_entrance_blast.border.2",
 }
 
 tile{
@@ -8176,7 +8176,7 @@ tile{
   y = 288,
   width = 8,
   height = 8,
-  pattern = "1278",
+  pattern = "cave_entrance_blast.border.1",
 }
 
 tile{
@@ -8185,7 +8185,7 @@ tile{
   y = 464,
   width = 16,
   height = 8,
-  pattern = "1275",
+  pattern = "cave_entrance_blast",
 }
 
 tile{
@@ -8194,7 +8194,7 @@ tile{
   y = 464,
   width = 8,
   height = 8,
-  pattern = "1279",
+  pattern = "cave_entrance_blast.border.2",
 }
 
 tile{
@@ -8203,7 +8203,7 @@ tile{
   y = 464,
   width = 8,
   height = 8,
-  pattern = "1278",
+  pattern = "cave_entrance_blast.border.1",
 }
 
 tile{
@@ -8212,7 +8212,7 @@ tile{
   y = 112,
   width = 16,
   height = 8,
-  pattern = "1275",
+  pattern = "cave_entrance_blast",
 }
 
 tile{
@@ -8221,7 +8221,7 @@ tile{
   y = 112,
   width = 8,
   height = 8,
-  pattern = "1279",
+  pattern = "cave_entrance_blast.border.2",
 }
 
 tile{
@@ -8230,7 +8230,7 @@ tile{
   y = 112,
   width = 8,
   height = 8,
-  pattern = "1278",
+  pattern = "cave_entrance_blast.border.1",
 }
 
 tile{
@@ -8239,7 +8239,7 @@ tile{
   y = 120,
   width = 16,
   height = 8,
-  pattern = "1276",
+  pattern = "grass.cave_entrance_blast",
 }
 
 tile{
@@ -8248,7 +8248,7 @@ tile{
   y = 120,
   width = 8,
   height = 8,
-  pattern = "1261",
+  pattern = "grass.cave_entrance_blast.border.1",
 }
 
 tile{
@@ -8257,7 +8257,7 @@ tile{
   y = 120,
   width = 8,
   height = 8,
-  pattern = "1262",
+  pattern = "grass.cave_entrance_blast.border.2",
 }
 
 tile{
@@ -8266,7 +8266,7 @@ tile{
   y = 472,
   width = 8,
   height = 8,
-  pattern = "1268",
+  pattern = "dirt.cave_entrance_blast.border.2",
 }
 
 tile{
@@ -8275,7 +8275,7 @@ tile{
   y = 472,
   width = 16,
   height = 8,
-  pattern = "1267",
+  pattern = "dirt.cave_entrance_blast",
 }
 
 tile{
@@ -8284,7 +8284,7 @@ tile{
   y = 472,
   width = 8,
   height = 8,
-  pattern = "1266",
+  pattern = "dirt.cave_entrance_blast.border.1",
 }
 
 tile{
@@ -8455,7 +8455,7 @@ tile{
   y = 880,
   width = 16,
   height = 16,
-  pattern = "grass.under_rock",
+  pattern = "grass.under_stone",
 }
 
 tile{
@@ -8464,7 +8464,7 @@ tile{
   y = 880,
   width = 16,
   height = 16,
-  pattern = "grass.under_rock",
+  pattern = "grass.under_stone",
 }
 
 tile{
@@ -8817,7 +8817,7 @@ dynamic_tile{
   width = 32,
   height = 16,
   name = "weak_wall_closed",
-  pattern = "sand.cliff.bottom.1",
+  pattern = "sand.cliff.1",
   enabled_at_start = true,
 }
 
@@ -8839,7 +8839,7 @@ dynamic_tile{
   width = 32,
   height = 16,
   name = "weak_wall_3_closed",
-  pattern = "grass.cliff.bottom.1",
+  pattern = "grass.cliff.1",
   enabled_at_start = true,
 }
 
@@ -8861,7 +8861,7 @@ dynamic_tile{
   width = 32,
   height = 16,
   name = "weak_wall_2_closed",
-  pattern = "387",
+  pattern = "dirt.cliff.1",
   enabled_at_start = true,
 }
 
@@ -9767,7 +9767,7 @@ tile{
   y = 280,
   width = 32,
   height = 8,
-  pattern = "1280",
+  pattern = "cave_entrance_blast.top",
 }
 
 tile{
@@ -9776,7 +9776,7 @@ tile{
   y = 456,
   width = 32,
   height = 8,
-  pattern = "1280",
+  pattern = "cave_entrance_blast.top",
 }
 
 tile{
@@ -9785,6 +9785,6 @@ tile{
   y = 104,
   width = 32,
   height = 8,
-  pattern = "1280",
+  pattern = "cave_entrance_blast.top",
 }
 
