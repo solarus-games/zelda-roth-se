@@ -790,7 +790,7 @@ tile{
   y = 96,
   width = 16,
   height = 32,
-  pattern = 850,
+  pattern = "dungeon_b.top.3",
 }
 
 tile{
@@ -799,7 +799,7 @@ tile{
   y = 96,
   width = 16,
   height = 32,
-  pattern = 849,
+  pattern = "dungeon_b.top.4",
 }
 
 tile{
@@ -808,7 +808,7 @@ tile{
   y = 128,
   width = 24,
   height = 24,
-  pattern = 864,
+  pattern = "dungeon_b.entrance.border.1",
 }
 
 tile{
@@ -817,7 +817,7 @@ tile{
   y = 128,
   width = 24,
   height = 24,
-  pattern = 863,
+  pattern = "dungeon_b.entrance.border.2",
 }
 
 tile{
@@ -826,7 +826,7 @@ tile{
   y = 128,
   width = 16,
   height = 24,
-  pattern = 859,
+  pattern = "dungeon_b.entrance",
 }
 
 tile{
@@ -835,7 +835,7 @@ tile{
   y = 152,
   width = 16,
   height = 32,
-  pattern = 886,
+  pattern = "dungeon_b.steps",
 }
 
 tile{
@@ -844,7 +844,7 @@ tile{
   y = 184,
   width = 16,
   height = 8,
-  pattern = 886,
+  pattern = "dungeon_b.steps",
 }
 
 tile{
@@ -853,7 +853,7 @@ tile{
   y = 152,
   width = 8,
   height = 24,
-  pattern = 895,
+  pattern = "dungeon_b.steps.border.2",
 }
 
 tile{
@@ -862,7 +862,7 @@ tile{
   y = 184,
   width = 8,
   height = 8,
-  pattern = 899,
+  pattern = "dungeon_b.steps.bottom.border.4",
 }
 
 tile{
@@ -871,7 +871,7 @@ tile{
   y = 176,
   width = 8,
   height = 8,
-  pattern = 897,
+  pattern = "dungeon_b.steps.bottom.border.2",
 }
 
 tile{
@@ -880,7 +880,7 @@ tile{
   y = 152,
   width = 8,
   height = 24,
-  pattern = 894,
+  pattern = "dungeon_b.steps.border.1",
 }
 
 tile{
@@ -889,7 +889,7 @@ tile{
   y = 176,
   width = 8,
   height = 8,
-  pattern = 896,
+  pattern = "dungeon_b.steps.bottom.border.1",
 }
 
 tile{
@@ -898,7 +898,7 @@ tile{
   y = 184,
   width = 8,
   height = 8,
-  pattern = 898,
+  pattern = "dungeon_b.steps.bottom.border.3",
 }
 
 tile{
@@ -1492,7 +1492,7 @@ tile{
   y = 80,
   width = 64,
   height = 16,
-  pattern = 848,
+  pattern = "dungeon_b.top.2",
 }
 
 tile{
@@ -2356,7 +2356,7 @@ tile{
   y = 656,
   width = 160,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -5002,7 +5002,7 @@ tile{
   y = 96,
   width = 32,
   height = 32,
-  pattern = 844,
+  pattern = "dungeon_b.top.1",
 }
 
 tile{
@@ -5983,7 +5983,7 @@ tile{
   y = 544,
   width = 32,
   height = 16,
-  pattern = 1239,
+  pattern = "ruins.2",
 }
 
 tile{
@@ -5992,7 +5992,7 @@ tile{
   y = 544,
   width = 8,
   height = 16,
-  pattern = 1240,
+  pattern = "ruins.2.border.2",
 }
 
 tile{
@@ -6001,7 +6001,7 @@ tile{
   y = 488,
   width = 16,
   height = 64,
-  pattern = 1241,
+  pattern = "ruins.3",
 }
 
 tile{
@@ -6010,7 +6010,7 @@ tile{
   y = 480,
   width = 16,
   height = 8,
-  pattern = 1256,
+  pattern = "ruins.3.border.1",
 }
 
 tile{
@@ -6019,7 +6019,7 @@ tile{
   y = 544,
   width = 16,
   height = 16,
-  pattern = 1254,
+  pattern = "ruins.corner.3",
 }
 
 tile{
@@ -6127,7 +6127,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = 1239,
+  pattern = "ruins.2",
 }
 
 tile{
@@ -6136,7 +6136,7 @@ tile{
   y = 368,
   width = 8,
   height = 16,
-  pattern = 1240,
+  pattern = "ruins.2.border.2",
 }
 
 tile{
@@ -6145,7 +6145,7 @@ tile{
   y = 344,
   width = 16,
   height = 32,
-  pattern = 1241,
+  pattern = "ruins.3",
 }
 
 tile{
@@ -6154,7 +6154,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = 1254,
+  pattern = "ruins.corner.3",
 }
 
 tile{
@@ -6163,7 +6163,7 @@ tile{
   y = 336,
   width = 16,
   height = 8,
-  pattern = 1256,
+  pattern = "ruins.3.border.1",
 }
 
 tile{
@@ -6199,7 +6199,7 @@ tile{
   y = 80,
   width = 16,
   height = 48,
-  pattern = 1241,
+  pattern = "ruins.3",
 }
 
 tile{
@@ -6208,7 +6208,7 @@ tile{
   y = 120,
   width = 16,
   height = 8,
-  pattern = 1242,
+  pattern = "ruins.3.border.2",
 }
 
 tile{
@@ -6271,7 +6271,7 @@ tile{
   y = 64,
   width = 8,
   height = 16,
-  pattern = 1240,
+  pattern = "ruins.2.border.2",
 }
 
 tile{
@@ -6280,7 +6280,7 @@ tile{
   y = 64,
   width = 80,
   height = 16,
-  pattern = 1239,
+  pattern = "ruins.2",
 }
 
 tile{
@@ -6289,7 +6289,7 @@ tile{
   y = 64,
   width = 16,
   height = 16,
-  pattern = 1252,
+  pattern = "ruins.corner_reverse.4",
 }
 
 tile{
@@ -6325,7 +6325,7 @@ tile{
   y = 680,
   width = 16,
   height = 48,
-  pattern = 1241,
+  pattern = "ruins.3",
 }
 
 tile{
@@ -6334,7 +6334,7 @@ tile{
   y = 672,
   width = 32,
   height = 16,
-  pattern = 1239,
+  pattern = "ruins.2",
 }
 
 tile{
@@ -6343,7 +6343,7 @@ tile{
   y = 672,
   width = 16,
   height = 16,
-  pattern = 1252,
+  pattern = "ruins.corner_reverse.4",
 }
 
 tile{
@@ -6352,7 +6352,7 @@ tile{
   y = 672,
   width = 8,
   height = 16,
-  pattern = 1240,
+  pattern = "ruins.2.border.2",
 }
 
 tile{

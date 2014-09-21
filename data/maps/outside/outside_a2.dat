@@ -59,7 +59,7 @@ tile{
   y = 752,
   width = 800,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -158,7 +158,7 @@ tile{
   y = 320,
   width = 192,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -203,7 +203,7 @@ tile{
   y = 176,
   width = 96,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -248,7 +248,7 @@ tile{
   y = 608,
   width = 80,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -428,7 +428,7 @@ tile{
   y = 720,
   width = 320,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -536,7 +536,7 @@ tile{
   y = 848,
   width = 176,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -752,7 +752,7 @@ tile{
   y = 64,
   width = 32,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -788,7 +788,7 @@ tile{
   y = 64,
   width = 32,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -1508,7 +1508,7 @@ tile{
   y = 400,
   width = 128,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -1634,7 +1634,7 @@ tile{
   y = 176,
   width = 704,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -1904,7 +1904,7 @@ tile{
   y = 480,
   width = 32,
   height = 96,
-  pattern = 937,
+  pattern = "castle.3",
 }
 
 tile{
@@ -1913,7 +1913,7 @@ tile{
   y = 240,
   width = 608,
   height = 136,
-  pattern = 953,
+  pattern = "castle.top.floor",
 }
 
 tile{
@@ -1922,7 +1922,7 @@ tile{
   y = 256,
   width = 32,
   height = 48,
-  pattern = 936,
+  pattern = "castle.4",
 }
 
 tile{
@@ -1967,7 +1967,7 @@ tile{
   y = 432,
   width = 48,
   height = 368,
-  pattern = 789,
+  pattern = "castle.floor",
 }
 
 tile{
@@ -1976,7 +1976,7 @@ tile{
   y = 432,
   width = 8,
   height = 48,
-  pattern = 1386,
+  pattern = "castle.floor.border",
 }
 
 tile{
@@ -1994,7 +1994,7 @@ tile{
   y = 616,
   width = 8,
   height = 32,
-  pattern = 1386,
+  pattern = "castle.floor.border",
 }
 
 tile{
@@ -2012,7 +2012,7 @@ tile{
   y = 432,
   width = 8,
   height = 368,
-  pattern = 1386,
+  pattern = "castle.floor.border",
 }
 
 tile{
@@ -2021,7 +2021,7 @@ tile{
   y = 432,
   width = 16,
   height = 368,
-  pattern = 788,
+  pattern = "castle.floor_stones",
 }
 
 tile{
@@ -2030,7 +2030,7 @@ tile{
   y = 432,
   width = 16,
   height = 368,
-  pattern = 788,
+  pattern = "castle.floor_stones",
 }
 
 tile{
@@ -2039,7 +2039,7 @@ tile{
   y = 424,
   width = 8,
   height = 384,
-  pattern = 1386,
+  pattern = "castle.floor.border",
 }
 
 tile{
@@ -2048,7 +2048,7 @@ tile{
   y = 424,
   width = 8,
   height = 48,
-  pattern = 1386,
+  pattern = "castle.floor.border",
 }
 
 tile{
@@ -2057,7 +2057,7 @@ tile{
   y = 512,
   width = 32,
   height = 64,
-  pattern = 936,
+  pattern = "castle.4",
 }
 
 tile{
@@ -2066,7 +2066,7 @@ tile{
   y = 480,
   width = 32,
   height = 32,
-  pattern = 936,
+  pattern = "castle.4",
 }
 
 tile{
@@ -2075,7 +2075,7 @@ tile{
   y = 336,
   width = 32,
   height = 144,
-  pattern = 936,
+  pattern = "castle.4",
 }
 
 tile{
@@ -2084,7 +2084,7 @@ tile{
   y = 336,
   width = 32,
   height = 48,
-  pattern = 937,
+  pattern = "castle.3",
 }
 
 tile{
@@ -2093,7 +2093,7 @@ tile{
   y = 328,
   width = 80,
   height = 56,
-  pattern = 918,
+  pattern = "castle.1",
 }
 
 tile{
@@ -2102,7 +2102,7 @@ tile{
   y = 336,
   width = 32,
   height = 48,
-  pattern = 936,
+  pattern = "castle.4",
 }
 
 tile{
@@ -2111,7 +2111,7 @@ tile{
   y = 336,
   width = 32,
   height = 144,
-  pattern = 937,
+  pattern = "castle.3",
 }
 
 tile{
@@ -2120,7 +2120,7 @@ tile{
   y = 328,
   width = 80,
   height = 56,
-  pattern = 918,
+  pattern = "castle.1",
 }
 
 tile{
@@ -2129,7 +2129,7 @@ tile{
   y = 472,
   width = 192,
   height = 24,
-  pattern = 917,
+  pattern = "castle.2",
 }
 
 tile{
@@ -2138,7 +2138,7 @@ tile{
   y = 568,
   width = 48,
   height = 56,
-  pattern = 918,
+  pattern = "castle.1",
 }
 
 tile{
@@ -2147,7 +2147,7 @@ tile{
   y = 528,
   width = 32,
   height = 48,
-  pattern = 937,
+  pattern = "castle.3",
 }
 
 tile{
@@ -2156,7 +2156,7 @@ tile{
   y = 520,
   width = 208,
   height = 56,
-  pattern = 918,
+  pattern = "castle.1",
 }
 
 tile{
@@ -2165,7 +2165,7 @@ tile{
   y = 480,
   width = 32,
   height = 48,
-  pattern = 937,
+  pattern = "castle.3",
 }
 
 tile{
@@ -2174,7 +2174,7 @@ tile{
   y = 528,
   width = 32,
   height = 48,
-  pattern = 936,
+  pattern = "castle.4",
 }
 
 tile{
@@ -2183,7 +2183,7 @@ tile{
   y = 520,
   width = 208,
   height = 56,
-  pattern = 918,
+  pattern = "castle.1",
 }
 
 tile{
@@ -2192,7 +2192,7 @@ tile{
   y = 336,
   width = 32,
   height = 144,
-  pattern = 937,
+  pattern = "castle.3",
 }
 
 tile{
@@ -2201,7 +2201,7 @@ tile{
   y = 224,
   width = 32,
   height = 112,
-  pattern = 937,
+  pattern = "castle.3",
 }
 
 tile{
@@ -2210,7 +2210,7 @@ tile{
   y = 336,
   width = 32,
   height = 144,
-  pattern = 936,
+  pattern = "castle.4",
 }
 
 tile{
@@ -2219,7 +2219,7 @@ tile{
   y = 224,
   width = 32,
   height = 112,
-  pattern = 936,
+  pattern = "castle.4",
 }
 
 tile{
@@ -5639,7 +5639,7 @@ tile{
   y = 640,
   width = 16,
   height = 8,
-  pattern = 970,
+  pattern = "bridge_b.1",
 }
 
 tile{
@@ -5648,7 +5648,7 @@ tile{
   y = 784,
   width = 16,
   height = 16,
-  pattern = 972,
+  pattern = "bridge_b.2",
 }
 
 tile{
@@ -5657,7 +5657,7 @@ tile{
   y = 648,
   width = 16,
   height = 136,
-  pattern = 971,
+  pattern = "bridge_b",
 }
 
 tile{
@@ -5666,7 +5666,7 @@ tile{
   y = 640,
   width = 16,
   height = 8,
-  pattern = 970,
+  pattern = "bridge_b.1",
 }
 
 tile{
@@ -5675,7 +5675,7 @@ tile{
   y = 784,
   width = 16,
   height = 16,
-  pattern = 972,
+  pattern = "bridge_b.2",
 }
 
 tile{
@@ -5684,7 +5684,7 @@ tile{
   y = 648,
   width = 16,
   height = 136,
-  pattern = 971,
+  pattern = "bridge_b",
 }
 
 tile{
@@ -5693,7 +5693,7 @@ tile{
   y = 216,
   width = 640,
   height = 24,
-  pattern = 917,
+  pattern = "castle.2",
 }
 
 tile{
@@ -5702,7 +5702,7 @@ tile{
   y = 216,
   width = 16,
   height = 8,
-  pattern = 920,
+  pattern = "castle.corner_reverse.4",
 }
 
 tile{
@@ -5711,7 +5711,7 @@ tile{
   y = 336,
   width = 16,
   height = 48,
-  pattern = 922,
+  pattern = "castle.corner_reverse.2",
 }
 
 tile{
@@ -5720,7 +5720,7 @@ tile{
   y = 224,
   width = 16,
   height = 16,
-  pattern = 928,
+  pattern = "castle.top.corner_reverse.4",
 }
 
 tile{
@@ -5729,7 +5729,7 @@ tile{
   y = 344,
   width = 16,
   height = 40,
-  pattern = 925,
+  pattern = "castle.corner.2",
 }
 
 tile{
@@ -5738,7 +5738,7 @@ tile{
   y = 480,
   width = 32,
   height = 48,
-  pattern = 936,
+  pattern = "castle.4",
 }
 
 tile{
@@ -5747,7 +5747,7 @@ tile{
   y = 472,
   width = 16,
   height = 8,
-  pattern = 920,
+  pattern = "castle.corner_reverse.4",
 }
 
 tile{
@@ -5756,7 +5756,7 @@ tile{
   y = 528,
   width = 16,
   height = 48,
-  pattern = 922,
+  pattern = "castle.corner_reverse.2",
 }
 
 tile{
@@ -5765,7 +5765,7 @@ tile{
   y = 536,
   width = 16,
   height = 40,
-  pattern = 925,
+  pattern = "castle.corner.2",
 }
 
 tile{
@@ -5774,7 +5774,7 @@ tile{
   y = 576,
   width = 16,
   height = 48,
-  pattern = 922,
+  pattern = "castle.corner_reverse.2",
 }
 
 tile{
@@ -5783,7 +5783,7 @@ tile{
   y = 328,
   width = 16,
   height = 16,
-  pattern = 934,
+  pattern = "castle.top.corner.2",
 }
 
 tile{
@@ -5792,7 +5792,7 @@ tile{
   y = 472,
   width = 16,
   height = 8,
-  pattern = 927,
+  pattern = "castle.corner.4",
 }
 
 tile{
@@ -5801,7 +5801,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = 928,
+  pattern = "castle.top.corner_reverse.4",
 }
 
 tile{
@@ -5810,7 +5810,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = 932,
+  pattern = "castle.top.corner.4",
 }
 
 tile{
@@ -5819,7 +5819,7 @@ tile{
   y = 520,
   width = 16,
   height = 16,
-  pattern = 931,
+  pattern = "castle.top.corner_reverse.2",
 }
 
 tile{
@@ -5828,7 +5828,7 @@ tile{
   y = 328,
   width = 16,
   height = 16,
-  pattern = 931,
+  pattern = "castle.top.corner_reverse.2",
 }
 
 tile{
@@ -5837,7 +5837,7 @@ tile{
   y = 216,
   width = 16,
   height = 8,
-  pattern = 921,
+  pattern = "castle.corner_reverse.3",
 }
 
 tile{
@@ -5846,7 +5846,7 @@ tile{
   y = 336,
   width = 16,
   height = 48,
-  pattern = 923,
+  pattern = "castle.corner_reverse.1",
 }
 
 tile{
@@ -5855,7 +5855,7 @@ tile{
   y = 344,
   width = 16,
   height = 40,
-  pattern = 924,
+  pattern = "castle.corner.1",
 }
 
 tile{
@@ -5864,7 +5864,7 @@ tile{
   y = 472,
   width = 16,
   height = 8,
-  pattern = 921,
+  pattern = "castle.corner_reverse.3",
 }
 
 tile{
@@ -5873,7 +5873,7 @@ tile{
   y = 472,
   width = 16,
   height = 8,
-  pattern = 926,
+  pattern = "castle.corner.3",
 }
 
 tile{
@@ -5882,7 +5882,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = 929,
+  pattern = "castle.top.corner_reverse.3",
 }
 
 tile{
@@ -5891,7 +5891,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = 933,
+  pattern = "castle.top.corner.3",
 }
 
 tile{
@@ -5900,7 +5900,7 @@ tile{
   y = 328,
   width = 16,
   height = 16,
-  pattern = 935,
+  pattern = "castle.top.corner.1",
 }
 
 tile{
@@ -5909,7 +5909,7 @@ tile{
   y = 328,
   width = 16,
   height = 16,
-  pattern = 930,
+  pattern = "castle.top.corner_reverse.1",
 }
 
 tile{
@@ -5918,7 +5918,7 @@ tile{
   y = 224,
   width = 16,
   height = 16,
-  pattern = 929,
+  pattern = "castle.top.corner_reverse.3",
 }
 
 tile{
@@ -5927,7 +5927,7 @@ tile{
   y = 528,
   width = 16,
   height = 48,
-  pattern = 923,
+  pattern = "castle.corner_reverse.1",
 }
 
 tile{
@@ -5936,7 +5936,7 @@ tile{
   y = 536,
   width = 16,
   height = 40,
-  pattern = 924,
+  pattern = "castle.corner.1",
 }
 
 tile{
@@ -5945,7 +5945,7 @@ tile{
   y = 576,
   width = 16,
   height = 48,
-  pattern = 923,
+  pattern = "castle.corner_reverse.1",
 }
 
 tile{
@@ -5954,7 +5954,7 @@ tile{
   y = 568,
   width = 48,
   height = 56,
-  pattern = 918,
+  pattern = "castle.1",
 }
 
 tile{
@@ -5963,7 +5963,7 @@ tile{
   y = 576,
   width = 16,
   height = 48,
-  pattern = 923,
+  pattern = "castle.corner_reverse.1",
 }
 
 tile{
@@ -5972,7 +5972,7 @@ tile{
   y = 576,
   width = 16,
   height = 48,
-  pattern = 922,
+  pattern = "castle.corner_reverse.2",
 }
 
 tile{
@@ -5981,7 +5981,7 @@ tile{
   y = 520,
   width = 16,
   height = 16,
-  pattern = 934,
+  pattern = "castle.top.corner.2",
 }
 
 tile{
@@ -5990,7 +5990,7 @@ tile{
   y = 568,
   width = 16,
   height = 16,
-  pattern = 931,
+  pattern = "castle.top.corner_reverse.2",
 }
 
 tile{
@@ -5999,7 +5999,7 @@ tile{
   y = 568,
   width = 16,
   height = 16,
-  pattern = 930,
+  pattern = "castle.top.corner_reverse.1",
 }
 
 tile{
@@ -6008,7 +6008,7 @@ tile{
   y = 568,
   width = 16,
   height = 16,
-  pattern = 931,
+  pattern = "castle.top.corner_reverse.2",
 }
 
 tile{
@@ -6017,7 +6017,7 @@ tile{
   y = 568,
   width = 16,
   height = 16,
-  pattern = 930,
+  pattern = "castle.top.corner_reverse.1",
 }
 
 tile{
@@ -6026,7 +6026,7 @@ tile{
   y = 520,
   width = 16,
   height = 16,
-  pattern = 935,
+  pattern = "castle.top.corner.1",
 }
 
 tile{
@@ -6035,7 +6035,7 @@ tile{
   y = 520,
   width = 16,
   height = 16,
-  pattern = 930,
+  pattern = "castle.top.corner_reverse.1",
 }
 
 tile{
@@ -6044,7 +6044,7 @@ tile{
   y = 472,
   width = 16,
   height = 8,
-  pattern = 921,
+  pattern = "castle.corner_reverse.3",
 }
 
 tile{
@@ -6053,7 +6053,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = 929,
+  pattern = "castle.top.corner_reverse.3",
 }
 
 tile{
@@ -6062,7 +6062,7 @@ tile{
   y = 472,
   width = 16,
   height = 8,
-  pattern = 926,
+  pattern = "castle.corner.3",
 }
 
 tile{
@@ -6071,7 +6071,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = 933,
+  pattern = "castle.top.corner.3",
 }
 
 tile{
@@ -6080,7 +6080,7 @@ tile{
   y = 344,
   width = 16,
   height = 40,
-  pattern = 924,
+  pattern = "castle.corner.1",
 }
 
 tile{
@@ -6089,7 +6089,7 @@ tile{
   y = 328,
   width = 16,
   height = 16,
-  pattern = 935,
+  pattern = "castle.top.corner.1",
 }
 
 tile{
@@ -6098,7 +6098,7 @@ tile{
   y = 328,
   width = 16,
   height = 16,
-  pattern = 934,
+  pattern = "castle.top.corner.2",
 }
 
 tile{
@@ -6107,7 +6107,7 @@ tile{
   y = 344,
   width = 16,
   height = 40,
-  pattern = 925,
+  pattern = "castle.corner.2",
 }
 
 tile{
@@ -6116,7 +6116,7 @@ tile{
   y = 384,
   width = 16,
   height = 48,
-  pattern = 922,
+  pattern = "castle.corner_reverse.2",
 }
 
 tile{
@@ -6125,7 +6125,7 @@ tile{
   y = 376,
   width = 352,
   height = 56,
-  pattern = 918,
+  pattern = "castle.1",
 }
 
 tile{
@@ -6134,7 +6134,7 @@ tile{
   y = 376,
   width = 16,
   height = 16,
-  pattern = 931,
+  pattern = "castle.top.corner_reverse.2",
 }
 
 tile{
@@ -6143,7 +6143,7 @@ tile{
   y = 384,
   width = 16,
   height = 48,
-  pattern = 923,
+  pattern = "castle.corner_reverse.1",
 }
 
 tile{
@@ -6152,7 +6152,7 @@ tile{
   y = 344,
   width = 16,
   height = 40,
-  pattern = 924,
+  pattern = "castle.corner.1",
 }
 
 tile{
@@ -6161,7 +6161,7 @@ tile{
   y = 328,
   width = 16,
   height = 16,
-  pattern = 935,
+  pattern = "castle.top.corner.1",
 }
 
 tile{
@@ -6170,7 +6170,7 @@ tile{
   y = 376,
   width = 16,
   height = 16,
-  pattern = 930,
+  pattern = "castle.top.corner_reverse.1",
 }
 
 tile{
@@ -6179,7 +6179,7 @@ tile{
   y = 344,
   width = 16,
   height = 40,
-  pattern = 925,
+  pattern = "castle.corner.2",
 }
 
 tile{
@@ -6188,7 +6188,7 @@ tile{
   y = 328,
   width = 16,
   height = 16,
-  pattern = 934,
+  pattern = "castle.top.corner.2",
 }
 
 tile{
@@ -6197,7 +6197,7 @@ tile{
   y = 472,
   width = 192,
   height = 24,
-  pattern = 917,
+  pattern = "castle.2",
 }
 
 tile{
@@ -6206,7 +6206,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = 932,
+  pattern = "castle.top.corner.4",
 }
 
 tile{
@@ -6215,7 +6215,7 @@ tile{
   y = 472,
   width = 16,
   height = 8,
-  pattern = 927,
+  pattern = "castle.corner.4",
 }
 
 tile{
@@ -6224,7 +6224,7 @@ tile{
   y = 472,
   width = 16,
   height = 8,
-  pattern = 920,
+  pattern = "castle.corner_reverse.4",
 }
 
 tile{
@@ -6233,7 +6233,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = 928,
+  pattern = "castle.top.corner_reverse.4",
 }
 
 tile{
@@ -6242,7 +6242,7 @@ tile{
   y = 392,
   width = 32,
   height = 56,
-  pattern = 938,
+  pattern = "castle.turret",
 }
 
 tile{
@@ -6251,7 +6251,7 @@ tile{
   y = 392,
   width = 32,
   height = 56,
-  pattern = 938,
+  pattern = "castle.turret",
 }
 
 tile{
@@ -6260,7 +6260,7 @@ tile{
   y = 400,
   width = 24,
   height = 32,
-  pattern = 1032,
+  pattern = "castle.entrance.border.1",
 }
 
 tile{
@@ -6269,7 +6269,7 @@ tile{
   y = 400,
   width = 24,
   height = 32,
-  pattern = 1033,
+  pattern = "castle.entrance.border.2",
 }
 
 tile{
@@ -6278,7 +6278,7 @@ tile{
   y = 408,
   width = 16,
   height = 24,
-  pattern = 1035,
+  pattern = "castle.entrance",
 }
 
 tile{
@@ -6287,7 +6287,7 @@ tile{
   y = 400,
   width = 16,
   height = 8,
-  pattern = 1034,
+  pattern = "castle.entrance.top",
 }
 
 tile{
@@ -6296,7 +6296,7 @@ tile{
   y = 408,
   width = 32,
   height = 24,
-  pattern = 1031,
+  pattern = "castle.door",
 }
 
 tile{
@@ -6305,7 +6305,7 @@ tile{
   y = 624,
   width = 8,
   height = 16,
-  pattern = 1386,
+  pattern = "castle.floor.border",
 }
 
 tile{
@@ -6323,7 +6323,7 @@ tile{
   y = 440,
   width = 16,
   height = 8,
-  pattern = 790,
+  pattern = "castle.floor.heart",
 }
 
 tile{
@@ -6332,7 +6332,7 @@ tile{
   y = 472,
   width = 16,
   height = 8,
-  pattern = 790,
+  pattern = "castle.floor.heart",
 }
 
 tile{
@@ -6341,7 +6341,7 @@ tile{
   y = 568,
   width = 16,
   height = 8,
-  pattern = 790,
+  pattern = "castle.floor.heart",
 }
 
 tile{
@@ -6350,7 +6350,7 @@ tile{
   y = 600,
   width = 16,
   height = 8,
-  pattern = 790,
+  pattern = "castle.floor.heart",
 }
 
 tile{
@@ -6359,7 +6359,7 @@ tile{
   y = 632,
   width = 16,
   height = 8,
-  pattern = 790,
+  pattern = "castle.floor.heart",
 }
 
 tile{
@@ -6368,7 +6368,7 @@ tile{
   y = 664,
   width = 16,
   height = 8,
-  pattern = 790,
+  pattern = "castle.floor.heart",
 }
 
 tile{
@@ -6377,7 +6377,7 @@ tile{
   y = 696,
   width = 16,
   height = 8,
-  pattern = 790,
+  pattern = "castle.floor.heart",
 }
 
 tile{
@@ -6386,7 +6386,7 @@ tile{
   y = 728,
   width = 16,
   height = 8,
-  pattern = 790,
+  pattern = "castle.floor.heart",
 }
 
 tile{
@@ -6395,7 +6395,7 @@ tile{
   y = 760,
   width = 16,
   height = 8,
-  pattern = 790,
+  pattern = "castle.floor.heart",
 }
 
 tile{
@@ -6404,7 +6404,7 @@ tile{
   y = 792,
   width = 16,
   height = 8,
-  pattern = 790,
+  pattern = "castle.floor.heart",
 }
 
 tile{
@@ -6413,7 +6413,7 @@ tile{
   y = 304,
   width = 16,
   height = 48,
-  pattern = 922,
+  pattern = "castle.corner_reverse.2",
 }
 
 tile{
@@ -6422,7 +6422,7 @@ tile{
   y = 296,
   width = 224,
   height = 56,
-  pattern = 918,
+  pattern = "castle.1",
 }
 
 tile{
@@ -6431,7 +6431,7 @@ tile{
   y = 304,
   width = 16,
   height = 48,
-  pattern = 923,
+  pattern = "castle.corner_reverse.1",
 }
 
 tile{
@@ -6440,7 +6440,7 @@ tile{
   y = 320,
   width = 24,
   height = 32,
-  pattern = 1032,
+  pattern = "castle.entrance.border.1",
 }
 
 tile{
@@ -6449,7 +6449,7 @@ tile{
   y = 320,
   width = 24,
   height = 32,
-  pattern = 1033,
+  pattern = "castle.entrance.border.2",
 }
 
 tile{
@@ -6458,7 +6458,7 @@ tile{
   y = 320,
   width = 16,
   height = 8,
-  pattern = 1034,
+  pattern = "castle.entrance.top",
 }
 
 tile{
@@ -6467,7 +6467,7 @@ tile{
   y = 328,
   width = 16,
   height = 24,
-  pattern = 1035,
+  pattern = "castle.entrance",
 }
 
 tile{
@@ -6476,7 +6476,7 @@ tile{
   y = 328,
   width = 32,
   height = 24,
-  pattern = 1031,
+  pattern = "castle.door",
 }
 
 tile{
@@ -6485,7 +6485,7 @@ tile{
   y = 248,
   width = 224,
   height = 24,
-  pattern = 917,
+  pattern = "castle.2",
 }
 
 tile{
@@ -6494,7 +6494,7 @@ tile{
   y = 248,
   width = 16,
   height = 8,
-  pattern = 920,
+  pattern = "castle.corner_reverse.4",
 }
 
 tile{
@@ -6503,7 +6503,7 @@ tile{
   y = 256,
   width = 32,
   height = 48,
-  pattern = 937,
+  pattern = "castle.3",
 }
 
 tile{
@@ -6512,7 +6512,7 @@ tile{
   y = 248,
   width = 16,
   height = 8,
-  pattern = 921,
+  pattern = "castle.corner_reverse.3",
 }
 
 tile{
@@ -6521,7 +6521,7 @@ tile{
   y = 256,
   width = 16,
   height = 16,
-  pattern = 929,
+  pattern = "castle.top.corner_reverse.3",
 }
 
 tile{
@@ -6530,7 +6530,7 @@ tile{
   y = 296,
   width = 16,
   height = 16,
-  pattern = 930,
+  pattern = "castle.top.corner_reverse.1",
 }
 
 tile{
@@ -6539,7 +6539,7 @@ tile{
   y = 296,
   width = 16,
   height = 16,
-  pattern = 931,
+  pattern = "castle.top.corner_reverse.2",
 }
 
 tile{
@@ -6548,7 +6548,7 @@ tile{
   y = 256,
   width = 16,
   height = 16,
-  pattern = 928,
+  pattern = "castle.top.corner_reverse.4",
 }
 
 tile{
@@ -6557,7 +6557,7 @@ tile{
   y = 376,
   width = 16,
   height = 120,
-  pattern = 953,
+  pattern = "castle.top.floor",
 }
 
 tile{
@@ -6566,7 +6566,7 @@ tile{
   y = 376,
   width = 16,
   height = 120,
-  pattern = 953,
+  pattern = "castle.top.floor",
 }
 
 tile{
@@ -6575,7 +6575,7 @@ tile{
   y = 496,
   width = 208,
   height = 24,
-  pattern = 953,
+  pattern = "castle.top.floor",
 }
 
 tile{
@@ -6584,7 +6584,7 @@ tile{
   y = 496,
   width = 208,
   height = 24,
-  pattern = 953,
+  pattern = "castle.top.floor",
 }
 
 tile{
@@ -6593,7 +6593,7 @@ tile{
   y = 496,
   width = 16,
   height = 72,
-  pattern = 953,
+  pattern = "castle.top.floor",
 }
 
 tile{
@@ -6602,7 +6602,7 @@ tile{
   y = 496,
   width = 16,
   height = 72,
-  pattern = 953,
+  pattern = "castle.top.floor",
 }
 
 tile{
@@ -6647,7 +6647,7 @@ tile{
   y = 536,
   width = 8,
   height = 8,
-  pattern = 1478,
+  pattern = "castle.portal.floor.1",
 }
 
 tile{
@@ -6656,7 +6656,7 @@ tile{
   y = 544,
   width = 8,
   height = 8,
-  pattern = 1479,
+  pattern = "castle.portal.floor.2",
 }
 
 tile{
@@ -6665,7 +6665,7 @@ tile{
   y = 552,
   width = 8,
   height = 8,
-  pattern = 1478,
+  pattern = "castle.portal.floor.1",
 }
 
 tile{
@@ -6674,7 +6674,7 @@ tile{
   y = 536,
   width = 48,
   height = 24,
-  pattern = 1480,
+  pattern = "castle.portal",
 }
 
 tile{
@@ -6683,7 +6683,7 @@ tile{
   y = 536,
   width = 8,
   height = 8,
-  pattern = 1481,
+  pattern = "castle.portal.floor.3",
 }
 
 tile{
@@ -6692,7 +6692,7 @@ tile{
   y = 544,
   width = 8,
   height = 8,
-  pattern = 1482,
+  pattern = "castle.portal.floor.4",
 }
 
 tile{
@@ -6701,7 +6701,7 @@ tile{
   y = 552,
   width = 8,
   height = 8,
-  pattern = 1481,
+  pattern = "castle.portal.floor.3",
 }
 
 tile{
@@ -6710,7 +6710,7 @@ tile{
   y = 496,
   width = 16,
   height = 8,
-  pattern = 927,
+  pattern = "castle.corner.4",
 }
 
 tile{
@@ -6719,7 +6719,7 @@ tile{
   y = 496,
   width = 16,
   height = 8,
-  pattern = 926,
+  pattern = "castle.corner.3",
 }
 
 tile{
@@ -6728,7 +6728,7 @@ tile{
   y = 520,
   width = 16,
   height = 40,
-  pattern = 925,
+  pattern = "castle.corner.2",
 }
 
 tile{
@@ -6737,7 +6737,7 @@ tile{
   y = 520,
   width = 16,
   height = 40,
-  pattern = 924,
+  pattern = "castle.corner.1",
 }
 
 tile{
@@ -6746,7 +6746,7 @@ tile{
   y = 504,
   width = 16,
   height = 16,
-  pattern = 928,
+  pattern = "castle.top.corner_reverse.4",
 }
 
 tile{
@@ -6755,7 +6755,7 @@ tile{
   y = 504,
   width = 16,
   height = 16,
-  pattern = 928,
+  pattern = "castle.top.corner_reverse.4",
 }
 
 tile{
@@ -6764,7 +6764,7 @@ tile{
   y = 504,
   width = 16,
   height = 16,
-  pattern = 929,
+  pattern = "castle.top.corner_reverse.3",
 }
 
 tile{
@@ -6773,7 +6773,7 @@ tile{
   y = 504,
   width = 16,
   height = 16,
-  pattern = 929,
+  pattern = "castle.top.corner_reverse.3",
 }
 
 tile{
@@ -6782,7 +6782,7 @@ tile{
   y = 504,
   width = 16,
   height = 56,
-  pattern = 918,
+  pattern = "castle.1",
 }
 
 tile{
@@ -6791,7 +6791,7 @@ tile{
   y = 536,
   width = 8,
   height = 24,
-  pattern = 1483,
+  pattern = "castle.portal.border.1",
 }
 
 tile{
@@ -6800,7 +6800,7 @@ tile{
   y = 504,
   width = 16,
   height = 56,
-  pattern = 918,
+  pattern = "castle.1",
 }
 
 tile{
@@ -6809,7 +6809,7 @@ tile{
   y = 536,
   width = 8,
   height = 24,
-  pattern = 1484,
+  pattern = "castle.portal.border.2",
 }
 
 tile{
@@ -7868,7 +7868,7 @@ tile{
   y = 496,
   width = 64,
   height = 40,
-  pattern = 1476,
+  pattern = "castle.portal.top",
 }
 
 tile{
@@ -7877,7 +7877,7 @@ tile{
   y = 496,
   width = 16,
   height = 40,
-  pattern = 1475,
+  pattern = "castle.portal.top.3",
 }
 
 tile{
@@ -7886,7 +7886,7 @@ tile{
   y = 496,
   width = 16,
   height = 40,
-  pattern = 1477,
+  pattern = "castle.portal.top.4",
 }
 
 tile{

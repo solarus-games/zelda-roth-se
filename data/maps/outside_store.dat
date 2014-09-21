@@ -76,7 +76,7 @@ tile{
   y = 40,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -85,7 +85,7 @@ tile{
   y = 40,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -445,7 +445,7 @@ tile{
   y = 640,
   width = 16,
   height = 8,
-  pattern = "719",
+  pattern = "house.slab",
 }
 
 tile{
@@ -454,7 +454,7 @@ tile{
   y = 648,
   width = 32,
   height = 8,
-  pattern = "719",
+  pattern = "house.slab",
 }
 
 tile{
@@ -463,7 +463,7 @@ tile{
   y = 640,
   width = 16,
   height = 8,
-  pattern = "719",
+  pattern = "house.slab",
 }
 
 tile{
@@ -472,7 +472,7 @@ tile{
   y = 648,
   width = 32,
   height = 8,
-  pattern = "719",
+  pattern = "house.slab",
 }
 
 tile{
@@ -481,7 +481,7 @@ tile{
   y = 640,
   width = 16,
   height = 8,
-  pattern = "719",
+  pattern = "house.slab",
 }
 
 tile{
@@ -490,7 +490,7 @@ tile{
   y = 648,
   width = 32,
   height = 8,
-  pattern = "719",
+  pattern = "house.slab",
 }
 
 tile{
@@ -1093,7 +1093,7 @@ tile{
   y = 88,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -1102,7 +1102,7 @@ tile{
   y = 80,
   width = 16,
   height = 8,
-  pattern = "1256",
+  pattern = "ruins.3.border.1",
 }
 
 tile{
@@ -1111,7 +1111,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -1120,7 +1120,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "1255",
+  pattern = "ruins.corner.4",
 }
 
 tile{
@@ -1129,7 +1129,7 @@ tile{
   y = 96,
   width = 8,
   height = 16,
-  pattern = "1238",
+  pattern = "ruins.2.border.1",
 }
 
 tile{
@@ -1255,7 +1255,7 @@ tile{
   y = 88,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -1264,7 +1264,7 @@ tile{
   y = 80,
   width = 16,
   height = 8,
-  pattern = "1256",
+  pattern = "ruins.3.border.1",
 }
 
 tile{
@@ -1273,7 +1273,7 @@ tile{
   y = 96,
   width = 8,
   height = 16,
-  pattern = "1240",
+  pattern = "ruins.2.border.2",
 }
 
 tile{
@@ -1282,7 +1282,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -1291,7 +1291,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "1254",
+  pattern = "ruins.corner.3",
 }
 
 tile{
@@ -1345,7 +1345,7 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -1354,7 +1354,7 @@ tile{
   y = 32,
   width = 8,
   height = 16,
-  pattern = "1238",
+  pattern = "ruins.2.border.1",
 }
 
 tile{
@@ -1363,7 +1363,7 @@ tile{
   y = 32,
   width = 8,
   height = 16,
-  pattern = "1240",
+  pattern = "ruins.2.border.2",
 }
 
 tile{
@@ -1372,7 +1372,7 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -1381,7 +1381,7 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "1252",
+  pattern = "ruins.corner_reverse.4",
 }
 
 tile{
@@ -1390,7 +1390,7 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "1253",
+  pattern = "ruins.corner_reverse.3",
 }
 
 tile{
@@ -1399,7 +1399,7 @@ tile{
   y = 56,
   width = 16,
   height = 8,
-  pattern = "1242",
+  pattern = "ruins.3.border.2",
 }
 
 tile{
@@ -1408,7 +1408,7 @@ tile{
   y = 56,
   width = 16,
   height = 8,
-  pattern = "1242",
+  pattern = "ruins.3.border.2",
 }
 
 tile{
@@ -3298,7 +3298,7 @@ tile{
   y = 216,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -3307,7 +3307,7 @@ tile{
   y = 216,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -3397,7 +3397,7 @@ tile{
   y = 264,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -3406,7 +3406,7 @@ tile{
   y = 256,
   width = 16,
   height = 8,
-  pattern = "1256",
+  pattern = "ruins.3.border.1",
 }
 
 tile{
@@ -3415,7 +3415,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -3424,7 +3424,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = "1255",
+  pattern = "ruins.corner.4",
 }
 
 tile{
@@ -3433,7 +3433,7 @@ tile{
   y = 272,
   width = 8,
   height = 16,
-  pattern = "1238",
+  pattern = "ruins.2.border.1",
 }
 
 tile{
@@ -3469,7 +3469,7 @@ tile{
   y = 264,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -3478,7 +3478,7 @@ tile{
   y = 256,
   width = 16,
   height = 8,
-  pattern = "1256",
+  pattern = "ruins.3.border.1",
 }
 
 tile{
@@ -3487,7 +3487,7 @@ tile{
   y = 272,
   width = 8,
   height = 16,
-  pattern = "1240",
+  pattern = "ruins.2.border.2",
 }
 
 tile{
@@ -3496,7 +3496,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -3505,7 +3505,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = "1254",
+  pattern = "ruins.corner.3",
 }
 
 tile{
@@ -3532,7 +3532,7 @@ tile{
   y = 208,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -3541,7 +3541,7 @@ tile{
   y = 208,
   width = 8,
   height = 16,
-  pattern = "1238",
+  pattern = "ruins.2.border.1",
 }
 
 tile{
@@ -3550,7 +3550,7 @@ tile{
   y = 208,
   width = 8,
   height = 16,
-  pattern = "1240",
+  pattern = "ruins.2.border.2",
 }
 
 tile{
@@ -3559,7 +3559,7 @@ tile{
   y = 208,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -3568,7 +3568,7 @@ tile{
   y = 208,
   width = 16,
   height = 16,
-  pattern = "1252",
+  pattern = "ruins.corner_reverse.4",
 }
 
 tile{
@@ -3577,7 +3577,7 @@ tile{
   y = 208,
   width = 16,
   height = 16,
-  pattern = "1253",
+  pattern = "ruins.corner_reverse.3",
 }
 
 tile{
@@ -3586,7 +3586,7 @@ tile{
   y = 232,
   width = 16,
   height = 8,
-  pattern = "1242",
+  pattern = "ruins.3.border.2",
 }
 
 tile{
@@ -3595,7 +3595,7 @@ tile{
   y = 232,
   width = 16,
   height = 8,
-  pattern = "1242",
+  pattern = "ruins.3.border.2",
 }
 
 tile{
@@ -4054,7 +4054,7 @@ tile{
   y = 392,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -4063,7 +4063,7 @@ tile{
   y = 392,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -4153,7 +4153,7 @@ tile{
   y = 440,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -4162,7 +4162,7 @@ tile{
   y = 432,
   width = 16,
   height = 8,
-  pattern = "1256",
+  pattern = "ruins.3.border.1",
 }
 
 tile{
@@ -4171,7 +4171,7 @@ tile{
   y = 448,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -4180,7 +4180,7 @@ tile{
   y = 448,
   width = 16,
   height = 16,
-  pattern = "1255",
+  pattern = "ruins.corner.4",
 }
 
 tile{
@@ -4189,7 +4189,7 @@ tile{
   y = 448,
   width = 8,
   height = 16,
-  pattern = "1238",
+  pattern = "ruins.2.border.1",
 }
 
 tile{
@@ -4225,7 +4225,7 @@ tile{
   y = 440,
   width = 16,
   height = 16,
-  pattern = "1241",
+  pattern = "ruins.3",
 }
 
 tile{
@@ -4234,7 +4234,7 @@ tile{
   y = 432,
   width = 16,
   height = 8,
-  pattern = "1256",
+  pattern = "ruins.3.border.1",
 }
 
 tile{
@@ -4243,7 +4243,7 @@ tile{
   y = 448,
   width = 8,
   height = 16,
-  pattern = "1240",
+  pattern = "ruins.2.border.2",
 }
 
 tile{
@@ -4252,7 +4252,7 @@ tile{
   y = 448,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -4261,7 +4261,7 @@ tile{
   y = 448,
   width = 16,
   height = 16,
-  pattern = "1254",
+  pattern = "ruins.corner.3",
 }
 
 tile{
@@ -4288,7 +4288,7 @@ tile{
   y = 384,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -4297,7 +4297,7 @@ tile{
   y = 384,
   width = 8,
   height = 16,
-  pattern = "1238",
+  pattern = "ruins.2.border.1",
 }
 
 tile{
@@ -4306,7 +4306,7 @@ tile{
   y = 384,
   width = 8,
   height = 16,
-  pattern = "1240",
+  pattern = "ruins.2.border.2",
 }
 
 tile{
@@ -4315,7 +4315,7 @@ tile{
   y = 384,
   width = 16,
   height = 16,
-  pattern = "1239",
+  pattern = "ruins.2",
 }
 
 tile{
@@ -4324,7 +4324,7 @@ tile{
   y = 384,
   width = 16,
   height = 16,
-  pattern = "1252",
+  pattern = "ruins.corner_reverse.4",
 }
 
 tile{
@@ -4333,7 +4333,7 @@ tile{
   y = 384,
   width = 16,
   height = 16,
-  pattern = "1253",
+  pattern = "ruins.corner_reverse.3",
 }
 
 tile{
@@ -4342,7 +4342,7 @@ tile{
   y = 408,
   width = 16,
   height = 8,
-  pattern = "1242",
+  pattern = "ruins.3.border.2",
 }
 
 tile{
@@ -4351,7 +4351,7 @@ tile{
   y = 408,
   width = 16,
   height = 8,
-  pattern = "1242",
+  pattern = "ruins.3.border.2",
 }
 
 tile{
@@ -6646,7 +6646,7 @@ tile{
   y = 448,
   width = 32,
   height = 8,
-  pattern = "625",
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -6655,7 +6655,7 @@ tile{
   y = 480,
   width = 32,
   height = 8,
-  pattern = "625",
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -6664,7 +6664,7 @@ tile{
   y = 368,
   width = 80,
   height = 8,
-  pattern = "625",
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -6673,7 +6673,7 @@ tile{
   y = 368,
   width = 48,
   height = 8,
-  pattern = "625",
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -8608,7 +8608,7 @@ tile{
   y = 640,
   width = 16,
   height = 8,
-  pattern = "719",
+  pattern = "house.slab",
 }
 
 tile{
@@ -8617,7 +8617,7 @@ tile{
   y = 648,
   width = 32,
   height = 8,
-  pattern = "719",
+  pattern = "house.slab",
 }
 
 tile{
@@ -8626,7 +8626,7 @@ tile{
   y = 640,
   width = 16,
   height = 8,
-  pattern = "1470",
+  pattern = "house.slab_dark",
 }
 
 tile{
@@ -8635,7 +8635,7 @@ tile{
   y = 648,
   width = 32,
   height = 8,
-  pattern = "1470",
+  pattern = "house.slab_dark",
 }
 
 tile{
@@ -8689,7 +8689,7 @@ tile{
   y = 624,
   width = 16,
   height = 32,
-  pattern = "1086",
+  pattern = "house_tree.3",
 }
 
 tile{
@@ -8698,7 +8698,7 @@ tile{
   y = 624,
   width = 16,
   height = 32,
-  pattern = "1085",
+  pattern = "house_tree.1",
 }
 
 tile{
@@ -8716,7 +8716,7 @@ tile{
   y = 640,
   width = 16,
   height = 16,
-  pattern = "1088",
+  pattern = "house_tree.steps",
 }
 
 tile{
@@ -9694,7 +9694,7 @@ tile{
   y = 568,
   width = 64,
   height = 56,
-  pattern = "1082",
+  pattern = "house_tree.roof",
 }
 
 dynamic_tile{

@@ -596,7 +596,7 @@ tile{
   y = 208,
   width = 32,
   height = 8,
-  pattern = 625,
+  pattern = "dirt.cliff.2",
 }
 
 tile{
@@ -3737,7 +3737,7 @@ tile{
   y = 48,
   width = 32,
   height = 16,
-  pattern = 1459,
+  pattern = "dungeon_d.border.1",
 }
 
 tile{
@@ -3746,7 +3746,7 @@ tile{
   y = 64,
   width = 8,
   height = 16,
-  pattern = 1461,
+  pattern = "dungeon_d.border.3",
 }
 
 tile{
@@ -3755,7 +3755,7 @@ tile{
   y = 64,
   width = 16,
   height = 16,
-  pattern = 1462,
+  pattern = "dungeon_d.entrance",
 }
 
 tile{
@@ -3764,7 +3764,7 @@ tile{
   y = 64,
   width = 8,
   height = 16,
-  pattern = 1460,
+  pattern = "dungeon_d.border.2",
 }
 
 tile{
@@ -3773,7 +3773,7 @@ tile{
   y = 48,
   width = 8,
   height = 24,
-  pattern = 1457,
+  pattern = "dungeon_d.shadow.1",
 }
 
 tile{
@@ -3782,7 +3782,7 @@ tile{
   y = 48,
   width = 8,
   height = 24,
-  pattern = 1458,
+  pattern = "dungeon_d.shadow.2",
 }
 
 tile{
@@ -4806,7 +4806,7 @@ tile{
   y = 16,
   width = 48,
   height = 32,
-  pattern = 1456,
+  pattern = "dungeon_d.top",
 }
 
 tile{

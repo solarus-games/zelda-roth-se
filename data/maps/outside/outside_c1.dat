@@ -112,7 +112,7 @@ tile{
   y = 136,
   width = 16,
   height = 64,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -121,7 +121,7 @@ tile{
   y = 96,
   width = 32,
   height = 112,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -130,7 +130,7 @@ tile{
   y = 80,
   width = 16,
   height = 16,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -139,7 +139,7 @@ tile{
   y = 80,
   width = 40,
   height = 64,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -148,7 +148,7 @@ tile{
   y = 80,
   width = 24,
   height = 120,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -193,7 +193,7 @@ tile{
   y = 208,
   width = 40,
   height = 32,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -211,7 +211,7 @@ tile{
   y = 976,
   width = 16,
   height = 208,
-  pattern = "1318",
+  pattern = "forest.4",
 }
 
 tile{
@@ -220,7 +220,7 @@ tile{
   y = 976,
   width = 16,
   height = 208,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -229,7 +229,7 @@ tile{
   y = 968,
   width = 48,
   height = 232,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -247,7 +247,7 @@ tile{
   y = 936,
   width = 312,
   height = 32,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -256,7 +256,7 @@ tile{
   y = 864,
   width = 328,
   height = 104,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -265,7 +265,7 @@ tile{
   y = 712,
   width = 128,
   height = 88,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -274,7 +274,7 @@ tile{
   y = 712,
   width = 128,
   height = 88,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -283,7 +283,7 @@ tile{
   y = 208,
   width = 16,
   height = 624,
-  pattern = "1318",
+  pattern = "forest.4",
 }
 
 tile{
@@ -292,7 +292,7 @@ tile{
   y = 880,
   width = 16,
   height = 320,
-  pattern = "1318",
+  pattern = "forest.4",
 }
 
 tile{
@@ -301,7 +301,7 @@ tile{
   y = 832,
   width = 16,
   height = 16,
-  pattern = "1323",
+  pattern = "forest.corner.4",
 }
 
 tile{
@@ -310,7 +310,7 @@ tile{
   y = 864,
   width = 16,
   height = 16,
-  pattern = "1322",
+  pattern = "forest.corner.2",
 }
 
 tile{
@@ -481,7 +481,7 @@ tile{
   y = 208,
   width = 16,
   height = 32,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -490,7 +490,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "1324",
+  pattern = "forest.corner.3",
 }
 
 tile{
@@ -499,7 +499,7 @@ tile{
   y = 240,
   width = 304,
   height = 16,
-  pattern = "1319",
+  pattern = "forest.2",
 }
 
 tile{
@@ -508,7 +508,7 @@ tile{
   y = 224,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -517,7 +517,7 @@ tile{
   y = 232,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -526,7 +526,7 @@ tile{
   y = 240,
   width = 288,
   height = 16,
-  pattern = "1319",
+  pattern = "forest.2",
 }
 
 tile{
@@ -535,7 +535,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "1328",
+  pattern = "forest.corner_reverse.3",
 }
 
 tile{
@@ -544,7 +544,7 @@ tile{
   y = 256,
   width = 16,
   height = 672,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -553,7 +553,7 @@ tile{
   y = 232,
   width = 8,
   height = 16,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -562,7 +562,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "1327",
+  pattern = "forest.corner_reverse.4",
 }
 
 tile{
@@ -571,7 +571,7 @@ tile{
   y = 256,
   width = 16,
   height = 544,
-  pattern = "1318",
+  pattern = "forest.4",
 }
 
 tile{
@@ -580,7 +580,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "1328",
+  pattern = "forest.corner_reverse.3",
 }
 
 tile{
@@ -589,7 +589,7 @@ tile{
   y = 256,
   width = 16,
   height = 208,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -598,7 +598,7 @@ tile{
   y = 496,
   width = 16,
   height = 208,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -607,7 +607,7 @@ tile{
   y = 720,
   width = 16,
   height = 80,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -616,7 +616,7 @@ tile{
   y = 704,
   width = 112,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -625,7 +625,7 @@ tile{
   y = 800,
   width = 16,
   height = 16,
-  pattern = "1324",
+  pattern = "forest.corner.3",
 }
 
 tile{
@@ -634,7 +634,7 @@ tile{
   y = 800,
   width = 16,
   height = 16,
-  pattern = "1323",
+  pattern = "forest.corner.4",
 }
 
 tile{
@@ -643,7 +643,7 @@ tile{
   y = 800,
   width = 128,
   height = 16,
-  pattern = "1319",
+  pattern = "forest.2",
 }
 
 tile{
@@ -652,7 +652,7 @@ tile{
   y = 704,
   width = 16,
   height = 16,
-  pattern = "1325",
+  pattern = "forest.corner_reverse.1",
 }
 
 tile{
@@ -661,7 +661,7 @@ tile{
   y = 704,
   width = 16,
   height = 16,
-  pattern = "1321",
+  pattern = "forest.corner.1",
 }
 
 tile{
@@ -670,7 +670,7 @@ tile{
   y = 736,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -679,7 +679,7 @@ tile{
   y = 768,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -688,7 +688,7 @@ tile{
   y = 728,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -697,7 +697,7 @@ tile{
   y = 784,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -706,7 +706,7 @@ tile{
   y = 744,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -715,7 +715,7 @@ tile{
   y = 792,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -724,7 +724,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = "1328",
+  pattern = "forest.corner_reverse.3",
 }
 
 tile{
@@ -733,7 +733,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "1325",
+  pattern = "forest.corner_reverse.1",
 }
 
 tile{
@@ -742,7 +742,7 @@ tile{
   y = 472,
   width = 8,
   height = 16,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -751,7 +751,7 @@ tile{
   y = 480,
   width = 288,
   height = 16,
-  pattern = "1319",
+  pattern = "forest.2",
 }
 
 tile{
@@ -760,7 +760,7 @@ tile{
   y = 464,
   width = 304,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -769,7 +769,7 @@ tile{
   y = 480,
   width = 16,
   height = 16,
-  pattern = "1327",
+  pattern = "forest.corner_reverse.4",
 }
 
 tile{
@@ -778,7 +778,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = "1321",
+  pattern = "forest.corner.1",
 }
 
 tile{
@@ -787,7 +787,7 @@ tile{
   y = 480,
   width = 16,
   height = 320,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -796,7 +796,7 @@ tile{
   y = 800,
   width = 16,
   height = 16,
-  pattern = "1324",
+  pattern = "forest.corner.3",
 }
 
 tile{
@@ -805,7 +805,7 @@ tile{
   y = 800,
   width = 112,
   height = 16,
-  pattern = "1319",
+  pattern = "forest.2",
 }
 
 tile{
@@ -823,7 +823,7 @@ tile{
   y = 800,
   width = 16,
   height = 16,
-  pattern = "1323",
+  pattern = "forest.corner.4",
 }
 
 tile{
@@ -832,7 +832,7 @@ tile{
   y = 720,
   width = 16,
   height = 64,
-  pattern = "1318",
+  pattern = "forest.4",
 }
 
 tile{
@@ -841,7 +841,7 @@ tile{
   y = 784,
   width = 16,
   height = 16,
-  pattern = "1323",
+  pattern = "forest.corner.4",
 }
 
 tile{
@@ -850,7 +850,7 @@ tile{
   y = 784,
   width = 16,
   height = 16,
-  pattern = "1327",
+  pattern = "forest.corner_reverse.4",
 }
 
 tile{
@@ -859,7 +859,7 @@ tile{
   y = 704,
   width = 16,
   height = 16,
-  pattern = "1322",
+  pattern = "forest.corner.2",
 }
 
 tile{
@@ -868,7 +868,7 @@ tile{
   y = 704,
   width = 112,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -877,7 +877,7 @@ tile{
   y = 704,
   width = 16,
   height = 16,
-  pattern = "1326",
+  pattern = "forest.corner_reverse.2",
 }
 
 tile{
@@ -886,7 +886,7 @@ tile{
   y = 744,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -895,7 +895,7 @@ tile{
   y = 720,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -904,7 +904,7 @@ tile{
   y = 768,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -913,7 +913,7 @@ tile{
   y = 784,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -922,7 +922,7 @@ tile{
   y = 776,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -931,7 +931,7 @@ tile{
   y = 496,
   width = 16,
   height = 208,
-  pattern = "1318",
+  pattern = "forest.4",
 }
 
 tile{
@@ -940,7 +940,7 @@ tile{
   y = 480,
   width = 8,
   height = 8,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -949,7 +949,7 @@ tile{
   y = 976,
   width = 16,
   height = 208,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -958,7 +958,7 @@ tile{
   y = 1184,
   width = 16,
   height = 16,
-  pattern = "1325",
+  pattern = "forest.corner_reverse.1",
 }
 
 tile{
@@ -967,7 +967,7 @@ tile{
   y = 1192,
   width = 8,
   height = 8,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -976,7 +976,7 @@ tile{
   y = 1184,
   width = 272,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -985,7 +985,7 @@ tile{
   y = 1184,
   width = 16,
   height = 16,
-  pattern = "1326",
+  pattern = "forest.corner_reverse.2",
 }
 
 tile{
@@ -994,7 +994,7 @@ tile{
   y = 1184,
   width = 16,
   height = 16,
-  pattern = "1325",
+  pattern = "forest.corner_reverse.1",
 }
 
 tile{
@@ -1003,7 +1003,7 @@ tile{
   y = 928,
   width = 16,
   height = 16,
-  pattern = "1325",
+  pattern = "forest.corner_reverse.1",
 }
 
 tile{
@@ -1012,7 +1012,7 @@ tile{
   y = 960,
   width = 16,
   height = 16,
-  pattern = "1328",
+  pattern = "forest.corner_reverse.3",
 }
 
 tile{
@@ -1021,7 +1021,7 @@ tile{
   y = 928,
   width = 288,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -1030,7 +1030,7 @@ tile{
   y = 960,
   width = 272,
   height = 16,
-  pattern = "1319",
+  pattern = "forest.2",
 }
 
 tile{
@@ -1039,7 +1039,7 @@ tile{
   y = 960,
   width = 16,
   height = 16,
-  pattern = "1327",
+  pattern = "forest.corner_reverse.4",
 }
 
 tile{
@@ -1048,7 +1048,7 @@ tile{
   y = 960,
   width = 16,
   height = 16,
-  pattern = "1328",
+  pattern = "forest.corner_reverse.3",
 }
 
 tile{
@@ -1057,7 +1057,7 @@ tile{
   y = 928,
   width = 16,
   height = 16,
-  pattern = "1326",
+  pattern = "forest.corner_reverse.2",
 }
 
 tile{
@@ -1066,7 +1066,7 @@ tile{
   y = 864,
   width = 16,
   height = 64,
-  pattern = "1318",
+  pattern = "forest.4",
 }
 
 tile{
@@ -1075,7 +1075,7 @@ tile{
   y = 848,
   width = 16,
   height = 16,
-  pattern = "1322",
+  pattern = "forest.corner.2",
 }
 
 tile{
@@ -1084,7 +1084,7 @@ tile{
   y = 848,
   width = 320,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -1093,7 +1093,7 @@ tile{
   y = 864,
   width = 16,
   height = 96,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -1102,7 +1102,7 @@ tile{
   y = 960,
   width = 16,
   height = 16,
-  pattern = "1324",
+  pattern = "forest.corner.3",
 }
 
 tile{
@@ -1111,7 +1111,7 @@ tile{
   y = 960,
   width = 288,
   height = 16,
-  pattern = "1319",
+  pattern = "forest.2",
 }
 
 tile{
@@ -1120,7 +1120,7 @@ tile{
   y = 848,
   width = 16,
   height = 16,
-  pattern = "1321",
+  pattern = "forest.corner.1",
 }
 
 tile{
@@ -1129,7 +1129,7 @@ tile{
   y = 864,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1138,7 +1138,7 @@ tile{
   y = 936,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1147,7 +1147,7 @@ tile{
   y = 912,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1156,7 +1156,7 @@ tile{
   y = 912,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1165,7 +1165,7 @@ tile{
   y = 880,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1174,7 +1174,7 @@ tile{
   y = 936,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1183,7 +1183,7 @@ tile{
   y = 880,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1192,7 +1192,7 @@ tile{
   y = 872,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1201,7 +1201,7 @@ tile{
   y = 864,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1210,7 +1210,7 @@ tile{
   y = 904,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1219,7 +1219,7 @@ tile{
   y = 944,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1228,7 +1228,7 @@ tile{
   y = 920,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -1237,7 +1237,7 @@ tile{
   y = 952,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -1246,7 +1246,7 @@ tile{
   y = 960,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1255,7 +1255,7 @@ tile{
   y = 952,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1264,7 +1264,7 @@ tile{
   y = 944,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1273,7 +1273,7 @@ tile{
   y = 944,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1282,7 +1282,7 @@ tile{
   y = 952,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1417,7 +1417,7 @@ tile{
   y = 1184,
   width = 288,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -1426,7 +1426,7 @@ tile{
   y = 1184,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1435,7 +1435,7 @@ tile{
   y = 1168,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1444,7 +1444,7 @@ tile{
   y = 1128,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1453,7 +1453,7 @@ tile{
   y = 1008,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1462,7 +1462,7 @@ tile{
   y = 1032,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -1471,7 +1471,7 @@ tile{
   y = 968,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -1480,7 +1480,7 @@ tile{
   y = 952,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -1489,7 +1489,7 @@ tile{
   y = 1176,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -1498,7 +1498,7 @@ tile{
   y = 1072,
   width = 8,
   height = 16,
-  pattern = "1337",
+  pattern = "trunk.entrance.3",
 }
 
 tile{
@@ -1507,7 +1507,7 @@ tile{
   y = 1088,
   width = 8,
   height = 16,
-  pattern = "1338",
+  pattern = "trunk.entrance.3.border.2",
 }
 
 tile{
@@ -1516,7 +1516,7 @@ tile{
   y = 1056,
   width = 8,
   height = 16,
-  pattern = "1336",
+  pattern = "trunk.entrance.3.border.1",
 }
 
 tile{
@@ -1525,7 +1525,7 @@ tile{
   y = 1072,
   width = 8,
   height = 16,
-  pattern = "1340",
+  pattern = "trunk.entrance.4",
 }
 
 tile{
@@ -1534,7 +1534,7 @@ tile{
   y = 1088,
   width = 8,
   height = 16,
-  pattern = "1339",
+  pattern = "trunk.entrance.4.border.2",
 }
 
 tile{
@@ -1543,7 +1543,7 @@ tile{
   y = 1056,
   width = 8,
   height = 16,
-  pattern = "1341",
+  pattern = "trunk.entrance.4.border.1",
 }
 
 tile{
@@ -1552,7 +1552,7 @@ tile{
   y = 1184,
   width = 16,
   height = 16,
-  pattern = "1321",
+  pattern = "forest.corner.1",
 }
 
 tile{
@@ -2416,7 +2416,7 @@ tile{
   y = 240,
   width = 16,
   height = 8,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -5062,7 +5062,7 @@ tile{
   y = 256,
   width = 64,
   height = 8,
-  pattern = "1360",
+  pattern = "dungeon_c.1",
 }
 
 tile{
@@ -5071,7 +5071,7 @@ tile{
   y = 384,
   width = 8,
   height = 16,
-  pattern = "1373",
+  pattern = "dungeon_c.steps.3",
 }
 
 tile{
@@ -5080,7 +5080,7 @@ tile{
   y = 384,
   width = 16,
   height = 16,
-  pattern = "1372",
+  pattern = "dungeon_c.steps",
 }
 
 tile{
@@ -5089,7 +5089,7 @@ tile{
   y = 384,
   width = 8,
   height = 16,
-  pattern = "1374",
+  pattern = "dungeon_c.steps.4",
 }
 
 tile{
@@ -5098,7 +5098,7 @@ tile{
   y = 376,
   width = 16,
   height = 24,
-  pattern = "1379",
+  pattern = "dungeon_c.pillar",
 }
 
 tile{
@@ -5107,7 +5107,7 @@ tile{
   y = 376,
   width = 16,
   height = 24,
-  pattern = "1379",
+  pattern = "dungeon_c.pillar",
 }
 
 tile{
@@ -5116,7 +5116,7 @@ tile{
   y = 344,
   width = 16,
   height = 40,
-  pattern = "1371",
+  pattern = "dungeon_c.floor",
 }
 
 tile{
@@ -5125,7 +5125,7 @@ tile{
   y = 328,
   width = 16,
   height = 16,
-  pattern = "1370",
+  pattern = "dungeon_c.entrance",
 }
 
 tile{
@@ -5134,7 +5134,7 @@ tile{
   y = 328,
   width = 8,
   height = 8,
-  pattern = "1382",
+  pattern = "dungeon_c.entrance.border.1",
 }
 
 tile{
@@ -5143,7 +5143,7 @@ tile{
   y = 328,
   width = 8,
   height = 8,
-  pattern = "1383",
+  pattern = "dungeon_c.entrance.border.2",
 }
 
 tile{
@@ -5152,7 +5152,7 @@ tile{
   y = 336,
   width = 8,
   height = 48,
-  pattern = "1384",
+  pattern = "dungeon_c.floor.border.2",
 }
 
 tile{
@@ -5161,7 +5161,7 @@ tile{
   y = 336,
   width = 8,
   height = 48,
-  pattern = "1385",
+  pattern = "dungeon_c.floor.border.1",
 }
 
 tile{
@@ -5170,7 +5170,7 @@ tile{
   y = 264,
   width = 8,
   height = 112,
-  pattern = "1378",
+  pattern = "dungeon_c.4",
 }
 
 tile{
@@ -5179,7 +5179,7 @@ tile{
   y = 264,
   width = 8,
   height = 112,
-  pattern = "1377",
+  pattern = "dungeon_c.3",
 }
 
 tile{
@@ -5188,7 +5188,7 @@ tile{
   y = 328,
   width = 8,
   height = 48,
-  pattern = "1377",
+  pattern = "dungeon_c.3",
 }
 
 tile{
@@ -5197,7 +5197,7 @@ tile{
   y = 328,
   width = 8,
   height = 48,
-  pattern = "1378",
+  pattern = "dungeon_c.4",
 }
 
 tile{
@@ -5224,7 +5224,7 @@ tile{
   y = 320,
   width = 16,
   height = 8,
-  pattern = "1488",
+  pattern = "dungeon_c.entrance.border.3",
 }
 
 tile{
@@ -5233,7 +5233,7 @@ tile{
   y = 320,
   width = 16,
   height = 8,
-  pattern = "1489",
+  pattern = "dungeon_c.entrance.border.4",
 }
 
 tile{
@@ -5242,7 +5242,7 @@ tile{
   y = 320,
   width = 16,
   height = 8,
-  pattern = "1490",
+  pattern = "dungeon_c.entrance.1",
 }
 
 tile{
@@ -5593,7 +5593,7 @@ tile{
   y = 96,
   width = 16,
   height = 96,
-  pattern = "1318",
+  pattern = "forest.4",
 }
 
 tile{
@@ -5620,7 +5620,7 @@ tile{
   y = 160,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -5656,7 +5656,7 @@ tile{
   y = 144,
   width = 16,
   height = 48,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -5665,7 +5665,7 @@ tile{
   y = 144,
   width = 16,
   height = 16,
-  pattern = "1324",
+  pattern = "forest.corner.3",
 }
 
 tile{
@@ -5683,7 +5683,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "1328",
+  pattern = "forest.corner_reverse.3",
 }
 
 tile{
@@ -5737,7 +5737,7 @@ tile{
   y = 224,
   width = 576,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -5746,7 +5746,7 @@ tile{
   y = 144,
   width = 32,
   height = 16,
-  pattern = "1319",
+  pattern = "forest.2",
 }
 
 tile{
@@ -5773,7 +5773,7 @@ tile{
   y = 168,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -5782,7 +5782,7 @@ tile{
   y = 96,
   width = 16,
   height = 32,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -5809,7 +5809,7 @@ tile{
   y = 144,
   width = 16,
   height = 32,
-  pattern = "1318",
+  pattern = "forest.4",
 }
 
 tile{
@@ -5818,7 +5818,7 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = "1321",
+  pattern = "forest.corner.1",
 }
 
 tile{
@@ -5827,7 +5827,7 @@ tile{
   y = 120,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -5926,7 +5926,7 @@ tile{
   y = 176,
   width = 16,
   height = 16,
-  pattern = "1323",
+  pattern = "forest.corner.4",
 }
 
 tile{
@@ -5935,7 +5935,7 @@ tile{
   y = 112,
   width = 16,
   height = 32,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -5953,7 +5953,7 @@ tile{
   y = 224,
   width = 16,
   height = 16,
-  pattern = "1325",
+  pattern = "forest.corner_reverse.1",
 }
 
 tile{
@@ -5998,7 +5998,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "1325",
+  pattern = "forest.corner_reverse.1",
 }
 
 tile{
@@ -6007,7 +6007,7 @@ tile{
   y = 96,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -6034,7 +6034,7 @@ tile{
   y = 80,
   width = 16,
   height = 16,
-  pattern = "1321",
+  pattern = "forest.corner.1",
 }
 
 tile{
@@ -6052,7 +6052,7 @@ tile{
   y = 104,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -6097,7 +6097,7 @@ tile{
   y = 152,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -6106,7 +6106,7 @@ tile{
   y = 104,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -6151,7 +6151,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "1324",
+  pattern = "forest.corner.3",
 }
 
 tile{
@@ -6178,7 +6178,7 @@ tile{
   y = 80,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -6187,7 +6187,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = "1327",
+  pattern = "forest.corner_reverse.4",
 }
 
 tile{
@@ -6214,7 +6214,7 @@ tile{
   y = 80,
   width = 16,
   height = 16,
-  pattern = "1327",
+  pattern = "forest.corner_reverse.4",
 }
 
 tile{
@@ -6223,7 +6223,7 @@ tile{
   y = 168,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -6250,7 +6250,7 @@ tile{
   y = 160,
   width = 16,
   height = 16,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -6259,7 +6259,7 @@ tile{
   y = 120,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -6277,7 +6277,7 @@ tile{
   y = 64,
   width = 16,
   height = 160,
-  pattern = "1320",
+  pattern = "forest.3",
 }
 
 tile{
@@ -6286,7 +6286,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "1322",
+  pattern = "forest.corner.2",
 }
 
 tile{
@@ -6322,7 +6322,7 @@ tile{
   y = 80,
   width = 32,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -6340,7 +6340,7 @@ tile{
   y = 80,
   width = 16,
   height = 16,
-  pattern = "1328",
+  pattern = "forest.corner_reverse.3",
 }
 
 tile{
@@ -6358,7 +6358,7 @@ tile{
   y = 176,
   width = 16,
   height = 16,
-  pattern = "1324",
+  pattern = "forest.corner.3",
 }
 
 tile{
@@ -6385,7 +6385,7 @@ tile{
   y = 136,
   width = 8,
   height = 8,
-  pattern = "1355",
+  pattern = "forest.grass",
 }
 
 tile{
@@ -6448,7 +6448,7 @@ tile{
   y = 144,
   width = 16,
   height = 16,
-  pattern = "1321",
+  pattern = "forest.corner.1",
 }
 
 tile{
@@ -6457,7 +6457,7 @@ tile{
   y = 96,
   width = 16,
   height = 128,
-  pattern = "1318",
+  pattern = "forest.4",
 }
 
 tile{
@@ -6484,7 +6484,7 @@ tile{
   y = 144,
   width = 48,
   height = 32,
-  pattern = "1330",
+  pattern = "forest",
 }
 
 tile{
@@ -6502,7 +6502,7 @@ tile{
   y = 128,
   width = 32,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -6511,7 +6511,7 @@ tile{
   y = 128,
   width = 8,
   height = 8,
-  pattern = "1331",
+  pattern = "forest.flower",
 }
 
 tile{
@@ -6520,7 +6520,7 @@ tile{
   y = 144,
   width = 16,
   height = 16,
-  pattern = "1323",
+  pattern = "forest.corner.4",
 }
 
 tile{
@@ -6574,7 +6574,7 @@ tile{
   y = 80,
   width = 128,
   height = 16,
-  pattern = "1319",
+  pattern = "forest.2",
 }
 
 tile{
@@ -6628,7 +6628,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = "1324",
+  pattern = "forest.corner.3",
 }
 
 tile{
@@ -6646,7 +6646,7 @@ tile{
   y = 176,
   width = 48,
   height = 16,
-  pattern = "1319",
+  pattern = "forest.2",
 }
 
 tile{
@@ -6673,7 +6673,7 @@ tile{
   y = 64,
   width = 192,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -6682,7 +6682,7 @@ tile{
   y = 224,
   width = 16,
   height = 16,
-  pattern = "1326",
+  pattern = "forest.corner_reverse.2",
 }
 
 tile{
@@ -6763,7 +6763,7 @@ tile{
   y = 64,
   width = 16,
   height = 16,
-  pattern = "1322",
+  pattern = "forest.corner.2",
 }
 
 tile{
@@ -6790,7 +6790,7 @@ tile{
   y = 80,
   width = 16,
   height = 16,
-  pattern = "1322",
+  pattern = "forest.corner.2",
 }
 
 tile{
@@ -6808,7 +6808,7 @@ tile{
   y = 144,
   width = 16,
   height = 16,
-  pattern = "1325",
+  pattern = "forest.corner_reverse.1",
 }
 
 tile{
@@ -6862,7 +6862,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = "1328",
+  pattern = "forest.corner_reverse.3",
 }
 
 tile{
@@ -6988,7 +6988,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "1321",
+  pattern = "forest.corner.1",
 }
 
 tile{
@@ -7042,7 +7042,7 @@ tile{
   y = 80,
   width = 16,
   height = 64,
-  pattern = "1318",
+  pattern = "forest.4",
 }
 
 tile{
@@ -7060,7 +7060,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "1321",
+  pattern = "forest.corner.1",
 }
 
 tile{
@@ -7069,7 +7069,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = "1323",
+  pattern = "forest.corner.4",
 }
 
 tile{
@@ -7114,7 +7114,7 @@ tile{
   y = 64,
   width = 32,
   height = 16,
-  pattern = "1317",
+  pattern = "forest.1",
 }
 
 tile{
@@ -9496,7 +9496,7 @@ tile{
   y = 1056,
   width = 8,
   height = 48,
-  pattern = "1342",
+  pattern = "trunk.entrance.3.top",
 }
 
 tile{
@@ -9505,7 +9505,7 @@ tile{
   y = 1056,
   width = 32,
   height = 48,
-  pattern = "1343",
+  pattern = "trunk.top.2",
 }
 
 tile{
@@ -9514,7 +9514,7 @@ tile{
   y = 1056,
   width = 8,
   height = 48,
-  pattern = "1344",
+  pattern = "trunk.entrance.4.top",
 }
 
 tile{
@@ -9523,7 +9523,7 @@ tile{
   y = 1064,
   width = 16,
   height = 8,
-  pattern = "1333",
+  pattern = "trunk.branch.3",
 }
 
 tile{
@@ -9532,7 +9532,7 @@ tile{
   y = 1088,
   width = 16,
   height = 8,
-  pattern = "1332",
+  pattern = "trunk.branch.4",
 }
 
 tile{
@@ -9595,7 +9595,7 @@ tile{
   y = 264,
   width = 48,
   height = 8,
-  pattern = "1361",
+  pattern = "dungeon_c.roof.1",
 }
 
 tile{
@@ -9604,7 +9604,7 @@ tile{
   y = 272,
   width = 32,
   height = 24,
-  pattern = "1381",
+  pattern = "dungeon_c.roof",
 }
 
 tile{
@@ -9613,7 +9613,7 @@ tile{
   y = 296,
   width = 32,
   height = 8,
-  pattern = "1380",
+  pattern = "dungeon_c.roof.2",
 }
 
 tile{
@@ -9622,7 +9622,7 @@ tile{
   y = 272,
   width = 8,
   height = 32,
-  pattern = "1376",
+  pattern = "dungeon_c.roof.4",
 }
 
 tile{
@@ -9631,7 +9631,7 @@ tile{
   y = 272,
   width = 8,
   height = 32,
-  pattern = "1375",
+  pattern = "dungeon_c.roof.3",
 }
 
 tile{
@@ -9676,7 +9676,7 @@ tile{
   y = 304,
   width = 48,
   height = 16,
-  pattern = "1487",
+  pattern = "dungeon_c.entrance.top",
 }
 
 tile{
@@ -10603,7 +10603,7 @@ tile{
   y = 536,
   width = 80,
   height = 32,
-  pattern = "696",
+  pattern = "house.roof_leaves",
 }
 
 tile{
