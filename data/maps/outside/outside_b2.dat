@@ -260,7 +260,7 @@ tile{
   y = 96,
   width = 400,
   height = 16,
-  pattern = 314,
+  pattern = "sand.cliff.bottom.1",
 }
 
 tile{
@@ -278,7 +278,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = 315,
+  pattern = "sand.cliff.bottom.diag.1",
 }
 
 tile{
@@ -296,7 +296,7 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = 322,
+  pattern = "sand.cliff.bottom.3",
 }
 
 tile{
@@ -314,7 +314,7 @@ tile{
   y = 80,
   width = 16,
   height = 16,
-  pattern = 315,
+  pattern = "sand.cliff.bottom.diag.1",
 }
 
 tile{
@@ -341,7 +341,7 @@ tile{
   y = 64,
   width = 16,
   height = 16,
-  pattern = 313,
+  pattern = "sand.cliff.bottom.diag.2",
 }
 
 tile{
@@ -359,7 +359,7 @@ tile{
   y = 40,
   width = 32,
   height = 8,
-  pattern = 302,
+  pattern = "sand.floor.1",
 }
 
 tile{
@@ -368,7 +368,7 @@ tile{
   y = 64,
   width = 480,
   height = 16,
-  pattern = 314,
+  pattern = "sand.cliff.bottom.1",
 }
 
 tile{
@@ -512,7 +512,7 @@ tile{
   y = 232,
   width = 8,
   height = 8,
-  pattern = "grass.shadow.corner.3",
+  pattern = "grass.shadow.diag.3",
 }
 
 tile{
@@ -521,7 +521,7 @@ tile{
   y = 216,
   width = 8,
   height = 8,
-  pattern = "grass.shadow.corner.3",
+  pattern = "grass.shadow.diag.3",
 }
 
 tile{
@@ -530,7 +530,7 @@ tile{
   y = 224,
   width = 16,
   height = 16,
-  pattern = "cliff.top.diag.3",
+  pattern = "cliff.top.border.diag.3",
 }
 
 tile{
@@ -539,7 +539,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "cliff.top.diag.3",
+  pattern = "cliff.top.border.diag.3",
 }
 
 tile{
@@ -584,7 +584,7 @@ tile{
   y = 784,
   width = 16,
   height = 16,
-  pattern = 221,
+  pattern = "grass.cliff.corner_reverse.diag.2",
 }
 
 tile{
@@ -953,7 +953,7 @@ tile{
   y = 912,
   width = 16,
   height = 16,
-  pattern = "cliff.top.diag.4",
+  pattern = "cliff.top.border.diag.4",
 }
 
 tile{
@@ -962,7 +962,7 @@ tile{
   y = 896,
   width = 16,
   height = 16,
-  pattern = "cliff.top.diag.4",
+  pattern = "cliff.top.border.diag.4",
 }
 
 tile{
@@ -998,7 +998,7 @@ tile{
   y = 904,
   width = 8,
   height = 8,
-  pattern = "grass.shadow.corner.4",
+  pattern = "grass.shadow.diag.4",
 }
 
 tile{
@@ -1007,7 +1007,7 @@ tile{
   y = 888,
   width = 8,
   height = 8,
-  pattern = "grass.shadow.corner.4",
+  pattern = "grass.shadow.diag.4",
 }
 
 tile{
@@ -1034,7 +1034,7 @@ tile{
   y = 216,
   width = 16,
   height = 8,
-  pattern = 228,
+  pattern = "cliff.middle.corner_reverse.diag.3",
 }
 
 tile{
@@ -1052,7 +1052,7 @@ tile{
   y = 560,
   width = 16,
   height = 16,
-  pattern = "cliff.top.diag.4",
+  pattern = "cliff.top.border.diag.4",
 }
 
 tile{
@@ -1088,7 +1088,7 @@ tile{
   y = 552,
   width = 8,
   height = 8,
-  pattern = "grass.shadow.corner.4",
+  pattern = "grass.shadow.diag.4",
 }
 
 tile{
@@ -1097,7 +1097,7 @@ tile{
   y = 536,
   width = 8,
   height = 8,
-  pattern = "grass.shadow.corner.4",
+  pattern = "grass.shadow.diag.4",
 }
 
 tile{
@@ -1106,7 +1106,7 @@ tile{
   y = 880,
   width = 16,
   height = 16,
-  pattern = "cliff.top.diag.4",
+  pattern = "cliff.top.border.diag.4",
 }
 
 tile{
@@ -1169,7 +1169,7 @@ tile{
   y = 904,
   width = 8,
   height = 8,
-  pattern = "grass.shadow.corner.3",
+  pattern = "grass.shadow.diag.3",
 }
 
 tile{
@@ -1178,7 +1178,7 @@ tile{
   y = 888,
   width = 8,
   height = 8,
-  pattern = "grass.shadow.corner.3",
+  pattern = "grass.shadow.diag.3",
 }
 
 tile{
@@ -1187,7 +1187,7 @@ tile{
   y = 896,
   width = 16,
   height = 16,
-  pattern = "cliff.top.diag.3",
+  pattern = "cliff.top.border.diag.3",
 }
 
 tile{
@@ -1196,7 +1196,7 @@ tile{
   y = 912,
   width = 16,
   height = 16,
-  pattern = "cliff.top.diag.3",
+  pattern = "cliff.top.border.diag.3",
 }
 
 tile{
@@ -1205,7 +1205,7 @@ tile{
   y = 888,
   width = 16,
   height = 8,
-  pattern = 228,
+  pattern = "cliff.middle.corner_reverse.diag.3",
 }
 
 tile{
@@ -1214,7 +1214,7 @@ tile{
   y = 888,
   width = 16,
   height = 8,
-  pattern = 227,
+  pattern = "cliff.middle.corner_reverse.diag.4",
 }
 
 tile{
@@ -1673,7 +1673,7 @@ tile{
   y = 464,
   width = 16,
   height = 16,
-  pattern = 219,
+  pattern = "grass.cliff.corner_reverse.diag.1",
 }
 
 tile{
@@ -1727,7 +1727,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "cliff.top.diag.4",
+  pattern = "cliff.top.border.diag.4",
 }
 
 tile{
@@ -1736,7 +1736,7 @@ tile{
   y = 224,
   width = 16,
   height = 16,
-  pattern = "cliff.top.diag.4",
+  pattern = "cliff.top.border.diag.4",
 }
 
 tile{
@@ -1772,7 +1772,7 @@ tile{
   y = 232,
   width = 8,
   height = 8,
-  pattern = "grass.shadow.corner.4",
+  pattern = "grass.shadow.diag.4",
 }
 
 tile{
@@ -1781,7 +1781,7 @@ tile{
   y = 216,
   width = 8,
   height = 8,
-  pattern = "grass.shadow.corner.4",
+  pattern = "grass.shadow.diag.4",
 }
 
 tile{
@@ -1826,7 +1826,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = 457,
+  pattern = "grass.cliff.end_left.1",
 }
 
 tile{
@@ -1835,7 +1835,7 @@ tile{
   y = 352,
   width = 16,
   height = 16,
-  pattern = 453,
+  pattern = "grass.cliff.end_left.2",
 }
 
 tile{
@@ -1844,7 +1844,7 @@ tile{
   y = 336,
   width = 16,
   height = 16,
-  pattern = 451,
+  pattern = "cliff.end_left",
 }
 
 tile{
@@ -1853,7 +1853,7 @@ tile{
   y = 336,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.2",
+  pattern = "grass.cliff.top.diag.2",
 }
 
 tile{
@@ -1862,7 +1862,7 @@ tile{
   y = 328,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.2",
+  pattern = "grass.cliff.top.diag.2",
 }
 
 tile{
@@ -1871,7 +1871,7 @@ tile{
   y = 320,
   width = 8,
   height = 8,
-  pattern = 743,
+  pattern = "grass.cliff.end_left.5",
 }
 
 tile{
@@ -1880,7 +1880,7 @@ tile{
   y = 328,
   width = 8,
   height = 16,
-  pattern = 742,
+  pattern = "grass.cliff.end_left.4",
 }
 
 tile{
@@ -1889,7 +1889,7 @@ tile{
   y = 344,
   width = 8,
   height = 8,
-  pattern = 741,
+  pattern = "grass.cliff.end_left.3",
 }
 
 tile{
@@ -1898,7 +1898,7 @@ tile{
   y = 320,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.2",
+  pattern = "grass.cliff.top.diag.2b",
 }
 
 tile{
@@ -1907,7 +1907,7 @@ tile{
   y = 328,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.2",
+  pattern = "grass.cliff.top.diag.2b",
 }
 
 tile{
@@ -1916,7 +1916,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = 458,
+  pattern = "grass.cliff.end_right.1",
 }
 
 tile{
@@ -1925,7 +1925,7 @@ tile{
   y = 352,
   width = 16,
   height = 16,
-  pattern = 454,
+  pattern = "grass.cliff.end_right.2",
 }
 
 tile{
@@ -1934,7 +1934,7 @@ tile{
   y = 336,
   width = 16,
   height = 16,
-  pattern = 452,
+  pattern = "cliff.end_right",
 }
 
 tile{
@@ -1943,7 +1943,7 @@ tile{
   y = 344,
   width = 8,
   height = 8,
-  pattern = 746,
+  pattern = "grass.cliff.end_right.3",
 }
 
 tile{
@@ -1952,7 +1952,7 @@ tile{
   y = 328,
   width = 8,
   height = 16,
-  pattern = 745,
+  pattern = "grass.cliff.end_right.4",
 }
 
 tile{
@@ -1961,7 +1961,7 @@ tile{
   y = 336,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.1",
+  pattern = "grass.cliff.top.diag.1",
 }
 
 tile{
@@ -1970,7 +1970,7 @@ tile{
   y = 328,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.1",
+  pattern = "grass.cliff.top.diag.1",
 }
 
 tile{
@@ -1979,7 +1979,7 @@ tile{
   y = 328,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.1",
+  pattern = "grass.cliff.top.diag.1b",
 }
 
 tile{
@@ -1988,7 +1988,7 @@ tile{
   y = 320,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.1",
+  pattern = "grass.cliff.top.diag.1b",
 }
 
 tile{
@@ -1997,7 +1997,7 @@ tile{
   y = 320,
   width = 8,
   height = 8,
-  pattern = 744,
+  pattern = "grass.cliff.end_right.5",
 }
 
 tile{
@@ -4760,7 +4760,7 @@ tile{
   y = 464,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.2",
+  pattern = "grass.cliff.top.diag.2",
 }
 
 tile{
@@ -4787,7 +4787,7 @@ tile{
   y = 248,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -4796,7 +4796,7 @@ tile{
   y = 240,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -4805,7 +4805,7 @@ tile{
   y = 232,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -4814,7 +4814,7 @@ tile{
   y = 248,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.4",
+  pattern = "grass.cliff.top.diag.4b",
 }
 
 tile{
@@ -4823,7 +4823,7 @@ tile{
   y = 240,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.4",
+  pattern = "grass.cliff.top.diag.4b",
 }
 
 tile{
@@ -5624,7 +5624,7 @@ tile{
   y = 544,
   width = 16,
   height = 16,
-  pattern = "cliff.top.diag.4",
+  pattern = "cliff.top.border.diag.4",
 }
 
 tile{
@@ -7640,7 +7640,7 @@ tile{
   y = 920,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -7649,7 +7649,7 @@ tile{
   y = 912,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -7658,7 +7658,7 @@ tile{
   y = 904,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -7667,7 +7667,7 @@ tile{
   y = 920,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.4",
+  pattern = "grass.cliff.top.diag.4b",
 }
 
 tile{
@@ -7676,7 +7676,7 @@ tile{
   y = 912,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.4",
+  pattern = "grass.cliff.top.diag.4b",
 }
 
 tile{
@@ -7730,7 +7730,7 @@ tile{
   y = 568,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -7739,7 +7739,7 @@ tile{
   y = 560,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -7748,7 +7748,7 @@ tile{
   y = 552,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -7757,7 +7757,7 @@ tile{
   y = 568,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.4",
+  pattern = "grass.cliff.top.diag.4b",
 }
 
 tile{
@@ -7766,7 +7766,7 @@ tile{
   y = 560,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.4",
+  pattern = "grass.cliff.top.diag.4b",
 }
 
 tile{
@@ -7775,7 +7775,7 @@ tile{
   y = 896,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -7784,7 +7784,7 @@ tile{
   y = 888,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -7793,7 +7793,7 @@ tile{
   y = 880,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.4",
+  pattern = "grass.cliff.top.diag.4",
 }
 
 tile{
@@ -7802,7 +7802,7 @@ tile{
   y = 904,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.4",
+  pattern = "grass.cliff.top.diag.4b",
 }
 
 tile{
@@ -7811,7 +7811,7 @@ tile{
   y = 896,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.4",
+  pattern = "grass.cliff.top.diag.4b",
 }
 
 tile{
@@ -7820,7 +7820,7 @@ tile{
   y = 888,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.4",
+  pattern = "grass.cliff.top.diag.4b",
 }
 
 tile{
@@ -7829,7 +7829,7 @@ tile{
   y = 880,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.4",
+  pattern = "grass.cliff.top.diag.4b",
 }
 
 tile{
@@ -7910,7 +7910,7 @@ tile{
   y = 904,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.3",
+  pattern = "grass.cliff.top.diag.3",
 }
 
 tile{
@@ -7919,7 +7919,7 @@ tile{
   y = 912,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.3",
+  pattern = "grass.cliff.top.diag.3",
 }
 
 tile{
@@ -7928,7 +7928,7 @@ tile{
   y = 920,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.3",
+  pattern = "grass.cliff.top.diag.3",
 }
 
 tile{
@@ -7937,7 +7937,7 @@ tile{
   y = 912,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.3",
+  pattern = "grass.cliff.top.diag.3b",
 }
 
 tile{
@@ -7946,7 +7946,7 @@ tile{
   y = 920,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.3",
+  pattern = "grass.cliff.top.diag.3b",
 }
 
 tile{
@@ -8027,7 +8027,7 @@ tile{
   y = 232,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.3",
+  pattern = "grass.cliff.top.diag.3",
 }
 
 tile{
@@ -8036,7 +8036,7 @@ tile{
   y = 240,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.3",
+  pattern = "grass.cliff.top.diag.3",
 }
 
 tile{
@@ -8045,7 +8045,7 @@ tile{
   y = 248,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.3",
+  pattern = "grass.cliff.top.diag.3",
 }
 
 tile{
@@ -8054,7 +8054,7 @@ tile{
   y = 240,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.3",
+  pattern = "grass.cliff.top.diag.3b",
 }
 
 tile{
@@ -8063,7 +8063,7 @@ tile{
   y = 248,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner_reverse.3",
+  pattern = "grass.cliff.top.diag.3b",
 }
 
 tile{
@@ -8153,7 +8153,7 @@ tile{
   y = 784,
   width = 8,
   height = 8,
-  pattern = "grass.cliff.top.corner.1",
+  pattern = "grass.cliff.top.diag.1",
 }
 
 teletransporter{
