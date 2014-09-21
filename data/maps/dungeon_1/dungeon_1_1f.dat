@@ -3971,7 +3971,7 @@ teletransporter{
   y = 576,
   width = 16,
   height = 16,
-  destination_map = "dungeon_1_b1",
+  destination_map = "dungeon_1/dungeon_1_b1",
   destination = "from_1f_w",
 }
 
@@ -3981,7 +3981,7 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "dungeon_1_b1",
+  destination_map = "dungeon_1/dungeon_1_b1",
   destination = "from_1f_c",
 }
 
@@ -3991,8 +3991,8 @@ teletransporter{
   y = 576,
   width = 16,
   height = 16,
-  destination_map = "dungeon_1_b1",
-  destination = "from_1f_c",
+  destination_map = "dungeon_1/dungeon_1_b1",
+  destination = "from_1f_e",
 }
 
 stairs{

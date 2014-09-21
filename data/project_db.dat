@@ -1,30 +1,30 @@
 map{ id = "outside_store", description = "Outside Store" }
 map{ id = "inside_store", description = "Inside Store" }
 map{ id = "enemy_store", description = "Enemy Store" }
-map{ id = "outside_a1", description = "Outside A1 (Desert)" }
-map{ id = "outside_b1", description = "Outside B1 (Mountains)" }
-map{ id = "outside_c1", description = "Outside C1 (Forest)" }
-map{ id = "outside_a2", description = "Outside A2 (Castle)" }
-map{ id = "outside_b2", description = "Outside B2 (Village)" }
-map{ id = "outside_c2", description = "Outside C2 (Plains)" }
-map{ id = "outside_a3", description = "Outside A3 (Ruins)" }
-map{ id = "outside_b3", description = "Outside B3 (Lake)" }
-map{ id = "outside_c3", description = "Outside C3 (Cemetary)" }
-map{ id = "outside_a4", description = "Outside A4 (South-West)" }
-map{ id = "outside_b4", description = "Outside B4 (South-East)" }
-map{ id = "dungeon_1_1f", description = "Dungeon 1 1F" }
-map{ id = "dungeon_1_b1", description = "Dungeon 1 B1" }
-map{ id = "dungeon_2_1f", description = "Dungeon 2 1F" }
-map{ id = "dungeon_3_1f", description = "Dungeon 3 1F" }
-map{ id = "dungeon_3_2f", description = "Dungeon 3 2F" }
-map{ id = "dungeon_4_1f", description = "Dungeon 4 1F" }
-map{ id = "dungeon_4_2f", description = "Dungeon 4 2F" }
-map{ id = "dungeon_4_3f", description = "Dungeon 4 3F" }
-map{ id = "dungeon_5_1f", description = "Dungeon 5 1F" }
-map{ id = "dungeon_5_b1", description = "Dungeon 5 B1" }
-map{ id = "dungeon_5_b2", description = "Dungeon 5 B2" }
-map{ id = "dungeon_6_1f", description = "Dungeon 6 1F" }
-map{ id = "link_house", description = "Link's house" }
+map{ id = "outside/outside_a1", description = "Outside A1 (Desert)" }
+map{ id = "outside/outside_b1", description = "Outside B1 (Mountains)" }
+map{ id = "outside/outside_c1", description = "Outside C1 (Forest)" }
+map{ id = "outside/outside_a2", description = "Outside A2 (Castle)" }
+map{ id = "outside/outside_b2", description = "Outside B2 (Village)" }
+map{ id = "outside/outside_c2", description = "Outside C2 (Plains)" }
+map{ id = "outside/outside_a3", description = "Outside A3 (Ruins)" }
+map{ id = "outside/outside_b3", description = "Outside B3 (Lake)" }
+map{ id = "outside/outside_c3", description = "Outside C3 (Cemetary)" }
+map{ id = "outside/outside_a4", description = "Outside A4 (South-West)" }
+map{ id = "outside/outside_b4", description = "Outside B4 (South-East)" }
+map{ id = "dungeon_1/dungeon_1_1f", description = "Dungeon 1 1F" }
+map{ id = "dungeon_1/dungeon_1_b1", description = "Dungeon 1 B1" }
+map{ id = "dungeon_2/dungeon_2_1f", description = "Dungeon 2 1F" }
+map{ id = "dungeon_3/dungeon_3_1f", description = "Dungeon 3 1F" }
+map{ id = "dungeon_3/dungeon_3_2f", description = "Dungeon 3 2F" }
+map{ id = "dungeon_4/dungeon_4_1f", description = "Dungeon 4 1F" }
+map{ id = "dungeon_4/dungeon_4_2f", description = "Dungeon 4 2F" }
+map{ id = "dungeon_4/dungeon_4_3f", description = "Dungeon 4 3F" }
+map{ id = "dungeon_5/dungeon_5_1f", description = "Dungeon 5 1F" }
+map{ id = "dungeon_5/dungeon_5_b1", description = "Dungeon 5 B1" }
+map{ id = "dungeon_5/dungeon_5_b2", description = "Dungeon 5 B2" }
+map{ id = "dungeon_6/dungeon_6_1f", description = "Dungeon 6 1F" }
+map{ id = "inside/link_house", description = "Link's house" }
 map{ id = "intro", description = "Intro" }
 
 tileset{ id = "light_world", description = "Light World" }
@@ -270,3 +270,4 @@ font{ id = "alttp", description = "alttp" }
 font{ id = "green_digits", description = "green_digits" }
 font{ id = "minecraftia", description = "minecraftia" }
 font{ id = "white_digits", description = "white_digits" }
+
