@@ -61,9 +61,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 208,
+  x = 200,
   y = 1080,
-  width = 32,
+  width = 48,
   height = 8,
   pattern = "dirt.tree.roots.2",
 }
@@ -5313,6 +5313,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "sand.under_sign",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1080,
+  width = 32,
+  height = 8,
+  pattern = "house_tree.steps.bottom",
 }
 
 teletransporter{

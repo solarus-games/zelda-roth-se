@@ -4079,9 +4079,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 176,
+  x = 168,
   y = 840,
-  width = 32,
+  width = 48,
   height = 8,
   pattern = "grass.tree.roots.2",
 }
@@ -4394,9 +4394,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 1136,
+  x = 1128,
   y = 168,
-  width = 32,
+  width = 48,
   height = 8,
   pattern = "grass.tree.roots.2",
 }
@@ -5717,9 +5717,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 624,
+  x = 616,
   y = 632,
-  width = 32,
+  width = 48,
   height = 8,
   pattern = "grass.tree.roots.2",
 }
