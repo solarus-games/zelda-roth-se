@@ -8119,7 +8119,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 896,
+  y = 904,
   width = 16,
   height = 16,
   pattern = "grass.under_sign",
@@ -8751,7 +8751,7 @@ destructible{
   x = 24,
   y = 845,
   treasure_name = "random",
-  sprite = "entities/bush",
+  sprite = "entities/bush_green",
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
