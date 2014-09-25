@@ -15,7 +15,7 @@ teletransporter{
   width = 16,
   height = 720,
   transition = "scrolling",
-  destination_map = "outside_b1",
+  destination_map = "outside/outside_b1",
   destination = "_side",
 }
 
@@ -26,7 +26,7 @@ teletransporter{
   width = 960,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside_c3",
+  destination_map = "outside/outside_c3",
   destination = "_side",
 }
 
@@ -37,7 +37,7 @@ teletransporter{
   width = 16,
   height = 480,
   transition = "scrolling",
-  destination_map = "outside_c2",
+  destination_map = "outside/outside_c2",
   destination = "_side",
 }
 
@@ -48,7 +48,7 @@ teletransporter{
   width = 960,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside_c3",
+  destination_map = "outside/outside_c3",
   destination = "_side",
 }
 
@@ -8429,7 +8429,7 @@ teletransporter{
   width = 16,
   height = 720,
   transition = "scrolling",
-  destination_map = "outside_b1",
+  destination_map = "outside/outside_b1",
   destination = "_side",
 }
 
@@ -8440,7 +8440,7 @@ teletransporter{
   width = 16,
   height = 480,
   transition = "scrolling",
-  destination_map = "outside_c2",
+  destination_map = "outside/outside_c2",
   destination = "_side",
 }
 
@@ -9002,7 +9002,7 @@ teletransporter{
   y = 576,
   width = 16,
   height = 16,
-  destination_map = "link_house",
+  destination_map = "inside/link_house",
   destination = "from_outside",
 }
 
@@ -9442,7 +9442,7 @@ teletransporter{
   width = 960,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside_c3",
+  destination_map = "outside/outside_c3",
   destination = "_side",
 }
 
@@ -10685,7 +10685,7 @@ teletransporter{
   width = 16,
   height = 720,
   transition = "scrolling",
-  destination_map = "outside_b1",
+  destination_map = "outside/outside_b1",
   destination = "_side",
 }
 
@@ -10696,7 +10696,7 @@ teletransporter{
   width = 16,
   height = 480,
   transition = "scrolling",
-  destination_map = "outside_c2",
+  destination_map = "outside/outside_c2",
   destination = "_side",
 }
 
@@ -10841,7 +10841,7 @@ teletransporter{
   width = 960,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside_c3",
+  destination_map = "outside/outside_c3",
   destination = "_side",
 }
 
