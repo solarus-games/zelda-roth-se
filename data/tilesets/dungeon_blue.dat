@@ -3230,20 +3230,20 @@ tile_pattern{
   id = "wall_statue.2",
   ground = "wall",
   default_layer = 1,
-  x = 208,
-  y = 264,
-  width = 24,
-  height = 32,
+  x = 232,
+  y = 272,
+  width = 32,
+  height = 24,
 }
 
 tile_pattern{
   id = "wall_statue.3",
   ground = "wall",
   default_layer = 1,
-  x = 232,
-  y = 272,
-  width = 32,
-  height = 24,
+  x = 208,
+  y = 264,
+  width = 24,
+  height = 32,
 }
 
 tile_pattern{

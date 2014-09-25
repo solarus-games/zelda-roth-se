@@ -3190,10 +3190,10 @@ tile_pattern{
   id = "wall_pipe.2",
   ground = "wall",
   default_layer = 1,
-  x = 296,
-  y = 240,
-  width = 24,
-  height = 32,
+  x = 288,
+  y = 272,
+  width = 32,
+  height = 24,
 }
 
 tile_pattern{
@@ -3210,10 +3210,10 @@ tile_pattern{
   id = "wall_pipe.4",
   ground = "wall",
   default_layer = 1,
-  x = 288,
-  y = 272,
-  width = 32,
-  height = 24,
+  x = 296,
+  y = 240,
+  width = 24,
+  height = 32,
 }
 
 tile_pattern{
@@ -3230,10 +3230,10 @@ tile_pattern{
   id = "wall_statue.2",
   ground = "wall",
   default_layer = 1,
-  x = 240,
-  y = 240,
-  width = 24,
-  height = 32,
+  x = 232,
+  y = 272,
+  width = 32,
+  height = 24,
 }
 
 tile_pattern{
@@ -3250,10 +3250,10 @@ tile_pattern{
   id = "wall_statue.4",
   ground = "wall",
   default_layer = 1,
-  x = 232,
-  y = 272,
-  width = 32,
-  height = 24,
+  x = 240,
+  y = 240,
+  width = 24,
+  height = 32,
 }
 
 tile_pattern{

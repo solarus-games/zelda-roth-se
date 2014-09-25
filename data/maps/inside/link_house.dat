@@ -446,7 +446,7 @@ tile{
   y = 216,
   width = 32,
   height = 24,
-  pattern = "wall_statue.4",
+  pattern = "wall_statue.2",
 }
 
 tile{
@@ -455,43 +455,43 @@ tile{
   y = 216,
   width = 32,
   height = 24,
+  pattern = "wall_statue.2",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 56,
+  width = 24,
+  height = 32,
+  pattern = "wall_statue.3",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 152,
+  width = 24,
+  height = 32,
+  pattern = "wall_statue.3",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 152,
+  width = 24,
+  height = 32,
   pattern = "wall_statue.4",
 }
 
 tile{
   layer = 1,
-  x = 0,
-  y = 56,
-  width = 24,
-  height = 32,
-  pattern = "wall_statue.3",
-}
-
-tile{
-  layer = 1,
-  x = 0,
-  y = 152,
-  width = 24,
-  height = 32,
-  pattern = "wall_statue.3",
-}
-
-tile{
-  layer = 1,
-  x = 296,
-  y = 152,
-  width = 24,
-  height = 32,
-  pattern = "wall_statue.2",
-}
-
-tile{
-  layer = 1,
   x = 296,
   y = 56,
   width = 24,
   height = 32,
-  pattern = "wall_statue.2",
+  pattern = "wall_statue.4",
 }
 
 destructible{
