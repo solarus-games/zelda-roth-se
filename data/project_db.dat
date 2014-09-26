@@ -263,7 +263,6 @@ enemy{ id = "tentacle", description = "Tentacle" }
 entity{ id = "hammer_stake", description = "Hammer stake" }
 entity{ id = "cliff", description = "Cliff" }
 
-language{ id = "en", description = "English" }
 language{ id = "fr", description = "Français" }
 
 font{ id = "alttp", description = "alttp" }
