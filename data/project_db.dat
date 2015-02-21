@@ -1,17 +1,3 @@
-map{ id = "outside_store", description = "Outside Store" }
-map{ id = "inside_store", description = "Inside Store" }
-map{ id = "enemy_store", description = "Enemy Store" }
-map{ id = "outside/outside_a1", description = "Outside A1 (Desert)" }
-map{ id = "outside/outside_b1", description = "Outside B1 (Mountains)" }
-map{ id = "outside/outside_c1", description = "Outside C1 (Forest)" }
-map{ id = "outside/outside_a2", description = "Outside A2 (Castle)" }
-map{ id = "outside/outside_b2", description = "Outside B2 (Village)" }
-map{ id = "outside/outside_c2", description = "Outside C2 (Plains)" }
-map{ id = "outside/outside_a3", description = "Outside A3 (Ruins)" }
-map{ id = "outside/outside_b3", description = "Outside B3 (Lake)" }
-map{ id = "outside/outside_c3", description = "Outside C3 (Cemetary)" }
-map{ id = "outside/outside_a4", description = "Outside A4 (South-West)" }
-map{ id = "outside/outside_b4", description = "Outside B4 (South-East)" }
 map{ id = "dungeon_1/dungeon_1_1f", description = "Dungeon 1 1F" }
 map{ id = "dungeon_1/dungeon_1_b1", description = "Dungeon 1 B1" }
 map{ id = "dungeon_2/dungeon_2_1f", description = "Dungeon 2 1F" }
@@ -24,23 +10,45 @@ map{ id = "dungeon_5/dungeon_5_1f", description = "Dungeon 5 1F" }
 map{ id = "dungeon_5/dungeon_5_b1", description = "Dungeon 5 B1" }
 map{ id = "dungeon_5/dungeon_5_b2", description = "Dungeon 5 B2" }
 map{ id = "dungeon_6/dungeon_6_1f", description = "Dungeon 6 1F" }
+map{ id = "enemy_store", description = "Enemy Store" }
 map{ id = "inside/link_house", description = "Link's house" }
+map{ id = "inside_store", description = "Inside Store" }
 map{ id = "intro", description = "Intro" }
+map{ id = "outside/outside_a1", description = "Outside A1 (Desert)" }
+map{ id = "outside/outside_a2", description = "Outside A2 (Castle)" }
+map{ id = "outside/outside_a3", description = "Outside A3 (Ruins)" }
+map{ id = "outside/outside_a4", description = "Outside A4 (South-West)" }
+map{ id = "outside/outside_b1", description = "Outside B1 (Mountains)" }
+map{ id = "outside/outside_b2", description = "Outside B2 (Village)" }
+map{ id = "outside/outside_b3", description = "Outside B3 (Lake)" }
+map{ id = "outside/outside_b4", description = "Outside B4 (South-East)" }
+map{ id = "outside/outside_c1", description = "Outside C1 (Forest)" }
+map{ id = "outside/outside_c2", description = "Outside C2 (Plains)" }
+map{ id = "outside/outside_c3", description = "Outside C3 (Cemetary)" }
+map{ id = "outside_store", description = "Outside Store" }
 
-tileset{ id = "light_world", description = "Light World" }
-tileset{ id = "house", description = "House" }
 tileset{ id = "cave", description = "Cave" }
+tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
+tileset{ id = "dungeon_grayblue", description = "Dungeon (gray-blue)" }
+tileset{ id = "dungeon_graybrown", description = "Dungeon (gray-brown)" }
+tileset{ id = "house", description = "House" }
+tileset{ id = "ice_brightblue", description = "Ice (bright blue)" }
+tileset{ id = "ice_brown", description = "Ice (brown)" }
+tileset{ id = "light_world", description = "Light World" }
+tileset{ id = "palace_purple", description = "Palace (purple)" }
 tileset{ id = "temple_blue", description = "Temple (blue)" }
 tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
-tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
-tileset{ id = "dungeon_graybrown", description = "Dungeon (gray-brown)" }
-tileset{ id = "dungeon_grayblue", description = "Dungeon (gray-blue)" }
-tileset{ id = "ice_brightblue", description = "Ice (bright blue)" }
-tileset{ id = "ice_brown", description = "Ice (brown)" }
-tileset{ id = "palace_purple", description = "Palace (purple)" }
 
+sprite{ id = "enemies/blue_spider", description = "Enemy: Blue Spider" }
+sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/keese", description = "Enemy: Keese" }
+sprite{ id = "enemies/pike_auto", description = "Enemy: Pike (always moving)" }
+sprite{ id = "enemies/skeleton", description = "Enemy: Skeleton" }
+sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 sprite{ id = "entities/arrow", description = "Arrow" }
+sprite{ id = "entities/bed", description = "Hero's bed" }
+sprite{ id = "entities/big_chest", description = "Chest (big)" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
@@ -49,25 +57,23 @@ sprite{ id = "entities/bush_green", description = "Bush (green)" }
 sprite{ id = "entities/bush_purple", description = "Bush (purple)" }
 sprite{ id = "entities/bush_yellow", description = "Bush (yellow)" }
 sprite{ id = "entities/chest", description = "Chest" }
-sprite{ id = "entities/big_chest", description = "Chest (big)" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/destination", description = "Destination of teletransporter" }
+sprite{ id = "entities/door_big_key", description = "Door (big key)" }
+sprite{ id = "entities/door_boss_key", description = "Door (boss key)" }
 sprite{ id = "entities/door_normal", description = "Door (normal)" }
 sprite{ id = "entities/door_small_key", description = "Door (small key)" }
 sprite{ id = "entities/door_small_key_block", description = "Door (small key block)" }
-sprite{ id = "entities/door_big_key", description = "Door (big key)" }
-sprite{ id = "entities/door_boss_key", description = "Door (boss key)" }
-sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall)" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
+sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/grass", description = "Grass" }
+sprite{ id = "entities/hammer_stake_brown", description = "Hammer stake (brown)" }
 sprite{ id = "entities/hammer_stake_green", description = "Hammer stake (green)" }
 sprite{ id = "entities/hammer_stake_yellow", description = "Hammer stake (yellow)" }
-sprite{ id = "entities/hammer_stake_brown", description = "Hammer stake (brown)" }
-sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/shadow", description = "Shadow" }
@@ -83,28 +89,22 @@ sprite{ id = "entities/stone_white_skull", description = "Stone (white skull)" }
 sprite{ id = "entities/switch", description = "Switch" }
 sprite{ id = "entities/vase", description = "Vase" }
 sprite{ id = "entities/vase_skull", description = "Vase (skull)" }
-sprite{ id = "hero/tunic1", description = "Hero tunic 1" }
-sprite{ id = "hero/tunic2", description = "Hero tunic 2" }
-sprite{ id = "hero/tunic3", description = "Hero tunic 3" }
+sprite{ id = "hero/ground1", description = "Grass under hero" }
+sprite{ id = "hero/ground2", description = "Shallow water under hero" }
+sprite{ id = "hero/shield1", description = "Hero shield 1" }
+sprite{ id = "hero/shield2", description = "Hero shield 2" }
+sprite{ id = "hero/shield3", description = "Hero shield 3" }
 sprite{ id = "hero/sword1", description = "Hero sword 1" }
 sprite{ id = "hero/sword2", description = "Hero sword 2" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
 sprite{ id = "hero/sword_stars2", description = "Hero sword stars 2" }
 sprite{ id = "hero/sword_stars3", description = "Hero sword stars 3" }
 sprite{ id = "hero/sword_stars4", description = "Hero sword stars 4" }
-sprite{ id = "hero/shield1", description = "Hero shield 1" }
-sprite{ id = "hero/shield2", description = "Hero shield 2" }
-sprite{ id = "hero/shield3", description = "Hero shield 3" }
-sprite{ id = "hero/ground1", description = "Grass under hero" }
-sprite{ id = "hero/ground2", description = "Shallow water under hero" }
 sprite{ id = "hero/trail", description = "Hero trail" }
+sprite{ id = "hero/tunic1", description = "Hero tunic 1" }
+sprite{ id = "hero/tunic2", description = "Hero tunic 2" }
+sprite{ id = "hero/tunic3", description = "Hero tunic 3" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
-sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
-sprite{ id = "enemies/blue_spider", description = "Enemy: Blue Spider" }
-sprite{ id = "enemies/keese", description = "Enemy: Keese" }
-sprite{ id = "enemies/pike_auto", description = "Enemy: Pike (always moving)" }
-sprite{ id = "enemies/skeleton", description = "Enemy: Skeleton" }
-sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }
@@ -114,28 +114,28 @@ music{ id = "cave", description = "Cave" }
 music{ id = "credits", description = "Credits" }
 music{ id = "dark_mountain", description = "Dark Mountain" }
 music{ id = "dark_world", description = "Dark World" }
-music{ id = "light_world_dungeon", description = "Dungeon (light world)" }
 music{ id = "dark_world_dungeon", description = "Dungeon (dark world)" }
 music{ id = "dungeon_finished", description = "Dungeon finished" }
 music{ id = "excalibur", description = "Excalibur" }
 music{ id = "fanfare", description = "Fanfare" }
 music{ id = "fortune_teller", description = "Fortune Teller" }
+music{ id = "game_over", description = "Selection menu & Game Over" }
 music{ id = "ganon_appears", description = "Ganon appears" }
 music{ id = "ganon_battle", description = "Ganon battle" }
 music{ id = "ganon_theme", description = "Ganon theme" }
 music{ id = "great_fairy", description = "Great Fairy" }
-music{ id = "village", description = "Kakariko Village" }
 music{ id = "legend", description = "Legend" }
+music{ id = "light_world_dungeon", description = "Dungeon (light world)" }
 music{ id = "lost_woods", description = "Lost Woods" }
 music{ id = "mini_game", description = "Mini game" }
 music{ id = "overworld", description = "Overworld" }
-music{ id = "sanctuary", description = "Sanctuary" }
-music{ id = "game_over", description = "Selection menu & Game Over" }
-music{ id = "soldiers", description = "Soldiers" }
 music{ id = "rabbit", description = "Turned into a rabbit" }
+music{ id = "sanctuary", description = "Sanctuary" }
+music{ id = "soldiers", description = "Soldiers" }
 music{ id = "title_screen", description = "Title screen" }
 music{ id = "triforce", description = "Triforce" }
 music{ id = "victory", description = "Victory" }
+music{ id = "village", description = "Kakariko Village" }
 music{ id = "zelda", description = "Zelda theme" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
@@ -158,8 +158,8 @@ sound{ id = "enemy_killed", description = "enemy_killed" }
 sound{ id = "explosion", description = "explosion" }
 sound{ id = "hammer", description = "hammer" }
 sound{ id = "hammer_stake", description = "hammer_stake" }
-sound{ id = "heart_container", description = "heart_container" }
 sound{ id = "heart", description = "heart" }
+sound{ id = "heart_container", description = "heart_container" }
 sound{ id = "hero_dying", description = "hero_dying" }
 sound{ id = "hero_falls", description = "hero_falls" }
 sound{ id = "hero_hurt", description = "hero_hurt" }
@@ -184,8 +184,9 @@ sound{ id = "picked_small_key", description = "picked_small_key" }
 sound{ id = "piece_of_heart", description = "piece_of_heart" }
 sound{ id = "quit", description = "quit" }
 sound{ id = "running", description = "running" }
-sound{ id = "rupee_counter_end", description = "rupee_counter_end" }
+sound{ id = "running_obstacle", description = "running_obstacle" }
 sound{ id = "rupee_counter", description = "rupee_counter" }
+sound{ id = "rupee_counter_end", description = "rupee_counter_end" }
 sound{ id = "secret", description = "secret" }
 sound{ id = "shield", description = "shield" }
 sound{ id = "solarus_logo", description = "solarus_logo" }
@@ -205,54 +206,53 @@ sound{ id = "sword_spin_attack_release", description = "sword_spin_attack_releas
 sound{ id = "sword_tapping", description = "sword_tapping" }
 sound{ id = "sword_tapping_weak_wall", description = "sword_tapping_weak_wall" }
 sound{ id = "throw", description = "throw" }
-sound{ id = "timer_hurry", description = "timer_hurry" }
 sound{ id = "timer", description = "timer" }
+sound{ id = "timer_hurry", description = "timer_hurry" }
 sound{ id = "treasure", description = "treasure" }
 sound{ id = "victory", description = "victory" }
 sound{ id = "walk_on_grass", description = "walk_on_grass" }
 sound{ id = "walk_on_water", description = "walk_on_water" }
 sound{ id = "wrong", description = "wrong" }
-sound{ id = "running_obstacle", description = "running_obstacle" }
 
-item{ id = "random", description = "Random" }
-item{ id = "random_heart", description = "Random, often heart" }
-item{ id = "random_rupee", description = "Random, often rupee" }
-item{ id = "random_magic", description = "Random, often magic" }
-item{ id = "bombs_counter", description = "Bombs counter" }
-item{ id = "bomb", description = "Bombs (x1 / x3 / x8)" }
-item{ id = "bow", description = "Bow" }
 item{ id = "arrow", description = "Arrows (x1 / x5 / x10)" }
+item{ id = "blue_potion", description = "Blue potion" }
+item{ id = "bomb", description = "Bombs (x1 / x3 / x8)" }
+item{ id = "bombs_counter", description = "Bombs counter" }
 item{ id = "boomerang", description = "Boomerang" }
-item{ id = "lamp", description = "Lamp" }
-item{ id = "hookshot", description = "Hookshot" }
-item{ id = "fire_rod", description = "Fire rod" }
-item{ id = "ice_rod", description = "Ice rod" }
-item{ id = "hammer", description = "Magic hammer" }
-item{ id = "mudora_book", description = "Mudora's book" }
-item{ id = "din_medallion", description = "Din medallion" }
-item{ id = "nayru_medallion", description = "Nayru medallion" }
-item{ id = "farore_medallion", description = "Farore medallion" }
+item{ id = "boss_key", description = "Dungeon boss key" }
 item{ id = "bottle_1", description = "Bottle 1" }
 item{ id = "bottle_2", description = "Bottle 2" }
 item{ id = "bottle_3", description = "Bottle 3" }
+item{ id = "bow", description = "Bow" }
+item{ id = "compass", description = "Dungeon compass" }
+item{ id = "din_medallion", description = "Din medallion" }
+item{ id = "farore_medallion", description = "Farore medallion" }
+item{ id = "fire_rod", description = "Fire rod" }
 item{ id = "flippers", description = "Flippers" }
 item{ id = "glove", description = "Iron glove / Golden glove" }
-item{ id = "tunic", description = "Tunic (green / blue / red)" }
-item{ id = "sword", description = "Sword" }
-item{ id = "shield", description = "Shield" }
-item{ id = "magic_bar", description = "Maximum of magic (none / half / full)" }
-item{ id = "map", description = "Dungeon map" }
-item{ id = "compass", description = "Dungeon compass" }
-item{ id = "boss_key", description = "Dungeon boss key" }
-item{ id = "small_key", description = "Small key" }
-item{ id = "rupee", description = "Rupees (x1 / x5 / x20 / x50 / x100 / x300)" }
-item{ id = "magic_flask", description = "Magic flask (small / big)" }
+item{ id = "green_potion", description = "Green potion" }
+item{ id = "hammer", description = "Magic hammer" }
 item{ id = "heart", description = "Heart (x1)" }
 item{ id = "heart_container", description = "Heart container" }
+item{ id = "hookshot", description = "Hookshot" }
+item{ id = "ice_rod", description = "Ice rod" }
+item{ id = "lamp", description = "Lamp" }
+item{ id = "magic_bar", description = "Maximum of magic (none / half / full)" }
+item{ id = "magic_flask", description = "Magic flask (small / big)" }
+item{ id = "map", description = "Dungeon map" }
+item{ id = "mudora_book", description = "Mudora's book" }
+item{ id = "nayru_medallion", description = "Nayru medallion" }
 item{ id = "piece_of_heart", description = "Piece of heart" }
+item{ id = "random", description = "Random" }
+item{ id = "random_heart", description = "Random, often heart" }
+item{ id = "random_magic", description = "Random, often magic" }
+item{ id = "random_rupee", description = "Random, often rupee" }
 item{ id = "red_potion", description = "Red potion" }
-item{ id = "green_potion", description = "Green potion" }
-item{ id = "blue_potion", description = "Blue potion" }
+item{ id = "rupee", description = "Rupees (x1 / x5 / x20 / x50 / x100 / x300)" }
+item{ id = "shield", description = "Shield" }
+item{ id = "small_key", description = "Small key" }
+item{ id = "sword", description = "Sword" }
+item{ id = "tunic", description = "Tunic (green / blue / red)" }
 
 enemy{ id = "blue_spider", description = "Blue Spider" }
 enemy{ id = "keese", description = "Keese" }
@@ -260,8 +260,8 @@ enemy{ id = "pike_auto", description = "Pike (always moving)" }
 enemy{ id = "skeleton", description = "Skeleton" }
 enemy{ id = "tentacle", description = "Tentacle" }
 
-entity{ id = "hammer_stake", description = "Hammer stake" }
 entity{ id = "cliff", description = "Cliff" }
+entity{ id = "hammer_stake", description = "Hammer stake" }
 
 language{ id = "fr", description = "Français" }
 
