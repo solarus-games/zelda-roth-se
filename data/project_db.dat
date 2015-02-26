@@ -59,6 +59,7 @@ sprite{ id = "entities/bush_yellow", description = "Bush (yellow)" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
 sprite{ id = "entities/crystal", description = "Crystal" }
+sprite{ id = "entities/crystal_block", description = "Crystal block" }
 sprite{ id = "entities/destination", description = "Destination of teletransporter" }
 sprite{ id = "entities/door_big_key", description = "Door (big key)" }
 sprite{ id = "entities/door_boss_key", description = "Door (boss key)" }
@@ -76,6 +77,7 @@ sprite{ id = "entities/hammer_stake_green", description = "Hammer stake (green)"
 sprite{ id = "entities/hammer_stake_yellow", description = "Hammer stake (yellow)" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/snores", description = "Snoring (zzz)" }
