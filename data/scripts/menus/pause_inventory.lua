@@ -34,7 +34,7 @@ local function create_item_widget(game)
     local variant = game:get_item(item_name):get_variant()
     if variant > 0 then
       local column = (i - 1) % items_num_columns + 1
-      local row = (i - 1) / items_num_columns + 1
+      local row = math.floor((i - 1) / items_num_columns + 1)
       -- Draw the sprite statically. This is okay as long as
       -- item sprites are not animated.
       -- If they become animated one day, they will have to be
@@ -42,7 +42,7 @@ local function create_item_widget(game)
       local item_sprite = sol.sprite.create("entities/items")
       item_sprite:set_animation(item_name)
       item_sprite:set_direction(variant - 1)
-      item_sprite:set_xy(-8 + column * 32, -3 + row * 32)
+      item_sprite:set_xy(8 + column * 32 - 16, 13 + row * 32 - 16)
       item_sprite:draw(items_surface)
     end
   end
@@ -146,7 +146,7 @@ function inventory_manager:new(game)
 
       if item_name == item_name_assigned then
         item_assigned_column = (i - 1) % items_num_columns
-        item_assigned_row = (i - 1) / items_num_columns
+        item_assigned_row = math.floor((i - 1) / items_num_columns)
         item_assigned_index = i - 1
       end
     end
@@ -331,6 +331,7 @@ function inventory_manager:new(game)
     game:set_value("pause_inventory_last_item_index", cursor_index)
   end
 
+  set_cursor_position(cursor_row, cursor_column)
   move_widgets(function() state = "ready" end)
 
   return inventory
