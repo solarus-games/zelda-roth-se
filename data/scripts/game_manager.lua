@@ -126,10 +126,12 @@ function game_manager:create(file)
 
   function game:on_key_pressed(key)
 
+    local handled = false
     if key == "left shift"
         or key == "right shift"
         or key == "caps lock" then
       update_walking_speed()
+      handled = true
 
     elseif key == "escape" then
       if not game:is_dialog_enabled() then
@@ -148,17 +150,24 @@ function game_manager:create(file)
             sol.main.reset()
           end
         end)
+        handled = true
       end
     end
+
+    return handled
   end
 
   function game:on_key_released(key)
 
+    local handled = false
     if key == "left shift"
         or key == "right shift"
         or key == "caps lock" then
       update_walking_speed()
+        handled = true
     end
+
+    return handled
   end
 
   function game:get_dialog_box()
