@@ -2034,7 +2034,7 @@ teletransporter{
   y = 592,
   width = 16,
   height = 16,
-  destination_map = "dungeon_1/dungeon_1_1f",
+  destination_map = "dungeon_1/1f",
   destination = "from_b1_w",
 }
 
@@ -2044,7 +2044,7 @@ teletransporter{
   y = 480,
   width = 16,
   height = 16,
-  destination_map = "dungeon_1/dungeon_1_1f",
+  destination_map = "dungeon_1/1f",
   destination = "from_b1_c",
 }
 
@@ -2054,7 +2054,7 @@ teletransporter{
   y = 592,
   width = 16,
   height = 16,
-  destination_map = "dungeon_1/dungeon_1_1f",
+  destination_map = "dungeon_1/1f",
   destination = "from_b1_e",
 }
 

@@ -8723,7 +8723,7 @@ teletransporter{
   y = 320,
   width = 16,
   height = 16,
-  destination_map = "dungeon_1/dungeon_1_1f",
+  destination_map = "dungeon_1/1f",
   destination = "from_outside_east",
 }
 
@@ -10725,7 +10725,7 @@ teletransporter{
   y = 336,
   width = 16,
   height = 16,
-  destination_map = "dungeon_1/dungeon_1_1f",
+  destination_map = "dungeon_1/1f",
   destination = "from_outside_west",
 }
 
