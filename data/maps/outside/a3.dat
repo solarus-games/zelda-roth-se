@@ -438,7 +438,7 @@ teletransporter{
   width = 1920,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside/outside_a2",
+  destination_map = "outside/a2",
   destination = "_side",
 }
 
@@ -449,7 +449,7 @@ teletransporter{
   width = 1920,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside/outside_a4",
+  destination_map = "outside/a4",
   destination = "_side",
 }
 
@@ -460,7 +460,7 @@ teletransporter{
   width = 16,
   height = 960,
   transition = "scrolling",
-  destination_map = "outside/outside_b3",
+  destination_map = "outside/b3",
   destination = "_side",
 }
 
@@ -6468,7 +6468,7 @@ teletransporter{
   width = 1920,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside/outside_a2",
+  destination_map = "outside/a2",
   destination = "_side",
 }
 
@@ -6479,7 +6479,7 @@ teletransporter{
   width = 16,
   height = 960,
   transition = "scrolling",
-  destination_map = "outside/outside_b3",
+  destination_map = "outside/b3",
   destination = "_side",
 }
 
@@ -6490,7 +6490,7 @@ teletransporter{
   width = 1920,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside/outside_a4",
+  destination_map = "outside/a4",
   destination = "_side",
 }
 
@@ -10543,7 +10543,7 @@ teletransporter{
   width = 1920,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside/outside_a2",
+  destination_map = "outside/a2",
   destination = "_side",
 }
 
@@ -10554,7 +10554,7 @@ teletransporter{
   width = 16,
   height = 960,
   transition = "scrolling",
-  destination_map = "outside/outside_b3",
+  destination_map = "outside/b3",
   destination = "_side",
 }
 
@@ -10565,7 +10565,7 @@ teletransporter{
   width = 1920,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside/outside_a4",
+  destination_map = "outside/a4",
   destination = "_side",
 }
 

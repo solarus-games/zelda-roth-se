@@ -3551,7 +3551,7 @@ teletransporter{
   y = 1184,
   width = 16,
   height = 16,
-  destination_map = "outside/outside_c1",
+  destination_map = "outside/c1",
   destination = "from_dungeon_1_west",
 }
 
@@ -3561,7 +3561,7 @@ teletransporter{
   y = 1184,
   width = 16,
   height = 16,
-  destination_map = "outside/outside_c1",
+  destination_map = "outside/c1",
   destination = "from_dungeon_1_east",
 }
 
