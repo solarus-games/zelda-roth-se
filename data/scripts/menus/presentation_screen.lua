@@ -16,4 +16,3 @@ function presentation_screen:on_key_pressed(key)
 end
 
 return presentation_screen
-

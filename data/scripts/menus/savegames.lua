@@ -2,6 +2,7 @@ local savegames_menu = {}
 
 local gui_designer = require("scripts/menus/lib/gui_designer")
 local game_manager = require("scripts/game_manager")
+local options_menu = require("scripts/menus/options")
 local layout
 local savegames_surfaces = {}
 local games = {}
@@ -174,6 +175,13 @@ function savegames_menu:on_key_pressed(key)
         -- Show actions for an existing savegame.
         show_savegame_action_box(cursor_position)
       end
+    elseif cursor_position == 4 then
+      -- Options.
+      sol.audio.play_sound("pause_closed")
+      sol.menu.start(savegames_menu, options_menu)
+    elseif cursor_position == 5 then
+      -- Records.
+      -- TODO
     end
     handled = true
   end
@@ -290,4 +298,3 @@ function show_confirm_delete_box(action)
 end
 
 return savegames_menu
-

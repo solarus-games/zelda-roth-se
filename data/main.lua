@@ -14,6 +14,9 @@ function sol.main:on_started()
   -- Make quest-specific initializations.
   quest_manager:initialize_quest()
 
+  -- Load built-in settings (audio volume, video mode, etc.).
+  sol.main.load_settings()
+
   -- If there is a file called "debug" in the write directory,
   -- enable debugging features.
   if sol.file.exists("debug") then
@@ -37,6 +40,12 @@ function sol.main:on_started()
     sol.menu.start(self, savegames_menu)
   end
 
+end
+
+-- Event called when the program stops.
+function sol.main:on_finished()
+
+  sol.main.save_settings()
 end
 
 -- Starts a game.
