@@ -9,6 +9,13 @@ text{ key = "pause.inventory.life", value = "VIE" }
 text{ key = "pause.inventory.magic", value = "MAGIE" }
 text{ key = "pause.inventory.status", value = "STATUT :" }
 text{ key = "pause.inventory.time", value = "TEMPS" }
+text{ key = "records_menu.100_percent_rank", value = "RANG DES 100%" }
+text{ key = "records_menu.back", value = "RETOUR" }
+text{ key = "records_menu.best_time", value = "MEILLEUR TEMPS :" }
+text{ key = "records_menu.clear", value = "EFFACER" }
+text{ key = "records_menu.speed_rank", value = "RANG DE RAPIDITE" }
+text{ key = "records_menu.title", value = "RECORDS" }
+text{ key = "records_menu.ultimate_rank", value = "RANG ULTIME" }
 text{ key = "savegames_menu.cancel", value = "ANNULER" }
 text{ key = "savegames_menu.delete", value = "EFFACER" }
 text{ key = "savegames_menu.delete_question", value = "EFFACER ?" }

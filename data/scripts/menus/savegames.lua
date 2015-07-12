@@ -3,6 +3,7 @@ local savegames_menu = {}
 local gui_designer = require("scripts/menus/lib/gui_designer")
 local game_manager = require("scripts/game_manager")
 local options_menu = require("scripts/menus/options")
+local records_menu = require("scripts/menus/records")
 local layout
 local savegames_surfaces = {}
 local games = {}
@@ -181,7 +182,8 @@ function savegames_menu:on_key_pressed(key)
       sol.menu.start(savegames_menu, options_menu)
     elseif cursor_position == 5 then
       -- Records.
-      -- TODO
+      sol.audio.play_sound("pause_closed")
+      sol.menu.start(savegames_menu, records_menu)
     end
     handled = true
   end
