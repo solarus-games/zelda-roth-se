@@ -40,7 +40,7 @@ local function build_layout()
   layout:make_background()
 
   layout:make_big_wooden_frame(16, 8, 96, 32)
-  layout:make_text(sol.language.get_string("records_menu.title"), 96, 16, "center")
+  layout:make_text(sol.language.get_string("records_menu.title"), 64, 16, "center")
 
   layout:make_wooden_frame(128, 8, 176, 32)
   layout:make_text(sol.language.get_string("records_menu.best_time"), 140, 16)
@@ -62,10 +62,10 @@ local function build_layout()
   layout:make_image(records:get_rank_speed() and yellow_triforce_img or gray_triforce_img, 279, 152)
 
   layout:make_wooden_frame(16, 192, 136, 32)
-  layout:make_text(sol.language.get_string("records_menu.back"), 84, 200)
+  layout:make_text(sol.language.get_string("records_menu.back"), 64, 200)
 
   layout:make_wooden_frame(168, 192, 136, 32)
-  layout:make_text(sol.language.get_string("records_menu.clear"), 236, 200)
+  layout:make_text(sol.language.get_string("records_menu.clear"), 216, 200)
 end
 
 -- Places the cursor on the record 1, 2 or 3,
