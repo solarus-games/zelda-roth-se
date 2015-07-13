@@ -166,6 +166,7 @@ function show_confirm_clear_popup()
 end
 
 -- Creates a popup with information about the selected rank.
+-- TODO this could be in gui_designer
 function show_rank_info_popup()
 
   local popup = {}
