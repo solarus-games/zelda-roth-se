@@ -52,6 +52,10 @@ function records_manager:save()
   file:close()
 end
 
+function records_manager:clear()
+  records = {}
+end
+
 function records_manager:get_rank_100_percent()
   return records.rank_100_percent
 end
@@ -78,6 +82,22 @@ end
 
 function records_manager:get_best_time()
   return records.best_time
+end
+
+function records_manager:get_best_time_text()
+
+  local best_time = records_manager:get_best_time()
+  if best_time == nil then
+    return ""
+  end
+
+  local total_seconds = best_time
+  local seconds = total_seconds % 60
+  local total_minutes = math.floor(total_seconds / 60)
+  local minutes = total_minutes % 60
+  local total_hours = math.floor(total_minutes / 60)
+  local time_string = string.format("%02d:%02d:%02d", total_hours, minutes, seconds)
+  return time_string
 end
 
 -- Indicates that the quest was completed with the specified time in seconds.

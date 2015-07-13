@@ -163,9 +163,11 @@ function savegames_menu:on_key_pressed(key)
     sol.audio.play_sound("cursor")
     handled = true
   elseif key == "left" or key == "right" then
-    set_cursor_position(9 - cursor_position)
-    sol.audio.play_sound("cursor")
-    handled = true
+    if cursor_position == 4 or cursor_position == 5 then
+      set_cursor_position(9 - cursor_position)
+      sol.audio.play_sound("cursor")
+      handled = true
+    end
   elseif key == "space" then
     if cursor_position <= 3 then
       if games[cursor_position] == nil then

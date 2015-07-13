@@ -13,9 +13,15 @@ text{ key = "records_menu.100_percent_rank", value = "RANG DES 100%" }
 text{ key = "records_menu.back", value = "RETOUR" }
 text{ key = "records_menu.best_time", value = "MEILLEUR TEMPS :" }
 text{ key = "records_menu.clear", value = "EFFACER" }
+text{ key = "records_menu.clear_question", value = "EFFACER ?" }
+text{ key = "records_menu.no", value = "NON" }
+text{ key = "records_menu.rank_100_percent", value = "RANG : Héros d'Hyrule$Finir le jeu à 100%." }
+text{ key = "records_menu.rank_speed", value = "RANG : Marathonien d'Hyrule$Finir le jeu en moins de$deux heures." }
+text{ key = "records_menu.rank_ultimate", value = "RANG : Frimeur$Finir le jeu sans mourir,$avec 10 coeurs au maximum,$sans parler aux Grandes Fées,$sans acheter de flacons$et sans prendre le bouclier." }
 text{ key = "records_menu.speed_rank", value = "RANG DE RAPIDITE" }
 text{ key = "records_menu.title", value = "RECORDS" }
 text{ key = "records_menu.ultimate_rank", value = "RANG ULTIME" }
+text{ key = "records_menu.yes", value = "OUI" }
 text{ key = "savegames_menu.cancel", value = "ANNULER" }
 text{ key = "savegames_menu.delete", value = "EFFACER" }
 text{ key = "savegames_menu.delete_question", value = "EFFACER ?" }

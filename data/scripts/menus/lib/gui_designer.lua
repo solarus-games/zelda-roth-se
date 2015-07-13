@@ -60,17 +60,17 @@ local function draw_frame_8_8(border_x, border_y, canvas, x, y, width, height)
   -- Black background.
   draw_tiled_region(get_frames_img(), border_x + 8, border_y + 8, 8, 8, canvas, x + 8, y + 8, width - 16, height - 16)
 
-  -- Angles.
-  get_frames_img():draw_region(border_x, border_y, 8, 8, canvas, x, y)
-  get_frames_img():draw_region(border_x + 16, border_y, 8, 8, canvas, x + width - 8, y)
-  get_frames_img():draw_region(border_x, border_y + 16, 8, 8, canvas, x, y + height - 8)
-  get_frames_img():draw_region(border_x + 16, border_y + 16, 8, 8, canvas, x + width - 8, y + height - 8)
-
   -- Sides.
   draw_tiled_region(get_frames_img(), border_x + 8, border_y, 8, 8, canvas, x + 8, y, width - 16, 8)
   draw_tiled_region(get_frames_img(), border_x + 8, border_y + 16, 8, 8, canvas, x + 8, y + height - 8, width - 16, 8)
   draw_tiled_region(get_frames_img(), border_x, border_y + 8, 8, 8, canvas, x, y + 8, 8, height - 16)
   draw_tiled_region(get_frames_img(), border_x + 16, border_y + 8, 8, 8, canvas, x + width - 8, y + 8, 8, height - 16)
+
+  -- Angles, drawn after the sides in case the size is not a multiple of 8.
+  get_frames_img():draw_region(border_x, border_y, 8, 8, canvas, x, y)
+  get_frames_img():draw_region(border_x + 16, border_y, 8, 8, canvas, x + width - 8, y)
+  get_frames_img():draw_region(border_x, border_y + 16, 8, 8, canvas, x, y + height - 8)
+  get_frames_img():draw_region(border_x + 16, border_y + 16, 8, 8, canvas, x + width - 8, y + height - 8)
 end
 
 -- Create a new widget.
