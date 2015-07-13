@@ -1,3 +1,22 @@
+text{ key = "help.action", value = "Action :" }
+text{ key = "help.ctrl_and_direction", value = "Ctrl et direction" }
+text{ key = "help.ctrl_and_enter", value = "Ctrl et Entrée" }
+text{ key = "help.directional_keys", value = "Flèches de direction" }
+text{ key = "help.escape", value = "Echap" }
+text{ key = "help.fullscreen", value = "Plein écran :" }
+text{ key = "help.item", value = "Utiliser l'objet sélectionné :" }
+text{ key = "help.keep_pressed_then_release", value = "maintenu puis lâché" }
+text{ key = "help.lift", value = "Porter :" }
+text{ key = "help.look", value = "Regarder autour :" }
+text{ key = "help.map", value = "Afficher la carte :" }
+text{ key = "help.monsters", value = "Afficher les monstres vaincus :" }
+text{ key = "help.move", value = "Déplacer Link :" }
+text{ key = "help.pause", value = "Pause :" }
+text{ key = "help.run", value = "Courir :" }
+text{ key = "help.save", value = "Sauvegarder / Quitter :" }
+text{ key = "help.shift_or_caps_lock", value = "Shift maintenu ou Caps lock" }
+text{ key = "help.spin_attack", value = "Attaque Tornade :" }
+text{ key = "help.sword", value = "Coup d'épée :" }
 text{ key = "options_menu.back", value = "RETOUR" }
 text{ key = "options_menu.music_volume", value = "MUSIQUE" }
 text{ key = "options_menu.sound_volume", value = "SON" }

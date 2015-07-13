@@ -294,8 +294,8 @@ function inventory_manager:new(game)
       if cursor_column < items_num_columns - 1 then
         sol.audio.play_sound("cursor")
         set_cursor_position(cursor_row, cursor_column + 1)
+        handled = true
       end
-      handled = true
 
     elseif command == "up" then
       sol.audio.play_sound("cursor")
@@ -310,8 +310,8 @@ function inventory_manager:new(game)
       if cursor_column > 0 then
         sol.audio.play_sound("cursor")
         set_cursor_position(cursor_row, cursor_column - 1)
+        handled = true
       end
-      handled = true
 
     elseif command == "down" then
       sol.audio.play_sound("cursor")
