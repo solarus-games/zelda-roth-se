@@ -49,8 +49,7 @@ function help_manager:new(game)
   local function build_layout(page)
 
     layout = gui_designer:create(320, 240)
-    layout:make_background()
-    layout:make_big_wooden_frame(16, 8, 112, 32)
+    layout:make_wooden_frame(16, 8, 112, 32)
     local title = tr("help.title") .. " " .. page .. "/" .. num_pages
     layout:make_text(title, 72, 16, "center")
 

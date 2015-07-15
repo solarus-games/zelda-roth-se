@@ -72,8 +72,14 @@ function pause_manager:create(game)
     local handled = false
     if command == "left" then
       pause_menu:previous_submenu()
+      handled = true
     elseif command == "right" then
       pause_menu:next_submenu()
+      handled = true
+    elseif command == "pause" then
+      sol.audio.play_sound("pause_closed")
+      game:set_paused(false)
+      handled = true
     end
     return handled
   end
