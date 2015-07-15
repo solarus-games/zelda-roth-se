@@ -243,6 +243,7 @@ item{ id = "lamp", description = "Lamp" }
 item{ id = "magic_bar", description = "Maximum of magic (none / half / full)" }
 item{ id = "magic_flask", description = "Magic flask (small / big)" }
 item{ id = "map", description = "Dungeon map" }
+item{ id = "monsters_encyclopedia", description = "Monsters Encyclopedia" }
 item{ id = "mudora_book", description = "Mudora's book" }
 item{ id = "nayru_medallion", description = "Nayru medallion" }
 item{ id = "piece_of_heart", description = "Piece of heart" }
