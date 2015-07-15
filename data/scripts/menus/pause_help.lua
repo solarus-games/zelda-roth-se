@@ -30,7 +30,7 @@ function help_manager:new(game)
     { "map", true, "P" },
     { "monsters", game:has_item("monsters_encyclopedia"), "M" },
     { "look", true, tr("help.ctrl_and_direction") },
-    { "fullscreen", true, tr("help.ctrl_and_enter") },
+    { "fullscreen", true, "F11" },
     { "save", true, tr("help.escape") },
   }
 

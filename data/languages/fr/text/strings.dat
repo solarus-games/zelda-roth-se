@@ -1,7 +1,6 @@
 text{ key = "help.action", value = "Action :" }
 text{ key = "help.back", value = "Retour :" }
 text{ key = "help.ctrl_and_direction", value = "Ctrl et direction" }
-text{ key = "help.ctrl_and_enter", value = "Ctrl et Entrée" }
 text{ key = "help.directional_keys", value = "Flèches de direction" }
 text{ key = "help.escape", value = "Echap" }
 text{ key = "help.fullscreen", value = "Plein écran :" }
