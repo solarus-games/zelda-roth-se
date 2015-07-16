@@ -1,24 +1,104 @@
--- Maximum characters on a line: 48
+dialog{
+  id = "_treasure.boss_key.1",
+  text = [[
+Tu as trouvé la clé du boss !!!
 
--- ---------------------
--- Obtention d'un trésor
--- ---------------------
--- 
--- Les messages ci-dessous sont affichés lorsque le joueur obtient
--- un trésor, généralement en ouvrant un coffre ou en l'achetant
--- dans un magasin.
 
--- Bouclier.
+]]
+}
+
+dialog{
+  id = "_treasure.bow.1",
+  text = [[
+Tu as obtenu l'arc !!!
+Utilise-le pour atteindre des cibles éloignées.
+
+
+]]
+}
+
+dialog{
+  id = "_treasure.bow.2",
+  text = [[
+Tu as obtenu l'arc !!!
+Utilise-le pour atteindre des cibles éloignées.
+
+
+]]
+}
+
+dialog{
+  id = "_treasure.compass.1",
+  text = [[
+Tu as trouvé la boussole !!!
+Tu peux localiser le boss et les coffres sur
+le plan.
+
+
+]]
+}
+
+dialog{
+  id = "_treasure.glove.1",
+  text = [[
+Tu as trouvé les gants !!!
+Utilise-les pour soulever des objets en
+appuyant sur la touche Action.
+
+
+]]
+}
+
+dialog{
+  id = "_treasure.hammer.1",
+  text = [[
+Tu as trouvé le marteau magique !!!
+Utilise-le pour écraser les obstacles.
+
+
+]]
+}
+
+dialog{
+  id = "_treasure.map.1",
+  text = [[
+Tu as trouvé la carte du donjon !!!
+Affiche-la dans l'écran de pause pour voir
+le plan.
+
+
+]]
+}
+
+dialog{
+  id = "_treasure.piece_of_heart.1",
+  text = [[
+Tu as trouvé un quart de coeur !!!
+]]
+}
+
 dialog{
   id = "_treasure.shield.1",
   text = [[
 Tu as trouvé un bouclier !!!
 
 Ta défense augmente d'un point !
+
+
 ]]
 }
 
--- Épée.
+dialog{
+  id = "_treasure.small_key.1",
+  text = [[
+Tu as trouvé une petite clé !
+Appuie sur la touche Action devant une porte
+verrouillée pour l'ouvrir.
+
+
+]]
+}
+
 dialog{
   id = "_treasure.sword.1",
   text = [[
@@ -28,143 +108,62 @@ Tu vas pouvoir te défendre face aux monstres
 avec la touche C !
 Maintiens C enfoncé pour charger une attaque
 cyclone !!!
+
+
 ]]
 }
 
--- Fragment de Coeur.
 dialog{
-  id = "_treasure.piece_of_heart.1",
+  id = "dungeon_1.welcome",
   text = [[
-Tu as trouvé un quart de coeur !!!
+                   Niveau 1
+
+              Temple de la Forêt
+
+
 ]]
 }
 
--- Fragment de Coeur (suite 1).
 dialog{
   id = "found_piece_of_heart.first",
   text = [[
 Encore 3 et tu gagneras un coeur
 supplémentaire !!!
+
+
 ]]
 }
 
--- Fragment de Coeur (suite 2).
-dialog{
-  id = "found_piece_of_heart.second",
-  text = [[
-Encore 2 et tu gagneras un coeur
-supplémentaire !!!
-]]
-}
-
--- Fragment de Coeur (suite 3).
-dialog{
-  id = "found_piece_of_heart.third",
-  text = [[
-Encore 3 et tu gagneras un coeur
-supplémentaire !!!
-]]
-}
-
--- Fragment de Coeur (suite 4).
 dialog{
   id = "found_piece_of_heart.fourth",
   text = [[
 Ton nombre de coeurs vient
 d'augmenter !!!
-]]
-}
 
--- Arc.
-dialog{
-  id = "_treasure.bow.1",
-  text = [[
-Tu as obtenu l'arc !!!
-Utilise-le pour atteindre des cibles éloignées.
+
 ]]
 }
 
 dialog{
-  id = "_treasure.bow.2",
+  id = "found_piece_of_heart.second",
   text = [[
-Tu as obtenu l'arc !!!
-Utilise-le pour atteindre des cibles éloignées.
+Encore 2 et tu gagneras un coeur
+supplémentaire !!!
+
+
 ]]
 }
 
--- Gants.
 dialog{
-  id = "_treasure.glove.1",
+  id = "found_piece_of_heart.third",
   text = [[
-Tu as trouvé les gants !!!
-Utilise-les pour soulever des objets en
-appuyant sur la touche Action.
+Encore 3 et tu gagneras un coeur
+supplémentaire !!!
+
+
 ]]
 }
 
--- Marteau.
-dialog{
-  id = "_treasure.hammer.1",
-  text = [[
-Tu as trouvé le marteau magique !!!
-Utilise-le pour écraser les obstacles.
-]]
-}
-
--- Carte.
-dialog{
-  id = "_treasure.map.1",
-  text = [[
-Tu as trouvé la carte du donjon !!!
-Affiche-la dans l'écran de pause pour voir
-le plan.
-]]
-}
-
--- Boussole.
-dialog{
-  id = "_treasure.compass.1",
-  text = [[
-Tu as trouvé la boussole !!!
-Tu peux localiser le boss et les coffres sur
-le plan.
-]]
-}
-
--- Clé du boss.
-dialog{
-  id = "_treasure.boss_key.1",
-  text = [[
-Tu as trouvé la clé du boss !!!
-]]
-}
-
--- Petite clé.
-dialog{
-  id = "_treasure.small_key.1",
-  text = [[
-Tu as trouvé une petite clé !
-Appuie sur la touche Action devant une porte
-verrouillée pour l'ouvrir.
-]]
-}
-
-
-
-
--- Sauvegarder & Quitter
-dialog{
-  id = "save_quit",
-  text = [[
-                 Déjà fatigué ?
-                 $? Continuer
-           $? Sauvegarder et quitter
-          $? Quitter sans sauvegarder
-]]
-}
-
--- Intro.
--- Maximum 40 characters by line in the intro.
 dialog{
   id = "intro.fresco_1",
   text = [[
@@ -174,6 +173,8 @@ hylien, avait vaincu le maléfique Ganon
 
 et lui avait repris la précieuse
 Triforce.
+
+
 ]]
 }
 
@@ -187,6 +188,8 @@ effet de réunifier le monde de la
 lumière et celui des ténèbres, et
 ramena à la vie les descendants des 7
 sages.
+
+
 ]]
 }
 
@@ -199,6 +202,8 @@ peuple se mit à croire que la paix
 
 durerait.
 Mais le peuple se trompait...
+
+
 ]]
 }
 
@@ -210,6 +215,8 @@ hélas de fâcheux effets. Ganon et ses
 sbires furent ainsi ressuscités et
 
 s'apprêtèrent à attaquer.
+
+
 ]]
 }
 
@@ -222,6 +229,8 @@ passé à l'attaque, jusqu'à ce qu'une
 
 voix familière lui parle dans son
 sommeil...
+
+
 ]]
 }
 
@@ -241,36 +250,42 @@ espoir...
 
 
 AIDE : Appuie sur F1 pour consulter l'aide.
+
+
 ]]
 }
 
--- Pancarte devant chez Link.
 dialog{
   id = "outside_c1.link_house_sign",
   text = [[
 N : Maison de Link
 O : Plaine d'Hyrule
 E : Temple de la Forêt
+
+
 ]]
 }
 
--- Pancarte devant le Temple de la Forêt.
 dialog{
   id = "outside_c1.temple_sign",
   text = [[
 Temple de la Forêt
 
 Sauvez les arbres, mangez du castor !!!
+
+
 ]]
 }
 
--- Entrée du Temple de la Forêt.
 dialog{
-  id = "dungeon_1.welcome",
+  id = "save_quit",
   text = [[
-                   Niveau 1
+                 Déjà fatigué ?
+                 $? Continuer
+           $? Sauvegarder et quitter
+          $? Quitter sans sauvegarder
 
-              Temple de la Forêt
+
 ]]
 }
 

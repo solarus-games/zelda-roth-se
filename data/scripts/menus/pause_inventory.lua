@@ -21,6 +21,7 @@ local items_num_columns = 3
 local items_num_rows = math.ceil(#item_names / items_num_columns)
 
 local icons_img = sol.surface.create("menus/icons.png")
+local piece_of_heart_icon_img = sol.surface.create("hud/piece_of_heart_icon.png")
 local items_img = sol.surface.create("entities/items.png")
 local movement_speed = 800
 local movement_distance = 160
@@ -116,8 +117,8 @@ local function create_pieces_of_heart_widget(game)
   local widget = gui_designer:create(48, 48)
   widget:set_xy(256 + movement_distance, 176)
   widget:make_green_frame()
-  local num_pieces_of_heart = game:get_value("num_pieces_of_heart") or 0
-  widget:make_image_region(icons_img, num_pieces_of_heart * 16, 32, 16, 16, 16, 16)
+  local num_pieces_of_heart = game:get_item("piece_of_heart"):get_num_pieces_of_heart()
+  widget:make_image_region(piece_of_heart_icon_img, num_pieces_of_heart * 16, 0, 16, 16, 16, 16)
   return widget
 end
 

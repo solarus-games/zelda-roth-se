@@ -103,6 +103,34 @@ function dialog_box_manager:create(game)
     dialog_box.info = nil
   end
 
+  -- Determines the position of the dialog box on the screen.
+  local function compute_position()
+
+    local map = game:get_map()
+    local camera_x, camera_y, camera_width, camera_height = map:get_camera_position()
+    local top = false
+    if dialog_box.position == "top" then
+      top = true
+    elseif dialog_box.position == "auto" then
+      local hero_x, hero_y = map:get_entity("hero"):get_position()
+      if hero_y >= camera_y + (camera_height / 2 + 10) then
+        top = true
+      end
+    end
+
+    -- Set the coordinates of graphic objects.
+    local box_width, box_height = dialog_box.box_img:get_size()
+    local x = camera_width / 2 - box_width / 2
+    local y = top and x or (camera_height - x - box_height)
+
+    if type(dialog_box.position) == "table" then
+      -- Custom position.
+      dialog_box.box_dst_position = dialog_box.position
+    else
+      dialog_box.box_dst_position = { x = x, y = y }
+    end
+  end
+
   -- Sets the style of the dialog box for subsequent dialogs.
   -- style must be one of:
   -- - "box" (default): Usual dialog box.
@@ -120,6 +148,15 @@ function dialog_box_manager:create(game)
   -- - a table with x and y integer fields.
   function dialog_box:set_position(position)
     dialog_box.position = position
+  end
+
+  -- Returns the coordinates on screen and the size of the dialog box.
+  -- This also works when the dialog box is inactive: in this case it
+  -- returns the bounding box it would have if it was activated now.
+  function dialog_box:get_bounding_box()
+    compute_position()
+    local width, height = self.box_img:get_size()
+    return self.box_dst_position.x, self.box_dst_position.y, width, height
   end
 
   local function repeat_show_character()
@@ -159,30 +196,7 @@ function dialog_box_manager:create(game)
     self.char_delay = char_delays["fast"]
     self.selected_choice = nil
 
-    -- Determine the position of the dialog box on the screen.
-    local map = game:get_map()
-    local camera_x, camera_y, camera_width, camera_height = map:get_camera_position()
-    local top = false
-    if self.position == "top" then
-      top = true
-    elseif self.position == "auto" then
-      local hero_x, hero_y = map:get_entity("hero"):get_position()
-      if hero_y >= camera_y + (camera_height / 2 + 10) then
-        top = true
-      end
-    end
-
-    -- Set the coordinates of graphic objects.
-    local box_width, box_height = self.box_img:get_size()
-    local x = camera_width / 2 - box_width / 2
-    local y = top and x or (camera_height - x - box_height)
-
-    if type(self.position) == "table" then
-      -- Custom position.
-      self.box_dst_position = self.position
-    else
-      self.box_dst_position = { x = x, y = y }
-    end
+    compute_position()
     self.choice_cursor_dst_position = { x = 0, y = 0 }
 
     self:show_dialog()
