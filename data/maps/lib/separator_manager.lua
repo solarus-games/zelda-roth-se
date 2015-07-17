@@ -30,9 +30,9 @@ function separator_manager:manage_map(map)
           direction = enemy_place.direction,
           name = enemy_place.name,
         })
+        enemy:set_treasure(unpack(enemy_place.treasure))
         enemy_place.enemy = enemy
       end
-
     end
 
   end
@@ -51,8 +51,8 @@ function separator_manager:manage_map(map)
       breed = enemy:get_breed(),
       direction = enemy:get_sprite():get_direction(),
       name = enemy:get_name(),
+      treasure = { enemy:get_treasure() },
       enemy = enemy,
-      -- TODO treasure
     }
   end
 end
