@@ -5379,7 +5379,7 @@ teletransporter{
   width = 640,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside/a2",
+  destination_map = "outside/b2",
   destination = "_side",
 }
 
@@ -5439,21 +5439,21 @@ teletransporter{
 }
 
 dynamic_tile{
+  name = "weak_wall_2_closed",
   layer = 0,
   x = 368,
   y = 832,
+  pattern = "water.cliff.1",
   width = 32,
   height = 16,
-  name = "weak_wall_2_closed",
-  pattern = "water.cliff.1",
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall_2",
   layer = 0,
   x = 376,
   y = 832,
-  name = "weak_wall_2",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "outside_a1_weak_wall",
@@ -5461,21 +5461,21 @@ door{
 }
 
 dynamic_tile{
+  name = "weak_wall_closed",
   layer = 0,
   x = 2016,
   y = 160,
+  pattern = "grass.cliff.1",
   width = 32,
   height = 16,
-  name = "weak_wall_closed",
-  pattern = "grass.cliff.1",
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall",
   layer = 0,
   x = 2024,
   y = 160,
-  name = "weak_wall",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "outside_a1_weak_wall",
@@ -5488,19 +5488,19 @@ wall{
   y = 136,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_6",
   layer = 0,
   x = 2096,
   y = 165,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_6",
 }
 
 wall{
@@ -5509,19 +5509,19 @@ wall{
   y = 824,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_2",
   layer = 0,
   x = 2112,
   y = 853,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_2",
 }
 
 wall{
@@ -5530,19 +5530,19 @@ wall{
   y = 712,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_3",
   layer = 0,
   x = 1392,
   y = 741,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_3",
 }
 
 wall{
@@ -5551,19 +5551,19 @@ wall{
   y = 536,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_4",
   layer = 0,
   x = 864,
   y = 565,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_4",
 }
 
 wall{
@@ -5572,19 +5572,19 @@ wall{
   y = 760,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_5",
   layer = 0,
   x = 592,
   y = 789,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_5",
 }
 
 wall{
@@ -5593,19 +5593,19 @@ wall{
   y = 360,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_7",
   layer = 0,
   x = 48,
   y = 389,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_7",
 }
 
 wall{
@@ -5614,19 +5614,19 @@ wall{
   y = 136,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_8",
   layer = 0,
   x = 272,
   y = 165,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_8",
 }
 
 tile{
@@ -11930,35 +11930,35 @@ tile{
 }
 
 dynamic_tile{
+  name = "invisible_tile_9",
   layer = 1,
   x = 2096,
   y = 848,
+  pattern = "pontoon.border.1",
   width = 8,
   height = 24,
-  name = "invisible_tile_9",
-  pattern = "pontoon.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_8",
   layer = 1,
   x = 2104,
   y = 848,
+  pattern = "pontoon",
   width = 16,
   height = 24,
-  name = "invisible_tile_8",
-  pattern = "pontoon",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_7",
   layer = 1,
   x = 2120,
   y = 848,
+  pattern = "pontoon.border.2",
   width = 8,
   height = 24,
-  name = "invisible_tile_7",
-  pattern = "pontoon.border.2",
   enabled_at_start = true,
 }
 
@@ -11969,7 +11969,7 @@ teletransporter{
   width = 640,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside/a2",
+  destination_map = "outside/b2",
   destination = "_side",
 }
 
@@ -12066,7 +12066,7 @@ npc{
   x = 168,
   y = 93,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -12075,7 +12075,7 @@ npc{
   x = 1336,
   y = 93,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -12084,7 +12084,7 @@ npc{
   x = 24,
   y = 317,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -12092,8 +12092,6 @@ custom_entity{
   layer = 1,
   x = 40,
   y = 349,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_green",
   model = "hammer_stake",
@@ -12103,8 +12101,6 @@ custom_entity{
   layer = 1,
   x = 56,
   y = 349,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_green",
   model = "hammer_stake",
@@ -12115,7 +12111,7 @@ npc{
   x = 2216,
   y = 765,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -12124,7 +12120,7 @@ npc{
   x = 40,
   y = 733,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -12133,7 +12129,7 @@ npc{
   x = 2008,
   y = 109,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -12142,7 +12138,7 @@ npc{
   x = 1448,
   y = 685,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -12239,18 +12235,18 @@ npc{
   x = 360,
   y = 781,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
 dynamic_tile{
+  name = "invisible_tile_16",
   layer = 1,
   x = 2088,
   y = 136,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_16",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -12260,50 +12256,50 @@ wall{
   y = 136,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_2",
   layer = 1,
   x = 2080,
   y = 136,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_2",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_3",
   layer = 1,
   x = 2104,
   y = 136,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_3",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_6",
   layer = 1,
   x = 2096,
   y = 173,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_6",
 }
 
 dynamic_tile{
+  name = "invisible_tile_4",
   layer = 1,
   x = 2104,
   y = 824,
+  pattern = "ladder",
   width = 16,
   height = 24,
-  name = "invisible_tile_4",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -12313,50 +12309,50 @@ wall{
   y = 824,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_5",
   layer = 1,
   x = 2096,
   y = 824,
+  pattern = "ladder.border.1",
   width = 8,
   height = 24,
-  name = "invisible_tile_5",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_6",
   layer = 1,
   x = 2120,
   y = 824,
+  pattern = "ladder.border.2",
   width = 8,
   height = 24,
-  name = "invisible_tile_6",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_2",
   layer = 1,
   x = 2112,
   y = 861,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_2",
 }
 
 dynamic_tile{
+  name = "invisible_tile_10",
   layer = 1,
   x = 1384,
   y = 712,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_10",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -12366,83 +12362,83 @@ wall{
   y = 712,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_11",
   layer = 1,
   x = 1376,
   y = 712,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_11",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_12",
   layer = 1,
   x = 1400,
   y = 712,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_12",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_3",
   layer = 1,
   x = 1392,
   y = 749,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_3",
 }
 
 dynamic_tile{
+  name = "invisible_tile_13",
   layer = 1,
   x = 848,
   y = 560,
+  pattern = "pontoon.border.1",
   width = 8,
   height = 24,
-  name = "invisible_tile_13",
-  pattern = "pontoon.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_14",
   layer = 1,
   x = 856,
   y = 560,
+  pattern = "pontoon",
   width = 16,
   height = 24,
-  name = "invisible_tile_14",
-  pattern = "pontoon",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_15",
   layer = 1,
   x = 872,
   y = 560,
+  pattern = "pontoon.border.2",
   width = 8,
   height = 24,
-  name = "invisible_tile_15",
-  pattern = "pontoon.border.2",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_17",
   layer = 1,
   x = 856,
   y = 536,
+  pattern = "ladder",
   width = 16,
   height = 24,
-  name = "invisible_tile_17",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -12452,83 +12448,83 @@ wall{
   y = 536,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_18",
   layer = 1,
   x = 848,
   y = 536,
+  pattern = "ladder.border.1",
   width = 8,
   height = 24,
-  name = "invisible_tile_18",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_19",
   layer = 1,
   x = 872,
   y = 536,
+  pattern = "ladder.border.2",
   width = 8,
   height = 24,
-  name = "invisible_tile_19",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_4",
   layer = 1,
   x = 864,
   y = 573,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_4",
 }
 
 dynamic_tile{
+  name = "invisible_tile_20",
   layer = 1,
   x = 576,
   y = 784,
+  pattern = "pontoon.border.1",
   width = 8,
   height = 24,
-  name = "invisible_tile_20",
-  pattern = "pontoon.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_21",
   layer = 1,
   x = 584,
   y = 784,
+  pattern = "pontoon",
   width = 16,
   height = 24,
-  name = "invisible_tile_21",
-  pattern = "pontoon",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_22",
   layer = 1,
   x = 600,
   y = 784,
+  pattern = "pontoon.border.2",
   width = 8,
   height = 24,
-  name = "invisible_tile_22",
-  pattern = "pontoon.border.2",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_23",
   layer = 1,
   x = 584,
   y = 760,
+  pattern = "ladder",
   width = 16,
   height = 24,
-  name = "invisible_tile_23",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -12538,83 +12534,83 @@ wall{
   y = 760,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_24",
   layer = 1,
   x = 576,
   y = 760,
+  pattern = "ladder.border.1",
   width = 8,
   height = 24,
-  name = "invisible_tile_24",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_25",
   layer = 1,
   x = 600,
   y = 760,
+  pattern = "ladder.border.2",
   width = 8,
   height = 24,
-  name = "invisible_tile_25",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_5",
   layer = 1,
   x = 592,
   y = 797,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_5",
 }
 
 dynamic_tile{
+  name = "invisible_tile_26",
   layer = 1,
   x = 32,
   y = 384,
+  pattern = "pontoon.border.1",
   width = 8,
   height = 24,
-  name = "invisible_tile_26",
-  pattern = "pontoon.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_27",
   layer = 1,
   x = 40,
   y = 384,
+  pattern = "pontoon",
   width = 16,
   height = 24,
-  name = "invisible_tile_27",
-  pattern = "pontoon",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_28",
   layer = 1,
   x = 56,
   y = 384,
+  pattern = "pontoon.border.2",
   width = 8,
   height = 24,
-  name = "invisible_tile_28",
-  pattern = "pontoon.border.2",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_29",
   layer = 1,
   x = 40,
   y = 360,
+  pattern = "ladder",
   width = 16,
   height = 24,
-  name = "invisible_tile_29",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -12624,83 +12620,83 @@ wall{
   y = 360,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_30",
   layer = 1,
   x = 32,
   y = 360,
+  pattern = "ladder.border.1",
   width = 8,
   height = 24,
-  name = "invisible_tile_30",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_31",
   layer = 1,
   x = 56,
   y = 360,
+  pattern = "ladder.border.2",
   width = 8,
   height = 24,
-  name = "invisible_tile_31",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_7",
   layer = 1,
   x = 48,
   y = 397,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_7",
 }
 
 dynamic_tile{
+  name = "invisible_tile_32",
   layer = 1,
   x = 256,
   y = 160,
+  pattern = "pontoon.border.1",
   width = 8,
   height = 24,
-  name = "invisible_tile_32",
-  pattern = "pontoon.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_33",
   layer = 1,
   x = 264,
   y = 160,
+  pattern = "pontoon",
   width = 16,
   height = 24,
-  name = "invisible_tile_33",
-  pattern = "pontoon",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_34",
   layer = 1,
   x = 280,
   y = 160,
+  pattern = "pontoon.border.2",
   width = 8,
   height = 24,
-  name = "invisible_tile_34",
-  pattern = "pontoon.border.2",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_35",
   layer = 1,
   x = 264,
   y = 136,
+  pattern = "ladder",
   width = 16,
   height = 24,
-  name = "invisible_tile_35",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -12710,40 +12706,40 @@ wall{
   y = 136,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_36",
   layer = 1,
   x = 256,
   y = 136,
+  pattern = "ladder.border.1",
   width = 8,
   height = 24,
-  name = "invisible_tile_36",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_37",
   layer = 1,
   x = 280,
   y = 136,
+  pattern = "ladder.border.2",
   width = 8,
   height = 24,
-  name = "invisible_tile_37",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_8",
   layer = 1,
   x = 272,
   y = 173,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_8",
 }
 
 tile{
@@ -13167,7 +13163,7 @@ teletransporter{
   width = 640,
   height = 16,
   transition = "scrolling",
-  destination_map = "outside/a2",
+  destination_map = "outside/b2",
   destination = "_side",
 }
 
