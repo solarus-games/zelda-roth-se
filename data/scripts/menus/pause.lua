@@ -9,6 +9,12 @@ local help_builder = require("scripts/menus/pause_help")
 
 local pause_manager = {}
 
+-- Name of pause submenu in their order.
+local submenus_order = {
+  inventory = 1,
+  help = 2,
+}
+
 -- Creates a pause menu for the specified game.
 function pause_manager:create(game)
 
@@ -16,33 +22,33 @@ function pause_manager:create(game)
   local pause_submenus
   local submenu_index
 
+  local function set_submenu_index(index)
+
+    if pause_submenus[submenu_index] ~= nil then
+      sol.menu.stop(pause_submenus[submenu_index])
+    end
+    submenu_index = index
+    game:set_value("pause_last_submenu", index)
+    sol.menu.start(pause_menu, pause_submenus[index], false)
+  end
+
   function pause_menu:on_started()
 
     -- Define the available submenus.
 
-    pause_submenus = {  -- Array of submenus (inventory, map, etc.).
-      inventory_builder:new(game),
-      help_builder:new(game),
-      -- For now there is only the inventory submenu.
-      -- TODO Add other pause submenus here:
-      -- - monsters
-      -- - map
-      -- - options
-    }
-
-    -- Select the submenu that was saved if any.
-    submenu_index = game:get_value("pause_last_submenu") or 1
-    if submenu_index <= 0
-        or submenu_index > #pause_submenus then
-      submenu_index = 1
-    end
-    game:set_value("pause_last_submenu", submenu_index)
+    -- Array of submenus (inventory, map, etc.).
+    pause_submenus = {}
+    pause_submenus[submenus_order.inventory] = inventory_builder:new(game)
+    pause_submenus[submenus_order.help] = help_builder:new(game)
+    -- TODO Add other pause submenus here:
+    -- - monsters
+    -- - map
 
     -- Play the sound of pausing the game.
     sol.audio.play_sound("pause_open")
 
-    -- Start the selected submenu.
-    sol.menu.start(pause_menu, pause_submenus[submenu_index])
+    -- Show the inventory initially.
+    set_submenu_index(submenus_order.inventory)
   end
 
   function pause_menu:on_finished()
@@ -52,19 +58,40 @@ function pause_manager:create(game)
   function pause_menu:next_submenu()
 
     sol.audio.play_sound("pause_closed")
-    sol.menu.stop(pause_submenus[submenu_index])
-    submenu_index = (submenu_index % #pause_submenus) + 1
-    game:set_value("pause_last_submenu", submenu_index)
-    sol.menu.start(pause_menu, pause_submenus[submenu_index], false)
+    set_submenu_index((submenu_index % #pause_submenus) + 1)
   end
 
   function pause_menu:previous_submenu()
 
     sol.audio.play_sound("pause_closed")
-    sol.menu.stop(pause_submenus[submenu_index])
-    submenu_index = (submenu_index + 2) % #pause_submenus + 1
-    game:set_value("pause_last_submenu", submenu_index)
-    sol.menu.start(pause_menu, pause_submenus[submenu_index], false)
+    set_submenu_index((submenu_index + 2) % #pause_submenus + 1)
+  end
+
+  function pause_menu:switch_submenu(submenu_name)
+
+    local index = submenus_order[submenu_name]
+    if index == nil then
+      return
+    end
+    if game:is_paused() and submenu_index == index then
+      -- Already the active one: close it.
+        sol.audio.play_sound("pause_closed")
+        game:set_paused(false)
+    else
+      -- Open the specified submenu.
+      if not game:is_paused() then
+        game:set_paused(true)
+      else
+        sol.audio.play_sound("pause_closed")
+      end
+      if submenu_index ~= index then
+        set_submenu_index(index)
+      end
+    end
+  end
+
+  function pause_menu:close()
+    sol.menu.stop(pause_menu)
   end
 
   function pause_menu:on_command_pressed(command)

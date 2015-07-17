@@ -54,7 +54,7 @@ function help_manager:new(game)
     layout:make_text(title, 72, 16, "center")
 
     layout:make_wooden_frame(16, 200, 288, 32)
-    local footer = tr("help.back") .. " " .. get_game_key("pause") .. " - " .. tr("help.pages")
+    local footer = tr("help.pages") .. " - " .. tr("help.menus")
     layout:make_text(footer, 24, 208)
 
     layout:make_wooden_frame(16, 56, 288, 128)

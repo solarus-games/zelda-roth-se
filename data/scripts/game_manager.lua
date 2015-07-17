@@ -117,6 +117,7 @@ function game_manager:create(file)
     sol.menu.stop(pause_menu)
   end
 
+
   -- Function called when the player goes to another map.
   function game:on_map_changed(map)
 
@@ -124,39 +125,51 @@ function game_manager:create(file)
     hud:on_map_changed(map)
   end
 
+  -- Function called when the player presses a key during the game.
   function game:on_key_pressed(key)
 
     local handled = false
     if key == "left shift"
         or key == "right shift"
         or key == "caps lock" then
+      -- Run.
       update_walking_speed()
       handled = true
 
-    elseif key == "escape" then
+    elseif key == "f1" then
+      -- Help.
       if not game:is_dialog_enabled() then
-        game:start_dialog("save_quit", function(answer)
-          if answer == 2 then
-            -- Continue.
-            sol.audio.play_sound("danger")
-          elseif answer == 3 then
-            -- Save and quit.
-            sol.audio.play_sound("quit")
-            game:save()
-            sol.main.reset()
-          else
-            -- Quit without saving.
-            sol.audio.play_sound("quit")
-            sol.main.reset()
-          end
-        end)
+        game:switch_pause_menu("help")
         handled = true
+      end
+
+    elseif key == "escape" then
+      if not game:is_paused() then
+        if not game:is_dialog_enabled() then
+          game:start_dialog("save_quit", function(answer)
+            if answer == 2 then
+              -- Continue.
+              sol.audio.play_sound("danger")
+            elseif answer == 3 then
+              -- Save and quit.
+              sol.audio.play_sound("quit")
+              game:save()
+              sol.main.reset()
+            else
+              -- Quit without saving.
+              sol.audio.play_sound("quit")
+              sol.main.reset()
+            end
+          end)
+          handled = true
+        end
       end
     end
 
     return handled
   end
 
+  -- Function called when the player releases a key during the game.
   function game:on_key_released(key)
 
     local handled = false
@@ -182,6 +195,12 @@ function game_manager:create(file)
   -- Enables or disables the HUD.
   function game:set_hud_enabled(enable)
     return hud:set_enabled(enable)
+  end
+
+  -- Pauses the game with the specified pause submenu,
+  -- or unpauses the game if this submenu is already active.
+  function game:switch_pause_menu(submenu_name)
+    pause_menu:switch_submenu(submenu_name)
   end
 
   return game

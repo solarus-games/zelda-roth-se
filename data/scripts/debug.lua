@@ -6,15 +6,15 @@ local debug = {}
 function debug:on_key_pressed(key, modifiers)
 
   local handled = true
-  if key == "f1" then
+  if key == "1" then
     if sol.game.exists("save1.dat") then
       sol.main:start_savegame(game_manager:create("save1.dat"))
     end
-  elseif key == "f2" then
+  elseif key == "2" then
     if sol.game.exists("save2.dat") then
       sol.main:start_savegame(game_manager:create("save2.dat"))
     end
-  elseif key == "f3" then
+  elseif key == "3" then
     if sol.game.exists("save3.dat") then
       sol.main:start_savegame(game_manager:create("save3.dat"))
     end
