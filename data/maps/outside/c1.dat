@@ -63,7 +63,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 0,
+  x = -8,
   y = 0,
   width = 960,
   height = 1200,
@@ -8422,6 +8422,24 @@ tile{
   pattern = "invisible_wall",
 }
 
+tile{
+  layer = 1,
+  x = 576,
+  y = 976,
+  width = 32,
+  height = 16,
+  pattern = "grass.under_bush",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "grass.under_bush",
+}
+
 teletransporter{
   layer = 1,
   x = -16,
@@ -8479,7 +8497,7 @@ npc{
   x = 456,
   y = 813,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#outside_c1.link_house_sign",
 }
@@ -8520,7 +8538,7 @@ npc{
   x = 824,
   y = 429,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#outside_c1.temple_sign",
 }
@@ -8648,17 +8666,6 @@ destructible{
 
 destructible{
   layer = 1,
-  x = 920,
-  y = 1181,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
   x = 936,
   y = 1181,
   treasure_name = "random",
@@ -8710,10 +8717,10 @@ pickable{
 }
 
 destination{
+  name = "from_dungeon_1_east",
   layer = 1,
   x = 800,
   y = 349,
-  name = "from_dungeon_1_east",
   direction = 3,
 }
 
@@ -8843,8 +8850,6 @@ custom_entity{
   layer = 1,
   x = 88,
   y = 205,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_green",
   model = "hammer_stake",
@@ -8872,13 +8877,13 @@ destructible{
 }
 
 dynamic_tile{
+  name = "weak_wall_closed",
   layer = 1,
   x = 880,
   y = 32,
+  pattern = "grass.cliff.1",
   width = 32,
   height = 16,
-  name = "weak_wall_closed",
-  pattern = "grass.cliff.1",
   enabled_at_start = true,
 }
 
@@ -8896,18 +8901,16 @@ custom_entity{
   layer = 1,
   x = 88,
   y = 221,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_green",
   model = "hammer_stake",
 }
 
 door{
+  name = "weak_wall",
   layer = 1,
   x = 888,
   y = 32,
-  name = "weak_wall",
   direction = 1,
   sprite = "entities/door_weak_wall",
   savegame_variable = "outside_c1_weak_wall",
@@ -8970,19 +8973,19 @@ wall{
   y = 1064,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_2",
   layer = 1,
   x = 336,
   y = 1093,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_2",
 }
 
 destructible{
@@ -9018,10 +9021,10 @@ destructible{
 }
 
 destination{
+  name = "from_link_house",
   layer = 1,
   x = 480,
   y = 605,
-  name = "from_link_house",
   direction = 3,
 }
 
@@ -9452,6 +9455,39 @@ pickable{
   y = 285,
   treasure_name = "piece_of_heart",
   treasure_savegame_variable = "outside_c1_piece_of_heart_a",
+}
+
+destructible{
+  layer = 1,
+  x = 584,
+  y = 989,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 600,
+  y = 1005,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 600,
+  y = 989,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
 }
 
 tile{
@@ -10716,7 +10752,7 @@ stairs{
   x = 472,
   y = 336,
   direction = 1,
-  subtype = "3",
+  subtype = 3,
 }
 
 teletransporter{
@@ -10730,10 +10766,10 @@ teletransporter{
 }
 
 destination{
+  name = "from_dungeon_1_west",
   layer = 2,
   x = 480,
   y = 349,
-  name = "from_dungeon_1_west",
   direction = 3,
 }
 
@@ -10771,13 +10807,13 @@ destructible{
 }
 
 dynamic_tile{
+  name = "invisible_tile_4",
   layer = 2,
   x = 328,
   y = 1064,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_4",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -10787,40 +10823,40 @@ wall{
   y = 1064,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_5",
   layer = 2,
   x = 320,
   y = 1064,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_5",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_6",
   layer = 2,
   x = 344,
   y = 1064,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_6",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_2",
   layer = 2,
   x = 336,
   y = 1101,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_2",
 }
 
 destructible{
