@@ -5,6 +5,7 @@
 -- local pause_menu = pause_manager:create(game)
 
 local inventory_builder = require("scripts/menus/pause_inventory")
+local map_builder = require("scripts/menus/pause_map")
 local help_builder = require("scripts/menus/pause_help")
 
 local pause_manager = {}
@@ -12,7 +13,8 @@ local pause_manager = {}
 -- Name of pause submenu in their order.
 local submenus_order = {
   inventory = 1,
-  help = 2,
+  map = 2,
+  help = 3,
 }
 
 -- Creates a pause menu for the specified game.
@@ -39,10 +41,10 @@ function pause_manager:create(game)
     -- Array of submenus (inventory, map, etc.).
     pause_submenus = {}
     pause_submenus[submenus_order.inventory] = inventory_builder:new(game)
+    pause_submenus[submenus_order.map] = map_builder:new(game)
     pause_submenus[submenus_order.help] = help_builder:new(game)
     -- TODO Add other pause submenus here:
     -- - monsters
-    -- - map
 
     -- Play the sound of pausing the game.
     sol.audio.play_sound("pause_open")
@@ -64,7 +66,7 @@ function pause_manager:create(game)
   function pause_menu:previous_submenu()
 
     sol.audio.play_sound("pause_closed")
-    set_submenu_index((submenu_index + 2) % #pause_submenus + 1)
+    set_submenu_index((submenu_index - 2) % #pause_submenus + 1)
   end
 
   function pause_menu:switch_submenu(submenu_name)

@@ -136,9 +136,16 @@ function game_manager:create(file)
       update_walking_speed()
       handled = true
 
+    elseif key == "p" then
+      -- Map.
+      if not game:is_suspended() or game:is_paused() then
+        game:switch_pause_menu("map")
+        handled = true
+      end
+
     elseif key == "f1" then
       -- Help.
-      if not game:is_dialog_enabled() then
+      if not game:is_suspended() or game:is_paused() then
         game:switch_pause_menu("help")
         handled = true
       end

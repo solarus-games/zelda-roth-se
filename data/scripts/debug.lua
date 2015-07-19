@@ -28,9 +28,9 @@ function debug:on_key_pressed(key, modifiers)
     end
 
     -- In-game cheating keys.
-    if key == "p" then
+    if key == "u" then
       game:add_life(5)
-    elseif key == "m" then
+    elseif key == "j" then
       game:remove_life(1)
     elseif key == "o" then
       game:add_money(50)
@@ -40,12 +40,6 @@ function debug:on_key_pressed(key, modifiers)
       game:add_magic(10)
     elseif key == "k" then
       game:remove_magic(4)
-    elseif key == "kp 7" then
-      game:set_max_magic(0)
-    elseif key == "kp 8" then
-      game:set_max_magic(42)
-    elseif key == "kp 9" then
-      game:set_max_magic(84)
     elseif key == "kp 1" then
       local tunic = game:get_item("tunic")
       local variant = math.max(1, tunic:get_variant() - 1)
@@ -75,12 +69,12 @@ function debug:on_key_pressed(key, modifiers)
     elseif key == "g" and hero ~= nil then
       local x, y, layer = hero:get_position()
       if layer ~= 0 then
-	hero:set_position(x, y, layer - 1)
+        hero:set_position(x, y, layer - 1)
       end
     elseif key == "t" and hero ~= nil then
       local x, y, layer = hero:get_position()
       if layer ~= 2 then
-	hero:set_position(x, y, layer + 1)
+        hero:set_position(x, y, layer + 1)
       end
     elseif key == "r" then
       if hero:get_walking_speed() == 384 then
