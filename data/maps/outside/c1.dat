@@ -8611,30 +8611,8 @@ destructible{
 
 destructible{
   layer = 1,
-  x = 104,
-  y = 797,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
   x = 664,
   y = 829,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 120,
-  y = 797,
   treasure_name = "random",
   sprite = "entities/bush",
   destruction_sound = "bush",

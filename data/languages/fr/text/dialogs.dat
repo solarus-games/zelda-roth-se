@@ -241,3 +241,11 @@ dialog{
 ]]
 }
 
+dialog{
+  id = "small_key_required",
+  text = [[
+Cette porte est verrouillée.
+Il te faut une petite clé pour l'ouvrir !
+]]
+}
+

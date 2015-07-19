@@ -3428,54 +3428,54 @@ wall{
 }
 
 dynamic_tile{
+  name = "weak_wall_b_closed_2",
   layer = 1,
   x = 136,
   y = 960,
+  pattern = "wall.1",
   width = 48,
   height = 24,
-  name = "weak_wall_b_closed_2",
-  pattern = "wall.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_b_closed",
   layer = 1,
   x = 136,
   y = 936,
+  pattern = "wall.2",
   width = 48,
   height = 24,
-  name = "weak_wall_b_closed",
-  pattern = "wall.2",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_a_closed",
   layer = 1,
   x = 320,
   y = 1064,
+  pattern = "wall.3",
   width = 24,
   height = 48,
-  name = "weak_wall_a_closed",
-  pattern = "wall.3",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_a_closed_2",
   layer = 1,
   x = 296,
   y = 1064,
+  pattern = "wall.4",
   width = 24,
   height = 48,
-  name = "weak_wall_a_closed_2",
-  pattern = "wall.4",
   enabled_at_start = true,
 }
 
 door{
+  name = "door_a",
   layer = 1,
   x = 472,
   y = 968,
-  name = "door_a",
   direction = 1,
   sprite = "entities/door_small_key",
   savegame_variable = "dungeon_1_1f_door_a",
@@ -3486,10 +3486,10 @@ door{
 }
 
 door{
+  name = "weak_wall_a",
   layer = 1,
   x = 328,
   y = 1080,
-  name = "weak_wall_a",
   direction = 2,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "dungeon_1_1f_weak_wall_a",
@@ -3530,18 +3530,18 @@ destructible{
 }
 
 destination{
+  name = "from_outside_west",
   layer = 1,
   x = 160,
   y = 1181,
-  name = "from_outside_west",
   direction = 1,
 }
 
 destination{
+  name = "from_outside_east",
   layer = 1,
   x = 640,
   y = 1181,
-  name = "from_outside_east",
   direction = 1,
 }
 
@@ -3566,10 +3566,10 @@ teletransporter{
 }
 
 door{
+  name = "door_a_2",
   layer = 1,
   x = 472,
   y = 936,
-  name = "door_a_2",
   direction = 3,
   sprite = "entities/door_small_key",
   savegame_variable = "dungeon_1_1f_door_a",
@@ -3580,10 +3580,10 @@ door{
 }
 
 door{
-  layer = 1,
-  x = 936,
-  y = 832,
   name = "door_b",
+  layer = 1,
+  x = 936,
+  y = 832,
   direction = 0,
   sprite = "entities/door_small_key",
   savegame_variable = "dungeon_1_1f_door_b",
@@ -3594,10 +3594,10 @@ door{
 }
 
 door{
+  name = "door_b_2",
   layer = 1,
   x = 968,
   y = 832,
-  name = "door_b_2",
   direction = 2,
   sprite = "entities/door_small_key",
   savegame_variable = "dungeon_1_1f_door_b",
@@ -3608,10 +3608,10 @@ door{
 }
 
 door{
+  name = "door_c",
   layer = 1,
   x = 936,
   y = 352,
-  name = "door_c",
   direction = 0,
   sprite = "entities/door_small_key",
   savegame_variable = "dungeon_1_1f_door_c",
@@ -3622,10 +3622,10 @@ door{
 }
 
 door{
+  name = "door_c_2",
   layer = 1,
   x = 968,
   y = 352,
-  name = "door_c_2",
   direction = 2,
   sprite = "entities/door_small_key",
   savegame_variable = "dungeon_1_1f_door_c",
@@ -3636,10 +3636,10 @@ door{
 }
 
 door{
+  name = "weak_wall_a_2",
   layer = 1,
   x = 296,
   y = 1080,
-  name = "weak_wall_a_2",
   direction = 0,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "dungeon_1_1f_weak_wall_a",
@@ -3647,10 +3647,10 @@ door{
 }
 
 door{
+  name = "weak_wall_b_2",
   layer = 1,
   x = 152,
   y = 968,
-  name = "weak_wall_b_2",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "dungeon_1_1f_weak_wall_b",
@@ -3658,10 +3658,10 @@ door{
 }
 
 door{
+  name = "weak_wall_b",
   layer = 1,
   x = 152,
   y = 936,
-  name = "weak_wall_b",
   direction = 3,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "dungeon_1_1f_weak_wall_b",
@@ -3669,30 +3669,30 @@ door{
 }
 
 enemy{
+  name = "auto_enemy_9",
   layer = 1,
   x = 72,
   y = 1045,
-  name = "auto_enemy_9",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_rupee",
 }
 
 enemy{
+  name = "auto_enemy_10",
   layer = 1,
   x = 248,
   y = 1045,
-  name = "auto_enemy_10",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_rupee",
 }
 
 enemy{
+  name = "auto_enemy_8",
   layer = 1,
   x = 72,
   y = 797,
-  name = "auto_enemy_8",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_rupee",
@@ -3807,20 +3807,20 @@ wall{
 }
 
 enemy{
+  name = "auto_enemy_3",
   layer = 1,
   x = 640,
   y = 349,
-  name = "auto_enemy_3",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
 }
 
 enemy{
+  name = "auto_enemy_5",
   layer = 1,
   x = 680,
   y = 493,
-  name = "auto_enemy_5",
   direction = 3,
   breed = "keese",
   treasure_name = "random_rupee",
@@ -3836,10 +3836,10 @@ chest{
 }
 
 enemy{
+  name = "auto_enemy_11",
   layer = 1,
   x = 808,
   y = 1077,
-  name = "auto_enemy_11",
   direction = 3,
   breed = "keese",
   treasure_name = "random_rupee",
@@ -3855,60 +3855,60 @@ chest{
 }
 
 enemy{
+  name = "auto_enemy_12",
   layer = 1,
   x = 1120,
   y = 1077,
-  name = "auto_enemy_12",
   direction = 3,
   breed = "keese",
   treasure_name = "random_rupee",
 }
 
 enemy{
+  name = "auto_enemy_7",
   layer = 1,
   x = 632,
   y = 813,
-  name = "auto_enemy_7",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_rupee",
 }
 
 enemy{
+  name = "auto_enemy_6",
   layer = 1,
   x = 728,
   y = 749,
-  name = "auto_enemy_6",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
 }
 
 enemy{
+  name = "auto_enemy_4",
   layer = 1,
   x = 600,
   y = 493,
-  name = "auto_enemy_4",
   direction = 3,
   breed = "keese",
   treasure_name = "random_rupee",
 }
 
 enemy{
+  name = "auto_enemy_2",
   layer = 1,
   x = 824,
   y = 109,
-  name = "auto_enemy_2",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
 }
 
 enemy{
+  name = "auto_enemy",
   layer = 1,
   x = 488,
   y = 109,
-  name = "auto_enemy",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
@@ -3942,26 +3942,26 @@ chest{
 }
 
 destination{
+  name = "from_b1_w",
   layer = 1,
   x = 160,
   y = 589,
-  name = "from_b1_w",
   direction = 3,
 }
 
 destination{
+  name = "from_b1_c",
   layer = 1,
   x = 640,
   y = 477,
-  name = "from_b1_c",
   direction = 3,
 }
 
 destination{
+  name = "from_b1_e",
   layer = 1,
   x = 1120,
   y = 589,
-  name = "from_b1_e",
   direction = 3,
 }
 
@@ -4000,7 +4000,7 @@ stairs{
   x = 152,
   y = 576,
   direction = 3,
-  subtype = "3",
+  subtype = 3,
 }
 
 stairs{
@@ -4008,7 +4008,7 @@ stairs{
   x = 632,
   y = 464,
   direction = 3,
-  subtype = "3",
+  subtype = 3,
 }
 
 stairs{
@@ -4016,7 +4016,7 @@ stairs{
   x = 1112,
   y = 576,
   direction = 3,
-  subtype = "3",
+  subtype = 3,
 }
 
 tile{
@@ -4569,162 +4569,162 @@ tile{
 }
 
 dynamic_tile{
-  layer = 2,
-  x = 312,
-  y = 1040,
-  width = 8,
-  height = 96,
   name = "weak_wall_a_closed_3",
+  layer = 2,
+  x = 312,
+  y = 1040,
   pattern = "door_cache.4",
+  width = 8,
+  height = 96,
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_a_closed_4",
   layer = 2,
   x = 320,
   y = 1040,
+  pattern = "door_cache.3",
   width = 8,
   height = 96,
-  name = "weak_wall_a_closed_4",
-  pattern = "door_cache.3",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_a_open",
   layer = 2,
   x = 312,
   y = 1072,
+  pattern = "door_top.blast.4",
   width = 8,
   height = 32,
-  name = "weak_wall_a_open",
-  pattern = "door_top.blast.4",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_a_open_2",
   layer = 2,
   x = 320,
   y = 1072,
+  pattern = "door_top.blast.3",
   width = 8,
   height = 32,
-  name = "weak_wall_a_open_2",
-  pattern = "door_top.blast.3",
   enabled_at_start = true,
 }
 
 dynamic_tile{
-  layer = 2,
-  x = 112,
-  y = 952,
-  width = 96,
-  height = 8,
   name = "weak_wall_b_open_3",
+  layer = 2,
+  x = 112,
+  y = 952,
   pattern = "door_cache.2",
+  width = 96,
+  height = 8,
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_b_open_4",
   layer = 2,
   x = 112,
   y = 960,
+  pattern = "door_cache.1",
   width = 96,
   height = 8,
-  name = "weak_wall_b_open_4",
-  pattern = "door_cache.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_b_open_2",
   layer = 2,
   x = 144,
   y = 960,
+  pattern = "door_top.blast.1",
   width = 32,
   height = 8,
-  name = "weak_wall_b_open_2",
-  pattern = "door_top.blast.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_b_open",
   layer = 2,
   x = 144,
   y = 952,
+  pattern = "door_top.blast.2",
   width = 32,
   height = 8,
-  name = "weak_wall_b_open",
-  pattern = "door_top.blast.2",
   enabled_at_start = true,
 }
 
 separator{
+  name = "auto_separator_7",
   layer = 2,
   x = 312,
   y = 0,
   width = 16,
   height = 1200,
-  name = "auto_separator_7",
 }
 
 separator{
+  name = "auto_separator_8",
   layer = 2,
   x = 952,
   y = 0,
   width = 16,
   height = 1200,
-  name = "auto_separator_8",
 }
 
 separator{
+  name = "auto_separator",
   layer = 2,
   x = 0,
   y = 232,
   width = 1280,
   height = 16,
-  name = "auto_separator",
 }
 
 separator{
+  name = "auto_separator_4",
   layer = 2,
   x = 0,
   y = 952,
   width = 1280,
   height = 16,
-  name = "auto_separator_4",
 }
 
 separator{
-  layer = 2,
-  x = 0,
-  y = 472,
-  width = 320,
-  height = 16,
   name = "auto_separator_2",
+  layer = 2,
+  x = 0,
+  y = 472,
+  width = 320,
+  height = 16,
 }
 
 separator{
+  name = "auto_separator_3",
   layer = 2,
   x = 0,
   y = 712,
   width = 320,
   height = 16,
-  name = "auto_separator_3",
 }
 
 separator{
+  name = "auto_separator_5",
   layer = 2,
   x = 960,
   y = 712,
   width = 320,
   height = 16,
-  name = "auto_separator_5",
 }
 
 separator{
+  name = "auto_separator_6",
   layer = 2,
   x = 960,
   y = 472,
   width = 320,
   height = 16,
-  name = "auto_separator_6",
 }
 

@@ -1,5 +1,7 @@
 local item = ...
 
+local sound_timer
+
 function item:on_created()
 
   self:set_savegame_variable("possession_bomb_counter")
@@ -12,7 +14,12 @@ end
 function item:on_using()
 
   if self:get_amount() == 0 then
-    sol.audio.play_sound("wrong")
+    if sound_timer == nil then
+      sol.audio.play_sound("wrong")
+      sound_timer = sol.timer.start(item:get_game(), 500, function()
+        sound_timer = nil
+      end)
+    end
   else
     self:remove_amount(1)
     local x, y, layer = self:create_bomb()
