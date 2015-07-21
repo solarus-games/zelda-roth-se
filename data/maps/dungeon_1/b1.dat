@@ -1776,10 +1776,10 @@ wall{
 }
 
 door{
+  name = "door",
   layer = 1,
   x = 632,
   y = 248,
-  name = "door",
   direction = 1,
   sprite = "entities/door_big_key",
   savegame_variable = "dungeon_1_boss_door",
@@ -1844,10 +1844,10 @@ destructible{
 }
 
 door{
+  name = "door_2",
   layer = 1,
   x = 632,
   y = 216,
-  name = "door_2",
   direction = 3,
   sprite = "entities/door_big_key",
   savegame_variable = "dungeon_1_boss_door",
@@ -1857,10 +1857,10 @@ door{
 }
 
 enemy{
+  name = "auto_enemy_5",
   layer = 1,
   x = 184,
   y = 845,
-  name = "auto_enemy_5",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
@@ -1891,10 +1891,10 @@ enemy{
 }
 
 enemy{
+  name = "auto_enemy_6",
   layer = 1,
   x = 688,
   y = 821,
-  name = "auto_enemy_6",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
@@ -1925,10 +1925,10 @@ enemy{
 }
 
 enemy{
+  name = "auto_enemy_7",
   layer = 1,
   x = 1120,
   y = 845,
-  name = "auto_enemy_7",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
@@ -1965,66 +1965,66 @@ wall{
 }
 
 enemy{
-  layer = 1,
-  x = 480,
-  y = 613,
   name = "auto_enemy_3",
+  layer = 1,
+  x = 480,
+  y = 613,
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
 }
 
 enemy{
+  name = "auto_enemy_4",
   layer = 1,
   x = 800,
   y = 613,
-  name = "auto_enemy_4",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
 }
 
 enemy{
+  name = "auto_enemy_2",
   layer = 1,
   x = 800,
   y = 373,
-  name = "auto_enemy_2",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
 }
 
 enemy{
+  name = "auto_enemy",
   layer = 1,
   x = 480,
   y = 373,
-  name = "auto_enemy",
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
 }
 
 destination{
+  name = "from_1f_w",
   layer = 1,
   x = 160,
   y = 605,
-  name = "from_1f_w",
   direction = 3,
 }
 
 destination{
+  name = "from_1f_c",
   layer = 1,
   x = 640,
   y = 493,
-  name = "from_1f_c",
   direction = 3,
 }
 
 destination{
+  name = "from_1f_e",
   layer = 1,
   x = 1120,
   y = 605,
-  name = "from_1f_e",
   direction = 3,
 }
 
@@ -2063,7 +2063,7 @@ stairs{
   x = 152,
   y = 592,
   direction = 1,
-  subtype = "2",
+  subtype = 2,
 }
 
 stairs{
@@ -2071,7 +2071,7 @@ stairs{
   x = 632,
   y = 480,
   direction = 1,
-  subtype = "2",
+  subtype = 2,
 }
 
 stairs{
@@ -2079,7 +2079,124 @@ stairs{
   x = 1112,
   y = 592,
   direction = 1,
-  subtype = "2",
+  subtype = 2,
+}
+
+sensor{
+  name = "dungeon_room_1_1",
+  layer = 1,
+  x = 640,
+  y = 237,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_1",
+  layer = 1,
+  x = 640,
+  y = 253,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_2",
+  layer = 1,
+  x = 640,
+  y = 501,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_3_1",
+  layer = 1,
+  x = 160,
+  y = 613,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_3_2",
+  layer = 1,
+  x = 160,
+  y = 717,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5_1",
+  layer = 1,
+  x = 160,
+  y = 733,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5_2",
+  layer = 1,
+  x = 312,
+  y = 845,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4_1",
+  layer = 1,
+  x = 1120,
+  y = 717,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4_2",
+  layer = 1,
+  x = 1120,
+  y = 613,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6_1",
+  layer = 1,
+  x = 328,
+  y = 845,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6_2",
+  layer = 1,
+  x = 952,
+  y = 845,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_7_1",
+  layer = 1,
+  x = 968,
+  y = 845,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_7_2",
+  layer = 1,
+  x = 1120,
+  y = 733,
+  width = 16,
+  height = 16,
 }
 
 tile{
@@ -2389,66 +2506,66 @@ tile{
 }
 
 separator{
+  name = "auto_separator_5",
   layer = 2,
   x = 0,
   y = 472,
   width = 320,
   height = 16,
-  name = "auto_separator_5",
 }
 
 separator{
+  name = "auto_separator_7",
   layer = 2,
   x = 0,
   y = 712,
   width = 1280,
   height = 16,
-  name = "auto_separator_7",
 }
 
 separator{
+  name = "auto_separator_6",
   layer = 2,
   x = 960,
   y = 472,
   width = 320,
   height = 16,
-  name = "auto_separator_6",
 }
 
 separator{
+  name = "auto_separator_2",
   layer = 2,
   x = 792,
   y = 0,
   width = 16,
   height = 240,
-  name = "auto_separator_2",
 }
 
 separator{
+  name = "auto_separator",
   layer = 2,
   x = 472,
   y = 0,
   width = 16,
   height = 240,
-  name = "auto_separator",
 }
 
 separator{
+  name = "auto_separator_3",
   layer = 2,
   x = 312,
   y = 240,
   width = 16,
   height = 720,
-  name = "auto_separator_3",
 }
 
 separator{
+  name = "auto_separator_4",
   layer = 2,
   x = 952,
   y = 240,
   width = 16,
   height = 720,
-  name = "auto_separator_4",
 }
 
 separator{

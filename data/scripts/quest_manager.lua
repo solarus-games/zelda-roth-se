@@ -55,6 +55,7 @@ local function initialize_sensor()
   function sensor_meta:on_activated()
 
     local hero = self:get_map():get_hero()
+    local game = self:get_game()
     local name = self:get_name()
 
     -- Sensors named "to_layer_X_sensor" move the hero on that layer.
@@ -69,6 +70,14 @@ local function initialize_sensor()
       if layer > 0 then
         hero:set_position(x, y, layer - 1)
       end
+    end
+
+    -- Sensors prefixed by "dungeon_room_N" save the exploration state of the
+    -- room "N" of the current dungeon floor.
+    local room = name:match("^dungeon_room_(%d+)")
+    if room ~= nil then
+      game:set_explored_dungeon_room(nil, nil, tonumber(room))
+      self:remove()
     end
   end
 end

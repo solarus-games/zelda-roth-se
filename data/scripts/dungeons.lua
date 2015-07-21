@@ -78,6 +78,53 @@ function dungeon_manager:create(game)
     dungeon_index = dungeon_index or game:get_dungeon_index()
     return sol.language.get_string("dungeon_" .. dungeon_index .. ".name")
   end
+
+  -- Returns the name of the boolean variable that stores the exploration
+  -- of a dungeon room, or nil.
+  function game:get_explored_dungeon_room_variable(dungeon_index, floor, room)
+
+    dungeon_index = dungeon_index or game:get_dungeon_index()
+    room = room or 1
+
+    if floor == nil then
+      if game:get_map() ~= nil then
+        floor = game:get_map():get_floor()
+      else
+        floor = 0
+      end
+    end
+
+    local room_name
+    if floor >= 0 then
+      room_name = tostring(floor + 1) .. "f_" .. room
+    else
+      room_name = math.abs(floor) .. "b_" .. room
+    end
+
+    return "dungeon_" .. dungeon_index .. "_explored_" .. room_name
+  end
+
+  -- Returns whether a dungeon room has been explored.
+  function game:has_explored_dungeon_room(dungeon_index, floor, room)
+
+    return self:get_value(
+      self:get_explored_dungeon_room_variable(dungeon_index, floor, room)
+    )
+  end
+
+  -- Changes the exploration state of a dungeon room.
+  function game:set_explored_dungeon_room(dungeon_index, floor, room, explored)
+
+    if explored == nil then
+      explored = true
+    end
+
+    self:set_value(
+      self:get_explored_dungeon_room_variable(dungeon_index, floor, room),
+      explored
+    )
+  end
+
 end
 
 return dungeon_manager

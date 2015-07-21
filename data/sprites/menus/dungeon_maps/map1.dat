@@ -1,0 +1,32 @@
+animation{
+  name = "0",
+  src_image = "menus/dungeon_maps/map1.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 160, frame_height = 160, origin_x = 0, origin_y = 0 },
+    { x = 64, y = 208, frame_width = 32, frame_height = 16, origin_x = -64, origin_y = -48 },
+    { x = 48, y = 224, frame_width = 16, frame_height = 16, origin_x = -48, origin_y = -64 },
+    { x = 64, y = 224, frame_width = 32, frame_height = 48, origin_x = -64, origin_y = -64 },
+    { x = 96, y = 224, frame_width = 16, frame_height = 16, origin_x = -96, origin_y = -64 },
+    { x = 48, y = 240, frame_width = 16, frame_height = 16, origin_x = -48, origin_y = -80 },
+    { x = 96, y = 240, frame_width = 16, frame_height = 16, origin_x = -96, origin_y = -80 },
+    { x = 48, y = 256, frame_width = 16, frame_height = 16, origin_x = -48, origin_y = -96 },
+    { x = 96, y = 256, frame_width = 16, frame_height = 16, origin_x = -96, origin_y = -96 },
+    { x = 48, y = 272, frame_width = 16, frame_height = 16, origin_x = -48, origin_y = -112 },
+    { x = 64, y = 272, frame_width = 32, frame_height = 16, origin_x = -64, origin_y = -112 },
+    { x = 96, y = 272, frame_width = 16, frame_height = 16, origin_x = -96, origin_y = -112 },
+  },
+}
+animation{
+  name = "-1",
+  src_image = "menus/dungeon_maps/map1.png",
+  directions = {
+    { x = 160, y = 0, frame_width = 160, frame_height = 160, origin_x = 0, origin_y = 0 },
+    { x = 232, y = 208, frame_width = 16, frame_height = 16, origin_x = -72, origin_y = -48 },
+    { x = 224, y = 224, frame_width = 32, frame_height = 32, origin_x = -64, origin_y = -64 },
+    { x = 208, y = 240, frame_width = 16, frame_height = 16, origin_x = -48, origin_y = -80 },
+    { x = 256, y = 240, frame_width = 16, frame_height = 16, origin_x = -96, origin_y = -80 },
+    { x = 208, y = 256, frame_width = 16, frame_height = 16, origin_x = -48, origin_y = -96 },
+    { x = 224, y = 256, frame_width = 32, frame_height = 16, origin_x = -64, origin_y = -96 },
+    { x = 256, y = 256, frame_width = 16, frame_height = 16, origin_x = -96, origin_y = -96 },
+  },
+}

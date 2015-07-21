@@ -1,3 +1,7 @@
+-- Map submenu.
+-- Shows the dungeon map when the player is in a dungeon
+-- and the world map otherwise.
+
 local map_manager = {}
 
 local gui_designer = require("scripts/menus/lib/gui_designer")
@@ -20,14 +24,36 @@ function map_manager:new(game)
   local link_head_sprite = sol.sprite.create("menus/hero_head")
   local map_title_img = sol.surface.create("map_parchment.png", true)
   local floors_background_img = sol.surface.create("menus/map_floors_background.png")
-  local grid_img = sol.surface.create("menus/map_grid.png")
   local floors_img = sol.surface.create("floors.png", true)
+  local grid_img = sol.surface.create("menus/map_grid.png")
+  local rooms_sprite
+  local rooms_image
   local dungeon_map_widget
   local selected_floor
   local num_floors
   local map
   local world
+  local dungeon_index
   local dungeon
+
+  local function build_rooms_image()
+
+    rooms_img = sol.surface.create(160, 160)
+    rooms_sprite:set_animation(selected_floor)
+
+    -- Background: show the whole floor as non visited.
+    rooms_sprite:set_direction(0)
+    rooms_sprite:draw(rooms_img)
+
+    for i = 1, rooms_sprite:get_num_directions(floor_animation) - 1 do
+      if game:has_explored_dungeon_room(dungeon_index, selected_floor, i) then
+        -- If the room is visited, show it in another color.
+      rooms_sprite:set_direction(i)
+      rooms_sprite:draw(rooms_img)
+    end
+  end
+
+  end
 
   local function build_dungeon_map_widget()
  
@@ -58,23 +84,29 @@ function map_manager:new(game)
       dungeon_map_widget:make_sprite(sprite, 76, 205)
     end
 
-    -- Floors.
-    local lowest = dungeon.lowest_floor
-    local highest = dungeon.highest_floor
-    local current = game:get_map():get_floor()
-    selected_floor = current
-    num_floors = highest - lowest + 1
+    if game:has_dungeon_map() then
+      -- Floors.
+      local lowest = dungeon.lowest_floor
+      local highest = dungeon.highest_floor
+      local current = game:get_map():get_floor()
+      selected_floor = current
+      num_floors = highest - lowest + 1
 
-    local src_x = 0
-    local src_y = (2 - highest) * 16
-    local src_width = 32
-    local src_height = num_floors * 16
+      local src_x = 0
+      local src_y = (2 - highest) * 16
+      local src_width = 32
+      local src_height = num_floors * 16
 
-    local dst_x = 40
-    local dst_y = 64 + src_y
+      local dst_x = 40
+      local dst_y = 64 + src_y
 
-    dungeon_map_widget:make_image_region(floors_img, src_x, src_y, src_width, src_height, dst_x, dst_y)
-    link_head_sprite:set_xy(0, 0)
+      dungeon_map_widget:make_image_region(floors_img, src_x, src_y, src_width, src_height, dst_x, dst_y)
+      link_head_sprite:set_xy(0, 0)
+
+      -- Rooms.
+      rooms_sprite = sol.sprite.create("menus/dungeon_maps/map" .. dungeon_index)
+      build_rooms_image()
+    end  
   end
 
   local function select_floor_up()
@@ -85,6 +117,7 @@ function map_manager:new(game)
       selected_floor = dungeon.lowest_floor
     end
     link_head_sprite:set_frame(0)
+    build_rooms_image()
   end
 
   local function select_floor_down()
@@ -95,20 +128,26 @@ function map_manager:new(game)
       selected_floor = dungeon.highest_floor
     end
     link_head_sprite:set_frame(0)
+    build_rooms_image()
   end
 
   local function draw_dungeon_map(dst_surface)
 
     dungeon_map_widget:draw(dst_surface)
 
-    -- Show the selected floor.
-    local src_x = 32
-    local src_y = (2 - selected_floor) * 16
-    local dst_x = 40
-    local dst_y = 64 + src_y
-    floors_img:draw_region(src_x, src_y, 32, 16, dst_surface, dst_x, dst_y)
-    dst_x = dst_x - 16
-    link_head_sprite:draw(dst_surface, dst_x, dst_y)
+    if game:has_dungeon_map() then
+      -- Show the selected floor.
+      local src_x = 32
+      local src_y = (2 - selected_floor) * 16
+      local dst_x = 40
+      local dst_y = 64 + src_y
+      floors_img:draw_region(src_x, src_y, 32, 16, dst_surface, dst_x, dst_y)
+      dst_x = dst_x - 16
+      link_head_sprite:draw(dst_surface, dst_x, dst_y)
+
+      -- Show rooms.
+      rooms_img:draw(dst_surface, 128, 48)
+    end
   end
 
   function map_menu:on_started()
@@ -117,7 +156,9 @@ function map_manager:new(game)
 
     map = game:get_map()
     world = map:get_world()
+    dungeon_index = game:get_dungeon_index()
     dungeon = game:get_dungeon()
+    rooms_img = nil
     local hero = map:get_hero()
     if dungeon == nil then
       -- World map.
