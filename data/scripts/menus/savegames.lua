@@ -24,7 +24,7 @@ local function build_layout()
 
   layout = gui_designer:create(320, 240)
 
-  layout:make_background()
+  layout:make_green_tiled_background()
   layout:make_big_wooden_frame(16, 8, 160, 32)
   layout:make_text(sol.language.get_string("savegames_menu.title"), 96, 16, "center")
   layout:make_wooden_frame(16, 48, 288, 32)

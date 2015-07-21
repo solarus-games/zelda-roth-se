@@ -15,7 +15,7 @@ function dungeon_manager:create(game)
       floor_height = 1200,
       lowest_floor = -1,
       highest_floor = 0,
-      maps = { "dungeon_1_b1", "dungeon_1_1f" },
+      maps = { "dungeon_1/b1", "dungeon_1/1f" },
       boss = {
         floor = -1,
         x = 640,

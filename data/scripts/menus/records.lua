@@ -24,7 +24,7 @@ local function build_layout()
 
   layout = gui_designer:create(320, 240)
 
-  layout:make_background()
+  layout:make_green_tiled_background()
 
   layout:make_big_wooden_frame(16, 8, 96, 32)
   layout:make_text(sol.language.get_string("records_menu.title"), 64, 16, "center")

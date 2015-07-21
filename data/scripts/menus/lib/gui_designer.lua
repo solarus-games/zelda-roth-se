@@ -85,14 +85,41 @@ function gui_designer:create(width, height)
   local widget = {}
   local canvas = sol.surface.create(width, height)
 
-  -- Fills the entire widget with the background pattern.
-  function widget:make_background()
-    draw_tiled_region(get_frames_img(), 72, 8, 16, 16, canvas, 0, 0, width, height)
+  -- Fills a rectangle with a green tiled background image.
+  function widget:make_green_tiled_background(x, y, w, h)
+    x = x or 0
+    y = y or 0
+    w = w or width
+    h = h or height
+    draw_tiled_region(get_frames_img(), 72, 8, 16, 16, canvas, x, y, w, h)
+  end
+
+  -- Fills a rectangle with brown color.
+  function widget:make_brown_background(x, y, w, h)
+    x = x or 0
+    y = y or 0
+    w = w or width
+    h = h or height
+    draw_tiled_region(get_frames_img(), 112, 0, 16, 16, canvas, x, y, w, h)
+  end
+
+  -- Fills a rectangle the specified color.
+  function widget:make_color_background(color, x, y, w, h)
+    x = x or 0
+    y = y or 0
+    w = w or width
+    h = h or height
+    canvas:fill_color(color, x, y, w, h)
   end
 
   -- Makes a frame of the specified size with a wooden border.
   function widget:make_wooden_frame(x, y, width, height)
     draw_frame_8_8(48, 0, canvas, x, y, width, height)
+  end
+
+  -- Makes a frame of the specified size with a dark wooden border.
+  function widget:make_dark_wooden_frame(x, y, width, height)
+    draw_frame_8_8(88, 0, canvas, x, y, width, height)
   end
 
   -- Makes a frame of the specified size with a green border.
