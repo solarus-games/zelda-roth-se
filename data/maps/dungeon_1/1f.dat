@@ -1,6 +1,6 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 960,
+  y = 720,
   width = 1280,
   height = 1200,
   world = "dungeon_1",

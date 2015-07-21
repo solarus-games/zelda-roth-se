@@ -26,15 +26,28 @@ function map_manager:new(game)
   local floors_background_img = sol.surface.create("menus/map_floors_background.png")
   local floors_img = sol.surface.create("floors.png", true)
   local grid_img = sol.surface.create("menus/map_grid.png")
+  local boss_icon_img = sol.surface.create("menus/boss_icon.png")
+  local chest_icon_img = sol.surface.create("menus/chest_icon.png")
   local rooms_sprite
-  local rooms_image
+  local rooms_img
   local dungeon_map_widget
+  local current_floor
   local selected_floor
   local num_floors
   local map
   local world
   local dungeon_index
   local dungeon
+
+  -- Converts coordinates relative to the floor
+  -- into coordinates relative to the dungeon minimap widget.
+  local function to_dungeon_minimap_coordinates(x, y)
+
+    local scale_x, scale_y = 160 / 3200, 160 / 2400  -- The minimap is a grid of 10*10 rooms.
+    x = 128 + x * scale_x
+    y = 48 + y * scale_y
+    return x, y
+  end
 
   local function build_rooms_image()
 
@@ -88,8 +101,8 @@ function map_manager:new(game)
       -- Floors.
       local lowest = dungeon.lowest_floor
       local highest = dungeon.highest_floor
-      local current = game:get_map():get_floor()
-      selected_floor = current
+      current_floor = game:get_map():get_floor()
+      selected_floor = current_floor
       num_floors = highest - lowest + 1
 
       local src_x = 0
@@ -101,12 +114,51 @@ function map_manager:new(game)
       local dst_y = 64 + src_y
 
       dungeon_map_widget:make_image_region(floors_img, src_x, src_y, src_width, src_height, dst_x, dst_y)
-      link_head_sprite:set_xy(0, 0)
 
       -- Rooms.
       rooms_sprite = sol.sprite.create("menus/dungeon_maps/map" .. dungeon_index)
       build_rooms_image()
-    end  
+    end
+
+    -- If the player has the compass, show the chests and the boss.
+    if game:has_dungeon_compass() then
+
+      -- Boss.
+      local boss = dungeon.boss
+      if boss ~= nil
+          and boss.floor == selected_floor
+          and boss.savegame_variable ~= nil
+          and not game:get_value(boss.savegame_variable) then
+      local dst_x, dst_y = to_dungeon_minimap_coordinates(boss.x, boss.y)
+      dst_x, dst_y = dst_x - 4, dst_y - 4
+      boss_icon_img:draw(floors_img, dst_x, dst_y)
+    end
+
+    -- Chests.
+    if self.dungeon.chests == nil then
+      -- Lazily load the chest information.
+      self:load_chests()
+    end
+    for _, chest in ipairs(self.dungeon.chests) do
+
+      if chest.floor == self.selected_floor
+          and chest.savegame_variable ~= nil
+          and not self.game:get_value(chest.savegame_variable) then
+          -- Chests coordinates are already relative to its floor.
+        local dst_x, dst_y = self:to_dungeon_minimap_coordinates(chest.x, chest.y)
+        dst_y = dst_y - 1
+        if chest.big then
+          dst_x = dst_x - 3
+          self.dungeon_map_icons_img:draw_region(78, 12, 6, 4,
+          self.dungeon_map_img, dst_x, dst_y)
+        else
+          dst_x = dst_x - 2
+          self.dungeon_map_icons_img:draw_region(78, 8, 4, 4,
+          self.dungeon_map_img, dst_x, dst_y)
+        end
+      end
+    end
+  end
   end
 
   local function select_floor_up()
@@ -142,11 +194,29 @@ function map_manager:new(game)
       local dst_x = 40
       local dst_y = 64 + src_y
       floors_img:draw_region(src_x, src_y, 32, 16, dst_surface, dst_x, dst_y)
-      dst_x = dst_x - 16
+
+      -- Show Link's head near his floor.
+      dst_x = 24
+      dst_y = (2 - current_floor) * 16 + 64
       link_head_sprite:draw(dst_surface, dst_x, dst_y)
+
+      -- Show the boss icon near his floor.
+      if game:has_dungeon_compass() and dungeon.boss ~= nil then
+        dst_x = 76
+        dst_y = (2 - dungeon.boss.floor) * 16 + 68
+        boss_icon_img:draw(dst_surface, dst_x, dst_y)
+      end
 
       -- Show rooms.
       rooms_img:draw(dst_surface, 128, 48)
+
+      local map_x, map_y = map:get_location()
+      local hero_x, hero_y = map:get_hero():get_position()
+      dst_x, dst_y = to_dungeon_minimap_coordinates(map_x + hero_x, map_y + hero_y)
+      dst_x, dst_y = dst_x - 8, dst_y - 8
+      if selected_floor == current_floor then
+        link_head_sprite:draw(dst_surface, dst_x, dst_y)
+      end
     end
   end
 

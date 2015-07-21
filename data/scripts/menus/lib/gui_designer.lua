@@ -185,15 +185,14 @@ function gui_designer:create(width, height)
   -- Adds an animated sprite.
   function widget:make_sprite(sprite, dst_x, dst_y)
 
-    sprite:set_xy(dst_x, dst_y)
-    sprites[#sprites + 1] = sprite
+    sprites[#sprites + 1] = { sprite = sprite, x = dst_x, y = dst_y }
   end
 
   -- Draws the widget.
   function widget:draw(dst_surface, dst_x, dst_y)
     canvas:draw(dst_surface, dst_x, dst_y)
-    for _, sprite in ipairs(sprites) do
-      sprite:draw(dst_surface, dst_x, dst_y)
+    for _, sprite_info in ipairs(sprites) do
+      sprite_info.sprite:draw(dst_surface, sprite_info.x, sprite_info.y)
     end
   end
 
