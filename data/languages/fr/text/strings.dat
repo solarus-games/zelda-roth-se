@@ -1,3 +1,4 @@
+text{ key = "dungeon_1.name", value = "Temple de la forêt" }
 text{ key = "help.action", value = "Action :" }
 text{ key = "help.ctrl_and_direction", value = "Ctrl et direction" }
 text{ key = "help.directional_keys", value = "Flèches de direction" }

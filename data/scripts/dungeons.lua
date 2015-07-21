@@ -67,18 +67,17 @@ function dungeon_manager:create(game)
     return game:get_value("dungeon_" .. dungeon_index .. "_compass")
   end
 
-  function game:has_dungeon_big_key(dungeon_index)
-
-    dungeon_index = dungeon_index or game:get_dungeon_index()
-    return game:get_value("dungeon_" .. dungeon_index .. "_big_key")
-  end
-
   function game:has_dungeon_boss_key(dungeon_index)
 
     dungeon_index = dungeon_index or game:get_dungeon_index()
     return game:get_value("dungeon_" .. dungeon_index .. "_boss_key")
   end
 
+  function game:get_dungeon_name(dungeon_index)
+
+    dungeon_index = dungeon_index or game:get_dungeon_index()
+    return sol.language.get_string("dungeon_" .. dungeon_index .. ".name")
+  end
 end
 
 return dungeon_manager

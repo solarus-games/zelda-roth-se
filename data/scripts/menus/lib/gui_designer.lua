@@ -84,6 +84,7 @@ function gui_designer:create(width, height)
 
   local widget = {}
   local canvas = sol.surface.create(width, height)
+  local sprites = {}
 
   -- Fills a rectangle with a green tiled background image.
   function widget:make_green_tiled_background(x, y, w, h)
@@ -181,9 +182,19 @@ function gui_designer:create(width, height)
     src_surface:draw_region(src_x, src_y, src_width, src_height, canvas, dst_x, dst_y)
   end
 
+  -- Adds an animated sprite.
+  function widget:make_sprite(sprite, dst_x, dst_y)
+
+    sprite:set_xy(dst_x, dst_y)
+    sprites[#sprites + 1] = sprite
+  end
+
   -- Draws the widget.
   function widget:draw(dst_surface, dst_x, dst_y)
     canvas:draw(dst_surface, dst_x, dst_y)
+    for _, sprite in ipairs(sprites) do
+      sprite:draw(dst_surface, dst_x, dst_y)
+    end
   end
 
   -- Moves the widget.
