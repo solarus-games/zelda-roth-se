@@ -18,8 +18,8 @@ function dungeon_manager:create(game)
       maps = { "dungeon_1/b1", "dungeon_1/1f" },
       boss = {
         floor = -1,
-        x = 640,
-        y = 120,
+        x = 960 + 640,
+        y = 720 + 120,
         savegame_variable = "dungeon_1_boss",
       },
     },
