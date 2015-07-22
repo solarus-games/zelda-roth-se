@@ -4,21 +4,15 @@
 -- local pause_manager = require("scripts/menus/pause")
 -- local pause_menu = pause_manager:create(game)
 
-local inventory_builder = require("scripts/menus/pause_inventory")
-local map_builder = require("scripts/menus/pause_map")
-local help_builder = require("scripts/menus/pause_help")
-
 local pause_manager = {}
-
--- Name of pause submenu in their order.
-local submenus_order = {
-  inventory = 1,
-  map = 2,
-  help = 3,
-}
 
 -- Creates a pause menu for the specified game.
 function pause_manager:create(game)
+
+  local inventory_builder = require("scripts/menus/pause_inventory")
+  local map_builder = require("scripts/menus/pause_map")
+  local monsters_builder = require("scripts/menus/pause_monsters")
+  local help_builder = require("scripts/menus/pause_help")
 
   local pause_menu = {}
   local pause_submenus
@@ -34,17 +28,34 @@ function pause_manager:create(game)
     sol.menu.start(pause_menu, pause_submenus[index], false)
   end
 
+  local function get_submenus_order()
+
+    local order = {
+      inventory = 1,
+      map = 2,
+      monsters = 3,
+      help = 4,
+    }
+    if not game:has_item("monsters_encyclopedia") then
+      order.monsters = nil
+      order.help = 3
+    end
+    return order
+  end
+
   function pause_menu:on_started()
 
-    -- Define the available submenus.
+    -- Define the available submenus and their order.
+    local submenus_order = get_submenus_order()
 
     -- Array of submenus (inventory, map, etc.).
     pause_submenus = {}
     pause_submenus[submenus_order.inventory] = inventory_builder:new(game)
     pause_submenus[submenus_order.map] = map_builder:new(game)
+    if submenus_order.monsters ~= nil then
+      pause_submenus[submenus_order.monsters] = monsters_builder:new(game)
+    end
     pause_submenus[submenus_order.help] = help_builder:new(game)
-    -- TODO Add other pause submenus here:
-    -- - monsters
 
     -- Play the sound of pausing the game.
     sol.audio.play_sound("pause_open")
@@ -71,6 +82,7 @@ function pause_manager:create(game)
 
   function pause_menu:switch_submenu(submenu_name)
 
+    local submenus_order = get_submenus_order()
     local index = submenus_order[submenu_name]
     if index == nil then
       return

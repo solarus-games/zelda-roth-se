@@ -30,9 +30,9 @@ end
 -- Initialize enemy behavior specific to this quest.
 local function initialize_enemy()
 
-  -- Redefine how to calculate the damage inflicted by the sword.
   local enemy_meta = sol.main.get_metatable("enemy")
 
+  -- Redefine how to calculate the damage inflicted by the sword.
   function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
 
     local force = hero:get_game():get_value("force")
@@ -44,6 +44,14 @@ local function initialize_enemy()
       life_lost = life_lost * 2
     end
     self:remove_life(life_lost)
+  end
+
+  -- When an enemy is killed, add it to the encyclopedia.
+  function enemy_meta:on_dying()
+
+    local breed = self:get_breed()
+    local game = self:get_game()
+    game:get_item("monsters_encyclopedia"):add_monster_type_killed(breed)
   end
 end
 

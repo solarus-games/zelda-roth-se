@@ -143,6 +143,15 @@ function game_manager:create(file)
         handled = true
       end
 
+    elseif key == "m" then
+      -- Monsters.
+      if not game:is_suspended() or game:is_paused() then
+        if game:has_item("monsters_encyclopedia") then
+          game:switch_pause_menu("monsters")
+          handled = true
+        end
+      end
+
     elseif key == "f1" then
       -- Help.
       if not game:is_suspended() or game:is_paused() then

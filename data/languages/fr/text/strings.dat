@@ -31,6 +31,7 @@ text{ key = "pause.inventory.life", value = "VIE" }
 text{ key = "pause.inventory.magic", value = "MAGIE" }
 text{ key = "pause.inventory.status", value = "STATUT :" }
 text{ key = "pause.inventory.time", value = "TEMPS" }
+text{ key = "pause.monsters.title", value = "MONSTRES" }
 text{ key = "records_menu.100_percent_rank", value = "RANG DES 100%" }
 text{ key = "records_menu.back", value = "RETOUR" }
 text{ key = "records_menu.best_time", value = "MEILLEUR TEMPS :" }
