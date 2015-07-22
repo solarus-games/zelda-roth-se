@@ -281,7 +281,8 @@ function inventory_manager:new(game)
       -- Assign an item.
       local item = game:get_item(item_names[cursor_index + 1])
       if cursor_index ~= item_assigned_index
-        and item:has_variant() then
+          and item:has_variant()
+          and item:is_assignable() then
         sol.audio.play_sound("ok")
         game:set_item_assigned(1, item)
         item_assigned_row, item_assigned_column = cursor_row, cursor_column
