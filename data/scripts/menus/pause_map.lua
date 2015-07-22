@@ -100,7 +100,6 @@ function map_manager:new(game)
   local function build_dungeon_map_widget()
  
     dungeon_map_widget = gui_designer:create(320, 240)
-    dungeon_map_widget:make_brown_background()
     dungeon_map_widget:make_dark_wooden_frame(16, 16, 80, 144)
     dungeon_map_widget:make_dark_wooden_frame(16, 176, 80, 48)
     dungeon_map_widget:make_dark_wooden_frame(112, 16, 192, 208)
