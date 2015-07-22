@@ -63,7 +63,7 @@ tile{
 
 tile{
   layer = 1,
-  x = -8,
+  x = 0,
   y = 0,
   width = 960,
   height = 1200,
@@ -8718,7 +8718,7 @@ enemy{
   y = 1077,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8727,7 +8727,7 @@ enemy{
   y = 1093,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8754,7 +8754,7 @@ enemy{
   y = 989,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8763,7 +8763,7 @@ enemy{
   y = 637,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{

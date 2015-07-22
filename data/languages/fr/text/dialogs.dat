@@ -245,6 +245,38 @@ AIDE : Appuie sur F1 pour consulter l'aide.
 }
 
 dialog{
+  id = "monster_house.welcome",
+  text = [[
+Bienvenue Link !
+Laisse-moi t'expliquer ce que je fais ici.
+
+
+Comme tu l'as certainement remarqué, des
+monstres sont apparus partout dans Hyrule.
+C'est la première fois que je vois des monstres
+depuis que tu as vaincu Ganon.
+Et bien j'ai décidé de tous les répertorier.
+
+
+
+L'ennui c'est que je suis bien trop peureux
+pour aller à leur rencontre, alors j'ai besoin
+de ton aide.
+
+Il faut que tu battes chaque type de monstre et
+que tu viennes me faire ton rapport.
+
+
+Je te récompenserai tous les 7 nouveaux types
+d'ennemis vaincus.
+
+
+Si tu veux savoir quels ennemis tu as déjà
+vaincus, appuie sur M.
+]]
+}
+
+dialog{
   id = "outside_c1.link_house_sign",
   text = [[
 N : Maison de Link
@@ -259,6 +291,35 @@ dialog{
 Temple de la Forêt
 
 Sauvez les arbres, mangez du castor !!!
+]]
+}
+
+dialog{
+  id = "outside_c2.ne_sign",
+  text = [[
+E : Entrée de la Forêt
+]]
+}
+
+dialog{
+  id = "outside_c2.nw_sign",
+  text = [[
+N : Mont du Péril
+]]
+}
+
+dialog{
+  id = "outside_c2.se_sign",
+  text = [[
+S : Lac Hylia
+E : Cimetière Hanté
+]]
+}
+
+dialog{
+  id = "outside_c2.sw_sign",
+  text = [[
+S : Vers le Village Cocorico
 ]]
 }
 

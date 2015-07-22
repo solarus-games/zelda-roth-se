@@ -954,6 +954,14 @@ teletransporter{
   destination = "_side",
 }
 
+pickable{
+  layer = 0,
+  x = 888,
+  y = 877,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_c2_piece_of_heart_c",
+}
+
 tile{
   layer = 1,
   x = 1376,
@@ -10969,19 +10977,19 @@ wall{
   y = 632,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_3",
   layer = 1,
   x = 240,
   y = 661,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_3",
 }
 
 destructible{
@@ -11341,8 +11349,9 @@ npc{
   x = 1512,
   y = 109,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_c2.ne_sign",
 }
 
 destructible{
@@ -11427,8 +11436,9 @@ npc{
   x = 632,
   y = 861,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_c2.sw_sign",
 }
 
 destructible{
@@ -11601,19 +11611,381 @@ npc{
   x = 1496,
   y = 845,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_c2.se_sign",
 }
 
 custom_entity{
   layer = 1,
   x = 40,
   y = 525,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_green",
   model = "hammer_stake",
+}
+
+enemy{
+  name = "auto_enemy_5",
+  layer = 1,
+  x = 1128,
+  y = 253,
+  direction = 3,
+  breed = "rope",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_6",
+  layer = 1,
+  x = 1136,
+  y = 381,
+  direction = 3,
+  breed = "pikku",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_7",
+  layer = 1,
+  x = 536,
+  y = 285,
+  direction = 3,
+  breed = "pikku",
+  treasure_name = "random_rupee",
+}
+
+pickable{
+  layer = 1,
+  x = 472,
+  y = 205,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_c2_piece_of_heart_a",
+}
+
+enemy{
+  name = "auto_enemy_8",
+  layer = 1,
+  x = 216,
+  y = 277,
+  direction = 3,
+  breed = "pikku",
+  treasure_name = "random_rupee",
+}
+
+pickable{
+  layer = 1,
+  x = 296,
+  y = 413,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_c2_piece_of_heart_b",
+}
+
+enemy{
+  name = "auto_enemy_9",
+  layer = 1,
+  x = 144,
+  y = 525,
+  direction = 3,
+  breed = "rope",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_10",
+  layer = 1,
+  x = 296,
+  y = 845,
+  direction = 3,
+  breed = "rope",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_11",
+  layer = 1,
+  x = 896,
+  y = 749,
+  direction = 3,
+  breed = "rope",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_12",
+  layer = 1,
+  x = 1120,
+  y = 837,
+  direction = 3,
+  breed = "rope",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_13",
+  layer = 1,
+  x = 1560,
+  y = 405,
+  direction = 3,
+  breed = "pikku",
+  treasure_name = "random_rupee",
+}
+
+custom_entity{
+  layer = 1,
+  x = 8,
+  y = 485,
+  width = 336,
+  height = 8,
+  direction = 3,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 8,
+  y = 237,
+  width = 96,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 152,
+  y = 365,
+  width = 176,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 352,
+  y = 397,
+  width = 8,
+  height = 80,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 128,
+  y = 269,
+  width = 8,
+  height = 80,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 344,
+  y = 477,
+  width = 8,
+  height = 8,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 344,
+  y = 477,
+  width = 8,
+  height = 8,
+  direction = 3,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 344,
+  y = 389,
+  width = 8,
+  height = 8,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 336,
+  y = 381,
+  width = 8,
+  height = 8,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 328,
+  y = 373,
+  width = 8,
+  height = 8,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 136,
+  y = 349,
+  width = 8,
+  height = 8,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 144,
+  y = 357,
+  width = 8,
+  height = 8,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 104,
+  y = 245,
+  width = 8,
+  height = 8,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 112,
+  y = 253,
+  width = 8,
+  height = 8,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 120,
+  y = 261,
+  width = 8,
+  height = 8,
+  direction = 0,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 104,
+  y = 245,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 112,
+  y = 253,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 120,
+  y = 261,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 136,
+  y = 349,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 144,
+  y = 357,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 328,
+  y = 373,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 336,
+  y = 381,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 344,
+  y = 389,
+  width = 8,
+  height = 8,
+  direction = 1,
+  model = "cliff",
+}
+
+npc{
+  layer = 1,
+  x = 440,
+  y = 93,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
+  behavior = "dialog#outside_c2.nw_sign",
+}
+
+destination{
+  name = "from_monster_house",
+  layer = 1,
+  x = 1168,
+  y = 669,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 1160,
+  y = 640,
+  width = 16,
+  height = 16,
+  destination_map = "inside/monster_house",
 }
 
 tile{
@@ -13193,13 +13565,13 @@ teletransporter{
 }
 
 dynamic_tile{
+  name = "invisible_tile_10",
   layer = 2,
   x = 232,
   y = 632,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_10",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -13209,39 +13581,39 @@ wall{
   y = 632,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_2",
   layer = 2,
   x = 224,
   y = 632,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_2",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_3",
   layer = 2,
   x = 248,
   y = 632,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_3",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_4",
   layer = 2,
   x = 240,
   y = 669,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_4",
 }
 

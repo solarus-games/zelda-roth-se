@@ -12,6 +12,7 @@ map{ id = "dungeon_5/b2", description = "Dungeon 5 B2" }
 map{ id = "dungeon_6/1f", description = "Dungeon 6 1F" }
 map{ id = "enemy_store", description = "Enemy Store" }
 map{ id = "inside/link_house", description = "Link's house" }
+map{ id = "inside/monster_house", description = "Monster house" }
 map{ id = "inside_store", description = "Inside Store" }
 map{ id = "intro", description = "Intro" }
 map{ id = "outside/a1", description = "Outside A1 (Desert)" }
@@ -45,6 +46,8 @@ sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/keese", description = "Keese" }
 sprite{ id = "enemies/mothula", description = "Mothula" }
 sprite{ id = "enemies/pike_auto", description = "Pike (always moving)" }
+sprite{ id = "enemies/pikku", description = "Pikku" }
+sprite{ id = "enemies/rope", description = "Rope" }
 sprite{ id = "enemies/skeleton", description = "Skeleton" }
 sprite{ id = "enemies/tentacle", description = "Tentacle" }
 sprite{ id = "entities/arrow", description = "Arrow" }
@@ -112,6 +115,7 @@ sprite{ id = "menus/dungeon_maps/map1", description = "Dungeon 1 map" }
 sprite{ id = "menus/hero_head", description = "Link head" }
 sprite{ id = "menus/item_cursor", description = "Item cursor" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
+sprite{ id = "npc/wizard", description = "Wizard" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }
@@ -267,6 +271,8 @@ enemy{ id = "blue_spider", description = "Blue Spider" }
 enemy{ id = "keese", description = "Keese" }
 enemy{ id = "mothula", description = "Mothula" }
 enemy{ id = "pike_auto", description = "Pike (always moving)" }
+enemy{ id = "pikku", description = "Pikku" }
+enemy{ id = "rope", description = "Rope" }
 enemy{ id = "skeleton", description = "Skeleton" }
 enemy{ id = "tentacle", description = "Tentacle" }
 

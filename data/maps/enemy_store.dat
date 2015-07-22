@@ -8,10 +8,10 @@ properties{
 }
 
 enemy{
+  name = "auto_enemy",
   layer = 1,
   x = 24,
-  y = 37,
-  name = "auto_enemy",
+  y = 45,
   direction = 3,
   breed = "skeleton",
   treasure_name = "random",
@@ -26,32 +26,52 @@ enemy{
 }
 
 enemy{
+  name = "auto_enemy_13",
   layer = 1,
   x = 56,
   y = 157,
-  name = "auto_enemy_13",
   direction = 3,
   breed = "keese",
   treasure_name = "random_rupee",
 }
 
 enemy{
+  name = "auto_enemy_4",
   layer = 1,
   x = 136,
-  y = 37,
-  name = "auto_enemy_4",
+  y = 45,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
-  layer = 1,
-  x = 92,
-  y = 37,
   name = "auto_enemy_3",
+  layer = 1,
+  x = 88,
+  y = 45,
   direction = 3,
   breed = "blue_spider",
   treasure_name = "random_heart",
+}
+
+enemy{
+  name = "auto_enemy_5",
+  layer = 1,
+  x = 232,
+  y = 45,
+  direction = 3,
+  breed = "rope",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_6",
+  layer = 1,
+  x = 264,
+  y = 45,
+  direction = 3,
+  breed = "pikku",
+  treasure_name = "random_rupee",
 }
 

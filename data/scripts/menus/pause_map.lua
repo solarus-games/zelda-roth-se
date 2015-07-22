@@ -235,7 +235,7 @@ function map_manager:new(game)
 
   function map_menu:on_draw(dst_surface)
 
-    if world == "outside" then
+    if dungeon == nil then
       world_map_img:draw(dst_surface)
       link_head_sprite:draw(dst_surface)
     else

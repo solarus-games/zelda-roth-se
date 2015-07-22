@@ -3693,7 +3693,7 @@ enemy{
   y = 1045,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
@@ -3703,7 +3703,7 @@ enemy{
   y = 1045,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
@@ -3713,7 +3713,7 @@ enemy{
   y = 797,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 chest{
@@ -3889,7 +3889,7 @@ enemy{
   y = 813,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
