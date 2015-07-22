@@ -22,6 +22,7 @@ function hud_manager:create(game)
   local arrows_builder = require("scripts/hud/arrows")
   local item_builder = require("scripts/hud/item")
   local small_keys_builder = require("scripts/hud/small_keys")
+  local boss_life_builder = require("scripts/hud/boss_life")
 
   local hearts = hearts_builder:new(game)
   hearts:set_dst_position(-88, 0)
@@ -43,9 +44,13 @@ function hud_manager:create(game)
   item:set_dst_position(27, 15)
   hud.elements[#hud.elements + 1] = item
 
-  local small_keys = small_keys_builder:new(game, 1)
+  local small_keys = small_keys_builder:new(game)
   small_keys:set_dst_position(88, 10)
   hud.elements[#hud.elements + 1] = small_keys
+
+  local boss_life = boss_life_builder:new(game)
+  boss_life:set_dst_position(110, 220)
+  hud.elements[#hud.elements + 1] = boss_life
 
   -- Destroys the HUD.
   function hud:quit()
