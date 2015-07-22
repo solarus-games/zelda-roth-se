@@ -48,6 +48,13 @@ Utilise-le pour écraser les obstacles.
 }
 
 dialog{
+  id = "_treasure.magic_crystal.1",
+  text = [[
+Tu as trouvé un cristal magique !!!
+]]
+}
+
+dialog{
   id = "_treasure.map.1",
   text = [[
 Tu as trouvé la carte du donjon !!!
@@ -94,11 +101,35 @@ cyclone !!!
 }
 
 dialog{
+  id = "boss_key_required",
+  text = [[
+C'est la porte du maître des lieux !
+Il te faut la clé du boss pour l'ouvrir.
+]]
+}
+
+dialog{
+  id = "dungeon_1.crystal_why",
+  text = [[
+A quoi pourra-t-il bien servir ?
+]]
+}
+
+dialog{
   id = "dungeon_1.welcome",
   text = [[
                    Niveau 1
 
               Temple de la Forêt
+]]
+}
+
+dialog{
+  id = "dungeon_finished_save",
+  text = [[
+Souhaites-tu sauvegarder ta partie ?
+                   $? Oui
+                   $? Non
 ]]
 }
 

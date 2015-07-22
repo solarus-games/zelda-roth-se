@@ -202,6 +202,13 @@ animation{
   },
 }
 animation{
+  name = "magic_crystal",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 112, y = 24, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "magic_flask",
   src_image = "entities/items.png",
   directions = {

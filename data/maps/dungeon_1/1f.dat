@@ -4289,6 +4289,17 @@ sensor{
   height = 16,
 }
 
+teletransporter{
+  layer = 1,
+  x = 616,
+  y = 1176,
+  width = 16,
+  height = 16,
+  transition = "immediate",
+  destination_map = "dungeon_1/b1",
+  destination = "boss_shortcut",
+}
+
 tile{
   layer = 2,
   x = 0,

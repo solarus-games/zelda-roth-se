@@ -45,6 +45,8 @@ function dungeon_manager:create(game)
   end
 
   function game:is_dungeon_finished(dungeon_index)
+
+    dungeon_index = dungeon_index or game:get_dungeon_index()
     return game:get_value("dungeon_" .. dungeon_index .. "_finished")
   end
 
@@ -52,6 +54,7 @@ function dungeon_manager:create(game)
     if finished == nil then
       finished = true
     end
+    dungeon_index = dungeon_index or game:get_dungeon_index()
     game:set_value("dungeon_" .. dungeon_index .. "_finished", finished)
   end
 

@@ -40,12 +40,13 @@ tileset{ id = "temple_blue", description = "Temple (blue)" }
 tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
-sprite{ id = "enemies/blue_spider", description = "Enemy: Blue Spider" }
+sprite{ id = "enemies/blue_spider", description = "Blue Spider" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
-sprite{ id = "enemies/keese", description = "Enemy: Keese" }
-sprite{ id = "enemies/pike_auto", description = "Enemy: Pike (always moving)" }
-sprite{ id = "enemies/skeleton", description = "Enemy: Skeleton" }
-sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
+sprite{ id = "enemies/keese", description = "Keese" }
+sprite{ id = "enemies/mothula", description = "Mothula" }
+sprite{ id = "enemies/pike_auto", description = "Pike (always moving)" }
+sprite{ id = "enemies/skeleton", description = "Skeleton" }
+sprite{ id = "enemies/tentacle", description = "Tentacle" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/big_chest", description = "Chest (big)" }
@@ -244,6 +245,7 @@ item{ id = "hookshot", description = "Hookshot" }
 item{ id = "ice_rod", description = "Ice rod" }
 item{ id = "lamp", description = "Lamp" }
 item{ id = "magic_bar", description = "Maximum of magic (none / half / full)" }
+item{ id = "magic_crystal", description = "Magic Crystal" }
 item{ id = "magic_flask", description = "Magic flask (small / big)" }
 item{ id = "map", description = "Dungeon map" }
 item{ id = "monsters_encyclopedia", description = "Monsters Encyclopedia" }
@@ -263,6 +265,7 @@ item{ id = "tunic", description = "Tunic (green / blue / red)" }
 
 enemy{ id = "blue_spider", description = "Blue Spider" }
 enemy{ id = "keese", description = "Keese" }
+enemy{ id = "mothula", description = "Mothula" }
 enemy{ id = "pike_auto", description = "Pike (always moving)" }
 enemy{ id = "skeleton", description = "Skeleton" }
 enemy{ id = "tentacle", description = "Tentacle" }
