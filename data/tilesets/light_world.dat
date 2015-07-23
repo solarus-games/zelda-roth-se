@@ -1,4 +1,4 @@
-background_color{ 104, 184, 104 }
+background_color{ 255, 255, 255 }
 tile_pattern{
   id = "barrier.border",
   ground = "wall",
@@ -67,6 +67,26 @@ tile_pattern{
   y = 160,
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "bridge_a.slab.10",
+  ground = "traversable",
+  default_layer = 0,
+  x = 256,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_a.slab.11",
+  ground = "traversable",
+  default_layer = 0,
+  x = 264,
+  y = 152,
+  width = 8,
+  height = 8,
 }
 
 tile_pattern{
@@ -144,26 +164,6 @@ tile_pattern{
   ground = "traversable",
   default_layer = 0,
   x = 248,
-  y = 152,
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "bridge_a.slab.10",
-  ground = "traversable",
-  default_layer = 0,
-  x = 256,
-  y = 152,
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "bridge_a.slab.11",
-  ground = "traversable",
-  default_layer = 0,
-  x = 264,
   y = 152,
   width = 8,
   height = 8,

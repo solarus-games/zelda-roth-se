@@ -993,8 +993,8 @@ tile{
   layer = 1,
   x = 1568,
   y = 864,
-  width = 16,
-  height = 40,
+  width = 24,
+  height = 96,
   pattern = "grass.soil",
 }
 
@@ -1037,7 +1037,7 @@ tile{
 tile{
   layer = 1,
   x = 656,
-  y = -16,
+  y = 0,
   width = 944,
   height = 768,
   pattern = "grass.soil",
