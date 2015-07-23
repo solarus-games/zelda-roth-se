@@ -42,6 +42,7 @@ tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/fireball_red_small", description = "Red small Fireball" }
 sprite{ id = "enemies/keese", description = "Keese" }
 sprite{ id = "enemies/mothula", description = "Mothula" }
 sprite{ id = "enemies/pike_auto", description = "Pike (always moving)" }
@@ -51,6 +52,7 @@ sprite{ id = "enemies/skeleton", description = "Skeleton" }
 sprite{ id = "enemies/tektite_blue", description = "Blue Tektite" }
 sprite{ id = "enemies/tentacle", description = "Tentacle" }
 sprite{ id = "enemies/zora_feet", description = "Zora (on feet)" }
+sprite{ id = "enemies/zora_water", description = "Zora (in water)" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/big_chest", description = "Chest (big)" }
@@ -153,8 +155,11 @@ music{ id = "zelda", description = "Zelda theme" }
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "bomb", description = "bomb" }
 sound{ id = "boomerang", description = "boomerang" }
+sound{ id = "boss_charge", description = "boss_charge" }
+sound{ id = "boss_fireball", description = "boss_fireball" }
 sound{ id = "boss_hurt", description = "boss_hurt" }
 sound{ id = "boss_killed", description = "boss_killed" }
+sound{ id = "bounce", description = "bounce" }
 sound{ id = "bow", description = "bow" }
 sound{ id = "bush", description = "bush" }
 sound{ id = "cane", description = "cane" }
@@ -165,6 +170,7 @@ sound{ id = "danger", description = "danger" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
 sound{ id = "door_unlocked", description = "door_unlocked" }
+sound{ id = "enemy_awake", description = "enemy_awake" }
 sound{ id = "enemy_hurt", description = "enemy_hurt" }
 sound{ id = "enemy_killed", description = "enemy_killed" }
 sound{ id = "explosion", description = "explosion" }
@@ -179,6 +185,10 @@ sound{ id = "hero_lands", description = "hero_lands" }
 sound{ id = "hero_pushes", description = "hero_pushes" }
 sound{ id = "hero_seen", description = "hero_seen" }
 sound{ id = "hookshot", description = "hookshot" }
+sound{ id = "ice", description = "ice" }
+sound{ id = "internal_stairs_down", description = "internal_stairs_down" }
+sound{ id = "internal_stairs_up", description = "internal_stairs_up" }
+sound{ id = "intro", description = "intro" }
 sound{ id = "item_in_water", description = "item_in_water" }
 sound{ id = "jump", description = "jump" }
 sound{ id = "lamp", description = "lamp" }
@@ -186,7 +196,9 @@ sound{ id = "lift", description = "lift" }
 sound{ id = "magic_bar", description = "magic_bar" }
 sound{ id = "message_end", description = "message_end" }
 sound{ id = "message_letter", description = "message_letter" }
+sound{ id = "monkey", description = "monkey" }
 sound{ id = "monster_hurt", description = "monster_hurt" }
+sound{ id = "octorok", description = "octorok" }
 sound{ id = "ok", description = "ok" }
 sound{ id = "pause_closed", description = "pause_closed" }
 sound{ id = "pause_open", description = "pause_open" }
@@ -208,6 +220,7 @@ sound{ id = "stairs_down_start", description = "stairs_down_start" }
 sound{ id = "stairs_up_end", description = "stairs_up_end" }
 sound{ id = "stairs_up_start", description = "stairs_up_start" }
 sound{ id = "stone", description = "stone" }
+sound{ id = "swim", description = "swim" }
 sound{ id = "switch", description = "switch" }
 sound{ id = "sword1", description = "sword1" }
 sound{ id = "sword2", description = "sword2" }
@@ -224,7 +237,14 @@ sound{ id = "treasure", description = "treasure" }
 sound{ id = "victory", description = "victory" }
 sound{ id = "walk_on_grass", description = "walk_on_grass" }
 sound{ id = "walk_on_water", description = "walk_on_water" }
+sound{ id = "warp", description = "warp" }
+sound{ id = "water_drain", description = "water_drain" }
+sound{ id = "water_drain_begin", description = "water_drain_begin" }
+sound{ id = "water_fill", description = "water_fill" }
+sound{ id = "water_fill_begin", description = "water_fill_begin" }
+sound{ id = "world_warp", description = "world_warp" }
 sound{ id = "wrong", description = "wrong" }
+sound{ id = "zora", description = "zora" }
 
 item{ id = "arrow", description = "Arrows (x1 / x5 / x10)" }
 item{ id = "blue_potion", description = "Blue potion" }
@@ -268,6 +288,7 @@ item{ id = "small_key", description = "Small key" }
 item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
 
+enemy{ id = "fireball_red_small", description = "Red small Fireball" }
 enemy{ id = "keese", description = "Keese" }
 enemy{ id = "mothula", description = "Mothula" }
 enemy{ id = "pike_auto", description = "Pike (always moving)" }
@@ -277,6 +298,7 @@ enemy{ id = "skeleton", description = "Skeleton" }
 enemy{ id = "tektite_blue", description = "Blue Tektite" }
 enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "zora_feet", description = "Zora (on feet)" }
+enemy{ id = "zora_water", description = "Zora (in water)" }
 
 entity{ id = "cliff", description = "Cliff" }
 entity{ id = "hammer_stake", description = "Hammer stake" }
