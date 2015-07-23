@@ -11988,16 +11988,6 @@ teletransporter{
   destination_map = "inside/monster_house",
 }
 
-enemy{
-  name = "auto_enemy_14",
-  layer = 1,
-  x = 1160,
-  y = 733,
-  direction = 3,
-  breed = "zora_water",
-  treasure_name = "random",
-}
-
 tile{
   layer = 2,
   x = 0,
