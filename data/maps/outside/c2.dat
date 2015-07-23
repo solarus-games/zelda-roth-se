@@ -5,7 +5,7 @@ properties{
   height = 960,
   world = "outside",
   tileset = "light_world",
-  music = "same",
+  music = "overworld",
 }
 
 tile{
@@ -1037,7 +1037,7 @@ tile{
 tile{
   layer = 1,
   x = 656,
-  y = 0,
+  y = -16,
   width = 944,
   height = 768,
   pattern = "grass.soil",

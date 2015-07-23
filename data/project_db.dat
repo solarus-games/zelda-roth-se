@@ -41,7 +41,6 @@ tileset{ id = "temple_blue", description = "Temple (blue)" }
 tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
-sprite{ id = "enemies/blue_spider", description = "Blue Spider" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/keese", description = "Keese" }
 sprite{ id = "enemies/mothula", description = "Mothula" }
@@ -49,6 +48,7 @@ sprite{ id = "enemies/pike_auto", description = "Pike (always moving)" }
 sprite{ id = "enemies/pikku", description = "Pikku" }
 sprite{ id = "enemies/rope", description = "Rope" }
 sprite{ id = "enemies/skeleton", description = "Skeleton" }
+sprite{ id = "enemies/tektite_blue", description = "Blue Tektite" }
 sprite{ id = "enemies/tentacle", description = "Tentacle" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
@@ -267,13 +267,13 @@ item{ id = "small_key", description = "Small key" }
 item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
 
-enemy{ id = "blue_spider", description = "Blue Spider" }
 enemy{ id = "keese", description = "Keese" }
 enemy{ id = "mothula", description = "Mothula" }
 enemy{ id = "pike_auto", description = "Pike (always moving)" }
 enemy{ id = "pikku", description = "Pikku" }
 enemy{ id = "rope", description = "Rope" }
 enemy{ id = "skeleton", description = "Skeleton" }
+enemy{ id = "tektite_blue", description = "Blue Tektite" }
 enemy{ id = "tentacle", description = "Tentacle" }
 
 entity{ id = "cliff", description = "Cliff" }

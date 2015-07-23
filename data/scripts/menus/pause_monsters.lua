@@ -15,7 +15,7 @@ local monsters = {
   { enemy = "moblin",              page = 1, frame = { 176, 112, 48, 48 }, xy = { 16, 25 } },
   { enemy = "wizzrobe_white",      page = 1, frame = { 256, 112, 48, 48 }, xy = { 16, 25 } },
   { enemy = "lynel",               page = 1, frame = {  16, 176, 48, 48 }, xy = { 16, 29 } },
-  { enemy = "spider",              page = 1, frame = {  96, 176, 48, 48 }, xy = { 16, 21 } },  -- TODO rename to Blue Tektite
+  { enemy = "tektite_blue",        page = 1, frame = {  96, 176, 48, 48 }, xy = { 16, 21 } },
   { enemy = "vulture",             page = 1, frame = { 176, 176, 48, 48 }, xy = { 16, 21 } },
   { enemy = "geldman",             page = 1, frame = { 252, 176, 56, 48 }, xy = { 20, 21 } },
   { enemy = "keese",               page = 2, frame = {  16,  48, 48, 48 }, xy = { 16, 21 } },

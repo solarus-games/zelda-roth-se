@@ -51,7 +51,7 @@ enemy{
   x = 88,
   y = 45,
   direction = 3,
-  breed = "blue_spider",
+  breed = "tektite_blue",
   treasure_name = "random_heart",
 }
 

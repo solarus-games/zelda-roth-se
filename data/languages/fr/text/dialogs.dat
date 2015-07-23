@@ -245,6 +245,47 @@ AIDE : Appuie sur F1 pour consulter l'aide.
 }
 
 dialog{
+  id = "monster_house.found_all",
+  text = [[
+Je n'en crois pas mes yeux, tu as réussi à
+vaincre tous les types d'ennemis !!!
+Félicitations Link !!!
+]]
+}
+
+dialog{
+  id = "monster_house.no_more_reward",
+  text = [[
+Je suis désolé mais je n'ai plus rien à
+t'offrir...
+]]
+}
+
+dialog{
+  id = "monster_house.one_remaining",
+  text = [[
+Plus qu'un nouvel ennemi avant la prochaine
+récompense !
+]]
+}
+
+dialog{
+  id = "monster_house.remaining",
+  text = [[
+Encore $v ennemis différents avant la prochaine
+récompense.
+]]
+}
+
+dialog{
+  id = "monster_house.reward",
+  text = [[
+Accepte ce cadeau pour ta contribution à mon
+projet :
+]]
+}
+
+dialog{
   id = "monster_house.welcome",
   text = [[
 Bienvenue Link !
