@@ -7,11 +7,12 @@ function enemy:on_created()
 
   enemy:set_life(1)
   enemy:set_damage(2)
-  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  enemy:set_obstacle_behavior("swimming")
   enemy:set_pushed_back_when_hurt(false)
   enemy:set_size(16, 16)
   enemy:set_origin(8, 13)
 
+  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   function sprite:on_animation_finished(animation)
     if animation == "shooting" then
       sprite:set_animation("walking")

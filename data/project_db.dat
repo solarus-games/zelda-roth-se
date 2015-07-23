@@ -118,6 +118,23 @@ sprite{ id = "menus/dungeon_maps/map1", description = "Dungeon 1 map" }
 sprite{ id = "menus/hero_head", description = "Link head" }
 sprite{ id = "menus/item_cursor", description = "Item cursor" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
+sprite{ id = "npc/broom_grandma", description = "Brrom Grandma" }
+sprite{ id = "npc/chicken_boy", description = "Chicken boy" }
+sprite{ id = "npc/static_villager1", description = "Static villager 1" }
+sprite{ id = "npc/static_villager10", description = "Static villager 10" }
+sprite{ id = "npc/static_villager11", description = "Static villager 11" }
+sprite{ id = "npc/static_villager12", description = "Static villager 12" }
+sprite{ id = "npc/static_villager13", description = "Static villager 13" }
+sprite{ id = "npc/static_villager14", description = "Static villager 14" }
+sprite{ id = "npc/static_villager2", description = "Static villager 2" }
+sprite{ id = "npc/static_villager3", description = "Static villager 3" }
+sprite{ id = "npc/static_villager4", description = "Static villager 4" }
+sprite{ id = "npc/static_villager6", description = "Static villager 6" }
+sprite{ id = "npc/static_villager7", description = "Static villager 7" }
+sprite{ id = "npc/static_villager9", description = "Static villager 9" }
+sprite{ id = "npc/villager1", description = "Villager 1" }
+sprite{ id = "npc/villager2", description = "Villager 2" }
+sprite{ id = "npc/villager3", description = "Villager 3" }
 sprite{ id = "npc/wizard", description = "Wizard" }
 
 music{ id = "agahnim", description = "Agahnim theme" }

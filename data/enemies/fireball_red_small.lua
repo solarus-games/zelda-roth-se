@@ -11,6 +11,7 @@ function enemy:on_created()
   enemy:set_size(8, 8)
   enemy:set_origin(4, 4)
   enemy:set_can_hurt_hero_running(true)
+  enemy:set_obstacle_behavior("flying")
   enemy:set_invincible()
   enemy:set_attack_consequence("sword", "custom")
 

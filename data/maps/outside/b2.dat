@@ -4907,6 +4907,16 @@ tile{
   pattern = "grass.tree.roots.3",
 }
 
+block{
+  layer = 1,
+  x = 504,
+  y = 93,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 2,
+}
+
 teletransporter{
   layer = 1,
   x = -16,
@@ -4978,18 +4988,18 @@ npc{
   x = 456,
   y = 77,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b2.n_sign",
 }
 
 block{
   layer = 1,
   x = 504,
   y = 109,
-  direction = -1,
   sprite = "entities/statue",
-  pushable = true,
-  pullable = true,
+  pushable = false,
+  pullable = false,
   maximum_moves = 2,
 }
 
@@ -4998,8 +5008,9 @@ npc{
   x = 72,
   y = 829,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b2.sw_sign",
 }
 
 npc{
@@ -5007,7 +5018,7 @@ npc{
   x = 440,
   y = 813,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -5016,8 +5027,9 @@ npc{
   x = 552,
   y = 877,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b2.s_sign",
 }
 
 destructible{
@@ -5616,6 +5628,37 @@ custom_entity{
   height = 8,
   direction = 1,
   model = "cliff",
+}
+
+npc{
+  name = "welcome_npc",
+  layer = 1,
+  x = 472,
+  y = 685,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/villager1",
+  behavior = "dialog#outside_b2.village_welcome_npc",
+}
+
+npc{
+  layer = 1,
+  x = 728,
+  y = 597,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/chicken_boy",
+  behavior = "dialog#outside_b2.chicken_boy",
+}
+
+npc{
+  layer = 1,
+  x = 248,
+  y = 469,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/broom_grandma",
+  behavior = "dialog#outside_b2.broom_grandma",
 }
 
 tile{

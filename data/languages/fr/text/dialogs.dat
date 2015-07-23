@@ -318,6 +318,59 @@ vaincus, appuie sur M.
 }
 
 dialog{
+  id = "outside_b2.broom_grandma",
+  text = [[
+Quelle belle journée !
+]]
+}
+
+dialog{
+  id = "outside_b2.chicken_boy",
+  text = [[
+Pourquoi ai-je accepté de m'occuper de ces
+saletés ???
+J'ai horreur des poules !!!
+]]
+}
+
+dialog{
+  id = "outside_b2.n_sign",
+  text = [[
+N : Désert et Village Gerudo
+]]
+}
+
+dialog{
+  id = "outside_b2.s_sign",
+  text = [[
+S : Lac Hylia
+O : Château d'Hyrule
+]]
+}
+
+dialog{
+  id = "outside_b2.sw_sign",
+  text = [[
+O : Château d'Hyrule
+]]
+}
+
+dialog{
+  id = "outside_b2.village_welcome_npc",
+  text = [[
+On trouve des tas de choses dans les boutiques
+du village.
+]]
+}
+
+dialog{
+  id = "outside_b2.village_welcome_sign",
+  text = [[
+Village Cocorico
+]]
+}
+
+dialog{
   id = "outside_b3.dungeon_2_sign",
   text = [[
 Temple du Lac
@@ -441,6 +494,12 @@ dialog{
   text = [[
 Cette porte est verrouillée.
 Il te faut une petite clé pour l'ouvrir !
+]]
+}
+
+dialog{
+  id = "village_welcome_npc",
+  text = [[
 ]]
 }
 

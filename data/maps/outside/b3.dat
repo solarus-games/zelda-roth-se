@@ -5647,6 +5647,46 @@ sensor{
   height = 16,
 }
 
+enemy{
+  name = "auto_enemy_10",
+  layer = 0,
+  x = 1928,
+  y = 493,
+  direction = 3,
+  breed = "zora_water",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_14",
+  layer = 0,
+  x = 488,
+  y = 309,
+  direction = 3,
+  breed = "zora_water",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_12",
+  layer = 0,
+  x = 1120,
+  y = 301,
+  direction = 3,
+  breed = "zora_water",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_13",
+  layer = 0,
+  x = 832,
+  y = 773,
+  direction = 3,
+  breed = "zora_water",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 0,
@@ -12793,6 +12833,16 @@ enemy{
   layer = 1,
   x = 568,
   y = 117,
+  direction = 3,
+  breed = "zora_feet",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_11",
+  layer = 1,
+  x = 1384,
+  y = 613,
   direction = 3,
   breed = "zora_feet",
   treasure_name = "random",
