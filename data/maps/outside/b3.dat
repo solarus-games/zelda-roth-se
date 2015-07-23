@@ -12086,6 +12086,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b3.nw_sign",
 }
 
 npc{
@@ -12095,6 +12096,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b3.n_sign",
 }
 
 npc{
@@ -12104,6 +12106,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b3.w_sign",
 }
 
 custom_entity{
@@ -12131,6 +12134,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b3.se_sign",
 }
 
 npc{
@@ -12140,6 +12144,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b3.sw_sign",
 }
 
 npc{
@@ -12149,6 +12154,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b3.ne_sign",
 }
 
 npc{
@@ -12158,6 +12164,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b3.dungeon_2_sign",
 }
 
 destructible{
@@ -12255,6 +12262,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b3.dungeon_7_sign",
 }
 
 dynamic_tile{
@@ -12758,6 +12766,36 @@ sensor{
   y = 173,
   width = 16,
   height = 16,
+}
+
+enemy{
+  name = "auto_enemy_7",
+  layer = 1,
+  x = 488,
+  y = 117,
+  direction = 3,
+  breed = "zora_feet",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_8",
+  layer = 1,
+  x = 528,
+  y = 101,
+  direction = 3,
+  breed = "zora_feet",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_9",
+  layer = 1,
+  x = 568,
+  y = 117,
+  direction = 3,
+  breed = "zora_feet",
+  treasure_name = "random",
 }
 
 tile{

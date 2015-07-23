@@ -8540,7 +8540,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#outside_c1.temple_sign",
+  behavior = "dialog#outside_c1.dungeon_1_sign",
 }
 
 destructible{

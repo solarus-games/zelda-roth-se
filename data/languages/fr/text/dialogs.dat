@@ -318,20 +318,82 @@ vaincus, appuie sur M.
 }
 
 dialog{
+  id = "outside_b3.dungeon_2_sign",
+  text = [[
+Temple du Lac
+
+Bonnet de bain obligatoire.
+]]
+}
+
+dialog{
+  id = "outside_b3.dungeon_7_sign",
+  text = [[
+Temple de Glace
+
+Le personnel tient à rappeler qu'un donjon
+n'est pas une patinoire.
+]]
+}
+
+dialog{
+  id = "outside_b3.n_sign",
+  text = [[
+N : Plaine d'Hyrule
+]]
+}
+
+dialog{
+  id = "outside_b3.ne_sign",
+  text = [[
+N : Plaine d'Hyrule
+]]
+}
+
+dialog{
+  id = "outside_b3.nw_sign",
+  text = [[
+N : Village Cocorico
+]]
+}
+
+dialog{
+  id = "outside_b3.se_sign",
+  text = [[
+E : Village de l'Ombre
+- Déconseillé aux vivants -
+]]
+}
+
+dialog{
+  id = "outside_b3.sw_sign",
+  text = [[
+O : Terres de Feu
+]]
+}
+
+dialog{
+  id = "outside_b3.w_sign",
+  text = [[
+O : Terres de Feu
+]]
+}
+
+dialog{
+  id = "outside_c1.dungeon_1_sign",
+  text = [[
+Temple de la Forêt
+
+Sauvez les arbres, mangez du castor !!!
+]]
+}
+
+dialog{
   id = "outside_c1.link_house_sign",
   text = [[
 N : Maison de Link
 O : Plaine d'Hyrule
 E : Temple de la Forêt
-]]
-}
-
-dialog{
-  id = "outside_c1.temple_sign",
-  text = [[
-Temple de la Forêt
-
-Sauvez les arbres, mangez du castor !!!
 ]]
 }
 
