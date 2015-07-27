@@ -6,6 +6,33 @@ Tu as trouvé la clé du boss !!!
 }
 
 dialog{
+  id = "_treasure.bottle_1.1",
+  text = [[
+Tu as trouvé un flacon vide !!!
+Tu vas pouvoir t'en servir pour stocker des
+potions !!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.1",
+  text = [[
+Tu as trouvé un flacon vide !!!
+Tu vas pouvoir t'en servir pour stocker des
+potions !!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.1",
+  text = [[
+Tu as trouvé un flacon vide !!!
+Tu vas pouvoir t'en servir pour stocker des
+potions !!!
+]]
+}
+
+dialog{
   id = "_treasure.bow.1",
   text = [[
 Tu as obtenu l'arc !!!
@@ -318,12 +345,40 @@ vaincus, appuie sur M.
 }
 
 dialog{
+  id = "outside_b2.bottle_merchant.done",
+  text = [[
+Désolé, c'était mon seul flacon.
+]]
+}
+
+dialog{
+  id = "outside_b2.bottle_merchant.no",
+  text = [[
+Reviens me voir si tu changes d'avis.
+]]
+}
+
+dialog{
+  id = "outside_b2.bottle_merchant.not_enough_money",
+  text = [[
+Désolé, mais tu n'as pas assez de rubis.
+]]
+}
+
+dialog{
   id = "outside_b2.bottle_merchant.offer",
   text = [[
 Je vends un flacon pour 100 rubis, ça
 t'intéresse ?
                   $? Oui
                   $? Non
+]]
+}
+
+dialog{
+  id = "outside_b2.bottle_merchant.yes",
+  text = [[
+Merci beaucoup, voilà ton flacon.
 ]]
 }
 
