@@ -318,6 +318,16 @@ vaincus, appuie sur M.
 }
 
 dialog{
+  id = "outside_b2.bottle_merchant.offer",
+  text = [[
+Je vends un flacon pour 100 rubis, ça
+t'intéresse ?
+                  $? Oui
+                  $? Non
+]]
+}
+
+dialog{
   id = "outside_b2.broom_grandma",
   text = [[
 Quelle belle journée !

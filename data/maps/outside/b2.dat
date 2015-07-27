@@ -5661,6 +5661,16 @@ npc{
   behavior = "dialog#outside_b2.broom_grandma",
 }
 
+npc{
+  name = "bottle_merchant",
+  layer = 1,
+  x = 472,
+  y = 277,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/merchant_green",
+}
+
 tile{
   layer = 2,
   x = 944,
