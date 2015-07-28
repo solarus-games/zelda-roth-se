@@ -75,6 +75,14 @@ Utilise-le pour écraser les obstacles.
 }
 
 dialog{
+  id = "_treasure.hookshot.1",
+  text = [[
+Tu as trouvé le grappin !!!
+Utilise-le pour franchir des obstacles.
+]]
+}
+
+dialog{
   id = "_treasure.magic_crystal.1",
   text = [[
 Tu as trouvé un cristal magique !!!
