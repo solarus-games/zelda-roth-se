@@ -1,0 +1,7 @@
+animation{
+  name = "normal",
+  src_image = "entities/hook_tree_small.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 13 },
+  },
+}

@@ -20,9 +20,13 @@ function item:on_using()
   local hookshot 
   local hookshot_sprite
   local link_sprite
+  local entities_cought = {}
+  local hook
+  local hooked
 
   local go
   local go_back
+  local fix_to_hook
   local stop
 
   -- Starts the hookshot movement from the hero.
@@ -71,17 +75,71 @@ function item:on_using()
     movement:start(hookshot)
     going_back = true
 
+    function movement:on_position_changed()
+
+      for _, entity in ipairs(entities_cought) do
+        entity:set_position(hookshot:get_position())
+      end
+    end
+
     function movement:on_finished()
       stop()
     end
   end
 
+  -- Attaches the hookshot to an entity and makes the hero fly there.
+  function fix_to_hook(entity)
+
+    if hooked then
+      return
+    end
+
+    hook = entity
+    hooked = true
+    hookshot:stop_movement()
+
+    -- Create a new custom entity on the hero,, move that entity towards the hook
+    -- and make the hero follow that custom entity.
+    -- Using this intermediate custom entity rather than directly moving the hero
+    -- allows to have better control on what can be traversed.
+    local leader = map:create_custom_entity({
+      direction = direction,
+      layer = layer,
+      x = x,
+      y = y,
+      width = 16,
+      height = 16
+    })
+
+    local movement = sol.movement.create("straight")
+    local angle = direction * math.pi / 2
+    movement:set_speed(192)
+    movement:set_angle(angle)
+    movement:set_smooth(false)
+    movement:set_max_distance(hookshot:get_distance(hero))
+    movement:start(leader)
+
+    function movement:on_position_changed()
+      -- TODO to avoid teletransporters, holes, etc, use a fake hero sprite
+      hero:set_position(leader:get_position())
+    end
+
+    -- TODO allow to fly over stairs covered by water
+    function movement:on_finished()
+      stop()
+      -- TODO check if the position is legal
+    end
+
+  end
+
   -- Destroys the hookshot and restores control to the player.
   function stop()
 
-    sound_timer:stop()
     hero:unfreeze()
-    hookshot:remove()
+    if hookshot ~= nil then
+      sound_timer:stop()
+      hookshot:remove()
+    end
   end
 
   hero:freeze()  -- Block the hero.
@@ -114,8 +172,9 @@ function item:on_using()
       { -16,  -5 },
       {   0,   7 }
     }
-    local x1 = x + dxy[direction + 1][1]
-    local y1 = y + dxy[direction + 1][2]
+    local hero_x, hero_y = hero:get_position()
+    local x1 = hero_x + dxy[direction + 1][1]
+    local y1 = hero_y + dxy[direction + 1][2]
     local x2, y2 = hookshot:get_position()
     y2 = y2 - 5
     for i = 0, num_links - 1 do
@@ -133,18 +192,71 @@ function item:on_using()
   hookshot:set_can_traverse("stream", true)
   hookshot:set_can_traverse("switch", true)
   hookshot:set_can_traverse("teletransporter", true)
+  hookshot:set_can_traverse_ground("deep_water", true)
+  hookshot:set_can_traverse_ground("shallow_water", true)
+  hookshot:set_can_traverse_ground("hole", true)
+  hookshot:set_can_traverse_ground("lava", true)
+  hookshot:set_can_traverse_ground("prickles", true)
+  hookshot:set_can_traverse_ground("low_wall", true)  -- Note: this is specific to this quest.
 
   -- Set up collisions.
   hookshot:add_collision_test("overlapping", function(hookshot, entity)
 
     local entity_type = entity:get_type()
+
     if entity_type == "hero" then
+      -- Reaching the hero while going back: stop the hookshot.
       if going_back then
-        -- Reaching the hero when going back: stop the hookshot.
         stop()
       end
+
+    elseif entity_type == "crystal" then
+      -- Activate crystals.
+      if not hooked and not going_back then
+        sol.audio.play_sound("switch")
+        map:change_crystal_state()
+        go_back()
+      end
+
+    elseif entity_type == "switch" then
+      -- Activate solid switches.
+      local switch = entity
+      local sprite = switch:get_sprite()
+      if not hooked and
+          not going_back and
+          sprite ~= nil and
+          sprite:get_animation_set() == "entities/solid_switch" then
+
+        if switch:is_activated() then
+          sol.audio.play_sound("sword_tapping")
+        else
+          sol.audio.play_sound("switch")
+          switch:set_activated(true)
+        end
+        go_back()
+      end
+
+    elseif entity.is_catchable_with_hookshot ~= nil and entity:is_catchable_with_hookshot() then
+      -- Catch the entity with the hookshot.
+      if not hooked and not going_back then
+        entities_cought[#entities_cought + 1] = entity
+        entity:set_position(hookshot:get_position())
+        go_back()
+      end
+
+    end
+  end)
+
+  hookshot:add_collision_test("touching", function(hookshot, entity)
+
+    if hooked or going_back then
+      return
     end
 
+    if entity.is_hook ~= nil and entity:is_hook() then
+      -- Hook to this entity.
+      fix_to_hook(entity)
+    end
   end)
 
   hookshot:add_collision_test("sprite", function(hookshot, entity, hookshot_sprite, enemy_sprite)
@@ -152,6 +264,9 @@ function item:on_using()
     local entity_type = entity:get_type()
     if entity_type == "enemy" then
       local enemy = entity
+      if hooked then
+        return
+      end
       local reaction = enemy:get_hookshot_reaction(enemy_sprite)
       if type(reaction) == "number" then
         enemy:hurt(reaction)

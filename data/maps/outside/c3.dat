@@ -86,6 +86,17 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 960,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside/c1",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 208,
@@ -5402,17 +5413,6 @@ teletransporter{
   destination = "_side",
 }
 
-teletransporter{
-  layer = 1,
-  x = 0,
-  y = -16,
-  width = 960,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "outside/c1",
-  destination = "_side",
-}
-
 destructible{
   layer = 1,
   x = 312,
@@ -6919,6 +6919,17 @@ custom_entity{
   model = "cliff",
 }
 
+teletransporter{
+  layer = 1,
+  x = 0,
+  y = -16,
+  width = 960,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "outside/c1",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 48,
@@ -7853,17 +7864,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "grass.cliff.top.diag.4",
-}
-
-teletransporter{
-  layer = 2,
-  x = 0,
-  y = -16,
-  width = 960,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "outside/c1",
-  destination = "_side",
 }
 
 teletransporter{

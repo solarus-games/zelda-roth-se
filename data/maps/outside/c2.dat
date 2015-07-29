@@ -10916,6 +10916,15 @@ tile{
   pattern = "forest.grass",
 }
 
+tile{
+  layer = 1,
+  x = 1160,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "grass.hole",
+}
+
 teletransporter{
   layer = 1,
   x = 0,
@@ -11986,6 +11995,26 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "inside/monster_house",
+}
+
+npc{
+  layer = 1,
+  x = 1168,
+  y = 765,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
+  behavior = "dialog#outside_c2.se_sign",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1208,
+  y = 752,
+  width = 16,
+  height = 16,
+  destination_map = "inside/monster_house",
+  sprite = "entities/switch",
 }
 
 tile{

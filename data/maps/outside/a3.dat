@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 1440,
+  y = 400,
+  width = 88,
+  height = 40,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 0,
   x = 1600,
   y = 576,
   width = 320,
@@ -6495,21 +6504,21 @@ teletransporter{
 }
 
 dynamic_tile{
+  name = "weak_wall_2_closed_2",
   layer = 1,
   x = 448,
   y = 64,
+  pattern = "dirt.cliff.1",
   width = 32,
   height = 16,
-  name = "weak_wall_2_closed_2",
-  pattern = "dirt.cliff.1",
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall_4",
   layer = 1,
   x = 456,
   y = 64,
-  name = "weak_wall_4",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "outside_a1_weak_wall",
@@ -6521,7 +6530,7 @@ npc{
   x = 1720,
   y = 317,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -6530,7 +6539,7 @@ npc{
   x = 1768,
   y = 813,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -7088,8 +7097,6 @@ custom_entity{
   layer = 1,
   x = 904,
   y = 493,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7099,8 +7106,6 @@ custom_entity{
   layer = 1,
   x = 952,
   y = 493,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7110,8 +7115,6 @@ custom_entity{
   layer = 1,
   x = 968,
   y = 429,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7121,8 +7124,6 @@ custom_entity{
   layer = 1,
   x = 984,
   y = 429,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7132,8 +7133,6 @@ custom_entity{
   layer = 1,
   x = 1176,
   y = 445,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7143,8 +7142,6 @@ custom_entity{
   layer = 1,
   x = 1176,
   y = 461,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7154,8 +7151,6 @@ custom_entity{
   layer = 1,
   x = 1272,
   y = 429,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7165,8 +7160,6 @@ custom_entity{
   layer = 1,
   x = 1288,
   y = 429,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7176,8 +7169,6 @@ custom_entity{
   layer = 1,
   x = 1304,
   y = 525,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7187,8 +7178,6 @@ custom_entity{
   layer = 1,
   x = 1304,
   y = 541,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7198,8 +7187,6 @@ custom_entity{
   layer = 1,
   x = 1304,
   y = 605,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7209,8 +7196,6 @@ custom_entity{
   layer = 1,
   x = 1320,
   y = 605,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7220,8 +7205,6 @@ custom_entity{
   layer = 1,
   x = 1352,
   y = 733,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7231,8 +7214,6 @@ custom_entity{
   layer = 1,
   x = 1368,
   y = 733,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7242,8 +7223,6 @@ custom_entity{
   layer = 1,
   x = 1096,
   y = 733,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7253,8 +7232,6 @@ custom_entity{
   layer = 1,
   x = 1112,
   y = 733,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7264,8 +7241,6 @@ custom_entity{
   layer = 1,
   x = 952,
   y = 653,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7275,8 +7250,6 @@ custom_entity{
   layer = 1,
   x = 968,
   y = 653,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7288,19 +7261,19 @@ wall{
   y = 680,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_2",
   layer = 1,
   x = 1472,
   y = 709,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_2",
 }
 
 wall{
@@ -7309,19 +7282,19 @@ wall{
   y = 280,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_3",
   layer = 1,
   x = 1520,
   y = 309,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_3",
 }
 
 wall{
@@ -7330,19 +7303,19 @@ wall{
   y = 184,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_4",
   layer = 1,
   x = 1168,
   y = 213,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_4",
 }
 
 wall{
@@ -7351,19 +7324,19 @@ wall{
   y = 168,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_5",
   layer = 1,
   x = 848,
   y = 197,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_5",
 }
 
 custom_entity{
@@ -10570,13 +10543,13 @@ teletransporter{
 }
 
 dynamic_tile{
+  name = "invisible_tile_4",
   layer = 2,
   x = 1464,
   y = 680,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_4",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -10586,40 +10559,40 @@ wall{
   y = 680,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_2",
   layer = 2,
   x = 1456,
   y = 680,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_2",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_3",
   layer = 2,
   x = 1480,
   y = 680,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_3",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_2",
   layer = 2,
   x = 1472,
   y = 717,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_2",
 }
 
 destructible{
@@ -10722,13 +10695,13 @@ destructible{
 }
 
 dynamic_tile{
+  name = "invisible_tile_5",
   layer = 2,
   x = 1512,
   y = 280,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_5",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -10738,50 +10711,50 @@ wall{
   y = 280,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_6",
   layer = 2,
   x = 1504,
   y = 280,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_6",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_7",
   layer = 2,
   x = 1528,
   y = 280,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_7",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_3",
   layer = 2,
   x = 1520,
   y = 317,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_3",
 }
 
 dynamic_tile{
+  name = "invisible_tile_8",
   layer = 2,
   x = 1160,
   y = 184,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_8",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -10791,50 +10764,50 @@ wall{
   y = 184,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_9",
   layer = 2,
   x = 1152,
   y = 184,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_9",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_10",
   layer = 2,
   x = 1176,
   y = 184,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_10",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_4",
   layer = 2,
   x = 1168,
   y = 221,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_4",
 }
 
 dynamic_tile{
+  name = "invisible_tile_11",
   layer = 2,
   x = 840,
   y = 168,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_11",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -10844,40 +10817,40 @@ wall{
   y = 168,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_12",
   layer = 2,
   x = 832,
   y = 168,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_12",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_13",
   layer = 2,
   x = 856,
   y = 168,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_13",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_5",
   layer = 2,
   x = 848,
   y = 205,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_5",
 }
 
 destructible{

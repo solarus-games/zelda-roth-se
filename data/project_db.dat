@@ -82,6 +82,13 @@ sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/hammer_stake_brown", description = "Hammer stake (brown)" }
 sprite{ id = "entities/hammer_stake_green", description = "Hammer stake (green)" }
 sprite{ id = "entities/hammer_stake_yellow", description = "Hammer stake (yellow)" }
+sprite{ id = "entities/hook_brown", description = "Hook (brown)" }
+sprite{ id = "entities/hook_green", description = "Hook (green)" }
+sprite{ id = "entities/hook_tree_brown", description = "Tree hook (brown)" }
+sprite{ id = "entities/hook_tree_green", description = "Tree hook (green)" }
+sprite{ id = "entities/hook_tree_small_green", description = "Small tree hook (green)" }
+sprite{ id = "entities/hook_tree_small_yellow", description = "Small tree hook (yellow)" }
+sprite{ id = "entities/hook_yellow", description = "Hook (yellow)" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }
@@ -320,6 +327,7 @@ enemy{ id = "zora_water", description = "Zora (in water)" }
 
 entity{ id = "cliff", description = "Cliff" }
 entity{ id = "hammer_stake", description = "Hammer stake" }
+entity{ id = "hook", description = "Hook" }
 
 language{ id = "fr", description = "Français" }
 

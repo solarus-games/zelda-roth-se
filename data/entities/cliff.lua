@@ -13,10 +13,20 @@ local function cliff_collision(cliff, entity)
     arrow = true,
     hookshot = true,
     boomerang = true,
+    custom_entity = true,
   }
 
-  if not entity_types_allowed[entity:get_type()] then
+  local entity_type = entity:get_type()
+  if not entity_types_allowed[entity_type] then
     return
+  end
+
+  if entity_type == "custom_entity" then
+    -- The only custom entity allowed is the hookshot.
+    local sprite = entity:get_sprite()
+    if sprite == nil or sprite:get_animation_set() ~= "entities/hookshot" then
+      return
+    end
   end
 
   local movement = entity:get_movement()

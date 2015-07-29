@@ -2,28 +2,18 @@
 -- that is, things not related to a particular savegame.
 local quest_manager = {}
 
--- Initialize hero behavior specific to this quest.
-local function initialize_hero()
+-- Initialize dynamic tile behavior specific to this quest.
+local function initialize_dynamic_tile()
 
-  -- Redefine how to calculate the damage received by the hero.
-  local hero_meta = sol.main.get_metatable("hero")
+  local dynamic_tile_meta = sol.main.get_metatable("dynamic_tile")
 
-  function hero_meta:on_taking_damage(damage)
+  function dynamic_tile_meta:on_created()
 
-    -- Here, self is the hero.
-    local game = self:get_game()
+    local name = self:get_name()
 
-    -- In the parameter, the damage unit is 1/2 of a heart.
-
-    local defense = game:get_value("defense")
-    if defense == 0 then
-      -- Multiply the damage by two if the hero has no defense at all.
-      damage = damage * 2
-    else
-      damage = damage / defense
+    if name:match("^invisible_tile") then
+      self:set_visible(false)
     end
-
-    game:remove_life(damage)
   end
 end
 
@@ -56,12 +46,12 @@ local function initialize_enemy()
 
   -- Add Lua hookhost properties to enemies.
   enemy_meta.hookshot_reaction = "immobilized"  -- Immobilized by default.
-  function enemy_meta:get_hookshot_reaction()
-    -- TODO allow to set by sprite
+  function enemy_meta:get_hookshot_reaction(sprite)
     return self.hookshot_reaction
   end
 
-  function enemy_meta:set_hookshot_reaction(reaction)
+  function enemy_meta:set_hookshot_reaction(reaction, sprite)
+    -- TODO allow to set by sprite
     self.hookshot_reaction = reaction
   end
 
@@ -72,6 +62,59 @@ local function initialize_enemy()
     self:set_hookshot_reaction("ignored")
   end
 
+end
+
+-- Initialize hero behavior specific to this quest.
+local function initialize_hero()
+
+  -- Redefine how to calculate the damage received by the hero.
+  local hero_meta = sol.main.get_metatable("hero")
+
+  function hero_meta:on_taking_damage(damage)
+
+    -- Here, self is the hero.
+    local game = self:get_game()
+
+    -- In the parameter, the damage unit is 1/2 of a heart.
+
+    local defense = game:get_value("defense")
+    if defense == 0 then
+      -- Multiply the damage by two if the hero has no defense at all.
+      damage = damage * 2
+    else
+      damage = damage / defense
+    end
+
+    game:remove_life(damage)
+  end
+end
+
+-- Initialize NPC behavior specific to this quest.
+local function initialize_npc()
+
+  local npc_meta = sol.main.get_metatable("npc")
+
+  -- Make signs hooks for the hookshot.
+  function npc_meta:is_hook()
+
+    local sprite = self:get_sprite()
+    if sprite == nil then
+      return false
+    end
+
+    return sprite:get_animation_set() == "entities/sign"
+  end
+end
+
+-- Initialize pickable behavior specific to this quest.
+local function initialize_pickable()
+
+  local pickable_meta = sol.main.get_metatable("pickable")
+
+  -- Allow to catch pickables with the hookshot.
+  function pickable_meta:is_catchable_with_hookshot()
+    return true
+  end
 end
 
 -- Initialize sensor behavior specific to this quest.
@@ -109,28 +152,15 @@ local function initialize_sensor()
   end
 end
 
--- Initialize dynamic tile behavior specific to this quest.
-local function initialize_dynamic_tile()
-
-  local dynamic_tile_meta = sol.main.get_metatable("dynamic_tile")
-
-  function dynamic_tile_meta:on_created()
-
-    local name = self:get_name()
-
-    if name:match("^invisible_tile") then
-      self:set_visible(false)
-    end
-  end
-end
-
 -- Initializes map entity related behaviors.
 local function initialize_entities()
 
-  initialize_hero()
-  initialize_enemy()
-  initialize_sensor()
   initialize_dynamic_tile()
+  initialize_enemy()
+  initialize_hero()
+  initialize_npc()
+  initialize_pickable()
+  initialize_sensor()
 end
 
 -- Performs global initializations specific to this quest.
