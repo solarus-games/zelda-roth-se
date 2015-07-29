@@ -38,7 +38,7 @@ local function initialize_enemy()
     local force = hero:get_game():get_value("force")
     local reaction = self:get_attack_consequence_sprite(enemy_sprite, "sword")
     -- Multiply the sword consequence by the force of the hero.
-    local life_lost = reaction * force 
+    local life_lost = reaction * force
     if hero:get_state() == "spin_attack" then
       -- And multiply this by 2 during a spin attack.
       life_lost = life_lost * 2
@@ -53,6 +53,25 @@ local function initialize_enemy()
     local game = self:get_game()
     game:get_item("monsters_encyclopedia"):add_monster_type_killed(breed)
   end
+
+  -- Add Lua hookhost properties to enemies.
+  enemy_meta.hookshot_reaction = "immobilized"  -- Immobilized by default.
+  function enemy_meta:get_hookshot_reaction()
+    -- TODO allow to set by sprite
+    return self.hookshot_reaction
+  end
+
+  function enemy_meta:set_hookshot_reaction(reaction)
+    self.hookshot_reaction = reaction
+  end
+
+  local built_in_set_invincible = enemy_meta.set_invincible
+  assert(type(built_in_set_invincible) == "function")
+  function enemy_meta:set_invincible()
+    built_in_set_invincible(self)
+    self:set_hookshot_reaction("ignored")
+  end
+
 end
 
 -- Initialize sensor behavior specific to this quest.

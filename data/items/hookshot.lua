@@ -54,7 +54,12 @@ function item:on_using()
   end
 
   -- Makes the hookshot come back to the hero.
+  -- Does nothing if the hookshot is already going back.
   function go_back()
+
+    if going_back then
+      return
+    end
 
     local movement = sol.movement.create("straight")
     local angle = (direction + 2) * math.pi / 2
@@ -132,8 +137,8 @@ function item:on_using()
   -- Set up collisions.
   hookshot:add_collision_test("overlapping", function(hookshot, entity)
 
-    local type = entity:get_type()
-    if type == "hero" then
+    local entity_type = entity:get_type()
+    if entity_type == "hero" then
       if going_back then
         -- Reaching the hero when going back: stop the hookshot.
         stop()
@@ -144,14 +149,19 @@ function item:on_using()
 
   hookshot:add_collision_test("sprite", function(hookshot, entity, hookshot_sprite, enemy_sprite)
 
-    local type = entity:get_type()
-    if type == "enemy" then
+    local entity_type = entity:get_type()
+    if entity_type == "enemy" then
       local enemy = entity
-      if enemy:get_attack_consequence_sprite(enemy_sprite, "hookshot") == "immobilized" then
+      local reaction = enemy:get_hookshot_reaction(enemy_sprite)
+      if type(reaction) == "number" then
+        enemy:hurt(reaction)
+        go_back()
+      elseif reaction == "immobilized" then
         enemy:immobilize()
-        if not going_back then
-          go_back()
-        end
+        go_back()
+      elseif reaction == "protected" then
+        sol.audio.play_sound("sword_tapping")
+        go_back()
       end
     end
 
