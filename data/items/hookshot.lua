@@ -135,7 +135,23 @@ function item:on_using()
     local type = entity:get_type()
     if type == "hero" then
       if going_back then
+        -- Reaching the hero when going back: stop the hookshot.
         stop()
+      end
+    end
+
+  end)
+
+  hookshot:add_collision_test("sprite", function(hookshot, entity, hookshot_sprite, enemy_sprite)
+
+    local type = entity:get_type()
+    if type == "enemy" then
+      local enemy = entity
+      if enemy:get_attack_consequence_sprite(enemy_sprite, "hookshot") == "immobilized" then
+        enemy:immobilize()
+        if not going_back then
+          go_back()
+        end
       end
     end
 
