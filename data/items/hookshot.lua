@@ -23,11 +23,31 @@ function item:on_using()
   local entities_cought = {}
   local hook
   local hooked
+  local leader
 
   local go
   local go_back
   local fix_to_hook
   local stop
+
+  -- Sets what can be traversed by the hookshot.
+  -- Also used for the invisible leader entity used when hooked.
+  local function set_can_traverse_rules(entity)
+    entity:set_can_traverse("crystal", true)
+    entity:set_can_traverse("hero", true)
+    entity:set_can_traverse("jumper", true)
+    entity:set_can_traverse("stairs", false)  -- TODO only inner stairs should be obstacle and only when on their lowest layer.
+    entity:set_can_traverse("stream", true)
+    entity:set_can_traverse("switch", true)
+    entity:set_can_traverse("teletransporter", true)
+    entity:set_can_traverse_ground("deep_water", true)
+    entity:set_can_traverse_ground("shallow_water", true)
+    entity:set_can_traverse_ground("hole", true)
+    entity:set_can_traverse_ground("lava", true)
+    entity:set_can_traverse_ground("prickles", true)
+    entity:set_can_traverse_ground("low_wall", true)  -- Note: this is specific to this quest.
+    entity.apply_cliffs = true
+  end
 
   -- Starts the hookshot movement from the hero.
   function go()
@@ -70,7 +90,7 @@ function item:on_using()
     movement:set_speed(192)
     movement:set_angle(angle)
     movement:set_smooth(false)
-    movement:set_max_distance(120)
+    movement:set_max_distance(hookshot:get_distance(hero))
     movement:set_ignore_obstacles(true)
     movement:start(hookshot)
     going_back = true
@@ -91,6 +111,7 @@ function item:on_using()
   function fix_to_hook(entity)
 
     if hooked then
+      -- Already hooked.
       return
     end
 
@@ -98,18 +119,20 @@ function item:on_using()
     hooked = true
     hookshot:stop_movement()
 
-    -- Create a new custom entity on the hero,, move that entity towards the hook
+    -- Create a new custom entity on the hero, move that entity towards the hook
     -- and make the hero follow that custom entity.
     -- Using this intermediate custom entity rather than directly moving the hero
     -- allows to have better control on what can be traversed.
-    local leader = map:create_custom_entity({
+    leader = map:create_custom_entity({
       direction = direction,
       layer = layer,
       x = x,
       y = y,
       width = 16,
-      height = 16
+      height = 16,
     })
+    set_can_traverse_rules(leader)
+    leader.apply_cliffs = true
 
     local movement = sol.movement.create("straight")
     local angle = direction * math.pi / 2
@@ -119,8 +142,18 @@ function item:on_using()
     movement:set_max_distance(hookshot:get_distance(hero))
     movement:start(leader)
 
+    -- Make the hero start a jump to be sure that nothing will happen
+    -- if his layer is changed by a cliff or if the ground below him changes.
+    -- The better solution would be a custom hero state but this is not possible yet.
+    -- So we use a jump movement instead, which is close to what we want here
+    -- with the hookshot (flying), and we stop that jump movement.
+    hero:start_jumping(0, 100, true)
+    hero:get_movement():stop()
+    hero:set_animation("hookshot")
+    hero:set_direction(direction)
+
     function movement:on_position_changed()
-      -- TODO to avoid teletransporters, holes, etc, use a fake hero sprite
+      -- Teletransporters, holes, etc are avoided because the hero is jumping.
       hero:set_position(leader:get_position())
     end
 
@@ -139,6 +172,9 @@ function item:on_using()
     if hookshot ~= nil then
       sound_timer:stop()
       hookshot:remove()
+    end
+    if leader ~= nil then
+      leader:remove()
     end
   end
 
@@ -185,19 +221,7 @@ function item:on_using()
   end
 
   -- Set what can be traversed by the hookshot.
-  hookshot:set_can_traverse("crystal", true)
-  hookshot:set_can_traverse("hero", true)
-  hookshot:set_can_traverse("jumper", true)
-  hookshot:set_can_traverse("stairs", false)  -- TODO only inner stairs should be obstacle and only when on their lowest layer.
-  hookshot:set_can_traverse("stream", true)
-  hookshot:set_can_traverse("switch", true)
-  hookshot:set_can_traverse("teletransporter", true)
-  hookshot:set_can_traverse_ground("deep_water", true)
-  hookshot:set_can_traverse_ground("shallow_water", true)
-  hookshot:set_can_traverse_ground("hole", true)
-  hookshot:set_can_traverse_ground("lava", true)
-  hookshot:set_can_traverse_ground("prickles", true)
-  hookshot:set_can_traverse_ground("low_wall", true)  -- Note: this is specific to this quest.
+  set_can_traverse_rules(hookshot)
 
   -- Set up collisions.
   hookshot:add_collision_test("overlapping", function(hookshot, entity)
@@ -247,7 +271,28 @@ function item:on_using()
     end
   end)
 
-  hookshot:add_collision_test("touching", function(hookshot, entity)
+  -- Custom collision test: there is a collision with a hook if
+  -- the facing point of the hookshot overlaps the hook's bounding box.
+  -- We cannot use the built-in "facing" collision mode because
+  -- it would test the facing point of the hook, not the one of
+  -- of the hookshot.
+  -- And we cannot reverse the test because the hook
+  -- is not necessarily a custom entity.
+  local function test_hook_collision(hookshot, entity)
+
+    local dxy = {
+      {  8,  0 },
+      {  0, -9 },
+      { -9,  0 },
+      {  0,  8 },
+    }
+    local facing_x, facing_y = hookshot:get_center_position()
+    facing_x = facing_x + dxy[direction + 1][1]
+    facing_y = facing_y + dxy[direction + 1][2]
+    return entity:overlaps(facing_x, facing_y)
+  end
+
+  hookshot:add_collision_test(test_hook_collision, function(hookshot, entity)
 
     if hooked or going_back then
       return

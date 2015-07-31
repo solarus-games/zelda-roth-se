@@ -18,13 +18,12 @@ local function cliff_collision(cliff, entity)
 
   local entity_type = entity:get_type()
   if not entity_types_allowed[entity_type] then
-    return
+    return false
   end
 
   if entity_type == "custom_entity" then
-    -- The only custom entity allowed is the hookshot.
-    local sprite = entity:get_sprite()
-    if sprite == nil or sprite:get_animation_set() ~= "entities/hookshot" then
+    -- Apply the layer to custom entities only if they are okay with that.
+    if not entity.apply_cliffs then
       return
     end
   end
