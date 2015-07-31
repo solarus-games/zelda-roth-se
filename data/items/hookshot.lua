@@ -45,7 +45,7 @@ function item:on_using()
     entity:set_can_traverse_ground("hole", true)
     entity:set_can_traverse_ground("lava", true)
     entity:set_can_traverse_ground("prickles", true)
-    entity:set_can_traverse_ground("low_wall", true)  -- Note: this is specific to this quest.
+    entity:set_can_traverse_ground("low_wall", true)  -- Needed for cliffs.
     entity.apply_cliffs = true
   end
 
