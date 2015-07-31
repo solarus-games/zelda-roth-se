@@ -44,24 +44,6 @@ local function initialize_enemy()
     game:get_item("monsters_encyclopedia"):add_monster_type_killed(breed)
   end
 
-  -- Add Lua hookhost properties to enemies.
-  enemy_meta.hookshot_reaction = "immobilized"  -- Immobilized by default.
-  function enemy_meta:get_hookshot_reaction(sprite)
-    return self.hookshot_reaction
-  end
-
-  function enemy_meta:set_hookshot_reaction(reaction, sprite)
-    -- TODO allow to set by sprite
-    self.hookshot_reaction = reaction
-  end
-
-  local built_in_set_invincible = enemy_meta.set_invincible
-  assert(type(built_in_set_invincible) == "function")
-  function enemy_meta:set_invincible()
-    built_in_set_invincible(self)
-    self:set_hookshot_reaction("ignored")
-  end
-
 end
 
 -- Initialize hero behavior specific to this quest.

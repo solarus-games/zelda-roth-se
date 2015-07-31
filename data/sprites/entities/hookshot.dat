@@ -1,5 +1,5 @@
 animation{
-  name = "hook",
+  name = "hookshot",
   src_image = "entities/hookshot.png",
   directions = {
     { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
@@ -8,7 +8,6 @@ animation{
     { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
-
 animation{
   name = "link",
   src_image = "entities/hookshot.png",
@@ -16,4 +15,3 @@ animation{
     { x = 64, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
   },
 }
-

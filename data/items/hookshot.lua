@@ -4,15 +4,20 @@
 -- It can hurt enemies, activate crystals and solid switches,
 -- catch entities and transport the hero accross cliffs and bad grounds.
 --
+-- * Required resources:
+--
+-- - An animation "hookshot" in the hero sprites (at least for the tunic).
+-- - A sprite "entities/hookshot" with animations "hookshot"
+--   (the default) and "link".
+-- - A sound "hookshot".
+--
 -- * Hurting enemies:
 --
--- To work properly, the enemy metatable should have methods
--- get_hookshot_reaction() and set_hookshot_reaction().
--- enemy:get_hookshot_reaction() is called by the hookshot to
--- determine what to do to the enemy:
--- immobilize him, hurt him, do nothing, etc.
+-- Two new methods are available on enemies:
+-- enemy:get_hookshot_reaction() and enemy:set_hookshot_reaction().
 -- Call enemy:set_hookshot_reaction() from your enemy scripts
--- to define how they react.
+-- to define how they react:
+-- immobilize him, hurt him, do nothing, etc.
 -- The allowed values are the same as in enemy:set_attack_consequence().
 --
 -- * Activating mechanisms:
@@ -434,4 +439,24 @@ function item:on_using()
 
   -- Tell the engine that we are no longer using the item.
   item:set_finished()
+end
+
+-- Add Lua hookhost properties to enemies.
+local enemy_meta = sol.main.get_metatable("enemy")
+enemy_meta.hookshot_reaction = "immobilized"  -- Immobilized by default.
+function enemy_meta:get_hookshot_reaction(sprite)
+  return self.hookshot_reaction
+end
+
+function enemy_meta:set_hookshot_reaction(reaction, sprite)
+  -- TODO allow to set by sprite
+  self.hookshot_reaction = reaction
+end
+
+-- Change the default enemy:set_invincible() to also
+-- take into account the hookshot.
+local previous_set_invincible = enemy_meta.set_invincible
+function enemy_meta:set_invincible()
+  previous_set_invincible(self)
+  self:set_hookshot_reaction("ignored")
 end
