@@ -1,3 +1,46 @@
+-- Hookshot similar to the one of Zelda A Link to the Past.
+-- Author: Christopho
+--
+-- It can hurt enemies, activate crystals and solid switches,
+-- catch entities and transport the hero accross cliffs and bad grounds.
+--
+-- * Hurting enemies:
+--
+-- To work properly, the enemy metatable should have methods
+-- get_hookshot_reaction() and set_hookshot_reaction().
+-- enemy:get_hookshot_reaction() is called by the hookshot to
+-- determine what to do to the enemy:
+-- immobilize him, hurt him, do nothing, etc.
+-- Call enemy:set_hookshot_reaction() from your enemy scripts
+-- to define how they react.
+-- The allowed values are the same as in enemy:set_attack_consequence().
+--
+-- * Activating mechanisms:
+--
+-- Solid switches and crystals can be activated by the hookshot.
+--
+-- * Catching entities:
+--
+-- You can customize which entities can be cought.
+-- An entity can be cought by the hookshot if it has a method
+-- is_catchable_with_hookshot() returning true.
+-- If such a method does not exist or does not return true,
+-- the entity is not catchable.
+-- You probably want to define this method on the metatable of pickables.
+--
+-- * Transporting the hero:
+--
+-- You can customize which entities the hookshot can hook to.
+-- The hookshot can get attached to an entity if this entity has a method
+-- is_hook() returning true.
+-- If such a method does not exist or does not return true,
+-- the entity is not a hook.
+-- For example, to make chests and destructibles hookable, you can define
+-- this method on the metatable of chests and destructibles.
+-- If the hero arrives inside an obstacle after the hookshot transportation,
+-- his position is automatically adjusted to the last legal position along
+-- the way.
+
 local item = ...
 
 function item:on_created()
@@ -49,6 +92,38 @@ function item:on_using()
     entity.apply_cliffs = true
   end
 
+  -- Returns if the hero would land on an obstacle at the specified coordinates.
+  -- This is similar to entity:test_obstacles() but also checks layers below
+  -- in case the ground is empty (because the hero will fall there).
+  -- TODO this work should be done by the engine, maybe with an additional parameter
+  -- to entity:test_obstacles().
+  local function test_hero_obstacle_layers(candidate_x, candidate_y, candidate_layer)
+
+    local hero_x, hero_y, hero_layer = hero:get_position()
+    candidate_layer = candidate_layer or hero_layer
+    if hero:test_obstacles(candidate_x - hero_x, candidate_y - hero_y, candidate_layer) then
+      -- Found an obstacle.
+      return true
+    end
+
+    if candidate_layer == 0 then
+      -- Cannot go deeper and no obstacle was found.
+      return false
+    end
+
+    -- Test if we are on empty ground.
+    local origin_x, origin_y = hero:get_origin()
+    local top_left_x, top_left_y = candidate_x - origin_x, candidate_y - origin_y
+    local width, height = hero:get_size()
+    if map:get_ground(top_left_x, top_left_y, candidate_layer) == "empty" and
+        map:get_ground(top_left_x + width - 1, top_left_y, candidate_layer) == "empty" and
+        map:get_ground(top_left_x, top_left_y + height - 1, candidate_layer) == "empty" and
+        map:get_ground(top_left_x + width - 1, top_left_y + height - 1, candidate_layer) == "empty" then
+      -- We are on empty ground: the hero will fall one layer down.
+      return test_hero_obstacle_layers(candidate_x, candidate_y, candidate_layer - 1)
+    end
+  end
+
   -- Starts the hookshot movement from the hero.
   function go()
 
@@ -74,6 +149,7 @@ function item:on_using()
       sol.audio.play_sound("hookshot")
       return true  -- Repeat the timer.
     end)
+    sol.audio.play_sound("hookshot")
 
   end
 
@@ -108,7 +184,7 @@ function item:on_using()
   end
 
   -- Attaches the hookshot to an entity and makes the hero fly there.
-  function fix_to_hook(entity)
+  function attach_to_hook(entity)
 
     if hooked then
       -- Already hooked.
@@ -122,7 +198,7 @@ function item:on_using()
     -- Create a new custom entity on the hero, move that entity towards the hook
     -- and make the hero follow that custom entity.
     -- Using this intermediate custom entity rather than directly moving the hero
-    -- allows to have better control on what can be traversed.
+    -- allows better control on what can be traversed.
     leader = map:create_custom_entity({
       direction = direction,
       layer = layer,
@@ -131,6 +207,7 @@ function item:on_using()
       width = 16,
       height = 16,
     })
+    leader:set_origin(8, 13)
     set_can_traverse_rules(leader)
     leader.apply_cliffs = true
 
@@ -152,17 +229,40 @@ function item:on_using()
     hero:set_animation("hookshot")
     hero:set_direction(direction)
 
+    local past_positions = {}
+    past_positions[1] = { hero:get_position() }
+
     function movement:on_position_changed()
-      -- Teletransporters, holes, etc are avoided because the hero is jumping.
+      -- Teletransporters, holes, etc. are avoided because the hero is jumping.
       hero:set_position(leader:get_position())
+
+      -- Remember all intermediate positions to find a legal place
+      -- for the hero later in case he ends up in a wall.
+      past_positions[#past_positions + 1] = { leader:get_position() }
     end
 
     -- TODO allow to fly over stairs covered by water
+
     function movement:on_finished()
       stop()
-      -- TODO check if the position is legal
-    end
 
+      if hero:test_obstacles(0, 0) then
+        -- The hero ended up in a wall.
+        local fixed_position = past_positions[1]  -- Initial position in case none is legal.
+        for i = #past_positions, 2, -1 do
+          if not test_hero_obstacle_layers(unpack(past_positions[i])) then
+            -- Found a legal position.
+            fixed_position = past_positions[i]
+            break
+          end
+        end
+
+        hero:set_position(unpack(fixed_position))
+        hero:set_invincible(true, 1000)
+        hero:set_blinking(true, 1000)
+      end
+
+    end
   end
 
   -- Destroys the hookshot and restores control to the player.
@@ -198,6 +298,7 @@ function item:on_using()
   hookshot_sprite:set_direction(direction)
   link_sprite = sol.sprite.create("entities/hookshot")
   link_sprite:set_animation("link")
+
   function hookshot:on_pre_draw()
 
     -- Draw the links.
@@ -271,7 +372,7 @@ function item:on_using()
     end
   end)
 
-  -- Custom collision test: there is a collision with a hook if
+  -- Custom collision test for hooks: there is a collision with a hook if
   -- the facing point of the hookshot overlaps the hook's bounding box.
   -- We cannot use the built-in "facing" collision mode because
   -- it would test the facing point of the hook, not the one of
@@ -300,10 +401,11 @@ function item:on_using()
 
     if entity.is_hook ~= nil and entity:is_hook() then
       -- Hook to this entity.
-      fix_to_hook(entity)
+      attach_to_hook(entity)
     end
   end)
 
+  -- Detect enemies.
   hookshot:add_collision_test("sprite", function(hookshot, entity, hookshot_sprite, enemy_sprite)
 
     local entity_type = entity:get_type()
@@ -312,7 +414,7 @@ function item:on_using()
       if hooked then
         return
       end
-      local reaction = enemy:get_hookshot_reaction(enemy_sprite)
+      local reaction = enemy.get_hookshot_reaction and enemy:get_hookshot_reaction(enemy_sprite) or "immobilized"
       if type(reaction) == "number" then
         enemy:hurt(reaction)
         go_back()

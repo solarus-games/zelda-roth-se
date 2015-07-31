@@ -9480,6 +9480,15 @@ custom_entity{
 
 tile{
   layer = 2,
+  x = 352,
+  y = 288,
+  width = 240,
+  height = 128,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 2,
   x = 48,
   y = 1152,
   width = 224,
@@ -9502,15 +9511,6 @@ tile{
   y = 880,
   width = 128,
   height = 48,
-  pattern = "grass.soil",
-}
-
-tile{
-  layer = 2,
-  x = 352,
-  y = 288,
-  width = 240,
-  height = 128,
   pattern = "grass.soil",
 }
 
@@ -9755,15 +9755,6 @@ tile{
   width = 8,
   height = 24,
   pattern = "stairs_stone.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 368,
-  y = 320,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
 }
 
 tile{
@@ -10783,17 +10774,6 @@ destructible{
   can_be_cut = true,
 }
 
-destructible{
-  layer = 2,
-  x = 376,
-  y = 413,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
 dynamic_tile{
   name = "invisible_tile_4",
   layer = 2,
@@ -10883,5 +10863,16 @@ pickable{
   y = 1181,
   treasure_name = "piece_of_heart",
   treasure_savegame_variable = "outside_c1_piece_of_heart_c",
+}
+
+custom_entity{
+  layer = 2,
+  x = 376,
+  y = 333,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hook",
 }
 
