@@ -35,16 +35,10 @@ local function cliff_collision(cliff, entity)
     return
   end
 
-  if entity.cliffs_traversed ~= nil and entity.cliffs_traversed[cliff] then
-    -- This cliff was already applied.
-    return
-  end
-
   local cliff_direction4 = cliff:get_direction()
   local entity_direction4 = movement:get_direction4()
   local x, y, layer = entity:get_position()
   local _, _, cliff_layer = cliff:get_position()
-  local done = false
 
   if entity_direction4 == cliff_direction4 then
 
@@ -52,15 +46,13 @@ local function cliff_collision(cliff, entity)
     entity.cliff_count = entity.cliff_count or 0
     if entity.cliff_count == 0 then
       if layer < 2
-        and layer == cliff_layer
-        and not entity:test_obstacles(0, 0, layer + 1) then
-        done = true
+          and layer == cliff_layer
+          and not entity:test_obstacles(0, 0, layer + 1) then
         entity.cliff_count = entity.cliff_count + 1
         entity:set_position(x, y, layer + 1)
       end
     else
       entity.cliff_count = entity.cliff_count + 1
-      done = true
     end
 
   elseif entity_direction4 == (cliff_direction4 + 2) % 4 then
@@ -70,23 +62,13 @@ local function cliff_collision(cliff, entity)
       if layer > 0
         and layer == cliff_layer + 1
         and not entity:test_obstacles(0, 0, cliff_layer) then
-        done = true
         entity.cliff_count = entity.cliff_count - 1
         entity:set_position(x, y, cliff_layer)
       end
     else
-      done = true
       entity.cliff_count = entity.cliff_count - 1
     end
 
-  end
-
-  -- Mark this cliff as traversed.
-  if done then
-    if entity.cliffs_traversed == nil then
-      entity.cliffs_traversed = {}
-    end
-    entity.cliffs_traversed[cliff] = true
   end
 end
 
