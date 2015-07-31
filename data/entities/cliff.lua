@@ -43,29 +43,28 @@ local function cliff_collision(cliff, entity)
 
     -- Same direction: go up one layer if possible.
 
-    if entity.cliffs_traversed ~= nil and entity.cliffs_traversed[cliff] then
+    entity.cliffs_traversed = entity.cliffs_traversed or {}
+    entity.cliffs_traversed_back = entity.cliffs_traversed_back or {}
+
+    if entity.cliffs_traversed[cliff] then
       -- This cliff was already applied.
       return
     end
 
     local done = false
-    entity.cliff_count = entity.cliff_count or 0
-    if entity.cliff_count == 0 then
+    if #entity.cliffs_traversed == #entity.cliffs_traversed_back then
       if layer < 2
           and layer == cliff_layer
           and not entity:test_obstacles(0, 0, layer + 1) then
-        entity.cliff_count = entity.cliff_count + 1
         entity:set_position(x, y, layer + 1)
         done = true
       end
     else
-      entity.cliff_count = entity.cliff_count + 1
       done = true
     end
 
     -- Mark this cliff as traversed.
     if done then
-      entity.cliffs_traversed = entity.cliffs_traversed or {}
       entity.cliffs_traversed[cliff] = true
     end
 
@@ -73,22 +72,23 @@ local function cliff_collision(cliff, entity)
 
     -- Opposite direction: go down one layer if possible.
 
-    if entity.cliffs_traversed_back ~= nil and entity.cliffs_traversed_back[cliff] then
+    entity.cliffs_traversed = entity.cliffs_traversed or {}
+    entity.cliffs_traversed_back = entity.cliffs_traversed_back or {}
+
+    if entity.cliffs_traversed_back[cliff] then
       -- This cliff was already applied.
       return
     end
 
     local done = false
-    if entity.cliff_count == 1 then
+    if #entity.cliffs_traversed == 0 or #entity.cliffs_traversed_back == #entity.cliffs_traversed - 1 then
       if layer > 0
           and layer == cliff_layer + 1
           and not entity:test_obstacles(0, 0, cliff_layer) then
-        entity.cliff_count = entity.cliff_count - 1
         entity:set_position(x, y, cliff_layer)
         done = true
       end
     else
-      entity.cliff_count = entity.cliff_count - 1
       done = true
     end
 
