@@ -9431,7 +9431,7 @@ custom_entity{
   height = 32,
   direction = 0,
   sprite = "entities/hook_tree_small_green",
-  model = "hook",
+  model = "hookable",
 }
 
 custom_entity{
@@ -9442,7 +9442,7 @@ custom_entity{
   height = 32,
   direction = 0,
   sprite = "entities/hook_tree_small_green",
-  model = "hook",
+  model = "hookable",
 }
 
 custom_entity{
@@ -9453,7 +9453,7 @@ custom_entity{
   height = 32,
   direction = 0,
   sprite = "entities/hook_tree_small_green",
-  model = "hook",
+  model = "hookable",
 }
 
 custom_entity{
@@ -9464,7 +9464,7 @@ custom_entity{
   height = 32,
   direction = 0,
   sprite = "entities/hook_tree_small_green",
-  model = "hook",
+  model = "hookable",
 }
 
 custom_entity{
@@ -9475,7 +9475,7 @@ custom_entity{
   height = 32,
   direction = 0,
   sprite = "entities/hook_tree_small_green",
-  model = "hook",
+  model = "hookable",
 }
 
 tile{
@@ -10873,6 +10873,6 @@ custom_entity{
   height = 32,
   direction = 0,
   sprite = "entities/hook_tree_small_green",
-  model = "hook",
+  model = "hookable",
 }
 

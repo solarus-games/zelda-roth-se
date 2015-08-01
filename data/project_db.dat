@@ -327,7 +327,7 @@ enemy{ id = "zora_water", description = "Zora (in water)" }
 
 entity{ id = "cliff", description = "Cliff" }
 entity{ id = "hammer_stake", description = "Hammer stake" }
-entity{ id = "hook", description = "Hook" }
+entity{ id = "hookable", description = "Hookable" }
 
 language{ id = "fr", description = "Français" }
 

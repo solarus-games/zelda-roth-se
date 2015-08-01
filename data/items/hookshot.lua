@@ -37,7 +37,7 @@
 --
 -- You can customize which entities the hookshot can hook to.
 -- The hookshot can get attached to an entity if this entity has a method
--- is_hook() returning true.
+-- is_hookable() returning true.
 -- If such a method does not exist or does not return true,
 -- the entity is not a hook.
 -- For example, to make chests and destructibles hookable, you can define
@@ -69,13 +69,13 @@ function item:on_using()
   local hookshot_sprite
   local link_sprite
   local entities_cought = {}
-  local hook
+  local hooked_entity
   local hooked
   local leader
 
   local go
   local go_back
-  local fix_to_hook
+  local hook_to_entity
   local stop
 
   -- Sets what can be traversed by the hookshot.
@@ -189,19 +189,19 @@ function item:on_using()
   end
 
   -- Attaches the hookshot to an entity and makes the hero fly there.
-  function attach_to_hook(entity)
+  function hook_to_entity(entity)
 
     if hooked then
       -- Already hooked.
       return
     end
 
-    hook = entity
+    hooked_entity = entity
     hooked = true
     hookshot:stop_movement()
 
-    -- Create a new custom entity on the hero, move that entity towards the hook
-    -- and make the hero follow that custom entity.
+    -- Create a new custom entity on the hero, move that entity towards the entity
+    -- hooked and make the hero follow that custom entity.
     -- Using this intermediate custom entity rather than directly moving the hero
     -- allows better control on what can be traversed.
     leader = map:create_custom_entity({
@@ -404,9 +404,9 @@ function item:on_using()
       return
     end
 
-    if entity.is_hook ~= nil and entity:is_hook() then
+    if entity.is_hookable ~= nil and entity:is_hookable() then
       -- Hook to this entity.
-      attach_to_hook(entity)
+      hook_to_entity(entity)
     end
   end)
 
