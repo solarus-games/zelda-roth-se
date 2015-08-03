@@ -48,6 +48,10 @@
 
 local item = ...
 
+-- Feel free to change these values if you want.
+local hookshot_distance = 120  -- Distance in pixels.
+local hookshot_speed = 192     -- Speed in pixels per second
+
 function item:on_created()
 
   item:set_savegame_variable("possession_hookshot")
@@ -134,10 +138,10 @@ function item:on_using()
 
     local movement = sol.movement.create("straight")
     local angle = direction * math.pi / 2
-    movement:set_speed(192)
+    movement:set_speed(hookshot_speed)
     movement:set_angle(angle)
     movement:set_smooth(false)
-    movement:set_max_distance(120)
+    movement:set_max_distance(hookshot_distance)
     movement:start(hookshot)
 
     function movement:on_obstacle_reached()
@@ -168,7 +172,7 @@ function item:on_using()
 
     local movement = sol.movement.create("straight")
     local angle = (direction + 2) * math.pi / 2
-    movement:set_speed(192)
+    movement:set_speed(hookshot_speed)
     movement:set_angle(angle)
     movement:set_smooth(false)
     movement:set_max_distance(hookshot:get_distance(hero))
@@ -218,7 +222,7 @@ function item:on_using()
 
     local movement = sol.movement.create("straight")
     local angle = direction * math.pi / 2
-    movement:set_speed(192)
+    movement:set_speed(hookshot_speed)
     movement:set_angle(angle)
     movement:set_smooth(false)
     movement:set_max_distance(hookshot:get_distance(hero))
@@ -322,7 +326,13 @@ function item:on_using()
     for i = 0, num_links - 1 do
       local link_x = x1 + (x2 - x1) * i / num_links
       local link_y = y1 + (y2 - y1) * i / num_links
-      map:draw_sprite(link_sprite, link_x, link_y)
+
+      -- Skip the first one when going to the North because it overlaps
+      -- the hero sprite and can be drawn above it sometimes.
+      local skip = direction == 1 and link_x == hero_x and i == 0
+      if not skip then
+        map:draw_sprite(link_sprite, link_x, link_y)
+      end
     end
   end
 
