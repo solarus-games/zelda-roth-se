@@ -453,20 +453,22 @@ end
 
 -- Add Lua hookhost properties to enemies.
 local enemy_meta = sol.main.get_metatable("enemy")
-enemy_meta.hookshot_reaction = "immobilized"  -- Immobilized by default.
-function enemy_meta:get_hookshot_reaction(sprite)
-  return self.hookshot_reaction
-end
+if enemy_meta.get_hookshot_reaction == nil then
+  enemy_meta.hookshot_reaction = "immobilized"  -- Immobilized by default.
+  function enemy_meta:get_hookshot_reaction(sprite)
+    return self.hookshot_reaction
+  end
 
-function enemy_meta:set_hookshot_reaction(reaction, sprite)
-  -- TODO allow to set by sprite
-  self.hookshot_reaction = reaction
-end
+  function enemy_meta:set_hookshot_reaction(reaction, sprite)
+    -- TODO allow to set by sprite
+    self.hookshot_reaction = reaction
+  end
 
--- Change the default enemy:set_invincible() to also
--- take into account the hookshot.
-local previous_set_invincible = enemy_meta.set_invincible
-function enemy_meta:set_invincible()
-  previous_set_invincible(self)
-  self:set_hookshot_reaction("ignored")
+  -- Change the default enemy:set_invincible() to also
+  -- take into account the hookshot.
+  local previous_set_invincible = enemy_meta.set_invincible
+  function enemy_meta:set_invincible()
+    previous_set_invincible(self)
+    self:set_hookshot_reaction("ignored")
+  end
 end
