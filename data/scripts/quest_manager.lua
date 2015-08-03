@@ -88,17 +88,6 @@ local function initialize_npc()
   end
 end
 
--- Initialize pickable behavior specific to this quest.
-local function initialize_pickable()
-
-  local pickable_meta = sol.main.get_metatable("pickable")
-
-  -- Allow to catch pickables with the hookshot.
-  function pickable_meta:is_catchable_with_hookshot()
-    return true
-  end
-end
-
 -- Initialize sensor behavior specific to this quest.
 local function initialize_sensor()
 
@@ -141,7 +130,6 @@ local function initialize_entities()
   initialize_enemy()
   initialize_hero()
   initialize_npc()
-  initialize_pickable()
   initialize_sensor()
 end
 

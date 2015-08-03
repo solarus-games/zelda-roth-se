@@ -3,6 +3,8 @@
 --
 -- It can hurt enemies, activate crystals and solid switches,
 -- catch entities and transport the hero accross cliffs and bad grounds.
+-- Edit the file hookshot_config.lua to change settings like the speed
+-- and which entities are hookable.
 --
 -- * Required resources:
 --
@@ -27,30 +29,25 @@
 -- * Catching entities:
 --
 -- You can customize which entities can be cought.
--- An entity can be cought by the hookshot if it has a method
+-- A list of entity types that can be cought is defined in
+-- hookshot_config.lua, feel free to change it.
+-- You can also allow individual entities to be cought by defining a method
 -- is_catchable_with_hookshot() returning true.
--- If such a method does not exist or does not return true,
--- the entity is not catchable.
--- You probably want to define this method on the metatable of pickables.
 --
 -- * Transporting the hero:
 --
 -- You can customize which entities the hookshot can hook to.
--- The hookshot can get attached to an entity if this entity has a method
+-- A list of entity types that are hookable is defined in
+-- hookshot_config.lua, feel free to change it.
+-- You can also allow individual entities to be hookable by defining a method
 -- is_hookable() returning true.
--- If such a method does not exist or does not return true,
--- the entity is not a hook.
--- For example, to make chests and destructibles hookable, you can define
--- this method on the metatable of chests and destructibles.
 -- If the hero arrives inside an obstacle after the hookshot transportation,
 -- his position is automatically adjusted to the last legal position along
 -- the way.
 
 local item = ...
 
--- Feel free to change these values if you want.
-local hookshot_distance = 120  -- Distance in pixels.
-local hookshot_speed = 192     -- Speed in pixels per second
+local config = require("items/hookshot_config.lua")
 
 function item:on_created()
 
@@ -138,10 +135,10 @@ function item:on_using()
 
     local movement = sol.movement.create("straight")
     local angle = direction * math.pi / 2
-    movement:set_speed(hookshot_speed)
+    movement:set_speed(config.speed)
     movement:set_angle(angle)
     movement:set_smooth(false)
-    movement:set_max_distance(hookshot_distance)
+    movement:set_max_distance(config.distance)
     movement:start(hookshot)
 
     function movement:on_obstacle_reached()
@@ -172,7 +169,7 @@ function item:on_using()
 
     local movement = sol.movement.create("straight")
     local angle = (direction + 2) * math.pi / 2
-    movement:set_speed(hookshot_speed)
+    movement:set_speed(config.speed)
     movement:set_angle(angle)
     movement:set_smooth(false)
     movement:set_max_distance(hookshot:get_distance(hero))
@@ -222,7 +219,7 @@ function item:on_using()
 
     local movement = sol.movement.create("straight")
     local angle = direction * math.pi / 2
-    movement:set_speed(hookshot_speed)
+    movement:set_speed(config.speed)
     movement:set_angle(angle)
     movement:set_smooth(false)
     movement:set_max_distance(hookshot:get_distance(hero))
@@ -451,9 +448,16 @@ function item:on_using()
   item:set_finished()
 end
 
--- Add Lua hookhost properties to enemies.
-local enemy_meta = sol.main.get_metatable("enemy")
-if enemy_meta.get_hookshot_reaction == nil then
+-- Initialize the metatable of appropriate entities to work with the hookshot.
+local function initialize_meta()
+
+  -- Add Lua hookhost properties to enemies.
+  local enemy_meta = sol.main.get_metatable("enemy")
+  if enemy_meta.get_hookshot_reaction ~= nil then
+    -- Already done.
+    return
+  end
+
   enemy_meta.hookshot_reaction = "immobilized"  -- Immobilized by default.
   function enemy_meta:get_hookshot_reaction(sprite)
     return self.hookshot_reaction
@@ -471,4 +475,24 @@ if enemy_meta.get_hookshot_reaction == nil then
     previous_set_invincible(self)
     self:set_hookshot_reaction("ignored")
   end
+
+  -- Set up entity types catchable with the hookshot.
+  for _, entity_type in ipairs(config.catchable_entity_types) do
+    local meta = sol.main.get_metatable(entity_type)
+
+    function meta:is_catchable_with_hookshot()
+      return true
+    end
+  end
+
+  -- Set up entity types hookable with the hookshot.
+  for _, entity_type in ipairs(config.hookable_entity_types) do
+    local meta = sol.main.get_metatable(entity_type)
+
+    function meta:is_hookable()
+      return true
+    end
+  end
 end
+
+initialize_meta()
