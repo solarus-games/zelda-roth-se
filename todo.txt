@@ -3,6 +3,5 @@
 - Modernize the HUD
 - Allow to map game commands
 - Video modes
-- Improve dungeon 1
 - Improve dungeon 3
 

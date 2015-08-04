@@ -16,4 +16,5 @@ New features
 * Joypad support.
 * Improved hookshot.
 * Original musics and sounds from Zelda A Link to the Past.
+* Improved dungeon 1.
 
