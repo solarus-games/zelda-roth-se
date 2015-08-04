@@ -4,10 +4,10 @@
 local config = {
 
   -- Range of the hookshot in pixels.
-  distance = 120,
+  distance = 208,
 
   -- Speed in pixels per second.
-  speed = 192,
+  speed = 224,
 
   -- What types of entities can be cought.
   -- Additionally, all entities that have a method "is_catchable_with_hookshot"
