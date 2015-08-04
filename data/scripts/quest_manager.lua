@@ -32,7 +32,7 @@ local function initialize_enemy()
     local reaction = self:get_attack_consequence_sprite(enemy_sprite, "sword")
     -- Multiply the sword consequence by the force of the hero.
     local life_lost = reaction * force
-    if hero:get_state() == "spin_attack" then
+    if hero:get_state() == "sword spin attack" then
       -- And multiply this by 2 during a spin attack.
       life_lost = life_lost * 2
     end
