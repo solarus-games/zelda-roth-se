@@ -10789,6 +10789,15 @@ tile{
   pattern = "forest.grass",
 }
 
+tile{
+  layer = 1,
+  x = 528,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "sand.soil",
+}
+
 teletransporter{
   layer = 1,
   x = 0,
