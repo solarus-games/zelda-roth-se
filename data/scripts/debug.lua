@@ -96,9 +96,9 @@ function debug:on_key_pressed(key, modifiers)
 end
 
 -- The shift key skips dialogs
--- and the control key traverses walls.
+-- and allows to traverse walls.
 local hero_movement = nil
-local ctrl_pressed = false
+local shift_pressed = false
 function debug:on_update()
 
   local game = sol.main.game
@@ -123,14 +123,14 @@ function debug:on_update()
         end
       end
       if hero_movement ~= nil then
-        if not ctrl_pressed
-            and (sol.input.is_key_pressed("left control") or sol.input.is_key_pressed("right control")) then
+        if not shift_pressed
+            and (sol.input.is_key_pressed("left shift") or sol.input.is_key_pressed("right shift")) then
           hero_movement:set_ignore_obstacles(true)
-          ctrl_pressed = true
-        elseif ctrl_pressed
-            and (not sol.input.is_key_pressed("left control") and not sol.input.is_key_pressed("right control")) then
+          shift_pressed = true
+        elseif shift_pressed
+            and (not sol.input.is_key_pressed("left shift") and not sol.input.is_key_pressed("right shift")) then
           hero_movement:set_ignore_obstacles(false)
-          ctrl_pressed = false
+          shift_pressed = false
         end
       end
     end

@@ -10,6 +10,7 @@ local hud_manager = require("scripts/hud/hud")
 local pause_manager = require("scripts/menus/pause")
 local dungeon_manager = require("scripts/dungeons")
 local equipment_manager = require("scripts/equipment")
+local camera_manager = require("scripts/camera_manager")
 
 local game_manager = {}
 
@@ -64,6 +65,7 @@ function game_manager:create(file)
     dialog_box = dialog_box_manager:create(game)
     hud = hud_manager:create(game)
     pause_menu = pause_manager:create(game)
+    camera = camera_manager:create(game)
 
     -- Initialize the hero.
     game:get_hero():set_walking_speed(normal_walking_speed)
@@ -80,6 +82,7 @@ function game_manager:create(file)
     hud:quit()
     hud = nil
     pause_menu = nil
+    camera = nil
   end
 
   -- Changes the walking speed of the hero depending on whether
