@@ -1,4 +1,5 @@
 - Finish the content
+- Chickens
 - Modernize the HUD
 - Allow to map game commands
 - Video modes

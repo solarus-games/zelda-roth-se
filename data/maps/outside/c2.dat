@@ -12026,6 +12026,14 @@ custom_entity{
   model = "hookable",
 }
 
+pickable{
+  layer = 1,
+  x = 88,
+  y = 93,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_c2_piece_of_heart_d",
+}
+
 tile{
   layer = 2,
   x = 0,
