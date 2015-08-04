@@ -1739,19 +1739,19 @@ wall{
   y = 664,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_7",
   layer = 0,
   x = 96,
   y = 693,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_7",
 }
 
 tile{
@@ -3934,15 +3934,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 144,
-  y = 768,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 1,
   x = 128,
   y = 752,
   width = 48,
@@ -4029,132 +4020,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "grass.weed",
-}
-
-tile{
-  layer = 1,
-  x = 640,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 640,
-  y = 848,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 688,
-  y = 848,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 688,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 736,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 736,
-  y = 848,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 784,
-  y = 848,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 784,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 832,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 832,
-  y = 848,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 880,
-  y = 848,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 880,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 928,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 928,
-  y = 848,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
 }
 
 tile{
@@ -4290,69 +4155,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "grass.weed",
-}
-
-tile{
-  layer = 1,
-  x = 1120,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1168,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1216,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1264,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1312,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1360,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1408,
-  y = 800,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
 }
 
 tile{
@@ -5154,15 +4956,6 @@ tile{
   width = 144,
   height = 16,
   pattern = "grass.under_bush",
-}
-
-tile{
-  layer = 1,
-  x = 304,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
 }
 
 tile{
@@ -6871,7 +6664,7 @@ npc{
   x = 984,
   y = 829,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -6880,7 +6673,7 @@ npc{
   x = 1464,
   y = 813,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -7361,8 +7154,6 @@ custom_entity{
   layer = 1,
   x = 232,
   y = 125,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7372,8 +7163,6 @@ custom_entity{
   layer = 1,
   x = 248,
   y = 125,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7383,8 +7172,6 @@ custom_entity{
   layer = 1,
   x = 264,
   y = 125,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7394,8 +7181,6 @@ custom_entity{
   layer = 1,
   x = 280,
   y = 141,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7405,8 +7190,6 @@ custom_entity{
   layer = 1,
   x = 232,
   y = 221,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7416,8 +7199,6 @@ custom_entity{
   layer = 1,
   x = 248,
   y = 221,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7427,8 +7208,6 @@ custom_entity{
   layer = 1,
   x = 264,
   y = 221,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7438,8 +7217,6 @@ custom_entity{
   layer = 1,
   x = 280,
   y = 205,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7449,8 +7226,6 @@ custom_entity{
   layer = 1,
   x = 296,
   y = 189,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7460,8 +7235,6 @@ custom_entity{
   layer = 1,
   x = 296,
   y = 173,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7471,8 +7244,6 @@ custom_entity{
   layer = 1,
   x = 296,
   y = 157,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7482,8 +7253,6 @@ custom_entity{
   layer = 1,
   x = 200,
   y = 189,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7493,8 +7262,6 @@ custom_entity{
   layer = 1,
   x = 200,
   y = 173,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7504,8 +7271,6 @@ custom_entity{
   layer = 1,
   x = 200,
   y = 157,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7515,8 +7280,6 @@ custom_entity{
   layer = 1,
   x = 216,
   y = 141,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7526,8 +7289,6 @@ custom_entity{
   layer = 1,
   x = 216,
   y = 205,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -7567,13 +7328,13 @@ teletransporter{
 }
 
 dynamic_tile{
+  name = "invisible_tile_20",
   layer = 1,
   x = 88,
   y = 664,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_20",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -7583,40 +7344,289 @@ wall{
   y = 664,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_2",
   layer = 1,
   x = 80,
   y = 664,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_2",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_3",
   layer = 1,
   x = 104,
   y = 664,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_3",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_6",
   layer = 1,
   x = 96,
   y = 701,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_6",
+}
+
+custom_entity{
+  layer = 1,
+  x = 312,
+  y = 381,
+  direction = 0,
+  sprite = "entities/hook_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 152,
+  y = 781,
+  direction = 0,
+  sprite = "entities/hook_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 648,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 696,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 744,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 792,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 840,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 888,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 936,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1128,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1176,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1224,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1272,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1320,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1368,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1416,
+  y = 813,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 648,
+  y = 861,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 696,
+  y = 861,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 744,
+  y = 861,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 792,
+  y = 861,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 840,
+  y = 861,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 888,
+  y = 861,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 936,
+  y = 861,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
 }
 
 tile{

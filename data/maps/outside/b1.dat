@@ -1885,19 +1885,19 @@ wall{
   y = 120,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_5",
   layer = 0,
   x = 1776,
   y = 149,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_5",
 }
 
 tile{
@@ -5791,24 +5791,6 @@ tile{
 tile{
   layer = 1,
   x = 1264,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 1264,
-  y = 200,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 1264,
   y = 208,
   width = 16,
   height = 16,
@@ -6186,24 +6168,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 832,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 832,
-  y = 440,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
-}
-
-tile{
-  layer = 1,
   x = 752,
   y = 448,
   width = 16,
@@ -6461,24 +6425,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "sand.weed",
-}
-
-tile{
-  layer = 1,
-  x = 1280,
-  y = 336,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 1280,
-  y = 344,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
 }
 
 tile{
@@ -6803,24 +6749,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "sand.under_bush",
-}
-
-tile{
-  layer = 1,
-  x = 1392,
-  y = 544,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 1392,
-  y = 552,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
 }
 
 tile{
@@ -7450,19 +7378,19 @@ wall{
   y = 472,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor",
   layer = 1,
   x = 248,
   y = 501,
   width = 16,
   height = 16,
-  name = "layer_up_sensor",
 }
 
 wall{
@@ -7471,19 +7399,19 @@ wall{
   y = 408,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_2",
   layer = 1,
   x = 968,
   y = 437,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_2",
 }
 
 wall{
@@ -7492,19 +7420,19 @@ wall{
   y = 552,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_3",
   layer = 1,
   x = 1768,
   y = 581,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_3",
 }
 
 wall{
@@ -7513,19 +7441,19 @@ wall{
   y = 152,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_4",
   layer = 1,
   x = 1592,
   y = 181,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_4",
 }
 
 teletransporter{
@@ -7577,7 +7505,7 @@ npc{
   x = 120,
   y = 589,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -7641,7 +7569,7 @@ npc{
   x = 776,
   y = 589,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -8210,8 +8138,6 @@ custom_entity{
   layer = 1,
   x = 1896,
   y = 493,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -8240,13 +8166,13 @@ destructible{
 }
 
 dynamic_tile{
+  name = "invisible_tile_13",
   layer = 1,
   x = 1768,
   y = 120,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_13",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -8256,40 +8182,76 @@ wall{
   y = 120,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_14",
   layer = 1,
   x = 1760,
   y = 120,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_14",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_15",
   layer = 1,
   x = 1784,
   y = 120,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_15",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_5",
   layer = 1,
   x = 1776,
   y = 157,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_5",
+}
+
+custom_entity{
+  layer = 1,
+  x = 840,
+  y = 445,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1288,
+  y = 349,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1400,
+  y = 557,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1272,
+  y = 205,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
 }
 
 tile{
@@ -8308,15 +8270,6 @@ tile{
   width = 144,
   height = 128,
   pattern = "sand.soil",
-}
-
-tile{
-  layer = 2,
-  x = 560,
-  y = 464,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
 }
 
 tile{
@@ -8474,15 +8427,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 736,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
   x = 640,
   y = 80,
   width = 128,
@@ -8533,15 +8477,6 @@ tile{
   width = 240,
   height = 112,
   pattern = "sand.soil",
-}
-
-tile{
-  layer = 2,
-  x = 208,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
 }
 
 tile{
@@ -9113,15 +9048,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 272,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
   x = 208,
   y = 368,
   width = 16,
@@ -9154,15 +9080,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "sand.under_stone",
-}
-
-tile{
-  layer = 2,
-  x = 272,
-  y = 408,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
 }
 
 tile{
@@ -9226,15 +9143,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "ruins.3",
-}
-
-tile{
-  layer = 2,
-  x = 560,
-  y = 472,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
 }
 
 tile{
@@ -9653,15 +9561,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 208,
-  y = 168,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
-}
-
-tile{
-  layer = 2,
   x = 32,
   y = 368,
   width = 16,
@@ -9824,15 +9723,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 48,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
   x = 0,
   y = 64,
   width = 192,
@@ -9883,15 +9773,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "sand.cliff.top.diag.1b",
-}
-
-tile{
-  layer = 2,
-  x = 48,
-  y = 408,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
 }
 
 tile{
@@ -10724,15 +10605,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 736,
-  y = 232,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
-}
-
-tile{
-  layer = 2,
   x = 792,
   y = 224,
   width = 8,
@@ -11125,24 +10997,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "sand.soil.3",
-}
-
-tile{
-  layer = 2,
-  x = 912,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 912,
-  y = 232,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
 }
 
 tile{
@@ -11633,24 +11487,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 752,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 752,
-  y = 376,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
-}
-
-tile{
-  layer = 2,
   x = 816,
   y = 368,
   width = 16,
@@ -11674,24 +11510,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "sand.weed",
-}
-
-tile{
-  layer = 2,
-  x = 928,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 928,
-  y = 376,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
 }
 
 tile{
@@ -11755,24 +11573,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "ruins.corner.3",
-}
-
-tile{
-  layer = 2,
-  x = 1088,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 1088,
-  y = 440,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
 }
 
 tile{
@@ -12205,24 +12005,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "ruins.corner_reverse.3",
-}
-
-tile{
-  layer = 2,
-  x = 1456,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 1456,
-  y = 152,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
 }
 
 tile{
@@ -13010,24 +12792,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 704,
-  y = 704,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 704,
-  y = 712,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
-}
-
-tile{
-  layer = 2,
   x = 560,
   y = 688,
   width = 16,
@@ -13244,24 +13008,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 1200,
-  y = 704,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 1200,
-  y = 712,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
-}
-
-tile{
-  layer = 2,
   x = 1168,
   y = 672,
   width = 16,
@@ -13315,13 +13061,13 @@ tile{
 }
 
 dynamic_tile{
+  name = "invisible_tile_2",
   layer = 2,
   x = 240,
   y = 448,
+  pattern = "ruins.steps",
   width = 16,
   height = 64,
-  name = "invisible_tile_2",
-  pattern = "ruins.steps",
   enabled_at_start = true,
 }
 
@@ -13331,8 +13077,8 @@ wall{
   y = 472,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13348,24 +13094,24 @@ destructible{
 }
 
 dynamic_tile{
+  name = "invisible_tile_3",
   layer = 2,
   x = 256,
   y = 464,
+  pattern = "ruins.steps.border",
   width = 16,
   height = 40,
-  name = "invisible_tile_3",
-  pattern = "ruins.steps.border",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile",
   layer = 2,
   x = 224,
   y = 464,
+  pattern = "ruins.steps.border",
   width = 16,
   height = 40,
-  name = "invisible_tile",
-  pattern = "ruins.steps.border",
   enabled_at_start = true,
 }
 
@@ -13502,12 +13248,12 @@ destructible{
 }
 
 sensor{
+  name = "layer_down_sensor",
   layer = 2,
   x = 248,
   y = 509,
   width = 16,
   height = 16,
-  name = "layer_down_sensor",
 }
 
 npc{
@@ -13515,7 +13261,7 @@ npc{
   x = 392,
   y = 125,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -13575,13 +13321,13 @@ destructible{
 }
 
 dynamic_tile{
+  name = "invisible_tile_4",
   layer = 2,
   x = 960,
   y = 384,
+  pattern = "ruins.steps",
   width = 16,
   height = 64,
-  name = "invisible_tile_4",
-  pattern = "ruins.steps",
   enabled_at_start = true,
 }
 
@@ -13591,40 +13337,40 @@ wall{
   y = 408,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_5",
   layer = 2,
   x = 976,
   y = 400,
+  pattern = "ruins.steps.border",
   width = 16,
   height = 40,
-  name = "invisible_tile_5",
-  pattern = "ruins.steps.border",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_6",
   layer = 2,
   x = 944,
   y = 400,
+  pattern = "ruins.steps.border",
   width = 16,
   height = 40,
-  name = "invisible_tile_6",
-  pattern = "ruins.steps.border",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_2",
   layer = 2,
   x = 968,
   y = 445,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_2",
 }
 
 destructible{
@@ -13661,13 +13407,13 @@ destructible{
 }
 
 dynamic_tile{
+  name = "invisible_tile_7",
   layer = 2,
   x = 1760,
   y = 528,
+  pattern = "ruins.steps",
   width = 16,
   height = 64,
-  name = "invisible_tile_7",
-  pattern = "ruins.steps",
   enabled_at_start = true,
 }
 
@@ -13677,50 +13423,50 @@ wall{
   y = 552,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_8",
   layer = 2,
   x = 1776,
   y = 544,
+  pattern = "ruins.steps.border",
   width = 16,
   height = 40,
-  name = "invisible_tile_8",
-  pattern = "ruins.steps.border",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_9",
   layer = 2,
   x = 1744,
   y = 544,
+  pattern = "ruins.steps.border",
   width = 16,
   height = 40,
-  name = "invisible_tile_9",
-  pattern = "ruins.steps.border",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_3",
   layer = 2,
   x = 1768,
   y = 589,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_3",
 }
 
 dynamic_tile{
+  name = "invisible_tile_10",
   layer = 2,
   x = 1584,
   y = 128,
+  pattern = "ruins.steps",
   width = 16,
   height = 64,
-  name = "invisible_tile_10",
-  pattern = "ruins.steps",
   enabled_at_start = true,
 }
 
@@ -13730,40 +13476,40 @@ wall{
   y = 152,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_11",
   layer = 2,
   x = 1600,
   y = 144,
+  pattern = "ruins.steps.border",
   width = 16,
   height = 40,
-  name = "invisible_tile_11",
-  pattern = "ruins.steps.border",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_12",
   layer = 2,
   x = 1568,
   y = 144,
+  pattern = "ruins.steps.border",
   width = 16,
   height = 40,
-  name = "invisible_tile_12",
-  pattern = "ruins.steps.border",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_4",
   layer = 2,
   x = 1592,
   y = 189,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_4",
 }
 
 destructible{
@@ -13947,5 +13693,113 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+custom_entity{
+  layer = 2,
+  x = 712,
+  y = 717,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 1208,
+  y = 717,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 568,
+  y = 477,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 760,
+  y = 381,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 936,
+  y = 381,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 744,
+  y = 237,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 920,
+  y = 237,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 1096,
+  y = 445,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 1464,
+  y = 157,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 216,
+  y = 173,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 56,
+  y = 413,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 280,
+  y = 413,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
 }
 

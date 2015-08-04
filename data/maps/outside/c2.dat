@@ -962,6 +962,14 @@ pickable{
   treasure_savegame_variable = "outside_c2_piece_of_heart_c",
 }
 
+pickable{
+  layer = 0,
+  x = 472,
+  y = 205,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_c2_piece_of_heart_a",
+}
+
 tile{
   layer = 1,
   x = 1376,
@@ -4465,24 +4473,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1440,
-  y = 176,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1488,
-  y = 176,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
   x = 1504,
   y = 96,
   width = 16,
@@ -4812,15 +4802,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "grass.weed",
-}
-
-tile{
-  layer = 1,
-  x = 208,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
 }
 
 tile{
@@ -10333,114 +10314,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1392,
-  y = 352,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1456,
-  y = 352,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1520,
-  y = 352,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1392,
-  y = 416,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1456,
-  y = 416,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1520,
-  y = 416,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1392,
-  y = 480,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1456,
-  y = 480,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1520,
-  y = 480,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1456,
-  y = 544,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1520,
-  y = 544,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1520,
-  y = 608,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
   x = 1488,
   y = 560,
   width = 16,
@@ -11655,14 +11528,6 @@ enemy{
   treasure_name = "random_rupee",
 }
 
-pickable{
-  layer = 1,
-  x = 472,
-  y = 205,
-  treasure_name = "piece_of_heart",
-  treasure_savegame_variable = "outside_c2_piece_of_heart_a",
-}
-
 enemy{
   name = "auto_enemy_8",
   layer = 1,
@@ -11986,6 +11851,169 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "inside/monster_house",
+}
+
+custom_entity{
+  layer = 1,
+  x = 216,
+  y = 445,
+  direction = 0,
+  sprite = "entities/hook_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1448,
+  y = 189,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1496,
+  y = 189,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1400,
+  y = 365,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1464,
+  y = 365,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1528,
+  y = 365,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1528,
+  y = 429,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1464,
+  y = 429,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1400,
+  y = 429,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1400,
+  y = 493,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1464,
+  y = 493,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1528,
+  y = 493,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1528,
+  y = 557,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1464,
+  y = 557,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1528,
+  y = 621,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
 }
 
 tile{
@@ -12346,24 +12374,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "ruins.2.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 384,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 384,
-  y = 24,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
 }
 
 tile{
@@ -12859,24 +12869,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "sand.weed",
-}
-
-tile{
-  layer = 2,
-  x = 880,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 880,
-  y = 8,
-  width = 16,
-  height = 8,
-  pattern = "dirt.barrier.border.1",
 }
 
 tile{
@@ -13500,15 +13492,6 @@ tile{
   pattern = "grass.flower_double",
 }
 
-tile{
-  layer = 2,
-  x = 256,
-  y = 592,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
 teletransporter{
   layer = 2,
   x = 0,
@@ -13615,5 +13598,32 @@ sensor{
   y = 669,
   width = 16,
   height = 16,
+}
+
+custom_entity{
+  layer = 2,
+  x = 392,
+  y = 29,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 888,
+  y = 13,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 264,
+  y = 605,
+  direction = 0,
+  sprite = "entities/hook_green",
+  model = "hookable",
 }
 

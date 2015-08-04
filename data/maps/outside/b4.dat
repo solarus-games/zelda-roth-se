@@ -1258,69 +1258,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1696,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.red",
-}
-
-tile{
-  layer = 1,
-  x = 1744,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.red",
-}
-
-tile{
-  layer = 1,
-  x = 1792,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.red",
-}
-
-tile{
-  layer = 1,
-  x = 1840,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.red",
-}
-
-tile{
-  layer = 1,
-  x = 1888,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.red",
-}
-
-tile{
-  layer = 1,
-  x = 1936,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.red",
-}
-
-tile{
-  layer = 1,
-  x = 1984,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.red",
-}
-
-tile{
-  layer = 1,
   x = 2032,
   y = 48,
   width = 16,
@@ -3013,33 +2950,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 640,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 688,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 736,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
   x = 672,
   y = 192,
   width = 16,
@@ -3297,60 +3207,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "sand.weed",
-}
-
-tile{
-  layer = 1,
-  x = 0,
-  y = 128,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 0,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 16,
-  y = 80,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 16,
-  y = 128,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 64,
-  y = 128,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 64,
-  y = 80,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
 }
 
 tile{
@@ -3652,60 +3508,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 2256,
-  y = 32,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 2208,
-  y = 32,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 2416,
-  y = 80,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 2368,
-  y = 80,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 2368,
-  y = 32,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 2416,
-  y = 32,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
   x = 2352,
   y = 192,
   width = 16,
@@ -3864,21 +3666,21 @@ teletransporter{
 }
 
 dynamic_tile{
+  name = "weak_wall_closed",
   layer = 1,
   x = 2496,
   y = 64,
+  pattern = "sand.cliff.1",
   width = 32,
   height = 16,
-  name = "weak_wall_closed",
-  pattern = "sand.cliff.1",
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall",
   layer = 1,
   x = 2504,
   y = 64,
-  name = "weak_wall",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "outside_a1_weak_wall",
@@ -4374,7 +4176,7 @@ npc{
   x = 2488,
   y = 173,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -4471,7 +4273,7 @@ npc{
   x = 2280,
   y = 93,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -4481,19 +4283,19 @@ wall{
   y = 152,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_6",
   layer = 1,
   x = 544,
   y = 181,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_6",
 }
 
 custom_entity{
@@ -4744,6 +4546,280 @@ custom_entity{
   height = 8,
   direction = 2,
   model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 24,
+  y = 93,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 72,
+  y = 93,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 72,
+  y = 141,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 24,
+  y = 141,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 8,
+  y = 141,
+  direction = 0,
+  sprite = "entities/hook_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 328,
+  y = 141,
+  direction = 0,
+  sprite = "entities/hook_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 536,
+  y = 125,
+  direction = 0,
+  sprite = "entities/hook_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 8,
+  y = 109,
+  direction = 0,
+  sprite = "entities/hook_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 648,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 696,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 744,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2216,
+  y = 45,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2264,
+  y = 45,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2376,
+  y = 45,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2424,
+  y = 45,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2424,
+  y = 93,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2376,
+  y = 93,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2056,
+  y = 13,
+  width = 416,
+  direction = 0,
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 168,
+  y = 13,
+  width = 192,
+  direction = 0,
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1704,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1752,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1800,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1848,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1896,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1944,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1992,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_yellow",
+  model = "hookable",
 }
 
 tile{
@@ -5189,15 +5265,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 528,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
   x = 560,
   y = 128,
   width = 16,
@@ -5468,15 +5535,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 320,
-  y = 128,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
   x = 288,
   y = 128,
   width = 16,
@@ -5518,13 +5576,13 @@ teletransporter{
 }
 
 dynamic_tile{
+  name = "invisible_tile_14",
   layer = 2,
   x = 536,
   y = 152,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_14",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -5534,40 +5592,40 @@ wall{
   y = 152,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_2",
   layer = 2,
   x = 528,
   y = 152,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_2",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_3",
   layer = 2,
   x = 552,
   y = 152,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_3",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_6",
   layer = 2,
   x = 544,
   y = 189,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_6",
 }
 
 destructible{

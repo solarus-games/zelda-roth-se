@@ -3959,7 +3959,7 @@ npc{
   x = 152,
   y = 189,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -3990,7 +3990,7 @@ npc{
   x = 168,
   y = 605,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -4065,7 +4065,7 @@ npc{
   x = 808,
   y = 365,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -4173,7 +4173,7 @@ npc{
   x = 1784,
   y = 605,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -4182,7 +4182,7 @@ npc{
   x = 2024,
   y = 605,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
@@ -4847,21 +4847,21 @@ teletransporter{
 }
 
 dynamic_tile{
+  name = "weak_wall_closed",
   layer = 1,
   x = 2096,
   y = 400,
+  pattern = "sand.cliff.1",
   width = 32,
   height = 16,
-  name = "weak_wall_closed",
-  pattern = "sand.cliff.1",
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall",
   layer = 1,
   x = 2104,
   y = 400,
-  name = "weak_wall",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "outside_a1_weak_wall",
@@ -4877,6 +4877,72 @@ teletransporter{
   transition = "scrolling",
   destination_map = "outside/a2",
   destination = "_side",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1576,
+  y = 109,
+  width = 488,
+  direction = 0,
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1576,
+  y = 589,
+  width = 224,
+  direction = 0,
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1848,
+  y = 589,
+  width = 232,
+  direction = 0,
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2072,
+  y = 429,
+  width = 8,
+  direction = 0,
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1568,
+  y = 109,
+  width = 8,
+  height = 496,
+  direction = 0,
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2064,
+  y = 109,
+  width = 8,
+  height = 336,
+  direction = 0,
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2080,
+  y = 429,
+  width = 8,
+  height = 176,
+  direction = 0,
+  model = "hookable",
 }
 
 tile{

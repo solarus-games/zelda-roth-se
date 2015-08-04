@@ -8946,6 +8946,64 @@ sensor{
   height = 16,
 }
 
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 869,
+  direction = 3,
+  sprite = "entities/hammer_stake_brown",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 797,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 813,
+  direction = 0,
+  sprite = "entities/hook_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 813,
+  direction = 0,
+  sprite = "entities/hook_brown",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 813,
+  direction = 0,
+  sprite = "entities/hook_yellow",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 749,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
 tile{
   layer = 1,
   x = 32,
@@ -9724,15 +9782,6 @@ wall{
   stops_blocks = true,
 }
 
-custom_entity{
-  layer = 1,
-  x = 72,
-  y = 869,
-  direction = 3,
-  sprite = "entities/hammer_stake_brown",
-  model = "hammer_stake",
-}
-
 dynamic_tile{
   name = "invisible_tile",
   layer = 1,
@@ -9762,17 +9811,6 @@ sensor{
   y = 141,
   width = 16,
   height = 16,
-}
-
-custom_entity{
-  layer = 1,
-  x = 104,
-  y = 797,
-  width = 32,
-  height = 32,
-  direction = 0,
-  sprite = "entities/hook_tree_small_green",
-  model = "hookable",
 }
 
 tile{

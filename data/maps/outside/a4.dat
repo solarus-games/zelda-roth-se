@@ -646,60 +646,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1792,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1840,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1888,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1936,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 1984,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 2032,
-  y = 96,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
   x = 2208,
   y = 160,
   width = 32,
@@ -2676,19 +2622,19 @@ wall{
   y = 152,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_4",
   layer = 1,
   x = 1336,
   y = 181,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_4",
 }
 
 wall{
@@ -2697,19 +2643,19 @@ wall{
   y = 152,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "layer_up_sensor_2",
   layer = 1,
   x = 752,
   y = 181,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_2",
 }
 
 destructible{
@@ -2973,7 +2919,6 @@ custom_entity{
   x = 2264,
   y = 157,
   width = 8,
-  height = 16,
   direction = 2,
   model = "cliff",
 }
@@ -3016,6 +2961,72 @@ custom_entity{
   height = 8,
   direction = 2,
   model = "cliff",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1800,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1848,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1896,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1944,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1992,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2040,
+  y = 109,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
 }
 
 tile{
@@ -4053,13 +4064,13 @@ destructible{
 }
 
 dynamic_tile{
+  name = "invisible_tile_10",
   layer = 2,
   x = 1328,
   y = 152,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_10",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -4069,50 +4080,50 @@ wall{
   y = 152,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_4",
   layer = 2,
   x = 1320,
   y = 152,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_4",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_5",
   layer = 2,
   x = 1344,
   y = 152,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_5",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_4",
   layer = 2,
   x = 1336,
   y = 189,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_4",
 }
 
 dynamic_tile{
+  name = "invisible_tile_6",
   layer = 2,
   x = 744,
   y = 152,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_6",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -4122,39 +4133,39 @@ wall{
   y = 152,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_7",
   layer = 2,
   x = 736,
   y = 152,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile_7",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_8",
   layer = 2,
   x = 760,
   y = 152,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_8",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "layer_down_sensor_2",
   layer = 2,
   x = 752,
   y = 189,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_2",
 }
 
