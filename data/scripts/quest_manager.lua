@@ -77,7 +77,7 @@ local function initialize_npc()
   local npc_meta = sol.main.get_metatable("npc")
 
   -- Make signs hooks for the hookshot.
-  function npc_meta:is_hook()
+  function npc_meta:is_hookable()
 
     local sprite = self:get_sprite()
     if sprite == nil then

@@ -8815,26 +8815,26 @@ npc{
   x = 24,
   y = 917,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
 dynamic_tile{
-  layer = 0,
-  x = 736,
-  y = 288,
-  width = 32,
-  height = 16,
   name = "weak_wall_closed",
+  layer = 0,
+  x = 736,
+  y = 288,
   pattern = "sand.cliff.1",
+  width = 32,
+  height = 16,
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall",
   layer = 0,
   x = 744,
   y = 288,
-  name = "weak_wall",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "outside_a1_weak_wall",
@@ -8842,21 +8842,21 @@ door{
 }
 
 dynamic_tile{
-  layer = 0,
-  x = 736,
-  y = 112,
-  width = 32,
-  height = 16,
   name = "weak_wall_3_closed",
+  layer = 0,
+  x = 736,
+  y = 112,
   pattern = "grass.cliff.1",
+  width = 32,
+  height = 16,
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall_3",
   layer = 0,
   x = 744,
   y = 112,
-  name = "weak_wall_3",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "outside_a1_weak_wall",
@@ -8864,21 +8864,21 @@ door{
 }
 
 dynamic_tile{
+  name = "weak_wall_2_closed",
   layer = 0,
   x = 736,
   y = 464,
+  pattern = "dirt.cliff.1",
   width = 32,
   height = 16,
-  name = "weak_wall_2_closed",
-  pattern = "dirt.cliff.1",
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall_2",
   layer = 0,
   x = 744,
   y = 464,
-  name = "weak_wall_2",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "outside_a1_weak_wall",
@@ -8889,8 +8889,6 @@ custom_entity{
   layer = 0,
   x = 24,
   y = 869,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_green",
   model = "hammer_stake",
@@ -8900,8 +8898,6 @@ custom_entity{
   layer = 0,
   x = 48,
   y = 869,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -8935,19 +8931,19 @@ wall{
   y = 104,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "to_layer_1_sensor",
   layer = 0,
   x = 80,
   y = 133,
   width = 16,
   height = 16,
-  name = "to_layer_1_sensor",
 }
 
 tile{
@@ -9707,13 +9703,13 @@ tile{
 }
 
 dynamic_tile{
+  name = "invisible_tile_2",
   layer = 1,
   x = 72,
   y = 104,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_2",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
@@ -9723,8 +9719,8 @@ wall{
   y = 104,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -9732,42 +9728,51 @@ custom_entity{
   layer = 1,
   x = 72,
   y = 869,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_brown",
   model = "hammer_stake",
 }
 
 dynamic_tile{
+  name = "invisible_tile",
   layer = 1,
   x = 64,
   y = 104,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_3",
   layer = 1,
   x = 88,
   y = 104,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_3",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "to_layer_0_sensor",
   layer = 1,
   x = 80,
   y = 141,
   width = 16,
   height = 16,
-  name = "to_layer_0_sensor",
+}
+
+custom_entity{
+  layer = 1,
+  x = 104,
+  y = 797,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
 }
 
 tile{

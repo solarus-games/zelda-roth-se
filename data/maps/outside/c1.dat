@@ -1287,42 +1287,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 720,
-  y = 1024,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 864,
-  y = 1024,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 720,
-  y = 1120,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 864,
-  y = 1120,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
   x = 912,
   y = 1168,
   width = 32,
@@ -4518,150 +4482,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 672,
-  y = 256,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 720,
-  y = 256,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 720,
-  y = 304,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 304,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 720,
-  y = 352,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 352,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 400,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 448,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 896,
-  y = 256,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 896,
-  y = 304,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 896,
-  y = 352,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 896,
-  y = 400,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 896,
-  y = 448,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 848,
-  y = 256,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 848,
-  y = 304,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 848,
-  y = 352,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
   x = 720,
   y = 400,
   width = 32,
@@ -5018,15 +4838,6 @@ tile{
   width = 48,
   height = 40,
   pattern = "tree.under",
-}
-
-tile{
-  layer = 1,
-  x = 872,
-  y = 888,
-  width = 48,
-  height = 16,
-  pattern = "grass.tree.roots.1",
 }
 
 tile{
@@ -5895,15 +5706,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 480,
-  y = 160,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
   x = 592,
   y = 104,
   width = 8,
@@ -6723,24 +6525,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 560,
-  y = 160,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 640,
-  y = 160,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
   x = 896,
   y = 96,
   width = 16,
@@ -6890,15 +6674,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "grass.soil.diag.1b",
-}
-
-tile{
-  layer = 1,
-  x = 400,
-  y = 160,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
 }
 
 tile{
@@ -7200,15 +6975,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 384,
-  y = 544,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
   x = 520,
   y = 576,
   width = 8,
@@ -7340,15 +7106,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "grass.cliff.top.diag.3b",
-}
-
-tile{
-  layer = 1,
-  x = 544,
-  y = 544,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
 }
 
 tile{
@@ -7794,15 +7551,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 224,
-  y = 640,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 1,
   x = 232,
   y = 504,
   width = 8,
@@ -7925,15 +7673,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "grass.soil.diag.2",
-}
-
-tile{
-  layer = 1,
-  x = 80,
-  y = 688,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
 }
 
 tile{
@@ -8393,6 +8132,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "grass.under_bush",
+}
+
+tile{
+  layer = 1,
+  x = 872,
+  y = 888,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
 }
 
 teletransporter{
@@ -9478,6 +9226,314 @@ custom_entity{
   model = "hookable",
 }
 
+custom_entity{
+  layer = 1,
+  x = 408,
+  y = 173,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 488,
+  y = 173,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 568,
+  y = 173,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 648,
+  y = 173,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 392,
+  y = 557,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 728,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 856,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 904,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 317,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 728,
+  y = 317,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 856,
+  y = 317,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 904,
+  y = 317,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 365,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 728,
+  y = 365,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 856,
+  y = 365,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 904,
+  y = 365,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 413,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 461,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 904,
+  y = 413,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 904,
+  y = 461,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 728,
+  y = 1037,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 872,
+  y = 1037,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 872,
+  y = 1133,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 728,
+  y = 1133,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 88,
+  y = 701,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 232,
+  y = 653,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 552,
+  y = 557,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
 tile{
   layer = 2,
   x = 352,
@@ -10030,15 +10086,6 @@ tile{
 tile{
   layer = 2,
   x = 80,
-  y = 896,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 2,
-  x = 80,
   y = 872,
   width = 96,
   height = 8,
@@ -10308,15 +10355,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 256,
-  y = 1008,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
-}
-
-tile{
-  layer = 2,
   x = 368,
   y = 1024,
   width = 8,
@@ -10367,15 +10405,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "grass.weed",
-}
-
-tile{
-  layer = 2,
-  x = 224,
-  y = 1168,
-  width = 32,
-  height = 32,
-  pattern = "grass.tree_small.green.2",
 }
 
 tile{
@@ -10869,6 +10898,39 @@ custom_entity{
   layer = 2,
   x = 376,
   y = 333,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 88,
+  y = 909,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 264,
+  y = 1021,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/hook_tree_small_green",
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 2,
+  x = 232,
+  y = 1181,
   width = 32,
   height = 32,
   direction = 0,
