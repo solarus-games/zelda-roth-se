@@ -1,0 +1,18 @@
+_______________________________________________________________
+
+Zelda Return of the Hylian, Solarus Edition 1.0.0 (in progress)
+_______________________________________________________________
+
+This is a remake of Zelda Return of the Hylian by Christopho, Mymy and
+Vincent Jouillat, using the Solarus engine.
+
+New features
+------------
+
+* Improved battle system.
+* Use hardware graphical acceleration if available.
+* The window can be resized.
+* Switching to/from fullscreen is faster and does not change the resolution.
+* Joypad support.
+* Improved hookshot.
+
