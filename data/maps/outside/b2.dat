@@ -5,7 +5,7 @@ properties{
   height = 960,
   world = "outside",
   tileset = "light_world",
-  music = "same",
+  music = "village",
 }
 
 tile{
@@ -2209,15 +2209,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 264,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
-}
-
-tile{
-  layer = 1,
   x = 320,
   y = 272,
   width = 8,
@@ -2250,15 +2241,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "house.entrance",
-}
-
-tile{
-  layer = 1,
-  x = 328,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
 }
 
 tile{
@@ -2529,15 +2511,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "house.entrance",
-}
-
-tile{
-  layer = 1,
-  x = 600,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
 }
 
 tile{
@@ -3587,15 +3560,6 @@ tile{
 tile{
   layer = 1,
   x = 600,
-  y = 464,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
-}
-
-tile{
-  layer = 1,
-  x = 600,
   y = 480,
   width = 16,
   height = 8,
@@ -3695,15 +3659,6 @@ tile{
 tile{
   layer = 1,
   x = 328,
-  y = 464,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
-}
-
-tile{
-  layer = 1,
-  x = 328,
   y = 480,
   width = 16,
   height = 8,
@@ -3780,15 +3735,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "house.entrance",
-}
-
-tile{
-  layer = 1,
-  x = 600,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
 }
 
 tile{
@@ -3888,15 +3834,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "house.entrance",
-}
-
-tile{
-  layer = 1,
-  x = 328,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
 }
 
 tile{
@@ -5713,6 +5650,168 @@ custom_entity{
   direction = 0,
   sprite = "entities/hook_tree_small_green",
   model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 504,
+  y = 781,
+  width = 416,
+  direction = 0,
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 88,
+  y = 781,
+  width = 368,
+  direction = 0,
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 424,
+  y = 237,
+  width = 32,
+  direction = 0,
+  model = "hookable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 504,
+  y = 237,
+  width = 32,
+  direction = 0,
+  model = "hookable",
+}
+
+dynamic_tile{
+  name = "leader_door_w",
+  layer = 1,
+  x = 264,
+  y = 272,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "leader_door_e",
+  layer = 1,
+  x = 328,
+  y = 272,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 600,
+  y = 272,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 600,
+  y = 464,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 328,
+  y = 464,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 600,
+  y = 624,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 328,
+  y = 672,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+sensor{
+  name = "open_house_leader_door_w_sensor",
+  layer = 1,
+  x = 264,
+  y = 301,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "open_house_leader_door_e_sensor",
+  layer = 1,
+  x = 328,
+  y = 301,
+  width = 32,
+  height = 16,
+}
+
+teletransporter{
+  layer = 1,
+  x = 264,
+  y = 272,
+  width = 16,
+  height = 16,
+  destination_map = "kakariko/leader_house",
+  destination = "from_outside_w",
+}
+
+teletransporter{
+  layer = 1,
+  x = 328,
+  y = 272,
+  width = 16,
+  height = 16,
+  destination_map = "kakariko/leader_house",
+  destination = "from_outside_e",
+}
+
+destination{
+  name = "from_leader_house_w",
+  layer = 1,
+  x = 272,
+  y = 301,
+  direction = 3,
+}
+
+destination{
+  name = "from_leader_house_e",
+  layer = 1,
+  x = 336,
+  y = 301,
+  direction = 3,
 }
 
 tile{

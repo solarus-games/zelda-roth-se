@@ -11,10 +11,11 @@ map{ id = "dungeon_5/b1", description = "Dungeon 5 B1" }
 map{ id = "dungeon_5/b2", description = "Dungeon 5 B2" }
 map{ id = "dungeon_6/1f", description = "Dungeon 6 1F" }
 map{ id = "enemy_store", description = "Enemy Store" }
-map{ id = "inside/link_house", description = "Link's house" }
-map{ id = "inside/monster_house", description = "Monster house" }
+map{ id = "houses/link_house", description = "Link's house" }
+map{ id = "houses/monster_house", description = "Monster house" }
 map{ id = "inside_store", description = "Inside Store" }
 map{ id = "intro", description = "Intro" }
+map{ id = "kakariko/leader_house", description = "Leader's house" }
 map{ id = "outside/a1", description = "Outside A1 (Desert)" }
 map{ id = "outside/a2", description = "Outside A2 (Castle)" }
 map{ id = "outside/a3", description = "Outside A3 (Ruins)" }
@@ -143,6 +144,8 @@ sprite{ id = "npc/static_villager9", description = "Static villager 9" }
 sprite{ id = "npc/villager1", description = "Villager 1" }
 sprite{ id = "npc/villager2", description = "Villager 2" }
 sprite{ id = "npc/villager3", description = "Villager 3" }
+sprite{ id = "npc/wise_old_man_green", description = "Green wise old man" }
+sprite{ id = "npc/wise_old_man_yellow", description = "Yellow wise old man" }
 sprite{ id = "npc/wizard", description = "Wizard" }
 
 music{ id = "agahnim", description = "Agahnim theme" }

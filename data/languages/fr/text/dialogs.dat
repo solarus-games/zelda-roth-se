@@ -261,6 +261,110 @@ sommeil...
 }
 
 dialog{
+  id = "kakariko.leader_house.first_time",
+  text = [[
+Bonjour Link, je suis le chef de ce village, je
+me doutais que tu passerais.
+
+
+Depuis ce matin des monstres sont apparus un
+peu partout à Hyrule, j'ai voulu aller en
+parler à la princesse Zelda, mais comme tu l'as
+peut-être déjà vu, un puissant sortilège bloque
+l'accès au château...
+
+
+
+Tu dis que Ganon est responsable de tout ça ?
+Qu'il a volé la Triforce et qu'il détient la
+princesse Zelda prisonnière ?
+
+Mmmm... la situation est plus grave que je le
+croyais...
+
+
+Il faut agir au plus vite, tu dois affronter
+Ganon à nouveau!
+
+
+Comment entrer dans le château ? J'ai peut-être
+une idée...
+
+
+Comme tu le sais, le pouvoir des 7 sages a été
+enfermé dans 7 cristaux par le sorcier Aghanim
+alors qu'il tentait de lever le sceau qui
+confinait Ganon au monde des ténèbres.
+Or, bien que tu aies ressuscité les descendants
+des sages après avoir vaincu Ganon et trouvé la
+Triforce, ces cristaux ont conservé leur
+puissance.
+Ils ont été cachés au fin fond des 7 temples,
+réunis-les tous et tu pourras passer outre le
+sortilège de Ganon.
+
+Ce ne sera toutefois pas chose aisée, Ganon a
+certainement dû envoyer ses meilleurs éléments
+protéger ces cristaux...
+
+Une dernière chose, tu n'iras pas loin avec ton
+équipement actuel. Va voir le marchand d'armes
+et dis-lui que tu viens de ma part. Il fera
+sûrement un geste pour toi.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_bow",
+  text = [[
+Va voir le marchand d'armes et dis-lui que tu
+viens de ma part. Il fera sûrement un geste
+pour toi.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_castle",
+  text = [[
+Tu as trouvé les 7 cristaux ? Alors rends-toi
+au château, tu dois avant tout délivrer la
+princesse, elle saura mieux que moi comment
+sauver Hyrule.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_crystals",
+  text = [[
+Il te faut rassembler les 7 cristaux pour avoir
+une chance de sauver Zelda et Hyrule...
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_excalibur",
+  text = [[
+Tes armes sont sans effet sur Ganon ? Dans ce
+cas tu dois trouver Excalibur. On raconte
+qu'elle a été dissimulée dans un temple caché.
+On dit aussi que le chemin menant à la lame
+purificatrice passe par un village peuplé de
+monstres...
+Je me demande si un tel village existe...
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_glove",
+  text = [[
+Toutefois j'ai bien peur que ton équipement
+actuel soit insuffisant pour accéder à ce
+temple, tu devrais peut-être passer voir le
+forgeron du village Gerudo...
+]]
+}
+
+dialog{
   id = "link_house.zelda_message",
   text = [[
 A l'aide !
@@ -567,12 +671,6 @@ dialog{
   text = [[
 Cette porte est verrouillée.
 Il te faut une petite clé pour l'ouvrir !
-]]
-}
-
-dialog{
-  id = "village_welcome_npc",
-  text = [[
 ]]
 }
 

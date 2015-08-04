@@ -10,6 +10,9 @@ local function initialize_dynamic_tile()
   function dynamic_tile_meta:on_created()
 
     local name = self:get_name()
+    if name == nil then
+      return
+    end
 
     if name:match("^invisible_tile") then
       self:set_visible(false)
@@ -97,6 +100,7 @@ local function initialize_sensor()
 
     local hero = self:get_map():get_hero()
     local game = self:get_game()
+    local map = self:get_map()
     local name = self:get_name()
 
     -- Sensors named "to_layer_X_sensor" move the hero on that layer.
@@ -119,6 +123,25 @@ local function initialize_sensor()
     if room ~= nil then
       game:set_explored_dungeon_room(nil, nil, tonumber(room))
       self:remove()
+    end
+  end
+
+  function sensor_meta:on_activated_repeat()
+
+    local hero = self:get_map():get_hero()
+    local game = self:get_game()
+    local map = self:get_map()
+    local name = self:get_name()
+
+    -- Sensors called open_house_xxx_sensor automatically open a house door.
+    local door_name = name:match("^open_house_([a-zA-X1-9_]+)_sensor")
+    local door = map:get_entity(door_name)
+    if door ~= nil then
+      if hero:get_direction() == 1
+	       and door:is_enabled() then
+        door:set_enabled(false)
+        sol.audio.play_sound("door_open")
+      end
     end
   end
 end

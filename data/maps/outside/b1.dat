@@ -13633,13 +13633,6 @@ destructible{
   can_be_cut = true,
 }
 
-destination{
-  layer = 2,
-  x = 568,
-  y = 709,
-  direction = 1,
-}
-
 teletransporter{
   layer = 2,
   x = -16,

@@ -7629,6 +7629,23 @@ custom_entity{
   model = "hookable",
 }
 
+sensor{
+  name = "crystals_required_sensor",
+  layer = 1,
+  x = 1016,
+  y = 525,
+  width = 64,
+  height = 16,
+}
+
+destination{
+  name = "from_crystals_required",
+  layer = 1,
+  x = 1040,
+  y = 829,
+  direction = 1,
+}
+
 tile{
   layer = 2,
   x = 176,

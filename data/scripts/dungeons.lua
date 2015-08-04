@@ -58,6 +58,16 @@ function dungeon_manager:create(game)
     game:set_value("dungeon_" .. dungeon_index .. "_finished", finished)
   end
 
+  function game:are_all_dungeons_finished()
+
+    for i = 1, 7 do
+      if not game:is_dungeon_finished(i) then
+        return false
+      end
+    end
+    return true
+  end
+
   function game:has_dungeon_map(dungeon_index)
 
     dungeon_index = dungeon_index or game:get_dungeon_index()

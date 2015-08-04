@@ -3220,6 +3220,7 @@ tile_pattern{
   y = 96,
   width = 16,
   height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -3230,6 +3231,7 @@ tile_pattern{
   y = 104,
   width = 16,
   height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -3240,6 +3242,7 @@ tile_pattern{
   y = 96,
   width = 8,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -3250,6 +3253,7 @@ tile_pattern{
   y = 96,
   width = 8,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -3700,6 +3704,7 @@ tile_pattern{
   y = 112,
   width = 16,
   height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -3710,6 +3715,7 @@ tile_pattern{
   y = 120,
   width = 16,
   height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -3720,6 +3726,7 @@ tile_pattern{
   y = 112,
   width = 8,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -3730,6 +3737,7 @@ tile_pattern{
   y = 112,
   width = 8,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{

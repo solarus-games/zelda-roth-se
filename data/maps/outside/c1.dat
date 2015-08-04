@@ -8686,7 +8686,7 @@ teletransporter{
   y = 576,
   width = 16,
   height = 16,
-  destination_map = "inside/link_house",
+  destination_map = "houses/link_house",
   destination = "from_outside",
 }
 

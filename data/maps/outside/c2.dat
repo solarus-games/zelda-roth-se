@@ -11859,7 +11859,8 @@ teletransporter{
   y = 640,
   width = 16,
   height = 16,
-  destination_map = "inside/monster_house",
+  destination_map = "houses/monster_house",
+  destination = "from_outside",
 }
 
 custom_entity{

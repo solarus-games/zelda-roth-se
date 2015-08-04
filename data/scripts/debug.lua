@@ -98,7 +98,7 @@ end
 -- The shift key skips dialogs
 -- and allows to traverse walls.
 local hero_movement = nil
-local shift_pressed = false
+local tab_pressed = false
 function debug:on_update()
 
   local game = sol.main.game
@@ -116,21 +116,21 @@ function debug:on_update()
         -- The movement has changed.
         hero_movement = hero:get_movement()
         if hero_movement ~= nil
-            and ctrl_pressed
+            and tab_pressed
             and not hero_movement:get_ignore_obstacles() then
           -- Also traverse obstacles in the new movement.
           hero_movement:set_ignore_obstacles(true)
         end
       end
       if hero_movement ~= nil then
-        if not shift_pressed
-            and (sol.input.is_key_pressed("left shift") or sol.input.is_key_pressed("right shift")) then
+        if not tab_pressed
+            and sol.input.is_key_pressed("tab") then
           hero_movement:set_ignore_obstacles(true)
-          shift_pressed = true
-        elseif shift_pressed
-            and (not sol.input.is_key_pressed("left shift") and not sol.input.is_key_pressed("right shift")) then
+          tab_pressed = true
+        elseif tab_pressed
+            and not sol.input.is_key_pressed("tab") then
           hero_movement:set_ignore_obstacles(false)
-          shift_pressed = false
+          tab_pressed = false
         end
       end
     end
