@@ -1,0 +1,494 @@
+properties{
+  x = 3728,
+  y = 1368,
+  width = 320,
+  height = 240,
+  world = "inside",
+  tileset = "house",
+  music = "mini_game",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 0,
+  width = 272,
+  height = 24,
+  pattern = "wall.1",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 0,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 24,
+  width = 24,
+  height = 192,
+  pattern = "wall.3",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 216,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 216,
+  width = 272,
+  height = 24,
+  pattern = "wall.2",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 216,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.4",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 24,
+  width = 24,
+  height = 192,
+  pattern = "wall.4",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.4",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 208,
+  width = 256,
+  height = 8,
+  pattern = "wall_border.2",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 24,
+  width = 256,
+  height = 8,
+  pattern = "wall_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 32,
+  width = 8,
+  height = 176,
+  pattern = "wall_border.3",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 32,
+  width = 8,
+  height = 176,
+  pattern = "wall_border.4",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 32,
+  width = 256,
+  height = 176,
+  pattern = "floor.1",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "floor.1",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 216,
+  width = 16,
+  height = 16,
+  pattern = "door.2",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 216,
+  width = 8,
+  height = 16,
+  pattern = "door.2.support.2",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 216,
+  width = 8,
+  height = 16,
+  pattern = "door.2.support.1",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.1",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "706",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 144,
+  width = 8,
+  height = 16,
+  pattern = "712",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 144,
+  width = 48,
+  height = 16,
+  pattern = "711",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 144,
+  width = 8,
+  height = 16,
+  pattern = "710",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "704",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 136,
+  width = 48,
+  height = 8,
+  pattern = "705",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.1",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.1",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 104,
+  width = 32,
+  height = 16,
+  pattern = "wall_pillar.3",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 152,
+  width = 24,
+  height = 32,
+  pattern = "wall_statue.3",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 56,
+  width = 24,
+  height = 32,
+  pattern = "wall_statue.3",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 208,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.2",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 208,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.2",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 216,
+  width = 32,
+  height = 24,
+  pattern = "wall_statue.2",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 216,
+  width = 32,
+  height = 24,
+  pattern = "wall_statue.2",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 48,
+  width = 192,
+  height = 8,
+  pattern = "727",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "734",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "732",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 56,
+  width = 8,
+  height = 64,
+  pattern = "731",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 56,
+  width = 192,
+  height = 64,
+  pattern = "730",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 56,
+  width = 8,
+  height = 64,
+  pattern = "729",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 120,
+  width = 192,
+  height = 8,
+  pattern = "733",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "728",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "726",
+}
+
+destination{
+  name = "from_outside",
+  layer = 1,
+  x = 160,
+  y = 221,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 152,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "outside/b2",
+  destination = "from_chest_game",
+}
+
+npc{
+  name = "chest_npc",
+  layer = 1,
+  x = 272,
+  y = 173,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/static_villager13",
+}
+
+chest{
+  name = "chest_1",
+  layer = 1,
+  x = 72,
+  y = 93,
+  sprite = "entities/chest",
+}
+
+chest{
+  name = "chest_2",
+  layer = 1,
+  x = 152,
+  y = 93,
+  sprite = "entities/chest",
+}
+
+chest{
+  name = "chest_3",
+  layer = 1,
+  x = 232,
+  y = 93,
+  sprite = "entities/chest",
+}
+
+tile{
+  layer = 2,
+  x = 112,
+  y = 232,
+  width = 96,
+  height = 8,
+  pattern = "door_cache.2",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 232,
+  width = 32,
+  height = 8,
+  pattern = "door_top.2",
+}
+

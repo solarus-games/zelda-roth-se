@@ -15,4 +15,5 @@ New features
 * Switching to/from fullscreen is faster and does not change the resolution.
 * Joypad support.
 * Improved hookshot.
+* Original musics and sounds from Zelda A Link to the Past.
 

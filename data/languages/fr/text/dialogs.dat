@@ -144,6 +144,52 @@ Il te faut la clé du boss pour l'ouvrir.
 }
 
 dialog{
+  id = "chest_game.already_done",
+  text = [[
+Je n'ai plus de prix à mettre en jeu, désolé.
+]]
+}
+
+dialog{
+  id = "chest_game.go_chest",
+  text = [[
+Choisis un coffre.
+]]
+}
+
+dialog{
+  id = "chest_game.lost",
+  text = [[
+Perdu ! Ce coffre est vide.
+]]
+}
+
+dialog{
+  id = "chest_game.pay_first",
+  text = [[
+Hey !
+Il faut payer pour ouvrir un de mes coffres !!!
+]]
+}
+
+dialog{
+  id = "chest_game.rules",
+  text = [[
+Un de ces coffres contient un quart de coeur,
+tu veux tenter ta chance pour 10 rubis ?
+                 $? Oui
+                 $? Non
+]]
+}
+
+dialog{
+  id = "chest_game.thanks",
+  text = [[
+Merci.
+]]
+}
+
+dialog{
   id = "dungeon_1.crystal_why",
   text = [[
 A quoi pourra-t-il bien servir ?
@@ -457,6 +503,13 @@ vaincus, appuie sur M.
 }
 
 dialog{
+  id = "not_enough_money",
+  text = [[
+Désolé, mais tu n'as pas assez de rubis.
+]]
+}
+
+dialog{
   id = "outside_b2.bottle_merchant.done",
   text = [[
 Désolé, c'était mon seul flacon.
@@ -467,13 +520,6 @@ dialog{
   id = "outside_b2.bottle_merchant.no",
   text = [[
 Reviens me voir si tu changes d'avis.
-]]
-}
-
-dialog{
-  id = "outside_b2.bottle_merchant.not_enough_money",
-  text = [[
-Désolé, mais tu n'as pas assez de rubis.
 ]]
 }
 

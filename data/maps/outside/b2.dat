@@ -5711,6 +5711,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
+  name = "chest_game_door",
   layer = 1,
   x = 600,
   y = 272,
@@ -5810,6 +5811,33 @@ destination{
   name = "from_leader_house_e",
   layer = 1,
   x = 336,
+  y = 301,
+  direction = 3,
+}
+
+sensor{
+  name = "open_house_chest_game_door_sensor",
+  layer = 1,
+  x = 600,
+  y = 301,
+  width = 32,
+  height = 16,
+}
+
+teletransporter{
+  layer = 1,
+  x = 600,
+  y = 272,
+  width = 16,
+  height = 16,
+  destination_map = "kakariko/chest_game",
+  destination = "from_outside",
+}
+
+destination{
+  name = "from_chest_game",
+  layer = 1,
+  x = 608,
   y = 301,
   direction = 3,
 }

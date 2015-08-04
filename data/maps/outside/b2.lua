@@ -24,7 +24,7 @@ function bottle_merchant:on_interaction()
         game:start_dialog("outside_b2.bottle_merchant.no")
       else  -- Yes.
         if game:get_money() < 100 then
-          game:start_dialog("outside_b2.bottle_merchant.not_enough_money")
+          game:start_dialog("not_enough_money")
         else
           game:start_dialog("outside_b2.bottle_merchant.yes", function()
             game:remove_money(100)

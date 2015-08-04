@@ -4,7 +4,7 @@ properties{
   width = 640,
   height = 240,
   tileset = "house",
-  music = "victory",
+  music = "village",
 }
 
 tile{
