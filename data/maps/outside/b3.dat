@@ -5,7 +5,7 @@ properties{
   height = 960,
   world = "outside",
   tileset = "light_world",
-  music = "same",
+  music = "overworld",
 }
 
 tile{
@@ -5685,6 +5685,42 @@ enemy{
   direction = 3,
   breed = "zora_water",
   treasure_name = "random",
+}
+
+destination{
+  name = "from_lake_cave_e",
+  layer = 0,
+  x = 2032,
+  y = 189,
+  direction = 3,
+}
+
+destination{
+  name = "from_lake_cave_w",
+  layer = 0,
+  x = 1440,
+  y = 765,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 2024,
+  y = 160,
+  width = 16,
+  height = 16,
+  destination_map = "caves/lake_cave/1f",
+  destination = "from_outside_e",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1432,
+  y = 736,
+  width = 16,
+  height = 16,
+  destination_map = "caves/lake_cave/1f",
+  destination = "from_outside_w",
 }
 
 tile{

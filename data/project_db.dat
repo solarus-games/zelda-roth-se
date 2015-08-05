@@ -1,3 +1,5 @@
+map{ id = "caves/lake_cave/1f", description = "Lake cave 1F" }
+map{ id = "caves/lake_cave/b1", description = "Lake cave B1" }
 map{ id = "dungeon_1/1f", description = "Dungeon 1 1F" }
 map{ id = "dungeon_1/b1", description = "Dungeon 1 B1" }
 map{ id = "dungeon_2/1f", description = "Dungeon 2 1F" }
