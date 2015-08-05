@@ -69,8 +69,6 @@ animation{
     { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -81,8 +79,6 @@ animation{
     { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -93,20 +89,6 @@ animation{
     { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-  },
-}
-animation{
-  name = "bottle_4",
-  src_image = "entities/items.png",
-  directions = {
-    { x = 96, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{

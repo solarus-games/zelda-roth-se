@@ -5722,6 +5722,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
+  name = "red_potion_door",
   layer = 1,
   x = 600,
   y = 464,
@@ -5732,6 +5733,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
+  name = "broom_grandma_door",
   layer = 1,
   x = 328,
   y = 464,
@@ -5839,6 +5841,60 @@ destination{
   layer = 1,
   x = 608,
   y = 301,
+  direction = 3,
+}
+
+sensor{
+  name = "open_house_broom_grandma_door_sensor",
+  layer = 1,
+  x = 328,
+  y = 493,
+  width = 32,
+  height = 16,
+}
+
+teletransporter{
+  layer = 1,
+  x = 328,
+  y = 464,
+  width = 16,
+  height = 16,
+  destination_map = "kakariko/broom_grandma_house",
+  destination = "from_outside",
+}
+
+destination{
+  name = "from_broom_grandma_house",
+  layer = 1,
+  x = 336,
+  y = 493,
+  direction = 3,
+}
+
+sensor{
+  name = "open_house_red_potion_door_sensor",
+  layer = 1,
+  x = 600,
+  y = 493,
+  width = 32,
+  height = 16,
+}
+
+teletransporter{
+  layer = 1,
+  x = 600,
+  y = 464,
+  width = 16,
+  height = 16,
+  destination_map = "kakariko/red_potion_house",
+  destination = "from_outside",
+}
+
+destination{
+  name = "from_red_potion_house",
+  layer = 1,
+  x = 608,
+  y = 493,
   direction = 3,
 }
 

@@ -15,6 +15,31 @@ potions !!!
 }
 
 dialog{
+  id = "_treasure.bottle_1.2",
+  text = [[
+Tu as obtenu une potion rouge !!!
+Bois-la pour restaurer ton énergie !!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.3",
+  text = [[
+Tu as obtenu une potion verte !!!
+Bois-la pour restaurer ta magie !!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.4",
+  text = [[
+Tu as obtenu une potion bleue !!!
+Bois-la pour restaurer ton énergie et ta
+magie !!!
+]]
+}
+
+dialog{
   id = "_treasure.bottle_2.1",
   text = [[
 Tu as trouvé un flacon vide !!!
@@ -24,11 +49,61 @@ potions !!!
 }
 
 dialog{
+  id = "_treasure.bottle_2.2",
+  text = [[
+Tu as obtenu une potion rouge !!!
+Bois-la pour restaurer ton énergie !!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.3",
+  text = [[
+Tu as obtenu une potion verte !!!
+Bois-la pour restaurer ta magie !!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.4",
+  text = [[
+Tu as obtenu une potion bleue !!!
+Bois-la pour restaurer ton énergie et ta
+magie !!!
+]]
+}
+
+dialog{
   id = "_treasure.bottle_3.1",
   text = [[
 Tu as trouvé un flacon vide !!!
 Tu vas pouvoir t'en servir pour stocker des
 potions !!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.2",
+  text = [[
+Tu as obtenu une potion rouge !!!
+Bois-la pour restaurer ton énergie !!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.3",
+  text = [[
+Tu as obtenu une potion verte !!!
+Bois-la pour restaurer ta magie !!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.4",
+  text = [[
+Tu as obtenu une potion bleue !!!
+Bois-la pour restaurer ton énergie et ta
+magie !!!
 ]]
 }
 
@@ -411,6 +486,32 @@ forgeron du village Gerudo...
 }
 
 dialog{
+  id = "kakariko.red_potion_house.no_bottle",
+  text = [[
+Reviens me voir quand tu auras un flacon vide
+et je te vendrai une potion rouge qui restaure
+l'énergie.
+]]
+}
+
+dialog{
+  id = "kakariko.red_potion_house.offer",
+  text = [[
+Une potion rouge pour 60 rubis,
+ça t'intéresse ?
+              $? Oui
+              $? Non
+]]
+}
+
+dialog{
+  id = "kakariko.red_potion_house.yes",
+  text = [[
+Merci, voilà ta potion.
+]]
+}
+
+dialog{
   id = "link_house.zelda_message",
   text = [[
 A l'aide !
@@ -699,6 +800,14 @@ dialog{
   id = "outside_c2.sw_sign",
   text = [[
 S : Vers le Village Cocorico
+]]
+}
+
+dialog{
+  id = "potion_not_needed",
+  text = [[
+Tu n'as pas besoin de boire cette potion
+maintenant.
 ]]
 }
 

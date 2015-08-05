@@ -17,4 +17,5 @@ New features
 * Improved hookshot.
 * Original musics and sounds from Zelda A Link to the Past.
 * Improved dungeon 1.
+* Saved games now start at the least entrance.
 

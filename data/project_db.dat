@@ -15,8 +15,10 @@ map{ id = "houses/link_house", description = "Link's house" }
 map{ id = "houses/monster_house", description = "Monster house" }
 map{ id = "inside_store", description = "Inside Store" }
 map{ id = "intro", description = "Intro" }
+map{ id = "kakariko/broom_grandma_house", description = "Broom Grandma's house" }
 map{ id = "kakariko/chest_game", description = "Chest game" }
 map{ id = "kakariko/leader_house", description = "Leader's house" }
+map{ id = "kakariko/red_potion_house", description = "Red potion house" }
 map{ id = "outside/a1", description = "Outside A1 (Desert)" }
 map{ id = "outside/a2", description = "Outside A2 (Castle)" }
 map{ id = "outside/a3", description = "Outside A3 (Ruins)" }
@@ -78,6 +80,7 @@ sprite{ id = "entities/door_small_key_block", description = "Door (small key blo
 sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall)" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
+sprite{ id = "entities/drinking_potion", description = "Potion to drink" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/grass", description = "Grass" }
@@ -114,6 +117,8 @@ sprite{ id = "hero/shield2", description = "Hero shield 2" }
 sprite{ id = "hero/shield3", description = "Hero shield 3" }
 sprite{ id = "hero/sword1", description = "Hero sword 1" }
 sprite{ id = "hero/sword2", description = "Hero sword 2" }
+sprite{ id = "hero/sword3", description = "Hero sword 3" }
+sprite{ id = "hero/sword4", description = "Hero sword 4" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
 sprite{ id = "hero/sword_stars2", description = "Hero sword stars 2" }
 sprite{ id = "hero/sword_stars3", description = "Hero sword stars 3" }
@@ -127,6 +132,7 @@ sprite{ id = "menus/dungeon_maps/map1", description = "Dungeon 1 map" }
 sprite{ id = "menus/hero_head", description = "Link head" }
 sprite{ id = "menus/item_cursor", description = "Item cursor" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
+sprite{ id = "npc/book_old_man", description = "Old man with book" }
 sprite{ id = "npc/broom_grandma", description = "Brrom Grandma" }
 sprite{ id = "npc/chicken_boy", description = "Chicken boy" }
 sprite{ id = "npc/merchant_green", description = "Green merchant" }
