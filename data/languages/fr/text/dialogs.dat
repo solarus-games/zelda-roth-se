@@ -621,6 +621,22 @@ l'arc...
 }
 
 dialog{
+  id = "kakariko.tavern.drunk_man",
+  text = [[
+Hic ! On raconte qu'une fée donnerait des
+objets enchantés... Hic ! ... aux aventuriers
+qui la trouveraient... Hic !!!
+]]
+}
+
+dialog{
+  id = "kakariko.tavern.waiter",
+  text = [[
+Bonjour, je vous sers quelque chose ?
+]]
+}
+
+dialog{
   id = "link_house.zelda_message",
   text = [[
 A l'aide !
