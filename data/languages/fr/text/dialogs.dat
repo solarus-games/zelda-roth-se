@@ -235,6 +235,14 @@ Utilise-le pour franchir des obstacles.
 }
 
 dialog{
+  id = "_treasure.lamp.1",
+  text = [[
+Tu as trouvé la lanterne !!!
+Utilise-la pour faire jaillir des flammes.
+]]
+}
+
+dialog{
   id = "_treasure.magic_crystal.1",
   text = [[
 Tu as trouvé un cristal magique !!!
