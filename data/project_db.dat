@@ -47,6 +47,7 @@ tileset{ id = "temple_blue", description = "Temple (blue)" }
 tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
+sprite{ id = "enemies/chicken", description = "Chicken" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/fireball_red_small", description = "Red small Fireball" }
 sprite{ id = "enemies/keese", description = "Keese" }
@@ -325,6 +326,7 @@ item{ id = "small_key", description = "Small key" }
 item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
 
+enemy{ id = "chicken", description = "Chicken" }
 enemy{ id = "fireball_red_small", description = "Red small Fireball" }
 enemy{ id = "keese", description = "Keese" }
 enemy{ id = "mothula", description = "Mothula" }

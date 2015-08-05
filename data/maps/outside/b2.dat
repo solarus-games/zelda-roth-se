@@ -5981,6 +5981,46 @@ teletransporter{
   destination = "from_outside_n",
 }
 
+enemy{
+  layer = 1,
+  x = 760,
+  y = 589,
+  direction = 3,
+  breed = "chicken",
+}
+
+enemy{
+  layer = 1,
+  x = 744,
+  y = 621,
+  direction = 3,
+  breed = "chicken",
+}
+
+enemy{
+  layer = 1,
+  x = 728,
+  y = 653,
+  direction = 3,
+  breed = "chicken",
+}
+
+enemy{
+  layer = 1,
+  x = 760,
+  y = 653,
+  direction = 3,
+  breed = "chicken",
+}
+
+enemy{
+  layer = 1,
+  x = 792,
+  y = 621,
+  direction = 3,
+  breed = "chicken",
+}
+
 tile{
   layer = 2,
   x = 944,

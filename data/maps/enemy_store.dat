@@ -95,3 +95,11 @@ enemy{
   treasure_name = "random",
 }
 
+enemy{
+  layer = 1,
+  x = 24,
+  y = 189,
+  direction = 3,
+  breed = "chicken",
+}
+
