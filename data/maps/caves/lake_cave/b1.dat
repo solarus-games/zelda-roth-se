@@ -1910,7 +1910,17 @@ enemy{
 crystal{
   layer = 1,
   x = 56,
-  y = 605,
+  y = 669,
+}
+
+enemy{
+  name = "auto_enemy_25",
+  layer = 1,
+  x = 480,
+  y = 485,
+  direction = 3,
+  breed = "sand_crab",
+  treasure_name = "random",
 }
 
 tile{

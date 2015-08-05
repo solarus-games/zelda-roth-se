@@ -72,6 +72,24 @@ local function initialize_hero()
 
     game:remove_life(damage)
   end
+
+  -- Redefine what happens when drowning: we don't want to jump.
+  function hero_meta:on_state_changed(state)
+
+    if state == "jumping" then
+      local x, y, layer = self:get_position()
+      local map = self:get_map()
+      if map:get_ground(x, y - 2, layer) == "deep_water" then
+        -- Starting a jump from water: this is the built-in jump of the engine
+        -- does not have the ability to swim.
+        -- TODO this is a hack, improve this when the engine allows to customize drowning.
+        sol.timer.start(map, 1, function()
+          local movement = self:get_movement()
+          movement:set_distance(1)
+        end)
+      end
+    end
+  end
 end
 
 -- Initialize NPC behavior specific to this quest.

@@ -83,6 +83,7 @@ function item:on_using()
   -- Also used for the invisible leader entity used when hooked.
   local function set_can_traverse_rules(entity)
     entity:set_can_traverse("crystal", true)
+    entity:set_can_traverse("crystal_block", true)
     entity:set_can_traverse("hero", true)
     entity:set_can_traverse("jumper", true)
     entity:set_can_traverse("stairs", false)  -- TODO only inner stairs should be obstacle and only when on their lowest layer.

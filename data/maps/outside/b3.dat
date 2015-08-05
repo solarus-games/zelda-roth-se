@@ -12884,6 +12884,32 @@ custom_entity{
   model = "hookable",
 }
 
+pickable{
+  layer = 1,
+  x = 1464,
+  y = 397,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_b3_piece_of_heart_a",
+}
+
+destination{
+  name = "from_dungeon_2",
+  layer = 1,
+  x = 1424,
+  y = 605,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 1416,
+  y = 576,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_2/1f",
+  destination = "from_outside",
+}
+
 tile{
   layer = 2,
   x = 256,
