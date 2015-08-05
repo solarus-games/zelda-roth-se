@@ -19,6 +19,7 @@ map{ id = "kakariko/broom_grandma_house", description = "Broom Grandma's house" 
 map{ id = "kakariko/chest_game", description = "Chest game" }
 map{ id = "kakariko/leader_house", description = "Leader's house" }
 map{ id = "kakariko/red_potion_house", description = "Red potion house" }
+map{ id = "kakariko/shop", description = "Shop" }
 map{ id = "outside/a1", description = "Outside A1 (Desert)" }
 map{ id = "outside/a2", description = "Outside A2 (Castle)" }
 map{ id = "outside/a3", description = "Outside A3 (Ruins)" }

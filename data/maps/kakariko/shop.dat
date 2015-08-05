@@ -1,0 +1,516 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  tileset = "house",
+  music = "village",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 0,
+  width = 272,
+  height = 24,
+  pattern = "wall.1",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 0,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 24,
+  width = 24,
+  height = 192,
+  pattern = "wall.3",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 216,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 216,
+  width = 272,
+  height = 24,
+  pattern = "wall.2",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 216,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.4",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 24,
+  width = 24,
+  height = 192,
+  pattern = "wall.4",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.4",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 208,
+  width = 256,
+  height = 8,
+  pattern = "wall_border.2",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 24,
+  width = 256,
+  height = 8,
+  pattern = "wall_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 32,
+  width = 8,
+  height = 176,
+  pattern = "wall_border.3",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 32,
+  width = 8,
+  height = 176,
+  pattern = "wall_border.4",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 32,
+  width = 256,
+  height = 176,
+  pattern = "floor.1",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "floor.1",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 216,
+  width = 16,
+  height = 16,
+  pattern = "door.2",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 216,
+  width = 8,
+  height = 16,
+  pattern = "door.2.support.2",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 216,
+  width = 8,
+  height = 16,
+  pattern = "door.2.support.1",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.1",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.1",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 40,
+  width = 32,
+  height = 16,
+  pattern = "wall_pillar.3",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 208,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.2",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 208,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.2",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 216,
+  width = 32,
+  height = 24,
+  pattern = "wall_statue.2",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 216,
+  width = 32,
+  height = 24,
+  pattern = "wall_statue.2",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 184,
+  width = 32,
+  height = 16,
+  pattern = "wall_pillar.3",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 184,
+  width = 32,
+  height = 16,
+  pattern = "wall_pillar.4",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 40,
+  width = 32,
+  height = 16,
+  pattern = "wall_pillar.4",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 104,
+  width = 24,
+  height = 32,
+  pattern = "wall_statue.3",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 104,
+  width = 24,
+  height = 32,
+  pattern = "wall_statue.4",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 56,
+  width = 240,
+  height = 8,
+  pattern = "705",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "706",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "704",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 80,
+  width = 240,
+  height = 16,
+  pattern = "711",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "709",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "712",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 64,
+  width = 240,
+  height = 16,
+  pattern = "708",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "707",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "710",
+}
+
+destination{
+  name = "from_outside",
+  layer = 1,
+  x = 160,
+  y = 221,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 152,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "outside/b2",
+  destination = "from_shop",
+}
+
+npc{
+  name = "merchant",
+  layer = 1,
+  x = 248,
+  y = 173,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/static_villager7",
+}
+
+shop_treasure{
+  name = "shop_heart",
+  layer = 1,
+  x = 40,
+  y = 64,
+  treasure_name = "heart",
+  price = 10,
+  font = "white_digits",
+  dialog = "shop.heart.1",
+}
+
+shop_treasure{
+  name = "shop_small_magic_jar",
+  layer = 1,
+  x = 80,
+  y = 64,
+  treasure_name = "magic_flask",
+  price = 20,
+  font = "white_digits",
+  dialog = "shop.magic_flask.1",
+}
+
+shop_treasure{
+  name = "shop_big_magic_jar",
+  layer = 1,
+  x = 120,
+  y = 64,
+  treasure_name = "magic_flask",
+  treasure_variant = 2,
+  price = 30,
+  font = "white_digits",
+  dialog = "shop.magic_flask.2",
+}
+
+shop_treasure{
+  name = "shop_arrow",
+  layer = 1,
+  x = 160,
+  y = 64,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  price = 30,
+  font = "white_digits",
+  dialog = "shop.arrow.2",
+}
+
+shop_treasure{
+  name = "shop_bomb",
+  layer = 1,
+  x = 200,
+  y = 64,
+  treasure_name = "bomb",
+  price = 30,
+  font = "white_digits",
+  dialog = "shop.bomb.1",
+}
+
+shop_treasure{
+  name = "shop_bow_1000",
+  layer = 1,
+  x = 240,
+  y = 64,
+  treasure_name = "bow",
+  treasure_variant = 2,
+  treasure_savegame_variable = "kakariko_shop_bow",
+  price = 1000,
+  font = "white_digits",
+  dialog = "shop.bow.2",
+}
+
+shop_treasure{
+  name = "shop_bow",
+  layer = 1,
+  x = 240,
+  y = 64,
+  treasure_name = "bow",
+  treasure_variant = 2,
+  treasure_savegame_variable = "kakariko_shop_bow",
+  price = 50,
+  font = "white_digits",
+  dialog = "shop.bow.2",
+}
+
+tile{
+  layer = 2,
+  x = 128,
+  y = 232,
+  width = 64,
+  height = 8,
+  pattern = "door_cache.2",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 232,
+  width = 32,
+  height = 8,
+  pattern = "door_top.2",
+}
+

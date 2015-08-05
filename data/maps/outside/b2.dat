@@ -5744,6 +5744,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
+  name = "shop_door",
   layer = 1,
   x = 600,
   y = 624,
@@ -5895,6 +5896,33 @@ destination{
   layer = 1,
   x = 608,
   y = 493,
+  direction = 3,
+}
+
+sensor{
+  name = "open_house_shop_door_sensor",
+  layer = 1,
+  x = 600,
+  y = 653,
+  width = 32,
+  height = 16,
+}
+
+teletransporter{
+  layer = 1,
+  x = 600,
+  y = 624,
+  width = 16,
+  height = 16,
+  destination_map = "kakariko/shop",
+  destination = "from_outside",
+}
+
+destination{
+  name = "from_shop",
+  layer = 1,
+  x = 608,
+  y = 653,
   direction = 3,
 }
 

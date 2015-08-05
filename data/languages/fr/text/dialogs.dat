@@ -1,4 +1,74 @@
 dialog{
+  id = "_shop.not_enough_money",
+  text = [[
+Désolé, mais tu n'as pas assez de rubis.
+]]
+}
+
+dialog{
+  id = "_shop.question",
+  text = [[
+Prix : $v rubis. Ok ?
+    $? Oui
+    $? Non
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.1",
+  text = [[
+Tu as trouvé une flèche !
+Utilise l'arc et les flèches pour vaincre des
+ennemis à distance.
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.2",
+  text = [[
+Tu as trouvé 5 flèches !
+Utilise l'arc et les flèches pour vaincre des
+ennemis à distance.
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.3",
+  text = [[
+Tu as trouvé 10 flèches !
+Utilise l'arc et les flèches pour vaincre des
+ennemis à distance.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.1",
+  text = [[
+Tu as trouvé une bombe !
+Utilise les bombes pour faire exploser des
+ennemis ou des obstacles.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.2",
+  text = [[
+Tu as trouvé 3 bombes !
+Utilise les bombes pour faire exploser des
+ennemis ou des obstacles.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.3",
+  text = [[
+Tu as trouvé 8 bombes !
+Utilise les bombes pour faire exploser des
+ennemis ou des obstacles.
+]]
+}
+
+dialog{
   id = "_treasure.boss_key.1",
   text = [[
 Tu as trouvé la clé du boss !!!
@@ -150,6 +220,13 @@ Utilise-le pour écraser les obstacles.
 }
 
 dialog{
+  id = "_treasure.heart.1",
+  text = [[
+Tu as trouvé un coeur !
+]]
+}
+
+dialog{
   id = "_treasure.hookshot.1",
   text = [[
 Tu as trouvé le grappin !!!
@@ -161,6 +238,20 @@ dialog{
   id = "_treasure.magic_crystal.1",
   text = [[
 Tu as trouvé un cristal magique !!!
+]]
+}
+
+dialog{
+  id = "_treasure.magic_flask.1",
+  text = [[
+Tu as trouvé une petite fiole de magie !
+]]
+}
+
+dialog{
+  id = "_treasure.magic_flask.2",
+  text = [[
+Tu as trouvé une grande fiole de magie !
 ]]
 }
 
@@ -512,6 +603,16 @@ Merci, voilà ta potion.
 }
 
 dialog{
+  id = "kakariko.shop.reduced_bow",
+  text = [[
+Hein ???
+Tu es en mission pour le chef ???
+Bon alors je vais te faire une réduction sur
+l'arc...
+]]
+}
+
+dialog{
   id = "link_house.zelda_message",
   text = [[
 A l'aide !
@@ -818,6 +919,55 @@ dialog{
                  $? Continuer
            $? Sauvegarder et quitter
           $? Quitter sans sauvegarder
+]]
+}
+
+dialog{
+  id = "shop.arrow.2",
+  text = [[
+5 flèches.
+]]
+}
+
+dialog{
+  id = "shop.bomb.1",
+  text = [[
+Une bombe.
+]]
+}
+
+dialog{
+  id = "shop.bow.2",
+  text = [[
+Un arc.
+]]
+}
+
+dialog{
+  id = "shop.choose",
+  text = [[
+Choisis ce que tu veux.
+]]
+}
+
+dialog{
+  id = "shop.heart.1",
+  text = [[
+Un coeur.
+]]
+}
+
+dialog{
+  id = "shop.magic_flask.1",
+  text = [[
+Un peu de magie.
+]]
+}
+
+dialog{
+  id = "shop.magic_flask.2",
+  text = [[
+Beaucoup de magie.
 ]]
 }
 
