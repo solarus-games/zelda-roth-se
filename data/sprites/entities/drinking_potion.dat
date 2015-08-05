@@ -6,3 +6,19 @@ animation{
     { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
   },
 }
+animation{
+  name = "3",
+  src_image = "entities/drinking_potions.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+  },
+}
+animation{
+  name = "4",
+  src_image = "entities/drinking_potions.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+  },
+}
