@@ -1,6 +1,8 @@
 local item = ...
 -- Script of the Lamp
 
+local magic_needed = 2  -- Number of magic points required
+
 item.temporary_lit_torches = {} -- List of torches that will be unlit by timers soon (FIFO).
 item.was_dark_room = false
 
@@ -13,7 +15,6 @@ end
 -- Called when the hero uses the Lamp.
 function item:on_using()
 
-  local magic_needed = 2  -- Number of magic points required
   if self:get_game():get_magic() >= magic_needed then
     sol.audio.play_sound("lamp")
     self:get_game():remove_magic(magic_needed)

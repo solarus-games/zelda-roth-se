@@ -21,6 +21,7 @@ function hud_manager:create(game)
   local bombs_builder = require("scripts/hud/bombs")
   local arrows_builder = require("scripts/hud/arrows")
   local item_builder = require("scripts/hud/item")
+  local magic_bar_builder = require("scripts/hud/magic_bar")
   local small_keys_builder = require("scripts/hud/small_keys")
   local boss_life_builder = require("scripts/hud/boss_life")
 
@@ -43,6 +44,10 @@ function hud_manager:create(game)
   local item = item_builder:new(game, 1)
   item:set_dst_position(27, 15)
   hud.elements[#hud.elements + 1] = item
+
+  local magic_bar = magic_bar_builder:new(game, 1)
+  magic_bar:set_dst_position(10, 8)
+  hud.elements[#hud.elements + 1] = magic_bar
 
   local small_keys = small_keys_builder:new(game)
   small_keys:set_dst_position(88, 10)
