@@ -8,7 +8,7 @@ properties{
 }
 
 enemy{
-  name = "auto_enemy",
+  name = "auto_enemy_1",
   layer = 1,
   x = 24,
   y = 45,
@@ -18,18 +18,19 @@ enemy{
 }
 
 enemy{
+  name = "enemy_17",
   layer = 1,
-  x = 24,
-  y = 157,
+  x = 232,
+  y = 93,
   direction = 3,
   breed = "pike_auto",
 }
 
 enemy{
-  name = "auto_enemy_13",
+  name = "auto_enemy_18",
   layer = 1,
-  x = 56,
-  y = 157,
+  x = 264,
+  y = 93,
   direction = 3,
   breed = "keese",
   treasure_name = "random_rupee",
@@ -56,7 +57,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_5",
+  name = "auto_enemy_7",
   layer = 1,
   x = 232,
   y = 45,
@@ -66,7 +67,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_6",
+  name = "auto_enemy_8",
   layer = 1,
   x = 264,
   y = 45,
@@ -76,7 +77,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_7",
+  name = "auto_enemy_9",
   layer = 1,
   x = 296,
   y = 45,
@@ -86,7 +87,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_8",
+  name = "auto_enemy_10",
   layer = 1,
   x = 328,
   y = 45,
@@ -97,9 +98,19 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 24,
-  y = 189,
+  x = 56,
+  y = 237,
   direction = 3,
   breed = "chicken",
+}
+
+enemy{
+  name = "auto_enemy_23",
+  layer = 1,
+  x = 88,
+  y = 141,
+  direction = 3,
+  breed = "sand_crab",
+  treasure_name = "random",
 }
 

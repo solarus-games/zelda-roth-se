@@ -57,6 +57,7 @@ sprite{ id = "enemies/mothula", description = "Mothula" }
 sprite{ id = "enemies/pike_auto", description = "Pike (always moving)" }
 sprite{ id = "enemies/pikku", description = "Pikku" }
 sprite{ id = "enemies/rope", description = "Rope" }
+sprite{ id = "enemies/sand_crab", description = "Sand Crab" }
 sprite{ id = "enemies/skeleton", description = "Skeleton" }
 sprite{ id = "enemies/tektite_blue", description = "Blue Tektite" }
 sprite{ id = "enemies/tentacle", description = "Tentacle" }
@@ -335,6 +336,7 @@ enemy{ id = "mothula", description = "Mothula" }
 enemy{ id = "pike_auto", description = "Pike (always moving)" }
 enemy{ id = "pikku", description = "Pikku" }
 enemy{ id = "rope", description = "Rope" }
+enemy{ id = "sand_crab", description = "Sand Crab" }
 enemy{ id = "skeleton", description = "Skeleton" }
 enemy{ id = "tektite_blue", description = "Blue Tektite" }
 enemy{ id = "tentacle", description = "Tentacle" }
