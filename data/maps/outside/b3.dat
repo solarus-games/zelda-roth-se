@@ -5661,7 +5661,7 @@ enemy{
   name = "auto_enemy_14",
   layer = 0,
   x = 488,
-  y = 309,
+  y = 301,
   direction = 3,
   breed = "zora_water",
   treasure_name = "random",
@@ -5670,7 +5670,7 @@ enemy{
 enemy{
   name = "auto_enemy_12",
   layer = 0,
-  x = 1120,
+  x = 1128,
   y = 301,
   direction = 3,
   breed = "zora_water",
@@ -5680,8 +5680,8 @@ enemy{
 enemy{
   name = "auto_enemy_13",
   layer = 0,
-  x = 832,
-  y = 773,
+  x = 808,
+  y = 781,
   direction = 3,
   breed = "zora_water",
   treasure_name = "random",
@@ -12823,7 +12823,7 @@ enemy{
   name = "auto_enemy_9",
   layer = 1,
   x = 568,
-  y = 117,
+  y = 125,
   direction = 3,
   breed = "zora_feet",
   treasure_name = "random",
@@ -12833,7 +12833,7 @@ enemy{
   name = "auto_enemy_11",
   layer = 1,
   x = 1384,
-  y = 613,
+  y = 581,
   direction = 3,
   breed = "zora_feet",
   treasure_name = "random",
@@ -12908,6 +12908,14 @@ teletransporter{
   height = 16,
   destination_map = "dungeon_2/1f",
   destination = "from_outside",
+}
+
+pickable{
+  layer = 1,
+  x = 856,
+  y = 493,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_b3_piece_of_heart_b",
 }
 
 tile{

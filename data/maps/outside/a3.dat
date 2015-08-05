@@ -539,6 +539,14 @@ destructible{
   damage_on_enemies = 4,
 }
 
+pickable{
+  layer = 0,
+  x = 1464,
+  y = 413,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_a3_piece_of_heart_c",
+}
+
 tile{
   layer = 1,
   x = 1552,
@@ -7530,6 +7538,14 @@ custom_entity{
   model = "hookable",
 }
 
+pickable{
+  layer = 1,
+  x = 1120,
+  y = 573,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_a3_piece_of_heart_b",
+}
+
 tile{
   layer = 2,
   x = 480,
@@ -11085,5 +11101,13 @@ custom_entity{
   direction = 0,
   sprite = "entities/hook_green",
   model = "hookable",
+}
+
+pickable{
+  layer = 2,
+  x = 536,
+  y = 413,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_a3_piece_of_heart_a",
 }
 

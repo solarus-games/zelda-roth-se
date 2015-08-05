@@ -4945,6 +4945,46 @@ custom_entity{
   model = "hookable",
 }
 
+pickable{
+  layer = 1,
+  x = 488,
+  y = 365,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_a1_piece_of_heart_a",
+}
+
+pickable{
+  layer = 1,
+  x = 808,
+  y = 573,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_a1_piece_of_heart_b",
+}
+
+pickable{
+  layer = 1,
+  x = 1128,
+  y = 125,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_a1_piece_of_heart_c",
+}
+
+pickable{
+  layer = 1,
+  x = 2008,
+  y = 77,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_a1_piece_of_heart_d",
+}
+
+pickable{
+  layer = 1,
+  x = 128,
+  y = 701,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_a1_piece_of_heart_f",
+}
+
 tile{
   layer = 2,
   x = 2152,
@@ -6830,5 +6870,13 @@ teletransporter{
   transition = "scrolling",
   destination_map = "outside/a2",
   destination = "_side",
+}
+
+pickable{
+  layer = 2,
+  x = 2120,
+  y = 349,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_a1_piece_of_heart_e",
 }
 

@@ -8436,7 +8436,7 @@ enemy{
 enemy{
   layer = 1,
   x = 728,
-  y = 477,
+  y = 461,
   direction = 3,
   breed = "skeleton",
   treasure_name = "random_weapon",
@@ -8445,7 +8445,7 @@ enemy{
 enemy{
   layer = 1,
   x = 872,
-  y = 477,
+  y = 461,
   direction = 3,
   breed = "skeleton",
   treasure_name = "random_weapon",
@@ -8453,7 +8453,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 152,
+  x = 136,
   y = 989,
   direction = 3,
   breed = "tentacle",
@@ -8463,7 +8463,7 @@ enemy{
 enemy{
   layer = 1,
   x = 24,
-  y = 637,
+  y = 653,
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_heart",
@@ -8471,7 +8471,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 892,
+  x = 908,
   y = 821,
   direction = 3,
   breed = "tektite_blue",
@@ -8480,8 +8480,8 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 924,
-  y = 1125,
+  x = 908,
+  y = 1133,
   direction = 3,
   breed = "tektite_blue",
   treasure_name = "random_heart",
@@ -8489,8 +8489,8 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 884,
-  y = 1173,
+  x = 908,
+  y = 1021,
   direction = 3,
   breed = "tektite_blue",
   treasure_name = "random_heart",
@@ -9536,8 +9536,8 @@ custom_entity{
 
 enemy{
   layer = 1,
-  x = 472,
-  y = 77,
+  x = 488,
+  y = 93,
   direction = 3,
   breed = "skeleton",
   treasure_name = "random_weapon",
@@ -9545,8 +9545,8 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 552,
-  y = 77,
+  x = 568,
+  y = 93,
   direction = 3,
   breed = "skeleton",
   treasure_name = "random_weapon",
@@ -9554,10 +9554,32 @@ enemy{
 
 pickable{
   layer = 1,
-  x = 72,
-  y = 109,
+  x = 88,
+  y = 125,
   treasure_name = "piece_of_heart",
   treasure_savegame_variable = "outside_c1_piece_of_heart_d",
+}
+
+destructible{
+  layer = 1,
+  x = 40,
+  y = 157,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 56,
+  y = 157,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
 }
 
 tile{

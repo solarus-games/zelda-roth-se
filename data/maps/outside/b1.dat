@@ -8254,6 +8254,22 @@ custom_entity{
   model = "hookable",
 }
 
+pickable{
+  layer = 1,
+  x = 1160,
+  y = 381,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_b1_piece_of_heart_a",
+}
+
+pickable{
+  layer = 1,
+  x = 1832,
+  y = 269,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_b1_piece_of_heart_b",
+}
+
 tile{
   layer = 2,
   x = 176,
@@ -13794,5 +13810,13 @@ custom_entity{
   direction = 0,
   sprite = "entities/hook_yellow",
   model = "hookable",
+}
+
+pickable{
+  layer = 2,
+  x = 504,
+  y = 429,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_b1_piece_of_heart_c",
 }
 

@@ -1754,6 +1754,14 @@ sensor{
   height = 16,
 }
 
+pickable{
+  layer = 0,
+  x = 1144,
+  y = 733,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_a2_piece_of_heart_b",
+}
+
 tile{
   layer = 1,
   x = 208,
@@ -7644,6 +7652,14 @@ destination{
   x = 1040,
   y = 829,
   direction = 1,
+}
+
+pickable{
+  layer = 1,
+  x = 248,
+  y = 173,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_a2_piece_of_heart_a",
 }
 
 tile{
