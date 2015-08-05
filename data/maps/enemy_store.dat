@@ -8,32 +8,31 @@ properties{
 }
 
 enemy{
-  name = "auto_enemy_1",
+  name = "auto_enemy",
   layer = 1,
   x = 24,
   y = 45,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
-  name = "enemy_17",
   layer = 1,
-  x = 232,
-  y = 93,
+  x = 24,
+  y = 157,
   direction = 3,
   breed = "pike_auto",
 }
 
 enemy{
-  name = "auto_enemy_18",
+  name = "auto_enemy_13",
   layer = 1,
-  x = 264,
-  y = 93,
+  x = 56,
+  y = 157,
   direction = 3,
   breed = "keese",
-  treasure_name = "random_rupee",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -43,7 +42,7 @@ enemy{
   y = 45,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -57,7 +56,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_7",
+  name = "auto_enemy_5",
   layer = 1,
   x = 232,
   y = 45,
@@ -67,7 +66,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_8",
+  name = "auto_enemy_6",
   layer = 1,
   x = 264,
   y = 45,
@@ -77,40 +76,40 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_9",
+  name = "auto_enemy_7",
   layer = 1,
   x = 296,
   y = 45,
   direction = 3,
   breed = "zora_feet",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
-  name = "auto_enemy_10",
+  name = "auto_enemy_8",
   layer = 1,
   x = 328,
   y = 45,
   direction = 3,
   breed = "zora_water",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
+  name = "auto_enemy_2",
   layer = 1,
-  x = 56,
-  y = 237,
-  direction = 3,
-  breed = "chicken",
-}
-
-enemy{
-  name = "auto_enemy_23",
-  layer = 1,
-  x = 88,
-  y = 141,
+  x = 24,
+  y = 77,
   direction = 3,
   breed = "sand_crab",
   treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 24,
+  y = 189,
+  direction = 3,
+  breed = "chicken",
 }
 

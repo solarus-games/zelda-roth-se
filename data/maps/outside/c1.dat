@@ -8421,7 +8421,7 @@ enemy{
   y = 1077,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -8430,7 +8430,7 @@ enemy{
   y = 1093,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -8439,7 +8439,7 @@ enemy{
   y = 477,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -8448,7 +8448,7 @@ enemy{
   y = 477,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -8457,7 +8457,7 @@ enemy{
   y = 989,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -8466,7 +8466,7 @@ enemy{
   y = 637,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -9532,6 +9532,32 @@ custom_entity{
   direction = 0,
   sprite = "entities/hook_tree_small_green",
   model = "hookable",
+}
+
+enemy{
+  layer = 1,
+  x = 472,
+  y = 77,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  layer = 1,
+  x = 552,
+  y = 77,
+  direction = 3,
+  breed = "skeleton",
+  treasure_name = "random_weapon",
+}
+
+pickable{
+  layer = 1,
+  x = 72,
+  y = 109,
+  treasure_name = "piece_of_heart",
+  treasure_savegame_variable = "outside_c1_piece_of_heart_d",
 }
 
 tile{

@@ -322,6 +322,7 @@ item{ id = "random", description = "Random" }
 item{ id = "random_heart", description = "Random, often heart" }
 item{ id = "random_magic", description = "Random, often magic" }
 item{ id = "random_rupee", description = "Random, often rupee" }
+item{ id = "random_weapon", description = "Random, often weapons" }
 item{ id = "red_potion", description = "Red potion" }
 item{ id = "rupee", description = "Rupees (x1 / x5 / x20 / x50 / x100 / x300)" }
 item{ id = "shield", description = "Shield" }

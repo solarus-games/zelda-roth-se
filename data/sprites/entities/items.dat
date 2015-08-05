@@ -69,6 +69,8 @@ animation{
     { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -79,6 +81,8 @@ animation{
     { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -89,6 +93,20 @@ animation{
     { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "bottle_4",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 96, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -244,6 +262,13 @@ animation{
 }
 animation{
   name = "random_rupee",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "random_weapon",
   src_image = "entities/items.png",
   directions = {
     { x = 0, y = 0, frame_width = 1, frame_height = 1, origin_x = 0, origin_y = 0 },
