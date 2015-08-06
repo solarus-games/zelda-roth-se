@@ -49,6 +49,7 @@ tileset{ id = "temple_blue", description = "Temple (blue)" }
 tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
+sprite{ id = "enemies/armos", description = "Armos" }
 sprite{ id = "enemies/arrghus", description = "Arrghus" }
 sprite{ id = "enemies/bari_blue", description = "Blue Bari" }
 sprite{ id = "enemies/chicken", description = "Chicken" }
@@ -333,6 +334,7 @@ item{ id = "small_key", description = "Small key" }
 item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
 
+enemy{ id = "armos", description = "Armos" }
 enemy{ id = "arrghus", description = "Arrghus" }
 enemy{ id = "bari_blue", description = "Blue Bari" }
 enemy{ id = "chicken", description = "Chicken" }
