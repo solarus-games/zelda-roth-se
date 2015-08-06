@@ -159,6 +159,7 @@ sprite{ id = "npc/static_villager14", description = "Static villager 14" }
 sprite{ id = "npc/static_villager2", description = "Static villager 2" }
 sprite{ id = "npc/static_villager3", description = "Static villager 3" }
 sprite{ id = "npc/static_villager7", description = "Static villager 7" }
+sprite{ id = "npc/thief", description = "Thief" }
 sprite{ id = "npc/villager1", description = "Villager 1" }
 sprite{ id = "npc/villager2", description = "Villager 2" }
 sprite{ id = "npc/villager3", description = "Villager 3" }
