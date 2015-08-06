@@ -12,7 +12,9 @@ local properties = {
   faster_speed = 64,
   ignore_obstacles = true,
   obstacle_behavior = "flying",
-  waking_distance = 200,
+  waking_distance = 150,
 }
 
 behavior:create(enemy, properties)
+
+enemy:set_layer_independent_collisions(true)

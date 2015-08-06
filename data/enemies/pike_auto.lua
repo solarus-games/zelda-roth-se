@@ -22,8 +22,9 @@ function enemy:on_created()
   self:set_attack_consequence("sword", "protected")
   self:set_attack_consequence("thrown_item", "protected")
   self:set_attack_consequence("arrow", "protected")
-  self:set_attack_consequence("hookshot", "protected")
   self:set_attack_consequence("boomerang", "protected")
+  self:set_hammer_reaction("protected")
+  self:set_hookshot_reaction("protected")
 end
 
 function enemy:on_restarted()
