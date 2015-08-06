@@ -3394,6 +3394,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_a1.dungeon_4_sign",
 }
 
 destructible{
@@ -3425,6 +3426,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_a1.sw_sign",
 }
 
 destructible{
@@ -3608,6 +3610,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_a1.s_sign",
 }
 
 npc{
@@ -3617,6 +3620,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_a1.se_sign",
 }
 
 teletransporter{
@@ -5013,6 +5017,24 @@ custom_entity{
   direction = 0,
   sprite = "enemies/cactus",
   model = "cactus",
+}
+
+destination{
+  name = "from_dungeon_4",
+  layer = 1,
+  x = 240,
+  y = 141,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 232,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_4/1f",
+  destination = "from_outside",
 }
 
 tile{

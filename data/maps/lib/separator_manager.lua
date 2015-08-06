@@ -24,6 +24,7 @@ function separator_manager:manage_map(map)
 
       -- Re-create enemies in the new active region.
       if enemy:is_in_same_region(hero) then
+        local old_enemy = enemy_place.enemy
         local enemy = map:create_enemy({
           x = enemy_place.x,
           y = enemy_place.y,
@@ -33,6 +34,7 @@ function separator_manager:manage_map(map)
           name = enemy_place.name,
         })
         enemy:set_treasure(unpack(enemy_place.treasure))
+        enemy.on_dead = old_enemy.on_dead  -- For door_manager.
         enemy_place.enemy = enemy
       end
     end

@@ -6,7 +6,7 @@ properties{
   world = "dungeon_4",
   floor = 0,
   tileset = "ice_brown",
-  music = "same",
+  music = "light_world_dungeon",
 }
 
 tile{
@@ -3207,7 +3207,7 @@ tile{
 tile{
   layer = 1,
   x = 296,
-  y = 848,
+  y = 840,
   width = 16,
   height = 8,
   pattern = "door.4.support.2",
@@ -7993,6 +7993,25 @@ tile{
 }
 
 door{
+  name = "boss_door_2",
+  layer = 1,
+  x = 792,
+  y = 696,
+  direction = 3,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "boss_door",
+  layer = 1,
+  x = 792,
+  y = 728,
+  direction = 1,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "door_d",
   layer = 1,
   x = 1432,
   y = 248,
@@ -8001,6 +8020,7 @@ door{
 }
 
 door{
+  name = "door_d_2",
   layer = 1,
   x = 1432,
   y = 216,
@@ -8009,6 +8029,7 @@ door{
 }
 
 door{
+  name = "door_c_2",
   layer = 1,
   x = 1288,
   y = 1072,
@@ -8017,6 +8038,7 @@ door{
 }
 
 door{
+  name = "door_c",
   layer = 1,
   x = 1256,
   y = 1072,
@@ -8025,24 +8047,230 @@ door{
 }
 
 door{
-  layer = 1,
-  x = 968,
-  y = 832,
-  direction = 2,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
+  name = "door_a",
   layer = 1,
   x = 936,
   y = 832,
   direction = 0,
   sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
+  savegame_variable = "dungeon_4_1f_door_a",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_4_small_keys",
+  opening_condition_consumed = true,
+}
+
+door{
+  name = "door_e_2",
+  layer = 1,
+  x = 328,
+  y = 832,
+  direction = 2,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "door_e",
+  layer = 1,
+  x = 296,
+  y = 832,
+  direction = 0,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "door_b",
+  layer = 1,
+  x = 328,
+  y = 1072,
+  direction = 2,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "door_b_2",
+  layer = 1,
+  x = 296,
+  y = 1072,
+  direction = 0,
+  sprite = "entities/door_normal",
+}
+
+destructible{
+  name = "auto_destructible_6",
+  layer = 1,
+  x = 1240,
+  y = 1005,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_8",
+  layer = 1,
+  x = 1240,
+  y = 1165,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_7",
+  layer = 1,
+  x = 1000,
+  y = 1165,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_5",
+  layer = 1,
+  x = 1000,
+  y = 1005,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_1",
+  layer = 1,
+  x = 360,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_3",
+  layer = 1,
+  x = 1240,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_4",
+  layer = 1,
+  x = 1240,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_2",
+  layer = 1,
+  x = 360,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_9",
+  layer = 1,
+  x = 360,
+  y = 1005,
+  treasure_name = "heart",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_10",
+  layer = 1,
+  x = 600,
+  y = 1005,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_12",
+  layer = 1,
+  x = 600,
+  y = 1165,
+  treasure_name = "magic_flask",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_11",
+  layer = 1,
+  x = 360,
+  y = 1165,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 1176,
+  width = 16,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+destination{
+  name = "from_outside",
+  layer = 1,
+  x = 800,
+  y = 1181,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 792,
+  y = 1184,
+  width = 16,
+  height = 16,
+  destination_map = "outside/a1",
+  destination = "from_dungeon_4",
+}
+
+door{
+  name = "door_a_2",
+  layer = 1,
+  x = 968,
+  y = 832,
+  direction = 2,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_4_1f_door_a",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_4_small_keys",
   opening_condition_consumed = true,
 }
 
@@ -8052,168 +8280,77 @@ door{
   y = 728,
   direction = 1,
   sprite = "entities/door_big_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "boss_key",
+  savegame_variable = "dungeon_4_boss_door",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_4_boss_key",
 }
 
 door{
   layer = 1,
-  x = 328,
-  y = 832,
-  direction = 2,
-  sprite = "entities/door_normal",
+  x = 792,
+  y = 696,
+  direction = 3,
+  sprite = "entities/door_big_key",
+  savegame_variable = "dungeon_4_boss_door",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_4_boss_key",
 }
 
-door{
+sensor{
+  name = "start_boss_sensor",
   layer = 1,
-  x = 296,
-  y = 832,
-  direction = 0,
-  sprite = "entities/door_normal",
+  x = 792,
+  y = 693,
+  width = 32,
+  height = 16,
 }
 
-door{
+destination{
+  name = "boss_shortcut",
   layer = 1,
-  x = 328,
-  y = 1072,
-  direction = 2,
-  sprite = "entities/door_normal",
+  x = 800,
+  y = 693,
+  direction = 1,
 }
 
-door{
+teletransporter{
   layer = 1,
-  x = 296,
-  y = 1072,
-  direction = 0,
-  sprite = "entities/door_normal",
+  x = 776,
+  y = 1176,
+  width = 16,
+  height = 16,
+  transition = "immediate",
+  destination_map = "dungeon_4/1f",
+  destination = "boss_shortcut",
 }
 
-destructible{
+chest{
   layer = 1,
-  x = 1240,
-  y = 1005,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  damage_on_enemies = 2,
+  x = 160,
+  y = 1085,
+  treasure_name = "map",
+  treasure_savegame_variable = "dungeon_2_map_chest",
+  sprite = "entities/chest",
 }
 
-destructible{
+enemy{
+  name = "auto_enemy_door_b",
   layer = 1,
-  x = 1240,
-  y = 1165,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  damage_on_enemies = 2,
+  x = 480,
+  y = 1085,
+  direction = 3,
+  breed = "gibdo",
+  treasure_name = "random_magic",
 }
 
-destructible{
+enemy{
+  name = "auto_enemy_30",
   layer = 1,
-  x = 1000,
-  y = 1165,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1000,
-  y = 1005,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 360,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1240,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1240,
-  y = 205,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 360,
-  y = 205,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 360,
-  y = 1005,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 600,
-  y = 1005,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 600,
-  y = 1165,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 360,
-  y = 1165,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
+  x = 1120,
+  y = 1085,
+  direction = 3,
+  breed = "gibdo",
+  treasure_name = "random_magic",
 }
 
 tile{
@@ -8880,5 +9017,86 @@ tile{
   width = 8,
   height = 32,
   pattern = "door_top.closed.4",
+}
+
+separator{
+  name = "auto_separator_1",
+  layer = 2,
+  x = 0,
+  y = 232,
+  width = 1600,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_2",
+  layer = 2,
+  x = 0,
+  y = 472,
+  width = 1280,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_3",
+  layer = 2,
+  x = 0,
+  y = 712,
+  width = 1600,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_4",
+  layer = 2,
+  x = 0,
+  y = 952,
+  width = 640,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_5",
+  layer = 2,
+  x = 960,
+  y = 952,
+  width = 640,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_6",
+  layer = 2,
+  x = 312,
+  y = 0,
+  width = 16,
+  height = 1200,
+}
+
+separator{
+  name = "auto_separator_7",
+  layer = 2,
+  x = 632,
+  y = 480,
+  width = 16,
+  height = 720,
+}
+
+separator{
+  name = "auto_separator_8",
+  layer = 2,
+  x = 952,
+  y = 480,
+  width = 16,
+  height = 720,
+}
+
+separator{
+  name = "auto_separator_9",
+  layer = 2,
+  x = 1272,
+  y = 0,
+  width = 16,
+  height = 1200,
 }
 

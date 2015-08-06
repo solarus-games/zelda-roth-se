@@ -50,7 +50,9 @@ function enemy:on_restarted()
   sol.timer.start(enemy, 1200, function()
     shoot()
     sol.timer.start(enemy, 2400, function()
-      shoot()
+      if enemy:is_in_same_region(hero) then
+        shoot()
+      end
       return true  -- Repeat the timer.
     end)
   end)

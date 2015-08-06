@@ -397,6 +397,15 @@ dialog{
 }
 
 dialog{
+  id = "dungeon_4.welcome",
+  text = [[
+                   Niveau 4
+
+               Temple du Désert
+]]
+}
+
+dialog{
   id = "dungeon_finished_save",
   text = [[
 Souhaites-tu sauvegarder ta partie ?
@@ -749,6 +758,39 @@ dialog{
   id = "not_enough_money",
   text = [[
 Désolé, mais tu n'as pas assez de rubis.
+]]
+}
+
+dialog{
+  id = "outside_a1.dungeon_4_sign",
+  text = [[
+Temple du Désert
+
+Venez essayer nos bains.
+(eau non potable)
+]]
+}
+
+dialog{
+  id = "outside_a1.s_sign",
+  text = [[
+Village Gerudo
+]]
+}
+
+dialog{
+  id = "outside_a1.se_sign",
+  text = [[
+S : Village Cocorico
+O : Désert
+E : Mont du Péril
+]]
+}
+
+dialog{
+  id = "outside_a1.sw_sign",
+  text = [[
+S : Vers le Château d'Hyrule
 ]]
 }
 
