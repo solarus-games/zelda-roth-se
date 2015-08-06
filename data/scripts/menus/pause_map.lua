@@ -156,7 +156,7 @@ function map_manager:new(game)
       end
 
       -- Rooms.
-      rooms_sprite = sol.sprite.create("menus/dungeon_maps/map" .. dungeon_index)
+      rooms_sprite = sol.sprite.create("menus/dungeon_maps/map_" .. dungeon_index)
       build_rooms_image()
     end
   end
@@ -186,7 +186,7 @@ function map_manager:new(game)
     dungeon_map_widget:draw(dst_surface)
 
     if game:has_dungeon_map() then
-      -- Highlight the selected floor with another color..
+      -- Highlight the selected floor with another color.
       local src_x = 32
       local src_y = (2 - selected_floor) * 16
       local dst_x = 40

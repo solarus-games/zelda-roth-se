@@ -65,7 +65,7 @@ if boss ~= nil then
   function boss:on_dying()
     -- Create an invisible platform where the crystal will appear,
     -- to make sure it does not sink.
-    crystal_platform:set_position(boss:get_position())
     crystal_platform:set_enabled(true)
+    crystal_platform:set_position(boss:get_position())
   end
 end

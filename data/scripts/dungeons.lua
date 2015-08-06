@@ -11,8 +11,6 @@ function dungeon_manager:create(game)
   -- Define the existing dungeons and their floors for the minimap menu.
   local dungeons_info = {
     [1] = {
-      floor_width = 1280,
-      floor_height = 1200,
       lowest_floor = -1,
       highest_floor = 0,
       maps = { "dungeon_1/b1", "dungeon_1/1f" },
@@ -21,6 +19,17 @@ function dungeon_manager:create(game)
         x = 960 + 640,
         y = 720 + 120,
         savegame_variable = "dungeon_1_boss",
+      },
+    },
+    [2] = {
+      lowest_floor = 0,
+      highest_floor = 0,
+      maps = { "dungeon_2/1f" },
+      boss = {
+        floor = 0,
+        x = 320 + 1120,
+        y = 240 + 1056,
+        savegame_variable = "dungeon_2_boss",
       },
     },
     -- TODO
