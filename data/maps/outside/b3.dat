@@ -5654,7 +5654,7 @@ enemy{
   y = 493,
   direction = 3,
   breed = "zora_water",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -5664,7 +5664,7 @@ enemy{
   y = 301,
   direction = 3,
   breed = "zora_water",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -5674,7 +5674,7 @@ enemy{
   y = 301,
   direction = 3,
   breed = "zora_water",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -5684,7 +5684,7 @@ enemy{
   y = 781,
   direction = 3,
   breed = "zora_water",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 destination{
@@ -12806,7 +12806,7 @@ enemy{
   y = 117,
   direction = 3,
   breed = "zora_feet",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -12816,7 +12816,7 @@ enemy{
   y = 101,
   direction = 3,
   breed = "zora_feet",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -12826,7 +12826,7 @@ enemy{
   y = 125,
   direction = 3,
   breed = "zora_feet",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -12836,7 +12836,7 @@ enemy{
   y = 581,
   direction = 3,
   breed = "zora_feet",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 custom_entity{

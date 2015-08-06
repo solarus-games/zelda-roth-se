@@ -130,7 +130,7 @@ enemy{
   y = 45,
   direction = 3,
   breed = "armos",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -140,7 +140,7 @@ enemy{
   y = 45,
   direction = 3,
   breed = "moblin",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{

@@ -8270,6 +8270,56 @@ pickable{
   treasure_savegame_variable = "outside_b1_piece_of_heart_b",
 }
 
+enemy{
+  name = "auto_enemy_7",
+  layer = 1,
+  x = 296,
+  y = 541,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_9",
+  layer = 1,
+  x = 1656,
+  y = 205,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_5",
+  layer = 1,
+  x = 440,
+  y = 285,
+  direction = 3,
+  breed = "moblin",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_10",
+  layer = 1,
+  x = 1096,
+  y = 109,
+  direction = 3,
+  breed = "moblin",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_11",
+  layer = 1,
+  x = 1560,
+  y = 557,
+  direction = 3,
+  breed = "moblin",
+  treasure_name = "random_weapon",
+}
+
 tile{
   layer = 2,
   x = 176,
@@ -13818,5 +13868,45 @@ pickable{
   y = 429,
   treasure_name = "piece_of_heart",
   treasure_savegame_variable = "outside_b1_piece_of_heart_c",
+}
+
+enemy{
+  name = "auto_enemy_6",
+  layer = 2,
+  x = 232,
+  y = 133,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_8",
+  layer = 2,
+  x = 792,
+  y = 365,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_12",
+  layer = 2,
+  x = 1752,
+  y = 413,
+  direction = 3,
+  breed = "moblin",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_13",
+  layer = 2,
+  x = 1784,
+  y = 413,
+  direction = 3,
+  breed = "moblin",
+  treasure_name = "random_weapon",
 }
 

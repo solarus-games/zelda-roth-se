@@ -6874,7 +6874,7 @@ teletransporter{
 
 pickable{
   layer = 2,
-  x = 2120,
+  x = 2112,
   y = 349,
   treasure_name = "piece_of_heart",
   treasure_savegame_variable = "outside_a1_piece_of_heart_e",

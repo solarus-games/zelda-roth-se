@@ -11514,7 +11514,7 @@ enemy{
   y = 253,
   direction = 3,
   breed = "rope",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
@@ -11562,7 +11562,7 @@ enemy{
   y = 525,
   direction = 3,
   breed = "rope",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
@@ -11572,7 +11572,7 @@ enemy{
   y = 845,
   direction = 3,
   breed = "rope",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
@@ -11582,7 +11582,7 @@ enemy{
   y = 733,
   direction = 3,
   breed = "rope",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
@@ -11592,7 +11592,7 @@ enemy{
   y = 845,
   direction = 3,
   breed = "rope",
-  treasure_name = "random_rupee",
+  treasure_name = "random",
 }
 
 enemy{
