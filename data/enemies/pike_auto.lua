@@ -12,7 +12,7 @@ function enemy:on_created()
   self:create_sprite("enemies/pike_auto")
   self:set_size(16, 16)
   self:set_origin(8, 13)
-  self:set_obstacle_behavior("flying")
+  self:set_obstacle_behavior("swimming")  -- Traverse water but don't traverse low walls.
   self:set_can_hurt_hero_running(true)
   self:set_optimization_distance(0)  -- Keep them aligned when there are several ones.
   self:set_invincible()

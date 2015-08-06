@@ -1,5 +1,6 @@
 - Finish the content
-- Chickens
+- Custom arrows
+- Fix ctrl+direction with separators
 - Modernize the HUD
 - Allow to map game commands
 - Video modes
