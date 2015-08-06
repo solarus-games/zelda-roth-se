@@ -16,7 +16,7 @@ end
 
 function map:on_opening_transition_finished(destination)
 
-  if destination == "from_outside" then
+  if destination == from_outside then
     game:start_dialog("dungeon_4.welcome")
   end
 end

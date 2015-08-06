@@ -1,12 +1,12 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 640,
+  y = 480,
   width = 1600,
   height = 1200,
   world = "dungeon_4",
   floor = 2,
   tileset = "ice_brown",
-  music = "same",
+  music = "dark_world_dungeon",
 }
 
 tile{
@@ -279,6 +279,15 @@ tile{
   pattern = "stairs_down.2.border.1",
 }
 
+sensor{
+  name = "dungeon_room_1_1",
+  layer = 1,
+  x = 800,
+  y = 597,
+  width = 16,
+  height = 16,
+}
+
 destination{
   name = "from_2f",
   layer = 1,
@@ -312,6 +321,7 @@ teletransporter{
   width = 48,
   height = 48,
   destination_map = "dungeon_4/2f",
+  destination = "from_3f_hole",
 }
 
 tile{

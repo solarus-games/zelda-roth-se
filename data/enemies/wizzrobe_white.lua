@@ -12,9 +12,10 @@ end
 
 local function shoot()
 
-  local hero = enemy:get_map():get_hero()
+  local map = enemy:get_map()
+  local hero = map:get_hero()
   if not enemy:is_in_same_region(hero) then
-    return
+    return true  -- Repeat the timer.
   end
 
   local sprite = enemy:get_sprite()
@@ -35,7 +36,14 @@ local function shoot()
     y = dxy[direction + 1][2],
   })
 
-  sol.audio.play_sound("zora")
+  if not map.wizzrobe_recent_sound then
+    sol.audio.play_sound("zora")
+    -- Avoid loudy simultaneous sounds if there are several wizzrobes.
+    map.wizzrobe_recent_sound = true
+    sol.timer.start(map, 200, function()
+      map.wizzrobe_recent_sound = false
+    end)
+  end
   beam:go(direction)
 
   return true  -- Repeat the timer.
@@ -52,7 +60,7 @@ function enemy:on_restarted()
     return true
   end)
 
-  -- Shoot every 2400 ms, but first wait
+  -- Shoot every 2400 ms, but first wait helf a cycle
   -- to have sprite animations synchronized with the shooting.
   sol.timer.start(enemy, 1200, function()
     shoot()

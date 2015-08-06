@@ -2,6 +2,7 @@
 - Custom arrows
 - Fix ctrl+direction with separators
 - Modernize the HUD
+- HUD of dungeon floors
 - Allow to map game commands
 - Video modes
 - Escape to exit from title screens

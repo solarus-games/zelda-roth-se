@@ -142,6 +142,18 @@ local function initialize_sensor()
       game:set_explored_dungeon_room(nil, nil, tonumber(room))
       self:remove()
     end
+
+    -- Sensors named "open_quiet_X_sensor" silently open doors prefixed with "X".
+    local door_prefix = name:match("^open_quiet_([a-zA-X0-9_]+)_sensor")
+    if door_prefix ~= nil then
+      map:set_doors_open(door_prefix, true)
+    end
+
+    -- Sensors named "close_quiet_X_sensor" silently open doors prefixed with "X".
+    door_prefix = name:match("^close_quiet_([a-zA-X0-9_]+)_sensor")
+    if door_prefix ~= nil then
+      map:set_doors_open(door_prefix, false)
+    end
   end
 
   function sensor_meta:on_activated_repeat()
@@ -151,8 +163,8 @@ local function initialize_sensor()
     local map = self:get_map()
     local name = self:get_name()
 
-    -- Sensors called open_house_xxx_sensor automatically open a house door.
-    local door_name = name:match("^open_house_([a-zA-X1-9_]+)_sensor")
+    -- Sensors called open_house_xxx_sensor automatically open an outside house door tile.
+    local door_name = name:match("^open_house_([a-zA-X0-9_]+)_sensor")
     if door_name ~= nil then
       local door = map:get_entity(door_name)
       if door ~= nil then
