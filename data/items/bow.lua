@@ -1,6 +1,8 @@
 local item = ...
 local game = item:get_game()
 
+-- TODO use custom arrows with damage 2 (normal arrows) or 5 (silver arrows)
+
 function item:on_created()
 
   self:set_savegame_variable("possession_bow")

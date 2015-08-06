@@ -459,7 +459,7 @@ local function initialize_meta()
     return
   end
 
-  enemy_meta.hookshot_reaction = "immobilized"  -- Immobilized by default.
+  enemy_meta.hookshot_reaction = 1  -- 1 life point by default.
   function enemy_meta:get_hookshot_reaction(sprite)
     return self.hookshot_reaction
   end
