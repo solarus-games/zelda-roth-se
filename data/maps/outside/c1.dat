@@ -9582,16 +9582,6 @@ destructible{
   can_be_cut = true,
 }
 
-enemy{
-  name = "auto_enemy_25",
-  layer = 1,
-  x = 784,
-  y = 445,
-  direction = 3,
-  breed = "poe",
-  treasure_name = "random",
-}
-
 tile{
   layer = 2,
   x = 352,
