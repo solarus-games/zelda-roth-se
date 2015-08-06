@@ -153,3 +153,13 @@ enemy{
   treasure_name = "random_rupee",
 }
 
+enemy{
+  name = "auto_enemy_14",
+  layer = 1,
+  x = 136,
+  y = 93,
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random_weapon",
+}
+

@@ -56,6 +56,7 @@ sprite{ id = "enemies/cactus", description = "Cactus" }
 sprite{ id = "enemies/chicken", description = "Chicken" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/fireball_red_small", description = "Red small Fireball" }
+sprite{ id = "enemies/geldman", description = "Geldman" }
 sprite{ id = "enemies/keese", description = "Keese" }
 sprite{ id = "enemies/moblin", description = "Moblin" }
 sprite{ id = "enemies/mothula", description = "Mothula" }
@@ -343,6 +344,7 @@ enemy{ id = "arrghus", description = "Arrghus" }
 enemy{ id = "bari_blue", description = "Blue Bari" }
 enemy{ id = "chicken", description = "Chicken" }
 enemy{ id = "fireball_red_small", description = "Red small Fireball" }
+enemy{ id = "geldman", description = "Geldman" }
 enemy{ id = "keese", description = "Keese" }
 enemy{ id = "moblin", description = "Moblin" }
 enemy{ id = "mothula", description = "Mothula" }
