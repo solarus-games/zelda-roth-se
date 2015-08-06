@@ -1816,6 +1816,7 @@ door{
 }
 
 destructible{
+  name = "auto_destructible_1",
   layer = 1,
   x = 456,
   y = 925,
@@ -1827,6 +1828,7 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_2",
   layer = 1,
   x = 520,
   y = 45,
@@ -1838,6 +1840,7 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_3",
   layer = 1,
   x = 760,
   y = 45,
@@ -1849,6 +1852,7 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_5",
   layer = 1,
   x = 760,
   y = 205,
@@ -1860,6 +1864,7 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_4",
   layer = 1,
   x = 520,
   y = 205,
