@@ -66,6 +66,7 @@ sprite{ id = "enemies/sand_crab", description = "Sand Crab" }
 sprite{ id = "enemies/skeleton", description = "Skeleton" }
 sprite{ id = "enemies/tektite_blue", description = "Blue Tektite" }
 sprite{ id = "enemies/tentacle", description = "Tentacle" }
+sprite{ id = "enemies/vulture", description = "Vulture" }
 sprite{ id = "enemies/zora_feet", description = "Zora (on feet)" }
 sprite{ id = "enemies/zora_water", description = "Zora (in water)" }
 sprite{ id = "entities/arrow", description = "Arrow" }
@@ -352,6 +353,7 @@ enemy{ id = "sand_crab", description = "Sand Crab" }
 enemy{ id = "skeleton", description = "Skeleton" }
 enemy{ id = "tektite_blue", description = "Blue Tektite" }
 enemy{ id = "tentacle", description = "Tentacle" }
+enemy{ id = "vulture", description = "Vulture" }
 enemy{ id = "zora_feet", description = "Zora (on feet)" }
 enemy{ id = "zora_water", description = "Zora (in water)" }
 

@@ -1820,7 +1820,7 @@ destructible{
   layer = 1,
   x = 456,
   y = 925,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -1891,11 +1891,11 @@ door{
 enemy{
   name = "auto_enemy_5",
   layer = 1,
-  x = 184,
+  x = 160,
   y = 845,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -1929,7 +1929,7 @@ enemy{
   y = 821,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -1963,7 +1963,7 @@ enemy{
   y = 845,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 wall{
@@ -2003,7 +2003,7 @@ enemy{
   y = 613,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -2013,7 +2013,7 @@ enemy{
   y = 613,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -2023,7 +2023,7 @@ enemy{
   y = 373,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -2033,7 +2033,7 @@ enemy{
   y = 373,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 destination{
@@ -2316,6 +2316,18 @@ destination{
   x = 640,
   y = 213,
   direction = 1,
+}
+
+wall{
+  layer = 1,
+  x = 416,
+  y = 904,
+  width = 448,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
 }
 
 tile{

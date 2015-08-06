@@ -587,15 +587,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 624,
-  y = 352,
-  width = 32,
-  height = 16,
-  pattern = "floor_pot",
-}
-
-tile{
-  layer = 0,
   x = 872,
   y = 736,
   width = 24,
@@ -792,30 +783,6 @@ tile{
   pattern = "stairs_inner_up.2.border.1",
 }
 
-destructible{
-  name = "auto_destructible_2",
-  layer = 0,
-  x = 632,
-  y = 365,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  name = "auto_destructible_3",
-  layer = 0,
-  x = 648,
-  y = 365,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
 enemy{
   name = "auto_enemy_3",
   layer = 0,
@@ -823,7 +790,7 @@ enemy{
   y = 349,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -833,7 +800,7 @@ enemy{
   y = 749,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -843,7 +810,7 @@ enemy{
   y = 813,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 stairs{
@@ -1006,7 +973,7 @@ tile{
 tile{
   layer = 1,
   x = 624,
-  y = 408,
+  y = 400,
   width = 32,
   height = 48,
   pattern = "floor_low.5",
@@ -4540,6 +4507,15 @@ tile{
   pattern = "stairs_inner_up.2.top.border.2",
 }
 
+tile{
+  layer = 1,
+  x = 624,
+  y = 416,
+  width = 32,
+  height = 16,
+  pattern = "floor_pot",
+}
+
 sensor{
   name = "dungeon_room_9_1",
   layer = 1,
@@ -4702,7 +4678,7 @@ destructible{
   layer = 1,
   x = 360,
   y = 365,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -4855,7 +4831,7 @@ enemy{
   y = 1045,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -4865,7 +4841,7 @@ enemy{
   y = 1045,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -4875,7 +4851,7 @@ enemy{
   y = 797,
   direction = 3,
   breed = "tentacle",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 chest{
@@ -4989,11 +4965,11 @@ wall{
 enemy{
   name = "auto_enemy_5",
   layer = 1,
-  x = 680,
+  x = 696,
   y = 493,
   direction = 3,
   breed = "keese",
-  treasure_name = "random_rupee",
+  treasure_name = "random_heart",
 }
 
 chest{
@@ -5012,7 +4988,7 @@ enemy{
   y = 1077,
   direction = 3,
   breed = "keese",
-  treasure_name = "random_rupee",
+  treasure_name = "random_heart",
 }
 
 chest{
@@ -5031,17 +5007,17 @@ enemy{
   y = 1077,
   direction = 3,
   breed = "keese",
-  treasure_name = "random_rupee",
+  treasure_name = "random_heart",
 }
 
 enemy{
   name = "auto_enemy_4",
   layer = 1,
-  x = 600,
+  x = 584,
   y = 493,
   direction = 3,
   breed = "keese",
-  treasure_name = "random_rupee",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -5051,7 +5027,7 @@ enemy{
   y = 109,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -5061,7 +5037,7 @@ enemy{
   y = 109,
   direction = 3,
   breed = "skeleton",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 chest{
@@ -5586,6 +5562,30 @@ wall{
   stops_npcs = true,
   stops_enemies = true,
   stops_blocks = true,
+}
+
+destructible{
+  name = "auto_destructible_2",
+  layer = 1,
+  x = 632,
+  y = 429,
+  treasure_name = "heart",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_3",
+  layer = 1,
+  x = 648,
+  y = 429,
+  treasure_name = "heart",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
 }
 
 tile{
