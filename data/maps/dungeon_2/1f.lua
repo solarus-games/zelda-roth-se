@@ -8,6 +8,8 @@ function map:on_started()
 
   if boss ~= nil then
     boss:set_enabled(false)
+  elseif not game:get_value("dungeon_2_crystal") then
+    crystal_platform:set_enabled(true)
   end
   map:set_doors_open("boss_door", true)
 end
@@ -37,6 +39,7 @@ end
 function map:on_obtained_treasure(item, variant, savegame_variable)
 
   if item:get_name() == "magic_crystal" then
+    crystal_platform:set_enabled(false)
     hero:freeze()
     game:set_dungeon_finished()
     sol.audio.play_music("victory")
@@ -55,5 +58,14 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
         end)
       end)
     end)
+  end
+end
+
+if boss ~= nil then
+  function boss:on_dying()
+    -- Create an invisible platform where the crystal will appear,
+    -- to make sure it does not sink.
+    crystal_platform:set_position(boss:get_position())
+    crystal_platform:set_enabled(true)
   end
 end
