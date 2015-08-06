@@ -203,6 +203,14 @@ le plan.
 }
 
 dialog{
+  id = "_treasure.flippers.1",
+  text = [[
+Tu as trouvé les palmes !!!
+Tu peux nager en eau profonde !
+]]
+}
+
+dialog{
   id = "_treasure.glove.1",
   text = [[
 Tu as trouvé les gants !!!

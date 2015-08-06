@@ -58,6 +58,7 @@ sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/fireball_red_small", description = "Red small Fireball" }
 sprite{ id = "enemies/geldman", description = "Geldman" }
 sprite{ id = "enemies/gibdo", description = "Gibdo" }
+sprite{ id = "enemies/hover", description = "Hover" }
 sprite{ id = "enemies/keese", description = "Keese" }
 sprite{ id = "enemies/lynel", description = "Lynel" }
 sprite{ id = "enemies/lynel_flame", description = "Lynel flame" }
@@ -354,6 +355,7 @@ enemy{ id = "chicken", description = "Chicken" }
 enemy{ id = "fireball_red_small", description = "Red small Fireball" }
 enemy{ id = "geldman", description = "Geldman" }
 enemy{ id = "gibdo", description = "Gibdo" }
+enemy{ id = "hover", description = "Hover" }
 enemy{ id = "keese", description = "Keese" }
 enemy{ id = "lynel", description = "Lynel" }
 enemy{ id = "lynel_flame", description = "Lynel flame" }
