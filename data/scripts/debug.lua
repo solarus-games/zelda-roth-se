@@ -3,6 +3,21 @@ local game_manager = require("scripts/game_manager")
 
 local debug = {}
 
+function debug:on_started()
+
+  function tp(map_id, destination_name)
+    
+    local game = sol.main.game
+    local hero = nil
+    if game ~= nil and game:get_map() ~= nil then
+      hero = game:get_map():get_entity("hero")
+      if hero ~= nil then
+        hero:teleport(map_id, destination_name)
+      end
+    end
+  end
+end
+
 function debug:on_key_pressed(key, modifiers)
 
   local handled = true

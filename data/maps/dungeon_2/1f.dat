@@ -10207,68 +10207,15 @@ tile{
 }
 
 door{
-  layer = 1,
-  x = 616,
-  y = 352,
-  direction = 0,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
-  layer = 1,
-  x = 648,
-  y = 352,
-  direction = 2,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
+  name = "door_b",
   layer = 1,
   x = 472,
   y = 1208,
   direction = 1,
   sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
-  layer = 1,
-  x = 472,
-  y = 1176,
-  direction = 3,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
-  layer = 1,
-  x = 792,
-  y = 1208,
-  direction = 1,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
-  layer = 1,
-  x = 792,
-  y = 1176,
-  direction = 3,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
+  savegame_variable = "dungeon_2_1f_door_b",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
 }
 
@@ -10307,28 +10254,6 @@ door{
   savegame_variable = "dungeon_2_boss_door",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_boss_key",
-}
-
-door{
-  layer = 1,
-  x = 1432,
-  y = 728,
-  direction = 1,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
-}
-
-door{
-  layer = 1,
-  x = 1432,
-  y = 696,
-  direction = 3,
-  sprite = "entities/door_small_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
 }
 
 crystal_block{
@@ -10613,7 +10538,8 @@ destructible{
   layer = 1,
   x = 1240,
   y = 1405,
-  treasure_name = "random",
+  treasure_name = "arrow",
+  treasure_variant = 2,
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10886,6 +10812,115 @@ teletransporter{
   height = 16,
   destination_map = "outside/b3",
   destination = "from_dungeon_2",
+}
+
+door{
+  name = "door_b_2",
+  layer = 1,
+  x = 472,
+  y = 1176,
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_2_1f_door_b",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_2_small_keys",
+  opening_condition_consumed = true,
+}
+
+door{
+  name = "door_c_2",
+  layer = 1,
+  x = 792,
+  y = 1208,
+  direction = 1,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_2_1f_door_c",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_2_small_keys",
+  opening_condition_consumed = true,
+}
+
+door{
+  name = "door_c",
+  layer = 1,
+  x = 792,
+  y = 1176,
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_2_1f_door_c",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_2_small_keys",
+  opening_condition_consumed = true,
+}
+
+door{
+  name = "door_d_2",
+  layer = 1,
+  x = 1432,
+  y = 728,
+  direction = 1,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_2_1f_door_d",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_2_small_keys",
+  opening_condition_consumed = true,
+}
+
+door{
+  name = "door_d",
+  layer = 1,
+  x = 1432,
+  y = 696,
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_2_1f_door_d",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_2_small_keys",
+  opening_condition_consumed = true,
+}
+
+door{
+  name = "door_e",
+  layer = 1,
+  x = 616,
+  y = 352,
+  direction = 0,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_2_1f_door_e",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_2_small_keys",
+  opening_condition_consumed = true,
+}
+
+door{
+  name = "door_e_2",
+  layer = 1,
+  x = 648,
+  y = 352,
+  direction = 2,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_2_1f_door_e",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_2_small_keys",
+  opening_condition_consumed = true,
+}
+
+chest{
+  layer = 1,
+  x = 1016,
+  y = 1293,
+  treasure_name = "hookshot",
+  treasure_savegame_variable = "dungeon_2_hookshot_chest",
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 1,
+  x = 1120,
+  y = 1325,
+  treasure_name = "map",
+  treasure_savegame_variable = "dungeon_2_map_chest",
+  sprite = "entities/chest",
 }
 
 tile{
