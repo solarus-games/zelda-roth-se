@@ -12,7 +12,7 @@ local properties = {
   faster_speed = 64,
   ignore_obstacles = true,
   obstacle_behavior = "flying",
-  movement_create = function() end,  -- No movement.
+  waking_distance = 200,
 }
 
 behavior:create(enemy, properties)
