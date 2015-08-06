@@ -183,3 +183,13 @@ enemy{
   treasure_name = "random",
 }
 
+enemy{
+  name = "auto_enemy_26",
+  layer = 1,
+  x = 168,
+  y = 93,
+  direction = 3,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
