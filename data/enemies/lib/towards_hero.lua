@@ -18,6 +18,7 @@ local behavior = {}
 --   push_hero_on_sword = false,
 --   pushed_when_hurt = true,
 --   ignore_obstacles = false,
+--   obstacle_behavior = "flying",
 --   detection_distance = 100,
 --   movement_create = function()
 --     local m = sol.movement.create("random_path")

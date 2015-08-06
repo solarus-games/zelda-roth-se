@@ -23,6 +23,7 @@ local behavior = {}
 --   asleep_animation = "stopped",
 --   awaking_animation = "awaking",
 --   normal_animation = "walking",
+--   ignore_obstacles = false,
 --   obstacle_behavior = "flying",
 --   awakening_sound  = "stone",
 --   waking_distance = 100,
@@ -65,6 +66,9 @@ function behavior:create(enemy, properties)
   if properties.normal_animation == nil then
     properties.normal_animation = "walking"
   end  
+  if properties.ignore_obstacles == nil then
+    properties.ignore_obstacles = false
+  end
   if properties.obstacle_behavior == nil then
     properties.obstacle_behavior = "normal"
   end
@@ -165,6 +169,7 @@ function behavior:create(enemy, properties)
 
     local m = sol.movement.create("random")
     m:set_speed(properties.normal_speed)
+    m:set_ignore_obstacles(properties.ignore_obstacles)
     m:start(self)
     going_hero = false
   end
@@ -173,6 +178,7 @@ function behavior:create(enemy, properties)
 
     local m = sol.movement.create("target")
     m:set_speed(properties.faster_speed)
+    m:set_ignore_obstacles(properties.ignore_obstacles)
     m:start(self)
     going_hero = true
   end

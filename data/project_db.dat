@@ -52,6 +52,7 @@ tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 sprite{ id = "enemies/armos", description = "Armos" }
 sprite{ id = "enemies/arrghus", description = "Arrghus" }
 sprite{ id = "enemies/bari_blue", description = "Blue Bari" }
+sprite{ id = "enemies/cactus", description = "Cactus" }
 sprite{ id = "enemies/chicken", description = "Chicken" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/fireball_red_small", description = "Red small Fireball" }
@@ -354,6 +355,7 @@ enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "zora_feet", description = "Zora (on feet)" }
 enemy{ id = "zora_water", description = "Zora (in water)" }
 
+entity{ id = "cactus", description = "Cactus" }
 entity{ id = "cliff", description = "Cliff" }
 entity{ id = "hammer_stake", description = "Hammer stake" }
 entity{ id = "hookable", description = "Hookable" }
