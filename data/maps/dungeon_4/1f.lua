@@ -2,6 +2,7 @@ local map = ...
 local game = map:get_game()
 
 local door_manager = require("maps/lib/door_manager")
+door_manager:manage_map(map)
 local separator_manager = require("maps/lib/separator_manager")
 separator_manager:manage_map(map)
 
@@ -58,5 +59,3 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
     end)
   end
 end
-
-door_manager:open_when_enemies_dead(door_b)

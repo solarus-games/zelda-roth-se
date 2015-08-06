@@ -12,6 +12,11 @@ end
 
 local function shoot()
 
+  local hero = enemy:get_map():get_hero()
+  if not enemy:is_in_same_region(hero) then
+    return
+  end
+
   local sprite = enemy:get_sprite()
   local x, y, layer = enemy:get_position()
   local direction = sprite:get_direction()
@@ -32,6 +37,8 @@ local function shoot()
 
   sol.audio.play_sound("zora")
   beam:go(direction)
+
+  return true  -- Repeat the timer.
 end
 
 function enemy:on_restarted()
@@ -49,11 +56,6 @@ function enemy:on_restarted()
   -- to have sprite animations synchronized with the shooting.
   sol.timer.start(enemy, 1200, function()
     shoot()
-    sol.timer.start(enemy, 2400, function()
-      if enemy:is_in_same_region(hero) then
-        shoot()
-      end
-      return true  -- Repeat the timer.
-    end)
+    sol.timer.start(enemy, 2400, shoot)
   end)
 end

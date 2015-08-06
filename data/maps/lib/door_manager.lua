@@ -1,6 +1,18 @@
--- This script opens doors with common conditions like killing enemies.
+-- This script opens doors with common conditions like killing enemies,
+-- based on the name of the door and of enemies.
+-- Doors with prefix auto_door are automatically opened when killing
+-- the last enemy with prefix auto_enemy_<door_name>.
 
 local door_manager = {}
+
+function door_manager:manage_map(map)
+
+  -- Find doors with prefix auto_door.
+  for door in map:get_entities("auto_door") do
+    -- If there are enemies whose name matches the door, link them to the door.
+    door_manager:open_when_enemies_dead(door)
+  end
+end
 
 function door_manager:open_when_enemies_dead(door)
 

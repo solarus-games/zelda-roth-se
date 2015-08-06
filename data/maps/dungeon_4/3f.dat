@@ -279,3 +279,110 @@ tile{
   pattern = "stairs_down.2.border.1",
 }
 
+destination{
+  name = "from_2f",
+  layer = 1,
+  x = 800,
+  y = 605,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 792,
+  y = 592,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_4/2f",
+  destination = "from_3f",
+}
+
+stairs{
+  layer = 1,
+  x = 792,
+  y = 592,
+  direction = 3,
+  subtype = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 672,
+  y = 576,
+  width = 48,
+  height = 48,
+  destination_map = "dungeon_4/2f",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 0,
+  width = 1600,
+  height = 480,
+  pattern = "ceiling",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 720,
+  width = 1600,
+  height = 480,
+  pattern = "ceiling",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 480,
+  width = 640,
+  height = 240,
+  pattern = "ceiling",
+}
+
+tile{
+  layer = 2,
+  x = 960,
+  y = 480,
+  width = 640,
+  height = 240,
+  pattern = "ceiling",
+}
+
+separator{
+  name = "auto_separator_1",
+  layer = 2,
+  x = 632,
+  y = 472,
+  width = 336,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_3",
+  layer = 2,
+  x = 632,
+  y = 712,
+  width = 336,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_2",
+  layer = 2,
+  x = 632,
+  y = 480,
+  width = 16,
+  height = 240,
+}
+
+separator{
+  name = "auto_separator_4",
+  layer = 2,
+  x = 952,
+  y = 480,
+  width = 16,
+  height = 240,
+}
+

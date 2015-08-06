@@ -37,15 +37,16 @@ function enemy:on_custom_attack_received(attack, sprite)
 
   if attack == "sword" and not bounced then
 
-    local hero = enemy:get_map():get_hero()
-
     local sprite = enemy:get_sprite()
+    local hero = enemy:get_map():get_hero()
     local direction = hero:get_direction()
     sprite:set_direction(direction)
 
     local movement = enemy:get_movement()
     local angle = direction * math.pi / 2
     movement:set_angle(angle)
+
+    sol.audio.play_sound("enemy_hurt")
 
     bounced = true
   end

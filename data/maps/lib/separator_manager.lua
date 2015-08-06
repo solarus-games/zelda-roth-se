@@ -1,7 +1,8 @@
--- This script manages enemies when there are separators in a map.
--- Enemies that are prefixed by "auto_enemy" and destructibles that are prefixed
--- by "auto_destructible" are automatically
--- destroyed and recreated when taking separators prefixed by "auto_separator".
+-- This script restores entities when there are separators in a map.
+-- When taking separators prefixed by "auto_separator", the following entities are restored:
+-- - Enemies prefixed by "auto_enemy".
+-- - Destructibles prefixed by "auto_destructible".
+-- - Blocks prefixed by "auto_block".
 
 local separator_manager = {}
 
@@ -14,6 +15,8 @@ function separator_manager:manage_map(map)
   local function separator_on_activated(separator)
 
     local hero = map:get_hero()
+
+    -- Enemies.
     for _, enemy_place in ipairs(enemy_places) do
       local enemy = enemy_place.enemy
 
@@ -36,6 +39,14 @@ function separator_manager:manage_map(map)
         enemy:set_treasure(unpack(enemy_place.treasure))
         enemy.on_dead = old_enemy.on_dead  -- For door_manager.
         enemy_place.enemy = enemy
+      end
+    end
+
+    -- Blocks.
+    for block in map:get_entities("auto_block") do
+      -- Reset blocks in regions no longer visible.
+      if not block:is_in_same_region(hero) then
+        block:reset()
       end
     end
   end

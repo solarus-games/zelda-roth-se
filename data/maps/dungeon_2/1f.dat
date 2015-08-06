@@ -11004,7 +11004,7 @@ chest{
   x = 1656,
   y = 813,
   treasure_name = "small_key",
-  treasure_savegame_variable = "dungeon_2_key_chest_d",
+  treasure_savegame_variable = "dungeon_2_1f_key_chest_d",
   sprite = "entities/chest",
 }
 
