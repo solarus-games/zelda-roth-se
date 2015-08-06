@@ -380,6 +380,15 @@ dialog{
 }
 
 dialog{
+  id = "dungeon_2.welcome",
+  text = [[
+                   Niveau 2
+
+               Temple de l'Eau
+]]
+}
+
+dialog{
   id = "dungeon_finished_save",
   text = [[
 Souhaites-tu sauvegarder ta partie ?

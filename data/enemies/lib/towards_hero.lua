@@ -61,6 +61,9 @@ function behavior:create(enemy, properties)
   if properties.detection_distance == nil then
     properties.detection_distance = 160
   end
+  if properties.obstacle_behavior == nil then
+    properties.obstacle_behavior = "normal"
+  end
   if properties.movement_create == nil then
     properties.movement_create = function()
       local m = sol.movement.create("random_path")
@@ -76,6 +79,7 @@ function behavior:create(enemy, properties)
     self:set_hurt_style(properties.hurt_style)
     self:set_pushed_back_when_hurt(properties.pushed_when_hurt)
     self:set_push_hero_on_sword(properties.push_hero_on_sword)
+    self:set_obstacle_behavior(properties.obstacle_behavior)
     self:set_size(16, 16)
     self:set_origin(8, 13)
   end

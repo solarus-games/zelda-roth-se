@@ -10206,6 +10206,15 @@ tile{
   pattern = "torch",
 }
 
+tile{
+  layer = 1,
+  x = 832,
+  y = 1312,
+  width = 16,
+  height = 16,
+  pattern = "torch",
+}
+
 door{
   name = "door_b",
   layer = 1,
@@ -10383,30 +10392,34 @@ crystal_block{
 }
 
 destructible{
+  name = "auto_destructible_15",
   layer = 1,
   x = 1752,
   y = 1085,
-  treasure_name = "random",
+  treasure_name = "arrow",
+  treasure_variant = 2,
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
 
 destructible{
+  name = "auto_destructible_16",
   layer = 1,
   x = 1768,
   y = 1085,
-  treasure_name = "random",
+  treasure_name = "bomb",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
 
 destructible{
+  name = "auto_destructible_1",
   layer = 1,
   x = 360,
   y = 285,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10414,10 +10427,11 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_2",
   layer = 1,
   x = 600,
   y = 285,
-  treasure_name = "random",
+  treasure_name = "bomb",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10425,10 +10439,12 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_3",
   layer = 1,
   x = 360,
   y = 685,
-  treasure_name = "random",
+  treasure_name = "arrow",
+  treasure_variant = 2,
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10436,21 +10452,11 @@ destructible{
 }
 
 destructible{
-  layer = 1,
-  x = 600,
-  y = 685,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
+  name = "auto_destructible_5",
   layer = 1,
   x = 1640,
   y = 285,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10458,10 +10464,11 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_6",
   layer = 1,
   x = 1880,
   y = 285,
-  treasure_name = "random",
+  treasure_name = "bomb",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10469,10 +10476,12 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_7",
   layer = 1,
   x = 1640,
   y = 685,
-  treasure_name = "random",
+  treasure_name = "arrow",
+  treasure_variant = 2,
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10480,21 +10489,11 @@ destructible{
 }
 
 destructible{
-  layer = 1,
-  x = 1880,
-  y = 685,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
+  name = "auto_destructible_13",
   layer = 1,
   x = 1880,
   y = 765,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10502,6 +10501,7 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_14",
   layer = 1,
   x = 1880,
   y = 925,
@@ -10513,10 +10513,11 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_11",
   layer = 1,
   x = 1320,
   y = 1165,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10524,10 +10525,11 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_12",
   layer = 1,
   x = 1560,
   y = 1165,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10535,6 +10537,7 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_21",
   layer = 1,
   x = 1240,
   y = 1405,
@@ -10547,6 +10550,7 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_19",
   layer = 1,
   x = 1320,
   y = 1405,
@@ -10558,10 +10562,11 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_20",
   layer = 1,
   x = 1336,
   y = 1405,
-  treasure_name = "random",
+  treasure_name = "bomb",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10569,6 +10574,7 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_17",
   layer = 1,
   x = 1640,
   y = 1405,
@@ -10580,10 +10586,11 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_18",
   layer = 1,
   x = 1880,
   y = 1405,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10591,21 +10598,11 @@ destructible{
 }
 
 destructible{
-  layer = 1,
-  x = 488,
-  y = 1549,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
+  name = "auto_destructible_22",
   layer = 1,
   x = 472,
   y = 1549,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10613,21 +10610,12 @@ destructible{
 }
 
 destructible{
-  layer = 1,
-  x = 488,
-  y = 1565,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
+  name = "auto_destructible_24",
   layer = 1,
   x = 472,
   y = 1565,
-  treasure_name = "random",
+  treasure_name = "arrow",
+  treasure_variant = 2,
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10635,21 +10623,11 @@ destructible{
 }
 
 destructible{
-  layer = 1,
-  x = 488,
-  y = 1581,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
+  name = "auto_destructible_26",
   layer = 1,
   x = 472,
   y = 1581,
-  treasure_name = "random",
+  treasure_name = "bomb",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10657,10 +10635,11 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_9",
   layer = 1,
   x = 680,
   y = 1165,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10668,10 +10647,11 @@ destructible{
 }
 
 destructible{
+  name = "auto_destructible_10",
   layer = 1,
   x = 920,
   y = 1165,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -10762,7 +10742,7 @@ custom_entity{
 custom_entity{
   layer = 1,
   x = 1272,
-  y = 333,
+  y = 349,
   direction = 0,
   sprite = "entities/hook_brown",
   model = "hookable",
@@ -10921,6 +10901,479 @@ chest{
   treasure_name = "map",
   treasure_savegame_variable = "dungeon_2_map_chest",
   sprite = "entities/chest",
+}
+
+door{
+  layer = 1,
+  x = 1112,
+  y = 1176,
+  direction = 3,
+  sprite = "entities/door_big_key",
+  savegame_variable = "dungeon_2_boss_door",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_2_boss_key",
+}
+
+door{
+  name = "boss_door_1",
+  layer = 1,
+  x = 1112,
+  y = 1176,
+  direction = 3,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "boss_door_2",
+  layer = 1,
+  x = 1112,
+  y = 1208,
+  direction = 1,
+  sprite = "entities/door_normal",
+}
+
+enemy{
+  name = "auto_enemy_22",
+  layer = 1,
+  x = 1448,
+  y = 1325,
+  direction = 3,
+  breed = "bari_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_23",
+  layer = 1,
+  x = 1768,
+  y = 1341,
+  direction = 3,
+  breed = "zora_feet",
+  treasure_name = "random",
+}
+
+crystal{
+  layer = 1,
+  x = 1760,
+  y = 1565,
+}
+
+chest{
+  layer = 1,
+  x = 2080,
+  y = 1325,
+  treasure_name = "compass",
+  treasure_savegame_variable = "dungeon_2_compass_chest",
+  sprite = "entities/chest",
+}
+
+enemy{
+  name = "auto_enemy_24",
+  layer = 1,
+  x = 1640,
+  y = 1005,
+  direction = 3,
+  breed = "bari_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_25",
+  layer = 1,
+  x = 1880,
+  y = 1005,
+  direction = 3,
+  breed = "bari_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_26",
+  layer = 1,
+  x = 1848,
+  y = 829,
+  direction = 3,
+  breed = "sand_crab",
+  treasure_name = "random",
+}
+
+chest{
+  layer = 1,
+  x = 1656,
+  y = 813,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_2_key_chest_d",
+  sprite = "entities/chest",
+}
+
+enemy{
+  name = "auto_enemy_27",
+  layer = 1,
+  x = 1760,
+  y = 557,
+  direction = 3,
+  breed = "zora_feet",
+  treasure_name = "random",
+}
+
+destructible{
+  name = "auto_destructible_8",
+  layer = 1,
+  x = 1880,
+  y = 685,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+enemy{
+  name = "auto_enemy_28",
+  layer = 1,
+  x = 1656,
+  y = 301,
+  direction = 3,
+  breed = "sand_crab",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_29",
+  layer = 1,
+  x = 1864,
+  y = 301,
+  direction = 3,
+  breed = "sand_crab",
+  treasure_name = "random",
+}
+
+chest{
+  layer = 1,
+  x = 2080,
+  y = 365,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_2_1f_key_chest_a",
+  sprite = "entities/chest",
+}
+
+crystal{
+  layer = 1,
+  x = 1760,
+  y = 125,
+}
+
+enemy{
+  name = "auto_enemy_30",
+  layer = 1,
+  x = 1448,
+  y = 381,
+  direction = 3,
+  breed = "bari_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_31",
+  layer = 1,
+  x = 1384,
+  y = 541,
+  direction = 3,
+  breed = "bari_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 1072,
+  y = 373,
+  direction = 1,
+  breed = "pike_auto",
+}
+
+enemy{
+  layer = 1,
+  x = 1104,
+  y = 437,
+  direction = 1,
+  breed = "pike_auto",
+}
+
+enemy{
+  layer = 1,
+  x = 1136,
+  y = 501,
+  direction = 1,
+  breed = "pike_auto",
+}
+
+enemy{
+  layer = 1,
+  x = 1168,
+  y = 565,
+  direction = 1,
+  breed = "pike_auto",
+}
+
+enemy{
+  name = "auto_enemy_32",
+  layer = 1,
+  x = 952,
+  y = 541,
+  direction = 3,
+  breed = "bari_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_33",
+  layer = 1,
+  x = 808,
+  y = 381,
+  direction = 3,
+  breed = "bari_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_34",
+  layer = 1,
+  x = 376,
+  y = 301,
+  direction = 3,
+  breed = "sand_crab",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_35",
+  layer = 1,
+  x = 584,
+  y = 301,
+  direction = 3,
+  breed = "sand_crab",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_36",
+  layer = 1,
+  x = 480,
+  y = 557,
+  direction = 3,
+  breed = "zora_feet",
+  treasure_name = "random",
+}
+
+destructible{
+  name = "auto_destructible_4",
+  layer = 1,
+  x = 600,
+  y = 685,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+crystal{
+  layer = 1,
+  x = 480,
+  y = 125,
+}
+
+chest{
+  layer = 1,
+  x = 160,
+  y = 365,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_2_1f_key_chest_b",
+  sprite = "entities/chest",
+}
+
+enemy{
+  name = "auto_enemy_37",
+  layer = 1,
+  x = 480,
+  y = 853,
+  direction = 3,
+  breed = "zora_feet",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_38",
+  layer = 1,
+  x = 360,
+  y = 1021,
+  direction = 3,
+  breed = "bari_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_39",
+  layer = 1,
+  x = 600,
+  y = 1021,
+  direction = 3,
+  breed = "bari_blue",
+  treasure_name = "random",
+}
+
+crystal{
+  layer = 1,
+  x = 424,
+  y = 1245,
+}
+
+crystal{
+  layer = 1,
+  x = 456,
+  y = 1325,
+}
+
+chest{
+  layer = 1,
+  x = 160,
+  y = 1325,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_2_1f_key_chest_c",
+  sprite = "entities/chest",
+}
+
+crystal{
+  layer = 1,
+  x = 744,
+  y = 1325,
+}
+
+enemy{
+  name = "auto_enemy_40",
+  layer = 1,
+  x = 1440,
+  y = 845,
+  direction = 3,
+  breed = "zora_feet",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_41",
+  layer = 1,
+  x = 800,
+  y = 829,
+  direction = 3,
+  breed = "zora_feet",
+  treasure_name = "random",
+}
+
+chest{
+  layer = 1,
+  x = 1120,
+  y = 301,
+  treasure_name = "boss_key",
+  treasure_savegame_variable = "dungeon_2_boss_key_chest",
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 1,
+  x = 1120,
+  y = 845,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_2_key_chest_e",
+  sprite = "entities/chest",
+}
+
+destructible{
+  name = "auto_destructible_23",
+  layer = 1,
+  x = 488,
+  y = 1549,
+  treasure_name = "heart",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_25",
+  layer = 1,
+  x = 488,
+  y = 1565,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_27",
+  layer = 1,
+  x = 488,
+  y = 1581,
+  treasure_name = "bomb",
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+enemy{
+  name = "boss",
+  layer = 1,
+  x = 1120,
+  y = 1141,
+  direction = 0,
+  breed = "mothula",
+  rank = 2,
+  savegame_variable = "dungeon_2_boss",
+  treasure_name = "magic_crystal",
+  treasure_savegame_variable = "dungeon_2_crystal",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1272,
+  y = 333,
+  direction = 0,
+  sprite = "entities/hook_brown",
+  model = "hookable",
+}
+
+sensor{
+  name = "start_boss_sensor",
+  layer = 1,
+  x = 1112,
+  y = 1173,
+  width = 32,
+  height = 16,
+}
+
+destination{
+  name = "boss_shortcut",
+  layer = 1,
+  x = 1120,
+  y = 1173,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 1096,
+  y = 1416,
+  width = 16,
+  height = 16,
+  transition = "immediate",
+  destination_map = "dungeon_2/1f",
+  destination = "boss_shortcut",
 }
 
 tile{

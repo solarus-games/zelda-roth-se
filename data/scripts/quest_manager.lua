@@ -153,12 +153,14 @@ local function initialize_sensor()
 
     -- Sensors called open_house_xxx_sensor automatically open a house door.
     local door_name = name:match("^open_house_([a-zA-X1-9_]+)_sensor")
-    local door = map:get_entity(door_name)
-    if door ~= nil then
-      if hero:get_direction() == 1
-	       and door:is_enabled() then
-        door:set_enabled(false)
-        sol.audio.play_sound("door_open")
+    if door_name ~= nil then
+      local door = map:get_entity(door_name)
+      if door ~= nil then
+        if hero:get_direction() == 1
+	         and door:is_enabled() then
+          door:set_enabled(false)
+          sol.audio.play_sound("door_open")
+        end
       end
     end
   end
