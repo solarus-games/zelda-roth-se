@@ -62,6 +62,7 @@ sprite{ id = "enemies/moblin", description = "Moblin" }
 sprite{ id = "enemies/mothula", description = "Mothula" }
 sprite{ id = "enemies/pike_auto", description = "Pike (always moving)" }
 sprite{ id = "enemies/pikku", description = "Pikku" }
+sprite{ id = "enemies/poe", description = "poe" }
 sprite{ id = "enemies/rope", description = "Rope" }
 sprite{ id = "enemies/sand_crab", description = "Sand Crab" }
 sprite{ id = "enemies/skeleton", description = "Skeleton" }
@@ -307,6 +308,7 @@ item{ id = "bottle_1", description = "Bottle 1" }
 item{ id = "bottle_2", description = "Bottle 2" }
 item{ id = "bottle_3", description = "Bottle 3" }
 item{ id = "bow", description = "Bow" }
+item{ id = "bow_silver", description = "Silver bow" }
 item{ id = "compass", description = "Dungeon compass" }
 item{ id = "din_medallion", description = "Din medallion" }
 item{ id = "farore_medallion", description = "Farore medallion" }
@@ -351,6 +353,7 @@ enemy{ id = "moblin", description = "Moblin" }
 enemy{ id = "mothula", description = "Mothula" }
 enemy{ id = "pike_auto", description = "Pike (always moving)" }
 enemy{ id = "pikku", description = "Pikku" }
+enemy{ id = "poe", description = "Poe" }
 enemy{ id = "rope", description = "Rope" }
 enemy{ id = "sand_crab", description = "Sand Crab" }
 enemy{ id = "skeleton", description = "Skeleton" }

@@ -40,6 +40,7 @@ function item:on_using()
     height = 8,
     direction = 0,
   }
+  local enemies_touched = { }
   hammer:set_origin(4, 5)
   hammer:add_collision_test("overlapping", function(hammer, entity)
 
@@ -48,6 +49,11 @@ function item:on_using()
     end
 
     local enemy = entity
+    if enemies_touched[enemy] then
+      -- If protected we don't want to play the sound repeatedly.
+      return
+    end
+    enemies_touched[enemy] = true
     local reaction = enemy:get_hammer_reaction(enemy_sprite)
     if type(reaction) == "number" then
       enemy:hurt(reaction)
@@ -55,6 +61,10 @@ function item:on_using()
       enemy:immobilize()
     elseif reaction == "protected" then
       sol.audio.play_sound("sword_tapping")
+    elseif reaction == "custom" then
+      if enemy.on_custom_attack_received ~= nil then
+        enemy:on_custom_attack_received("hammer")
+      end
     end
   end)
 

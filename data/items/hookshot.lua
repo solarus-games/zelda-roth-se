@@ -437,6 +437,11 @@ function item:on_using()
       elseif reaction == "protected" then
         sol.audio.play_sound("sword_tapping")
         go_back()
+      elseif reaction == "custom" then
+        if enemy.on_custom_attack_received ~= nil then
+          enemy:on_custom_attack_received("hammer")
+        end
+        go_back()
       end
     end
 
