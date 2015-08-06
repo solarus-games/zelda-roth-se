@@ -13,7 +13,7 @@ local monsters = {
   { enemy = "skeleton",            page = 1, frame = {  16, 112, 48, 48 }, xy = { 16, 25 } },  -- TODO rename to Blue Stalfos
   { enemy = "armos",               page = 1, frame = {  96, 112, 48, 48 }, xy = { 16, 29 } },
   { enemy = "moblin",              page = 1, frame = { 176, 112, 48, 48 }, xy = { 16, 25 } },
-  { enemy = "wizzrobe_white",      page = 1, frame = { 256, 112, 48, 48 }, xy = { 16, 25 } },
+  { enemy = "wizzrobe_blue",       page = 1, frame = { 256, 112, 48, 48 }, xy = { 16, 25 } },
   { enemy = "lynel",               page = 1, frame = {  16, 176, 48, 48 }, xy = { 16, 29 } },
   { enemy = "tektite_blue",        page = 1, frame = {  96, 176, 48, 48 }, xy = { 16, 21 } },
   { enemy = "vulture",             page = 1, frame = { 176, 176, 48, 48 }, xy = { 16, 21 } },
@@ -24,7 +24,7 @@ local monsters = {
   { enemy = "octorok",             page = 2, frame = { 256,  48, 48, 48 }, xy = { 16, 21 } },
   { enemy = "ropa",                page = 2, frame = {  16, 112, 48, 48 }, xy = { 16, 25 } },
   { enemy = "bari_blue",           page = 2, frame = {  96, 112, 48, 48 }, xy = { 16, 25 } },
-  { enemy = "wizzrobe_blue",       page = 2, frame = { 176, 112, 48, 48 }, xy = { 16, 25 } },
+  { enemy = "wizzrobe_white",      page = 2, frame = { 176, 112, 48, 48 }, xy = { 16, 25 } },
   { enemy = "sand_crabe",          page = 2, frame = { 256, 112, 48, 48 }, xy = { 16, 21 } },
   { enemy = "freezor",             page = 2, frame = {  16, 176, 48, 48 }, xy = { 16, 21 } },
   { enemy = "stalfos_red",         page = 2, frame = {  96, 176, 48, 48 }, xy = { 16, 25 } },

@@ -73,6 +73,8 @@ sprite{ id = "enemies/stal", description = "Stal" }
 sprite{ id = "enemies/tektite_blue", description = "Blue Tektite" }
 sprite{ id = "enemies/tentacle", description = "Tentacle" }
 sprite{ id = "enemies/vulture", description = "Vulture" }
+sprite{ id = "enemies/wizzrobe_beam", description = "Wizzrobe beam" }
+sprite{ id = "enemies/wizzrobe_white", description = "White Wizzrobe" }
 sprite{ id = "enemies/zora_feet", description = "Zora (on feet)" }
 sprite{ id = "enemies/zora_water", description = "Zora (in water)" }
 sprite{ id = "entities/arrow", description = "Arrow" }
@@ -367,6 +369,8 @@ enemy{ id = "stal", description = "Stal" }
 enemy{ id = "tektite_blue", description = "Blue Tektite" }
 enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "vulture", description = "Vulture" }
+enemy{ id = "wizzrobe_beam", description = "Wizzrobe beam" }
+enemy{ id = "wizzrobe_white", description = "White Wizzrobe" }
 enemy{ id = "zora_feet", description = "Zora (on feet)" }
 enemy{ id = "zora_water", description = "Zora (in water)" }
 
