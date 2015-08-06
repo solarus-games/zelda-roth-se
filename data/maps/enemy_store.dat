@@ -124,12 +124,22 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_5",
+  name = "auto_enemy_6",
   layer = 1,
   x = 200,
   y = 45,
   direction = 3,
   breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_5",
+  layer = 1,
+  x = 168,
+  y = 45,
+  direction = 3,
+  breed = "moblin",
   treasure_name = "random",
 }
 
