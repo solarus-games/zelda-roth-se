@@ -427,7 +427,7 @@ function item:on_using()
       if hooked then
         return
       end
-      local reaction = enemy.get_hookshot_reaction and enemy:get_hookshot_reaction(enemy_sprite) or "immobilized"
+      local reaction = enemy:get_hookshot_reaction(enemy_sprite)
       if type(reaction) == "number" then
         enemy:hurt(reaction)
         go_back()

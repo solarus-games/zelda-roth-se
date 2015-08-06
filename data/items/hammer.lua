@@ -6,17 +6,6 @@ function item:on_created()
   item:set_savegame_variable("possession_hammer")
   item:set_assignable(true)
   item:set_pushed_stake(false)
-
-  -- Add hammer properties to enemies.
-  local enemy_meta = sol.main.get_metatable("enemy")
-  enemy_meta.vulnerable_to_hammer = true  -- Vulnerable by default.
-  function enemy_meta:is_vulnerable_to_hammer()
-    return self.vulnerable_to_hammer
-  end
-
-  function enemy_meta:set_vulnerable_to_hammer(vulnerable)
-    self.vulnerable_to_hammer = vulnerable
-  end
 end
 
 function item:on_using()
@@ -58,8 +47,14 @@ function item:on_using()
       return
     end
 
-    if entity:is_vulnerable_to_hammer() then
-      entity:hurt(3)
+    local enemy = entity
+    local reaction = enemy:get_hammer_reaction(enemy_sprite)
+    if type(reaction) == "number" then
+      enemy:hurt(reaction)
+    elseif reaction == "immobilized" then
+      enemy:immobilize()
+    elseif reaction == "protected" then
+      sol.audio.play_sound("sword_tapping")
     end
   end)
 
@@ -77,4 +72,35 @@ end
 function item:set_pushed_stake(pushed_stake)
   item.pushed_stake = pushed_stake
 end
+
+-- Initialize the metatable of appropriate entities to work with the hammer.
+local function initialize_meta()
+
+  -- Add Lua hammer properties to enemies.
+  local enemy_meta = sol.main.get_metatable("enemy")
+  if enemy_meta.get_hammer_reaction ~= nil then
+    -- Already done.
+    return
+  end
+
+  enemy_meta.hammer_reaction = 3  -- 3 life point by default.
+  function enemy_meta:get_hammer_reaction(sprite)
+    return self.hammer_reaction
+  end
+
+  function enemy_meta:set_hammer_reaction(reaction, sprite)
+    -- TODO allow to set by sprite
+    self.hammer_reaction = reaction
+  end
+
+  -- Change enemy:set_invincible() to also
+  -- take into account the hammer.
+  local previous_set_invincible = enemy_meta.set_invincible
+  function enemy_meta:set_invincible()
+    previous_set_invincible(self)
+    self:set_hammer_reaction("ignored")
+  end
+end
+
+initialize_meta()
 
