@@ -1532,15 +1532,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 784,
-  y = 592,
-  width = 32,
-  height = 8,
-  pattern = "stairs_inner_up.1.top",
-}
-
-tile{
-  layer = 1,
   x = 792,
   y = 600,
   width = 16,
@@ -1564,15 +1555,6 @@ tile{
   width = 8,
   height = 24,
   pattern = "stairs_inner_up.1.border.2",
-}
-
-tile{
-  layer = 1,
-  x = 784,
-  y = 592,
-  width = 32,
-  height = 8,
-  pattern = "invisible_wall",
 }
 
 tile{
@@ -2817,6 +2799,33 @@ tile{
   pattern = "water_shallow",
 }
 
+tile{
+  layer = 1,
+  x = 808,
+  y = 592,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.1.top.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 592,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.1.top.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 792,
+  y = 592,
+  width = 16,
+  height = 8,
+  pattern = "stairs_inner_up.1.top",
+}
+
 sensor{
   name = "dungeon_room_5_4",
   layer = 1,
@@ -3325,6 +3334,19 @@ sensor{
   y = 733,
   width = 16,
   height = 16,
+}
+
+wall{
+  layer = 1,
+  x = 784,
+  y = 592,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

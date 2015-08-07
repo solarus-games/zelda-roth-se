@@ -6,7 +6,7 @@ properties{
   world = "Dungeon 5",
   floor = -2,
   tileset = "dungeon_graybrown",
-  music = "same",
+  music = "light_world_dungeon",
 }
 
 tile{
@@ -1262,15 +1262,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 784,
-  y = 352,
-  width = 32,
-  height = 8,
-  pattern = "stairs_inner_up.1.top",
-}
-
-tile{
-  layer = 1,
   x = 792,
   y = 360,
   width = 16,
@@ -1294,15 +1285,6 @@ tile{
   width = 8,
   height = 24,
   pattern = "stairs_inner_up.1.border.2",
-}
-
-tile{
-  layer = 1,
-  x = 784,
-  y = 352,
-  width = 32,
-  height = 8,
-  pattern = "invisible_wall",
 }
 
 tile{
@@ -6590,15 +6572,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1104,
-  y = 1312,
-  width = 32,
-  height = 8,
-  pattern = "stairs_inner_up.1.top",
-}
-
-tile{
-  layer = 1,
   x = 1112,
   y = 1320,
   width = 16,
@@ -6622,15 +6595,6 @@ tile{
   width = 8,
   height = 24,
   pattern = "stairs_inner_up.1.border.2",
-}
-
-tile{
-  layer = 1,
-  x = 1104,
-  y = 1312,
-  width = 32,
-  height = 8,
-  pattern = "invisible_wall",
 }
 
 tile{
@@ -9198,13 +9162,67 @@ tile{
   pattern = "wall_hole.corner.2",
 }
 
+tile{
+  layer = 1,
+  x = 792,
+  y = 352,
+  width = 16,
+  height = 8,
+  pattern = "stairs_inner_up.1.top",
+}
+
+tile{
+  layer = 1,
+  x = 808,
+  y = 352,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.1.top.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 352,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.1.top.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 1312,
+  width = 16,
+  height = 8,
+  pattern = "stairs_inner_up.1.top",
+}
+
+tile{
+  layer = 1,
+  x = 1128,
+  y = 1312,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.1.top.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 1312,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.1.top.border.1",
+}
+
 crystal_block{
   layer = 1,
   x = 544,
   y = 336,
   width = 16,
   height = 48,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -9213,7 +9231,7 @@ crystal_block{
   y = 288,
   width = 32,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -9222,7 +9240,7 @@ crystal_block{
   y = 560,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -9231,7 +9249,7 @@ crystal_block{
   y = 624,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -9240,15 +9258,13 @@ crystal_block{
   y = 576,
   width = 16,
   height = 48,
-  subtype = "0",
+  subtype = 0,
 }
 
 custom_entity{
   layer = 1,
   x = 760,
   y = 429,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9258,8 +9274,6 @@ custom_entity{
   layer = 1,
   x = 776,
   y = 413,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9269,8 +9283,6 @@ custom_entity{
   layer = 1,
   x = 792,
   y = 413,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9280,8 +9292,6 @@ custom_entity{
   layer = 1,
   x = 808,
   y = 413,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9291,8 +9301,6 @@ custom_entity{
   layer = 1,
   x = 824,
   y = 413,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9302,8 +9310,6 @@ custom_entity{
   layer = 1,
   x = 840,
   y = 429,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9313,8 +9319,6 @@ custom_entity{
   layer = 1,
   x = 856,
   y = 445,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9324,8 +9328,6 @@ custom_entity{
   layer = 1,
   x = 744,
   y = 445,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9337,7 +9339,7 @@ crystal_block{
   y = 784,
   width = 64,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -9346,7 +9348,7 @@ crystal_block{
   y = 768,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -9355,7 +9357,7 @@ crystal_block{
   y = 752,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -9364,7 +9366,7 @@ crystal_block{
   y = 768,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -9373,15 +9375,13 @@ crystal_block{
   y = 752,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 custom_entity{
   layer = 1,
   x = 696,
   y = 1293,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9391,8 +9391,6 @@ custom_entity{
   layer = 1,
   x = 696,
   y = 1357,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9402,8 +9400,6 @@ custom_entity{
   layer = 1,
   x = 712,
   y = 1341,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9413,8 +9409,6 @@ custom_entity{
   layer = 1,
   x = 712,
   y = 1325,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9424,8 +9418,6 @@ custom_entity{
   layer = 1,
   x = 712,
   y = 1309,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9435,8 +9427,6 @@ custom_entity{
   layer = 1,
   x = 680,
   y = 1277,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9446,8 +9436,6 @@ custom_entity{
   layer = 1,
   x = 680,
   y = 1373,
-  width = 16,
-  height = 16,
   direction = 3,
   sprite = "entities/hammer_stake_yellow",
   model = "hammer_stake",
@@ -9459,7 +9447,7 @@ crystal_block{
   y = 1024,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -9468,7 +9456,7 @@ crystal_block{
   y = 1040,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -9477,7 +9465,7 @@ crystal_block{
   y = 1056,
   width = 16,
   height = 48,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -9486,7 +9474,7 @@ crystal_block{
   y = 1104,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -9495,51 +9483,7 @@ crystal_block{
   y = 1120,
   width = 16,
   height = 16,
-  subtype = "0",
-}
-
-destructible{
-  layer = 1,
-  x = 680,
-  y = 1005,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 920,
-  y = 1005,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 920,
-  y = 1165,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 680,
-  y = 1165,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
+  subtype = 0,
 }
 
 door{
@@ -9550,79 +9494,13 @@ door{
   sprite = "entities/door_big_key",
 }
 
-destructible{
-  layer = 1,
-  x = 1880,
-  y = 1005,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1880,
-  y = 1165,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1640,
-  y = 1165,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1640,
-  y = 1005,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1560,
-  y = 1405,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1320,
-  y = 1405,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
 crystal_block{
   layer = 1,
   x = 1408,
   y = 1264,
   width = 64,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -9631,7 +9509,7 @@ crystal_block{
   y = 1248,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -9640,7 +9518,7 @@ crystal_block{
   y = 1232,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -9649,7 +9527,7 @@ crystal_block{
   y = 1248,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -9658,7 +9536,7 @@ crystal_block{
   y = 1232,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 door{
@@ -9675,28 +9553,6 @@ door{
   y = 456,
   direction = 3,
   sprite = "entities/door_normal",
-}
-
-destructible{
-  layer = 1,
-  x = 1640,
-  y = 285,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1880,
-  y = 285,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
 }
 
 door{
@@ -9716,6 +9572,7 @@ door{
 }
 
 door{
+  name = "auto_door_a",
   layer = 1,
   x = 1112,
   y = 248,
@@ -9724,6 +9581,7 @@ door{
 }
 
 door{
+  name = "auto_door_a_back",
   layer = 1,
   x = 1112,
   y = 216,
@@ -9742,57 +9600,13 @@ switch{
   inactivate_when_leaving = false,
 }
 
-destructible{
-  layer = 1,
-  x = 1000,
-  y = 669,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1016,
-  y = 669,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1016,
-  y = 685,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 1000,
-  y = 685,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
 crystal_block{
   layer = 1,
   x = 1536,
   y = 560,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -9801,7 +9615,7 @@ crystal_block{
   y = 624,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -9810,7 +9624,7 @@ crystal_block{
   y = 576,
   width = 16,
   height = 48,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -9819,7 +9633,7 @@ crystal_block{
   y = 544,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -9828,7 +9642,261 @@ crystal_block{
   y = 640,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
+}
+
+destructible{
+  name = "auto_destructible_1",
+  layer = 1,
+  x = 1000,
+  y = 669,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_2",
+  layer = 1,
+  x = 1016,
+  y = 669,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_3",
+  layer = 1,
+  x = 1000,
+  y = 685,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_4",
+  layer = 1,
+  x = 1016,
+  y = 685,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_5",
+  layer = 1,
+  x = 1640,
+  y = 285,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_6",
+  layer = 1,
+  x = 1880,
+  y = 285,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_7",
+  layer = 1,
+  x = 1640,
+  y = 1005,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_8",
+  layer = 1,
+  x = 1640,
+  y = 1165,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_9",
+  layer = 1,
+  x = 1880,
+  y = 1165,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_10",
+  layer = 1,
+  x = 1880,
+  y = 1005,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_11",
+  layer = 1,
+  x = 1320,
+  y = 1405,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_12",
+  layer = 1,
+  x = 1560,
+  y = 1405,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_13",
+  layer = 1,
+  x = 680,
+  y = 1165,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_14",
+  layer = 1,
+  x = 680,
+  y = 1005,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_15",
+  layer = 1,
+  x = 920,
+  y = 1005,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destructible_16",
+  layer = 1,
+  x = 920,
+  y = 1165,
+  sprite = "entities/vase_skull",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+wall{
+  layer = 1,
+  x = 784,
+  y = 352,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 1104,
+  y = 1312,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destination{
+  name = "from_b1_s",
+  layer = 1,
+  x = 1120,
+  y = 1341,
+  direction = 1,
+}
+
+destination{
+  name = "from_b1_n",
+  layer = 1,
+  x = 800,
+  y = 381,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 792,
+  y = 368,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_5/b1",
+  destination = "from_b2_n",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1112,
+  y = 1328,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_5/b1",
+  destination = "from_b2_s",
+}
+
+stairs{
+  layer = 1,
+  x = 1112,
+  y = 1328,
+  direction = 1,
+  subtype = 2,
+}
+
+stairs{
+  layer = 1,
+  x = 792,
+  y = 368,
+  direction = 1,
+  subtype = 2,
 }
 
 tile{
@@ -10621,5 +10689,104 @@ tile{
   width = 32,
   height = 8,
   pattern = "door_top.closed.1",
+}
+
+separator{
+  name = "auto_separator_4",
+  layer = 2,
+  x = 640,
+  y = 232,
+  width = 1280,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_5",
+  layer = 2,
+  x = 640,
+  y = 472,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_6",
+  layer = 2,
+  x = 1600,
+  y = 472,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_7",
+  layer = 2,
+  x = 0,
+  y = 712,
+  width = 1920,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_8",
+  layer = 2,
+  x = 640,
+  y = 952,
+  width = 1280,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_9",
+  layer = 2,
+  x = 640,
+  y = 1192,
+  width = 1280,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_1",
+  layer = 2,
+  x = 632,
+  y = 0,
+  width = 16,
+  height = 1440,
+}
+
+separator{
+  name = "auto_separator_2",
+  layer = 2,
+  x = 952,
+  y = 0,
+  width = 16,
+  height = 720,
+}
+
+separator{
+  name = "auto_separator_3",
+  layer = 2,
+  x = 952,
+  y = 960,
+  width = 16,
+  height = 480,
+}
+
+separator{
+  name = "auto_separator_10",
+  layer = 2,
+  x = 1592,
+  y = 0,
+  width = 16,
+  height = 1440,
+}
+
+separator{
+  name = "auto_separator_11",
+  layer = 2,
+  x = 1272,
+  y = 960,
+  width = 16,
+  height = 480,
 }
 

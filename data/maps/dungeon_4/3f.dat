@@ -363,18 +363,18 @@ tile{
 separator{
   name = "auto_separator_1",
   layer = 2,
-  x = 632,
+  x = 640,
   y = 472,
-  width = 336,
+  width = 320,
   height = 16,
 }
 
 separator{
   name = "auto_separator_3",
   layer = 2,
-  x = 632,
+  x = 640,
   y = 712,
-  width = 336,
+  width = 320,
   height = 16,
 }
 

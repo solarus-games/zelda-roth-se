@@ -6,7 +6,7 @@ properties{
   world = "dungeon_5",
   floor = 0,
   tileset = "dungeon_graybrown",
-  music = "same",
+  music = "light_world_dungeon",
 }
 
 tile{
@@ -658,6 +658,123 @@ tile{
 }
 
 tile{
+  layer = 1,
+  x = 792,
+  y = 480,
+  width = 16,
+  height = 8,
+  pattern = "barrier.1",
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 1424,
+  width = 16,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+destination{
+  name = "from_outside_s",
+  layer = 1,
+  x = 800,
+  y = 1429,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 792,
+  y = 1432,
+  width = 16,
+  height = 16,
+  destination_map = "outside/a1",
+  destination = "from_dungeon_4",
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 456,
+  width = 16,
+  height = 16,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+destination{
+  name = "from_outside_n",
+  layer = 1,
+  x = 800,
+  y = 461,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 792,
+  y = 464,
+  width = 16,
+  height = 16,
+  destination_map = "outside/a1",
+  destination = "from_dungeon_4",
+}
+
+destination{
+  name = "from_b1_n",
+  layer = 1,
+  x = 800,
+  y = 357,
+  direction = 1,
+}
+
+destination{
+  name = "from_b1_s",
+  layer = 1,
+  x = 800,
+  y = 1325,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 792,
+  y = 1312,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_5/b1",
+  destination = "from_1f_s",
+}
+
+teletransporter{
+  layer = 1,
+  x = 792,
+  y = 344,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_5/b1",
+  destination = "from_1f_n",
+}
+
+stairs{
+  layer = 1,
+  x = 792,
+  y = 344,
+  direction = 3,
+  subtype = 3,
+}
+
+stairs{
+  layer = 1,
+  x = 792,
+  y = 1312,
+  direction = 3,
+  subtype = 3,
+}
+
+tile{
   layer = 2,
   x = 784,
   y = 472,
@@ -691,5 +808,131 @@ tile{
   width = 32,
   height = 8,
   pattern = "door_top.2",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 0,
+  width = 1920,
+  height = 240,
+  pattern = "ceiling",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 240,
+  width = 640,
+  height = 240,
+  pattern = "ceiling",
+}
+
+tile{
+  layer = 2,
+  x = 960,
+  y = 240,
+  width = 960,
+  height = 240,
+  pattern = "ceiling",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 1200,
+  width = 640,
+  height = 240,
+  pattern = "ceiling",
+}
+
+tile{
+  layer = 2,
+  x = 960,
+  y = 1200,
+  width = 960,
+  height = 240,
+  pattern = "ceiling",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 480,
+  width = 1920,
+  height = 720,
+  pattern = "ceiling",
+}
+
+separator{
+  name = "auto_separator_1",
+  layer = 2,
+  x = 640,
+  y = 232,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_3",
+  layer = 2,
+  x = 640,
+  y = 472,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_2",
+  layer = 2,
+  x = 632,
+  y = 240,
+  width = 16,
+  height = 240,
+}
+
+separator{
+  name = "auto_separator_4",
+  layer = 2,
+  x = 952,
+  y = 240,
+  width = 16,
+  height = 240,
+}
+
+separator{
+  name = "auto_separator_5",
+  layer = 2,
+  x = 640,
+  y = 1192,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_6",
+  layer = 2,
+  x = 640,
+  y = 1432,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_7",
+  layer = 2,
+  x = 632,
+  y = 1200,
+  width = 16,
+  height = 240,
+}
+
+separator{
+  name = "auto_separator_8",
+  layer = 2,
+  x = 952,
+  y = 1200,
+  width = 16,
+  height = 240,
 }
 

@@ -14,6 +14,19 @@ function door_manager:manage_map(map)
   end
 end
 
+-- Returns whether there exists at least one entity with the specified
+-- prefix in the region of the region.
+local function has_entities_with_prefix_in_region(map, prefix)
+
+  local hero = map:get_hero()
+  for entity in map:get_entities(prefix) do
+    if entity:is_in_same_region(hero) then
+      return true
+    end
+  end
+  return false
+end
+
 function door_manager:open_when_enemies_dead(door)
 
   local door_prefix = door:get_name()
@@ -22,7 +35,7 @@ function door_manager:open_when_enemies_dead(door)
   local map = door:get_map()
   local enemies = {}
   local function enemy_on_dead()
-    if door:is_closed() and not map:has_entities(enemy_prefix) then
+    if door:is_closed() and not has_entities_with_prefix_in_region(map, enemy_prefix) then
       sol.audio.play_sound("secret")
       map:open_doors(door_prefix)
     end
