@@ -102,7 +102,7 @@ enemy{
   y = 141,
   direction = 3,
   breed = "sand_crab",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -120,7 +120,7 @@ enemy{
   y = 141,
   direction = 3,
   breed = "bari_blue",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -170,7 +170,7 @@ enemy{
   y = 93,
   direction = 3,
   breed = "stal",
-  treasure_name = "random",
+  treasure_name = "random_weapon",
 }
 
 enemy{
@@ -180,7 +180,7 @@ enemy{
   y = 93,
   direction = 3,
   breed = "poe",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{
@@ -210,7 +210,7 @@ enemy{
   y = 141,
   direction = 3,
   breed = "wizzrobe_white",
-  treasure_name = "random",
+  treasure_name = "random_rupee",
 }
 
 enemy{
@@ -220,7 +220,7 @@ enemy{
   y = 141,
   direction = 3,
   breed = "hover",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{

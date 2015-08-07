@@ -7546,6 +7546,86 @@ pickable{
   treasure_savegame_variable = "outside_a3_piece_of_heart_b",
 }
 
+enemy{
+  name = "auto_enemy_15",
+  layer = 1,
+  x = 392,
+  y = 133,
+  direction = 3,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_16",
+  layer = 1,
+  x = 536,
+  y = 133,
+  direction = 3,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_17",
+  layer = 1,
+  x = 424,
+  y = 821,
+  direction = 3,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_18",
+  layer = 1,
+  x = 664,
+  y = 821,
+  direction = 3,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_19",
+  layer = 1,
+  x = 744,
+  y = 501,
+  direction = 3,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_20",
+  layer = 1,
+  x = 1144,
+  y = 845,
+  direction = 3,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_21",
+  layer = 1,
+  x = 1304,
+  y = 133,
+  direction = 3,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_22",
+  layer = 1,
+  x = 1624,
+  y = 133,
+  direction = 3,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
 tile{
   layer = 2,
   x = 480,

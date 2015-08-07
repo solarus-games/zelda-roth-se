@@ -7014,6 +7014,106 @@ teletransporter{
   destination = "from_outside_s",
 }
 
+enemy{
+  name = "auto_enemy_24",
+  layer = 1,
+  x = 920,
+  y = 445,
+  direction = 3,
+  breed = "stal",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_25",
+  layer = 1,
+  x = 344,
+  y = 445,
+  direction = 3,
+  breed = "stal",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_26",
+  layer = 1,
+  x = 120,
+  y = 749,
+  direction = 3,
+  breed = "stal",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_27",
+  layer = 1,
+  x = 808,
+  y = 893,
+  direction = 3,
+  breed = "stal",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_28",
+  layer = 1,
+  x = 344,
+  y = 941,
+  direction = 3,
+  breed = "stal",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_29",
+  layer = 1,
+  x = 472,
+  y = 1405,
+  direction = 3,
+  breed = "stal",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_30",
+  layer = 1,
+  x = 472,
+  y = 333,
+  direction = 3,
+  breed = "poe",
+  treasure_name = "random_heart",
+}
+
+enemy{
+  name = "auto_enemy_31",
+  layer = 1,
+  x = 584,
+  y = 333,
+  direction = 3,
+  breed = "poe",
+  treasure_name = "random_heart",
+}
+
+enemy{
+  name = "auto_enemy_32",
+  layer = 1,
+  x = 696,
+  y = 333,
+  direction = 3,
+  breed = "poe",
+  treasure_name = "random_heart",
+}
+
+enemy{
+  name = "auto_enemy_33",
+  layer = 1,
+  x = 808,
+  y = 333,
+  direction = 3,
+  breed = "poe",
+  treasure_name = "random_heart",
+}
+
 tile{
   layer = 2,
   x = 48,
