@@ -52,6 +52,7 @@ tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 sprite{ id = "enemies/agahnim", description = "Agahnim" }
 sprite{ id = "enemies/agahnim_lightning", description = "Agahnim's lightning" }
 sprite{ id = "enemies/armos", description = "Armos" }
+sprite{ id = "enemies/armos_knight", description = "Armos Knight" }
 sprite{ id = "enemies/arrghus", description = "Arrghus" }
 sprite{ id = "enemies/bari_blue", description = "Blue Bari" }
 sprite{ id = "enemies/cactus", description = "Cactus" }
@@ -371,6 +372,7 @@ item{ id = "tunic", description = "Tunic (green / blue / red)" }
 enemy{ id = "agahnim", description = "Agahnim" }
 enemy{ id = "agahnim_lightning", description = "Agahnim's lightning" }
 enemy{ id = "armos", description = "Armos" }
+enemy{ id = "armos_knight", description = "Armos knight" }
 enemy{ id = "arrghus", description = "Arrghus" }
 enemy{ id = "bari_blue", description = "Blue Bari" }
 enemy{ id = "chasupa", description = "Chasupa" }
