@@ -55,17 +55,7 @@ function item:on_using()
     end
     enemies_touched[enemy] = true
     local reaction = enemy:get_hammer_reaction(enemy_sprite)
-    if type(reaction) == "number" then
-      enemy:hurt(reaction)
-    elseif reaction == "immobilized" then
-      enemy:immobilize()
-    elseif reaction == "protected" then
-      sol.audio.play_sound("sword_tapping")
-    elseif reaction == "custom" then
-      if enemy.on_custom_attack_received ~= nil then
-        enemy:on_custom_attack_received("hammer")
-      end
-    end
+    enemy:receive_attack_consequence(reaction)
   end)
 
   -- Start the animation.
@@ -93,7 +83,7 @@ local function initialize_meta()
     return
   end
 
-  enemy_meta.hammer_reaction = 3  -- 3 life point by default.
+  enemy_meta.hammer_reaction = 3  -- 3 life points by default.
   function enemy_meta:get_hammer_reaction(sprite)
     return self.hammer_reaction
   end
@@ -113,4 +103,3 @@ local function initialize_meta()
 end
 
 initialize_meta()
-

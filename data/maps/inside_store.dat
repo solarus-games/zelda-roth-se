@@ -1895,6 +1895,24 @@ door{
   opening_method = "explosion",
 }
 
+custom_entity{
+  layer = 1,
+  x = 464,
+  y = 565,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 496,
+  y = 565,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
 tile{
   layer = 2,
   x = 352,

@@ -428,21 +428,8 @@ function item:on_using()
         return
       end
       local reaction = enemy:get_hookshot_reaction(enemy_sprite)
-      if type(reaction) == "number" then
-        enemy:hurt(reaction)
-        go_back()
-      elseif reaction == "immobilized" then
-        enemy:immobilize()
-        go_back()
-      elseif reaction == "protected" then
-        sol.audio.play_sound("sword_tapping")
-        go_back()
-      elseif reaction == "custom" then
-        if enemy.on_custom_attack_received ~= nil then
-          enemy:on_custom_attack_received("hammer")
-        end
-        go_back()
-      end
+      enemy:receive_attack_consequence("hammer", reaction)
+      go_back()
     end
 
   end)

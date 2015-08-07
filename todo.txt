@@ -9,5 +9,5 @@
 - Don't restore destructible treasures when changing floors in a dungeon
 - Color of the shadow of signs
 - Musics
-- Improve dungeon 3
+- Replace NPC torches by custom entity torches
 

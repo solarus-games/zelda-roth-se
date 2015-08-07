@@ -144,6 +144,7 @@ sprite{ id = "entities/stone_black_skull", description = "Stone (black skull)" }
 sprite{ id = "entities/stone_white", description = "Stone (white)" }
 sprite{ id = "entities/stone_white_skull", description = "Stone (white skull)" }
 sprite{ id = "entities/switch", description = "Switch" }
+sprite{ id = "entities/torch", description = "Torch" }
 sprite{ id = "entities/vase", description = "Vase" }
 sprite{ id = "entities/vase_skull", description = "Vase (skull)" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
@@ -423,8 +424,10 @@ enemy{ id = "zora_water", description = "Zora (in water)" }
 
 entity{ id = "cactus", description = "Cactus" }
 entity{ id = "cliff", description = "Cliff" }
+entity{ id = "fire", description = "Fire" }
 entity{ id = "hammer_stake", description = "Hammer stake" }
 entity{ id = "hookable", description = "Hookable" }
+entity{ id = "torch", description = "Torch" }
 
 language{ id = "fr", description = "Français" }
 
