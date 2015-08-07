@@ -5037,6 +5037,17 @@ teletransporter{
   destination = "from_outside",
 }
 
+npc{
+  name = "thief_npc",
+  layer = 1,
+  x = 2016,
+  y = 541,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/thief",
+  behavior = "dialog#outside_a1.thief_npc",
+}
+
 tile{
   layer = 2,
   x = 2152,

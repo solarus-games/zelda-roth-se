@@ -804,6 +804,14 @@ S : Vers le Château d'Hyrule
 }
 
 dialog{
+  id = "outside_a1.thief_npc",
+  text = [[
+Le temple se trouve au fin fond du désert, à la
+place d'une ancienne oasis.
+]]
+}
+
+dialog{
   id = "outside_b2.bottle_merchant.done",
   text = [[
 Désolé, c'était mon seul flacon.
