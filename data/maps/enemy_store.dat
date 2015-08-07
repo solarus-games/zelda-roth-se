@@ -272,12 +272,22 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_19",
+  name = "auto_enemy_28",
   layer = 1,
   x = 168,
   y = 141,
   direction = 3,
   breed = "chasupa",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_31",
+  layer = 1,
+  x = 136,
+  y = 141,
+  direction = 3,
+  breed = "hinox",
   treasure_name = "random",
 }
 
