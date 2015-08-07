@@ -4768,6 +4768,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_b2.village_sign",
 }
 
 npc{

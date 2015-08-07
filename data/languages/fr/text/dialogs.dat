@@ -1015,6 +1015,13 @@ S : Vers le Village Cocorico
 }
 
 dialog{
+  id = "outside_c2.village_sign",
+  text = [[
+Village Cocorico
+]]
+}
+
+dialog{
   id = "potion_not_needed",
   text = [[
 Tu n'as pas besoin de boire cette potion
