@@ -1,6 +1,6 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 640,
+  y = 480,
   width = 1920,
   height = 1440,
   world = "dungeon_5",
@@ -664,6 +664,42 @@ tile{
   width = 16,
   height = 8,
   pattern = "barrier.1",
+}
+
+sensor{
+  name = "dungeon_room_2_2",
+  layer = 1,
+  x = 800,
+  y = 1317,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_1",
+  layer = 1,
+  x = 800,
+  y = 1421,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_1_2",
+  layer = 1,
+  x = 800,
+  y = 349,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_1_1",
+  layer = 1,
+  x = 800,
+  y = 461,
+  width = 16,
+  height = 16,
 }
 
 wall{
