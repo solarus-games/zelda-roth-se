@@ -257,7 +257,7 @@ enemy{
   name = "auto_enemy_27",
   layer = 1,
   x = 200,
-  y = 93,
+  y = 141,
   direction = 3,
   breed = "wizzrobe_blue",
   treasure_name = "random_weapon",
@@ -269,5 +269,15 @@ enemy{
   y = 285,
   direction = 3,
   breed = "wallmaster",
+}
+
+enemy{
+  name = "auto_enemy_19",
+  layer = 1,
+  x = 168,
+  y = 141,
+  direction = 3,
+  breed = "chasupa",
+  treasure_name = "random",
 }
 

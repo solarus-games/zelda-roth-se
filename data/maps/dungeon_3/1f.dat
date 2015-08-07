@@ -29,6 +29,15 @@ tile{
 
 tile{
   layer = 1,
+  x = 960,
+  y = 984,
+  width = 24,
+  height = 192,
+  pattern = "wall.3",
+}
+
+tile{
+  layer = 1,
   x = 344,
   y = 24,
   width = 592,
@@ -5222,15 +5231,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 960,
-  y = 984,
-  width = 24,
-  height = 192,
-  pattern = "wall.3",
-}
-
-tile{
-  layer = 1,
   x = 984,
   y = 1176,
   width = 272,
@@ -7773,6 +7773,15 @@ chest{
   treasure_name = "lamp",
   treasure_savegame_variable = "dungeon_3_lamp_chest",
   sprite = "entities/chest",
+}
+
+destination{
+  name = "from_outside_w",
+  layer = 1,
+  x = 1120,
+  y = 1181,
+  direction = 1,
+  default = true,
 }
 
 tile{

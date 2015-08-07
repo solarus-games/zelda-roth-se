@@ -55,6 +55,7 @@ sprite{ id = "enemies/armos", description = "Armos" }
 sprite{ id = "enemies/arrghus", description = "Arrghus" }
 sprite{ id = "enemies/bari_blue", description = "Blue Bari" }
 sprite{ id = "enemies/cactus", description = "Cactus" }
+sprite{ id = "enemies/chasupa", description = "Chasupa" }
 sprite{ id = "enemies/chicken", description = "Chicken" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/eyegore_green", description = "Green Eyegore" }
@@ -369,6 +370,7 @@ enemy{ id = "agahnim_lightning", description = "Agahnim's Lightning" }
 enemy{ id = "armos", description = "Armos" }
 enemy{ id = "arrghus", description = "Arrghus" }
 enemy{ id = "bari_blue", description = "Blue Bari" }
+enemy{ id = "chasupa", description = "Chasupa" }
 enemy{ id = "chicken", description = "Chicken" }
 enemy{ id = "eyegore_green", description = "Green Eyegore" }
 enemy{ id = "fireball_red_big", description = "Red big Fireball" }
