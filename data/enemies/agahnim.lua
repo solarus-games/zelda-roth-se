@@ -4,6 +4,9 @@
 local enemy = ...
 
 local should_shoot_rabbit_beam = false
+local remaining_lightnings = 0
+local last_lightnings_total = 0
+local projectile_prefix = enemy:get_name() .. "_projectile"
 
 function enemy:on_created()
 
@@ -24,22 +27,57 @@ function enemy:on_created()
   enemy:set_hookshot_reaction("protected")
 end
 
+-- Shoots a normal fireball that the hero can send back.
 local function shoot_fireball()
 
   local sprite = enemy:get_sprite()
   sprite:set_animation("shooting")
-  sol.timer.start(enemy, 500, function() 
+  sol.timer.start(enemy, 300, function() 
     sprite:set_animation("walking")
 
     enemy:create_enemy({
       breed = "fireball_red_big",
+      name = projectile_prefix,
     })
     sol.audio.play_sound("boss_fireball")
   end)
 
-  return true
+  return true  -- Repeat the timer until hurt.
 end
 
+-- Shoots a deadly thunderbold.
+local function shoot_lightning()
+
+  if remaining_lightnings == 0 then
+    return false
+  end
+
+  local sprite = enemy:get_sprite()
+  sprite:set_animation("shooting")
+  sol.timer.start(enemy, 300, function() 
+    sprite:set_animation("walking")
+
+    enemy:create_enemy({
+      breed = "agahnim_lightning",
+      name = projectile_prefix,
+    })
+    sol.audio.play_sound("lightning")
+  end)
+
+  remaining_lightnings = remaining_lightnings - 1
+  if remaining_lightnings > 0 then
+    return true  -- Repeat the timer.
+  end
+
+  -- Shoot normal fireballs next.
+  sol.timer.start(enemy, 3000, function()
+    shoot_fireball()
+    sol.timer.start(enemy, 1500, shoot_fireball)
+  end)
+  return false
+end
+
+-- Shoots a bouncing beam that turns the hero into a rabbit.
 local function shoot_rabbit_beam()
 
   local sprite = enemy:get_sprite()
@@ -49,14 +87,17 @@ local function shoot_rabbit_beam()
 
     enemy:create_enemy({
       breed = "rabbit_beam",
+      name = projectile_prefix,
     })
     sol.audio.play_sound("boss_fireball")
   end)
 
   should_shoot_rabbit_beam = false
 
-  -- Shoot normal fireballs next.
-  sol.timer.start(enemy, 1000, shoot_fireball)
+  -- Shoot lightnings next.
+  last_lightnings_total = last_lightnings_total + 1
+  remaining_lightnings = last_lightnings_total
+  sol.timer.start(enemy, 3000, shoot_lightning)
 end
 
 function enemy:on_restarted()
@@ -66,15 +107,21 @@ function enemy:on_restarted()
   else
     -- Wait more the first time.
     sol.timer.start(enemy, 1000, function()
-      sol.timer.start(enemy, 1000, shoot_fireball)
+      sol.timer.start(enemy, 1500, shoot_fireball)
     end)
   end
 end
 
--- Function called by the bounced fireball.
+-- Function called by the fireball when colliding.
 function enemy:receive_bounced_projectile(fireball)
 
   should_shoot_rabbit_beam = true
   fireball:remove()
   enemy:hurt(2)
+end
+
+function enemy:on_dying()
+
+  local map = enemy:get_map()
+  map:remove_entities(projectile_prefix)
 end

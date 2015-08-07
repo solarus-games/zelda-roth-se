@@ -9185,15 +9185,6 @@ enemy{
   treasure_savegame_variable = "dungeon_4_crystal",
 }
 
-enemy{
-  layer = 1,
-  x = 800,
-  y = 661,
-  direction = 3,
-  breed = "rabbit_beam",
-  treasure_name = "random",
-}
-
 tile{
   layer = 2,
   x = 784,

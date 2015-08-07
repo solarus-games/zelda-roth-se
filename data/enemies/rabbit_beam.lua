@@ -58,6 +58,6 @@ function enemy:on_attacking_hero(hero)
   if not hero:is_rabbit() then
     sol.audio.play_sound("cane")
     hero:start_rabbit()
-    enemy:remove()
   end
+  enemy:remove()
 end

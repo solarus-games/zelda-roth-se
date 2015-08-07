@@ -50,6 +50,7 @@ tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
 sprite{ id = "enemies/agahnim", description = "Agahnim" }
+sprite{ id = "enemies/agahnim_lightning", description = "Agahnim's lightning" }
 sprite{ id = "enemies/armos", description = "Armos" }
 sprite{ id = "enemies/arrghus", description = "Arrghus" }
 sprite{ id = "enemies/bari_blue", description = "Blue Bari" }
@@ -257,6 +258,7 @@ sound{ id = "item_in_water", description = "item_in_water" }
 sound{ id = "jump", description = "jump" }
 sound{ id = "lamp", description = "lamp" }
 sound{ id = "lift", description = "lift" }
+sound{ id = "lightning", description = "lightning" }
 sound{ id = "magic_bar", description = "magic_bar" }
 sound{ id = "message_end", description = "message_end" }
 sound{ id = "message_letter", description = "message_letter" }
@@ -355,6 +357,7 @@ item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
 
 enemy{ id = "agahnim", description = "Agahnim" }
+enemy{ id = "agahnim_lightning", description = "Agahnim's Lightning" }
 enemy{ id = "armos", description = "Armos" }
 enemy{ id = "arrghus", description = "Arrghus" }
 enemy{ id = "bari_blue", description = "Blue Bari" }
