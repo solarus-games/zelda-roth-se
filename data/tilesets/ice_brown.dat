@@ -1,5 +1,15 @@
 background_color{ 255, 255, 255 }
 tile_pattern{
+  id = "1",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 352,
+  y = 0,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "barrier.1",
   ground = "low_wall",
   default_layer = 1,

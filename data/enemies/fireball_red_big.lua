@@ -14,6 +14,7 @@ function enemy:on_created()
   enemy:set_size(16, 16)
   enemy:set_origin(8, 8)
   enemy:set_obstacle_behavior("flying")
+  enemy:set_can_hurt_hero_running(true)
   enemy:set_invincible()
   enemy:set_attack_consequence("sword", "custom")
 
@@ -36,6 +37,7 @@ function enemy:go(angle)
   movement:set_speed(192)
   movement:set_angle(angle)
   movement:set_smooth(false)
+  movement:set_max_distance(400)
   movement:start(enemy)
 
   local x = -math.cos(angle) * 12
@@ -70,7 +72,7 @@ function enemy:on_custom_attack_received(attack, sprite)
     end
 
     enemy:go(angle)
-    sol.audio.play_sound("boss_fireball")
+    sol.audio.play_sound("enemy_hurt")
     bounced = true
 
     -- The trailing fireballs are now on the hero: don't attack temporarily

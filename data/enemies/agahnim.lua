@@ -3,8 +3,7 @@
 
 local enemy = ...
 
-local max_fireballs = 1
-local remaining_fireballs = max_fireballs
+local should_shoot_rabbit_beam = false
 
 function enemy:on_created()
 
@@ -25,32 +24,57 @@ function enemy:on_created()
   enemy:set_hookshot_reaction("protected")
 end
 
-local function shoot()
+local function shoot_fireball()
 
   local sprite = enemy:get_sprite()
   sprite:set_animation("shooting")
   sol.timer.start(enemy, 500, function() 
-    sol.audio.play_sound("boss_charge")
-    sol.timer.start(enemy, 1500, function() 
-      sprite:set_animation("walking")
+    sprite:set_animation("walking")
 
-      enemy:create_enemy({
-        breed = "fireball_red_big",
-      })
-      sol.audio.play_sound("boss_fireball")
-    end)
+    enemy:create_enemy({
+      breed = "fireball_red_big",
+    })
+    sol.audio.play_sound("boss_fireball")
   end)
-  return remaining_fireballs > 0  -- Repeat the timer if more fireballs should be created.
+
+  return true
+end
+
+local function shoot_rabbit_beam()
+
+  local sprite = enemy:get_sprite()
+  sprite:set_animation("shooting")
+  sol.timer.start(enemy, 300, function() 
+    sprite:set_animation("walking")
+
+    enemy:create_enemy({
+      breed = "rabbit_beam",
+    })
+    sol.audio.play_sound("boss_fireball")
+  end)
+
+  should_shoot_rabbit_beam = false
+
+  -- Shoot normal fireballs next.
+  sol.timer.start(enemy, 1000, shoot_fireball)
 end
 
 function enemy:on_restarted()
 
-  sol.timer.start(self, 4000, shoot)
+  if should_shoot_rabbit_beam then
+    sol.timer.start(enemy, 500, shoot_rabbit_beam)
+  else
+    -- Wait more the first time.
+    sol.timer.start(enemy, 1000, function()
+      sol.timer.start(enemy, 1000, shoot_fireball)
+    end)
+  end
 end
 
 -- Function called by the bounced fireball.
 function enemy:receive_bounced_projectile(fireball)
 
-  max_fireballs = max_fireballs + 1
+  should_shoot_rabbit_beam = true
+  fireball:remove()
   enemy:hurt(2)
 end
