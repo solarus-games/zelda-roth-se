@@ -6,16 +6,7 @@ properties{
   world = "dungeon_3",
   floor = 0,
   tileset = "temple_green",
-  music = "same",
-}
-
-tile{
-  layer = 0,
-  x = 344,
-  y = 984,
-  width = 592,
-  height = 192,
-  pattern = "hole",
+  music = "dark_world_dungeon",
 }
 
 tile{
@@ -37,25 +28,7 @@ tile{
 }
 
 tile{
-  layer = 0,
-  x = 24,
-  y = 504,
-  width = 272,
-  height = 432,
-  pattern = "hole",
-}
-
-tile{
-  layer = 0,
-  x = 24,
-  y = 264,
-  width = 592,
-  height = 192,
-  pattern = "hole",
-}
-
-tile{
-  layer = 0,
+  layer = 1,
   x = 344,
   y = 24,
   width = 592,
@@ -64,10 +37,37 @@ tile{
 }
 
 tile{
-  layer = 0,
+  layer = 1,
+  x = 24,
+  y = 264,
+  width = 592,
+  height = 192,
+  pattern = "hole",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 504,
+  width = 272,
+  height = 432,
+  pattern = "hole",
+}
+
+tile{
+  layer = 1,
   x = 984,
   y = 744,
   width = 272,
+  height = 192,
+  pattern = "hole",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 984,
+  width = 592,
   height = 192,
   pattern = "hole",
 }
