@@ -68,9 +68,11 @@ sprite{ id = "enemies/hinox", description = "Hinox" }
 sprite{ id = "enemies/hover", description = "Hover" }
 sprite{ id = "enemies/keese", description = "Keese" }
 sprite{ id = "enemies/lynel", description = "Lynel" }
-sprite{ id = "enemies/lynel_flame", description = "Lynel flame" }
+sprite{ id = "enemies/lynel_flame", description = "Lynel's flame" }
 sprite{ id = "enemies/moblin", description = "Moblin" }
 sprite{ id = "enemies/mothula", description = "Mothula" }
+sprite{ id = "enemies/octorok", description = "Octorok" }
+sprite{ id = "enemies/octorok_stone", description = "Octorok's stone" }
 sprite{ id = "enemies/pike_auto", description = "Pike (always moving)" }
 sprite{ id = "enemies/pikku", description = "Pikku" }
 sprite{ id = "enemies/poe", description = "Poe" }
@@ -367,7 +369,7 @@ item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
 
 enemy{ id = "agahnim", description = "Agahnim" }
-enemy{ id = "agahnim_lightning", description = "Agahnim's Lightning" }
+enemy{ id = "agahnim_lightning", description = "Agahnim's lightning" }
 enemy{ id = "armos", description = "Armos" }
 enemy{ id = "arrghus", description = "Arrghus" }
 enemy{ id = "bari_blue", description = "Blue Bari" }
@@ -383,9 +385,11 @@ enemy{ id = "hinox", description = "Hinox" }
 enemy{ id = "hover", description = "Hover" }
 enemy{ id = "keese", description = "Keese" }
 enemy{ id = "lynel", description = "Lynel" }
-enemy{ id = "lynel_flame", description = "Lynel flame" }
+enemy{ id = "lynel_flame", description = "Lynel's flame" }
 enemy{ id = "moblin", description = "Moblin" }
 enemy{ id = "mothula", description = "Mothula" }
+enemy{ id = "octorok", description = "Octorok" }
+enemy{ id = "octorok_stone", description = "Octorok's stone" }
 enemy{ id = "pike_auto", description = "Pike (always moving)" }
 enemy{ id = "pikku", description = "Pikku" }
 enemy{ id = "poe", description = "Poe" }

@@ -19,7 +19,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 264,
+  x = 216,
   y = 93,
   direction = 3,
   breed = "pike_auto",
@@ -28,7 +28,7 @@ enemy{
 enemy{
   name = "auto_enemy_18",
   layer = 1,
-  x = 296,
+  x = 248,
   y = 93,
   direction = 3,
   breed = "keese",
@@ -38,7 +38,7 @@ enemy{
 enemy{
   name = "auto_enemy_4",
   layer = 1,
-  x = 136,
+  x = 120,
   y = 45,
   direction = 3,
   breed = "tentacle",
@@ -58,7 +58,7 @@ enemy{
 enemy{
   name = "auto_enemy_7",
   layer = 1,
-  x = 232,
+  x = 216,
   y = 45,
   direction = 3,
   breed = "rope",
@@ -68,7 +68,7 @@ enemy{
 enemy{
   name = "auto_enemy_8",
   layer = 1,
-  x = 264,
+  x = 248,
   y = 45,
   direction = 3,
   breed = "pikku",
@@ -78,7 +78,7 @@ enemy{
 enemy{
   name = "auto_enemy_9",
   layer = 1,
-  x = 296,
+  x = 280,
   y = 45,
   direction = 3,
   breed = "zora_feet",
@@ -88,7 +88,7 @@ enemy{
 enemy{
   name = "auto_enemy_10",
   layer = 1,
-  x = 328,
+  x = 312,
   y = 45,
   direction = 3,
   breed = "zora_water",
@@ -126,7 +126,7 @@ enemy{
 enemy{
   name = "auto_enemy_6",
   layer = 1,
-  x = 200,
+  x = 184,
   y = 45,
   direction = 3,
   breed = "armos",
@@ -136,7 +136,7 @@ enemy{
 enemy{
   name = "auto_enemy_5",
   layer = 1,
-  x = 168,
+  x = 152,
   y = 45,
   direction = 3,
   breed = "moblin",
@@ -156,7 +156,7 @@ enemy{
 enemy{
   name = "auto_enemy_14",
   layer = 1,
-  x = 136,
+  x = 120,
   y = 93,
   direction = 3,
   breed = "geldman",
@@ -164,7 +164,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_24",
+  name = "auto_enemy_11",
   layer = 1,
   x = 24,
   y = 93,
@@ -174,7 +174,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_25",
+  name = "auto_enemy_12",
   layer = 1,
   x = 56,
   y = 93,
@@ -186,7 +186,7 @@ enemy{
 enemy{
   name = "auto_enemy_15",
   layer = 1,
-  x = 168,
+  x = 152,
   y = 93,
   direction = 3,
   breed = "lynel",
@@ -196,7 +196,7 @@ enemy{
 enemy{
   name = "auto_enemy_29",
   layer = 1,
-  x = 296,
+  x = 280,
   y = 141,
   direction = 3,
   breed = "gibdo",
@@ -206,7 +206,7 @@ enemy{
 enemy{
   name = "auto_enemy_30",
   layer = 1,
-  x = 328,
+  x = 312,
   y = 141,
   direction = 3,
   breed = "wizzrobe_white",
@@ -214,7 +214,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_26",
+  name = "auto_enemy_21",
   layer = 1,
   x = 24,
   y = 141,
@@ -254,10 +254,10 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_27",
+  name = "auto_enemy_16",
   layer = 1,
-  x = 200,
-  y = 141,
+  x = 184,
+  y = 93,
   direction = 3,
   breed = "wizzrobe_blue",
   treasure_name = "random_weapon",
@@ -272,9 +272,9 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_28",
+  name = "auto_enemy_26",
   layer = 1,
-  x = 168,
+  x = 184,
   y = 141,
   direction = 3,
   breed = "chasupa",
@@ -282,12 +282,22 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_31",
+  name = "auto_enemy_25",
   layer = 1,
-  x = 136,
+  x = 152,
   y = 141,
   direction = 3,
   breed = "hinox",
   treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_27",
+  layer = 1,
+  x = 216,
+  y = 141,
+  direction = 3,
+  breed = "octorok",
+  treasure_name = "random_weapon",
 }
 
