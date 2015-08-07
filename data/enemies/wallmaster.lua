@@ -130,3 +130,10 @@ function enemy:on_attacking_hero(hero, enemy_sprite)
     end)
   end)
 end
+
+function enemy:on_removed()
+
+  if shadow ~= nil then
+    shadow:remove()
+  end
+end

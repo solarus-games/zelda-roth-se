@@ -57,7 +57,7 @@ function door_manager:open_when_switch_activated(door)
   local switch_name = "auto_switch_" .. door_prefix
   local switch = map:get_entity(switch_name)
   if switch ~= nil then
-    function switch_on_activated()
+    function switch:on_activated()
       sol.audio.play_sound("secret")
       map:open_doors(door_prefix)
     end

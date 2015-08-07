@@ -5,7 +5,7 @@ properties{
   height = 720,
   world = "outside",
   tileset = "light_world",
-  music = "overworld",
+  music = "dark_mountain",
 }
 
 tile{

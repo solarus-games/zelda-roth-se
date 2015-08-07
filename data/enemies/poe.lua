@@ -11,6 +11,7 @@ local properties = {
   damage = 3,
   normal_speed = 64,
   faster_speed = 64,
+  detection_distance = 220,
   ignore_obstacles = true,
   obstacle_behavior = "flying",
 }

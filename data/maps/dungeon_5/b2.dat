@@ -9234,6 +9234,108 @@ tile{
   pattern = "hole.corner.4",
 }
 
+tile{
+  layer = 1,
+  x = 488,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.4",
+}
+
+door{
+  layer = 1,
+  x = 1608,
+  y = 112,
+  direction = 2,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_5_b2_door_d",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_5_small_keys",
+  opening_condition_consumed = true,
+}
+
+door{
+  name = "auto_door_a",
+  layer = 1,
+  x = 1112,
+  y = 248,
+  direction = 1,
+  sprite = "entities/door_normal",
+}
+
+sensor{
+  name = "save_solid_ground_sensor_5",
+  layer = 1,
+  x = 1120,
+  y = 261,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_7",
+  layer = 1,
+  x = 1584,
+  y = 365,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_6",
+  layer = 1,
+  x = 1440,
+  y = 709,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_2",
+  layer = 1,
+  x = 624,
+  y = 1085,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_1",
+  layer = 1,
+  x = 624,
+  y = 1325,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_3",
+  layer = 1,
+  x = 624,
+  y = 365,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_4",
+  layer = 1,
+  x = 624,
+  y = 605,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_8",
+  layer = 1,
+  x = 1584,
+  y = 605,
+  width = 16,
+  height = 16,
+}
+
 sensor{
   name = "dungeon_room_1_2",
   layer = 1,
@@ -9543,6 +9645,7 @@ crystal_block{
 }
 
 door{
+  name = "auto_door_c",
   layer = 1,
   x = 1752,
   y = 488,
@@ -9551,6 +9654,7 @@ door{
 }
 
 door{
+  name = "auto_door_c_back",
   layer = 1,
   x = 1752,
   y = 456,
@@ -9564,23 +9668,10 @@ door{
   y = 112,
   direction = 0,
   sprite = "entities/door_small_key",
-}
-
-door{
-  layer = 1,
-  x = 1608,
-  y = 112,
-  direction = 2,
-  sprite = "entities/door_small_key",
-}
-
-door{
-  name = "auto_door_a",
-  layer = 1,
-  x = 1112,
-  y = 248,
-  direction = 1,
-  sprite = "entities/door_normal",
+  savegame_variable = "dungeon_5_b2_door_d",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_5_small_keys",
+  opening_condition_consumed = true,
 }
 
 door{
@@ -10136,78 +10227,6 @@ enemy{
   treasure_name = "random",
 }
 
-sensor{
-  name = "save_solid_ground_sensor_1",
-  layer = 1,
-  x = 624,
-  y = 1325,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "save_solid_ground_sensor_2",
-  layer = 1,
-  x = 624,
-  y = 1085,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "save_solid_ground_sensor_3",
-  layer = 1,
-  x = 624,
-  y = 365,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "save_solid_ground_sensor_4",
-  layer = 1,
-  x = 624,
-  y = 605,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "save_solid_ground_sensor_5",
-  layer = 1,
-  x = 1120,
-  y = 261,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "save_solid_ground_sensor_6",
-  layer = 1,
-  x = 1440,
-  y = 709,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "save_solid_ground_sensor_7",
-  layer = 1,
-  x = 1584,
-  y = 365,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "save_solid_ground_sensor_8",
-  layer = 1,
-  x = 1584,
-  y = 605,
-  width = 16,
-  height = 16,
-}
-
 enemy{
   name = "auto_enemy_29",
   layer = 1,
@@ -10331,7 +10350,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_38",
+  name = "auto_enemy_auto_door_c_1",
   layer = 1,
   x = 1656,
   y = 541,
@@ -10341,7 +10360,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_39",
+  name = "auto_enemy_auto_door_c_2",
   layer = 1,
   x = 1864,
   y = 541,
@@ -10351,7 +10370,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_40",
+  name = "auto_enemy_auto_door_c_4",
   layer = 1,
   x = 1864,
   y = 669,
@@ -10361,7 +10380,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_41",
+  name = "auto_enemy_auto_door_c_3",
   layer = 1,
   x = 1656,
   y = 669,
@@ -10371,7 +10390,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_42",
+  name = "auto_enemy_auto_door_c_5",
   layer = 1,
   x = 1760,
   y = 613,

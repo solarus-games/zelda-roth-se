@@ -2186,17 +2186,8 @@ stairs{
   subtype = 3,
 }
 
-sensor{
-  name = "open_quiet_auto_door_a_sensor",
-  layer = 1,
-  x = 800,
-  y = 141,
-  width = 16,
-  height = 16,
-}
-
 enemy{
-  name = "auto_enemy_auto_door_b_5",
+  name = "auto_enemy_auto_door_a_5",
   layer = 1,
   x = 1032,
   y = 77,
@@ -2206,7 +2197,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_auto_door_b_6",
+  name = "auto_enemy_auto_door_a_6",
   layer = 1,
   x = 1120,
   y = 141,
@@ -2216,7 +2207,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_auto_door_b_7",
+  name = "auto_enemy_auto_door_a_7",
   layer = 1,
   x = 1208,
   y = 77,
