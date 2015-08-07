@@ -6,6 +6,8 @@ door_manager:manage_map(map)
 local separator_manager = require("maps/lib/separator_manager")
 separator_manager:manage_map(map)
 
+local fighting_boss = false
+
 function map:on_started()
 
   if boss ~= nil then

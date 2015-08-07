@@ -8001,6 +8001,24 @@ tile{
   pattern = "invisible_wall",
 }
 
+tile{
+  layer = 1,
+  x = 672,
+  y = 512,
+  width = 112,
+  height = 32,
+  pattern = "block",
+}
+
+tile{
+  layer = 1,
+  x = 816,
+  y = 512,
+  width = 112,
+  height = 32,
+  pattern = "block",
+}
+
 sensor{
   name = "dungeon_room_14_3",
   layer = 1,
@@ -8468,7 +8486,6 @@ enemy{
   y = 493,
   direction = 3,
   breed = "hover",
-  treasure_name = "random",
 }
 
 enemy{
@@ -8649,7 +8666,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_auto_door_e_3",
+  name = "auto_enemy_6",
   layer = 1,
   x = 160,
   y = 125,
@@ -8659,7 +8676,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_auto_door_e_4",
+  name = "auto_enemy_7",
   layer = 1,
   x = 160,
   y = 365,
@@ -9103,6 +9120,56 @@ wall{
   width = 8,
   height = 416,
   stops_enemies = true,
+}
+
+enemy{
+  name = "auto_enemy_1",
+  layer = 1,
+  x = 1112,
+  y = 61,
+  direction = 3,
+  breed = "gibdo",
+  treasure_name = "random_magic",
+}
+
+enemy{
+  name = "auto_enemy_2",
+  layer = 1,
+  x = 952,
+  y = 173,
+  direction = 3,
+  breed = "gibdo",
+  treasure_name = "random_magic",
+}
+
+enemy{
+  name = "auto_enemy_3",
+  layer = 1,
+  x = 792,
+  y = 61,
+  direction = 3,
+  breed = "gibdo",
+  treasure_name = "random_magic",
+}
+
+enemy{
+  name = "auto_enemy_4",
+  layer = 1,
+  x = 632,
+  y = 173,
+  direction = 3,
+  breed = "gibdo",
+  treasure_name = "random_magic",
+}
+
+enemy{
+  name = "auto_enemy_5",
+  layer = 1,
+  x = 472,
+  y = 61,
+  direction = 3,
+  breed = "gibdo",
+  treasure_name = "random_magic",
 }
 
 tile{
