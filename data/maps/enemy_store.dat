@@ -278,7 +278,7 @@ enemy{
   y = 141,
   direction = 3,
   breed = "chasupa",
-  treasure_name = "random",
+  treasure_name = "random_heart",
 }
 
 enemy{

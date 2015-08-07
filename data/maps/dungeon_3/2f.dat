@@ -3816,7 +3816,7 @@ destructible{
   layer = 1,
   x = 680,
   y = 525,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -3827,7 +3827,7 @@ destructible{
   layer = 1,
   x = 920,
   y = 525,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -3838,7 +3838,7 @@ destructible{
   layer = 1,
   x = 920,
   y = 685,
-  treasure_name = "random",
+  treasure_name = "magic_flask",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -3849,7 +3849,7 @@ destructible{
   layer = 1,
   x = 680,
   y = 685,
-  treasure_name = "random",
+  treasure_name = "magic_flask",
   sprite = "entities/vase_skull",
   destruction_sound = "stone",
   weight = 1,
@@ -3956,6 +3956,86 @@ chest{
   treasure_name = "boss_key",
   treasure_savegame_variable = "dungeon_3_boss_key_chest",
   sprite = "entities/chest",
+}
+
+enemy{
+  name = "auto_enemy_25",
+  layer = 1,
+  x = 1120,
+  y = 125,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_26",
+  layer = 1,
+  x = 1120,
+  y = 365,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_27",
+  layer = 1,
+  x = 480,
+  y = 365,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_28",
+  layer = 1,
+  x = 480,
+  y = 605,
+  direction = 3,
+  breed = "octorok",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_29",
+  layer = 1,
+  x = 160,
+  y = 605,
+  direction = 3,
+  breed = "octorok",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_30",
+  layer = 1,
+  x = 160,
+  y = 853,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "auto_enemy_31",
+  layer = 1,
+  x = 1440,
+  y = 605,
+  direction = 3,
+  breed = "octorok",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_32",
+  layer = 1,
+  x = 1440,
+  y = 837,
+  direction = 3,
+  breed = "octorok",
+  treasure_name = "random_weapon",
 }
 
 tile{
