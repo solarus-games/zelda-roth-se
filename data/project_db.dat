@@ -49,12 +49,14 @@ tileset{ id = "temple_blue", description = "Temple (blue)" }
 tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
+sprite{ id = "enemies/agahnim", description = "Agahnim" }
 sprite{ id = "enemies/armos", description = "Armos" }
 sprite{ id = "enemies/arrghus", description = "Arrghus" }
 sprite{ id = "enemies/bari_blue", description = "Blue Bari" }
 sprite{ id = "enemies/cactus", description = "Cactus" }
 sprite{ id = "enemies/chicken", description = "Chicken" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/fireball_red_big", description = "Red big fireball" }
 sprite{ id = "enemies/fireball_red_small", description = "Red small Fireball" }
 sprite{ id = "enemies/geldman", description = "Geldman" }
 sprite{ id = "enemies/gibdo", description = "Gibdo" }
@@ -349,10 +351,12 @@ item{ id = "small_key", description = "Small key" }
 item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
 
+enemy{ id = "agahnim", description = "Agahnim" }
 enemy{ id = "armos", description = "Armos" }
 enemy{ id = "arrghus", description = "Arrghus" }
 enemy{ id = "bari_blue", description = "Blue Bari" }
 enemy{ id = "chicken", description = "Chicken" }
+enemy{ id = "fireball_red_big", description = "Red big Fireball" }
 enemy{ id = "fireball_red_small", description = "Red small Fireball" }
 enemy{ id = "geldman", description = "Geldman" }
 enemy{ id = "gibdo", description = "Gibdo" }

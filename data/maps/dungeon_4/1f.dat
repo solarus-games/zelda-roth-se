@@ -8359,7 +8359,7 @@ destination{
 teletransporter{
   layer = 1,
   x = 776,
-  y = 1176,
+  y = 1168,
   width = 16,
   height = 16,
   transition = "immediate",
@@ -9170,6 +9170,19 @@ enemy{
   direction = 3,
   breed = "gibdo",
   treasure_name = "random_magic",
+}
+
+enemy{
+  name = "boss",
+  layer = 1,
+  x = 800,
+  y = 541,
+  direction = 0,
+  breed = "agahnim",
+  rank = 2,
+  savegame_variable = "dungeon_4_boss",
+  treasure_name = "magic_crystal",
+  treasure_savegame_variable = "dungeon_4_crystal",
 }
 
 tile{
