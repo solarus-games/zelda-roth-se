@@ -1,5 +1,4 @@
 -- A bouncing beam that temporarily turns the hero into a rabbit.
-
 local enemy = ...
 local map = enemy:get_map()
 

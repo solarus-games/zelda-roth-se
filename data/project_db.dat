@@ -57,6 +57,7 @@ sprite{ id = "enemies/bari_blue", description = "Blue Bari" }
 sprite{ id = "enemies/cactus", description = "Cactus" }
 sprite{ id = "enemies/chicken", description = "Chicken" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/eyegore_green", description = "Green Eyegore" }
 sprite{ id = "enemies/fireball_red_big", description = "Red big fireball" }
 sprite{ id = "enemies/fireball_red_small", description = "Red small Fireball" }
 sprite{ id = "enemies/geldman", description = "Geldman" }
@@ -80,6 +81,7 @@ sprite{ id = "enemies/stal", description = "Stal" }
 sprite{ id = "enemies/tektite_blue", description = "Blue Tektite" }
 sprite{ id = "enemies/tentacle", description = "Tentacle" }
 sprite{ id = "enemies/vulture", description = "Vulture" }
+sprite{ id = "enemies/wallmaster", description = "Wallmaster" }
 sprite{ id = "enemies/wizzrobe_beam", description = "Wizzrobe beam" }
 sprite{ id = "enemies/wizzrobe_white", description = "White Wizzrobe" }
 sprite{ id = "enemies/zora_feet", description = "Zora (on feet)" }
@@ -364,6 +366,7 @@ enemy{ id = "armos", description = "Armos" }
 enemy{ id = "arrghus", description = "Arrghus" }
 enemy{ id = "bari_blue", description = "Blue Bari" }
 enemy{ id = "chicken", description = "Chicken" }
+enemy{ id = "eyegore_green", description = "Green Eyegore" }
 enemy{ id = "fireball_red_big", description = "Red big Fireball" }
 enemy{ id = "fireball_red_small", description = "Red small Fireball" }
 enemy{ id = "geldman", description = "Geldman" }
@@ -387,6 +390,7 @@ enemy{ id = "stal", description = "Stal" }
 enemy{ id = "tektite_blue", description = "Blue Tektite" }
 enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "vulture", description = "Vulture" }
+enemy{ id = "wallmaster", description = "Wallmaster" }
 enemy{ id = "wizzrobe_beam", description = "Wizzrobe beam" }
 enemy{ id = "wizzrobe_white", description = "White Wizzrobe" }
 enemy{ id = "zora_feet", description = "Zora (on feet)" }
