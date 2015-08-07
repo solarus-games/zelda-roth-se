@@ -1,22 +1,17 @@
 -- A wizard who shoots magic beams.
 
 local enemy = ...
+local map = ...
 
 function enemy:on_created()
 
-  enemy:set_life(3)
-  enemy:set_damage(4)
+  enemy:set_life(6)
+  enemy:set_damage(5)
   enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_invincible()
 end
 
 local function shoot()
-
-  local map = enemy:get_map()
-  local hero = map:get_hero()
-  if not enemy:is_in_same_region(hero) then
-    return true  -- Repeat the timer.
-  end
 
   local sprite = enemy:get_sprite()
   local x, y, layer = enemy:get_position()
@@ -45,6 +40,20 @@ local function shoot()
     end)
   end
   beam:go(direction)
+end
+
+-- Shoots three successive times.
+local function shoot_3()
+
+  local map = enemy:get_map()
+  local hero = map:get_hero()
+  if not enemy:is_in_same_region(hero) then
+    return true  -- Repeat the timer.
+  end
+
+  shoot()
+  sol.timer.start(enemy, 500, shoot)
+  sol.timer.start(enemy, 1000, shoot)
 
   return true  -- Repeat the timer.
 end
@@ -63,8 +72,8 @@ function enemy:on_restarted()
   -- Shoot every 2400 ms, but first wait helf a cycle
   -- to have sprite animations synchronized with the shooting.
   sol.timer.start(enemy, 1200, function()
-    shoot()
-    sol.timer.start(enemy, 2400, shoot)
+    shoot_3()
+    sol.timer.start(enemy, 2400, shoot_3)
   end)
 end
 

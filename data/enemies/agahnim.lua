@@ -113,7 +113,7 @@ function enemy:on_restarted()
 end
 
 -- Function called by the fireball when colliding.
-function enemy:receive_bounced_projectile(fireball)
+function enemy:receive_bounced_projectile()
 
   should_shoot_rabbit_beam = true
   fireball:remove()

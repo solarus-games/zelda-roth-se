@@ -669,7 +669,7 @@ tile{
 wall{
   layer = 1,
   x = 792,
-  y = 1424,
+  y = 1416,
   width = 16,
   height = 16,
   stops_enemies = true,
@@ -680,18 +680,18 @@ destination{
   name = "from_outside_s",
   layer = 1,
   x = 800,
-  y = 1429,
+  y = 1421,
   direction = 1,
 }
 
 teletransporter{
   layer = 1,
   x = 792,
-  y = 1432,
+  y = 1424,
   width = 16,
   height = 16,
-  destination_map = "outside/a1",
-  destination = "from_dungeon_4",
+  destination_map = "outside/c3",
+  destination = "from_dungeon_5",
 }
 
 wall{
@@ -718,8 +718,8 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "outside/a1",
-  destination = "from_dungeon_4",
+  destination_map = "outside/c1",
+  destination = "from_dungeon_5",
 }
 
 destination{

@@ -83,6 +83,7 @@ sprite{ id = "enemies/tentacle", description = "Tentacle" }
 sprite{ id = "enemies/vulture", description = "Vulture" }
 sprite{ id = "enemies/wallmaster", description = "Wallmaster" }
 sprite{ id = "enemies/wizzrobe_beam", description = "Wizzrobe beam" }
+sprite{ id = "enemies/wizzrobe_blue", description = "Blue Wizzrobe" }
 sprite{ id = "enemies/wizzrobe_white", description = "White Wizzrobe" }
 sprite{ id = "enemies/zora_feet", description = "Zora (on feet)" }
 sprite{ id = "enemies/zora_water", description = "Zora (in water)" }
@@ -392,6 +393,7 @@ enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "vulture", description = "Vulture" }
 enemy{ id = "wallmaster", description = "Wallmaster" }
 enemy{ id = "wizzrobe_beam", description = "Wizzrobe beam" }
+enemy{ id = "wizzrobe_blue", description = "Blue Wizzrobe" }
 enemy{ id = "wizzrobe_white", description = "White Wizzrobe" }
 enemy{ id = "zora_feet", description = "Zora (on feet)" }
 enemy{ id = "zora_water", description = "Zora (in water)" }

@@ -2403,15 +2403,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 792,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 1,
   x = 240,
   y = 288,
   width = 32,
@@ -5272,7 +5263,7 @@ wall{
   x = 768,
   y = 80,
   width = 64,
-  height = 40,
+  height = 32,
   stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,
@@ -7112,6 +7103,30 @@ enemy{
   direction = 3,
   breed = "poe",
   treasure_name = "random_heart",
+}
+
+wall{
+  layer = 1,
+  x = 768,
+  y = 112,
+  width = 24,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 808,
+  y = 112,
+  width = 24,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
 }
 
 tile{

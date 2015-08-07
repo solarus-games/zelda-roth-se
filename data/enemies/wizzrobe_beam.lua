@@ -54,8 +54,9 @@ end
 
 function enemy:on_collision_enemy(other_enemy)
 
-  if other_enemy:get_breed() == "wizzrobe_white" and bounced then
-    other_enemy:hurt(3)
-    enemy:remove()
+  if bounced then
+    if other_enemy.receive_bounced_projectile ~= nil then
+      other_enemy:receive_bounced_projectile(enemy)
+    end
   end
 end
