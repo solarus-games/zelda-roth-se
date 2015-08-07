@@ -781,6 +781,16 @@ Venez essayer nos bains.
 }
 
 dialog{
+  id = "outside_a1.old_lady_npc",
+  text = [[
+As-tu été voir le forgeron de ce village ?
+On dit qu'il est très doué pour améliorer
+l'équipement des aventuriers, beaucoup de monde
+lui rend visite.
+]]
+}
+
+dialog{
   id = "outside_a1.s_sign",
   text = [[
 Village Gerudo

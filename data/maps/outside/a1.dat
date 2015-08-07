@@ -5040,12 +5040,34 @@ teletransporter{
 npc{
   name = "thief_npc",
   layer = 1,
-  x = 2016,
+  x = 1976,
   y = 541,
   direction = 3,
   subtype = 1,
   sprite = "npc/thief",
   behavior = "dialog#outside_a1.thief_npc",
+}
+
+npc{
+  name = "thief_npc_2",
+  layer = 1,
+  x = 1672,
+  y = 285,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/villager2",
+  behavior = "dialog#outside_a1.old_lady_npc",
+}
+
+npc{
+  name = "yellow_merchant_npc",
+  layer = 1,
+  x = 1808,
+  y = 349,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/merchant_yellow",
+  behavior = "dialog#outside_a1.yellow_merchant_npc",
 }
 
 tile{
