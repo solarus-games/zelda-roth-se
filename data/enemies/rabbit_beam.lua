@@ -34,18 +34,26 @@ end
 
 function enemy:on_obstacle_reached()
 
-  -- Bounce.
   local movement = enemy:get_movement()
   local angle = movement:get_angle()
-  if enemy:test_obstacles(1, 0) then  -- Wall on the right.
+  local wall_right = enemy:test_obstacles(1, 0)
+  local wall_top = enemy:test_obstacles(0, -1)
+  local wall_left = enemy:test_obstacles(-1, 0)
+  local wall_bottom = enemy:test_obstacles(0, 1)
+
+  local wall_horizontal = wall_top or wall_bottom
+  local wall_vertical = wall_right or wall_left
+
+  if wall_horizontal and wall_vertical then
+    -- Corner: go back.
+    angle = angle + math.pi
+  elseif wall_vertical then
+    -- Bounce.
     angle = math.pi - angle
-  elseif enemy:test_obstacles(0, -1) then  -- Wall on the top.
+  elseif wall_horizontal then
+    -- Bounce.
     angle = -angle
-  elseif enemy:test_obstacles(-1, 0) then  -- Wall on the left.
-    angle = math.pi - angle
-  elseif enemy:test_obstacles(0, 1) then  -- Wall on the bottom.
-    angle = -angle
-  else  -- No simple obstacle detected: just go back.
+  else  -- No simple wall detected: just go back.
     angle = angle + math.pi
   end
 
