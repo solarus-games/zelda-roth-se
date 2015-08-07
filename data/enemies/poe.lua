@@ -1,7 +1,7 @@
 local enemy = ...
 local game = enemy:get_game()
 
--- A ghost that can traverse walls and only be killed with the second sword of the silver arrows.
+-- A ghost that can traverse walls and only be killed with the third sword of the silver arrows.
 
 local behavior = require("enemies/lib/towards_hero")
 
@@ -26,7 +26,7 @@ enemy:set_attack_consequence("boomerang", "custom")
 enemy:set_hammer_reaction("custom")
 enemy:set_hookshot_reaction("custom")
 
-if game:get_ability("sword") > 1 then
+if game:get_ability("sword") > 2 then
   enemy:set_attack_consequence("sword", 1)
 else
   enemy:set_attack_consequence("sword", "custom")
