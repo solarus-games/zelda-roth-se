@@ -10903,3 +10903,12 @@ separator{
   height = 480,
 }
 
+enemy{
+  name = "auto_enemy_1",
+  layer = 2,
+  x = 1000,
+  y = 285,
+  direction = 0,
+  breed = "wallmaster",
+}
+
