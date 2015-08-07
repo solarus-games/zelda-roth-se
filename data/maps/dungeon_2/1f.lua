@@ -4,6 +4,13 @@ local game = map:get_game()
 local separator_manager = require("maps/lib/separator_manager")
 separator_manager:manage_map(map)
 
+function map:on_opening_transition_finished(destination)
+
+  if destination == from_outside then
+    game:start_dialog("dungeon_2.welcome")
+  end
+end
+
 local fighting_boss = false
 
 function map:on_started()
@@ -14,13 +21,6 @@ function map:on_started()
     crystal_platform:set_enabled(true)
   end
   map:set_doors_open("boss_door", true)
-end
-
-function map:on_opening_transition_finished(destination)
-
-  if destination == from_outside then
-    game:start_dialog("dungeon_2.welcome")
-  end
 end
 
 function start_boss_sensor:on_activated()
@@ -65,9 +65,12 @@ end
 
 if boss ~= nil then
   function boss:on_dying()
-    -- Create an invisible platform where the crystal will appear,
-    -- to make sure it does not sink.
+    -- Create an invisible walkable platform where the crystal will appear,
+    -- to make sure it does not sink in water.
     crystal_platform:set_enabled(true)
-    crystal_platform:set_position(boss:get_position())
+    local x, y = boss:get_position()
+    local origin_x, origin_y = boss:get_origin()
+    x, y = x - origin_x, y - origin_y
+    crystal_platform:set_position(x, y)
   end
 end

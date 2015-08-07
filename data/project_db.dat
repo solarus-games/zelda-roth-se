@@ -80,6 +80,7 @@ sprite{ id = "enemies/skeleton", description = "Skeleton" }
 sprite{ id = "enemies/stal", description = "Stal" }
 sprite{ id = "enemies/tektite_blue", description = "Blue Tektite" }
 sprite{ id = "enemies/tentacle", description = "Tentacle" }
+sprite{ id = "enemies/vitreous", description = "Vitreous" }
 sprite{ id = "enemies/vulture", description = "Vulture" }
 sprite{ id = "enemies/wallmaster", description = "Wallmaster" }
 sprite{ id = "enemies/wizzrobe_beam", description = "Wizzrobe beam" }
@@ -390,6 +391,7 @@ enemy{ id = "skeleton", description = "Skeleton" }
 enemy{ id = "stal", description = "Stal" }
 enemy{ id = "tektite_blue", description = "Blue Tektite" }
 enemy{ id = "tentacle", description = "Tentacle" }
+enemy{ id = "vitreous", description = "Vitreous" }
 enemy{ id = "vulture", description = "Vulture" }
 enemy{ id = "wallmaster", description = "Wallmaster" }
 enemy{ id = "wizzrobe_beam", description = "Wizzrobe beam" }

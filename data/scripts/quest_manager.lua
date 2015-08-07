@@ -193,31 +193,43 @@ local function initialize_sensor()
       if layer < 2 then
         hero:set_position(x, y, layer + 1)
       end
+      return
     elseif name:match("^layer_down_sensor") then
       local x, y, layer = hero:get_position()
       if layer > 0 then
         hero:set_position(x, y, layer - 1)
       end
+      return
     end
 
+    -- Sensors prefix by "save_solid_ground_sensor" are where the hero come back
+    -- when falling into a hole or other bad ground.
+    if name:match("^save_solid_ground_sensor") then
+      hero:save_solid_ground()
+      return
+    end
+ 
     -- Sensors prefixed by "dungeon_room_N" save the exploration state of the
     -- room "N" of the current dungeon floor.
     local room = name:match("^dungeon_room_(%d+)")
     if room ~= nil then
       game:set_explored_dungeon_room(nil, nil, tonumber(room))
       self:remove()
+      return
     end
 
     -- Sensors named "open_quiet_X_sensor" silently open doors prefixed with "X".
     local door_prefix = name:match("^open_quiet_([a-zA-X0-9_]+)_sensor")
     if door_prefix ~= nil then
       map:set_doors_open(door_prefix, true)
+      return
     end
 
     -- Sensors named "close_quiet_X_sensor" silently open doors prefixed with "X".
     door_prefix = name:match("^close_quiet_([a-zA-X0-9_]+)_sensor")
     if door_prefix ~= nil then
       map:set_doors_open(door_prefix, false)
+      return
     end
   end
 

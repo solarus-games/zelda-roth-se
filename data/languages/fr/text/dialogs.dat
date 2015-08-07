@@ -406,6 +406,15 @@ dialog{
 }
 
 dialog{
+  id = "dungeon_5.welcome",
+  text = [[
+                   Niveau 5
+
+               Temple du Désert
+]]
+}
+
+dialog{
   id = "dungeon_finished_save",
   text = [[
 Souhaites-tu sauvegarder ta partie ?

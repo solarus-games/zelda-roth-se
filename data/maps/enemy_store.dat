@@ -263,3 +263,11 @@ enemy{
   treasure_name = "random_weapon",
 }
 
+enemy{
+  layer = 1,
+  x = 24,
+  y = 285,
+  direction = 3,
+  breed = "wallmaster",
+}
+

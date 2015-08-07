@@ -31,10 +31,15 @@ function enemy:on_restarted()
 
   sol.timer.start(enemy, 5000, function()
 
-    local distance = 240  -- Make sure that we start outside the visible screen.
     local hero = map:get_hero()
+
+    if not enemy:is_in_same_region(hero) then
+      return true
+    end
+
     local hero_x, hero_y, hero_layer = hero:get_position()
     enemy:set_position(hero_x, hero_y, 2)
+    local distance = 240  -- Make sure that we start outside the visible screen.
     sprite:set_xy(0, -distance)  -- Display the sprite with an offset.
 
     -- Move the sprite towards the hero.

@@ -774,6 +774,26 @@ stairs{
   subtype = 3,
 }
 
+teletransporter{
+  layer = 1,
+  x = 776,
+  y = 1408,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_5/b2",
+  destination = "boss_shortcut",
+}
+
+teletransporter{
+  layer = 1,
+  x = 776,
+  y = 448,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_5/b2",
+  destination = "boss_shortcut",
+}
+
 tile{
   layer = 2,
   x = 784,
