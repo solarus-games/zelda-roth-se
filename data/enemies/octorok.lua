@@ -22,6 +22,12 @@ end
 
 local function shoot()
 
+  local map = enemy:get_map()
+  local hero = map:get_hero()
+  if not enemy:is_in_same_region(hero) then
+    return true  -- Repeat the timer.
+  end
+
   local sprite = enemy:get_sprite()
   local x, y, layer = enemy:get_position()
   local direction = sprite:get_direction()

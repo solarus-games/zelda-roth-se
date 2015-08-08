@@ -56,6 +56,7 @@ function game_manager:create(file)
   local dialog_box
   local hud
   local pause_menu
+  local previous_world
 
   -- Function called when the player runs this game.
   function game:on_started()
@@ -120,12 +121,23 @@ function game_manager:create(file)
     sol.menu.stop(pause_menu)
   end
 
-
   -- Function called when the player goes to another map.
   function game:on_map_changed(map)
 
     -- Notify the HUD (some HUD elements may want to know that).
     hud:on_map_changed(map)
+
+    -- Reset torches info if the world changes.
+    -- TODO the engine should have an event game:on_world_changed().
+    local new_world = map:get_world()
+    local world_changed = previous_world == nil or
+        new_world == nil or
+        new_world ~= previous_world
+    if world_changed then
+      game.lit_torches_by_map = nil  -- See entities/torch.lua
+    end
+
+    previous_world = new_world
   end
 
   -- Function called when the player presses a key during the game.

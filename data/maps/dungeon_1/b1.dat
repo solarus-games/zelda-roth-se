@@ -2700,6 +2700,7 @@ separator{
 }
 
 separator{
+  name = "auto_separator_8",
   layer = 2,
   x = 320,
   y = 232,

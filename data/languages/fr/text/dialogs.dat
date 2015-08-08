@@ -414,6 +414,15 @@ dialog{
 }
 
 dialog{
+  id = "dungeon_3.welcome",
+  text = [[
+                   Niveau 3
+
+               Temple de la Montagne
+]]
+}
+
+dialog{
   id = "dungeon_4.welcome",
   text = [[
                    Niveau 4
@@ -427,7 +436,7 @@ dialog{
   text = [[
                    Niveau 5
 
-               Temple du Désert
+               Temple de l'Ombre
 ]]
 }
 

@@ -13910,3 +13910,47 @@ enemy{
   treasure_name = "random_weapon",
 }
 
+destination{
+  name = "from_dungeon_3_w",
+  layer = 2,
+  x = 440,
+  y = 77,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 2,
+  x = 432,
+  y = 48,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_3/1f",
+  destination = "from_outside_w",
+}
+
+destination{
+  name = "from_dungeon_3_e",
+  layer = 2,
+  x = 656,
+  y = 93,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 2,
+  x = 648,
+  y = 80,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_3/1f",
+  destination = "from_outside_e",
+}
+
+stairs{
+  layer = 2,
+  x = 648,
+  y = 80,
+  direction = 1,
+  subtype = 3,
+}
+
