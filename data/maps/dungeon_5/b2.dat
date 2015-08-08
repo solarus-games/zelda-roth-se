@@ -9100,6 +9100,24 @@ tile{
 }
 
 door{
+  name = "boss_door_2",
+  layer = 1,
+  x = 1752,
+  y = 936,
+  direction = 3,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "boss_door",
+  layer = 1,
+  x = 1752,
+  y = 968,
+  direction = 1,
+  sprite = "entities/door_normal",
+}
+
+door{
   layer = 1,
   x = 1608,
   y = 112,
@@ -9109,6 +9127,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_5_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -9528,6 +9547,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_5_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -10138,6 +10158,7 @@ door{
   savegame_variable = "dungeon_5_boss_door",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_5_boss_key",
+  cannot_open_dialog = "boss_key_required",
 }
 
 door{
@@ -10149,6 +10170,7 @@ door{
   savegame_variable = "dungeon_5_boss_door",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_5_boss_key",
+  cannot_open_dialog = "boss_key_required",
 }
 
 destination{
@@ -10157,24 +10179,6 @@ destination{
   x = 1760,
   y = 933,
   direction = 1,
-}
-
-door{
-  name = "boss_door_2",
-  layer = 1,
-  x = 1752,
-  y = 936,
-  direction = 3,
-  sprite = "entities/door_normal",
-}
-
-door{
-  name = "boss_door",
-  layer = 1,
-  x = 1752,
-  y = 968,
-  direction = 1,
-  sprite = "entities/door_normal",
 }
 
 chest{

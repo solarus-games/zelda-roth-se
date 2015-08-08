@@ -2855,6 +2855,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_4_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -2996,6 +2997,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_4_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -3009,6 +3011,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_4_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -3022,6 +3025,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_4_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 destination{

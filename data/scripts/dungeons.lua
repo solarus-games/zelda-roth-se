@@ -32,6 +32,17 @@ function dungeon_manager:create(game)
         savegame_variable = "dungeon_2_boss",
       },
     },
+    [3] = {
+      lowest_floor = 0,
+      highest_floor = 1,
+      maps = { "dungeon_3/1f", "dungeon_3/2f" },
+      boss = {
+        floor = 0,
+        x = 640 + 1600,
+        y = 480 + 1200,
+        savegame_variable = "dungeon_3_boss",
+      },
+    },
     [4] = {
       lowest_floor = 0,
       highest_floor = 2,

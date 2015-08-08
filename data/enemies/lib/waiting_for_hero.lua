@@ -138,7 +138,7 @@ function behavior:create(enemy, properties)
     end
 
     sol.timer.stop_all(self)
-    sol.timer.start(self, 1000, function() self:check_hero() end)
+    sol.timer.start(self, 200, function() self:check_hero() end)
   end
 
   function enemy:finish_waking_up()

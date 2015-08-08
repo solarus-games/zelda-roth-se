@@ -1,12 +1,12 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 640,
+  y = 480,
   width = 1600,
   height = 1200,
   world = "dungeon_3",
   floor = 0,
   tileset = "temple_green",
-  music = "dark_world_dungeon",
+  music = "light_world_dungeon",
 }
 
 tile{
@@ -7030,6 +7030,78 @@ tile{
 }
 
 sensor{
+  name = "dungeon_room_19_2",
+  layer = 1,
+  x = 1440,
+  y = 1093,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_18_3",
+  layer = 1,
+  x = 1120,
+  y = 1181,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_16_2",
+  layer = 1,
+  x = 160,
+  y = 1101,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_10_5",
+  layer = 1,
+  x = 800,
+  y = 613,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4_2",
+  layer = 1,
+  x = 1440,
+  y = 141,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_1_1",
+  layer = 1,
+  x = 160,
+  y = 141,
+  width = 16,
+  height = 16,
+}
+
+door{
+  name = "boss_door_2",
+  layer = 1,
+  x = 1112,
+  y = 936,
+  direction = 3,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "boss_door",
+  layer = 1,
+  x = 1112,
+  y = 968,
+  direction = 1,
+  sprite = "entities/door_normal",
+}
+
+sensor{
   name = "start_boss_sensor",
   layer = 1,
   x = 1112,
@@ -7082,6 +7154,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -8107,6 +8180,7 @@ door{
   savegame_variable = "dungeon_3_boss_door",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_boss_key",
+  cannot_open_dialog = "boss_key_required",
 }
 
 door{
@@ -8118,6 +8192,7 @@ door{
   savegame_variable = "dungeon_3_boss_door",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_boss_key",
+  cannot_open_dialog = "boss_key_required",
 }
 
 destination{
@@ -8126,24 +8201,6 @@ destination{
   x = 1120,
   y = 933,
   direction = 1,
-}
-
-door{
-  name = "boss_door_2",
-  layer = 1,
-  x = 1112,
-  y = 936,
-  direction = 3,
-  sprite = "entities/door_normal",
-}
-
-door{
-  name = "boss_door",
-  layer = 1,
-  x = 1112,
-  y = 968,
-  direction = 1,
-  sprite = "entities/door_normal",
 }
 
 teletransporter{
@@ -8168,6 +8225,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -8181,6 +8239,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -8194,6 +8253,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -8207,6 +8267,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -8220,6 +8281,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -8233,6 +8295,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -8246,6 +8309,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 destination{
@@ -8468,14 +8532,346 @@ custom_entity{
   model = "hookable",
 }
 
-custom_entity{
-  name = "asdf",
+sensor{
+  name = "dungeon_room_1_2",
+  layer = 1,
+  x = 160,
+  y = 237,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_1",
+  layer = 1,
+  x = 480,
+  y = 237,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_2",
+  layer = 1,
+  x = 800,
+  y = 237,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_3_1",
+  layer = 1,
+  x = 1272,
+  y = 125,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_3_2",
   layer = 1,
   x = 1120,
-  y = 1117,
-  direction = 1,
-  sprite = "entities/torch",
-  model = "torch",
+  y = 477,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4_1",
+  layer = 1,
+  x = 1288,
+  y = 125,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5_1",
+  layer = 1,
+  x = 160,
+  y = 253,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5_2",
+  layer = 1,
+  x = 480,
+  y = 253,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5_3",
+  layer = 1,
+  x = 160,
+  y = 477,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6_1",
+  layer = 1,
+  x = 800,
+  y = 253,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6_2",
+  layer = 1,
+  x = 800,
+  y = 477,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_7_1",
+  layer = 1,
+  x = 1440,
+  y = 477,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8_1",
+  layer = 1,
+  x = 160,
+  y = 493,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8_2",
+  layer = 1,
+  x = 160,
+  y = 957,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_9_1",
+  layer = 1,
+  x = 632,
+  y = 605,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_9_2",
+  layer = 1,
+  x = 480,
+  y = 717,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_10_1",
+  layer = 1,
+  x = 648,
+  y = 605,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_10_2",
+  layer = 1,
+  x = 800,
+  y = 493,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_10_3",
+  layer = 1,
+  x = 952,
+  y = 605,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_10_4",
+  layer = 1,
+  x = 800,
+  y = 717,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_11_1",
+  layer = 1,
+  x = 968,
+  y = 605,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_11_2",
+  layer = 1,
+  x = 1120,
+  y = 493,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_11_3",
+  layer = 1,
+  x = 1272,
+  y = 605,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_12_1",
+  layer = 1,
+  x = 1440,
+  y = 493,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_12_2",
+  layer = 1,
+  x = 1288,
+  y = 605,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_12_3",
+  layer = 1,
+  x = 1440,
+  y = 957,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_13_1",
+  layer = 1,
+  x = 480,
+  y = 733,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_14_1",
+  layer = 1,
+  x = 800,
+  y = 733,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_14_2",
+  layer = 1,
+  x = 800,
+  y = 957,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_15_1",
+  layer = 1,
+  x = 1120,
+  y = 957,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_16_1",
+  layer = 1,
+  x = 160,
+  y = 973,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_16_3",
+  layer = 1,
+  x = 312,
+  y = 1085,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_17_1",
+  layer = 1,
+  x = 328,
+  y = 1085,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_17_2",
+  layer = 1,
+  x = 800,
+  y = 973,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_17_3",
+  layer = 1,
+  x = 952,
+  y = 1085,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_18_1",
+  layer = 1,
+  x = 968,
+  y = 1085,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_18_2",
+  layer = 1,
+  x = 1120,
+  y = 973,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_19_1",
+  layer = 1,
+  x = 1440,
+  y = 1181,
+  width = 16,
+  height = 16,
 }
 
 tile{

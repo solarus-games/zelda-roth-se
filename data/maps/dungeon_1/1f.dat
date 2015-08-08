@@ -4555,6 +4555,7 @@ destination{
   x = 640,
   y = 1181,
   direction = 1,
+  default = true,
 }
 
 teletransporter{

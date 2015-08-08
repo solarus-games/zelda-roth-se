@@ -9909,6 +9909,24 @@ tile{
   pattern = "water_shallow.corner.2",
 }
 
+door{
+  name = "boss_door_1",
+  layer = 1,
+  x = 1112,
+  y = 1176,
+  direction = 3,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "boss_door_2",
+  layer = 1,
+  x = 1112,
+  y = 1208,
+  direction = 1,
+  sprite = "entities/door_normal",
+}
+
 sensor{
   name = "dungeon_room_19_4",
   layer = 1,
@@ -9940,6 +9958,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -9953,6 +9972,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -9966,6 +9986,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -9977,6 +9998,7 @@ door{
   savegame_variable = "dungeon_2_boss_door",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_boss_key",
+  cannot_open_dialog = "boss_key_required",
 }
 
 crystal_block{
@@ -10519,6 +10541,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -10532,6 +10555,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -10545,6 +10569,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -10558,6 +10583,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -10571,6 +10597,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -10584,6 +10611,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -10597,6 +10625,7 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
 }
 
 chest{
@@ -10626,24 +10655,7 @@ door{
   savegame_variable = "dungeon_2_boss_door",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_boss_key",
-}
-
-door{
-  name = "boss_door_1",
-  layer = 1,
-  x = 1112,
-  y = 1176,
-  direction = 3,
-  sprite = "entities/door_normal",
-}
-
-door{
-  name = "boss_door_2",
-  layer = 1,
-  x = 1112,
-  y = 1208,
-  direction = 1,
-  sprite = "entities/door_normal",
+  cannot_open_dialog = "boss_key_required",
 }
 
 enemy{
