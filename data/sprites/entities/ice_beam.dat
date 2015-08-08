@@ -1,0 +1,21 @@
+animation{
+  name = "flying",
+  src_image = "entities/ice_beam.png",
+  directions = {
+    { x = 64, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+  },
+}
+animation{
+  name = "following_1",
+  src_image = "entities/ice_beam.png",
+  directions = {
+    { x = 32, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+  },
+}
+animation{
+  name = "following_2",
+  src_image = "entities/ice_beam.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+  },
+}

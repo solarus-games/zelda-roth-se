@@ -63,3 +63,33 @@ function item:on_using()
     item:set_finished()
   end)
 end
+
+-- Initialize the metatable of appropriate entities to work with the fire.
+local function initialize_meta()
+
+  -- Add Lua fire properties to enemies.
+  local enemy_meta = sol.main.get_metatable("enemy")
+  if enemy_meta.get_fire_reaction ~= nil then
+    -- Already done.
+    return
+  end
+
+  enemy_meta.fire_reaction = 2  -- 2 life points by default.
+  function enemy_meta:get_fire_reaction(sprite)
+    return self.fire_reaction
+  end
+
+  function enemy_meta:set_fire_reaction(reaction, sprite)
+    -- TODO allow to set by sprite
+    self.fire_reaction = reaction
+  end
+
+  -- Change enemy:set_invincible() to also
+  -- take into account the fire.
+  local previous_set_invincible = enemy_meta.set_invincible
+  function enemy_meta:set_invincible()
+    previous_set_invincible(self)
+    self:set_fire_reaction("ignored")
+  end
+end
+initialize_meta()
