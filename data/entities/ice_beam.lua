@@ -53,13 +53,15 @@ function ice_beam:go(angle)
   movement:set_angle(angle)
   movement:set_smooth(false)
 
-  -- Compute the coordinate offset of follower sprites.
-  local x = -math.cos(angle) * 16
-  local y = math.sin(angle) * 16
+  -- Compute the coordinate offset of each sprite.
+  local x = math.cos(angle) * 16
+  local y = -math.sin(angle) * 16
+  sprites[1]:set_xy(2 * x, 2 * y)
   sprites[2]:set_xy(x, y)
-  sprites[3]:set_xy(2 * x, 2 * y)
-  sprites[2]:set_animation("following_1")
-  sprites[3]:set_animation("following_2")
+
+  sprites[1]:set_animation("1")
+  sprites[2]:set_animation("2")
+  sprites[3]:set_animation("3")
 
   movement:start(ice_beam)
 end
