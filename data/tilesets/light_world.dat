@@ -3248,7 +3248,7 @@ tile_pattern{
 
 tile_pattern{
   id = "dungeon_c.1",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 240,
   y = 328,
