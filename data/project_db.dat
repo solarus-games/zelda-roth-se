@@ -131,6 +131,7 @@ sprite{ id = "entities/hook_tree_small_green", description = "Small tree hook (g
 sprite{ id = "entities/hook_tree_small_yellow", description = "Small tree hook (yellow)" }
 sprite{ id = "entities/hook_yellow", description = "Hook (yellow)" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
+sprite{ id = "entities/ice", description = "Ice ground" }
 sprite{ id = "entities/ice_beam", description = "Ice beam" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }

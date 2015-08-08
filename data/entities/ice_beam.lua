@@ -1,6 +1,7 @@
 -- An ice beam that can unlight torches and freeze water.
 local ice_beam = ...
 local sprites = {}
+local ice_path_sprite
 
 local enemies_touched = {}
 
@@ -69,4 +70,39 @@ end
 function ice_beam:on_obstacle_reached()
 
   ice_beam:remove()
+end
+
+function ice_beam:on_position_changed()
+
+  local _, _, layer = ice_beam:get_position()
+  local x, y = ice_beam:get_center_position()
+  local head_dx, head_dy = sprites[1]:get_xy()
+  x, y = x + head_dx, y + head_dy
+  local map = ice_beam:get_map()
+
+  if map:get_ground(x, y, layer) == "deep_water" then
+    -- TODO check that the whole 16x16 square is on deep water
+
+    local snapped_x = math.floor((x + 8) / 16) * 16
+    local snapped_y = math.floor((y + 8) / 16) * 16
+
+    -- TODO create only one entity and extend it
+    local ice_path = map:create_custom_entity({
+      x = snapped_x,
+      y = snapped_y,
+      layer = layer,
+      width = 16, 
+      height = 16,
+      direction = 0,
+      ground = "ice",
+    })
+    ice_path:set_modified_ground("ice")
+    ice_path_sprite = sol.sprite.create("entities/ice")
+
+    function ice_path:on_post_draw()
+
+      local x, y, width, height = ice_path:get_bounding_box()
+      map:draw_sprite(ice_path_sprite, x, y)
+    end
+  end
 end
