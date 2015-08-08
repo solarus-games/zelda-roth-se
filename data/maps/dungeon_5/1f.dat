@@ -444,82 +444,10 @@ tile{
 tile{
   layer = 1,
   x = 672,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 912,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 912,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 672,
   y = 1232,
   width = 256,
   height = 176,
   pattern = "floor.13",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 1232,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 1392,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 912,
-  y = 1392,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 912,
-  y = 1232,
-  width = 16,
-  height = 16,
-  pattern = "torch",
 }
 
 tile{
@@ -830,6 +758,78 @@ teletransporter{
   transition = "immediate",
   destination_map = "dungeon_5/b2",
   destination = "boss_shortcut",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 285,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 920,
+  y = 285,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 920,
+  y = 445,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 445,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 1245,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 920,
+  y = 1245,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 920,
+  y = 1405,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 1405,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
 }
 
 tile{

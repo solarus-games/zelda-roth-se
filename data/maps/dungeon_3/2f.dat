@@ -2072,42 +2072,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 688,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "torch_off",
-}
-
-tile{
-  layer = 1,
-  x = 688,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "torch_off",
-}
-
-tile{
-  layer = 1,
-  x = 896,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "torch_off",
-}
-
-tile{
-  layer = 1,
-  x = 896,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "torch_off",
-}
-
-tile{
-  layer = 1,
   x = 672,
   y = 392,
   width = 8,
@@ -2527,78 +2491,6 @@ tile{
   width = 8,
   height = 24,
   pattern = "stairs_down.2.border.3",
-}
-
-tile{
-  layer = 1,
-  x = 368,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 368,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 576,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 576,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 352,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 352,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 592,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 592,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "torch",
 }
 
 tile{
@@ -3089,42 +2981,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1008,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1008,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1216,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1216,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
   x = 1128,
   y = 216,
   width = 8,
@@ -3265,24 +3121,6 @@ tile{
   width = 32,
   height = 64,
   pattern = "floor_low.17",
-}
-
-tile{
-  layer = 1,
-  x = 112,
-  y = 1008,
-  width = 16,
-  height = 16,
-  pattern = "torch_off",
-}
-
-tile{
-  layer = 1,
-  x = 192,
-  y = 1008,
-  width = 16,
-  height = 16,
-  pattern = "torch_off",
 }
 
 tile{
@@ -3683,42 +3521,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 992,
-  y = 512,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1232,
-  y = 512,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1232,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 992,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
   x = 1256,
   y = 592,
   width = 16,
@@ -4036,6 +3838,204 @@ enemy{
   direction = 3,
   breed = "octorok",
   treasure_name = "random_weapon",
+}
+
+custom_entity{
+  layer = 1,
+  x = 360,
+  y = 45,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 360,
+  y = 205,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 600,
+  y = 45,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 600,
+  y = 205,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1000,
+  y = 525,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1000,
+  y = 685,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1240,
+  y = 525,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1240,
+  y = 685,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 376,
+  y = 301,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 376,
+  y = 429,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 584,
+  y = 301,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 584,
+  y = 429,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1016,
+  y = 301,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1016,
+  y = 429,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1224,
+  y = 301,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1224,
+  y = 429,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 120,
+  y = 1021,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 200,
+  y = 1021,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 904,
+  y = 429,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 696,
+  y = 429,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 696,
+  y = 301,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 904,
+  y = 301,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
 }
 
 tile{

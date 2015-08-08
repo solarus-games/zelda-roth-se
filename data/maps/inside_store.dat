@@ -1618,6 +1618,159 @@ tile{
   pattern = "door_blast.2.support.2",
 }
 
+tile{
+  layer = 1,
+  x = 16,
+  y = 656,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 656,
+  width = 272,
+  height = 24,
+  pattern = "wall.1",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 656,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 680,
+  width = 24,
+  height = 192,
+  pattern = "wall.3",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 872,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 872,
+  width = 272,
+  height = 24,
+  pattern = "wall.2",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 872,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.4",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 680,
+  width = 24,
+  height = 192,
+  pattern = "wall.4",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 680,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 680,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 864,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.4",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 864,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 864,
+  width = 256,
+  height = 8,
+  pattern = "wall_border.2",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 680,
+  width = 256,
+  height = 8,
+  pattern = "wall_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 688,
+  width = 8,
+  height = 176,
+  pattern = "wall_border.3",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 688,
+  width = 8,
+  height = 176,
+  pattern = "wall_border.4",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 688,
+  width = 256,
+  height = 176,
+  pattern = "floor.1",
+}
+
 destructible{
   layer = 1,
   x = 56,
@@ -1908,6 +2061,42 @@ custom_entity{
   layer = 1,
   x = 496,
   y = 565,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 56,
+  y = 701,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 296,
+  y = 701,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 296,
+  y = 861,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 56,
+  y = 861,
   direction = 1,
   sprite = "entities/torch",
   model = "torch",

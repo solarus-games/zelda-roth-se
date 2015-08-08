@@ -9,5 +9,4 @@
 - Don't restore destructible treasures when changing floors in a dungeon
 - Color of the shadow of signs
 - Musics
-- Replace NPC torches by custom entity torches
 

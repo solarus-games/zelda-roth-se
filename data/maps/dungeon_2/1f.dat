@@ -9587,222 +9587,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 672,
-  y = 336,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1040,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1184,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1056,
-  y = 336,
-  width = 128,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1056,
-  y = 576,
-  width = 128,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 768,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1408,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1456,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1552,
-  y = 336,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1552,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1632,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1632,
-  y = 880,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1312,
-  y = 1248,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1552,
-  y = 1248,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 992,
-  y = 1264,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 992,
-  y = 1360,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1104,
-  y = 1264,
-  width = 32,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1232,
-  y = 1264,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 912,
-  y = 1280,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 912,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 1280,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
   x = 352,
   y = 1296,
   width = 16,
@@ -9814,60 +9598,6 @@ tile{
   layer = 1,
   x = 352,
   y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 592,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 592,
-  y = 1296,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 368,
-  y = 768,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 368,
-  y = 896,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 576,
-  y = 896,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 576,
-  y = 768,
   width = 16,
   height = 16,
   pattern = "torch",
@@ -10150,24 +9880,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "floor.1",
-}
-
-tile{
-  layer = 1,
-  x = 1632,
-  y = 1264,
-  width = 16,
-  height = 16,
-  pattern = "torch",
-}
-
-tile{
-  layer = 1,
-  x = 1872,
-  y = 1264,
-  width = 16,
-  height = 16,
-  pattern = "torch",
 }
 
 tile{
@@ -11853,6 +11565,429 @@ sensor{
   y = 1453,
   width = 16,
   height = 16,
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 349,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 381,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1048,
+  y = 285,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1192,
+  y = 285,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1064,
+  y = 349,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1080,
+  y = 349,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1096,
+  y = 349,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1112,
+  y = 349,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1128,
+  y = 349,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1144,
+  y = 349,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1160,
+  y = 349,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1176,
+  y = 349,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1064,
+  y = 589,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1080,
+  y = 589,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1096,
+  y = 589,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1112,
+  y = 589,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1128,
+  y = 589,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1144,
+  y = 589,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1160,
+  y = 589,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1176,
+  y = 589,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 776,
+  y = 685,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 824,
+  y = 685,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1416,
+  y = 685,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1464,
+  y = 685,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1560,
+  y = 349,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1560,
+  y = 381,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 376,
+  y = 781,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 584,
+  y = 781,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 376,
+  y = 909,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 584,
+  y = 909,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1640,
+  y = 797,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1632,
+  y = 893,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 600,
+  y = 1309,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 600,
+  y = 1341,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 1293,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 1357,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 920,
+  y = 1293,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 920,
+  y = 1357,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1000,
+  y = 1277,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1000,
+  y = 1373,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1112,
+  y = 1277,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1128,
+  y = 1277,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1240,
+  y = 1277,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1320,
+  y = 1261,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1560,
+  y = 1261,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1640,
+  y = 1277,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 1880,
+  y = 1277,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
 }
 
 tile{
