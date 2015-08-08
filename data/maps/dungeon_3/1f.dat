@@ -7030,6 +7030,105 @@ tile{
 }
 
 sensor{
+  name = "save_solid_ground_sensor_13",
+  layer = 1,
+  x = 800,
+  y = 229,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_12",
+  layer = 1,
+  x = 480,
+  y = 229,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_11",
+  layer = 1,
+  x = 480,
+  y = 261,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_10",
+  layer = 1,
+  x = 160,
+  y = 261,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_9",
+  layer = 1,
+  x = 160,
+  y = 469,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_8",
+  layer = 1,
+  x = 160,
+  y = 501,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_7",
+  layer = 1,
+  x = 160,
+  y = 949,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_6",
+  layer = 1,
+  x = 336,
+  y = 1085,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_5",
+  layer = 1,
+  x = 800,
+  y = 981,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_4",
+  layer = 1,
+  x = 944,
+  y = 1085,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_19_1",
+  layer = 1,
+  x = 1440,
+  y = 1181,
+  width = 16,
+  height = 16,
+}
+
+sensor{
   name = "dungeon_room_19_2",
   layer = 1,
   x = 1440,
@@ -7831,7 +7930,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_d_1",
+  name = "auto_torch_auto_door_d_1",
   layer = 1,
   x = 760,
   y = 429,
@@ -7841,7 +7940,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_d_2",
+  name = "auto_torch_auto_door_d_2",
   layer = 1,
   x = 840,
   y = 429,
@@ -7887,7 +7986,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_e_1",
+  name = "auto_torch_auto_door_e_1",
   layer = 1,
   x = 440,
   y = 669,
@@ -7897,7 +7996,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_e_2",
+  name = "auto_torch_auto_door_e_2",
   layer = 1,
   x = 520,
   y = 669,
@@ -8193,14 +8292,6 @@ door{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_boss_key",
   cannot_open_dialog = "boss_key_required",
-}
-
-destination{
-  name = "boss_shortcut",
-  layer = 1,
-  x = 1120,
-  y = 933,
-  direction = 1,
 }
 
 teletransporter{
@@ -8865,13 +8956,45 @@ sensor{
   height = 16,
 }
 
-sensor{
-  name = "dungeon_room_19_1",
+dynamic_tile{
+  name = "crystal_platform",
   layer = 1,
-  x = 1440,
-  y = 1181,
+  x = 1112,
+  y = 816,
+  pattern = "invisible_traversable",
   width = 16,
   height = 16,
+  enabled_at_start = false,
+}
+
+enemy{
+  name = "boss",
+  layer = 1,
+  x = 1120,
+  y = 829,
+  direction = 0,
+  breed = "armos_knight",
+  rank = 2,
+  savegame_variable = "dungeon_3_boss",
+  treasure_name = "magic_crystal",
+  treasure_savegame_variable = "dungeon_3_crystal",
+}
+
+sensor{
+  name = "save_solid_ground_sensor_3",
+  layer = 1,
+  x = 1120,
+  y = 933,
+  width = 16,
+  height = 16,
+}
+
+destination{
+  name = "boss_shortcut",
+  layer = 1,
+  x = 1120,
+  y = 933,
+  direction = 1,
 }
 
 tile{

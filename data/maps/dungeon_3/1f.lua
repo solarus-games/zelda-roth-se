@@ -61,3 +61,9 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
     end)
   end
 end
+
+function weak_wall_b:on_opened()
+
+  sol.audio.play_sound("secret")
+end
+

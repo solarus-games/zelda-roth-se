@@ -3519,6 +3519,68 @@ tile{
   pattern = "floor.10",
 }
 
+door{
+  name = "auto_door_a_back",
+  layer = 1,
+  x = 792,
+  y = 216,
+  direction = 3,
+  sprite = "entities/door_normal",
+}
+
+sensor{
+  name = "save_solid_ground_sensor_3",
+  layer = 1,
+  x = 800,
+  y = 229,
+  width = 16,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "weak_wall_a_open_2",
+  layer = 1,
+  x = 616,
+  y = 424,
+  pattern = "door_blast.4",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+door{
+  name = "weak_wall_a",
+  layer = 1,
+  x = 616,
+  y = 424,
+  direction = 0,
+  sprite = "entities/door_very_weak_wall",
+  savegame_variable = "dungeon_1_2f_weak_wall_a",
+  opening_method = "explosion",
+}
+
+dynamic_tile{
+  name = "weak_wall_b_open_18",
+  layer = 1,
+  x = 968,
+  y = 424,
+  pattern = "door_blast.3",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+door{
+  name = "weak_wall_b",
+  layer = 1,
+  x = 968,
+  y = 424,
+  direction = 2,
+  sprite = "entities/door_very_weak_wall",
+  savegame_variable = "dungeon_1_2f_weak_wall_b",
+  opening_method = "explosion",
+}
+
 sensor{
   name = "dungeon_room_15_2",
   layer = 1,
@@ -3641,15 +3703,6 @@ destructible{
   destruction_sound = "stone",
   weight = 1,
   damage_on_enemies = 2,
-}
-
-door{
-  name = "auto_door_a_back",
-  layer = 1,
-  x = 792,
-  y = 216,
-  direction = 3,
-  sprite = "entities/door_normal",
 }
 
 door{
@@ -3931,7 +3984,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_b_1",
+  name = "auto_torch_auto_door_b_1",
   layer = 1,
   x = 120,
   y = 1021,
@@ -3941,7 +3994,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_b_2",
+  name = "auto_torch_auto_door_b_2",
   layer = 1,
   x = 200,
   y = 1021,
@@ -3951,7 +4004,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_a_4",
+  name = "auto_torch_auto_door_a_4",
   layer = 1,
   x = 904,
   y = 429,
@@ -3961,7 +4014,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_a_3",
+  name = "auto_torch_auto_door_a_3",
   layer = 1,
   x = 696,
   y = 429,
@@ -3971,7 +4024,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_a_1",
+  name = "auto_torch_auto_door_a_1",
   layer = 1,
   x = 688,
   y = 301,
@@ -3981,7 +4034,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_a_2",
+  name = "auto_torch_auto_door_a_2",
   layer = 1,
   x = 904,
   y = 301,
@@ -4019,17 +4072,6 @@ door{
 }
 
 dynamic_tile{
-  name = "weak_wall_a_open_2",
-  layer = 1,
-  x = 616,
-  y = 424,
-  pattern = "door_blast.4",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
   name = "weak_wall_a_open",
   layer = 1,
   x = 616,
@@ -4051,16 +4093,6 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
-door{
-  name = "weak_wall_a",
-  layer = 1,
-  x = 616,
-  y = 424,
-  direction = 0,
-  sprite = "entities/door_very_weak_wall",
-  opening_method = "explosion",
-}
-
 dynamic_tile{
   name = "weak_wall_a_open_7",
   layer = 1,
@@ -4079,6 +4111,7 @@ door{
   y = 424,
   direction = 2,
   sprite = "entities/door_very_weak_wall",
+  savegame_variable = "dungeon_1_2f_weak_wall_a",
   opening_method = "explosion",
 }
 
@@ -4105,7 +4138,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "weak_wall_a_open_11",
+  name = "weak_wall_b_open_11",
   layer = 1,
   x = 936,
   y = 424,
@@ -4138,33 +4171,13 @@ dynamic_tile{
 }
 
 door{
-  name = "weak_wall_b",
+  name = "weak_wall_b_2",
   layer = 1,
   x = 936,
   y = 424,
   direction = 0,
   sprite = "entities/door_very_weak_wall",
-  opening_method = "explosion",
-}
-
-dynamic_tile{
-  name = "weak_wall_a_open_14",
-  layer = 1,
-  x = 968,
-  y = 424,
-  pattern = "door_blast.3",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
-}
-
-door{
-  name = "weak_wall_b_2",
-  layer = 1,
-  x = 968,
-  y = 424,
-  direction = 2,
-  sprite = "entities/door_very_weak_wall",
+  savegame_variable = "dungeon_1_2f_weak_wall_b",
   opening_method = "explosion",
 }
 

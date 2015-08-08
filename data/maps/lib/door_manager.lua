@@ -23,7 +23,7 @@ function door_manager:manage_map(map)
 end
 
 -- Returns whether there exists at least one entity with the specified
--- prefix in the region of the region.
+-- prefix in the region of the hero.
 local function has_entities_with_prefix_in_region(map, prefix)
 
   local hero = map:get_hero()
@@ -75,15 +75,26 @@ function door_manager:open_when_torches_lit(door)
 
   local map = door:get_map()
   local torches = {}
+  local remaining = 0
   local function torch_on_lit()
-    if door:is_closed() and not has_entities_with_prefix_in_region(map, torch_prefix) then
-      sol.audio.play_sound("secret")
-      map:open_doors(door_prefix)
+    if door:is_closed() then
+      remaining = remaining - 1
+      if remaining == 0 then
+        sol.audio.play_sound("secret")
+        map:open_doors(door_prefix)
+      end
     end
   end
 
   for torch in map:get_entities(torch_prefix) do
+    if not torch:is_lit() then
+      remaining = remaining + 1
+    end
     torch.on_lit = torch_on_lit
+    if remaining == 0 then
+      -- All torches of this door are already lit.
+      map:set_doors_open(door_prefix, true)
+    end
   end
 end
 
