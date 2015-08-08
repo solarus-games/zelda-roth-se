@@ -13,6 +13,9 @@ animation{
   name = "flying",
   src_image = "entities/fire.png",
   directions = {
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+    { x = 32, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+    { x = 64, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
     { x = 96, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
   },
 }

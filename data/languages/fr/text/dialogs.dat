@@ -203,6 +203,15 @@ le plan.
 }
 
 dialog{
+  id = "_treasure.fire_rod.1",
+  text = [[
+Tu as trouvé le bâton de feu !!!
+Tu peux désormais lancer de puissantes flammes
+à distance.
+]]
+}
+
+dialog{
   id = "_treasure.flippers.1",
   text = [[
 Tu as trouvé les palmes !!!
@@ -239,6 +248,14 @@ dialog{
   text = [[
 Tu as trouvé le grappin !!!
 Utilise-le pour franchir des obstacles.
+]]
+}
+
+dialog{
+  id = "_treasure.ice_rod.1",
+  text = [[
+Tu as trouvé le baton de glace !!!
+Utilise-le pour tout congeler à distance.
 ]]
 }
 

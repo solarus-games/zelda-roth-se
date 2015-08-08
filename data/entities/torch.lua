@@ -41,15 +41,21 @@ local function on_collision(torch, other, torch_sprite, other_sprite)
     if not torch:is_lit() then
       torch:set_lit(true)
     end
+    other:remove()
   elseif other_model == "ice" then
     if torch:is_lit() then
       torch:set_lit(false)
     end
+    other:remove()
   end
 end
 
+torch:set_traversable_by("custom_entity", function(torch, other)
+  return other:get_model() == "fire" or other:get_model() == "ice"
+end)
+
 torch:add_collision_test("sprite", on_collision)
-torch:add_collision_test("touching", on_collision)
+torch:add_collision_test("overlapping", on_collision)
 
 -- Initialize the metatable of appropriate entities to work with the fire.
 local function initialize_meta()
