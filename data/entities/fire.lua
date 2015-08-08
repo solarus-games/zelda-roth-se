@@ -23,7 +23,7 @@ end
 -- TODO remove this when the engine provides a function destructible:get_sprite()
 local function get_destructible_sprite(destructible)
 
-  return sol.main.get_metatable("custom_entity").get_sprite(destructible)
+  return fire.get_sprite(destructible)
 end
 
 -- Returns whether a destructible is a bush.

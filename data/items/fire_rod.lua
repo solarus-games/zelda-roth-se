@@ -74,7 +74,7 @@ local function initialize_meta()
     return
   end
 
-  enemy_meta.fire_reaction = 2  -- 2 life points by default.
+  enemy_meta.fire_reaction = 3  -- 3 life points by default.
   function enemy_meta:get_fire_reaction(sprite)
     return self.fire_reaction
   end
