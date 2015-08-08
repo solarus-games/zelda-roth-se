@@ -6,7 +6,6 @@
 - Allow to map game commands
 - Video modes
 - Escape to exit from title screens
-- Don't restore destructible treasures when changing floors in a dungeon
 - Color of the shadow of signs
 - Musics
 

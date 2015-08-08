@@ -60,11 +60,13 @@ sprite{ id = "enemies/chasupa", description = "Chasupa" }
 sprite{ id = "enemies/chicken", description = "Chicken" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/eyegore_green", description = "Green Eyegore" }
+sprite{ id = "enemies/eyegore_red", description = "Red Eyegore" }
 sprite{ id = "enemies/fireball_red_big", description = "Red big fireball" }
 sprite{ id = "enemies/fireball_red_small", description = "Red small Fireball" }
 sprite{ id = "enemies/geldman", description = "Geldman" }
 sprite{ id = "enemies/gibdo", description = "Gibdo" }
 sprite{ id = "enemies/goriya_green", description = "Green Goriya" }
+sprite{ id = "enemies/goriya_red", description = "Red Goriya" }
 sprite{ id = "enemies/hinox", description = "Hinox" }
 sprite{ id = "enemies/hover", description = "Hover" }
 sprite{ id = "enemies/keese", description = "Keese" }
@@ -82,6 +84,7 @@ sprite{ id = "enemies/ropa", description = "Ropa" }
 sprite{ id = "enemies/rope", description = "Rope" }
 sprite{ id = "enemies/sand_crab", description = "Sand Crab" }
 sprite{ id = "enemies/skeleton", description = "Skeleton" }
+sprite{ id = "enemies/skeleton_red", description = "Red Skeleton" }
 sprite{ id = "enemies/stal", description = "Stal" }
 sprite{ id = "enemies/tektite_blue", description = "Blue Tektite" }
 sprite{ id = "enemies/tentacle", description = "Tentacle" }
@@ -392,11 +395,13 @@ enemy{ id = "bari_blue", description = "Blue Bari" }
 enemy{ id = "chasupa", description = "Chasupa" }
 enemy{ id = "chicken", description = "Chicken" }
 enemy{ id = "eyegore_green", description = "Green Eyegore" }
+enemy{ id = "eyegore_red", description = "Red Eyegore" }
 enemy{ id = "fireball_red_big", description = "Red big Fireball" }
 enemy{ id = "fireball_red_small", description = "Red small Fireball" }
 enemy{ id = "geldman", description = "Geldman" }
 enemy{ id = "gibdo", description = "Gibdo" }
 enemy{ id = "goriya_green", description = "Green Goriya" }
+enemy{ id = "goriya_red", description = "Red Goriya" }
 enemy{ id = "hinox", description = "Hinox" }
 enemy{ id = "hover", description = "Hover" }
 enemy{ id = "keese", description = "Keese" }
@@ -414,6 +419,7 @@ enemy{ id = "ropa", description = "Ropa" }
 enemy{ id = "rope", description = "Rope" }
 enemy{ id = "sand_crab", description = "Sand Crab" }
 enemy{ id = "skeleton", description = "Skeleton" }
+enemy{ id = "skeleton_red", description = "Red Skeleton" }
 enemy{ id = "stal", description = "Stal" }
 enemy{ id = "tektite_blue", description = "Blue Tektite" }
 enemy{ id = "tentacle", description = "Tentacle" }
