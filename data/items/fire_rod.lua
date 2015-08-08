@@ -40,7 +40,17 @@ function item:on_using()
 
   local map = item:get_map()
   local hero = map:get_hero()
+  local direction = hero:get_direction()
   hero:set_animation("rod")
+
+  local x, y, layer = hero:get_position()
+  local fire_rod = map:create_custom_entity({
+    x = x,
+    y = y,
+    layer = layer,
+    direction = direction,
+    sprite = "hero/fire_rod",
+  })
 
   if game:get_magic() >= magic_needed then
     sol.audio.play_sound("lamp")
@@ -49,6 +59,7 @@ function item:on_using()
   end
 
   sol.timer.start(hero, 300, function()
+    fire_rod:remove()
     item:set_finished()
   end)
 end

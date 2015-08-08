@@ -147,8 +147,10 @@ sprite{ id = "entities/switch", description = "Switch" }
 sprite{ id = "entities/torch", description = "Torch" }
 sprite{ id = "entities/vase", description = "Vase" }
 sprite{ id = "entities/vase_skull", description = "Vase (skull)" }
+sprite{ id = "hero/fire_rod", description = "Fire rod" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
+sprite{ id = "hero/ice_rod", description = "Ice rod" }
 sprite{ id = "hero/rabbit_explosion", description = "Rabbit explosion" }
 sprite{ id = "hero/rabbit_tunic", description = "Rabbit tunic" }
 sprite{ id = "hero/shield1", description = "Hero shield 1" }
