@@ -43,6 +43,7 @@ function item:on_using()
   local direction = hero:get_direction()
   hero:set_animation("rod")
 
+  -- Give the hero the animation of using the fire rod.
   local x, y, layer = hero:get_position()
   local fire_rod = map:create_custom_entity({
     x = x,
@@ -52,12 +53,22 @@ function item:on_using()
     sprite = "hero/fire_rod",
   })
 
+  -- Shoot fire if there is enough magic.
   if game:get_magic() >= magic_needed then
     sol.audio.play_sound("lamp")
     game:remove_magic(magic_needed)
     item:shoot()
   end
 
+  -- Make sure that the fire rod stays on the hero.
+  -- Even if he is using this item, he can move
+  -- because of holes or ice.
+  sol.timer.start(ice_rod, 10, function()
+    ice_rod:set_position(hero:get_position())    
+    return true
+  end)
+
+  -- Remove the fire rod and restore control after a delay.
   sol.timer.start(hero, 300, function()
     fire_rod:remove()
     item:set_finished()

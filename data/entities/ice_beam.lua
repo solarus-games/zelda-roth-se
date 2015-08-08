@@ -47,11 +47,69 @@ ice_beam:add_collision_test("sprite", function(ice_beam, entity)
   end
 end)
 
+-- Create an ice square at the specified place if there is deep water.
+local function check_square(x, y)
+
+  local map = ice_beam:get_map()
+  local _, _, layer = ice_beam:get_position()
+
+  -- Top-left corner of the candidate 16x16 square.
+  x = math.floor(x / 16) * 16
+  y = math.floor(y / 16) * 16
+
+  -- Check that the four corners of the 16x16 square are on deep water
+  if map:get_ground(      x,      y, layer) ~= "deep_water" or
+      map:get_ground(x + 15,      y, layer) ~= "deep_water" or
+      map:get_ground(     x, y + 15, layer) ~= "deep_water" or
+      map:get_ground(x + 15, y + 15, layer) ~= "deep_water" then
+    return
+  end
+
+  -- TODO create only one entity and extend it
+  local ice_path = map:create_custom_entity({
+    x = x,
+    y = y,
+    layer = layer,
+    width = 16, 
+    height = 16,
+    direction = 0,
+    ground = "ice",
+  })
+  ice_path:set_modified_ground("ice")
+  ice_path_sprite = sol.sprite.create("entities/ice")
+
+  function ice_path:on_post_draw()
+
+    local x, y, width, height = ice_path:get_bounding_box()
+    map:draw_sprite(ice_path_sprite, x, y)
+  end
+
+end
+
+-- Create ice on two squares around the specified place if there is deep water.
+local function check_two_squares(x, y)
+
+  local movement = ice_beam:get_movement()
+  if movement == nil then
+    return
+  end
+  local direction4 = movement:get_direction4()
+  local horizontal = (direction4 % 2) == 0
+  if horizontal then
+    check_square(x, y)
+    check_square(x, y + 16)
+  else
+    check_square(x, y)
+    check_square(x + 16, y)
+  end
+end
+
 function ice_beam:go(angle)
 
   local movement = sol.movement.create("straight")
   movement:set_speed(192)
   movement:set_angle(angle)
+  movement:set_max_distance(320)
   movement:set_smooth(false)
 
   -- Compute the coordinate offset of each sprite.
@@ -65,44 +123,28 @@ function ice_beam:go(angle)
   sprites[3]:set_animation("3")
 
   movement:start(ice_beam)
+
+  -- The head of the beam will be used to determine candidate squares,
+  -- so make sure we don't the first squares.
+  local ice_beam_x, ice_beam_y = ice_beam:get_position()
+  local dx, dy = sprites[2]:get_xy()
+  check_two_squares(ice_beam_x + dx, ice_beam_y + dy)
 end
 
 function ice_beam:on_obstacle_reached()
+  ice_beam:remove()
+end
 
+function ice_beam:on_movement_finished()
   ice_beam:remove()
 end
 
 function ice_beam:on_position_changed()
 
-  local _, _, layer = ice_beam:get_position()
+  -- Create ice if there is deep water on the leading two squares.
   local x, y = ice_beam:get_center_position()
   local head_dx, head_dy = sprites[1]:get_xy()
   x, y = x + head_dx, y + head_dy
-  local map = ice_beam:get_map()
 
-  if map:get_ground(x, y, layer) == "deep_water" then
-    -- TODO check that the whole 16x16 square is on deep water
-
-    local snapped_x = math.floor((x + 8) / 16) * 16
-    local snapped_y = math.floor((y + 8) / 16) * 16
-
-    -- TODO create only one entity and extend it
-    local ice_path = map:create_custom_entity({
-      x = snapped_x,
-      y = snapped_y,
-      layer = layer,
-      width = 16, 
-      height = 16,
-      direction = 0,
-      ground = "ice",
-    })
-    ice_path:set_modified_ground("ice")
-    ice_path_sprite = sol.sprite.create("entities/ice")
-
-    function ice_path:on_post_draw()
-
-      local x, y, width, height = ice_path:get_bounding_box()
-      map:draw_sprite(ice_path_sprite, x, y)
-    end
-  end
+  check_two_squares(x, y)
 end
