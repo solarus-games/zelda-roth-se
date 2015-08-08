@@ -7900,7 +7900,7 @@ tile{
   layer = 2,
   x = 1440,
   y = 680,
-  width = 80,
+  width = 16,
   height = 8,
   pattern = "cliff.top.1",
 }
@@ -8557,7 +8557,7 @@ tile{
   layer = 2,
   x = 816,
   y = 168,
-  width = 160,
+  width = 16,
   height = 8,
   pattern = "cliff.top.1",
 }
@@ -8746,7 +8746,7 @@ tile{
   layer = 2,
   x = 1072,
   y = 184,
-  width = 128,
+  width = 80,
   height = 8,
   pattern = "cliff.top.1",
 }
@@ -9682,7 +9682,7 @@ tile{
   layer = 2,
   x = 448,
   y = 440,
-  width = 176,
+  width = 32,
   height = 8,
   pattern = "cliff.top.1",
 }
@@ -10567,6 +10567,42 @@ tile{
   width = 8,
   height = 8,
   pattern = "dungeon_g.corner.2",
+}
+
+tile{
+  layer = 2,
+  x = 864,
+  y = 168,
+  width = 112,
+  height = 8,
+  pattern = "cliff.top.1",
+}
+
+tile{
+  layer = 2,
+  x = 1184,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "cliff.top.1",
+}
+
+tile{
+  layer = 2,
+  x = 1488,
+  y = 680,
+  width = 32,
+  height = 8,
+  pattern = "cliff.top.1",
+}
+
+tile{
+  layer = 2,
+  x = 512,
+  y = 440,
+  width = 112,
+  height = 8,
+  pattern = "cliff.top.1",
 }
 
 teletransporter{
