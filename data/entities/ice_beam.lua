@@ -65,7 +65,6 @@ local function check_square(x, y)
     return
   end
 
-  -- TODO create only one entity and extend it
   local ice_path = map:create_custom_entity({
     x = x,
     y = y,
@@ -75,15 +74,9 @@ local function check_square(x, y)
     direction = 0,
     ground = "ice",
   })
+  ice_path:set_origin(0, 0)
   ice_path:set_modified_ground("ice")
-  ice_path_sprite = sol.sprite.create("entities/ice")
-
-  function ice_path:on_post_draw()
-
-    local x, y, width, height = ice_path:get_bounding_box()
-    map:draw_sprite(ice_path_sprite, x, y)
-  end
-
+  ice_path:create_sprite("entities/ice")
 end
 
 -- Create ice on two squares around the specified place if there is deep water.
@@ -96,11 +89,11 @@ local function check_two_squares(x, y)
   local direction4 = movement:get_direction4()
   local horizontal = (direction4 % 2) == 0
   if horizontal then
-    check_square(x, y)
-    check_square(x, y + 16)
+    check_square(x, y - 8)
+    check_square(x, y + 8)
   else
-    check_square(x, y)
-    check_square(x + 16, y)
+    check_square(x - 8, y)
+    check_square(x + 8, y)
   end
 end
 
@@ -128,6 +121,8 @@ function ice_beam:go(angle)
   -- so make sure we don't the first squares.
   local ice_beam_x, ice_beam_y = ice_beam:get_position()
   local dx, dy = sprites[2]:get_xy()
+  check_two_squares(ice_beam_x + dx, ice_beam_y + dy)
+  dx, dy = sprites[1]:get_xy()
   check_two_squares(ice_beam_x + dx, ice_beam_y + dy)
 end
 
