@@ -76,6 +76,7 @@ sprite{ id = "enemies/moblin", description = "Moblin" }
 sprite{ id = "enemies/mothula", description = "Mothula" }
 sprite{ id = "enemies/octorok", description = "Octorok" }
 sprite{ id = "enemies/octorok_stone", description = "Octorok's stone" }
+sprite{ id = "enemies/pengator", description = "Pengator" }
 sprite{ id = "enemies/pike_auto", description = "Pike (always moving)" }
 sprite{ id = "enemies/pikku", description = "Pikku" }
 sprite{ id = "enemies/poe", description = "Poe" }
@@ -94,6 +95,7 @@ sprite{ id = "enemies/wallmaster", description = "Wallmaster" }
 sprite{ id = "enemies/wizzrobe_beam", description = "Wizzrobe beam" }
 sprite{ id = "enemies/wizzrobe_blue", description = "Blue Wizzrobe" }
 sprite{ id = "enemies/wizzrobe_white", description = "White Wizzrobe" }
+sprite{ id = "enemies/zazak_blue", description = "Blue Zazak" }
 sprite{ id = "enemies/zora_feet", description = "Zora (on feet)" }
 sprite{ id = "enemies/zora_water", description = "Zora (in water)" }
 sprite{ id = "entities/arrow", description = "Arrow" }
@@ -411,6 +413,7 @@ enemy{ id = "moblin", description = "Moblin" }
 enemy{ id = "mothula", description = "Mothula" }
 enemy{ id = "octorok", description = "Octorok" }
 enemy{ id = "octorok_stone", description = "Octorok's stone" }
+enemy{ id = "pengator", description = "Pengator" }
 enemy{ id = "pike_auto", description = "Pike (always moving)" }
 enemy{ id = "pikku", description = "Pikku" }
 enemy{ id = "poe", description = "Poe" }
@@ -429,6 +432,7 @@ enemy{ id = "wallmaster", description = "Wallmaster" }
 enemy{ id = "wizzrobe_beam", description = "Wizzrobe beam" }
 enemy{ id = "wizzrobe_blue", description = "Blue Wizzrobe" }
 enemy{ id = "wizzrobe_white", description = "White Wizzrobe" }
+enemy{ id = "zazak_blue", description = "Blue Zazak" }
 enemy{ id = "zora_feet", description = "Zora (on feet)" }
 enemy{ id = "zora_water", description = "Zora (in water)" }
 

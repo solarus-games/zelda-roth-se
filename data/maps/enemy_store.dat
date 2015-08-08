@@ -227,7 +227,7 @@ enemy{
   name = "auto_enemy_32",
   layer = 1,
   x = 56,
-  y = 173,
+  y = 189,
   direction = 3,
   breed = "ropa",
   treasure_name = "random_rupee",
@@ -237,7 +237,7 @@ enemy{
   name = "auto_enemy_33",
   layer = 1,
   x = 88,
-  y = 173,
+  y = 189,
   direction = 3,
   breed = "goriya_green",
   treasure_name = "random",
@@ -247,7 +247,7 @@ enemy{
   name = "auto_enemy_34",
   layer = 1,
   x = 120,
-  y = 173,
+  y = 189,
   direction = 3,
   breed = "eyegore_green",
   treasure_name = "random_rupee",
@@ -299,5 +299,55 @@ enemy{
   direction = 3,
   breed = "octorok",
   treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_41",
+  layer = 1,
+  x = 24,
+  y = 237,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_magic",
+}
+
+enemy{
+  name = "auto_enemy_37",
+  layer = 1,
+  x = 216,
+  y = 189,
+  direction = 3,
+  breed = "skeleton_red",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_38",
+  layer = 1,
+  x = 248,
+  y = 189,
+  direction = 3,
+  breed = "goriya_red",
+  treasure_name = "random_magic",
+}
+
+enemy{
+  name = "auto_enemy_39",
+  layer = 1,
+  x = 280,
+  y = 189,
+  direction = 3,
+  breed = "eyegore_red",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_2",
+  layer = 1,
+  x = 56,
+  y = 45,
+  direction = 3,
+  breed = "zazak_blue",
+  treasure_name = "random_rupee",
 }
 
