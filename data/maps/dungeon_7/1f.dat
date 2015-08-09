@@ -4762,6 +4762,42 @@ tile{
 }
 
 sensor{
+  name = "dungeon_room_8_5",
+  layer = 1,
+  x = 352,
+  y = 37,
+  width = 912,
+  height = 192,
+}
+
+sensor{
+  name = "dungeon_room_8_4",
+  layer = 1,
+  x = 32,
+  y = 277,
+  width = 272,
+  height = 672,
+}
+
+sensor{
+  name = "dungeon_room_8_3",
+  layer = 1,
+  x = 1312,
+  y = 277,
+  width = 272,
+  height = 672,
+}
+
+sensor{
+  name = "dungeon_room_12_2",
+  layer = 1,
+  x = 992,
+  y = 757,
+  width = 272,
+  height = 192,
+}
+
+sensor{
   name = "dungeon_room_7_3",
   layer = 1,
   x = 1120,
@@ -6426,5 +6462,77 @@ tile{
   width = 8,
   height = 32,
   pattern = "door_top.4",
+}
+
+separator{
+  name = "auto_separator_1",
+  layer = 2,
+  x = 0,
+  y = 232,
+  width = 1600,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_2",
+  layer = 2,
+  x = 320,
+  y = 472,
+  width = 960,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_3",
+  layer = 2,
+  x = 960,
+  y = 712,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_4",
+  layer = 2,
+  x = 0,
+  y = 952,
+  width = 1600,
+  height = 16,
+}
+
+separator{
+  name = "auto_separator_5",
+  layer = 2,
+  x = 312,
+  y = 0,
+  width = 16,
+  height = 1200,
+}
+
+separator{
+  name = "auto_separator_6",
+  layer = 2,
+  x = 632,
+  y = 240,
+  width = 16,
+  height = 960,
+}
+
+separator{
+  name = "auto_separator_7",
+  layer = 2,
+  x = 952,
+  y = 240,
+  width = 16,
+  height = 960,
+}
+
+separator{
+  name = "auto_separator_8",
+  layer = 2,
+  x = 1272,
+  y = 0,
+  width = 16,
+  height = 1200,
 }
 
