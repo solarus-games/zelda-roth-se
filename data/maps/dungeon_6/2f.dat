@@ -1,5 +1,5 @@
 properties{
-  x = 0,
+  x = 320,
   y = 0,
   width = 2240,
   height = 2400,
@@ -618,7 +618,7 @@ enemy{
   x = 1120,
   y = 1549,
   direction = 0,
-  breed = "mothula",
+  breed = "blind",
   rank = 2,
   savegame_variable = "dungeon_6_boss",
   treasure_name = "magic_crystal",

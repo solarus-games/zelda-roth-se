@@ -441,6 +441,22 @@ dialog{
 }
 
 dialog{
+  id = "dungeon_6.one_more_crystal",
+  text = [[
+Il ne t'en manque plus qu'un seul !!!
+]]
+}
+
+dialog{
+  id = "dungeon_6.welcome",
+  text = [[
+                   Niveau 6
+
+                 Temple du Feu
+]]
+}
+
+dialog{
   id = "dungeon_finished_save",
   text = [[
 Souhaites-tu sauvegarder ta partie ?

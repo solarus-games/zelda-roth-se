@@ -12002,6 +12002,15 @@ custom_entity{
   model = "torch",
 }
 
+sensor{
+  name = "dungeon_room_4_4",
+  layer = 1,
+  x = 480,
+  y = 253,
+  width = 16,
+  height = 16,
+}
+
 tile{
   layer = 2,
   x = 1104,
