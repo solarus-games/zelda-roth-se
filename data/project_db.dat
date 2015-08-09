@@ -67,6 +67,7 @@ sprite{ id = "enemies/eyegore_green", description = "Green Eyegore" }
 sprite{ id = "enemies/eyegore_red", description = "Red Eyegore" }
 sprite{ id = "enemies/fireball_red_big", description = "Red big fireball" }
 sprite{ id = "enemies/fireball_red_small", description = "Red small Fireball" }
+sprite{ id = "enemies/freezor", description = "Freezor" }
 sprite{ id = "enemies/geldman", description = "Geldman" }
 sprite{ id = "enemies/gibdo", description = "Gibdo" }
 sprite{ id = "enemies/goriya_green", description = "Green Goriya" }
@@ -408,6 +409,7 @@ enemy{ id = "eyegore_green", description = "Green Eyegore" }
 enemy{ id = "eyegore_red", description = "Red Eyegore" }
 enemy{ id = "fireball_red_big", description = "Red big Fireball" }
 enemy{ id = "fireball_red_small", description = "Red small Fireball" }
+enemy{ id = "freezor", description = "Freezor" }
 enemy{ id = "geldman", description = "Geldman" }
 enemy{ id = "gibdo", description = "Gibdo" }
 enemy{ id = "goriya_green", description = "Green Goriya" }

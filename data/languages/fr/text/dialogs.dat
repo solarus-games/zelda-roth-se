@@ -462,6 +462,15 @@ dialog{
 }
 
 dialog{
+  id = "dungeon_7.welcome",
+  text = [[
+                   Niveau 7
+
+                Temple de Glace
+]]
+}
+
+dialog{
   id = "dungeon_finished_save",
   text = [[
 Souhaites-tu sauvegarder ta partie ?

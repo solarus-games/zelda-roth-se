@@ -55,7 +55,7 @@ function item:on_using()
     end
     enemies_touched[enemy] = true
     local reaction = enemy:get_hammer_reaction(enemy_sprite)
-    enemy:receive_attack_consequence(reaction)
+    enemy:receive_attack_consequence("hammer", reaction)
   end)
 
   -- Start the animation.

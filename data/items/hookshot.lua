@@ -428,7 +428,7 @@ function item:on_using()
         return
       end
       local reaction = enemy:get_hookshot_reaction(enemy_sprite)
-      enemy:receive_attack_consequence("hammer", reaction)
+      enemy:receive_attack_consequence("hookshot", reaction)
       go_back()
     end
 

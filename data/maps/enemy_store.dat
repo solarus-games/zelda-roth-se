@@ -384,3 +384,13 @@ enemy{
   treasure_name = "random_heart",
 }
 
+enemy{
+  name = "auto_enemy_42",
+  layer = 1,
+  x = 56,
+  y = 237,
+  direction = 3,
+  breed = "freezor",
+  treasure_name = "random_magic",
+}
+
