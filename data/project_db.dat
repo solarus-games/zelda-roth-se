@@ -178,11 +178,9 @@ sprite{ id = "hero/shield3", description = "Hero shield 3" }
 sprite{ id = "hero/sword1", description = "Hero sword 1" }
 sprite{ id = "hero/sword2", description = "Hero sword 2" }
 sprite{ id = "hero/sword3", description = "Hero sword 3" }
-sprite{ id = "hero/sword4", description = "Hero sword 4" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
 sprite{ id = "hero/sword_stars2", description = "Hero sword stars 2" }
 sprite{ id = "hero/sword_stars3", description = "Hero sword stars 3" }
-sprite{ id = "hero/sword_stars4", description = "Hero sword stars 4" }
 sprite{ id = "hero/trail", description = "Hero trail" }
 sprite{ id = "hero/tunic1", description = "Hero tunic 1" }
 sprite{ id = "hero/tunic2", description = "Hero tunic 2" }
