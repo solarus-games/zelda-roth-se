@@ -122,7 +122,7 @@ function door_manager:open_when_torches_unlit(door)
     if torch:is_lit() then
       remaining = remaining + 1
     end
-    torch.on_lit = torch_on_lit
+    torch.on_unlit = torch_on_unlit
     if remaining == 0 then
       -- All torches of this door are already unlit.
       map:set_doors_open(door_prefix, true)

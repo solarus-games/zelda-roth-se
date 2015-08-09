@@ -405,7 +405,8 @@ Il ne t'en manque plus qu'un seul !
 dialog{
   id = "crystal.7",
   text = [[
-Tu as tous les cristaux, cours au château sauver Zelda !
+Tu as tous les cristaux, cours au château
+sauver Zelda !
 ]]
 }
 
@@ -466,7 +467,7 @@ dialog{
   text = [[
                    Niveau 7
 
-                Temple de Glace
+              Temple de la Glace
 ]]
 }
 

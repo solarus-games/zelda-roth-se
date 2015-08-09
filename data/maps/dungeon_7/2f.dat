@@ -1,6 +1,6 @@
 properties{
-  x = 320,
-  y = 240,
+  x = 640,
+  y = 480,
   width = 1600,
   height = 1200,
   world = "dungeon_7",
@@ -7138,17 +7138,6 @@ door{
   cannot_open_dialog = "small_key_required",
 }
 
-wall{
-  layer = 1,
-  x = 1104,
-  y = 592,
-  width = 32,
-  height = 32,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-}
-
 sensor{
   name = "weak_floor_a_sensor",
   layer = 1,
@@ -7159,6 +7148,7 @@ sensor{
 }
 
 teletransporter{
+  name = "weak_floor_a_teletransporter",
   layer = 1,
   x = 1104,
   y = 592,
@@ -7669,8 +7659,8 @@ enemy{
 enemy{
   name = "auto_enemy_42",
   layer = 1,
-  x = 1120,
-  y = 605,
+  x = 1080,
+  y = 613,
   direction = 3,
   breed = "freezor",
   treasure_name = "random_magic",
@@ -7679,7 +7669,7 @@ enemy{
 chest{
   layer = 1,
   x = 1128,
-  y = 765,
+  y = 781,
   treasure_name = "compass",
   treasure_savegame_variable = "dungeon_7_compass_chest",
   sprite = "entities/chest",
@@ -7937,8 +7927,8 @@ enemy{
 enemy{
   name = "auto_enemy_46",
   layer = 1,
-  x = 80,
-  y = 629,
+  x = 128,
+  y = 581,
   direction = 3,
   breed = "pengator",
   treasure_name = "random_magic",
@@ -8138,7 +8128,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_8_3",
+  name = "dungeon_room_9_2",
   layer = 1,
   x = 632,
   y = 845,
@@ -8451,6 +8441,26 @@ teletransporter{
   height = 656,
   destination_map = "dungeon_7/1f",
   destination = "_same",
+}
+
+enemy{
+  name = "auto_enemy_47",
+  layer = 1,
+  x = 168,
+  y = 677,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_magic",
+}
+
+enemy{
+  name = "auto_enemy_48",
+  layer = 1,
+  x = 80,
+  y = 821,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_magic",
 }
 
 tile{

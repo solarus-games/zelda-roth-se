@@ -4762,7 +4762,7 @@ tile{
 }
 
 sensor{
-  name = "dungeon_room_8_5",
+  name = "dungeon_room_2_3",
   layer = 1,
   x = 352,
   y = 37,
@@ -4771,7 +4771,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_8_4",
+  name = "dungeon_room_4_3",
   layer = 1,
   x = 32,
   y = 277,
@@ -5832,6 +5832,48 @@ sensor{
   y = 973,
   width = 16,
   height = 16,
+}
+
+stairs{
+  layer = 1,
+  x = 472,
+  y = 368,
+  direction = 1,
+  subtype = 2,
+}
+
+stairs{
+  layer = 1,
+  x = 1112,
+  y = 368,
+  direction = 1,
+  subtype = 2,
+}
+
+stairs{
+  layer = 1,
+  x = 792,
+  y = 608,
+  direction = 1,
+  subtype = 2,
+}
+
+stairs{
+  layer = 1,
+  x = 1432,
+  y = 1088,
+  direction = 1,
+  subtype = 2,
+}
+
+enemy{
+  name = "auto_enemy_auto_door_b",
+  layer = 1,
+  x = 1120,
+  y = 1085,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_magic",
 }
 
 tile{
