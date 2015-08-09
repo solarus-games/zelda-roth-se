@@ -1,0 +1,9 @@
+animation{
+  name = "stopped",
+  src_image = "npc/great_fairy.png",
+  frame_delay = 500,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 48, origin_x = 12, origin_y = 29, num_frames = 2 },
+  },
+}

@@ -202,7 +202,8 @@ sprite{ id = "npc/bully", description = "Bully" }
 sprite{ id = "npc/chicken_boy", description = "Chicken boy" }
 sprite{ id = "npc/drunk_man", description = "Drunk man" }
 sprite{ id = "npc/frog", description = "Frog" }
-sprite{ id = "npc/ghostly_proprietor", description = "Ghostly Pproprietor" }
+sprite{ id = "npc/ghostly_proprietor", description = "Ghostly Proprietor" }
+sprite{ id = "npc/great_fairy", description = "Great Fairy" }
 sprite{ id = "npc/little_tree", description = "Little tree" }
 sprite{ id = "npc/merchant_blue", description = "Static villager 11" }
 sprite{ id = "npc/merchant_green", description = "Green merchant" }
