@@ -86,21 +86,37 @@ local function initialize_meta()
   end
 
   enemy_meta.fire_reaction = 3  -- 3 life points by default.
+  enemy_meta.fire_reaction_sprite = {}
   function enemy_meta:get_fire_reaction(sprite)
+
+    if sprite ~= nil and self.fire_reaction_sprite[sprite] ~= nil then
+      return self.fire_reaction_sprite[sprite]
+    end
     return self.fire_reaction
   end
 
   function enemy_meta:set_fire_reaction(reaction, sprite)
-    -- TODO allow to set by sprite
+
     self.fire_reaction = reaction
   end
 
-  -- Change enemy:set_invincible() to also
+  function enemy_meta:set_fire_reaction_sprite(sprite, reaction)
+
+    self.fire_reaction_sprite[sprite] = reaction
+  end
+
+  -- Change the default enemy:set_invincible() to also
   -- take into account the fire.
   local previous_set_invincible = enemy_meta.set_invincible
   function enemy_meta:set_invincible()
     previous_set_invincible(self)
     self:set_fire_reaction("ignored")
   end
+  local previous_set_invincible_sprite = enemy_meta.set_invincible_sprite
+  function enemy_meta:set_invincible_sprite(sprite)
+    previous_set_invincible_sprite(self, sprite)
+    self:set_fire_reaction_sprite(sprite, "ignored")
+  end
+
 end
 initialize_meta()

@@ -84,22 +84,38 @@ local function initialize_meta()
   end
 
   enemy_meta.hammer_reaction = 3  -- 3 life points by default.
+  enemy_meta.hammer_reaction_sprite = {}
   function enemy_meta:get_hammer_reaction(sprite)
+
+    if sprite ~= nil and self.hammer_reaction_sprite[sprite] ~= nil then
+      return self.hammer_reaction_sprite[sprite]
+    end
     return self.hammer_reaction
   end
 
   function enemy_meta:set_hammer_reaction(reaction, sprite)
-    -- TODO allow to set by sprite
+
     self.hammer_reaction = reaction
   end
 
-  -- Change enemy:set_invincible() to also
+  function enemy_meta:set_hammer_reaction_sprite(sprite, reaction)
+
+    self.hammer_reaction_sprite[sprite] = reaction
+  end
+
+  -- Change the default enemy:set_invincible() to also
   -- take into account the hammer.
   local previous_set_invincible = enemy_meta.set_invincible
   function enemy_meta:set_invincible()
     previous_set_invincible(self)
     self:set_hammer_reaction("ignored")
   end
+  local previous_set_invincible_sprite = enemy_meta.set_invincible_sprite
+  function enemy_meta:set_invincible_sprite(sprite)
+    previous_set_invincible_sprite(self, sprite)
+    self:set_hammer_reaction_sprite(sprite, "ignored")
+  end
+
 end
 
 initialize_meta()

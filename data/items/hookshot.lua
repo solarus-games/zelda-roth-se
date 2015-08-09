@@ -452,13 +452,23 @@ local function initialize_meta()
   end
 
   enemy_meta.hookshot_reaction = 1  -- 1 life point by default.
+  enemy_meta.hookshot_reaction_sprite = {}
   function enemy_meta:get_hookshot_reaction(sprite)
+
+    if sprite ~= nil and self.hookshot_reaction_sprite[sprite] ~= nil then
+      return self.hookshot_reaction_sprite[sprite]
+    end
     return self.hookshot_reaction
   end
 
   function enemy_meta:set_hookshot_reaction(reaction, sprite)
-    -- TODO allow to set by sprite
+
     self.hookshot_reaction = reaction
+  end
+
+  function enemy_meta:set_hookshot_reaction_sprite(sprite, reaction)
+
+    self.hookshot_reaction_sprite[sprite] = reaction
   end
 
   -- Change the default enemy:set_invincible() to also
@@ -467,6 +477,11 @@ local function initialize_meta()
   function enemy_meta:set_invincible()
     previous_set_invincible(self)
     self:set_hookshot_reaction("ignored")
+  end
+  local previous_set_invincible_sprite = enemy_meta.set_invincible_sprite
+  function enemy_meta:set_invincible_sprite(sprite)
+    previous_set_invincible_sprite(self, sprite)
+    self:set_hookshot_reaction_sprite(sprite, "ignored")
   end
 
   -- Set up entity types catchable with the hookshot.

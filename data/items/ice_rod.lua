@@ -80,20 +80,37 @@ local function initialize_meta()
 
   enemy_meta.ice_reaction = 3  -- 3 life points by default.
   function enemy_meta:get_ice_reaction(sprite)
+  enemy_meta.ice_reaction_sprite = {}
+  function enemy_meta:get_ice_reaction(sprite)
+
+    if sprite ~= nil and self.ice_reaction_sprite[sprite] ~= nil then
+      return self.ice_reaction_sprite[sprite]
+    end
     return self.ice_reaction
   end
 
   function enemy_meta:set_ice_reaction(reaction, sprite)
-    -- TODO allow to set by sprite
+
     self.ice_reaction = reaction
   end
 
-  -- Change enemy:set_invincible() to also
+  function enemy_meta:set_ice_reaction_sprite(sprite, reaction)
+
+    self.ice_reaction_sprite[sprite] = reaction
+  end
+
+  -- Change the default enemy:set_invincible() to also
   -- take into account the ice.
   local previous_set_invincible = enemy_meta.set_invincible
   function enemy_meta:set_invincible()
     previous_set_invincible(self)
     self:set_ice_reaction("ignored")
   end
+  local previous_set_invincible_sprite = enemy_meta.set_invincible_sprite
+  function enemy_meta:set_invincible_sprite(sprite)
+    previous_set_invincible_sprite(self, sprite)
+    self:set_ice_reaction_sprite(sprite, "ignored")
+  end
+
 end
 initialize_meta()
