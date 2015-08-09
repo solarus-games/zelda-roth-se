@@ -4932,6 +4932,16 @@ door{
   sprite = "entities/door_normal",
 }
 
+enemy{
+  name = "auto_enemy_44",
+  layer = 1,
+  x = 472,
+  y = 2269,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
 tile{
   layer = 2,
   x = 0,

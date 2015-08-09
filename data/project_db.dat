@@ -95,6 +95,8 @@ sprite{ id = "enemies/sand_crab", description = "Sand Crab" }
 sprite{ id = "enemies/skeleton", description = "Skeleton" }
 sprite{ id = "enemies/skeleton_red", description = "Red Skeleton" }
 sprite{ id = "enemies/stal", description = "Stal" }
+sprite{ id = "enemies/tarosu_red", description = "Red Tarosu" }
+sprite{ id = "enemies/tarosu_red_weapon", description = "Red Tarosu's trident" }
 sprite{ id = "enemies/tektite_blue", description = "Blue Tektite" }
 sprite{ id = "enemies/tentacle", description = "Tentacle" }
 sprite{ id = "enemies/vitreous", description = "Vitreous" }
@@ -440,6 +442,7 @@ enemy{ id = "sand_crab", description = "Sand Crab" }
 enemy{ id = "skeleton", description = "Skeleton" }
 enemy{ id = "skeleton_red", description = "Red Skeleton" }
 enemy{ id = "stal", description = "Stal" }
+enemy{ id = "tarosu_red", description = "Red Tarosu" }
 enemy{ id = "tektite_blue", description = "Blue Tektite" }
 enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "vitreous", description = "Vitreous" }
