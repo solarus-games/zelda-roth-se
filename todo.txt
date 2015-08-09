@@ -9,4 +9,5 @@
 - Color of the shadow of signs
 - Musics
 - Title screens: Solarus Edition, Vincent Jouillat and Solarus Team
+- Blue Wizzrobes south
 

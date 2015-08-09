@@ -12133,7 +12133,7 @@ npc{
 
 custom_entity{
   layer = 1,
-  x = 40,
+  x = 32,
   y = 349,
   direction = 3,
   sprite = "entities/hammer_stake_green",
@@ -12142,7 +12142,7 @@ custom_entity{
 
 custom_entity{
   layer = 1,
-  x = 56,
+  x = 64,
   y = 349,
   direction = 3,
   sprite = "entities/hammer_stake_green",
@@ -12925,6 +12925,15 @@ teletransporter{
   height = 16,
   destination_map = "dungeon_7/1f",
   destination = "from_outside",
+}
+
+custom_entity{
+  layer = 1,
+  x = 48,
+  y = 349,
+  direction = 3,
+  sprite = "entities/hammer_stake_green",
+  model = "hammer_stake",
 }
 
 tile{

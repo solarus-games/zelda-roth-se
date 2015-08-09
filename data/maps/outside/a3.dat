@@ -5,7 +5,7 @@ properties{
   height = 960,
   world = "outside",
   tileset = "light_world",
-  music = "overworld",
+  music = "dark_world",
 }
 
 tile{
@@ -8281,7 +8281,7 @@ tile{
   layer = 2,
   x = 1344,
   y = 280,
-  width = 208,
+  width = 160,
   height = 8,
   pattern = "cliff.top.1",
 }
@@ -10640,6 +10640,15 @@ tile{
   x = 512,
   y = 440,
   width = 112,
+  height = 8,
+  pattern = "cliff.top.1",
+}
+
+tile{
+  layer = 2,
+  x = 1536,
+  y = 280,
+  width = 16,
   height = 8,
   pattern = "cliff.top.1",
 }
