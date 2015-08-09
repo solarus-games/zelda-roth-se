@@ -23,7 +23,7 @@ local function victory_cutscene()
          game:save()
         end
         hero:unfreeze()
-        map:open_doors("boss_door", true)
+        map:open_doors("boss_door")
       end)
     end)
   end)

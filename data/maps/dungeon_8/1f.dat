@@ -4933,13 +4933,208 @@ door{
 }
 
 enemy{
-  name = "auto_enemy_44",
+  name = "auto_enemy_auto_door_b_1",
   layer = 1,
-  x = 472,
-  y = 2269,
+  x = 904,
+  y = 2221,
   direction = 3,
   breed = "tarosu_red",
   treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_auto_door_b_2",
+  layer = 1,
+  x = 904,
+  y = 2349,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+chest{
+  layer = 1,
+  x = 800,
+  y = 2285,
+  treasure_name = "map",
+  treasure_savegame_variable = "dungeon_8_map_chest",
+  sprite = "entities/chest",
+}
+
+enemy{
+  name = "auto_enemy_auto_door_d",
+  layer = 1,
+  x = 800,
+  y = 1805,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_auto_door_c",
+  layer = 1,
+  x = 1120,
+  y = 1805,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+chest{
+  layer = 1,
+  x = 1120,
+  y = 1565,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_8_1f_key_chest_a",
+  sprite = "entities/chest",
+}
+
+enemy{
+  name = "auto_enemy_1",
+  layer = 1,
+  x = 480,
+  y = 1909,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+chest{
+  layer = 1,
+  x = 480,
+  y = 1565,
+  treasure_name = "compass",
+  treasure_savegame_variable = "dungeon_8_compass_chest",
+  sprite = "entities/chest",
+}
+
+enemy{
+  name = "auto_enemy_auto_door_e",
+  layer = 1,
+  x = 136,
+  y = 1533,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+chest{
+  layer = 1,
+  x = 160,
+  y = 1805,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_8_1f_key_chest_b",
+  sprite = "entities/chest",
+}
+
+enemy{
+  name = "auto_enemy_2",
+  layer = 1,
+  x = 392,
+  y = 1117,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_3",
+  layer = 1,
+  x = 568,
+  y = 1117,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_4",
+  layer = 1,
+  x = 824,
+  y = 1549,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_5",
+  layer = 1,
+  x = 712,
+  y = 1117,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_6",
+  layer = 1,
+  x = 888,
+  y = 1117,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_auto_door_g_1",
+  layer = 1,
+  x = 688,
+  y = 485,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_auto_door_g_2",
+  layer = 1,
+  x = 736,
+  y = 533,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_auto_door_g_3",
+  layer = 1,
+  x = 800,
+  y = 589,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_auto_door_g_4",
+  layer = 1,
+  x = 864,
+  y = 533,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_auto_door_g_5",
+  layer = 1,
+  x = 912,
+  y = 485,
+  direction = 3,
+  breed = "tarosu_red",
+  treasure_name = "random_weapon",
+}
+
+chest{
+  layer = 1,
+  x = 800,
+  y = 125,
+  treasure_name = "boss_key",
+  treasure_savegame_variable = "dungeon_8_boss_key_chest",
+  sprite = "entities/chest",
 }
 
 tile{
