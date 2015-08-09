@@ -19,7 +19,7 @@ function enemy:on_restarted()
 
   local map = enemy:get_map()
   local hero = map:get_hero()
-  sol.timer.start(enemy, 3000, function()
+  sol.timer.start(enemy, 1300, function()
     if enemy:get_distance(hero) < 500 and enemy:is_in_same_region(hero) then
 
       if not map.medusa_recent_sound then

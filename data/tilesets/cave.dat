@@ -191,7 +191,7 @@ tile_pattern{
 
 tile_pattern{
   id = "barrier.1",
-  ground = "wall",
+  ground = "low_wall",
   default_layer = 1,
   x = 56,
   y = 40,
@@ -202,7 +202,7 @@ tile_pattern{
 
 tile_pattern{
   id = "barrier.2",
-  ground = "wall",
+  ground = "low_wall",
   default_layer = 1,
   x = 64,
   y = 40,
@@ -213,7 +213,7 @@ tile_pattern{
 
 tile_pattern{
   id = "barrier.border",
-  ground = "wall",
+  ground = "low_wall",
   default_layer = 1,
   x = 48,
   y = 40,

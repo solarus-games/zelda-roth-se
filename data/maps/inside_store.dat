@@ -2102,6 +2102,42 @@ custom_entity{
   model = "torch",
 }
 
+custom_entity{
+  layer = 1,
+  x = 376,
+  y = 701,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 616,
+  y = 701,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 616,
+  y = 861,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 1,
+  x = 376,
+  y = 861,
+  direction = 1,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
 tile{
   layer = 2,
   x = 352,

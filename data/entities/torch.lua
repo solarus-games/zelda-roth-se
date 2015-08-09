@@ -65,27 +65,39 @@ end
 
 local function on_collision(torch, other, torch_sprite, other_sprite)
 
-  if other:get_type() ~= "custom_entity" then
-    return
-  end
+  if other:get_type() == "custom_entity" then
 
-  local other_model = other:get_model()
-  if other_model == "fire" then
-    if not torch:is_lit() then
-      torch:set_lit(true)
-      if torch.on_lit ~= nil then
-        torch:on_lit()
+    local other_model = other:get_model()
+    if other_model == "fire" then
+      if not torch:is_lit() then
+        torch:set_lit(true)
+        if torch.on_lit ~= nil then
+          torch:on_lit()
+        end
       end
-    end
-    other:remove()
-  elseif other_model == "ice_beam" then
-    if torch:is_lit() then
-      torch:set_lit(false)
-      if torch.on_unlit ~= nil then
-        torch:on_unlit()
+      other:remove()
+    elseif other_model == "ice_beam" then
+      if torch:is_lit() then
+        torch:set_lit(false)
+        if torch.on_unlit ~= nil then
+          torch:on_unlit()
+        end
       end
+      other:remove()
     end
-    other:remove()
+
+  elseif other:get_type() == "enemy" then
+
+    local other_model = other:get_breed()
+    if other_model == "fireball_red_small" then
+      if not torch:is_lit() then
+        torch:set_lit(true)
+        if torch.on_lit ~= nil then
+          torch:on_lit()
+        end
+      end
+      other:remove()
+    end
   end
 end
 

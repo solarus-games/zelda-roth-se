@@ -56,6 +56,7 @@ sprite{ id = "enemies/armos", description = "Armos" }
 sprite{ id = "enemies/armos_knight", description = "Armos Knight" }
 sprite{ id = "enemies/arrghus", description = "Arrghus" }
 sprite{ id = "enemies/bari_blue", description = "Blue Bari" }
+sprite{ id = "enemies/blind", description = "Blind" }
 sprite{ id = "enemies/cactus", description = "Cactus" }
 sprite{ id = "enemies/chasupa", description = "Chasupa" }
 sprite{ id = "enemies/chicken", description = "Chicken" }
@@ -397,6 +398,7 @@ enemy{ id = "armos", description = "Armos" }
 enemy{ id = "armos_knight", description = "Armos knight" }
 enemy{ id = "arrghus", description = "Arrghus" }
 enemy{ id = "bari_blue", description = "Blue Bari" }
+enemy{ id = "blind", description = "Blind" }
 enemy{ id = "chasupa", description = "Chasupa" }
 enemy{ id = "chicken", description = "Chicken" }
 enemy{ id = "eyegore_green", description = "Green Eyegore" }

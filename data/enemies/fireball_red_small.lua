@@ -32,10 +32,12 @@ local function go(angle)
   end
 
   -- Compute the coordinate offset of follower sprites.
-  local x = -math.cos(angle) * 10
-  local y = math.sin(angle) * 10
+  local x = math.cos(angle) * 10
+  local y = -math.sin(angle) * 10
+  sprites[1]:set_xy(2 * x, 2 * y)
   sprites[2]:set_xy(x, y)
-  sprites[3]:set_xy(2 * x, 2 * y)
+
+  sprites[1]:set_animation("walking")
   sprites[2]:set_animation("following_1")
   sprites[3]:set_animation("following_2")
 

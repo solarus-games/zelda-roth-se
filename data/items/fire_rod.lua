@@ -63,8 +63,8 @@ function item:on_using()
   -- Make sure that the fire rod stays on the hero.
   -- Even if he is using this item, he can move
   -- because of holes or ice.
-  sol.timer.start(ice_rod, 10, function()
-    ice_rod:set_position(hero:get_position())    
+  sol.timer.start(fire_rod, 10, function()
+    fire_rod:set_position(hero:get_position())    
     return true
   end)
 
