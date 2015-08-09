@@ -73,6 +73,7 @@ sprite{ id = "enemies/geldman", description = "Geldman" }
 sprite{ id = "enemies/gibdo", description = "Gibdo" }
 sprite{ id = "enemies/goriya_green", description = "Green Goriya" }
 sprite{ id = "enemies/goriya_red", description = "Red Goriya" }
+sprite{ id = "enemies/helmasaur_king", description = "Helmasaur King" }
 sprite{ id = "enemies/hinox", description = "Hinox" }
 sprite{ id = "enemies/hover", description = "Hover" }
 sprite{ id = "enemies/keese", description = "Keese" }
@@ -420,6 +421,7 @@ enemy{ id = "geldman", description = "Geldman" }
 enemy{ id = "gibdo", description = "Gibdo" }
 enemy{ id = "goriya_green", description = "Green Goriya" }
 enemy{ id = "goriya_red", description = "Red Goriya" }
+enemy{ id = "helmasaur_king", description = "Helmasaur King" }
 enemy{ id = "hinox", description = "Hinox" }
 enemy{ id = "hover", description = "Hover" }
 enemy{ id = "keese", description = "Keese" }

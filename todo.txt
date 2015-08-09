@@ -11,4 +11,6 @@
 - Title screens: Solarus Edition, Vincent Jouillat and Solarus Team
 - Blue Wizzrobes south
 - Ranks
+- Check heart pieces
+- Check monsters encyclopedia
 
