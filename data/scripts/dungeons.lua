@@ -76,6 +76,17 @@ function dungeon_manager:create(game)
         savegame_variable = "dungeon_6_boss",
       },
     },
+    [7] = {
+      lowest_floor = 0,
+      highest_floor = 1,
+      maps = { "dungeon_7/1f", "dungeon_7/2f" },
+      boss = {
+        floor = 1,
+        x = 480 + 800,
+        y = 640 + 360,
+        savegame_variable = "dungeon_7_boss",
+      },
+    },
   }
 
   -- Returns the index of the current dungeon if any, or nil.

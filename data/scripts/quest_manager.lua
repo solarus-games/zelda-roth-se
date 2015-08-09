@@ -255,6 +255,17 @@ local function initialize_sensor()
       map:set_doors_open(door_prefix, false)
       return
     end
+
+    -- Sensors named "weak_floor_X_sensor" detect explosions on a weak floor dynamic tile called "weak_floor_x".
+    local tile_name = name:match("^weak_floor_([a-zA-X0-9_]+)_sensor")
+    if tile_name ~= nil then
+      local tile map:get_entity(tile_name)
+      if tile ~= nil then
+        tile:remove()
+      end
+      return
+    end
+
   end
 
   function sensor_meta:on_activated_repeat()

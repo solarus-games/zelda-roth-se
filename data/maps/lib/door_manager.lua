@@ -4,6 +4,7 @@
 -- the last enemy with prefix auto_enemy_<door_name>,
 -- or when activating the switch auto_switch_<door_name>,
 -- or when lighting the last torch auto_torch_<door_name>.
+-- or when unlighting the last torch auto_torch_lit_<door_name>.
 
 local door_manager = {}
 
@@ -19,6 +20,7 @@ function door_manager:manage_map(map)
 
     -- If there are torches whose name matches the door, link them to the door.
     door_manager:open_when_torches_lit(door)
+    door_manager:open_when_torches_unlit(door)
   end
 end
 
@@ -93,6 +95,36 @@ function door_manager:open_when_torches_lit(door)
     torch.on_lit = torch_on_lit
     if remaining == 0 then
       -- All torches of this door are already lit.
+      map:set_doors_open(door_prefix, true)
+    end
+  end
+end
+
+function door_manager:open_when_torches_unlit(door)
+
+  local door_prefix = door:get_name()
+  local torch_prefix = "auto_torch_lit_" .. door_prefix
+
+  local map = door:get_map()
+  local torches = {}
+  local remaining = 0
+  local function torch_on_unlit()
+    if door:is_closed() then
+      remaining = remaining - 1
+      if remaining == 0 then
+        sol.audio.play_sound("secret")
+        map:open_doors(door_prefix)
+      end
+    end
+  end
+
+  for torch in map:get_entities(torch_prefix) do
+    if torch:is_lit() then
+      remaining = remaining + 1
+    end
+    torch.on_lit = torch_on_lit
+    if remaining == 0 then
+      -- All torches of this door are already unlit.
       map:set_doors_open(door_prefix, true)
     end
   end

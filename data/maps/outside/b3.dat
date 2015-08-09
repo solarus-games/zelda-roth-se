@@ -12909,6 +12909,24 @@ pickable{
   treasure_savegame_variable = "outside_b3_piece_of_heart_b",
 }
 
+destination{
+  name = "from_dungeon_7",
+  layer = 1,
+  x = 432,
+  y = 733,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 424,
+  y = 704,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_7/1f",
+  destination = "from_outside",
+}
+
 tile{
   layer = 2,
   x = 256,
