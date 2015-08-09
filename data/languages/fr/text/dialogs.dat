@@ -848,6 +848,22 @@ place d'une ancienne oasis.
 }
 
 dialog{
+  id = "outside_a3.ne_sign",
+  text = [[
+O : Roc de la Tortue
+E : Lac Hylia
+]]
+}
+
+dialog{
+  id = "outside_a3.se_sign",
+  text = [[
+O : Roc de la Tortue
+E : Lac Hylia
+]]
+}
+
+dialog{
   id = "outside_b2.bottle_merchant.done",
   text = [[
 Désolé, c'était mon seul flacon.

@@ -1,0 +1,14 @@
+animation{
+  name = "up",
+  src_image = "entities/turtle_rock_entrance.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37 },
+  },
+}
+animation{
+  name = "down",
+  src_image = "entities/turtle_rock_entrance.png",
+  directions = {
+    { x = 0, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}

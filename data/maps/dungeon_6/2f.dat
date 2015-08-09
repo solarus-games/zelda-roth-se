@@ -1,0 +1,11 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 2240,
+  height = 2400,
+  world = "dungeon_6",
+  floor = 1,
+  tileset = "cave",
+  music = "dark_world_dungeon",
+}
+

@@ -52,5 +52,10 @@ stake:add_collision_test(test_collision_with_hero_hammer, function(stake, entity
 
   -- Disable collision detection, this is no longer needed.
   stake:clear_collision_tests()
+
+  -- Notify people.
+  if stake.on_pushed ~= nil then
+    stake:on_pushed()
+  end
 end)
 

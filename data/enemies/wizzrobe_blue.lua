@@ -36,7 +36,7 @@ local function shoot()
     -- Avoid loudy simultaneous sounds if there are several wizzrobes.
     map.wizzrobe_recent_sound = true
     sol.timer.start(map, 200, function()
-      map.wizzrobe_recent_sound = false
+      map.wizzrobe_recent_sound = nil
     end)
   end
   beam:go(direction)

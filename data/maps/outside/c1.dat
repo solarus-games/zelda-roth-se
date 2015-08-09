@@ -5598,15 +5598,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 888,
-  y = 32,
-  width = 16,
-  height = 8,
-  pattern = "cave_entrance_blast",
-}
-
-tile{
-  layer = 1,
   x = 608,
   y = 136,
   width = 64,
@@ -6107,15 +6098,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "grass.soil.diag.1",
-}
-
-tile{
-  layer = 1,
-  x = 888,
-  y = 40,
-  width = 16,
-  height = 8,
-  pattern = "grass.cave_entrance_blast",
 }
 
 tile{
@@ -8141,6 +8123,24 @@ tile{
   width = 48,
   height = 16,
   pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 1,
+  x = 888,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "cave_entrance_blast",
+}
+
+tile{
+  layer = 1,
+  x = 888,
+  y = 40,
+  width = 16,
+  height = 8,
+  pattern = "grass.cave_entrance_blast",
 }
 
 teletransporter{

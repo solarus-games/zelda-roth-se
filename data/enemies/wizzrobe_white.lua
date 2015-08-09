@@ -22,7 +22,7 @@ local function shoot()
   local x, y, layer = enemy:get_position()
   local direction = sprite:get_direction()
 
-  -- Where to start the fire from.
+  -- Where to start the beam from.
   local dxy = {
     {  0, -5 },
     {  0, -5 },
@@ -41,7 +41,7 @@ local function shoot()
     -- Avoid loudy simultaneous sounds if there are several wizzrobes.
     map.wizzrobe_recent_sound = true
     sol.timer.start(map, 200, function()
-      map.wizzrobe_recent_sound = false
+      map.wizzrobe_recent_sound = nil
     end)
   end
   beam:go(direction)

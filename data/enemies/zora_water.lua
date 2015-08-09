@@ -25,7 +25,7 @@ function enemy:on_restarted()
   local sprite = enemy:get_sprite()
   local hero = enemy:get_map():get_hero()
   sol.timer.start(enemy, 3000, function()
-    if enemy:get_distance(hero) < 300 then
+    if enemy:get_distance(hero) < 300 and enemy:is_in_same_region(hero)  then
       sol.audio.play_sound("zora")
       sprite:set_animation("shooting")
       enemy:create_enemy({
