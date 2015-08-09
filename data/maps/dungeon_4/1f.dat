@@ -7503,7 +7503,7 @@ tile{
   y = 512,
   width = 112,
   height = 32,
-  pattern = "1",
+  pattern = "block.low_wall",
 }
 
 tile{
@@ -7512,7 +7512,7 @@ tile{
   y = 512,
   width = 112,
   height = 32,
-  pattern = "1",
+  pattern = "block.low_wall",
 }
 
 tile{

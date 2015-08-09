@@ -3678,7 +3678,7 @@ tile_pattern{
 
 tile_pattern{
   id = "water_shallow",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = { 0, 16, 32 },
   y = { 352, 352, 352 },
@@ -3688,122 +3688,134 @@ tile_pattern{
 
 tile_pattern{
   id = "water_shallow.1",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 16,
   y = 336,
   width = 8,
   height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
   id = "water_shallow.2",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 24,
   y = 344,
   width = 8,
   height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
   id = "water_shallow.3",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 16,
   y = 344,
   width = 8,
   height = 8,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
   id = "water_shallow.4",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 24,
   y = 336,
   width = 8,
   height = 8,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
   id = "water_shallow.corner.1",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 0,
   y = 336,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
   id = "water_shallow.corner.2",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 8,
   y = 336,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
   id = "water_shallow.corner.3",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 0,
   y = 344,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
   id = "water_shallow.corner.4",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 8,
   y = 344,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
   id = "water_shallow.corner_reverse.1",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 32,
   y = 336,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
   id = "water_shallow.corner_reverse.2",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 40,
   y = 336,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
   id = "water_shallow.corner_reverse.3",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 32,
   y = 344,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
   id = "water_shallow.corner_reverse.4",
-  ground = "shallow_water",
+  ground = "deep_water",
   default_layer = 1,
   x = 40,
   y = 344,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
