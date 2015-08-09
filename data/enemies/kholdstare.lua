@@ -1,4 +1,4 @@
--- Blind the thief boss.
+-- Kholdstare boss.
 
 local enemy = ...
 

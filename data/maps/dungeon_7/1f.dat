@@ -5222,6 +5222,186 @@ custom_entity{
   model = "torch",
 }
 
+enemy{
+  name = "auto_enemy_auto_door_c",
+  layer = 1,
+  x = 480,
+  y = 1093,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_magic",
+}
+
+enemy{
+  name = "auto_enemy_2",
+  layer = 1,
+  x = 480,
+  y = 725,
+  direction = 3,
+  breed = "zazak_blue",
+  treasure_name = "random_rupee",
+}
+
+chest{
+  layer = 1,
+  x = 1128,
+  y = 589,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_7_1f_key_chest_a",
+  sprite = "entities/chest",
+}
+
+enemy{
+  name = "auto_enemy_3",
+  layer = 1,
+  x = 1352,
+  y = 845,
+  direction = 3,
+  breed = "zazak_blue",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_4",
+  layer = 1,
+  x = 1528,
+  y = 845,
+  direction = 3,
+  breed = "zazak_blue",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_5",
+  layer = 1,
+  x = 1352,
+  y = 381,
+  direction = 3,
+  breed = "zazak_blue",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_6",
+  layer = 1,
+  x = 1528,
+  y = 381,
+  direction = 3,
+  breed = "zazak_blue",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_42",
+  layer = 1,
+  x = 1440,
+  y = 45,
+  direction = 3,
+  breed = "freezor",
+  treasure_name = "random_magic",
+}
+
+block{
+  name = "auto_block_1",
+  layer = 1,
+  x = 1320,
+  y = 125,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+enemy{
+  name = "auto_enemy_1",
+  layer = 1,
+  x = 1120,
+  y = 125,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_magic",
+}
+
+enemy{
+  name = "auto_enemy_7",
+  layer = 1,
+  x = 480,
+  y = 125,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_magic",
+}
+
+enemy{
+  name = "auto_enemy_43",
+  layer = 1,
+  x = 160,
+  y = 45,
+  direction = 3,
+  breed = "freezor",
+  treasure_name = "random_magic",
+}
+
+block{
+  name = "auto_block_2",
+  layer = 1,
+  x = 160,
+  y = 205,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+enemy{
+  name = "auto_enemy_8",
+  layer = 1,
+  x = 72,
+  y = 845,
+  direction = 3,
+  breed = "zazak_blue",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_9",
+  layer = 1,
+  x = 248,
+  y = 845,
+  direction = 3,
+  breed = "zazak_blue",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_10",
+  layer = 1,
+  x = 72,
+  y = 381,
+  direction = 3,
+  breed = "zazak_blue",
+  treasure_name = "random_rupee",
+}
+
+enemy{
+  name = "auto_enemy_11",
+  layer = 1,
+  x = 248,
+  y = 381,
+  direction = 3,
+  breed = "zazak_blue",
+  treasure_name = "random_rupee",
+}
+
+chest{
+  layer = 1,
+  x = 160,
+  y = 1085,
+  treasure_name = "ice_rod",
+  treasure_savegame_variable = "dungeon_7_ice_rod_chest",
+  sprite = "entities/chest",
+}
+
 tile{
   layer = 2,
   x = 784,
