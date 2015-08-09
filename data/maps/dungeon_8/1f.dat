@@ -1,5 +1,5 @@
 properties{
-  x = 640,
+  x = 960,
   y = 0,
   width = 1280,
   height = 2400,
@@ -5135,6 +5135,17 @@ chest{
   treasure_name = "boss_key",
   treasure_savegame_variable = "dungeon_8_boss_key_chest",
   sprite = "entities/chest",
+}
+
+enemy{
+  name = "boss",
+  layer = 1,
+  x = 480,
+  y = 845,
+  direction = 0,
+  breed = "helmasaur_king",
+  rank = 2,
+  savegame_variable = "dungeon_8_boss",
 }
 
 tile{
