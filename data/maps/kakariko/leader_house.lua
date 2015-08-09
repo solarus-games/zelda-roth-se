@@ -10,10 +10,10 @@ function leader_npc:on_interaction()
   elseif not game:has_item("bow") then
     game:start_dialog("kakariko.leader_house.go_bow")
 
-  elseif not game:are_all_dungeons_finished() then
+  elseif not game:has_all_crystals() then
     game:start_dialog("kakariko.leader_house.go_crystals")
 
-  elseif not game:get_value("castle.found_ganon") or  -- TODO set this variable one day
+  elseif not game:get_value("dungeon_9.found_ganon") or  -- TODO set this variable one day
       game:get_item("sword"):get_variant() >= 3 then
     game:start_dialog("kakariko.leader_house.go_ganon")
 

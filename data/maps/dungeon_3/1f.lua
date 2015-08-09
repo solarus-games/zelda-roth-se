@@ -41,24 +41,7 @@ end
 function map:on_obtained_treasure(item, variant, savegame_variable)
 
   if item:get_name() == "magic_crystal" then
-    hero:freeze()
-    game:set_dungeon_finished()
-    sol.audio.play_music("victory")
-    hero:set_direction(3)
-    game:add_max_life(2)
-    game:set_life(game:get_max_life())
-    sol.timer.start(9000, function()
-      hero:start_victory(function()
-        game:start_dialog("dungeon_finished_save", function(answer)
-          sol.audio.play_sound("danger")
-          if answer == 2 then 
-            game:save()
-          end
-          hero:unfreeze()
-          map:open_doors("boss_door", true)
-        end)
-      end)
-    end)
+    item:start_dungeon_finished_cutscene()
   end
 end
 

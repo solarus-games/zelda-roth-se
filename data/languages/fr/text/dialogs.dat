@@ -389,18 +389,23 @@ Merci.
 }
 
 dialog{
-  id = "dungeon_1.crystal_why",
+  id = "crystal.1",
   text = [[
 A quoi pourra-t-il bien servir ?
 ]]
 }
 
 dialog{
-  id = "dungeon_1.welcome",
+  id = "crystal.6",
   text = [[
-                   Niveau 1
+Il ne t'en manque plus qu'un seul !
+]]
+}
 
-              Temple de la Forêt
+dialog{
+  id = "crystal.7",
+  text = [[
+Tu as tous les cristaux, cours au château sauver Zelda !
 ]]
 }
 

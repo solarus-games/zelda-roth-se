@@ -219,10 +219,17 @@ local function initialize_sensor()
       return
     end
 
-    -- Sensors prefix by "save_solid_ground_sensor" are where the hero come back
+    -- Sensors prefixed by "save_solid_ground_sensor" are where the hero come back
     -- when falling into a hole or other bad ground.
     if name:match("^save_solid_ground_sensor") then
       hero:save_solid_ground()
+      return
+    end
+ 
+    -- Sensors prefixed by "reset_solid_ground_sensor" clear any place for the hero
+    -- to come back when falling into a hole or other bad ground.
+    if name:match("^reset_solid_ground_sensor") then
+      hero:reset_solid_ground()
       return
     end
  

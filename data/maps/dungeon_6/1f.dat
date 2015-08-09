@@ -6,7 +6,7 @@ properties{
   world = "dungeon_6",
   floor = 0,
   tileset = "cave",
-  music = "dark_world",
+  music = "dark_world_dungeon",
 }
 
 tile{
@@ -9471,15 +9471,6 @@ tile{
 tile{
   layer = 1,
   x = 2072,
-  y = 1192,
-  width = 16,
-  height = 16,
-  pattern = "floor.1",
-}
-
-tile{
-  layer = 1,
-  x = 2072,
   y = 696,
   width = 16,
   height = 16,
@@ -11585,10 +11576,10 @@ tile{
 
 tile{
   layer = 1,
-  x = 1072,
-  y = 560,
-  width = 96,
-  height = 80,
+  x = 1056,
+  y = 552,
+  width = 128,
+  height = 96,
   pattern = "floor.14",
 }
 
@@ -11759,25 +11750,25 @@ tile{
   x = 1096,
   y = 536,
   width = 8,
-  height = 16,
+  height = 8,
   pattern = "hole.4",
 }
 
 tile{
   layer = 1,
-  x = 1064,
-  y = 560,
+  x = 1048,
+  y = 552,
   width = 8,
-  height = 80,
+  height = 96,
   pattern = "hole.4",
 }
 
 tile{
   layer = 1,
   x = 1096,
-  y = 648,
+  y = 656,
   width = 8,
-  height = 16,
+  height = 8,
   pattern = "hole.4",
 }
 
@@ -11804,25 +11795,25 @@ tile{
   x = 1136,
   y = 536,
   width = 8,
-  height = 16,
+  height = 8,
   pattern = "hole.3",
 }
 
 tile{
   layer = 1,
-  x = 1168,
-  y = 560,
+  x = 1184,
+  y = 552,
   width = 8,
-  height = 80,
+  height = 96,
   pattern = "hole.3",
 }
 
 tile{
   layer = 1,
   x = 1136,
-  y = 648,
+  y = 656,
   width = 8,
-  height = 16,
+  height = 8,
   pattern = "hole.3",
 }
 
@@ -11855,9 +11846,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 1072,
-  y = 640,
-  width = 24,
+  x = 1056,
+  y = 648,
+  width = 40,
   height = 8,
   pattern = "hole.1",
 }
@@ -11865,8 +11856,8 @@ tile{
 tile{
   layer = 1,
   x = 1144,
-  y = 640,
-  width = 24,
+  y = 648,
+  width = 40,
   height = 8,
   pattern = "hole.1",
 }
@@ -11891,9 +11882,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 1072,
-  y = 552,
-  width = 24,
+  x = 1056,
+  y = 544,
+  width = 40,
   height = 8,
   pattern = "hole.2",
 }
@@ -11901,8 +11892,8 @@ tile{
 tile{
   layer = 1,
   x = 1144,
-  y = 552,
-  width = 24,
+  y = 544,
+  width = 40,
   height = 8,
   pattern = "hole.2",
 }
@@ -11919,7 +11910,7 @@ tile{
 tile{
   layer = 1,
   x = 1136,
-  y = 552,
+  y = 544,
   width = 8,
   height = 8,
   pattern = "hole.corner.3",
@@ -11928,7 +11919,7 @@ tile{
 tile{
   layer = 1,
   x = 1096,
-  y = 640,
+  y = 648,
   width = 8,
   height = 8,
   pattern = "hole.corner.2",
@@ -11937,7 +11928,7 @@ tile{
 tile{
   layer = 1,
   x = 1136,
-  y = 640,
+  y = 648,
   width = 8,
   height = 8,
   pattern = "hole.corner.1",
@@ -11963,8 +11954,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1064,
-  y = 640,
+  x = 1048,
+  y = 648,
   width = 8,
   height = 8,
   pattern = "hole.corner_reverse.2",
@@ -11972,8 +11963,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1168,
-  y = 640,
+  x = 1184,
+  y = 648,
   width = 8,
   height = 8,
   pattern = "hole.corner_reverse.1",
@@ -11981,8 +11972,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1168,
-  y = 552,
+  x = 1184,
+  y = 544,
   width = 8,
   height = 8,
   pattern = "hole.corner_reverse.3",
@@ -11991,7 +11982,7 @@ tile{
 tile{
   layer = 1,
   x = 1096,
-  y = 552,
+  y = 544,
   width = 8,
   height = 8,
   pattern = "hole.corner.4",
@@ -11999,8 +11990,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1064,
-  y = 552,
+  x = 1048,
+  y = 544,
   width = 8,
   height = 8,
   pattern = "hole.corner_reverse.4",
@@ -14562,6 +14553,96 @@ tile{
   pattern = "floor.1",
 }
 
+tile{
+  layer = 1,
+  x = 592,
+  y = 2080,
+  width = 16,
+  height = 8,
+  pattern = "hole.1",
+}
+
+tile{
+  layer = 1,
+  x = 2072,
+  y = 1192,
+  width = 16,
+  height = 16,
+  pattern = "floor.1",
+}
+
+sensor{
+  name = "reset_solid_ground_sensor_8",
+  layer = 1,
+  x = 480,
+  y = 1461,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "reset_solid_ground_sensor_6",
+  layer = 1,
+  x = 656,
+  y = 1565,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "reset_solid_ground_sensor_7",
+  layer = 1,
+  x = 624,
+  y = 1565,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "reset_solid_ground_sensor_5",
+  layer = 1,
+  x = 944,
+  y = 1565,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "reset_solid_ground_sensor_4",
+  layer = 1,
+  x = 1584,
+  y = 1565,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "reset_solid_ground_sensor_3",
+  layer = 1,
+  x = 1296,
+  y = 1565,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "reset_solid_ground_sensor_2",
+  layer = 1,
+  x = 1936,
+  y = 1565,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "reset_solid_ground_sensor_1",
+  layer = 1,
+  x = 2080,
+  y = 1669,
+  width = 16,
+  height = 16,
+}
+
 sensor{
   name = "save_solid_ground_sensor_31",
   layer = 1,
@@ -15231,7 +15312,7 @@ door{
   sprite = "entities/door_small_key",
   savegame_variable = "dungeon_6_1f_door_c",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_3_small_keys",
+  opening_condition = "dungeon_6_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "small_key_required",
 }
@@ -15243,9 +15324,9 @@ door{
   y = 1792,
   direction = 2,
   sprite = "entities/door_small_key",
-  savegame_variable = "dungeon_3_1f_door_c",
+  savegame_variable = "dungeon_6_1f_door_c",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_3_small_keys",
+  opening_condition = "dungeon_6_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "small_key_required",
 }
@@ -15259,7 +15340,7 @@ door{
   sprite = "entities/door_small_key",
   savegame_variable = "dungeon_6_1f_door_d",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_3_small_keys",
+  opening_condition = "dungeon_6_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "small_key_required",
 }
@@ -15271,9 +15352,9 @@ door{
   y = 1552,
   direction = 2,
   sprite = "entities/door_small_key",
-  savegame_variable = "dungeon_3_1f_door_d",
+  savegame_variable = "dungeon_6_1f_door_d",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_3_small_keys",
+  opening_condition = "dungeon_6_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "small_key_required",
 }
@@ -15287,7 +15368,7 @@ door{
   sprite = "entities/door_small_key",
   savegame_variable = "dungeon_6_1f_door_e",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_3_small_keys",
+  opening_condition = "dungeon_6_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "small_key_required",
 }
@@ -15299,9 +15380,9 @@ door{
   y = 1552,
   direction = 2,
   sprite = "entities/door_small_key",
-  savegame_variable = "dungeon_3_1f_door_e",
+  savegame_variable = "dungeon_6_1f_door_e",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_3_small_keys",
+  opening_condition = "dungeon_6_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "small_key_required",
 }
@@ -16371,29 +16452,9 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_auto_door_g_6",
-  layer = 1,
-  x = 1240,
-  y = 285,
-  direction = 0,
-  sprite = "entities/torch",
-  model = "torch",
-}
-
-custom_entity{
-  name = "auto_torch_auto_door_g_7",
+  name = "auto_torch_auto_door_f_1",
   layer = 1,
   x = 1000,
-  y = 445,
-  direction = 0,
-  sprite = "entities/torch",
-  model = "torch",
-}
-
-custom_entity{
-  name = "auto_torch_auto_door_g_8",
-  layer = 1,
-  x = 1240,
   y = 445,
   direction = 0,
   sprite = "entities/torch",
@@ -16625,20 +16686,10 @@ custom_entity{
 }
 
 custom_entity{
-  name = "auto_torch_auto_door_g_5",
+  name = "auto_torch_auto_door_n_1",
   layer = 1,
   x = 1640,
   y = 1725,
-  direction = 0,
-  sprite = "entities/torch",
-  model = "torch",
-}
-
-custom_entity{
-  name = "auto_torch_auto_door_g_9",
-  layer = 1,
-  x = 1640,
-  y = 2125,
   direction = 0,
   sprite = "entities/torch",
   model = "torch",
@@ -16651,26 +16702,6 @@ custom_entity{
   direction = 0,
   sprite = "entities/hook_brown",
   model = "hookable",
-}
-
-custom_entity{
-  name = "auto_torch_auto_door_g_10",
-  layer = 1,
-  x = 2200,
-  y = 1725,
-  direction = 0,
-  sprite = "entities/torch",
-  model = "torch",
-}
-
-custom_entity{
-  name = "auto_torch_auto_door_g_11",
-  layer = 1,
-  x = 2200,
-  y = 2125,
-  direction = 0,
-  sprite = "entities/torch",
-  model = "torch",
 }
 
 teletransporter{
@@ -18075,6 +18106,66 @@ sensor{
   y = 2285,
   width = 16,
   height = 16,
+}
+
+custom_entity{
+  name = "auto_torch_auto_door_f_2",
+  layer = 1,
+  x = 1240,
+  y = 285,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  name = "auto_torch_auto_door_f_3",
+  layer = 1,
+  x = 1240,
+  y = 445,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  name = "auto_torch_auto_door_n_2",
+  layer = 1,
+  x = 2200,
+  y = 1725,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  name = "auto_torch_auto_door_n_3",
+  layer = 1,
+  x = 2200,
+  y = 2125,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  name = "auto_torch_auto_door_n_4",
+  layer = 1,
+  x = 1640,
+  y = 2125,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+enemy{
+  name = "auto_enemy_75",
+  layer = 1,
+  x = 2080,
+  y = 1021,
+  direction = 3,
+  breed = "skeleton_red",
+  treasure_name = "random_weapon",
 }
 
 tile{
