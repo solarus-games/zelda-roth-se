@@ -6,11 +6,14 @@ door_manager:manage_map(map)
 local separator_manager = require("maps/lib/separator_manager")
 separator_manager:manage_map(map)
 
+local music
+
 function map:on_opening_transition_finished(destination)
 
   if destination == from_outside then
     game:start_dialog("dungeon_8.welcome")
   end
+  music = sol.audio.get_music()
 end
 
 local fighting_boss = false
@@ -40,8 +43,9 @@ end
 
 if boss ~= nil then
   function boss:on_dead()
-    map:open_doors("boss_door")
     fighting_boss = false
+    map:open_doors("boss_door")
+    sol.audio.play_music(music)
   end
 end
 

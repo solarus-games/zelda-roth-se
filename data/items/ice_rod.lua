@@ -79,7 +79,6 @@ local function initialize_meta()
   end
 
   enemy_meta.ice_reaction = 3  -- 3 life points by default.
-  function enemy_meta:get_ice_reaction(sprite)
   enemy_meta.ice_reaction_sprite = {}
   function enemy_meta:get_ice_reaction(sprite)
 
