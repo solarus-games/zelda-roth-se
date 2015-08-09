@@ -6813,6 +6813,78 @@ tile{
   pattern = "ceiling",
 }
 
+sensor{
+  name = "dungeon_room_17_3",
+  layer = 1,
+  x = 1440,
+  y = 1077,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_7_2",
+  layer = 1,
+  x = 1120,
+  y = 357,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_10_2",
+  layer = 1,
+  x = 800,
+  y = 597,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6_1",
+  layer = 1,
+  x = 800,
+  y = 477,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5_2",
+  layer = 1,
+  x = 480,
+  y = 357,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_7",
+  layer = 1,
+  x = 160,
+  y = 949,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_4",
+  layer = 1,
+  x = 1440,
+  y = 949,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "reset_solid_ground_sensor_8",
+  layer = 1,
+  x = 800,
+  y = 469,
+  width = 16,
+  height = 16,
+}
+
 door{
   name = "auto_door_b",
   layer = 1,
@@ -7762,6 +7834,723 @@ enemy{
   savegame_variable = "dungeon_7_boss",
   treasure_name = "magic_crystal",
   treasure_savegame_variable = "dungeon_7_crystal",
+}
+
+sensor{
+  name = "save_solid_ground_sensor_1",
+  layer = 1,
+  x = 336,
+  y = 125,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_2",
+  layer = 1,
+  x = 1264,
+  y = 125,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_3",
+  layer = 1,
+  x = 1440,
+  y = 261,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_5",
+  layer = 1,
+  x = 1120,
+  y = 741,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_6",
+  layer = 1,
+  x = 976,
+  y = 845,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_8",
+  layer = 1,
+  x = 160,
+  y = 261,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_1_1",
+  layer = 1,
+  x = 160,
+  y = 237,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_1_2",
+  layer = 1,
+  x = 312,
+  y = 125,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_1",
+  layer = 1,
+  x = 328,
+  y = 125,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_2",
+  layer = 1,
+  x = 1272,
+  y = 125,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_3_1",
+  layer = 1,
+  x = 1288,
+  y = 125,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_3_2",
+  layer = 1,
+  x = 1440,
+  y = 237,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4_1",
+  layer = 1,
+  x = 160,
+  y = 253,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4_2",
+  layer = 1,
+  x = 160,
+  y = 957,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5_1",
+  layer = 1,
+  x = 480,
+  y = 477,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_7_1",
+  layer = 1,
+  x = 1120,
+  y = 477,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8_1",
+  layer = 1,
+  x = 1440,
+  y = 253,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8_2",
+  layer = 1,
+  x = 1440,
+  y = 957,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_9_1",
+  layer = 1,
+  x = 480,
+  y = 493,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8_3",
+  layer = 1,
+  x = 632,
+  y = 845,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_10_1",
+  layer = 1,
+  x = 800,
+  y = 493,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_11_1",
+  layer = 1,
+  x = 1120,
+  y = 493,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_11_2",
+  layer = 1,
+  x = 1120,
+  y = 717,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_12_1",
+  layer = 1,
+  x = 648,
+  y = 845,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_12_2",
+  layer = 1,
+  x = 952,
+  y = 845,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_13_1",
+  layer = 1,
+  x = 968,
+  y = 845,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_13_2",
+  layer = 1,
+  x = 1120,
+  y = 733,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_14_1",
+  layer = 1,
+  x = 160,
+  y = 973,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_15_1",
+  layer = 1,
+  x = 632,
+  y = 1085,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_16_1",
+  layer = 1,
+  x = 648,
+  y = 1085,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_16_2",
+  layer = 1,
+  x = 1272,
+  y = 1085,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_17_1",
+  layer = 1,
+  x = 1288,
+  y = 1085,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_17_2",
+  layer = 1,
+  x = 1440,
+  y = 973,
+  width = 16,
+  height = 16,
+}
+
+teletransporter{
+  layer = 1,
+  x = 1008,
+  y = 800,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1024,
+  y = 800,
+  width = 224,
+  height = 128,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1008,
+  y = 864,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 992,
+  y = 880,
+  width = 32,
+  height = 48,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 992,
+  y = 752,
+  width = 96,
+  height = 48,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1152,
+  y = 752,
+  width = 96,
+  height = 48,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1088,
+  y = 768,
+  width = 16,
+  height = 32,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1136,
+  y = 768,
+  width = 16,
+  height = 32,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1408,
+  y = 288,
+  width = 16,
+  height = 48,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1376,
+  y = 400,
+  width = 32,
+  height = 96,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1440,
+  y = 432,
+  width = 48,
+  height = 96,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1344,
+  y = 528,
+  width = 144,
+  height = 32,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1376,
+  y = 592,
+  width = 144,
+  height = 64,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1344,
+  y = 688,
+  width = 144,
+  height = 64,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1376,
+  y = 784,
+  width = 144,
+  height = 64,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1344,
+  y = 880,
+  width = 64,
+  height = 48,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1408,
+  y = 880,
+  width = 16,
+  height = 32,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1456,
+  y = 848,
+  width = 16,
+  height = 64,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1472,
+  y = 848,
+  width = 96,
+  height = 80,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1376,
+  y = 368,
+  width = 80,
+  height = 32,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1456,
+  y = 288,
+  width = 16,
+  height = 112,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1472,
+  y = 272,
+  width = 48,
+  height = 128,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1520,
+  y = 272,
+  width = 48,
+  height = 576,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1344,
+  y = 272,
+  width = 64,
+  height = 64,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1312,
+  y = 272,
+  width = 32,
+  height = 656,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 128,
+  y = 288,
+  width = 16,
+  height = 48,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 96,
+  y = 400,
+  width = 32,
+  height = 96,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 160,
+  y = 432,
+  width = 48,
+  height = 96,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 64,
+  y = 528,
+  width = 144,
+  height = 32,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 96,
+  y = 592,
+  width = 144,
+  height = 64,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 64,
+  y = 688,
+  width = 144,
+  height = 64,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 96,
+  y = 784,
+  width = 144,
+  height = 64,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 64,
+  y = 880,
+  width = 64,
+  height = 48,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 128,
+  y = 880,
+  width = 16,
+  height = 32,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 176,
+  y = 848,
+  width = 16,
+  height = 64,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 192,
+  y = 848,
+  width = 96,
+  height = 80,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 96,
+  y = 368,
+  width = 80,
+  height = 32,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 176,
+  y = 288,
+  width = 16,
+  height = 112,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 192,
+  y = 272,
+  width = 48,
+  height = 128,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 240,
+  y = 272,
+  width = 48,
+  height = 576,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 64,
+  y = 272,
+  width = 64,
+  height = 64,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
+}
+
+teletransporter{
+  layer = 1,
+  x = 32,
+  y = 272,
+  width = 32,
+  height = 656,
+  destination_map = "dungeon_7/1f",
+  destination = "_same",
 }
 
 tile{

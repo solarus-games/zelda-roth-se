@@ -190,6 +190,7 @@ sprite{ id = "menus/dungeon_maps/map_3", description = "Dungeon 3 map" }
 sprite{ id = "menus/dungeon_maps/map_4", description = "Dungeon 4 map" }
 sprite{ id = "menus/dungeon_maps/map_5", description = "Dungeon 5 map" }
 sprite{ id = "menus/dungeon_maps/map_6", description = "Dungeon 6 map" }
+sprite{ id = "menus/dungeon_maps/map_7", description = "Dungeon 7 map" }
 sprite{ id = "menus/hero_head", description = "Link head" }
 sprite{ id = "menus/item_cursor", description = "Item cursor" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
