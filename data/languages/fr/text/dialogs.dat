@@ -335,6 +335,24 @@ cyclone !!!
 }
 
 dialog{
+  id = "_treasure.sword.2",
+  text = [[
+Ton épée a triplé de puissance et peut
+désormais renvoyer certaines attaques magiques,
+trop bien !!!
+]]
+}
+
+dialog{
+  id = "_treasure.sword.3",
+  text = [[
+Tu as trouvé Excalibur !!!
+Même Ganon ne devrait pas pouvoir résister à sa
+puissance ! (en théorie)
+]]
+}
+
+dialog{
   id = "boss_key_required",
   text = [[
 C'est la porte du maître des lieux !
@@ -468,6 +486,15 @@ dialog{
                    Niveau 7
 
               Temple de la Glace
+]]
+}
+
+dialog{
+  id = "dungeon_8.welcome",
+  text = [[
+                   Niveau ?
+
+                 Temple secret
 ]]
 }
 
@@ -1037,6 +1064,22 @@ dialog{
   id = "outside_b3.w_sign",
   text = [[
 O : Terres de Feu
+]]
+}
+
+dialog{
+  id = "outside_b4.dungeon_8_sign",
+  text = [[
+Temple Caché
+
+Ici repose la lame purificatrice, Excalibur.
+]]
+}
+
+dialog{
+  id = "outside_b4.e_sign",
+  text = [[
+N : Vers le cimetière hanté
 ]]
 }
 

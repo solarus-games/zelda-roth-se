@@ -3469,7 +3469,7 @@ tile_pattern{
 tile_pattern{
   id = "dungeon_d.border.1",
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 520,
   y = 240,
   width = 32,

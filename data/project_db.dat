@@ -15,6 +15,7 @@ map{ id = "dungeon_6/1f", description = "Dungeon 6 1F" }
 map{ id = "dungeon_6/2f", description = "Dungeon 6 2F" }
 map{ id = "dungeon_7/1f", description = "Dungeon 7 1F" }
 map{ id = "dungeon_7/2f", description = "Dungeon 7 2F" }
+map{ id = "dungeon_8/1f", description = "Dungeon 8 1F" }
 map{ id = "enemy_store", description = "Enemy Store" }
 map{ id = "houses/link_house", description = "Link's house" }
 map{ id = "houses/monster_house", description = "Monster house" }
