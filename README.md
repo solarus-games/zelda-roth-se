@@ -1,0 +1,15 @@
+![Zelda Return of the Hylian logo](/data/sprites/menus/title_logo.png)
+
+# Zelda Return of the Hylian - Solarus Edition
+
+Zelda Return of the Hylian (Solarus Edition) is a remake of [Zelda Return of the Hylian](http://www.zeldaroth.fr), a short but pleasant fangame from Vincent Jouillat. The original game was developed in C++ and was released in 2009.
+
+This remake is developed with the [Solarus engine](https://github.com/christopho/solarus) by Christopho, Mymy and Vincent Jouillat.
+While this is essentially the same game, a lot of details were improved thanks to the use of Solarus.
+
+For users interested in creating games with Solarus, this project is also a great source of scripts.
+All items are scripted, including the hammer, the hookshot and the bow. There is also an elaborate dungeon room system using separators, with automatic restoration of enemies and pots.
+
+The game is only available in French for now, but the English version is coming soon.
+To play, you need [Solarus](https://github.com/christopho/solarus).
+
