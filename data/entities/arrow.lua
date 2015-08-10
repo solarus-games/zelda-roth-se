@@ -135,6 +135,7 @@ arrow:add_collision_test("overlapping", function(arrow, entity)
     if flying then
       sol.audio.play_sound("switch")
       map:change_crystal_state()
+      attach_to_entity(entity)
 
     elseif entity_type == "switch" then
       -- Activate solid switches.
@@ -148,6 +149,7 @@ arrow:add_collision_test("overlapping", function(arrow, entity)
           sol.audio.play_sound("switch")
           switch:set_activated(true)
         end
+        attach_to_entity(entity)
       end
     end
   end
