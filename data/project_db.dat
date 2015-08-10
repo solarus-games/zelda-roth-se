@@ -235,6 +235,7 @@ sprite{ id = "npc/wise_old_man_green", description = "Green wise old man" }
 sprite{ id = "npc/wise_old_man_yellow", description = "Yellow wise old man" }
 sprite{ id = "npc/witch", description = "Witch" }
 sprite{ id = "npc/wizard", description = "Wizard" }
+sprite{ id = "npc/zelda", description = "Zelda" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }
