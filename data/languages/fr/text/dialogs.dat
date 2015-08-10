@@ -548,6 +548,15 @@ dialog{
 }
 
 dialog{
+  id = "dungeon_9.welcome",
+  text = [[
+                Niveau Final :
+
+               Château d'Hyrule
+]]
+}
+
+dialog{
   id = "dungeon_finished_save",
   text = [[
 Souhaites-tu sauvegarder ta partie ?

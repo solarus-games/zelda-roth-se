@@ -7667,7 +7667,7 @@ dynamic_tile{
 }
 
 sensor{
-  name = "open_dungeon_9_door_s_sensor",
+  name = "open_house_dungeon_9_door_s_sensor",
   layer = 1,
   x = 1032,
   y = 445,
@@ -7684,7 +7684,7 @@ destination{
 }
 
 sensor{
-  name = "open_dungeon_9_door_b_sensor",
+  name = "open_house_dungeon_9_door_b_sensor",
   layer = 1,
   x = 1032,
   y = 365,
@@ -7698,6 +7698,16 @@ destination{
   x = 1040,
   y = 365,
   direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 1032,
+  y = 416,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_9/1f",
+  destination = "from_outside",
 }
 
 tile{

@@ -3,8 +3,17 @@ properties{
   y = 0,
   width = 1280,
   height = 960,
-  tileset = "palace_purple",
+  tileset = "temple_yellow",
   music = "same",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 432,
+  width = 256,
+  height = 176,
+  pattern = "floor.1",
 }
 
 tile{
@@ -578,15 +587,6 @@ tile{
   layer = 1,
   x = 48,
   y = 432,
-  width = 256,
-  height = 176,
-  pattern = "floor.1",
-}
-
-tile{
-  layer = 1,
-  x = 48,
-  y = 432,
   width = 16,
   height = 16,
   pattern = "floor_pot",
@@ -801,15 +801,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 360,
-  y = 488,
-  width = 32,
-  height = 8,
-  pattern = "stairs_inner_up.1.top",
-}
-
-tile{
-  layer = 1,
   x = 400,
   y = 488,
   width = 8,
@@ -869,15 +860,6 @@ tile{
   width = 8,
   height = 24,
   pattern = "stairs_inner_up.1.border.2",
-}
-
-tile{
-  layer = 1,
-  x = 360,
-  y = 488,
-  width = 32,
-  height = 8,
-  pattern = "invisible_wall",
 }
 
 tile{
@@ -1771,45 +1753,74 @@ tile{
   pattern = "floor.1",
 }
 
+tile{
+  layer = 1,
+  x = 384,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.1.top.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.1.top.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 488,
+  width = 16,
+  height = 8,
+  pattern = "stairs_inner_up.1.top",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "floor_pot",
+}
+
+tile{
+  layer = 1,
+  x = 880,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "floor_pot",
+}
+
+tile{
+  layer = 1,
+  x = 880,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "floor_pot",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "floor_pot",
+}
+
 destructible{
   layer = 1,
   x = 56,
   y = 445,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 296,
-  y = 445,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 296,
-  y = 605,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 1,
-  x = 56,
-  y = 605,
-  treasure_name = "random",
-  sprite = "entities/vase_skull",
+  sprite = "entities/vase",
   destruction_sound = "stone",
   weight = 1,
   damage_on_enemies = 2,
@@ -2136,6 +2147,93 @@ custom_entity{
   direction = 1,
   sprite = "entities/torch",
   model = "torch",
+}
+
+wall{
+  layer = 1,
+  x = 360,
+  y = 488,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destructible{
+  layer = 1,
+  x = 296,
+  y = 445,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 296,
+  y = 605,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 56,
+  y = 605,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destrucible_1",
+  layer = 1,
+  x = 648,
+  y = 701,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destrucible_2",
+  layer = 1,
+  x = 888,
+  y = 701,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destrucible_3",
+  layer = 1,
+  x = 888,
+  y = 861,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  name = "auto_destrucible_4",
+  layer = 1,
+  x = 648,
+  y = 861,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
 }
 
 tile{
