@@ -6649,6 +6649,42 @@ tile{
   pattern = "sand.soil",
 }
 
+tile{
+  layer = 1,
+  x = 1256,
+  y = 296,
+  width = 16,
+  height = 8,
+  pattern = "3",
+}
+
+tile{
+  layer = 1,
+  x = 1248,
+  y = 272,
+  width = 8,
+  height = 32,
+  pattern = "1",
+}
+
+tile{
+  layer = 1,
+  x = 1272,
+  y = 272,
+  width = 8,
+  height = 32,
+  pattern = "2",
+}
+
+tile{
+  layer = 1,
+  x = 1256,
+  y = 272,
+  width = 16,
+  height = 24,
+  pattern = "4",
+}
+
 npc{
   layer = 1,
   x = 984,
@@ -7676,7 +7712,7 @@ sensor{
 }
 
 destination{
-  name = "from_dungeon_9_s",
+  name = "from_dungeon_9_1f_s",
   layer = 1,
   x = 1040,
   y = 445,
@@ -7684,7 +7720,7 @@ destination{
 }
 
 sensor{
-  name = "open_house_dungeon_9_door_b_sensor",
+  name = "open_house_dungeon_9_door_n_sensor",
   layer = 1,
   x = 1032,
   y = 365,
@@ -7693,7 +7729,7 @@ sensor{
 }
 
 destination{
-  name = "from_dungeon_9_n",
+  name = "from_dungeon_9_2f",
   layer = 1,
   x = 1040,
   y = 365,
@@ -7708,6 +7744,32 @@ teletransporter{
   height = 16,
   destination_map = "dungeon_9/1f",
   destination = "from_outside",
+}
+
+destination{
+  name = "from_dungeon_9_1f_ne",
+  layer = 1,
+  x = 1264,
+  y = 285,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 1256,
+  y = 272,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_9/1f",
+  destination = "from_outside_ne",
+}
+
+stairs{
+  layer = 1,
+  x = 1256,
+  y = 272,
+  direction = 3,
+  subtype = 3,
 }
 
 tile{

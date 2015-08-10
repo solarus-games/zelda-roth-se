@@ -404,3 +404,33 @@ enemy{
   treasure_name = "random_weapon",
 }
 
+enemy{
+  name = "auto_enemy_46",
+  layer = 1,
+  x = 184,
+  y = 237,
+  direction = 3,
+  breed = "sword_soldier_green",
+  treasure_name = "random_magic",
+}
+
+enemy{
+  name = "auto_enemy_47",
+  layer = 1,
+  x = 216,
+  y = 237,
+  direction = 3,
+  breed = "sword_soldier_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_48",
+  layer = 1,
+  x = 248,
+  y = 237,
+  direction = 3,
+  breed = "spear_soldier_red",
+  treasure_name = "random_heart",
+}
+

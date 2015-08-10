@@ -1,5 +1,49 @@
 background_color{ 255, 255, 255 }
 tile_pattern{
+  id = "1",
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 240,
+  width = 8,
+  height = 32,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2",
+  ground = "wall",
+  default_layer = 0,
+  x = 296,
+  y = 240,
+  width = 8,
+  height = 32,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "3",
+  ground = "wall",
+  default_layer = 0,
+  x = 280,
+  y = 264,
+  width = 16,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "4",
+  ground = "traversable",
+  default_layer = 0,
+  x = 280,
+  y = 240,
+  width = 16,
+  height = 24,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "barrier.border",
   ground = "wall",
   default_layer = 0,

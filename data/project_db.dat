@@ -21,6 +21,9 @@ map{ id = "dungeon_7/1f", description = "Dungeon 7 1F" }
 map{ id = "dungeon_7/2f", description = "Dungeon 7 2F" }
 map{ id = "dungeon_8/1f", description = "Dungeon 8 1F" }
 map{ id = "dungeon_9/1f", description = "Dungeon 9 1F" }
+map{ id = "dungeon_9/2f", description = "Dungeon 9 2F" }
+map{ id = "dungeon_9/b1", description = "Dungeon 9 B1" }
+map{ id = "dungeon_9/b2", description = "Dungeon 9 B2" }
 map{ id = "enemy_store", description = "Enemy Store" }
 map{ id = "houses/link_house", description = "Link's house" }
 map{ id = "houses/monster_house", description = "Monster house" }
@@ -100,7 +103,13 @@ sprite{ id = "enemies/rope", description = "Rope" }
 sprite{ id = "enemies/sand_crab", description = "Sand Crab" }
 sprite{ id = "enemies/skeleton", description = "Skeleton" }
 sprite{ id = "enemies/skeleton_red", description = "Red Skeleton" }
+sprite{ id = "enemies/spear_soldier_red", description = "Red Spear Soldier" }
+sprite{ id = "enemies/spear_soldier_red_weapon", description = "Red Spear Soldier's sword" }
 sprite{ id = "enemies/stal", description = "Stal" }
+sprite{ id = "enemies/sword_soldier_blue", description = "Blue Sword Soldier" }
+sprite{ id = "enemies/sword_soldier_blue_weapon", description = "Blue Sword Soldier's sword" }
+sprite{ id = "enemies/sword_soldier_green", description = "Green Sword Soldier" }
+sprite{ id = "enemies/sword_soldier_green_weapon", description = "Green Sword Soldier's sword" }
 sprite{ id = "enemies/tarosu_red", description = "Red Tarosu" }
 sprite{ id = "enemies/tarosu_red_weapon", description = "Red Tarosu's trident" }
 sprite{ id = "enemies/tektite_blue", description = "Blue Tektite" }
@@ -199,7 +208,8 @@ sprite{ id = "menus/dungeon_maps/map_4", description = "Dungeon 4 map" }
 sprite{ id = "menus/dungeon_maps/map_5", description = "Dungeon 5 map" }
 sprite{ id = "menus/dungeon_maps/map_6", description = "Dungeon 6 map" }
 sprite{ id = "menus/dungeon_maps/map_7", description = "Dungeon 7 map" }
-sprite{ id = "menus/dungeon_maps/map_8", description = "Dungeon 8" }
+sprite{ id = "menus/dungeon_maps/map_8", description = "Dungeon 8 map" }
+sprite{ id = "menus/dungeon_maps/map_9", description = "Dungeon 9 map" }
 sprite{ id = "menus/hero_head", description = "Link head" }
 sprite{ id = "menus/item_cursor", description = "Item cursor" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
@@ -450,7 +460,10 @@ enemy{ id = "rope", description = "Rope" }
 enemy{ id = "sand_crab", description = "Sand Crab" }
 enemy{ id = "skeleton", description = "Skeleton" }
 enemy{ id = "skeleton_red", description = "Red Skeleton" }
+enemy{ id = "spear_soldier_red", description = "Red Spear Soldier" }
 enemy{ id = "stal", description = "Stal" }
+enemy{ id = "sword_soldier_blue", description = "Blue Sword Soldier" }
+enemy{ id = "sword_soldier_green", description = "Green Sword Soldier" }
 enemy{ id = "tarosu_red", description = "Red Tarosu" }
 enemy{ id = "tektite_blue", description = "Blue Tektite" }
 enemy{ id = "tentacle", description = "Tentacle" }
