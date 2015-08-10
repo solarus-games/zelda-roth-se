@@ -6469,6 +6469,15 @@ tile{
   pattern = "grass.barrier.border.1",
 }
 
+tile{
+  layer = 1,
+  x = 448,
+  y = 56,
+  width = 32,
+  height = 8,
+  pattern = "cave_entrance_blast.top",
+}
+
 teletransporter{
   layer = 1,
   x = 0,
@@ -6520,7 +6529,7 @@ door{
   y = 64,
   direction = 1,
   sprite = "entities/door_very_weak_wall",
-  savegame_variable = "outside_a1_weak_wall",
+  savegame_variable = "outside_a3_weak_wall",
   opening_method = "explosion",
 }
 
@@ -7665,6 +7674,23 @@ teletransporter{
   destination = "from_outside_s",
 }
 
+destination{
+  name = "from_fairy_cave",
+  layer = 1,
+  x = 464,
+  y = 93,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 456,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "caves/fairy_ruins",
+}
+
 tile{
   layer = 2,
   x = 480,
@@ -7825,15 +7851,6 @@ tile{
   width = 80,
   height = 48,
   pattern = "grass.soil",
-}
-
-tile{
-  layer = 2,
-  x = 448,
-  y = 56,
-  width = 32,
-  height = 8,
-  pattern = "cave_entrance_blast.top",
 }
 
 tile{

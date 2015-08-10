@@ -5390,6 +5390,69 @@ tile{
   pattern = "ladder.border.1",
 }
 
+tile{
+  layer = 0,
+  x = 376,
+  y = 832,
+  width = 16,
+  height = 8,
+  pattern = "cave_entrance_blast",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 832,
+  width = 8,
+  height = 8,
+  pattern = "cave_entrance_blast.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 840,
+  width = 8,
+  height = 8,
+  pattern = "dirt.cave_entrance_blast.border.2",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 840,
+  width = 16,
+  height = 8,
+  pattern = "dirt.cave_entrance_blast",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 840,
+  width = 8,
+  height = 8,
+  pattern = "dirt.cave_entrance_blast.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 824,
+  width = 32,
+  height = 8,
+  pattern = "cave_entrance_blast.top",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 832,
+  width = 8,
+  height = 8,
+  pattern = "cave_entrance_blast.border.2",
+}
+
 teletransporter{
   layer = 0,
   x = 0,
@@ -5457,7 +5520,7 @@ teletransporter{
 }
 
 dynamic_tile{
-  name = "weak_wall_2_closed",
+  name = "weak_wall_b_closed",
   layer = 0,
   x = 368,
   y = 832,
@@ -5468,18 +5531,18 @@ dynamic_tile{
 }
 
 door{
-  name = "weak_wall_2",
+  name = "weak_wall_b",
   layer = 0,
   x = 376,
   y = 832,
   direction = 1,
   sprite = "entities/door_very_weak_wall",
-  savegame_variable = "outside_a1_weak_wall",
+  savegame_variable = "outside_a1_weak_wall_b",
   opening_method = "explosion",
 }
 
 dynamic_tile{
-  name = "weak_wall_closed",
+  name = "weak_wall_a_closed",
   layer = 0,
   x = 2016,
   y = 160,
@@ -5490,13 +5553,13 @@ dynamic_tile{
 }
 
 door{
-  name = "weak_wall",
+  name = "weak_wall_a",
   layer = 0,
   x = 2024,
   y = 160,
   direction = 1,
   sprite = "entities/door_very_weak_wall",
-  savegame_variable = "outside_a1_weak_wall",
+  savegame_variable = "outside_a1_weak_wall_a",
   opening_method = "explosion",
 }
 
@@ -5721,6 +5784,23 @@ teletransporter{
   height = 16,
   destination_map = "caves/lake_cave/1f",
   destination = "from_outside_w",
+}
+
+destination{
+  name = "from_fairy_cave",
+  layer = 0,
+  x = 384,
+  y = 861,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 376,
+  y = 832,
+  width = 16,
+  height = 16,
+  destination_map = "caves/fairy_lake",
 }
 
 tile{
@@ -11791,60 +11871,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 376,
-  y = 832,
-  width = 16,
-  height = 8,
-  pattern = "cave_entrance_blast",
-}
-
-tile{
-  layer = 1,
-  x = 392,
-  y = 832,
-  width = 8,
-  height = 8,
-  pattern = "cave_entrance_blast.border.2",
-}
-
-tile{
-  layer = 1,
-  x = 368,
-  y = 832,
-  width = 8,
-  height = 8,
-  pattern = "cave_entrance_blast.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 392,
-  y = 840,
-  width = 8,
-  height = 8,
-  pattern = "dirt.cave_entrance_blast.border.2",
-}
-
-tile{
-  layer = 1,
-  x = 376,
-  y = 840,
-  width = 16,
-  height = 8,
-  pattern = "dirt.cave_entrance_blast",
-}
-
-tile{
-  layer = 1,
-  x = 368,
-  y = 840,
-  width = 8,
-  height = 8,
-  pattern = "dirt.cave_entrance_blast.border.1",
-}
-
-tile{
-  layer = 1,
   x = 424,
   y = 704,
   width = 16,
@@ -11901,15 +11927,6 @@ tile{
   layer = 1,
   x = 2016,
   y = 152,
-  width = 32,
-  height = 8,
-  pattern = "cave_entrance_blast.top",
-}
-
-tile{
-  layer = 1,
-  x = 368,
-  y = 824,
   width = 32,
   height = 8,
   pattern = "cave_entrance_blast.top",

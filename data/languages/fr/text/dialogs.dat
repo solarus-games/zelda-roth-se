@@ -219,6 +219,22 @@ le plan.
 }
 
 dialog{
+  id = "_treasure.din_medallion.1",
+  text = [[
+Tu as obtenu un médaillon magique !!!
+Ta défense vient d'augmenter !!!
+]]
+}
+
+dialog{
+  id = "_treasure.farore_medallion.1",
+  text = [[
+Tu as obtenu un médaillon magique !!!
+Ta défense vient d'augmenter !!!
+]]
+}
+
+dialog{
   id = "_treasure.fire_rod.1",
   text = [[
 Tu as trouvé le bâton de feu !!!
@@ -310,6 +326,14 @@ dialog{
 Tu as trouvé la carte du donjon !!!
 Affiche-la dans l'écran de pause pour voir
 le plan.
+]]
+}
+
+dialog{
+  id = "_treasure.nayru_medallion.1",
+  text = [[
+Tu as obtenu un médaillon magique !!!
+Ta défense vient d'augmenter !!!
 ]]
 }
 
@@ -529,6 +553,56 @@ dialog{
 Souhaites-tu sauvegarder ta partie ?
                    $? Oui
                    $? Non
+]]
+}
+
+dialog{
+  id = "fairy_cave_already_done",
+  text = [[
+...
+]]
+}
+
+dialog{
+  id = "fairy_cave_desert.reward",
+  text = [[
+Félicitations Link, tu as réussi à me trouver.
+En récompense, je t'offre le médaillon de
+Din, il augmente ta défense d'un point.
+]]
+}
+
+dialog{
+  id = "fairy_cave_forest.reward",
+  text = [[
+Félicitations Link, tu as réussi à me trouver.
+En récompense, je t'offre le médaillon de
+Farore, il augmente ta défense d'un point.
+]]
+}
+
+dialog{
+  id = "fairy_cave_lake.reward",
+  text = [[
+Félicitations Link, tu as réussi à me trouver.
+En récompense, je t'offre le médaillon de
+Nayru, il augmente ta défense de deux points !
+]]
+}
+
+dialog{
+  id = "fairy_cave_ruins.reward",
+  text = [[
+Félicitations Link, tu as réussi à me trouver.
+Pour te récompenser, je vais doubler la
+capacité de ta réserve de magie !
+]]
+}
+
+dialog{
+  id = "fairy_cave_ruins.treasure",
+  text = [[
+Ta réserve de magie a doublé !!!
 ]]
 }
 

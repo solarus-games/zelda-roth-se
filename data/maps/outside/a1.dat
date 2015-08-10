@@ -5070,6 +5070,23 @@ npc{
   behavior = "dialog#outside_a1.yellow_merchant_npc",
 }
 
+destination{
+  name = "from_fairy_cave",
+  layer = 1,
+  x = 2112,
+  y = 429,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 2104,
+  y = 400,
+  width = 16,
+  height = 16,
+  destination_map = "caves/fairy_desert",
+}
+
 tile{
   layer = 2,
   x = 2152,

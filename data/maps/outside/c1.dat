@@ -9608,6 +9608,23 @@ stairs{
   subtype = 3,
 }
 
+teletransporter{
+  layer = 1,
+  x = 888,
+  y = 32,
+  width = 16,
+  height = 16,
+  destination_map = "caves/fairy_forest",
+}
+
+destination{
+  name = "from_fairy_cave",
+  layer = 1,
+  x = 896,
+  y = 61,
+  direction = 3,
+}
+
 tile{
   layer = 2,
   x = 352,

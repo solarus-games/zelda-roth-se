@@ -142,6 +142,13 @@ animation{
   },
 }
 animation{
+  name = "din_medallion",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 176, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "fairy",
   src_image = "entities/items.png",
   frame_delay = 100,
@@ -149,6 +156,13 @@ animation{
   directions = {
     { x = 192, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
     { x = 192, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+  },
+}
+animation{
+  name = "farore_medallion",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 192, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -252,6 +266,13 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 560, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "nayru_medallion",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 208, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{

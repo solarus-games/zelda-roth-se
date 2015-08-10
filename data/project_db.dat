@@ -1,5 +1,5 @@
 map{ id = "caves/fairy_desert", description = "Desert Fairy Cave" }
-map{ id = "caves/fairy_forest", description = " Forest Fairy Cave" }
+map{ id = "caves/fairy_forest", description = "Forest Fairy Cave" }
 map{ id = "caves/fairy_lake", description = "Lake Fairy Cave" }
 map{ id = "caves/fairy_ruins", description = "Ruins Fairy Cave" }
 map{ id = "caves/lake_cave/1f", description = "Lake cave 1F" }

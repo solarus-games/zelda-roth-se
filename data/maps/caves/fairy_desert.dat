@@ -313,12 +313,30 @@ tile{
 }
 
 npc{
+  name = "fairy",
   layer = 1,
   x = 160,
-  y = 85,
+  y = 101,
   direction = 3,
   subtype = 1,
   sprite = "npc/great_fairy",
+}
+
+destination{
+  layer = 1,
+  x = 160,
+  y = 221,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 152,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "outside/a1",
+  destination = "from_fairy_cave",
 }
 
 tile{
