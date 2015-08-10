@@ -89,6 +89,7 @@ function behavior:create(enemy, properties)
     local _, _, hero_layer = hero:get_position()
     local near_hero = layer == hero_layer
         and enemy:get_distance(hero) < 500
+        and enemy:is_in_same_region(hero)
 
     if near_hero and not going_hero then
       if properties.play_hero_seen_sound then

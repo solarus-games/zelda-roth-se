@@ -125,7 +125,7 @@ function behavior:create(enemy, properties)
   function enemy:check_hero()
 
     local hero = self:get_map():get_entity("hero")
-    local near_hero = self:get_distance(hero) < properties.waking_distance
+    local near_hero = self:get_distance(hero) < properties.waking_distance and self:is_in_same_region(hero)
 
     if awaken then
       if near_hero and not going_hero then
