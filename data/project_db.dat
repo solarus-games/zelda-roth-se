@@ -359,6 +359,7 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
 
 item{ id = "arrow", description = "Arrows (x1 / x5 / x10)" }
+item{ id = "arrow_silver", description = "Silver arrows (x1 / x5 / x10)" }
 item{ id = "blue_potion", description = "Blue potion" }
 item{ id = "bomb", description = "Bombs (x1 / x3 / x8)" }
 item{ id = "bombs_counter", description = "Bombs counter" }
@@ -456,6 +457,7 @@ enemy{ id = "zazak_blue", description = "Blue Zazak" }
 enemy{ id = "zora_feet", description = "Zora (on feet)" }
 enemy{ id = "zora_water", description = "Zora (in water)" }
 
+entity{ id = "arrow", description = "Arrow" }
 entity{ id = "cactus", description = "Cactus" }
 entity{ id = "cliff", description = "Cliff" }
 entity{ id = "fire", description = "Fire" }

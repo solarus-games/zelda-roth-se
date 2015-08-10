@@ -194,6 +194,22 @@ Utilise-le pour atteindre des cibles éloignées.
 }
 
 dialog{
+  id = "_treasure.bow_silver.1",
+  text = [[
+Ton arc tire désormais des flèches d'argent
+d'une puissance dévastatrice !!!
+]]
+}
+
+dialog{
+  id = "_treasure.bow_silver.2",
+  text = [[
+Ton arc tire désormais des flèches d'argent
+d'une puissance dévastatrice !!!
+]]
+}
+
+dialog{
   id = "_treasure.compass.1",
   text = [[
 Tu as trouvé la boussole !!!
@@ -425,6 +441,15 @@ dialog{
   text = [[
 Tu as tous les cristaux, cours au château
 sauver Zelda !
+]]
+}
+
+dialog{
+  id = "dungeon_1.welcome",
+  text = [[
+                   Niveau 1
+
+              Temple de la Forêt
 ]]
 }
 

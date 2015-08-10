@@ -15,6 +15,15 @@ animation{
   },
 }
 animation{
+  name = "arrow_silver",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 704, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 704, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 704, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "blue_potion",
   src_image = "entities/items.png",
   directions = {
@@ -50,8 +59,8 @@ animation{
   name = "boomerang",
   src_image = "entities/items.png",
   directions = {
-    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 48, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 224, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 224, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -115,6 +124,14 @@ animation{
   directions = {
     { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 32, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "bow_silver",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 48, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -226,8 +243,8 @@ animation{
   name = "magic_flask",
   src_image = "entities/items.png",
   directions = {
-    { x = 704, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 704, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 720, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 720, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
