@@ -14,6 +14,7 @@ function arrows_builder:new(game)
     vertical_alignment = "top",
   })
   local bow = game:get_item("bow")
+  local bow_silver = game:get_item("bow")
   local amount_displayed = bow:get_amount()
   local max_amount_displayed = bow:get_max_amount()
 
@@ -25,7 +26,7 @@ function arrows_builder:new(game)
   function arrows:on_draw(dst_surface)
 
     -- Don't show the counter before the player has the bow.
-    if not bow:has_variant() then
+    if not bow:has_variant() and not bow_silver:has_variant() then
       return
     end
 
@@ -38,7 +39,11 @@ function arrows_builder:new(game)
       y = height + y
     end
 
-    arrow_icon_img:draw(dst_surface, x, y)
+    -- Show either the arrow icon or the silver arrow icon.
+    local src_x = 0
+    local src_y = bow_silver:has_variant() and 8 or 0
+
+    arrow_icon_img:draw_region(src_x, src_y, 16, 8, dst_surface, x, y)
     digits_text:draw(dst_surface, x, y + 10)
   end
 

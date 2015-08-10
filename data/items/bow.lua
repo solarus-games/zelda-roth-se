@@ -18,6 +18,8 @@ end
 -- This function can also be called by the silver bow.
 function item:on_using()
 
+  -- item is the normal bow, self is the normal or the silver one.
+
   local map = game:get_map()
   local hero = map:get_hero()
 
@@ -38,7 +40,7 @@ function item:on_using()
         y = y,
         layer = layer,
         direction = hero:get_direction(),
-      model = "arrow",
+        model = "arrow",
       })
 
       arrow:set_force(self:get_force())
@@ -111,7 +113,11 @@ local function initialize_meta()
 
     if self.arrow_reaction == "force" then
       -- Replace by the current force value.
-      return self:get_game():get_item("bow"):get_force()
+      local game = self:get_game()
+      if game:has_item("bow_silver") then
+        return game:get_item("bow_silver"):get_force()
+      end
+      return game:get_item("bow"):get_force()
     end
 
     return self.arrow_reaction

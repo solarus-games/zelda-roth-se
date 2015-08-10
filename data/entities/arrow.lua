@@ -83,7 +83,7 @@ local function attach_to_entity(entity)
   local x, y = arrow:get_position()
   entity_reached_dxy = { entity_reached_x - x, entity_reached_y - y }
  
- sol.timer.start(arrow, 10, function()
+  sol.timer.start(arrow, 10, function()
 
     if not entity_reached:exists() then
       arrow:remove()

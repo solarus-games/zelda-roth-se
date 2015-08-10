@@ -4,7 +4,7 @@ local gui_designer = require("scripts/menus/lib/gui_designer")
 
 local item_names = {
   -- Names of up to 12 items to show in the inventory.
-  "bow",
+  "bow",  -- Will be replaced by the silver one if the player has it.
   "hookshot",
   "bombs_counter",
   "fire_rod",
@@ -31,6 +31,9 @@ local function create_item_widget(game)
   widget:set_xy(16 - movement_distance, 16)
   widget:make_green_frame()
   local items_surface = widget:get_surface()
+
+  item_names[1] = game:has_item("bow_silver") and "bow_silver" or "bow"
+
   for i, item_name in ipairs(item_names) do
     local variant = game:get_item(item_name):get_variant()
     if variant > 0 then

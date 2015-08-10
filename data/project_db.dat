@@ -110,6 +110,7 @@ sprite{ id = "enemies/zazak_blue", description = "Blue Zazak" }
 sprite{ id = "enemies/zora_feet", description = "Zora (on feet)" }
 sprite{ id = "enemies/zora_water", description = "Zora (in water)" }
 sprite{ id = "entities/arrow", description = "Arrow" }
+sprite{ id = "entities/arrow_silver", description = "Silver arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/big_chest", description = "Chest (big)" }
 sprite{ id = "entities/block", description = "Block" }

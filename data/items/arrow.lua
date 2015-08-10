@@ -31,7 +31,7 @@ end
 
 function item:on_pickable_created(pickable)
 
-  if game:has_item("silver_bow") then
+  if game:has_item("bow_silver") then
     -- Automatically replace the normal arrow by a silver one.
     local _, variant, savegame_variable = pickable:get_treasure()
     local map = pickable:get_map()
