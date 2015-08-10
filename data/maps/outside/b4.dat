@@ -4841,6 +4841,126 @@ stairs{
   subtype = 3,
 }
 
+enemy{
+  name = "auto_enemy_16",
+  layer = 1,
+  x = 520,
+  y = 29,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_17",
+  layer = 1,
+  x = 872,
+  y = 205,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_18",
+  layer = 1,
+  x = 904,
+  y = 205,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_19",
+  layer = 1,
+  x = 936,
+  y = 205,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_20",
+  layer = 1,
+  x = 968,
+  y = 205,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_21",
+  layer = 1,
+  x = 1000,
+  y = 205,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_22",
+  layer = 1,
+  x = 1032,
+  y = 205,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_23",
+  layer = 1,
+  x = 1240,
+  y = 109,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_24",
+  layer = 1,
+  x = 1256,
+  y = 125,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_25",
+  layer = 1,
+  x = 1272,
+  y = 141,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_26",
+  layer = 1,
+  x = 1288,
+  y = 157,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_27",
+  layer = 1,
+  x = 1304,
+  y = 173,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
 tile{
   layer = 2,
   x = 1072,

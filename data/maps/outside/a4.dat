@@ -3029,6 +3029,106 @@ custom_entity{
   model = "hookable",
 }
 
+enemy{
+  name = "auto_enemy_16",
+  layer = 1,
+  x = 648,
+  y = 93,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_17",
+  layer = 1,
+  x = 968,
+  y = 205,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_18",
+  layer = 1,
+  x = 1448,
+  y = 205,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_19",
+  layer = 1,
+  x = 1464,
+  y = 189,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_20",
+  layer = 1,
+  x = 1480,
+  y = 173,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_21",
+  layer = 1,
+  x = 2408,
+  y = 93,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_22",
+  layer = 1,
+  x = 2424,
+  y = 109,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_23",
+  layer = 1,
+  x = 2440,
+  y = 125,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_24",
+  layer = 1,
+  x = 2456,
+  y = 141,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
+enemy{
+  name = "auto_enemy_25",
+  layer = 1,
+  x = 2472,
+  y = 157,
+  direction = 3,
+  breed = "wizzrobe_blue",
+  treasure_name = "random_weapon",
+}
+
 tile{
   layer = 2,
   x = 2528,
