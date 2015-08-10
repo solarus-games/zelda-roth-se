@@ -1,16 +1,15 @@
 - Finish the content
-- Custom arrows
 - Fix ctrl+direction with separators
-- Modernize the HUD
 - HUD of dungeon floors
-- Allow to map game commands
-- Video modes
 - Escape to exit from title screens
-- Color of the shadow of signs
-- Musics
 - Title screens: Solarus Edition, Vincent Jouillat and Solarus Team
-- Blue Wizzrobes south
 - Ranks
 - Check heart pieces
 - Check monsters encyclopedia
+
+- Allow to map game commands
+- Video modes
+- Modernize the HUD
+- Musics
+- Color of the shadow of signs
 

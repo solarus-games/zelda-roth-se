@@ -14,4 +14,3 @@ function item:on_obtaining(variant)
   defense = defense + 1
   game:set_value("defense", defense)
 end
-

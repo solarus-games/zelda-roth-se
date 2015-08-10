@@ -26,7 +26,7 @@ function item:on_obtaining(variant)
     force = 3
     sol.audio.play_sound("treasure")
   else
-    force = 5  -- TODO check this
+    force = 5
     local old_music = sol.audio.get_music()
     sol.audio.play_music("excalibur")
     sol.timer.start(map, 8000, function()
@@ -35,4 +35,3 @@ function item:on_obtaining(variant)
   end
   game:set_value("force", force)
 end
-
