@@ -2408,7 +2408,7 @@ tile_pattern{
 
 tile_pattern{
   id = "dirt.cliff.top.diag.1",
-  ground = "wall_bottom_right",
+  ground = "low_wall",
   default_layer = 0,
   x = 104,
   y = 488,
@@ -2428,7 +2428,7 @@ tile_pattern{
 
 tile_pattern{
   id = "dirt.cliff.top.diag.2",
-  ground = "wall_bottom_left",
+  ground = "low_wall",
   default_layer = 0,
   x = 88,
   y = 488,
@@ -2448,7 +2448,7 @@ tile_pattern{
 
 tile_pattern{
   id = "dirt.cliff.top.diag.3",
-  ground = "wall_top_right",
+  ground = "low_wall",
   default_layer = 0,
   x = 104,
   y = 472,
@@ -2468,7 +2468,7 @@ tile_pattern{
 
 tile_pattern{
   id = "dirt.cliff.top.diag.4",
-  ground = "wall_top_left",
+  ground = "low_wall",
   default_layer = 0,
   x = 88,
   y = 472,
@@ -7761,7 +7761,7 @@ tile_pattern{
 
 tile_pattern{
   id = "sand.cliff.top.diag.1",
-  ground = "wall_bottom_right",
+  ground = "low_wall",
   default_layer = 0,
   x = 104,
   y = 368,
@@ -7781,7 +7781,7 @@ tile_pattern{
 
 tile_pattern{
   id = "sand.cliff.top.diag.2",
-  ground = "wall_bottom_left",
+  ground = "low_wall",
   default_layer = 0,
   x = 88,
   y = 368,
@@ -7801,7 +7801,7 @@ tile_pattern{
 
 tile_pattern{
   id = "sand.cliff.top.diag.3",
-  ground = "wall_top_right",
+  ground = "low_wall",
   default_layer = 0,
   x = 104,
   y = 352,
@@ -7821,7 +7821,7 @@ tile_pattern{
 
 tile_pattern{
   id = "sand.cliff.top.diag.4",
-  ground = "wall_top_left",
+  ground = "low_wall",
   default_layer = 0,
   x = 88,
   y = 352,

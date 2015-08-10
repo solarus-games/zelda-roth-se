@@ -1,6 +1,7 @@
 -- A wizard who shoots magic beams.
 
 local enemy = ...
+local map = enemy:get_map()
 
 function enemy:on_created()
 
@@ -12,9 +13,8 @@ end
 
 local function shoot()
 
-  local map = enemy:get_map()
   local hero = map:get_hero()
-  if not enemy:is_in_same_region(hero) then
+  if enemy:get_distance(hero) > 200 or not enemy:is_in_same_region(hero) then
     return true  -- Repeat the timer.
   end
 

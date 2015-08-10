@@ -1,7 +1,7 @@
 -- A wizard who shoots magic beams.
 
 local enemy = ...
-local map = ...
+local map = enemy:get_map()
 
 function enemy:on_created()
 
@@ -12,6 +12,11 @@ function enemy:on_created()
 end
 
 local function shoot()
+
+  local hero = map:get_hero()
+  if enemy:get_distance(hero) > 200 or not enemy:is_in_same_region(hero) then
+    return
+  end
 
   local sprite = enemy:get_sprite()
   local x, y, layer = enemy:get_position()

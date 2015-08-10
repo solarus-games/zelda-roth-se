@@ -7129,6 +7129,14 @@ wall{
   stops_blocks = true,
 }
 
+destination{
+  name = "from_mudora_cave",
+  layer = 1,
+  x = 64,
+  y = 541,
+  direction = 3,
+}
+
 tile{
   layer = 2,
   x = 48,

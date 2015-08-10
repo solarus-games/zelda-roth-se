@@ -5,7 +5,7 @@ local game = map:get_game()
 function map:on_started()
 
   if game:get_value("outside_a3_dungeon_6_entrance") then
-    turtle_rock_entrance:get_sprite():set_animation("down")
+    turtle_rock_entrance:set_enabled(false)
   end
 end
 

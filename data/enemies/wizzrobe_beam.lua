@@ -14,6 +14,7 @@ function enemy:on_created()
   enemy:set_obstacle_behavior("flying")
   enemy:set_invincible()
   enemy:set_attack_consequence("sword", "custom")
+  enemy:set_optimization_distance(0)
 end
 
 function enemy:on_obstacle_reached()
