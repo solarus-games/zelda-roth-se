@@ -46,8 +46,8 @@ local models = {
   { enemy = "agahnim",             page = 4, frame = { 240,  48, 48, 48 }, xy = { 16, 29 } },
   { enemy = "vitreous",            page = 4, frame = {  16, 112, 48, 48 }, xy = { 16, 16 } },
   { enemy = "blind",               page = 4, frame = {  80, 108, 64, 56 }, xy = { 24, 20 } },
-  { enemy = "kholdstare",          page = 4, frame = { 160, 112, 48, 48 }, xy = { 16, 16 } },
-  { enemy = "helmasaur_king",      page = 4, frame = { 224, 104, 80, 88 }, xy = { 32, 48 } },
+  { enemy = "kholdstare",          page = 4, frame = { 160, 112, 48, 48 }, xy = { 16, 29 } },
+  { enemy = "helmasaur_king",      page = 4, frame = { 224, 104, 80, 88 }, xy = { 32, 63 } },
   { enemy = "ganon",               page = 4, frame = {  16, 176, 64, 48 }, xy = { 24, 24 } },
 }
 local num_pages = 4

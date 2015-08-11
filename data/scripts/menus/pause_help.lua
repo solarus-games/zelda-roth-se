@@ -10,9 +10,13 @@ function help_manager:new(game)
 
   -- Like game:get_command_keyboard_binding(),
   -- but makes the first letter uppercase.
+  -- Returns an empty string if the command has no key.
   local function get_game_key(command)
 
     local key = game:get_command_keyboard_binding(command)
+    if key == nil then
+      return ""
+    end
     return key:gsub("^%l", string.upper)
   end
   local tr = sol.language.get_string

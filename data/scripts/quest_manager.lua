@@ -40,11 +40,13 @@ local function initialize_enemy()
   end
 
   -- When an enemy is killed, add it to the encyclopedia.
-  function enemy_meta:on_dying()
+  function enemy_meta:on_removed()
 
-    local breed = self:get_breed()
-    local game = self:get_game()
-    game:get_item("monsters_encyclopedia"):add_monster_type_killed(breed)
+    if self:get_life() <= 0 then
+      local breed = self:get_breed()
+      local game = self:get_game()
+      game:get_item("monsters_encyclopedia"):add_monster_type_killed(breed)
+    end
   end
 
   -- Helper function to inflict an explicit reaction from a scripted weapon.
@@ -110,69 +112,10 @@ local function initialize_hero()
       end
 
     elseif state == "hurt" then
-      if self:is_rabbit() then
-        self:stop_rabbit()
+      local game = self:get_game()
+      if game:is_rabbit() then
+        game:stop_rabbit()
       end
-    end
-  end
-
-  function hero_meta:is_rabbit()
-    return self.rabbit
-  end
-
-  -- Turns the hero into a rabbit until he gets hurt.
-  function hero_meta:start_rabbit()
-
-    local map = self:get_map()
-    local game = map:get_game()
-    local x, y, layer = self:get_position()
-    local rabbit_effect = map:create_custom_entity({
-      x = x,
-      y = y - 5,
-      layer = layer,
-      direction = 0,
-      sprite = "hero/rabbit_explosion",
-    })
-    sol.timer.start(self, 500, function()
-      rabbit_effect:remove()
-    end)
-
-    self.rabbit = true
-
-    self:freeze()
-    self:unfreeze()  -- Get back to walking normally before changing sprites.
-
-    -- Temporarily remove the equipment and block using items.
-    local tunic = game:get_ability("tunic")
-    game:set_ability("tunic", 1)
-    self:set_tunic_sprite_id("hero/rabbit_tunic")
-
-    local sword = game:get_ability("sword")
-    game:set_ability("sword", 0)
-
-    local shield = game:get_ability("shield")
-    game:set_ability("shield", 0)
-
-    local keyboard_item_1 = game:get_command_keyboard_binding("item_1")
-    game:set_command_keyboard_binding("item_1", nil)
-    local joypad_item_1 = game:get_command_joypad_binding("item_1")
-    game:set_command_joypad_binding("item_1", nil)
-
-    local keyboard_item_2 = game:get_command_keyboard_binding("item_2")
-    game:set_command_keyboard_binding("item_2", nil)
-    local joypad_item_2 = game:get_command_joypad_binding("item_2")
-    game:set_command_joypad_binding("item_2", nil)
-
-    function self:stop_rabbit()
-      self:set_tunic_sprite_id("hero/tunic" .. tunic)
-      game:set_ability("tunic", tunic)
-      game:set_ability("sword", sword)
-      game:set_ability("shield", shield)
-      game:set_command_keyboard_binding("item_1", keyboard_item_1)
-      game:set_command_joypad_binding("item_1", joypad_item_1)
-      game:set_command_keyboard_binding("item_2", keyboard_item_2)
-      game:set_command_joypad_binding("item_2", joypad_item_2)
-      self.rabbit = false
     end
   end
 end

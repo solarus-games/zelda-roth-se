@@ -62,9 +62,10 @@ end
 function enemy:on_attacking_hero(hero)
 
   -- Turn the hero into a rabbit until he gets hurt.
-  if not hero:is_rabbit() then
+  local game = hero:get_game()
+  if not game:is_rabbit() then
     sol.audio.play_sound("cane")
-    hero:start_rabbit()
+    game:start_rabbit()
   end
   enemy:remove()
 end

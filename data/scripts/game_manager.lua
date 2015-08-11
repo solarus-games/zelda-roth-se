@@ -69,7 +69,9 @@ function game_manager:create(file)
     camera = camera_manager:create(game)
 
     -- Initialize the hero.
-    game:get_hero():set_walking_speed(normal_walking_speed)
+    local hero = game:get_hero()
+    game:stop_rabbit()  -- In case the game was saved as a rabbit.
+    hero:set_walking_speed(normal_walking_speed)
 
     -- Measure the time played.
     run_chronometer(game)
@@ -220,6 +222,9 @@ function game_manager:create(file)
     local map = game:get_map()
     local hero = game:get_hero()
     local death_count = game:get_value("death_count") or 0
+    if hero:is_rabbit() then
+      hero:stop_rabbit()
+    end
     game:set_value("death_count", death_count + 1)
     hero:set_visible(false)
     local x, y, layer = hero:get_position()
@@ -277,6 +282,86 @@ function game_manager:create(file)
     local total_hours = math.floor(total_minutes / 60)
     local time_string = string.format("%02d:%02d:%02d", total_hours, minutes, seconds)
     return time_string
+  end
+
+  -- Returns whether the hero is currently turned into a rabbit.
+  function game:is_rabbit()
+    return game:get_value("rabbit")
+  end
+
+  -- Turns the hero into a rabbit until he gets hurt.
+  function game:start_rabbit()
+
+    if game:is_rabbit() then
+      return
+    end
+
+    local map = game:get_map()
+    local hero = map:get_hero()
+    local x, y, layer = hero:get_position()
+    local rabbit_effect = map:create_custom_entity({
+      x = x,
+      y = y - 5,
+      layer = layer,
+      direction = 0,
+      sprite = "hero/rabbit_explosion",
+    })
+    sol.timer.start(hero, 500, function()
+      rabbit_effect:remove()
+    end)
+
+    game:set_value("rabbit", true)
+
+    hero:freeze()
+    hero:unfreeze()  -- Get back to walking normally before changing sprites.
+
+    -- Temporarily remove the equipment and block using items.
+    local tunic = game:get_ability("tunic")
+    game:set_ability("tunic", 1)
+    hero:set_tunic_sprite_id("hero/rabbit_tunic")
+
+    local sword = game:get_ability("sword")
+    game:set_ability("sword", 0)
+
+    local shield = game:get_ability("shield")
+    game:set_ability("shield", 0)
+
+    local keyboard_item_1 = game:get_command_keyboard_binding("item_1")
+    game:set_command_keyboard_binding("item_1", nil)
+    local joypad_item_1 = game:get_command_joypad_binding("item_1")
+    game:set_command_joypad_binding("item_1", nil)
+
+    local keyboard_item_2 = game:get_command_keyboard_binding("item_2")
+    game:set_command_keyboard_binding("item_2", nil)
+    local joypad_item_2 = game:get_command_joypad_binding("item_2")
+    game:set_command_joypad_binding("item_2", nil)
+
+    -- Write the previous equipement to the game in case of game-over or save/quit as a rabbit.
+    game:set_value("rabbit_saved_tunic", tunic)
+    game:set_value("rabbit_saved_sword", sword)
+    game:set_value("rabbit_saved_shield", shield)
+    game:set_value("rabbit_saved_keyboard_item_1", keyboard_item_1)
+    game:set_value("rabbit_saved_joypad_item_1", joypad_item_1)
+    game:set_value("rabbit_saved_keyboard_item_2", keyboard_item_2)
+    game:set_value("rabbit_saved_joypad_item_2", joypad_item_2)
+  end
+
+  -- Stops the rabbit transformation.
+  function game:stop_rabbit()
+
+    if not game:is_rabbit() then
+      return
+    end
+    local hero = game:get_hero()
+    hero:set_tunic_sprite_id("hero/tunic" .. game:get_value("rabbit_saved_tunic"))
+    game:set_ability("tunic", game:get_value("rabbit_saved_tunic"))
+    game:set_ability("sword", game:get_value("rabbit_saved_sword"))
+    game:set_ability("shield", game:get_value("rabbit_saved_shield"))
+    game:set_command_keyboard_binding("item_1", game:get_value("rabbit_saved_keyboard_item_1"))
+    game:set_command_joypad_binding("item_1", game:get_value("rabbit_saved_joypad_item_1"))
+    game:set_command_keyboard_binding("item_2", game:get_value("rabbit_saved_keyboard_item_2"))
+    game:set_command_joypad_binding("item_2", game:get_value("rabbit_saved_joypad_item_2"))
+    game:set_value("rabbit", false)
   end
 
   return game
