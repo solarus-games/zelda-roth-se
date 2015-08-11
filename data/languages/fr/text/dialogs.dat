@@ -1,4 +1,11 @@
 dialog{
+  id = "_shop.amount_full",
+  text = [[
+Tu n'as pas besoin de cela maintenant.
+]]
+}
+
+dialog{
   id = "_shop.not_enough_money",
   text = [[
 Désolé, mais tu n'as pas assez de rubis.
