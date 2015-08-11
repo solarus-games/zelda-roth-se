@@ -14571,6 +14571,87 @@ tile{
   pattern = "floor.1",
 }
 
+tile{
+  layer = 1,
+  x = 1872,
+  y = 1952,
+  width = 16,
+  height = 16,
+  pattern = "floor.14",
+}
+
+tile{
+  layer = 1,
+  x = 1920,
+  y = 1952,
+  width = 16,
+  height = 16,
+  pattern = "floor.14",
+}
+
+tile{
+  layer = 1,
+  x = 1968,
+  y = 1952,
+  width = 16,
+  height = 16,
+  pattern = "floor.14",
+}
+
+tile{
+  layer = 1,
+  x = 1968,
+  y = 1904,
+  width = 16,
+  height = 16,
+  pattern = "floor.14",
+}
+
+tile{
+  layer = 1,
+  x = 1920,
+  y = 1904,
+  width = 16,
+  height = 16,
+  pattern = "floor.14",
+}
+
+tile{
+  layer = 1,
+  x = 1872,
+  y = 1904,
+  width = 16,
+  height = 16,
+  pattern = "floor.14",
+}
+
+tile{
+  layer = 1,
+  x = 1872,
+  y = 1856,
+  width = 16,
+  height = 16,
+  pattern = "floor.14",
+}
+
+tile{
+  layer = 1,
+  x = 1920,
+  y = 1856,
+  width = 16,
+  height = 16,
+  pattern = "floor.14",
+}
+
+tile{
+  layer = 1,
+  x = 1968,
+  y = 1856,
+  width = 16,
+  height = 16,
+  pattern = "floor.14",
+}
+
 sensor{
   name = "reset_solid_ground_sensor_8",
   layer = 1,
