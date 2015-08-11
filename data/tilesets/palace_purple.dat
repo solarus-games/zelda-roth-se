@@ -297,7 +297,7 @@ tile_pattern{
   y = 40,
   width = 8,
   height = 8,
-  repeat_mode = "vertical",
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
