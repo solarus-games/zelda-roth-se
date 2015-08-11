@@ -707,6 +707,17 @@ door{
   sprite = "entities/door_normal",
 }
 
+custom_entity{
+  name = "zelda",
+  layer = 1,
+  x = 712,
+  y = 389,
+  height = 8,
+  direction = 3,
+  sprite = "npc/zelda",
+  model = "zelda",
+}
+
 tile{
   layer = 2,
   x = 0,

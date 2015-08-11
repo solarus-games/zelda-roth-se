@@ -10,6 +10,8 @@ function separator_manager:manage_map(map)
 
   local enemy_places = {}
   local destructible_places = {}
+  local game = map:get_game()
+  local zelda = map:get_entity("zelda")
 
   -- Function called when a separator was just taken.
   local function separator_on_activated(separator)
@@ -48,6 +50,11 @@ function separator_manager:manage_map(map)
       if not block:is_in_same_region(hero) then
         block:reset()
       end
+    end
+
+    -- Make Zelda follow directly the hero when taking a separator.
+    if zelda ~= nil and game.zelda_following and not zelda:is_far_from_hero() then
+      zelda:set_position(hero:get_position())
     end
   end
 
@@ -144,6 +151,7 @@ function separator_manager:manage_map(map)
       destructible = destructible,
     }
   end
+
 end
 
 return separator_manager

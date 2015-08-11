@@ -5915,6 +5915,16 @@ stairs{
   subtype = 3,
 }
 
+custom_entity{
+  name = "zelda",
+  layer = 1,
+  x = 1064,
+  y = 1565,
+  direction = 3,
+  sprite = "npc/zelda",
+  model = "zelda",
+}
+
 tile{
   layer = 2,
   x = 320,

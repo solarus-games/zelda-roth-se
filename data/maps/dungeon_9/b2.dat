@@ -3538,6 +3538,17 @@ custom_entity{
   model = "zelda",
 }
 
+teletransporter{
+  layer = 1,
+  x = 664,
+  y = 248,
+  width = 16,
+  height = 16,
+  transition = "immediate",
+  destination_map = "dungeon_9/b1",
+  destination = "from_b2",
+}
+
 tile{
   layer = 2,
   x = 320,
