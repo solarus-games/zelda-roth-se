@@ -5944,6 +5944,17 @@ custom_entity{
   model = "zelda",
 }
 
+destructible{
+  layer = 1,
+  x = 800,
+  y = 261,
+  treasure_name = "random",
+  sprite = "entities/curtain",
+  destruction_sound = "bush",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
 tile{
   layer = 2,
   x = 320,

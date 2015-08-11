@@ -30,6 +30,7 @@ map{ id = "gerudo/chest_game", description = "Chest game" }
 map{ id = "gerudo/green_potion_house", description = "Green potion house" }
 map{ id = "gerudo/leader_house", description = "Leader's house" }
 map{ id = "gerudo/woman_house", description = "Woman's house" }
+map{ id = "gerudo_village/black_smith", description = "Blacksmith house" }
 map{ id = "houses/link_house", description = "Link's house" }
 map{ id = "houses/monster_house", description = "Monster house" }
 map{ id = "inside_store", description = "Inside Store" }
@@ -147,6 +148,7 @@ sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }
+sprite{ id = "entities/curtain", description = "Curtain" }
 sprite{ id = "entities/destination", description = "Destination of teletransporter" }
 sprite{ id = "entities/door_big_key", description = "Door (big key)" }
 sprite{ id = "entities/door_boss_key", description = "Door (boss key)" }
