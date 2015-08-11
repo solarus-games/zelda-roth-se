@@ -1,4 +1,4 @@
--- A fixed enemy who shoots fireballs.
+-- A fixed enemy who shoots purple fireballs that remove half of the player's life.
 
 local enemy = ...
 
@@ -36,7 +36,7 @@ function enemy:on_restarted()
       end
 
       enemy:create_enemy({
-        breed = "fireball_red_small",
+        breed = "fireball_purple_small",
       })
     end
     return true  -- Repeat the timer.

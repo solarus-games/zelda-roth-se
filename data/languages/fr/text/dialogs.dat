@@ -557,6 +557,26 @@ dialog{
 }
 
 dialog{
+  id = "dungeon_9.zelda.angry",
+  text = [[
+Tu n'aurais pas l'étrange sentiment d'oublier
+quelqu'un par hasard ???
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.hello",
+  text = [[
+Félicitations Link, tu as réussi à venir me
+délivrer !!!
+
+
+Allons vite trouver Ganon, il faut
+impérativement lui reprendre la Triforce !
+]]
+}
+
+dialog{
   id = "dungeon_finished_save",
   text = [[
 Souhaites-tu sauvegarder ta partie ?

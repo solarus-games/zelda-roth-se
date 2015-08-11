@@ -8,6 +8,28 @@ properties{
 }
 
 dynamic_tile{
+  name = "invisible_tile_3",
+  layer = 1,
+  x = 272,
+  y = 224,
+  pattern = "barrier.1",
+  width = 16,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "invisible_tile_4",
+  layer = 1,
+  x = 272,
+  y = 232,
+  pattern = "barrier.1",
+  width = 16,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
   name = "invisible_tile_1",
   layer = 1,
   x = 176,
@@ -381,7 +403,6 @@ enemy{
   y = 189,
   direction = 3,
   breed = "medusa",
-  treasure_name = "random_heart",
 }
 
 enemy{
@@ -432,5 +453,14 @@ enemy{
   direction = 3,
   breed = "spear_soldier_red",
   treasure_name = "random_heart",
+}
+
+enemy{
+  name = "auto_enemy_40",
+  layer = 1,
+  x = 280,
+  y = 237,
+  direction = 3,
+  breed = "medusa_purple",
 }
 

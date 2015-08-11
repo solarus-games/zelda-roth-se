@@ -3,8 +3,7 @@ properties{
   y = 0,
   width = 1280,
   height = 960,
-  tileset = "temple_yellow",
-  music = "same",
+  tileset = "temple_blue",
 }
 
 tile{
@@ -167,15 +166,6 @@ tile{
   width = 8,
   height = 176,
   pattern = "wall_border.4",
-}
-
-tile{
-  layer = 1,
-  x = 48,
-  y = 48,
-  width = 256,
-  height = 176,
-  pattern = "floor.1",
 }
 
 tile{
@@ -1814,6 +1804,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "floor_pot",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 48,
+  width = 256,
+  height = 176,
+  pattern = "floor.19",
 }
 
 destructible{

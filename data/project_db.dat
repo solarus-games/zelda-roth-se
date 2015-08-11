@@ -74,6 +74,7 @@ sprite{ id = "enemies/chicken", description = "Chicken" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/eyegore_green", description = "Green Eyegore" }
 sprite{ id = "enemies/eyegore_red", description = "Red Eyegore" }
+sprite{ id = "enemies/fireball_purple_small", description = "Purple small fireball" }
 sprite{ id = "enemies/fireball_red_big", description = "Red big fireball" }
 sprite{ id = "enemies/fireball_red_small", description = "Red small Fireball" }
 sprite{ id = "enemies/freezor", description = "Freezor" }
@@ -89,6 +90,7 @@ sprite{ id = "enemies/kholdstare", description = "Kholdstare" }
 sprite{ id = "enemies/lynel", description = "Lynel" }
 sprite{ id = "enemies/lynel_flame", description = "Lynel's flame" }
 sprite{ id = "enemies/medusa", description = "Medusa" }
+sprite{ id = "enemies/medusa_purple", description = "Purple Medusa" }
 sprite{ id = "enemies/moblin", description = "Moblin" }
 sprite{ id = "enemies/mothula", description = "Mothula" }
 sprite{ id = "enemies/octorok", description = "Octorok" }
@@ -165,6 +167,7 @@ sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ice", description = "Ice ground" }
 sprite{ id = "entities/ice_beam", description = "Ice beam" }
 sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/prison_door", description = "Prison door" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
@@ -431,6 +434,7 @@ enemy{ id = "chasupa", description = "Chasupa" }
 enemy{ id = "chicken", description = "Chicken" }
 enemy{ id = "eyegore_green", description = "Green Eyegore" }
 enemy{ id = "eyegore_red", description = "Red Eyegore" }
+enemy{ id = "fireball_purple_small", description = "Purple small Fireball" }
 enemy{ id = "fireball_red_big", description = "Red big Fireball" }
 enemy{ id = "fireball_red_small", description = "Red small Fireball" }
 enemy{ id = "freezor", description = "Freezor" }
@@ -446,6 +450,7 @@ enemy{ id = "kholdstare", description = "Kholdstare" }
 enemy{ id = "lynel", description = "Lynel" }
 enemy{ id = "lynel_flame", description = "Lynel's flame" }
 enemy{ id = "medusa", description = "Medusa" }
+enemy{ id = "medusa_purple", description = "Purple Medusa" }
 enemy{ id = "moblin", description = "Moblin" }
 enemy{ id = "mothula", description = "Mothula" }
 enemy{ id = "octorok", description = "Octorok" }
@@ -485,6 +490,7 @@ entity{ id = "hammer_stake", description = "Hammer stake" }
 entity{ id = "hookable", description = "Hookable" }
 entity{ id = "ice_beam", description = "Ice beam" }
 entity{ id = "torch", description = "Torch" }
+entity{ id = "zelda", description = "Zelda" }
 
 language{ id = "fr", description = "Français" }
 
