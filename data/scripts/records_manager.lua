@@ -105,7 +105,7 @@ end
 function records_manager:add_candidate_time(time)
 
   if records.best_time == nil or time < records.best_time then
-    records.best_time = best_time
+    records.best_time = time
   end
 end
 

@@ -199,14 +199,8 @@ function inventory_manager:new(game)
 
   -- Draws the time played on the status widget.
   local function draw_time_played(dst_surface)
-    local milliseconds = game:get_value("time_played")
-    local total_seconds = math.floor(milliseconds / 1000)
-    local seconds = total_seconds % 60
-    local total_minutes = math.floor(total_seconds / 60)
-    local minutes = total_minutes % 60
-    local total_hours = math.floor(total_minutes / 60)
-    local time_string = string.format(": %02d:%02d:%02d", total_hours, minutes, seconds)
-    time_played_text:set_text(time_string)
+    local time_string = game:get_time_played_string()
+    time_played_text:set_text(": " .. time_string)
     local status_x, status_y = status_widget:get_xy()
     time_played_text:draw(dst_surface, status_x + 65, status_y + 92)
   end

@@ -62,3 +62,21 @@ text{ key = "savegames_menu.options", value = "OPTIONS" }
 text{ key = "savegames_menu.records", value = "RECORDS" }
 text{ key = "savegames_menu.title", value = "ECRAN DE SELECTION" }
 text{ key = "savegames_menu.yes", value = "OUI" }
+text{ key = "stats_menu.death_count", value = "Mort $v fois" }
+text{ key = "stats_menu.game_time", value = "Temps de jeu :" }
+text{ key = "stats_menu.items", value = "Objets :" }
+text{ key = "stats_menu.monsters", value = "Types d'ennemis vaincus :" }
+text{ key = "stats_menu.percent", value = "Tu as fini ce jeu à $v%, félicitations !" }
+text{ key = "stats_menu.pieces_of_heart", value = "Quarts de coeur :" }
+text{ key = "stats_menu.rank", value = "RANG :" }
+text{ key = "stats_menu.rank.completion.1", value = "Héros d'Hyrule" }
+text{ key = "stats_menu.rank.completion.2", value = "Perfectionniste" }
+text{ key = "stats_menu.rank.completion.3", value = "Fan de Zelda" }
+text{ key = "stats_menu.rank.completion.4", value = "Pro du clavier" }
+text{ key = "stats_menu.rank.completion.5", value = "Confirmé" }
+text{ key = "stats_menu.rank.completion.6", value = "Débutant" }
+text{ key = "stats_menu.rank.death.1", value = "Mort-vivant" }
+text{ key = "stats_menu.rank.death.2", value = "Kamikaze" }
+text{ key = "stats_menu.rank.speed", value = "Marathonien d'Hyrule" }
+text{ key = "stats_menu.rank.ultimate", value = "Frimeur" }
+text{ key = "stats_menu.title", value = "SCORES :" }

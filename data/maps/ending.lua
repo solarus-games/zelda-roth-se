@@ -19,11 +19,9 @@ function map:on_opening_transition_finished()
   game:start_dialog("ending", function()
     -- Show the statistics menu.
     sol.audio.stop_music()
+    sol.audio.play_sound("pause_open")
     local stats = stats_manager:new(game)
     sol.menu.start(map, stats)
-    function stats:on_finished()
-      sol.main.reset()
-    end
   end)
 end
 

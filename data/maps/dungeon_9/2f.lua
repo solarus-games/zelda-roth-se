@@ -49,6 +49,7 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
 
   if item:get_name() == "triforce" then
     -- The end.
+    game:save()  -- To get the ranks.
     hero:teleport("ending")
   end
 end

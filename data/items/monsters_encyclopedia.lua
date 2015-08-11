@@ -25,3 +25,8 @@ function item:get_num_monster_types_killed()
 
   return game:get_value(counter_savegame_variable) or 0
 end
+
+function item:get_max_monster_types()
+
+  return 46
+end

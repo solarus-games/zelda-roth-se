@@ -113,6 +113,17 @@ function monsters_manager:new(game)
     layout:draw(dst_surface)
   end
 
+  function monsters:get_monster_count()
+
+    local monster_count = 0
+    for _, monster in ipairs(monsters) do
+      if game:get_value("monsters_encyclopedia_" .. monster.enemy) then
+        monster_count = monster_count + 1
+      end
+    end
+    return monster_count
+  end
+
   return monsters
 end
 

@@ -214,6 +214,33 @@ function game_manager:create(file)
     return handled
   end
 
+  -- Game over animation.
+  function game:on_game_over_started()
+    sol.audio.play_sound("hero_dying")
+    local map = game:get_map()
+    local hero = game:get_hero()
+    local death_count = game:get_value("death_count") or 0
+    game:set_value("death_count", death_count + 1)
+    hero:set_visible(false)
+    local x, y, layer = hero:get_position()
+
+    -- Use a fake hero entity for the animation because
+    -- the one of the hero is suspended.
+    local fake_hero = map:create_custom_entity({
+      x = x,
+      y = y,
+      layer = layer,
+      direction = 0,
+      sprite = hero:get_tunic_sprite_id(),
+    })
+    fake_hero:get_sprite():set_animation("dying")
+    fake_hero:get_sprite():set_ignore_suspend(true)  -- Cannot be done on the hero (yet).
+    local timer = sol.timer.start(game, 3000, function()
+      -- Restart the game.
+      game:start()
+    end)
+  end
+
   function game:get_dialog_box()
     return dialog_box
   end
@@ -232,6 +259,24 @@ function game_manager:create(file)
   -- or unpauses the game if this submenu is already active.
   function game:switch_pause_menu(submenu_name)
     pause_menu:switch_submenu(submenu_name)
+  end
+
+  -- Returns the game time in seconds.
+  function game:get_time_played()
+    local milliseconds = game:get_value("time_played")
+    local total_seconds = math.floor(milliseconds / 1000)
+    return total_seconds
+  end
+
+  -- Returns a string representation of the game time.
+  function game:get_time_played_string()
+    local total_seconds = game:get_time_played()
+    local seconds = total_seconds % 60
+    local total_minutes = math.floor(total_seconds / 60)
+    local minutes = total_minutes % 60
+    local total_hours = math.floor(total_minutes / 60)
+    local time_string = string.format("%02d:%02d:%02d", total_hours, minutes, seconds)
+    return time_string
   end
 
   return game
