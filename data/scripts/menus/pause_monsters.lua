@@ -67,7 +67,7 @@ function monsters_manager:new(game)
     layout:make_big_wooden_frame(16, 8, 112, 32)
     layout:make_text(sol.language.get_string("pause.monsters.title") .. " " .. page, 72, 16, "center")
 
-    for _, monster in ipairs(monsters) do
+    for _, monster in ipairs(models) do
       if monster.page == page then
         layout:make_wooden_frame(unpack(monster.frame))
         if game:get_value("monsters_encyclopedia_" .. monster.enemy) then
@@ -116,7 +116,7 @@ function monsters_manager:new(game)
   function monsters:get_monster_count()
 
     local monster_count = 0
-    for _, monster in ipairs(monsters) do
+    for _, monster in ipairs(models) do
       if game:get_value("monsters_encyclopedia_" .. monster.enemy) then
         monster_count = monster_count + 1
       end
