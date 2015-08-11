@@ -32,3 +32,11 @@ function dont_leave_castle_sensor:on_activated()
     end)
   end
 end
+
+function to_b1:on_activated()
+
+  -- Leaving the floor when Zelda is far.
+  if zelda:is_following_hero() and zelda:is_far_from_hero() then
+    zelda:hero_gone()
+  end
+end

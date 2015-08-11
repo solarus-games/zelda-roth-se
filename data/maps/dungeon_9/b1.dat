@@ -706,6 +706,7 @@ destination{
 }
 
 teletransporter{
+  name = "to_1f",
   layer = 1,
   x = 1112,
   y = 1568,
@@ -805,6 +806,7 @@ enemy{
 }
 
 teletransporter{
+  name = "to_b2",
   layer = 1,
   x = 792,
   y = 1552,

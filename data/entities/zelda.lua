@@ -136,6 +136,13 @@ function zelda:is_far_from_hero()
   return distance >= 100
 end
 
+-- Called when the hero leaves a map without Zelda when he was supposed to wait for her.
+function zelda:hero_gone()
+
+  -- Zelda will be back to the prison cell.
+  game.zelda_following = false
+end
+
 sol.timer.start(zelda, 50, function()
 
   if map:get_id() == "outside/a2" then
