@@ -1356,6 +1356,7 @@ vraiment passer !!!
 dialog{
   id = "outside_c3.cemetary.go_away",
   text = [[
+Ne traîne pas dans mes pattes !!!
 ]]
 }
 
