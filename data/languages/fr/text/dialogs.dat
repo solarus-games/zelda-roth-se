@@ -557,10 +557,35 @@ dialog{
 }
 
 dialog{
-  id = "dungeon_9.zelda.angry",
+  id = "dungeon_9.zelda.almost_there",
   text = [[
-Tu n'aurais pas l'étrange sentiment d'oublier
-quelqu'un par hasard ???
+Nous y sommes presque, suis-moi !
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.dont_leave_castle",
+  text = [[
+Ganon est toujours quelque part dans le
+château.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.go_ganon",
+  text = [[
+Ganon est juste derrière cette porte, je vais
+soigner tes blessures.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.go_kakariko",
+  text = [[
+J'ai bien peur que tu ne puisses jamais vaincre
+Ganon avec tes armes actuelles...
+Va parler au chef du village Cocorico,
+je suis sûre qu'il trouvera une solution.
 ]]
 }
 
@@ -573,6 +598,36 @@ délivrer !!!
 
 Allons vite trouver Ganon, il faut
 impérativement lui reprendre la Triforce !
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.secret_wall",
+  text = [[
+Le passage secret derrière la salle du trône
+mène à Ganon. Dépêchons-nous !
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.should_wait_zelda",
+  text = [[
+Tu devrais attendre la princesse Zelda !
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.weak_wall_ignored_zelda",
+  text = [[
+Tu n'aurais pas l'étrange sentiment d'oublier
+quelqu'un par hasard ???
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.zelda_waiting",
+  text = [[
+Zelda t'attend !!!
 ]]
 }
 

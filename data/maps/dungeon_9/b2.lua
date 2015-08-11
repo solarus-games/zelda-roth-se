@@ -1,3 +1,5 @@
+-- Dungeon 9 B2.
+
 local map = ...
 local game = map:get_game()
 
@@ -17,4 +19,14 @@ end
 function weak_wall_a:on_opened()
 
   sol.audio.play_sound("secret")
+end
+
+function dont_go_without_zelda_sensor:on_activated()
+
+  -- Trying to traverse the weak wall before talking to Zelda.
+  if not zelda:is_following_hero() then
+    game:start_dialog("dungeon_9.zelda.weak_wall_ignored_zelda", function()
+      hero:walk("4")
+    end)
+  end
 end

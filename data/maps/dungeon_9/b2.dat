@@ -3304,15 +3304,6 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_2_2",
-  layer = 1,
-  x = 952,
-  y = 309,
-  width = 16,
-  height = 16,
-}
-
-sensor{
   name = "dungeon_room_3_1",
   layer = 1,
   x = 968,
@@ -3547,6 +3538,34 @@ teletransporter{
   transition = "immediate",
   destination_map = "dungeon_9/b1",
   destination = "from_b2",
+}
+
+sensor{
+  name = "dont_go_without_zelda_sensor",
+  layer = 1,
+  x = 944,
+  y = 309,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_2",
+  layer = 1,
+  x = 952,
+  y = 309,
+  width = 16,
+  height = 16,
+}
+
+teletransporter{
+  layer = 1,
+  x = 920,
+  y = 248,
+  width = 16,
+  height = 16,
+  destination_map = "outside/a2",
+  destination = "from_dungeon_9_1f_ne",
 }
 
 tile{

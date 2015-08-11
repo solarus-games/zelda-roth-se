@@ -4861,6 +4861,24 @@ tile{
 }
 
 sensor{
+  name = "dont_go_without_zelda_sensor",
+  layer = 1,
+  x = 1440,
+  y = 149,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dont_leave_castle_sensor",
+  layer = 1,
+  x = 800,
+  y = 941,
+  width = 16,
+  height = 16,
+}
+
+sensor{
   name = "dungeon_room_19_2",
   layer = 1,
   x = 1120,

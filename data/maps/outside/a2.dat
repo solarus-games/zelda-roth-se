@@ -6685,6 +6685,15 @@ tile{
   pattern = "4",
 }
 
+sensor{
+  name = "open_house_dungeon_9_door_n_sensor",
+  layer = 1,
+  x = 1032,
+  y = 365,
+  width = 32,
+  height = 16,
+}
+
 npc{
   layer = 1,
   x = 984,
@@ -7719,23 +7728,6 @@ destination{
   direction = 3,
 }
 
-sensor{
-  name = "open_house_dungeon_9_door_n_sensor",
-  layer = 1,
-  x = 1032,
-  y = 365,
-  width = 32,
-  height = 16,
-}
-
-destination{
-  name = "from_dungeon_9_2f",
-  layer = 1,
-  x = 1040,
-  y = 365,
-  direction = 3,
-}
-
 teletransporter{
   layer = 1,
   x = 1032,
@@ -7780,6 +7772,42 @@ custom_entity{
   direction = 3,
   sprite = "npc/zelda",
   model = "zelda",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1032,
+  y = 336,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_9/2f",
+  destination = "from_outside",
+}
+
+sensor{
+  name = "dont_go_without_zelda_sensor_w",
+  layer = 1,
+  x = 1040,
+  y = 357,
+  width = 16,
+  height = 16,
+}
+
+destination{
+  name = "from_dungeon_9_2f",
+  layer = 1,
+  x = 1040,
+  y = 365,
+  direction = 3,
+}
+
+sensor{
+  name = "dont_go_without_zelda_sensor_e",
+  layer = 1,
+  x = 1264,
+  y = 269,
+  width = 16,
+  height = 16,
 }
 
 tile{

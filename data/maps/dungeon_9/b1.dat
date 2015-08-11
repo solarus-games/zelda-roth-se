@@ -684,15 +684,6 @@ tile{
   pattern = "stairs_down.2.border.1",
 }
 
-sensor{
-  name = "dungeon_room_3_2",
-  layer = 1,
-  x = 1120,
-  y = 1589,
-  width = 16,
-  height = 16,
-}
-
 wall{
   layer = 1,
   x = 1104,
