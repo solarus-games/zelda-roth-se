@@ -31,6 +31,10 @@ map{ id = "gerudo/green_potion_house", description = "Green potion house" }
 map{ id = "gerudo/leader_house", description = "Leader's house" }
 map{ id = "gerudo/woman_house", description = "Woman's house" }
 map{ id = "gerudo_village/black_smith", description = "Blacksmith house" }
+map{ id = "gerudo_village/chest_game", description = "Chest game" }
+map{ id = "gerudo_village/green_potion_house", description = "Green potion house" }
+map{ id = "gerudo_village/leader_house", description = "Leader's house" }
+map{ id = "gerudo_village/woman_house", description = "Woman house" }
 map{ id = "houses/link_house", description = "Link's house" }
 map{ id = "houses/monster_house", description = "Monster house" }
 map{ id = "inside_store", description = "Inside Store" }
@@ -54,6 +58,7 @@ map{ id = "outside/c2", description = "Outside C2 (Plains)" }
 map{ id = "outside/c3", description = "Outside C3 (Shadow Village)" }
 map{ id = "outside_store", description = "Outside Store" }
 map{ id = "shadow/chest_game", description = "Chest game" }
+map{ id = "shadow_village/chest_game", description = "Chest game" }
 
 tileset{ id = "cave", description = "Cave" }
 tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
