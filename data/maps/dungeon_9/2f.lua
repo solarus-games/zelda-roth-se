@@ -8,7 +8,7 @@ separator_manager:manage_map(map)
 
 local fighting_boss = false
 
-function map:on_started()
+function map:on_started(destination)
 
   if boss ~= nil then
     boss:set_enabled(false)
@@ -45,11 +45,11 @@ if boss ~= nil then
   end
 end
 
-function map:on_obtaining_treasure(item, variant, savegame_variable)
+function map:on_obtained_treasure(item, variant, savegame_variable)
 
   if item:get_name() == "triforce" then
     -- The end.
-    -- TODO
+    hero:teleport("ending")
   end
 end
 

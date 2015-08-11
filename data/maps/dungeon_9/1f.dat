@@ -5911,8 +5911,7 @@ teletransporter{
   width = 16,
   height = 16,
   transition = "immediate",
-  destination_map = "dungeon_9/2f",
-  destination = "boss_shortcut",
+  destination_map = "ending",
 }
 
 teletransporter{

@@ -2,7 +2,7 @@ local monsters_manager = {}
 
 local gui_designer = require("scripts/menus/lib/gui_designer")
 
-local monsters = {
+local models = {
   { enemy = "tentacle",            page = 1, frame = { 152,   8, 32, 32 }, xy = {  8, 13 } },  -- TODO rename to Popo
   { enemy = "rope",                page = 1, frame = { 208,   8, 32, 32 }, xy = {  8, 13 } },
   { enemy = "stal",                page = 1, frame = { 264,   8, 32, 32 }, xy = {  8, 13 } },
@@ -53,6 +53,8 @@ local monsters = {
 local num_pages = 4
 
 function monsters_manager:new(game)
+
+  local monsters = {}
 
   local layout
   local page = 1

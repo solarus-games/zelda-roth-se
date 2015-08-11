@@ -104,7 +104,7 @@ function gui_designer:create(width, height)
     draw_tiled_region(get_frames_img(), 112, 0, 16, 16, canvas, x, y, w, h)
   end
 
-  -- Fills a rectangle the specified color.
+  -- Fills a rectangle with the specified color.
   function widget:make_color_background(color, x, y, w, h)
     x = x or 0
     y = y or 0
@@ -180,6 +180,16 @@ function gui_designer:create(width, height)
   -- Adds a region of an image.
   function widget:make_image_region(src_surface, src_x, src_y, src_width, src_height, dst_x, dst_y)
     src_surface:draw_region(src_x, src_y, src_width, src_height, canvas, dst_x, dst_y)
+  end
+
+  -- Add a tiled image.
+  function widget:make_tiled_image(src_surface, x, y, w, h)
+    x = x or 0
+    y = y or 0
+    w = w or width
+    h = h or height
+    local src_w, src_h = src_surface:get_size()
+    draw_tiled_region(src_surface, 0, 0, src_w, src_h, canvas, x, y, w, h)
   end
 
   -- Adds an animated sprite.

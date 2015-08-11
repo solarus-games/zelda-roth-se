@@ -24,6 +24,7 @@ map{ id = "dungeon_9/1f", description = "Dungeon 9 1F" }
 map{ id = "dungeon_9/2f", description = "Dungeon 9 2F" }
 map{ id = "dungeon_9/b1", description = "Dungeon 9 B1" }
 map{ id = "dungeon_9/b2", description = "Dungeon 9 B2" }
+map{ id = "ending", description = "The end" }
 map{ id = "enemy_store", description = "Enemy Store" }
 map{ id = "gerudo/black_smith", description = "Black-smith" }
 map{ id = "gerudo/chest_game", description = "Chest game" }

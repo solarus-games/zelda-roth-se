@@ -662,6 +662,39 @@ Souhaites-tu sauvegarder ta partie ?
 }
 
 dialog{
+  id = "ending",
+  text = [[
+A l'instant où Link toucha la Triforce, les
+monstres disparurent et la paix revint.
+
+
+La princesse Zelda prit alors une grande
+décision : elle toucha à son tour la Triforce
+pour exaucer son voeu...
+
+La Triforce fut depuis toujours à l'origine des
+problèmes survenus au Royaume, tôt ou tard un
+autre être malfaisant aurait fini par la
+trouver.
+A la seconde où la princesse toucha la relique,
+elle disparut à jamais d'Hyrule.
+
+
+Depuis ce jour, le peuple d'Hyrule vécut en
+paix, sans craindre de nouveaux désastres.
+
+
+Ainsi s'achève la légende de Zelda, celle de la
+Triforce et de la Terre d'Or.
+
+
+On dit que l'épée Excalibur repose en sûreté
+quelque part, et qu'elle constitue le dernier
+souvenir de la quête de Link...
+]]
+}
+
+dialog{
   id = "fairy_cave_already_done",
   text = [[
 ...
