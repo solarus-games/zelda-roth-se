@@ -1,6 +1,8 @@
 local map = ...
 local game = map:get_game()
 
+local can_beat_ganon = game:get_item("sword"):get_variant() >= 3 or game:has_item("bow_silver")
+
 function leader_npc:on_interaction()
 
   if not game:get_value("kakariko_leader_first_dialog") then
@@ -13,8 +15,8 @@ function leader_npc:on_interaction()
   elseif not game:has_all_crystals() then
     game:start_dialog("kakariko.leader_house.go_crystals")
 
-  elseif not game:get_value("dungeon_9.found_ganon") or  -- TODO set this variable one day
-      game:get_item("sword"):get_variant() >= 3 then
+  elseif not game:get_value("dungeon_9_zelda_saved") or
+      can_beat_ganon then
     game:start_dialog("kakariko.leader_house.go_ganon")
 
   else

@@ -70,7 +70,7 @@ function zelda:on_interaction()
     else
       game:start_dialog("dungeon_9.zelda.almost_there")
     end
-  elseif not game:get_item("sword"):get_variant() < 2 then
+  elseif game:get_item("sword"):get_variant() < 2 and not game:has_item("silver_bow") then
     game:start_dialog("dungeon_9.zelda.go_kakariko")
   else
     game:start_dialog("dungeon_9.zelda.go_ganon")

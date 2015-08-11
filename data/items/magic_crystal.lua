@@ -37,14 +37,10 @@ function item:start_dungeon_finished_cutscene()
   hero:freeze()
   game:set_dungeon_finished()
 
-  local additional_dialog
   local num_crystals = game:get_num_crystals()
-  if num_crystals == 1 or num_crystals == 6 or num_crystals == 7 then
-    additional_dialog = "crystal." .. num_crystals
-  end
-  if additional_dialog then
-    game:start_dialog(additional_dialog, victory_cutscene)
+  if num_crystals == 1 or num_crystals == 5 or num_crystals == 6 or num_crystals == 7 then
+    game:start_dialog("crystal." .. num_crystals, victory_cutscene)
   else
-    victory_cutscene()
+    game:start_dialog(crystal.other, num_crystals, victory_cutscene)
   end
 end

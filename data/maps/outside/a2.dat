@@ -6685,15 +6685,6 @@ tile{
   pattern = "4",
 }
 
-sensor{
-  name = "open_house_dungeon_9_door_n_sensor",
-  layer = 1,
-  x = 1032,
-  y = 365,
-  width = 32,
-  height = 16,
-}
-
 npc{
   layer = 1,
   x = 984,

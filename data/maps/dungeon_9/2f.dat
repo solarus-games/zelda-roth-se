@@ -585,6 +585,24 @@ tile{
   pattern = "floor.1",
 }
 
+door{
+  name = "boss_door",
+  layer = 1,
+  x = 792,
+  y = 248,
+  direction = 1,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "boss_door_2",
+  layer = 1,
+  x = 792,
+  y = 216,
+  direction = 3,
+  sprite = "entities/door_normal",
+}
+
 custom_entity{
   layer = 1,
   x = 680,
@@ -687,24 +705,6 @@ destination{
   x = 800,
   y = 213,
   direction = 1,
-}
-
-door{
-  name = "boss_door",
-  layer = 1,
-  x = 792,
-  y = 248,
-  direction = 1,
-  sprite = "entities/door_normal",
-}
-
-door{
-  name = "boss_door_2",
-  layer = 1,
-  x = 792,
-  y = 216,
-  direction = 3,
-  sprite = "entities/door_normal",
 }
 
 custom_entity{

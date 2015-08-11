@@ -454,6 +454,13 @@ A quoi pourra-t-il bien servir ?
 }
 
 dialog{
+  id = "crystal.5",
+  text = [[
+Plus que 2 à trouver !!!
+]]
+}
+
+dialog{
   id = "crystal.6",
   text = [[
 Il ne t'en manque plus qu'un seul !
@@ -465,6 +472,13 @@ dialog{
   text = [[
 Tu as tous les cristaux, cours au château
 sauver Zelda !
+]]
+}
+
+dialog{
+  id = "crystal.other",
+  text = [[
+Plus que $v à trouver !
 ]]
 }
 

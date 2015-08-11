@@ -12,6 +12,11 @@ function map:on_started(destination)
       zelda:get_sprite():set_direction(1)
     end
   end
+
+  if game:get_value("dungeon_9_zelda_saved") then
+    -- Open the final entrance.
+    dungeon_9_door_n:set_enabled(false)
+  end
 end
 
 function map:on_opening_transition_finished(destination)
@@ -51,30 +56,10 @@ end
 
 function dont_go_without_zelda_sensor_w:on_activated()
 
-  -- Trying to go back to the castle when Zelda is here.
-  if zelda:is_enabled() and zelda:is_following_hero() then
-    game:start_dialog("dungeon_9.zelda.zelda_waiting", function()
-      hero:walk("6")
-    end)
-  end
-end
-
-function dont_go_without_zelda_sensor_e:on_activated()
-
   -- Trying to enter the castle before Zelda.
   if zelda:is_enabled() and zelda:is_following_hero() then
-
-    if not self.crossed then
-      -- Avoid the sensor the first time, when coming from the stairs.
-      local x, y = hero:get_position()
-      hero:set_position(x, y - 1)
-      self.crossed = true
-      return
-    end
-
-    hero:freeze()  -- Don't activate stairs.
     game:start_dialog("dungeon_9.zelda.should_wait_zelda", function()
-      hero:walk("4")
+      hero:walk("6")
     end)
   end
 end
