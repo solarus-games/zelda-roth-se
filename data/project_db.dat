@@ -50,7 +50,7 @@ map{ id = "outside/b3", description = "Outside B3 (Lake)" }
 map{ id = "outside/b4", description = "Outside B4 (South-East)" }
 map{ id = "outside/c1", description = "Outside C1 (Forest)" }
 map{ id = "outside/c2", description = "Outside C2 (Plains)" }
-map{ id = "outside/c3", description = "Outside C3 (Cemetary)" }
+map{ id = "outside/c3", description = "Outside C3 (Shadow Village)" }
 map{ id = "outside_store", description = "Outside Store" }
 map{ id = "shadow/chest_game", description = "Chest game" }
 

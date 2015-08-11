@@ -1038,6 +1038,13 @@ Désolé, mais tu n'as pas assez de rubis.
 }
 
 dialog{
+  id = "ouside_c3.village_sign",
+  text = [[
+Village de l'Ombre
+]]
+}
+
+dialog{
   id = "outside_a1.dungeon_4_sign",
   text = [[
 Temple du Désert
@@ -1101,6 +1108,24 @@ dialog{
   text = [[
 O : Roc de la Tortue
 E : Lac Hylia
+]]
+}
+
+dialog{
+  id = "outside_b1.dungeon_3_sign",
+  text = [[
+Temple de la Montagne
+
+Déconseillé aux cardiaques, peureux, et aux
+âmes sensibles en général.
+]]
+}
+
+dialog{
+  id = "outside_b1.sw_sign",
+  text = [[
+O : Entrée du Désert
+N : Temple de la Montagne
 ]]
 }
 
@@ -1317,6 +1342,69 @@ dialog{
   id = "outside_c2.village_sign",
   text = [[
 Village Cocorico
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.dont_pass",
+  text = [[
+Obtiens une autorisation du chef si tu veux
+vraiment passer !!!
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.go_away",
+  text = [[
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.leader_allowed_to_pass",
+  text = [[
+Le chef t'as autorisé à passer ???
+Grrrr... Alors écarte-toi !!!
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary_sign",
+  text = [[
+N : Cimetière Hanté
+
+Entrée interdite
+]]
+}
+
+dialog{
+  id = "outside_c3.non_understandable",
+  text = [[
+{|{|{|{|{|{|{{{|
+{}||}{}|{}|{}|}{
+|{|{|{|}|}
+]]
+}
+
+dialog{
+  id = "outside_c3.sw_sign",
+  text = [[
+N : Village de l'Ombre
+O : Lac Hylia
+]]
+}
+
+dialog{
+  id = "outside_c3.village_sign",
+  text = [[
+Village de l'Ombre
+]]
+}
+
+dialog{
+  id = "outside_c3.weird_language",
+  text = [[
+Les habitants de ce village ont un dialecte
+très particulier, je n'y comprends rien...
 ]]
 }
 

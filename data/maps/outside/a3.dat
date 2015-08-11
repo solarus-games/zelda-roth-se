@@ -7650,7 +7650,7 @@ custom_entity{
   name = "turtle_rock_entrance",
   layer = 1,
   x = 536,
-  y = 885,
+  y = 821,
   direction = 3,
   sprite = "entities/turtle_rock_entrance",
   model = "hammer_stake",

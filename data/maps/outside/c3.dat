@@ -5483,6 +5483,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_c3.sw_sign",
 }
 
 destructible{
@@ -6515,6 +6516,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_c3.cemetary_sign",
 }
 
 custom_entity{
@@ -6597,6 +6599,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#ouside_c3.village_sign",
 }
 
 custom_entity{
@@ -7135,6 +7138,17 @@ destination{
   x = 64,
   y = 541,
   direction = 3,
+}
+
+npc{
+  name = "welcome_npc",
+  layer = 1,
+  x = 520,
+  y = 1141,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/pink_ball",
+  behavior = "dialog#outside_c3.non_understandable",
 }
 
 tile{
