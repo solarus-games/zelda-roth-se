@@ -84,7 +84,10 @@ local function initialize_hero()
       -- Multiply the damage by two if the hero has no defense at all.
       damage = damage * 2
     else
-      damage = damage / defense
+      damage = math.floor(damage / defense)
+      if damage <= 0 then
+        damage = 1
+      end
     end
 
     game:remove_life(damage)
