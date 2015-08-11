@@ -66,7 +66,7 @@ local function draw_hearts(game, game_surface)
       x = 40 + 4 * (life + 1)
       y = 0
     else
-      x = 40 + 4 * (life - 9)
+      x = 40 + 4 * (life - 19)
       y = 8
     end
     hearts_img:draw_region(8, 0, 8, 8, game_surface, x, y)
