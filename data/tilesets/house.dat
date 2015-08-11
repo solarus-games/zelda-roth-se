@@ -525,6 +525,17 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "blacksmith.table",
+  ground = "wall",
+  default_layer = 1,
+  x = 520,
+  y = 0,
+  width = 32,
+  height = 24,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "barrier.1",
   ground = "low_wall",
   default_layer = 1,
