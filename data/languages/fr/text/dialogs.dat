@@ -393,6 +393,13 @@ puissance ! (en théorie)
 }
 
 dialog{
+  id = "_treasure.triforce.1",
+  text = [[
+Tu as trouvé la Triforce !!!
+]]
+}
+
+dialog{
   id = "boss_key_required",
   text = [[
 C'est la porte du maître des lieux !

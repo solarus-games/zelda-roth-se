@@ -25,6 +25,7 @@ function item:on_using()
 
   if self:get_amount() == 0 then
     sol.audio.play_sound("wrong")
+    self:set_finished()
   else
     hero:set_animation("bow")
 

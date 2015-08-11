@@ -70,10 +70,12 @@ function zelda:on_interaction()
     else
       game:start_dialog("dungeon_9.zelda.almost_there")
     end
-  elseif game:get_item("sword"):get_variant() < 2 and not game:has_item("silver_bow") then
+  elseif game:get_item("sword"):get_variant() < 2 and not game:has_item("bow_silver") then
     game:start_dialog("dungeon_9.zelda.go_kakariko")
   else
-    game:start_dialog("dungeon_9.zelda.go_ganon")
+    game:start_dialog("dungeon_9.zelda.go_ganon", function()
+      game:set_life(game:get_max_life())
+    end)
   end
 end
 

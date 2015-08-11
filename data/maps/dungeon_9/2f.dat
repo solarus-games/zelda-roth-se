@@ -672,9 +672,9 @@ door{
   y = 248,
   direction = 1,
   sprite = "entities/door_big_key",
-  savegame_variable = "dungeon_8_boss_door",
+  savegame_variable = "dungeon_9_boss_door",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_8_boss_key",
+  opening_condition = "dungeon_9_boss_key",
   cannot_open_dialog = "boss_key_required",
 }
 
@@ -684,9 +684,9 @@ door{
   y = 216,
   direction = 3,
   sprite = "entities/door_big_key",
-  savegame_variable = "dungeon_8_boss_door",
+  savegame_variable = "dungeon_9_boss_door",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_8_boss_key",
+  opening_condition = "dungeon_9_boss_key",
   cannot_open_dialog = "boss_key_required",
 }
 
@@ -715,6 +715,47 @@ custom_entity{
   direction = 3,
   sprite = "npc/zelda",
   model = "zelda",
+}
+
+enemy{
+  name = "boss",
+  layer = 1,
+  x = 800,
+  y = 85,
+  direction = 0,
+  breed = "ganon",
+  rank = 2,
+  treasure_name = "triforce",
+}
+
+enemy{
+  name = "medusa_1",
+  layer = 1,
+  x = 680,
+  y = 45,
+  direction = 3,
+  breed = "medusa_purple",
+}
+
+enemy{
+  name = "medusa_2",
+  layer = 1,
+  x = 920,
+  y = 45,
+  direction = 3,
+  breed = "medusa_purple",
+}
+
+teletransporter{
+  name = "to_boss_shortcut",
+  layer = 1,
+  x = 776,
+  y = 448,
+  width = 16,
+  height = 16,
+  transition = "immediate",
+  destination_map = "dungeon_9/2f",
+  destination = "boss_shortcut",
 }
 
 tile{

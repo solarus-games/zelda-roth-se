@@ -84,6 +84,7 @@ sprite{ id = "enemies/fireball_purple_small", description = "Purple small fireba
 sprite{ id = "enemies/fireball_red_big", description = "Red big fireball" }
 sprite{ id = "enemies/fireball_red_small", description = "Red small Fireball" }
 sprite{ id = "enemies/freezor", description = "Freezor" }
+sprite{ id = "enemies/ganon", description = "Ganon" }
 sprite{ id = "enemies/geldman", description = "Geldman" }
 sprite{ id = "enemies/gibdo", description = "Gibdo" }
 sprite{ id = "enemies/goriya_green", description = "Green Goriya" }
@@ -427,6 +428,7 @@ item{ id = "rupee", description = "Rupees (x1 / x5 / x20 / x50 / x100 / x300)" }
 item{ id = "shield", description = "Shield" }
 item{ id = "small_key", description = "Small key" }
 item{ id = "sword", description = "Sword" }
+item{ id = "triforce", description = "Triforce" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
 
 enemy{ id = "agahnim", description = "Agahnim" }
@@ -444,6 +446,7 @@ enemy{ id = "fireball_purple_small", description = "Purple small Fireball" }
 enemy{ id = "fireball_red_big", description = "Red big Fireball" }
 enemy{ id = "fireball_red_small", description = "Red small Fireball" }
 enemy{ id = "freezor", description = "Freezor" }
+enemy{ id = "ganon", description = "Ganon" }
 enemy{ id = "geldman", description = "Geldman" }
 enemy{ id = "gibdo", description = "Gibdo" }
 enemy{ id = "goriya_green", description = "Green Goriya" }
