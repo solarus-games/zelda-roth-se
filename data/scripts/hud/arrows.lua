@@ -14,7 +14,7 @@ function arrows_builder:new(game)
     vertical_alignment = "top",
   })
   local bow = game:get_item("bow")
-  local bow_silver = game:get_item("bow")
+  local bow_silver = game:get_item("bow_silver")
   local amount_displayed = bow:get_amount()
   local max_amount_displayed = bow:get_max_amount()
 
