@@ -5089,7 +5089,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/merchant_yellow",
-  behavior = "dialog#outside_a1.yellow_merchant_npc",
 }
 
 destination{

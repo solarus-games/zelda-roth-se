@@ -735,6 +735,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/static_villager14",
+  behavior = "dialog#gerudo_village.leader_house.go_blacksmith",
 }
 
 destination{

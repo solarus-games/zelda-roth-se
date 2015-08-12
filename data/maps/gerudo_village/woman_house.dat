@@ -425,6 +425,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/villager3",
+  behavior = "dialog#gerudo_village.woman_house.woman",
 }
 
 destination{

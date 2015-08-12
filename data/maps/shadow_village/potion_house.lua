@@ -16,7 +16,7 @@ function potion_npc:on_interaction()
         else
           game:start_dialog("shadow_village.potion_house.yes", function()
             game:remove_money(price)
-            hero:start_treasure(first_empty_bottle:get_name(), 2)
+            hero:start_treasure(first_empty_bottle:get_name(), 4)
           end)
         end
       end
