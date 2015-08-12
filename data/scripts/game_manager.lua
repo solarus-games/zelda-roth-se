@@ -153,48 +153,50 @@ function game_manager:create(file)
       update_walking_speed()
       handled = true
 
-    elseif key == "p" then
-      -- Map.
-      if not game:is_suspended() or game:is_paused() then
-        game:switch_pause_menu("map")
-        handled = true
-      end
-
-    elseif key == "m" then
-      -- Monsters.
-      if not game:is_suspended() or game:is_paused() then
-        if game:has_item("monsters_encyclopedia") then
-          game:switch_pause_menu("monsters")
+    elseif game:is_pause_allowed() then  -- Keys below are menus.
+      if key == "p" then
+        -- Map.
+        if not game:is_suspended() or game:is_paused() then
+          game:switch_pause_menu("map")
           handled = true
         end
-      end
 
-    elseif key == "f1" then
-      -- Help.
-      if not game:is_suspended() or game:is_paused() then
-        game:switch_pause_menu("help")
-        handled = true
-      end
+      elseif key == "m" then
+        -- Monsters.
+        if not game:is_suspended() or game:is_paused() then
+          if game:has_item("monsters_encyclopedia") then
+            game:switch_pause_menu("monsters")
+            handled = true
+          end
+        end
 
-    elseif key == "escape" then
-      if not game:is_paused() then
-        if not game:is_dialog_enabled() then
-          game:start_dialog("save_quit", function(answer)
-            if answer == 2 then
-              -- Continue.
-              sol.audio.play_sound("danger")
-            elseif answer == 3 then
-              -- Save and quit.
-              sol.audio.play_sound("quit")
-              game:save()
-              sol.main.reset()
-            else
-              -- Quit without saving.
-              sol.audio.play_sound("quit")
-              sol.main.reset()
-            end
-          end)
+      elseif key == "f1" then
+        -- Help.
+        if not game:is_suspended() or game:is_paused() then
+          game:switch_pause_menu("help")
           handled = true
+        end
+
+      elseif key == "escape" then
+        if not game:is_paused() then
+          if not game:is_dialog_enabled() then
+            game:start_dialog("save_quit", function(answer)
+              if answer == 2 then
+                -- Continue.
+                sol.audio.play_sound("danger")
+              elseif answer == 3 then
+                -- Save and quit.
+                sol.audio.play_sound("quit")
+                game:save()
+                sol.main.reset()
+              else
+                -- Quit without saving.
+                sol.audio.play_sound("quit")
+                sol.main.reset()
+              end
+            end)
+            handled = true
+          end
         end
       end
     end

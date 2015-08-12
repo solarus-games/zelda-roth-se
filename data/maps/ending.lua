@@ -8,6 +8,7 @@ local background_img = sol.surface.create("menus/ending.png")
 
 function map:on_started()
 
+  game:set_pause_allowed(false)
   game:set_hud_enabled(false)
   game:get_dialog_box():set_style("empty")
   game:get_dialog_box():set_position({ x = 8, y = 8})
