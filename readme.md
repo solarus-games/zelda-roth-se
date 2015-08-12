@@ -1,6 +1,6 @@
 ![Zelda Return of the Hylian logo](zelda_roth_se_title_small.png)
 
-#  Zelda Return of the Hylian - Solarus Edition
+#  Zelda Return of the Hylian
 
 **Zelda Return of the Hylian _Solarus Edition_** is a remake of the original [Zelda Return of the Hylian](http://www.zeldaroth.fr), a short but pleasant fangame from Vincent Jouillat. The original game was developed in C++ and was released in 2009.
 
