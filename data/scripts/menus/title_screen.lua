@@ -6,7 +6,7 @@ local logo_img = sol.surface.create("menus/title_logo.png")
 function title_screen:on_draw(dst_surface)
 
   background_img:draw(dst_surface)
-  logo_img:draw(dst_surface, 60, 24)
+  logo_img:draw(dst_surface, 85, 6)
 end
 
 function title_screen:on_key_pressed(key)
