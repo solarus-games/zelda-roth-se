@@ -7,17 +7,6 @@ enemy:set_damage(2)
 
 local sprite = enemy:create_sprite("enemies/skeleton")
 
-function sprite:on_animation_finished(animation)
-
-  -- If the enemy was stopped and looking to a direction, go to that direction.
-  local direction = self:get_direction()
-  if animation == "stopped_watching_left" then
-    enemy:go((direction + 1) % 4)
-  elseif animation == "stopped_watching_right" then
-    enemy:go((direction + 3) % 4)
-  end
-end
-
 -- The enemy was stopped for some reason and should restart.
 function enemy:on_restarted()
 
@@ -63,10 +52,16 @@ end
 -- Makes the enemy look to its left or to its right (random choice).
 function enemy:look_left_or_right()
 
+  local direction = sprite:get_direction()
   if math.random(2) == 1 then
     sprite:set_animation("stopped_watching_left")
+    sol.timer.start(enemy, 500, function()
+      enemy:go((direction + 1) % 4)
+    end)
   else
     sprite:set_animation("stopped_watching_right")
+    sol.timer.start(enemy, 500, function()
+      enemy:go((direction + 3) % 4)
+    end)
   end
 end
-
