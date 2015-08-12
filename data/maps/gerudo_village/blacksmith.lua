@@ -1,4 +1,7 @@
 -- Blacksmith's house.
 local map = ...
 
--- TODO need 2 crystals to accept doing something
+-- TODO
+-- Needs 2 crystals to accept doing something
+-- Needs glove 1 to get glove 2
+-- Needs all crystal to get the silver bow

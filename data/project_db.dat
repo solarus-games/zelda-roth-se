@@ -60,6 +60,7 @@ map{ id = "outside/c3", description = "Outside C3 (Shadow Village)" }
 map{ id = "outside_store", description = "Outside Store" }
 map{ id = "shadow/chest_game", description = "Chest game" }
 map{ id = "shadow_village/chest_game", description = "Chest game" }
+map{ id = "shadow_village/potion_house", description = "Potion house" }
 
 tileset{ id = "cave", description = "Cave" }
 tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }

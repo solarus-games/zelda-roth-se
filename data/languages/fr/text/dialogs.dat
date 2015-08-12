@@ -815,6 +815,97 @@ supplémentaire !!!
 }
 
 dialog{
+  id = "gerudo_village.blacksmith.hello",
+  text = [[
+Puis-je faire quelque chose pour toi ?
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.not_now",
+  text = [[
+Reviens plus tard, je suis débordé !
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_bow",
+  text = [[
+Veux-tu que j'améliore ton arc ?
+
+            $? Oui
+            $? Non
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_glove",
+  text = [[
+Veux-tu que j'améliore tes gants ?
+
+            $? Oui
+            $? Non
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_sword",
+  text = [[
+Veux-tu que je reforge ton épée ?
+
+            $? Oui
+            $? Non
+]]
+}
+
+dialog{
+  id = "gerudo_village.leader_house.go_blacksmith",
+  text = [[
+Bonjour Link, je suis le chef de ce village.
+Tu devrais aller voir le forgeron et lui
+présenter ce que tu veux qu'il reforge dans
+ton équipement.
+J'ai été informé de ta quête, alors je me suis
+arrangé avec lui.
+Tout sera gratuit pour toi.
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.no_bottle",
+  text = [[
+Reviens me voir quand tu auras un flacon vide
+et je te vendrai une potion verte qui restaure
+la magie.
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.offer",
+  text = [[
+Une potion verte pour $v rubis,
+ça t'intéresse ?
+              $? Oui
+              $? Non
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.yes",
+  text = [[
+Merci, voilà ta potion.
+]]
+}
+
+dialog{
+  id = "gerudo_village.woman_house.woman",
+  text = [[
+Bonjour ! Si vous êtes venu voir le forgeron,
+il habite un peu plus loin.
+]]
+}
+
+dialog{
   id = "intro.fresco_1",
   text = [[
 Le Royaume d'Hyrule était en paix
@@ -979,7 +1070,7 @@ forgeron du village Gerudo...
 }
 
 dialog{
-  id = "kakariko.red_potion_house.no_bottle",
+  id = "kakariko.potion_house.no_bottle",
   text = [[
 Reviens me voir quand tu auras un flacon vide
 et je te vendrai une potion rouge qui restaure
@@ -988,9 +1079,9 @@ l'énergie.
 }
 
 dialog{
-  id = "kakariko.red_potion_house.offer",
+  id = "kakariko.potion_house.offer",
   text = [[
-Une potion rouge pour 60 rubis,
+Une potion rouge pour $v rubis,
 ça t'intéresse ?
               $? Oui
               $? Non
@@ -998,7 +1089,7 @@ Une potion rouge pour 60 rubis,
 }
 
 dialog{
-  id = "kakariko.red_potion_house.yes",
+  id = "kakariko.potion_house.yes",
   text = [[
 Merci, voilà ta potion.
 ]]
@@ -1510,6 +1601,32 @@ dialog{
                  $? Continuer
            $? Sauvegarder et quitter
           $? Quitter sans sauvegarder
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.no_bottle",
+  text = [[
+Reviens me voir quand tu auras un flacon vide
+et je te vendrai une potion bleue qui restaure
+l'énergie et la magie.
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.offer",
+  text = [[
+Une potion bleue pour $v rubis,
+ça t'intéresse ?
+              $? Oui
+              $? Non
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.yes",
+  text = [[
+Merci, voilà ta potion.
 ]]
 }
 
