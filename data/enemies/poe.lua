@@ -33,7 +33,7 @@ if game:get_ability("sword") > 2 then
 end
 
 if game:has_item("bow_silver") then
-  enemy:set_attack_consequence("arrow", 1)
+  enemy:set_arrow_reaction(10)
 end
 
 function enemy:on_custom_attack_received(attack)
@@ -47,7 +47,7 @@ function enemy:on_custom_attack_received(attack)
   movement:set_ignore_obstacles(properties.ignore_obstacles)
   movement:set_angle(angle)
   movement:start(enemy)
-  sol.timer.start(enemy, 300, function()
+  sol.timer.start(enemy, 400, function()
     enemy:restart()
   end)
 end

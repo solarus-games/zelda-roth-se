@@ -21,7 +21,6 @@ function enemy:on_created()
 
   enemy:set_invincible()
   enemy:set_attack_consequence("sword", "protected")
-  enemy:set_attack_consequence("arrow", "protected")
   enemy:set_attack_consequence("boomerang", "protected")
   enemy:set_hammer_reaction("protected")
   enemy:set_hookshot_reaction("protected")

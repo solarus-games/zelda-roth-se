@@ -18,10 +18,10 @@ behavior:create(enemy, properties)
 
 enemy:set_layer_independent_collisions(true)
 enemy:set_invincible(true)
-enemy:set_attack_consequence("arrow", "custom")
 enemy:set_attack_consequence("boomerang", "custom")
 enemy:set_attack_consequence("sword", "custom")
 enemy:set_attack_consequence("thrown_item", "custom")
+enemy:set_arrow_reaction("custom")
 enemy:set_hammer_reaction("custom")
 enemy:set_hookshot_reaction("custom")
 
