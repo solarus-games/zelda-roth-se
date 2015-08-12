@@ -44,6 +44,6 @@ function item:on_pickable_created(pickable)
       treasure_variant = variant,
       treasure_savegame_variable = savegame_variable,
     }
+    pickable:remove()
   end
-  pickable:remove()
 end
