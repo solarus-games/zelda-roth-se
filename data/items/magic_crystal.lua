@@ -41,6 +41,6 @@ function item:start_dungeon_finished_cutscene()
   if num_crystals == 1 or num_crystals == 5 or num_crystals == 6 or num_crystals == 7 then
     game:start_dialog("crystal." .. num_crystals, victory_cutscene)
   else
-    game:start_dialog(crystal.other, num_crystals, victory_cutscene)
+    game:start_dialog("crystal.remaining", 7 - num_crystals, victory_cutscene)
   end
 end

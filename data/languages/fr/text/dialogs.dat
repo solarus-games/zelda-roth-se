@@ -490,7 +490,7 @@ sauver Zelda !
 }
 
 dialog{
-  id = "crystal.other",
+  id = "crystal.remaining",
   text = [[
 Plus que $v à trouver !
 ]]
