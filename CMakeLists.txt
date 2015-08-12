@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(ZELDA_ROTH_PLUS)
 
-set(quest_name "zelda_roth_plus")
+set(quest_name "zelda_roth_se")
 
 # data files list
 file(GLOB_RECURSE data_files
