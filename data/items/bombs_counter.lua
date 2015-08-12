@@ -56,6 +56,8 @@ function item:create_bomb()
     height = 16,
     direction = 0,
   })
+  map.current_bombs = map.current_bombs or {}
+  map.current_bombs[bomb] = true
   local bomb_sprite = bomb:create_sprite("entities/bomb")
   bomb_sprite:set_animation("stopped")
 
@@ -67,6 +69,7 @@ function item:create_bomb()
     })
     sol.audio.play_sound("explosion")
     bomb:remove()
+    map.current_bombs[bomb] = nil
   end
 
   -- Schedule the explosion
@@ -76,3 +79,14 @@ function item:create_bomb()
   end)
 end
 
+function item:remove_bombs_on_map()
+
+  local map = item:get_map()
+  if map.current_bombs == nil then
+    return
+  end
+  for bomb in pairs(map.current_bombs) do
+    bomb:remove()
+  end
+  map.current_bombs = {}
+end

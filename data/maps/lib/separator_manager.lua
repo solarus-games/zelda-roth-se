@@ -3,6 +3,8 @@
 -- - Enemies prefixed by "auto_enemy".
 -- - Destructibles prefixed by "auto_destructible".
 -- - Blocks prefixed by "auto_block".
+-- And the following entities are destroyed:
+-- - Bombs.
 
 local separator_manager = {}
 
@@ -52,10 +54,14 @@ function separator_manager:manage_map(map)
       end
     end
 
+    -- TODO auto_npc
     -- Make Zelda follow directly the hero when taking a separator.
     if zelda ~= nil and game.zelda_following and not zelda:is_far_from_hero() then
       zelda:set_position(hero:get_position())
     end
+
+    -- Destroy bombs.
+    game:get_item("bombs_counter"):remove_bombs_on_map()
   end
 
   -- Function called when a separator is being taken.
