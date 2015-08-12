@@ -55,7 +55,7 @@ end
 function frog:on_interaction()
 
   if game:has_item("mudora_book") then
-    game:start_dialog("outside_c3.frog")  -- TODO
+    game:start_dialog("outside_c3.frog")
   else
     game:start_dialog("shadow_village.non_understandable")
   end

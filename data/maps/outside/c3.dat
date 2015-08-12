@@ -7193,7 +7193,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/frog",
-  behavior = "dialog#outside_c3.non_understandable",
 }
 
 destination{
