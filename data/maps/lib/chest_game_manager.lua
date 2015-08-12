@@ -60,7 +60,7 @@ function chest_game_manager:create(map, savegame_variable)
     else
       playing = false
       if chest:get_name() == "chest_" .. good_chest_index then
-        hero:start_treasure("piece_of_heart", 1, "kakariko_chest_game_piece_of_heart")
+        hero:start_treasure("piece_of_heart", 1, savegame_variable)
       else
         game:start_dialog("chest_game.lost")
         hero:unfreeze()
