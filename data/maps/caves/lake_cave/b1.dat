@@ -1910,7 +1910,7 @@ enemy{
 crystal{
   layer = 1,
   x = 56,
-  y = 669,
+  y = 605,
 }
 
 enemy{
