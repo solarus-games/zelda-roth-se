@@ -1,7 +1,7 @@
-_______________________________________________________________
+______________________________________________________________
 
-Zelda Return of the Hylian, Solarus Edition 1.0.0 (in progress)
-_______________________________________________________________
+Zelda Return of the Hylian, Solarus Edition 1.0.0 (2015-08-12)
+______________________________________________________________
 
 This is a remake of Zelda Return of the Hylian by Christopho, Mymy and
 Vincent Jouillat, using the Solarus engine.
