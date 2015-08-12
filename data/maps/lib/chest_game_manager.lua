@@ -14,7 +14,7 @@ function chest_game_manager:create(map, savegame_variable)
 
   function chest_npc:on_interaction()
 
-    if game:get_value("kakariko_chest_game_piece_of_heart") then
+    if game:get_value(savegame_variable) then
       -- Already won.
       game:start_dialog("chest_game.already_done")
     elseif playing then
