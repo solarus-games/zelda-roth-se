@@ -1,11 +1,8 @@
 - Finish the content
 - Fix ctrl+direction with separators
 - HUD of dungeon floors
-- Escape to exit from title screens
 - Title screens: Solarus Edition, Vincent Jouillat and Solarus Team
-- Ranks
 - Check heart pieces
-- Check monsters encyclopedia
 
 - Allow to map game commands
 - Video modes
