@@ -8997,6 +8997,51 @@ destination{
   direction = 1,
 }
 
+wall{
+  layer = 1,
+  x = 984,
+  y = 744,
+  width = 272,
+  height = 40,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 984,
+  y = 896,
+  width = 104,
+  height = 40,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1152,
+  y = 896,
+  width = 104,
+  height = 40,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 984,
+  y = 784,
+  width = 40,
+  height = 112,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1216,
+  y = 784,
+  width = 40,
+  height = 112,
+  stops_enemies = true,
+}
+
 tile{
   layer = 2,
   x = 432,
