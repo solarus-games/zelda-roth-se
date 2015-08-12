@@ -57,6 +57,7 @@ function stats_manager:new(game)
       "farore_medallion",
       "din_medallion",
       "nayru_medallion",
+      "mudora_book",
     }) do
       if game:has_item(item) then
         num_items = num_items + 1
@@ -78,6 +79,8 @@ function stats_manager:new(game)
         num_items = num_items + 1
       end
     end
+    num_items = num_items + game:get_num_crystals()
+
     max_items = 56
     return tr("stats_menu.items") .. " " .. num_items .. " / "  ..max_items
   end
