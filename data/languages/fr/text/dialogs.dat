@@ -1268,17 +1268,17 @@ O : Château d'Hyrule
 }
 
 dialog{
-  id = "outside_b2.village_welcome_npc",
+  id = "outside_b2.village_sign",
   text = [[
-On trouve des tas de choses dans les boutiques
-du village.
+Village Cocorico
 ]]
 }
 
 dialog{
-  id = "outside_b2.village_welcome_sign",
+  id = "outside_b2.village_welcome_npc",
   text = [[
-Village Cocorico
+On trouve des tas de choses dans les boutiques
+du village.
 ]]
 }
 
