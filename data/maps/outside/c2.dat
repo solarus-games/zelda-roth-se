@@ -2891,7 +2891,7 @@ tile{
   layer = 1,
   x = 192,
   y = 656,
-  width = 96,
+  width = 32,
   height = 16,
   pattern = "grass.cliff.1",
 }
@@ -2900,7 +2900,7 @@ tile{
   layer = 1,
   x = 192,
   y = 640,
-  width = 96,
+  width = 32,
   height = 16,
   pattern = "cliff.1",
 }
@@ -10798,6 +10798,24 @@ tile{
   pattern = "sand.soil",
 }
 
+tile{
+  layer = 1,
+  x = 256,
+  y = 656,
+  width = 32,
+  height = 16,
+  pattern = "grass.cliff.1",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 640,
+  width = 32,
+  height = 16,
+  pattern = "cliff.1",
+}
+
 teletransporter{
   layer = 1,
   x = 0,
@@ -13199,7 +13217,7 @@ tile{
   layer = 2,
   x = 192,
   y = 632,
-  width = 96,
+  width = 32,
   height = 8,
   pattern = "cliff.top.1",
 }
@@ -13508,6 +13526,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "grass.flower_double",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 632,
+  width = 32,
+  height = 8,
+  pattern = "cliff.top.1",
 }
 
 teletransporter{
