@@ -92,9 +92,15 @@ function camera_manager:create(game)
 
     local x = initial_x + camera_width / 2 + dx
     local y = initial_y + camera_height / 2 + dy
-    -- TODO stop on separators
 
-    map:move_camera(x, y, camera_speed, function() end, 0, 1e9)
+    map:move_camera(x, y, camera_speed, function()
+      local current_x, current_y = map:get_camera_position()
+      if sol.main.get_distance(current_x, current_y, initial_x, initial_y) < 4 then
+        -- The camera did not move because of separators or because of a small map.
+        -- In this case, don't keep the game suspended but restore control to the player.
+        restore_camera()
+      end
+    end, 0, 1e9)
   end
 
   function camera_menu:on_command_pressed(command)
