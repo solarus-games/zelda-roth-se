@@ -5786,3 +5786,13 @@ custom_entity{
   model = "hookable",
 }
 
+teletransporter{
+  layer = 2,
+  x = 2504,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "caves/mudora_cave/1f",
+  destination = "from_outside_s",
+}
+

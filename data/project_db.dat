@@ -4,6 +4,8 @@ map{ id = "caves/fairy_lake", description = "Lake Fairy Cave" }
 map{ id = "caves/fairy_ruins", description = "Ruins Fairy Cave" }
 map{ id = "caves/lake_cave/1f", description = "Lake cave 1F" }
 map{ id = "caves/lake_cave/b1", description = "Lake cave B1" }
+map{ id = "caves/mudora_cave/1f", description = "Mudora cave 1F" }
+map{ id = "caves/mudora_cave/b1", description = "Mudora cave B1" }
 map{ id = "dungeon_1/1f", description = "Dungeon 1 1F" }
 map{ id = "dungeon_1/b1", description = "Dungeon 1 B1" }
 map{ id = "dungeon_2/1f", description = "Dungeon 2 1F" }
@@ -419,7 +421,6 @@ item{ id = "glove", description = "Iron glove / Golden glove" }
 item{ id = "green_potion", description = "Green potion" }
 item{ id = "hammer", description = "Magic hammer" }
 item{ id = "heart", description = "Heart (x1)" }
-item{ id = "heart_container", description = "Heart container" }
 item{ id = "hookshot", description = "Hookshot" }
 item{ id = "ice_rod", description = "Ice rod" }
 item{ id = "lamp", description = "Lamp" }

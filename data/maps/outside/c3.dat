@@ -7282,6 +7282,16 @@ teletransporter{
   destination_map = "shadow_village/bird_house",
 }
 
+teletransporter{
+  layer = 1,
+  x = 56,
+  y = 512,
+  width = 16,
+  height = 16,
+  destination_map = "caves/mudora_cave/1f",
+  destination = "from_outside_n",
+}
+
 tile{
   layer = 2,
   x = 48,
