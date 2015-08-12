@@ -1157,6 +1157,20 @@ place d'une ancienne oasis.
 }
 
 dialog{
+  id = "outside_a2.castle_sign",
+  text = [[
+Château d'Hyrule
+]]
+}
+
+dialog{
+  id = "outside_a2.sw_sign",
+  text = [[
+E : Village Cocorico
+]]
+}
+
+dialog{
   id = "outside_a3.ne_sign",
   text = [[
 O : Roc de la Tortue

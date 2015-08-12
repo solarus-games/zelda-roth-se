@@ -6692,6 +6692,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_a2.castle_sign",
 }
 
 npc{
@@ -6701,6 +6702,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_a2.sw_sign",
 }
 
 destructible{
