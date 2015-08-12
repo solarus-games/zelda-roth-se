@@ -76,7 +76,7 @@ function blacksmith:on_interaction()
   local allowed = {
     sword:get_variant() == 1,
     glove:get_variant() == 1,
-    game:has_item("bow") and not game:has_item("bow_silver")
+    game:has_item("bow") and not game:has_item("bow_silver") and game:has_all_crystals()
   }
 
   for i = 1, #offers do

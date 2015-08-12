@@ -5950,6 +5950,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/curtain",
   destruction_sound = "bush",
+  weight = 100,
   can_be_cut = true,
   damage_on_enemies = 0,
 }

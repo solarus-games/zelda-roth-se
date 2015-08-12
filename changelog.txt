@@ -20,4 +20,5 @@ New features
 * Dungeons 1 et 3 improved by Vincent.
 * Saved games now start at the least entrance.
 * Lots of details improved.
+* New title screen from Neovyse
 
