@@ -825,7 +825,7 @@ supplémentaire !!!
 dialog{
   id = "found_piece_of_heart.third",
   text = [[
-Encore 3 et tu gagneras un coeur
+Encore 1 et tu gagneras un coeur
 supplémentaire !!!
 ]]
 }
