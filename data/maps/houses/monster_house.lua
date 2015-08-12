@@ -31,6 +31,8 @@ function monster_npc:on_interaction()
             just_obtained_reward = true
             hero:start_treasure("piece_of_heart", 1, reward_variable)
           end)
+          just_obtained_reward = true
+          break
         end
       end
 
