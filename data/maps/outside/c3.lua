@@ -17,7 +17,8 @@ function map:on_started()
 
   -- Move the cemetary watcher.
   if game:get_value("shadow_village_cemetary_watcher_moved") then
-    bully:set_position(486, 493)
+    bully:set_position(464, 493)
+    bully:get_sprite():set_direction(0)
   end
 end
 
@@ -70,11 +71,13 @@ function bully:on_interaction()
     game:start_dialog("outside_c3.cemetary.dont_pass")
   elseif not game:get_value("shadow_village_cemetary_watcher_moved") then
     game:start_dialog("outside_c3.cemetary.leader_allowed_to_pass", function()
+      game:set_value("shadow_village_cemetary_watcher_moved", true)
       local movement = sol.movement.create("path")
       movement:set_speed(32)
-      movement:set_path("44")
-      movement:start(bully)
-      game:set_value("shadow_village_cemetary_watcher_moved", true)
+      movement:set_path({4,4})
+      movement:start(bully, function()
+        bully:get_sprite():set_direction(0)
+      end)
     end)
   else
     game:start_dialog("outside_c3.cemetary.go_away")
