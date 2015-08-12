@@ -531,6 +531,24 @@ tile{
   pattern = "floor.1",
 }
 
+sensor{
+  name = "dungeon_room_2_2",
+  layer = 1,
+  x = 1120,
+  y = 1797,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_3",
+  layer = 1,
+  x = 1120,
+  y = 1901,
+  width = 16,
+  height = 16,
+}
+
 wall{
   layer = 1,
   x = 1112,
@@ -755,6 +773,24 @@ enemy{
   direction = 3,
   breed = "medusa",
   treasure_name = "random_heart",
+}
+
+sensor{
+  name = "dungeon_room_1_1",
+  layer = 1,
+  x = 1120,
+  y = 1677,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_1",
+  layer = 1,
+  x = 1120,
+  y = 1693,
+  width = 16,
+  height = 16,
 }
 
 tile{
