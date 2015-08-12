@@ -44,12 +44,10 @@ function enemy:on_obstacle_reached()
   sprite:set_direction((direction4 + 2) % 4)
 
   local x, y = self:get_position()
-  local hero = self:get_map():get_entity("hero")
-  local hero_x, hero_y = hero:get_position()
-  if recent_obstacle == 0
-      and math.abs(x - hero_x) < 184
-      and math.abs(y - hero_y) < 144
-      and self:is_in_same_region(hero) then
+  local hero = self:get_map():get_hero()
+  if recent_obstacle == 0 and
+      enemy:is_in_same_region(hero) and
+      enemy:get_distance(hero) < 300 then
     sol.audio.play_sound("sword_tapping")
   end
 
