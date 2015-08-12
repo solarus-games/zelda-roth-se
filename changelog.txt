@@ -9,6 +9,7 @@ Vincent Jouillat, using the Solarus engine.
 New features
 ------------
 
+* Improved gameplay.
 * Improved battle system.
 * Use hardware graphical acceleration if available.
 * The window can be resized.
@@ -16,6 +17,7 @@ New features
 * Joypad support.
 * Improved hookshot.
 * Original musics and sounds from Zelda A Link to the Past.
-* Improved dungeon 1.
+* Dungeons 1 et 3 improved by Vincent.
 * Saved games now start at the least entrance.
+* Lots of details improved.
 
