@@ -5732,7 +5732,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "red_potion_door",
+  name = "potion_door",
   layer = 1,
   x = 600,
   y = 464,
@@ -5884,7 +5884,7 @@ destination{
 }
 
 sensor{
-  name = "open_house_red_potion_door_sensor",
+  name = "open_house_potion_door_sensor",
   layer = 1,
   x = 600,
   y = 493,
@@ -5898,8 +5898,7 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "kakariko/red_potion_house",
-  destination = "from_outside",
+  destination_map = "kakariko/potion_house",
 }
 
 destination{

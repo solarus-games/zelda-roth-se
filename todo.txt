@@ -1,5 +1,4 @@
 - Finish the content
-- Fix ctrl+direction with separators
 - HUD of dungeon floors
 - Title screens: Solarus Edition, Vincent Jouillat and Solarus Team
 - Check heart pieces

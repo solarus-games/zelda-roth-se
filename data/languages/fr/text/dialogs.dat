@@ -415,6 +415,37 @@ Il te faut la clé du boss pour l'ouvrir.
 }
 
 dialog{
+  id = "bottle_merchant.done",
+  text = [[
+Désolé, c'était mon seul flacon.
+]]
+}
+
+dialog{
+  id = "bottle_merchant.no",
+  text = [[
+Reviens me voir si tu changes d'avis.
+]]
+}
+
+dialog{
+  id = "bottle_merchant.offer",
+  text = [[
+Je vends un flacon pour 100 rubis, ça
+t'intéresse ?
+                  $? Oui
+                  $? Non
+]]
+}
+
+dialog{
+  id = "bottle_merchant.yes",
+  text = [[
+Merci beaucoup, voilà ton flacon.
+]]
+}
+
+dialog{
   id = "chest_game.already_done",
   text = [[
 Je n'ai plus de prix à mettre en jeu, désolé.
@@ -1099,13 +1130,6 @@ Désolé, mais tu n'as pas assez de rubis.
 }
 
 dialog{
-  id = "ouside_c3.village_sign",
-  text = [[
-Village de l'Ombre
-]]
-}
-
-dialog{
   id = "outside_a1.dungeon_4_sign",
   text = [[
 Temple du Désert
@@ -1209,37 +1233,6 @@ dialog{
   text = [[
 O : Entrée du Désert
 N : Temple de la Montagne
-]]
-}
-
-dialog{
-  id = "outside_b2.bottle_merchant.done",
-  text = [[
-Désolé, c'était mon seul flacon.
-]]
-}
-
-dialog{
-  id = "outside_b2.bottle_merchant.no",
-  text = [[
-Reviens me voir si tu changes d'avis.
-]]
-}
-
-dialog{
-  id = "outside_b2.bottle_merchant.offer",
-  text = [[
-Je vends un flacon pour 100 rubis, ça
-t'intéresse ?
-                  $? Oui
-                  $? Non
-]]
-}
-
-dialog{
-  id = "outside_b2.bottle_merchant.yes",
-  text = [[
-Merci beaucoup, voilà ton flacon.
 ]]
 }
 
@@ -1480,6 +1473,14 @@ dialog{
 }
 
 dialog{
+  id = "outside_c3.running_man",
+  text = [[
+Les habitants de ce village ont un dialecte
+très particulier, je n'y comprends rien...
+]]
+}
+
+dialog{
   id = "outside_c3.sw_sign",
   text = [[
 N : Village de l'Ombre
@@ -1491,14 +1492,6 @@ dialog{
   id = "outside_c3.village_sign",
   text = [[
 Village de l'Ombre
-]]
-}
-
-dialog{
-  id = "outside_c3.weird_language",
-  text = [[
-Les habitants de ce village ont un dialecte
-très particulier, je n'y comprends rien...
 ]]
 }
 

@@ -1,9 +1,10 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 4864,
+  y = 1864,
   width = 320,
   height = 240,
   tileset = "house",
+  music = "mini_game",
 }
 
 tile{
@@ -508,6 +509,14 @@ chest{
   x = 232,
   y = 109,
   sprite = "entities/chest",
+}
+
+destination{
+  layer = 1,
+  x = 160,
+  y = 221,
+  direction = 1,
+  default = true,
 }
 
 tile{

@@ -7142,7 +7142,7 @@ destination{
 }
 
 npc{
-  name = "welcome_npc",
+  name = "pink_ball",
   layer = 1,
   x = 520,
   y = 1141,
@@ -7150,6 +7150,88 @@ npc{
   subtype = 1,
   sprite = "npc/pink_ball",
   behavior = "dialog#outside_c3.non_understandable",
+}
+
+npc{
+  name = "welcome_npc_2",
+  layer = 1,
+  x = 416,
+  y = 1341,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/running_man",
+  behavior = "dialog#outside_c3.running_man",
+}
+
+npc{
+  name = "bottle_merchant",
+  layer = 1,
+  x = 856,
+  y = 1341,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/merchant_blue",
+}
+
+npc{
+  name = "frog",
+  layer = 1,
+  x = 888,
+  y = 861,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/frog",
+  behavior = "dialog#outside_c3.non_understandable",
+}
+
+destination{
+  name = "from_mouse_house",
+  layer = 1,
+  x = 704,
+  y = 1069,
+  direction = 3,
+}
+
+destination{
+  name = "from_chest_game",
+  layer = 1,
+  x = 704,
+  y = 685,
+  direction = 3,
+}
+
+destination{
+  name = "from_leader_house",
+  layer = 1,
+  x = 480,
+  y = 877,
+  direction = 3,
+}
+
+npc{
+  name = "bully",
+  layer = 1,
+  x = 480,
+  y = 493,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/bully",
+}
+
+destination{
+  name = "from_bird_house",
+  layer = 1,
+  x = 176,
+  y = 813,
+  direction = 3,
+}
+
+destination{
+  name = "from_potion_house",
+  layer = 1,
+  x = 224,
+  y = 1077,
+  direction = 3,
 }
 
 tile{

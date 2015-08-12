@@ -1,9 +1,10 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 1808,
+  y = 232,
   width = 320,
   height = 240,
   tileset = "house",
+  music = "village",
 }
 
 tile{
@@ -727,12 +728,31 @@ tile{
 }
 
 npc{
+  name = "leader",
   layer = 1,
   x = 160,
   y = 53,
   direction = 3,
   subtype = 1,
   sprite = "npc/static_villager14",
+}
+
+destination{
+  layer = 1,
+  x = 160,
+  y = 221,
+  direction = 1,
+  default = true,
+}
+
+teletransporter{
+  layer = 1,
+  x = 152,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "outside/a1",
+  destination = "from_leader_house",
 }
 
 tile{

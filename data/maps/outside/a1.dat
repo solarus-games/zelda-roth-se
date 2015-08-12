@@ -2532,15 +2532,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1656,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
-}
-
-tile{
-  layer = 1,
   x = 1648,
   y = 400,
   width = 32,
@@ -2609,15 +2600,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "house.entrance",
-}
-
-tile{
-  layer = 1,
-  x = 1656,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
 }
 
 tile{
@@ -2694,15 +2676,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1800,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
-}
-
-tile{
-  layer = 1,
   x = 1792,
   y = 240,
   width = 32,
@@ -2735,15 +2708,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "house.entrance",
-}
-
-tile{
-  layer = 1,
-  x = 1944,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
 }
 
 tile{
@@ -2816,15 +2780,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "house.entrance",
-}
-
-tile{
-  layer = 1,
-  x = 1944,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
 }
 
 tile{
@@ -3374,6 +3329,73 @@ tile{
   width = 96,
   height = 64,
   pattern = "grass.barrier.border.1",
+}
+
+sensor{
+  name = "open_house_potion_door_sensor",
+  layer = 1,
+  x = 1656,
+  y = 413,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "open_house_woman_door_sensor",
+  layer = 1,
+  x = 1944,
+  y = 413,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "open_house_chest_game_door_sensor",
+  layer = 1,
+  x = 1944,
+  y = 253,
+  width = 32,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "chest_game_door",
+  layer = 1,
+  x = 1944,
+  y = 224,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+sensor{
+  name = "open_house_leader_door_sensor",
+  layer = 1,
+  x = 1800,
+  y = 253,
+  width = 32,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "leader_door",
+  layer = 1,
+  x = 1800,
+  y = 224,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+sensor{
+  name = "open_house_blacksmith_door_sensor",
+  layer = 1,
+  x = 1656,
+  y = 253,
+  width = 32,
+  height = 16,
 }
 
 destructible{
@@ -5049,7 +5071,7 @@ npc{
 }
 
 npc{
-  name = "thief_npc_2",
+  name = "woman_npc",
   layer = 1,
   x = 1672,
   y = 285,
@@ -5060,7 +5082,7 @@ npc{
 }
 
 npc{
-  name = "yellow_merchant_npc",
+  name = "bottle_merchant",
   layer = 1,
   x = 1808,
   y = 349,
@@ -5085,6 +5107,124 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "caves/fairy_desert",
+}
+
+destination{
+  name = "from_potion_house",
+  layer = 1,
+  x = 1664,
+  y = 413,
+  direction = 3,
+}
+
+destination{
+  name = "from_chest_game",
+  layer = 1,
+  x = 1952,
+  y = 253,
+  direction = 3,
+}
+
+destination{
+  name = "from_leader_house",
+  layer = 1,
+  x = 1808,
+  y = 253,
+  direction = 3,
+}
+
+destination{
+  name = "from_blacksmith",
+  layer = 1,
+  x = 1664,
+  y = 253,
+  direction = 3,
+}
+
+destination{
+  name = "from_woman_house",
+  layer = 1,
+  x = 1952,
+  y = 413,
+  direction = 3,
+}
+
+dynamic_tile{
+  name = "blacksmith_door",
+  layer = 1,
+  x = 1656,
+  y = 224,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "woman_door",
+  layer = 1,
+  x = 1944,
+  y = 384,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "potion_door",
+  layer = 1,
+  x = 1656,
+  y = 384,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+teletransporter{
+  layer = 1,
+  x = 1656,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "gerudo_village/blacksmith",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1800,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "gerudo_village/leader_house",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1944,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "gerudo_village/chest_game",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1656,
+  y = 384,
+  width = 16,
+  height = 16,
+  destination_map = "gerudo_village/potion_house",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1944,
+  y = 384,
+  width = 16,
+  height = 16,
+  destination_map = "gerudo_village/woman_house",
 }
 
 tile{

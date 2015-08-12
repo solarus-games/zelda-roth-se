@@ -1,9 +1,10 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 1664,
+  y = 392,
   width = 320,
   height = 240,
   tileset = "house",
+  music = "village",
 }
 
 tile{
@@ -197,7 +198,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 104,
+  x = 40,
   y = 0,
   width = 16,
   height = 32,
@@ -206,7 +207,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 200,
+  x = 264,
   y = 0,
   width = 16,
   height = 32,
@@ -216,7 +217,7 @@ tile{
 tile{
   layer = 1,
   x = 0,
-  y = 56,
+  y = 40,
   width = 32,
   height = 16,
   pattern = "wall_pillar.3",
@@ -242,7 +243,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 88,
+  x = 72,
   y = 216,
   width = 32,
   height = 24,
@@ -251,7 +252,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 200,
+  x = 216,
   y = 216,
   width = 32,
   height = 24,
@@ -260,8 +261,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 248,
-  y = 136,
+  x = 264,
+  y = 48,
   width = 8,
   height = 8,
   pattern = "725",
@@ -269,26 +270,26 @@ tile{
 
 tile{
   layer = 1,
-  x = 216,
-  y = 112,
-  width = 32,
+  x = 248,
+  y = 32,
+  width = 16,
   height = 8,
   pattern = "718",
 }
 
 tile{
   layer = 1,
-  x = 216,
-  y = 120,
-  width = 32,
-  height = 16,
+  x = 248,
+  y = 40,
+  width = 16,
+  height = 8,
   pattern = "721",
 }
 
 tile{
   layer = 1,
-  x = 248,
-  y = 112,
+  x = 264,
+  y = 32,
   width = 8,
   height = 8,
   pattern = "719",
@@ -296,8 +297,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 208,
-  y = 112,
+  x = 240,
+  y = 32,
   width = 8,
   height = 8,
   pattern = "717",
@@ -305,26 +306,26 @@ tile{
 
 tile{
   layer = 1,
-  x = 208,
-  y = 120,
+  x = 240,
+  y = 40,
   width = 8,
-  height = 16,
+  height = 8,
   pattern = "722",
 }
 
 tile{
   layer = 1,
-  x = 216,
-  y = 136,
-  width = 32,
+  x = 248,
+  y = 48,
+  width = 16,
   height = 8,
   pattern = "724",
 }
 
 tile{
   layer = 1,
-  x = 208,
-  y = 136,
+  x = 240,
+  y = 48,
   width = 8,
   height = 8,
   pattern = "723",
@@ -332,26 +333,35 @@ tile{
 
 tile{
   layer = 1,
-  x = 248,
-  y = 120,
+  x = 264,
+  y = 40,
   width = 8,
-  height = 16,
+  height = 8,
   pattern = "720",
 }
 
 tile{
   layer = 1,
-  x = 224,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "738",
+  x = 32,
+  y = 24,
+  width = 32,
+  height = 40,
+  pattern = "746",
 }
 
 tile{
   layer = 1,
-  x = 32,
-  y = 136,
+  x = 0,
+  y = 184,
+  width = 32,
+  height = 16,
+  pattern = "wall_pillar.3",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 184,
   width = 48,
   height = 24,
   pattern = "750",
@@ -359,7 +369,88 @@ tile{
 
 tile{
   layer = 1,
+  x = 96,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "737",
+}
+
+tile{
+  layer = 1,
   x = 80,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "736",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "735",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "743",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "742",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "744",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "738",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 184,
+  width = 32,
+  height = 16,
+  pattern = "wall_pillar.4",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 40,
+  width = 32,
+  height = 16,
+  pattern = "wall_pillar.4",
+}
+
+tile{
+  layer = 1,
+  x = 240,
   y = 136,
   width = 48,
   height = 24,
@@ -369,143 +460,81 @@ tile{
 tile{
   layer = 1,
   x = 240,
-  y = 24,
-  width = 32,
-  height = 40,
-  pattern = "746",
+  y = 88,
+  width = 48,
+  height = 24,
+  pattern = "750",
 }
 
 tile{
   layer = 1,
-  x = 288,
-  y = 56,
-  width = 32,
-  height = 16,
-  pattern = "wall_pillar.4",
+  x = 32,
+  y = 184,
+  width = 48,
+  height = 24,
+  pattern = "750",
 }
 
 tile{
   layer = 1,
-  x = 48,
+  x = 32,
+  y = 136,
+  width = 48,
+  height = 24,
+  pattern = "750",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 88,
+  width = 48,
+  height = 24,
+  pattern = "750",
+}
+
+tile{
+  layer = 1,
+  x = 192,
   y = 0,
   width = 32,
   height = 32,
   pattern = "751",
 }
 
-tile{
+npc{
+  name = "potion_npc",
   layer = 1,
   x = 160,
-  y = 0,
-  width = 16,
-  height = 32,
-  pattern = "743",
-}
-
-tile{
-  layer = 1,
-  x = 144,
-  y = 0,
-  width = 16,
-  height = 32,
-  pattern = "742",
-}
-
-tile{
-  layer = 1,
-  x = 176,
-  y = 0,
-  width = 16,
-  height = 32,
-  pattern = "744",
-}
-
-tile{
-  layer = 1,
-  x = 0,
-  y = 168,
-  width = 32,
-  height = 16,
-  pattern = "wall_pillar.3",
-}
-
-tile{
-  layer = 1,
-  x = 288,
-  y = 168,
-  width = 32,
-  height = 16,
-  pattern = "wall_pillar.4",
-}
-
-tile{
-  layer = 1,
-  x = 0,
-  y = 104,
-  width = 24,
-  height = 32,
-  pattern = "wall_statue.3",
-}
-
-tile{
-  layer = 1,
-  x = 296,
-  y = 104,
-  width = 24,
-  height = 32,
-  pattern = "wall_statue.4",
-}
-
-tile{
-  layer = 1,
-  x = 32,
-  y = 40,
-  width = 32,
-  height = 24,
-  pattern = "blacksmith.table",
-}
-
-tile{
-  layer = 1,
-  x = 32,
-  y = 80,
-  width = 32,
-  height = 24,
-  pattern = "blacksmith.table",
-}
-
-tile{
-  layer = 1,
-  x = 80,
-  y = 80,
-  width = 32,
-  height = 24,
-  pattern = "blacksmith.table",
-}
-
-tile{
-  layer = 1,
-  x = 80,
-  y = 40,
-  width = 32,
-  height = 24,
-  pattern = "blacksmith.table",
-}
-
-npc{
-  layer = 1,
-  x = 72,
-  y = 53,
+  y = 125,
   direction = 3,
   subtype = 1,
-  sprite = "npc/blacksmith",
+  sprite = "npc/static_villager10",
+}
+
+destination{
+  layer = 1,
+  x = 160,
+  y = 221,
+  direction = 1,
+  default = true,
+}
+
+teletransporter{
+  layer = 1,
+  x = 152,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "outside/a1",
+  destination = "from_potion_house",
 }
 
 tile{
   layer = 2,
-  x = 120,
+  x = 112,
   y = 232,
-  width = 80,
+  width = 96,
   height = 8,
   pattern = "door_cache.2",
 }
@@ -517,5 +546,23 @@ tile{
   width = 32,
   height = 8,
   pattern = "door_top.2",
+}
+
+tile{
+  layer = 2,
+  x = 120,
+  y = 208,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.2",
+}
+
+tile{
+  layer = 2,
+  x = 184,
+  y = 208,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.2",
 }
 
