@@ -212,7 +212,7 @@ function game_manager:create(file)
         or key == "right shift"
         or key == "caps lock" then
       update_walking_speed()
-        handled = true
+      handled = true
     end
 
     return handled
@@ -224,8 +224,8 @@ function game_manager:create(file)
     local map = game:get_map()
     local hero = game:get_hero()
     local death_count = game:get_value("death_count") or 0
-    if hero:is_rabbit() then
-      hero:stop_rabbit()
+    if game:is_rabbit() then
+      game:stop_rabbit()
     end
     game:set_value("death_count", death_count + 1)
     hero:set_visible(false)
