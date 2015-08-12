@@ -16,3 +16,5 @@ local properties = {
 }
 
 behavior:create(enemy, properties)
+
+enemy:set_layer_independent_collisions(true)
