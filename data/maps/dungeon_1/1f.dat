@@ -4822,8 +4822,8 @@ wall{
 enemy{
   name = "auto_enemy_5",
   layer = 1,
-  x = 696,
-  y = 493,
+  x = 712,
+  y = 509,
   direction = 3,
   breed = "keese",
   treasure_name = "random_heart",
@@ -4870,8 +4870,8 @@ enemy{
 enemy{
   name = "auto_enemy_4",
   layer = 1,
-  x = 584,
-  y = 493,
+  x = 568,
+  y = 509,
   direction = 3,
   breed = "keese",
   treasure_name = "random_heart",
