@@ -1461,6 +1461,16 @@ Entrée interdite
 }
 
 dialog{
+  id = "outside_c3.dungeon_sign",
+  text = [[
+Temple des Ténèbres
+
+Si vous êtes un fantôme et que vous cherchez un
+job, venez plutôt chômer ici.
+]]
+}
+
+dialog{
   id = "outside_c3.non_understandable",
   text = [[
 {|{|{|{|{|{|{{{|
