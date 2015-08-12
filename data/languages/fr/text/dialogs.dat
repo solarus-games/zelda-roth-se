@@ -1183,6 +1183,14 @@ Déconseillé aux cardiaques, peureux, et aux
 }
 
 dialog{
+  id = "outside_b1.s_sign",
+  text = [[
+N : Temple de la Montagne
+S : Plaine d'Hyrule
+]]
+}
+
+dialog{
   id = "outside_b1.sw_sign",
   text = [[
 O : Entrée du Désert
