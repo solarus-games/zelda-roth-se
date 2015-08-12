@@ -422,7 +422,7 @@ teletransporter{
 }
 
 npc{
-  name = "bird",
+  name = "potion_npc",
   layer = 1,
   x = 160,
   y = 109,

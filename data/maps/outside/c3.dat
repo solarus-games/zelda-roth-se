@@ -7292,6 +7292,15 @@ teletransporter{
   destination = "from_outside_n",
 }
 
+teletransporter{
+  layer = 1,
+  x = 216,
+  y = 1048,
+  width = 16,
+  height = 16,
+  destination_map = "shadow_village/potion_house",
+}
+
 tile{
   layer = 2,
   x = 48,

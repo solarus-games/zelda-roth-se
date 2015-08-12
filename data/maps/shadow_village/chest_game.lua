@@ -1,5 +1,6 @@
 -- Chest game of the Shadow village.
 local map = ...
+local game = map:get_game()
 
 local chest_game_manager = require("maps/lib/chest_game_manager")
 

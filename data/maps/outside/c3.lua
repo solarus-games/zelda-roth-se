@@ -70,7 +70,7 @@ function bully:on_interaction()
     game:start_dialog("outside_c3.cemetary.dont_pass")
   elseif not game:get_value("shadow_village_cemetary_watcher_moved") then
     game:start_dialog("outside_c3.cemetary.leader_allowed_to_pass", function()
-      local movement = sol.movement.start("path")
+      local movement = sol.movement.create("path")
       movement:set_speed(32)
       movement:set_path("44")
       movement:start(bully)

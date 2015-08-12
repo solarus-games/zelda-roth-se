@@ -1,7 +1,7 @@
 local map = ...
 local game = map:get_game()
 
-function bully:on_interaction()
+function mouse:on_interaction()
 
   if not game:has_item("mudora_book") then
     game:start_dialog("shadow_village.non_understandable")
