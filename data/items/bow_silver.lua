@@ -7,6 +7,10 @@ function item:on_created()
   self:set_savegame_variable("possession_bow_silver")
   self:set_amount_savegame_variable("amount_bow")
   self:set_assignable(true)
+
+  if self:get_variant() > 0 then
+    self:set_max_amount(30)
+  end
 end
 
 function item:on_using()
