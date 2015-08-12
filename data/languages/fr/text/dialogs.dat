@@ -1563,11 +1563,19 @@ job, venez plutôt chômer ici.
 }
 
 dialog{
-  id = "outside_c3.non_understandable",
+  id = "outside_c3.frog",
   text = [[
-{|{|{|{|{|{|{{{|
-{}||}{}|{}|{}|}{
-|{|{|{|}|}
+Les monstres du coin ne craignent pas grand
+chose, heureusement qu'ils n'attaquent que les
+humains.
+]]
+}
+
+dialog{
+  id = "outside_c3.pink_ball",
+  text = [[
+C'est vrai ?
+Tu comprends ce que je dis ?
 ]]
 }
 
@@ -1609,6 +1617,98 @@ dialog{
                  $? Continuer
            $? Sauvegarder et quitter
           $? Quitter sans sauvegarder
+]]
+}
+
+dialog{
+  id = "shadow_village.bird_house.bird",
+  text = [[
+Lorsque tu as ramené la paix sur Hyrule et
+réunifié le monde de la lumière avec la Terre
+d'Or, Zelda a secrètement demandé aux esprits
+volontaires de créer ce village pour bloquer
+l'accès à un objet de très grande valeur.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.about_village",
+  text = [[
+Notre village a été fondé pour empêcher les
+aventuriers imprudents d'accéder au temple, je
+ne donne pas l'autorisation de passer à
+n'importe qui.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.enough_crystals",
+  text = [[
+Mmmm... Tu as déjà trouvé 4 cristaux ?
+Je dois avouer que tu m'impressionnes...
+
+
+Bon c'est entendu, tu as l'autorisation de
+passer par le cimetière, à tes risques et
+périls.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.go_cemetary",
+  text = [[
+Va parler au garde au nord du village, il te
+laissera passer.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.still_alive",
+  text = [[
+Je vois que tu es toujours vivant...
+Etonnant.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.sword_found",
+  text = [[
+Ainsi tu as trouvé l'Epée ?
+Mais ne crois pas qu'elle soit à toi pour
+autant.
+
+Excalibur fait partie du patrimoine le plus
+précieux d'Hyrule avec la Triforce, tu devras
+la ramener dans son sanctuaire une fois ta
+mission achevée.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.sword_hint",
+  text = [[
+Le temple de l'ombre constitue le point de
+départ du chemin menant à un objet de légende.
+Ce village ne sert qu'à dissuader les
+aventuriers de trop s'en approcher.
+]]
+}
+
+dialog{
+  id = "shadow_village.mouse_house.mouse",
+  text = [[
+Les habitants de ce village sont tous des
+esprits ayant répondu à l'appel de la princesse
+Zelda.
+]]
+}
+
+dialog{
+  id = "shadow_village.non_understandable",
+  text = [[
+{|{|{|{|{|{|{{{|
+{}||}{}|{}|{}|}{
+|{|{|{|}|}
 ]]
 }
 

@@ -14,6 +14,11 @@ function map:on_started()
   npc_walk(running_man)
   npc_walk(pink_ball)
   npc_walk(frog)
+
+  -- Move the cemetary watcher.
+  if game:get_value("shadow_village_cemetary_watcher_moved") then
+    bully:set_position(486, 493)
+  end
 end
 
 function bottle_merchant:on_interaction()
@@ -37,3 +42,59 @@ function bottle_merchant:on_interaction()
     end)
   end
 end
+
+function pink_ball:on_interaction()
+
+  if game:has_item("mudora_book") then
+    game:start_dialog("outside_c3.pink_ball")
+  else
+    game:start_dialog("shadow_village.non_understandable")
+  end
+end
+
+function frog:on_interaction()
+
+  if game:has_item("mudora_book") then
+    game:start_dialog("outside_c3.frog")  -- TODO
+  else
+    game:start_dialog("shadow_village.non_understandable")
+  end
+end
+
+-- Cemetary entrance watcher.
+function bully:on_interaction()
+
+  if not game:has_item("mudora_book") then
+    game:start_dialog("shadow_village.non_understandable")
+  elseif not game:get_value("shadow_village_can_go_cemetary") then
+    game:start_dialog("outside_c3.cemetary.dont_pass")
+  elseif not game:get_value("shadow_village_cemetary_watcher_moved") then
+    game:start_dialog("outside_c3.cemetary.leader_allowed_to_pass", function()
+      local movement = sol.movement.start("path")
+      movement:set_speed(32)
+      movement:set_path("44")
+      movement:start(bully)
+      game:set_value("shadow_village_cemetary_watcher_moved", true)
+    end)
+  else
+    game:start_dialog("outside_c3.cemetary.go_away")
+  end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

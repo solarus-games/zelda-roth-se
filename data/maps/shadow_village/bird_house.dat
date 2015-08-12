@@ -1,10 +1,10 @@
 properties{
-  x = 4864,
-  y = 1864,
+  x = 4336,
+  y = 1992,
   width = 320,
   height = 240,
   tileset = "house",
-  music = "mini_game",
+  music = "village",
 }
 
 tile{
@@ -14,15 +14,6 @@ tile{
   width = 256,
   height = 176,
   pattern = "floor.1",
-}
-
-tile{
-  layer = 1,
-  x = 56,
-  y = 56,
-  width = 192,
-  height = 112,
-  pattern = "730",
 }
 
 tile{
@@ -207,51 +198,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 280,
-  y = 160,
-  width = 8,
-  height = 16,
-  pattern = "712",
-}
-
-tile{
-  layer = 1,
-  x = 88,
-  y = 0,
-  width = 16,
-  height = 32,
-  pattern = "wall_pillar.1",
-}
-
-tile{
-  layer = 1,
-  x = 216,
-  y = 0,
-  width = 16,
-  height = 32,
-  pattern = "wall_pillar.1",
-}
-
-tile{
-  layer = 1,
-  x = 0,
-  y = 56,
-  width = 32,
-  height = 16,
-  pattern = "wall_pillar.3",
-}
-
-tile{
-  layer = 1,
-  x = 0,
-  y = 104,
-  width = 24,
-  height = 32,
-  pattern = "wall_statue.3",
-}
-
-tile{
-  layer = 1,
   x = 40,
   y = 208,
   width = 16,
@@ -288,70 +234,97 @@ tile{
 
 tile{
   layer = 1,
-  x = 56,
-  y = 48,
-  width = 192,
-  height = 8,
-  pattern = "727",
+  x = 32,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "torch",
 }
 
 tile{
   layer = 1,
-  x = 248,
-  y = 168,
-  width = 8,
-  height = 8,
-  pattern = "734",
+  x = 272,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "torch",
 }
 
 tile{
   layer = 1,
-  x = 48,
-  y = 168,
-  width = 8,
-  height = 8,
-  pattern = "732",
+  x = 152,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.1",
 }
 
 tile{
   layer = 1,
-  x = 48,
-  y = 56,
-  width = 8,
-  height = 112,
-  pattern = "731",
+  x = 80,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "736",
 }
 
 tile{
   layer = 1,
-  x = 56,
-  y = 168,
-  width = 192,
-  height = 8,
-  pattern = "733",
+  x = 64,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "735",
 }
 
 tile{
   layer = 1,
-  x = 248,
-  y = 48,
-  width = 8,
-  height = 8,
-  pattern = "728",
+  x = 96,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "737",
 }
 
 tile{
   layer = 1,
-  x = 48,
-  y = 48,
-  width = 8,
-  height = 8,
-  pattern = "726",
+  x = 224,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "736",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "735",
 }
 
 tile{
   layer = 1,
   x = 240,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "737",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 160,
+  width = 8,
+  height = 16,
+  pattern = "712",
+}
+
+tile{
+  layer = 1,
+  x = 32,
   y = 160,
   width = 8,
   height = 16,
@@ -360,128 +333,38 @@ tile{
 
 tile{
   layer = 1,
-  x = 248,
-  y = 56,
-  width = 8,
-  height = 112,
-  pattern = "729",
-}
-
-tile{
-  layer = 1,
-  x = 248,
+  x = 40,
   y = 160,
-  width = 32,
+  width = 96,
   height = 16,
   pattern = "711",
 }
 
 tile{
   layer = 1,
-  x = 288,
-  y = 56,
-  width = 32,
+  x = 280,
+  y = 160,
+  width = 8,
   height = 16,
-  pattern = "wall_pillar.4",
+  pattern = "712",
 }
 
 tile{
   layer = 1,
-  x = 288,
-  y = 168,
-  width = 32,
+  x = 176,
+  y = 160,
+  width = 8,
   height = 16,
-  pattern = "wall_pillar.4",
+  pattern = "710",
 }
 
 tile{
   layer = 1,
-  x = 296,
-  y = 104,
-  width = 24,
-  height = 32,
-  pattern = "wall_statue.4",
-}
-
-tile{
-  layer = 1,
-  x = 0,
-  y = 168,
-  width = 32,
+  x = 184,
+  y = 160,
+  width = 96,
   height = 16,
-  pattern = "wall_pillar.3",
-}
-
-chest{
-  name = "chest_1",
-  layer = 1,
-  x = 72,
-  y = 109,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_2",
-  layer = 1,
-  x = 152,
-  y = 61,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_3",
-  layer = 1,
-  x = 232,
-  y = 61,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_4",
-  layer = 1,
-  x = 72,
-  y = 157,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_5",
-  layer = 1,
-  x = 72,
-  y = 61,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_6",
-  layer = 1,
-  x = 152,
-  y = 109,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_7",
-  layer = 1,
-  x = 152,
-  y = 157,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_8",
-  layer = 1,
-  x = 232,
-  y = 157,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_9",
-  layer = 1,
-  x = 232,
-  y = 109,
-  sprite = "entities/chest",
+  pattern = "711",
 }
 
 destination{
@@ -499,17 +382,17 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "outside/c3",
-  destination = "from_chest_game",
+  destination = "from_bird_house",
 }
 
 npc{
-  name = "chest_npc",
+  name = "bird",
   layer = 1,
-  x = 272,
-  y = 189,
+  x = 160,
+  y = 77,
   direction = 3,
   subtype = 1,
-  sprite = "npc/octopus",
+  sprite = "npc/bird_green",
 }
 
 tile{
@@ -532,6 +415,33 @@ tile{
 
 tile{
   layer = 2,
+  x = 136,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "706",
+}
+
+tile{
+  layer = 2,
+  x = 40,
+  y = 152,
+  width = 96,
+  height = 8,
+  pattern = "705",
+}
+
+tile{
+  layer = 2,
+  x = 32,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "704",
+}
+
+tile{
+  layer = 2,
   x = 280,
   y = 152,
   width = 8,
@@ -541,16 +451,16 @@ tile{
 
 tile{
   layer = 2,
-  x = 248,
+  x = 184,
   y = 152,
-  width = 32,
+  width = 96,
   height = 8,
   pattern = "705",
 }
 
 tile{
   layer = 2,
-  x = 240,
+  x = 176,
   y = 152,
   width = 8,
   height = 8,

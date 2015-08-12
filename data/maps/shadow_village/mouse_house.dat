@@ -1,10 +1,10 @@
 properties{
   x = 4864,
-  y = 1864,
+  y = 2248,
   width = 320,
   height = 240,
   tileset = "house",
-  music = "mini_game",
+  music = "village",
 }
 
 tile{
@@ -14,15 +14,6 @@ tile{
   width = 256,
   height = 176,
   pattern = "floor.1",
-}
-
-tile{
-  layer = 1,
-  x = 56,
-  y = 56,
-  width = 192,
-  height = 112,
-  pattern = "730",
 }
 
 tile{
@@ -207,47 +198,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 280,
-  y = 160,
-  width = 8,
-  height = 16,
-  pattern = "712",
-}
-
-tile{
-  layer = 1,
-  x = 88,
-  y = 0,
-  width = 16,
-  height = 32,
-  pattern = "wall_pillar.1",
-}
-
-tile{
-  layer = 1,
-  x = 216,
-  y = 0,
-  width = 16,
-  height = 32,
-  pattern = "wall_pillar.1",
-}
-
-tile{
-  layer = 1,
   x = 0,
   y = 56,
   width = 32,
   height = 16,
   pattern = "wall_pillar.3",
-}
-
-tile{
-  layer = 1,
-  x = 0,
-  y = 104,
-  width = 24,
-  height = 32,
-  pattern = "wall_statue.3",
 }
 
 tile{
@@ -288,96 +243,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 56,
-  y = 48,
-  width = 192,
-  height = 8,
-  pattern = "727",
-}
-
-tile{
-  layer = 1,
-  x = 248,
-  y = 168,
-  width = 8,
-  height = 8,
-  pattern = "734",
-}
-
-tile{
-  layer = 1,
-  x = 48,
-  y = 168,
-  width = 8,
-  height = 8,
-  pattern = "732",
-}
-
-tile{
-  layer = 1,
-  x = 48,
-  y = 56,
-  width = 8,
-  height = 112,
-  pattern = "731",
-}
-
-tile{
-  layer = 1,
-  x = 56,
-  y = 168,
-  width = 192,
-  height = 8,
-  pattern = "733",
-}
-
-tile{
-  layer = 1,
-  x = 248,
-  y = 48,
-  width = 8,
-  height = 8,
-  pattern = "728",
-}
-
-tile{
-  layer = 1,
-  x = 48,
-  y = 48,
-  width = 8,
-  height = 8,
-  pattern = "726",
-}
-
-tile{
-  layer = 1,
-  x = 240,
-  y = 160,
-  width = 8,
-  height = 16,
-  pattern = "710",
-}
-
-tile{
-  layer = 1,
-  x = 248,
-  y = 56,
-  width = 8,
-  height = 112,
-  pattern = "729",
-}
-
-tile{
-  layer = 1,
-  x = 248,
-  y = 160,
-  width = 32,
-  height = 16,
-  pattern = "711",
-}
-
-tile{
-  layer = 1,
   x = 288,
   y = 56,
   width = 32,
@@ -392,15 +257,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "wall_pillar.4",
-}
-
-tile{
-  layer = 1,
-  x = 296,
-  y = 104,
-  width = 24,
-  height = 32,
-  pattern = "wall_statue.4",
 }
 
 tile{
@@ -412,76 +268,247 @@ tile{
   pattern = "wall_pillar.3",
 }
 
-chest{
-  name = "chest_1",
+tile{
+  layer = 1,
+  x = 64,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "717",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 136,
+  width = 8,
+  height = 16,
+  pattern = "720",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "723",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "725",
+}
+
+tile{
   layer = 1,
   x = 72,
-  y = 109,
-  sprite = "entities/chest",
+  y = 128,
+  width = 32,
+  height = 8,
+  pattern = "718",
 }
 
-chest{
-  name = "chest_2",
+tile{
   layer = 1,
-  x = 152,
-  y = 61,
-  sprite = "entities/chest",
+  x = 104,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "719",
 }
 
-chest{
-  name = "chest_3",
-  layer = 1,
-  x = 232,
-  y = 61,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_4",
+tile{
   layer = 1,
   x = 72,
-  y = 157,
-  sprite = "entities/chest",
+  y = 152,
+  width = 32,
+  height = 8,
+  pattern = "724",
 }
 
-chest{
-  name = "chest_5",
+tile{
+  layer = 1,
+  x = 64,
+  y = 136,
+  width = 8,
+  height = 16,
+  pattern = "722",
+}
+
+tile{
   layer = 1,
   x = 72,
-  y = 61,
-  sprite = "entities/chest",
+  y = 136,
+  width = 32,
+  height = 16,
+  pattern = "721",
 }
 
-chest{
-  name = "chest_6",
+tile{
+  layer = 1,
+  x = 208,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "717",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 136,
+  width = 8,
+  height = 16,
+  pattern = "720",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "723",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "725",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 128,
+  width = 32,
+  height = 8,
+  pattern = "718",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "719",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 152,
+  width = 32,
+  height = 8,
+  pattern = "724",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 136,
+  width = 8,
+  height = 16,
+  pattern = "722",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 136,
+  width = 32,
+  height = 16,
+  pattern = "721",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "torch",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "torch",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "743",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "742",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "744",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "743",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "742",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "744",
+}
+
+tile{
   layer = 1,
   x = 152,
-  y = 109,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_7",
-  layer = 1,
-  x = 152,
-  y = 157,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_8",
-  layer = 1,
-  x = 232,
-  y = 157,
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_9",
-  layer = 1,
-  x = 232,
-  y = 109,
-  sprite = "entities/chest",
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "wall_pillar.1",
 }
 
 destination{
@@ -499,17 +526,17 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "outside/c3",
-  destination = "from_chest_game",
+  destination = "from_mouse_house",
 }
 
 npc{
-  name = "chest_npc",
+  name = "mouse",
   layer = 1,
-  x = 272,
-  y = 189,
+  x = 160,
+  y = 77,
   direction = 3,
   subtype = 1,
-  sprite = "npc/octopus",
+  sprite = "npc/mouse_purple",
 }
 
 tile{
@@ -528,32 +555,5 @@ tile{
   width = 32,
   height = 8,
   pattern = "door_top.2",
-}
-
-tile{
-  layer = 2,
-  x = 280,
-  y = 152,
-  width = 8,
-  height = 8,
-  pattern = "706",
-}
-
-tile{
-  layer = 2,
-  x = 248,
-  y = 152,
-  width = 32,
-  height = 8,
-  pattern = "705",
-}
-
-tile{
-  layer = 2,
-  x = 240,
-  y = 152,
-  width = 8,
-  height = 8,
-  pattern = "704",
 }
 

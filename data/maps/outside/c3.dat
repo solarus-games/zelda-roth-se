@@ -3609,15 +3609,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 696,
-  y = 656,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
-}
-
-tile{
-  layer = 1,
   x = 720,
   y = 656,
   width = 24,
@@ -3843,15 +3834,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 696,
-  y = 1040,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
-}
-
-tile{
-  layer = 1,
   x = 656,
   y = 960,
   width = 96,
@@ -3929,15 +3911,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "house.entrance",
-}
-
-tile{
-  layer = 1,
-  x = 168,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
 }
 
 tile{
@@ -5108,6 +5081,46 @@ tile{
   width = 32,
   height = 8,
   pattern = "house_tree.steps.bottom",
+}
+
+sensor{
+  name = "open_house_chest_game_door_sensor",
+  layer = 1,
+  x = 696,
+  y = 685,
+  width = 32,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "chest_game_door",
+  layer = 1,
+  x = 696,
+  y = 656,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+sensor{
+  name = "open_house_mouse_door_sensor",
+  layer = 1,
+  x = 696,
+  y = 1069,
+  width = 32,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "mouse_door",
+  layer = 1,
+  x = 696,
+  y = 1040,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
 }
 
 teletransporter{
@@ -7149,11 +7162,10 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/pink_ball",
-  behavior = "dialog#outside_c3.non_understandable",
 }
 
 npc{
-  name = "welcome_npc_2",
+  name = "running_man",
   layer = 1,
   x = 416,
   y = 1341,
@@ -7232,6 +7244,42 @@ destination{
   x = 224,
   y = 1077,
   direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 696,
+  y = 1040,
+  width = 16,
+  height = 16,
+  destination_map = "shadow_village/mouse_house",
+}
+
+teletransporter{
+  layer = 1,
+  x = 696,
+  y = 656,
+  width = 16,
+  height = 16,
+  destination_map = "shadow_village/chest_game",
+}
+
+teletransporter{
+  layer = 1,
+  x = 472,
+  y = 848,
+  width = 16,
+  height = 16,
+  destination_map = "shadow_village/leader_house",
+}
+
+teletransporter{
+  layer = 1,
+  x = 168,
+  y = 784,
+  width = 16,
+  height = 16,
+  destination_map = "shadow_village/bird_house",
 }
 
 tile{
