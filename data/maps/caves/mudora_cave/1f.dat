@@ -1217,7 +1217,7 @@ teletransporter{
 }
 
 door{
-  name = "door_a_back",
+  name = "auto_door_a_back",
   layer = 1,
   x = 296,
   y = 112,
@@ -1226,7 +1226,7 @@ door{
 }
 
 door{
-  name = "door_a",
+  name = "auto_door_a",
   layer = 1,
   x = 328,
   y = 112,
@@ -1255,7 +1255,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_14",
+  name = "auto_enemy_2",
   layer = 1,
   x = 800,
   y = 125,
@@ -1265,7 +1265,7 @@ enemy{
 }
 
 enemy{
-  name = "auto_enemy_15",
+  name = "auto_enemy_1",
   layer = 1,
   x = 512,
   y = 125,
@@ -1275,9 +1275,18 @@ enemy{
 }
 
 sensor{
-  name = "close_door_a_sensor",
+  name = "close_loud_auto_door_a_sensor",
   layer = 1,
   x = 288,
+  y = 125,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "open_quiet_auto_door_a_sensor",
+  layer = 1,
+  x = 936,
   y = 125,
   width = 16,
   height = 16,

@@ -195,10 +195,24 @@ local function initialize_sensor()
       return
     end
 
-    -- Sensors named "close_quiet_X_sensor" silently open doors prefixed with "X".
+    -- Sensors named "close_quiet_X_sensor" silently close doors prefixed with "X".
     door_prefix = name:match("^close_quiet_([a-zA-X0-9_]+)_sensor")
     if door_prefix ~= nil then
       map:set_doors_open(door_prefix, false)
+      return
+    end
+
+    -- Sensors named "open_loud_X_sensor" open doors prefixed with "X".
+    local door_prefix = name:match("^open_loud_([a-zA-X0-9_]+)_sensor")
+    if door_prefix ~= nil then
+      map:open_doors(door_prefix)
+      return
+    end
+
+    -- Sensors named "close_loud_X_sensor" close doors prefixed with "X".
+    door_prefix = name:match("^close_loud_([a-zA-X0-9_]+)_sensor")
+    if door_prefix ~= nil then
+      map:close_doors(door_prefix)
       return
     end
 
