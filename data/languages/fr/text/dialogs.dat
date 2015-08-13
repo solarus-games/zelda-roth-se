@@ -1,4 +1,12 @@
 dialog{
+  id = "_crystal",
+  text = [[
+C'est un interrupteur de cristal !
+Frappe-le avec quelque chose...
+]]
+}
+
+dialog{
   id = "_shop.amount_full",
   text = [[
 Tu n'as pas besoin de ça maintenant.
