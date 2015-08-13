@@ -14653,6 +14653,74 @@ tile{
 }
 
 sensor{
+  name = "save_solid_ground_sensor_21",
+  layer = 1,
+  x = 976,
+  y = 2045,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_23",
+  layer = 1,
+  x = 976,
+  y = 1805,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_32",
+  layer = 1,
+  x = 1264,
+  y = 1805,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "save_solid_ground_sensor_20",
+  layer = 1,
+  x = 1264,
+  y = 2045,
+  width = 16,
+  height = 16,
+}
+
+door{
+  name = "auto_door_c",
+  layer = 1,
+  x = 1256,
+  y = 1792,
+  direction = 0,
+  sprite = "entities/door_small_key",
+  savegame_variable = "dungeon_6_1f_door_c",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_6_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "small_key_required",
+}
+
+door{
+  name = "auto_door_m",
+  layer = 1,
+  x = 1256,
+  y = 2032,
+  direction = 0,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "auto_door_l",
+  layer = 1,
+  x = 968,
+  y = 2032,
+  direction = 2,
+  sprite = "entities/door_normal",
+}
+
+sensor{
   name = "reset_solid_ground_sensor_8",
   layer = 1,
   x = 480,
@@ -14752,28 +14820,10 @@ sensor{
 }
 
 sensor{
-  name = "save_solid_ground_sensor_20",
-  layer = 1,
-  x = 1264,
-  y = 2045,
-  width = 16,
-  height = 16,
-}
-
-sensor{
   name = "save_solid_ground_sensor_22",
   layer = 1,
   x = 1120,
   y = 2149,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "save_solid_ground_sensor_21",
-  layer = 1,
-  x = 976,
-  y = 2045,
   width = 16,
   height = 16,
 }
@@ -15286,15 +15336,6 @@ door{
 }
 
 door{
-  name = "auto_door_m",
-  layer = 1,
-  x = 1256,
-  y = 2032,
-  direction = 0,
-  sprite = "entities/door_normal",
-}
-
-door{
   name = "auto_door_n_back",
   layer = 1,
   x = 1576,
@@ -15367,35 +15408,12 @@ door{
 }
 
 door{
-  name = "auto_door_l",
-  layer = 1,
-  x = 968,
-  y = 2032,
-  direction = 2,
-  sprite = "entities/door_normal",
-}
-
-door{
   name = "auto_door_l_back",
   layer = 1,
   x = 936,
   y = 2032,
   direction = 0,
   sprite = "entities/door_normal",
-}
-
-door{
-  name = "auto_door_c",
-  layer = 1,
-  x = 1256,
-  y = 1792,
-  direction = 0,
-  sprite = "entities/door_small_key",
-  savegame_variable = "dungeon_6_1f_door_c",
-  opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_6_small_keys",
-  opening_condition_consumed = true,
-  cannot_open_dialog = "small_key_required",
 }
 
 door{
@@ -16457,15 +16475,6 @@ sensor{
   layer = 1,
   x = 2080,
   y = 1701,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "save_solid_ground_sensor_23",
-  layer = 1,
-  x = 976,
-  y = 1805,
   width = 16,
   height = 16,
 }

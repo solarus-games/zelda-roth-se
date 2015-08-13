@@ -7,9 +7,10 @@ Bug fixes
 ---------
 
 * Fix the sprite of the Book of Mudora treasure (#47).
-* Fix hero in a tree after scrolling near dungeon 5 (45).
+* Fix hero in a tree after scrolling near dungeon 5 (#45).
 * Fix Kakariko leader dialog after getting all crystals (#44).
 * Fix stairs arrow missing on dungeon 3 map (#49).
+* Dungeon 6: fix wrong restored position when falling in hole (#40).
 
 ______________________________________________________________
 
