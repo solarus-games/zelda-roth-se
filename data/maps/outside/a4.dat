@@ -3105,6 +3105,15 @@ custom_entity{
 
 tile{
   layer = 2,
+  x = 0,
+  y = 216,
+  width = 24,
+  height = 24,
+  pattern = "sand.soil",
+}
+
+tile{
+  layer = 2,
   x = 1280,
   y = 112,
   width = 96,
@@ -4091,15 +4100,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "sand.weed",
-}
-
-tile{
-  layer = 2,
-  x = 0,
-  y = 216,
-  width = 24,
-  height = 24,
-  pattern = "sand.soil",
 }
 
 teletransporter{

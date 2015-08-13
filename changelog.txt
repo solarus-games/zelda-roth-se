@@ -4,6 +4,7 @@ Zelda Return of the Hylian, Solarus Edition 1.0.4 (in progress)
 _______________________________________________________________
 
 * Fix harmless error message in Mudora cave.
+* Fix duplicate bushes (#57).
 
 ______________________________________________________________
 
