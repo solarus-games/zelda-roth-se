@@ -8195,6 +8195,7 @@ destination{
   x = 1120,
   y = 1181,
   direction = 1,
+  default = true,
 }
 
 dynamic_tile{
@@ -8267,7 +8268,6 @@ destination{
   x = 1440,
   y = 1181,
   direction = 1,
-  default = true,
 }
 
 door{

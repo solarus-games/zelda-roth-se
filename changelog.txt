@@ -14,6 +14,7 @@ Bug fixes
 * Fix stairs arrow missing on dungeon 3 map (#49).
 * Fix ghosts under high tiles in cemetary (#52).
 * Fix missing dialog when looking at a crystal switch.
+* Fix chest game randomness (#36).
 * Make bad skulls step back also when unsuccessfully attacked (#53).
 * Dungeon 6: fix wrong restored position when falling in hole (#40).
 * Dungeon 7: fix hero stuck because of closed door.

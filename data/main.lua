@@ -11,6 +11,8 @@ local savegames_menu = require("scripts/menus/savegames")
 
 function sol.main:on_started()
 
+  math.randomseed(os.time())
+
   -- Make quest-specific initializations.
   quest_manager:initialize_quest()
 
