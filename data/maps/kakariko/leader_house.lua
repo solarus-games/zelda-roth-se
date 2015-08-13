@@ -17,7 +17,7 @@ function leader_npc:on_interaction()
 
   elseif not game:get_value("dungeon_9_zelda_saved") or
       can_beat_ganon then
-    game:start_dialog("kakariko.leader_house.go_ganon")
+    game:start_dialog("kakariko.leader_house.go_castle")
 
   else
     game:start_dialog("kakariko.leader_house.go_excalibur", function()

@@ -1,3 +1,13 @@
+_______________________________________________________________
+
+Zelda Return of the Hylian, Solarus Edition 1.0.2 (in progress)
+_______________________________________________________________
+
+Bug fixes
+---------
+
+* Fix Kakariko leader dialog after getting all crystals (#44).
+
 ______________________________________________________________
 
 Zelda Return of the Hylian, Solarus Edition 1.0.1 (2015-08-13)
