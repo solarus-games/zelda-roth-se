@@ -4942,6 +4942,16 @@ destination{
   direction = 3,
 }
 
+teletransporter{
+  layer = 1,
+  x = 2504,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "caves/mudora_cave/1f",
+  destination = "from_outside_s",
+}
+
 tile{
   layer = 2,
   x = 1072,
@@ -5784,15 +5794,5 @@ custom_entity{
   direction = 0,
   sprite = "entities/hook_green",
   model = "hookable",
-}
-
-teletransporter{
-  layer = 2,
-  x = 2504,
-  y = 64,
-  width = 16,
-  height = 16,
-  destination_map = "caves/mudora_cave/1f",
-  destination = "from_outside_s",
 }
 
