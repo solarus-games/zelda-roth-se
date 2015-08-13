@@ -348,7 +348,7 @@ dialog{
   id = "_treasure.mudora_book.1",
   text = [[
 Tu as trouvé le livre de Mudora !!!
-Tu comprends désormais le Hylien ancien!!!
+Tu comprends désormais l'Hylien ancien!!!
 ]]
 }
 
