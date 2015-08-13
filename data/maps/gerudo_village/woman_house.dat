@@ -410,7 +410,6 @@ destructible{
   x = 280,
   y = 205,
   treasure_name = "heart",
-  treasure_variant = 2,
   sprite = "entities/vase",
   destruction_sound = "stone",
   weight = 1,
