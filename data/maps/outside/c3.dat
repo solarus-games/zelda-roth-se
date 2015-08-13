@@ -7082,46 +7082,6 @@ enemy{
   treasure_name = "random_weapon",
 }
 
-enemy{
-  name = "auto_enemy_30",
-  layer = 1,
-  x = 472,
-  y = 333,
-  direction = 3,
-  breed = "poe",
-  treasure_name = "random_heart",
-}
-
-enemy{
-  name = "auto_enemy_31",
-  layer = 1,
-  x = 584,
-  y = 333,
-  direction = 3,
-  breed = "poe",
-  treasure_name = "random_heart",
-}
-
-enemy{
-  name = "auto_enemy_32",
-  layer = 1,
-  x = 696,
-  y = 333,
-  direction = 3,
-  breed = "poe",
-  treasure_name = "random_heart",
-}
-
-enemy{
-  name = "auto_enemy_33",
-  layer = 1,
-  x = 808,
-  y = 333,
-  direction = 3,
-  breed = "poe",
-  treasure_name = "random_heart",
-}
-
 wall{
   layer = 1,
   x = 768,
@@ -8311,5 +8271,45 @@ custom_entity{
   direction = 0,
   sprite = "entities/hook_green",
   model = "hookable",
+}
+
+enemy{
+  name = "auto_enemy_30",
+  layer = 2,
+  x = 472,
+  y = 333,
+  direction = 3,
+  breed = "poe",
+  treasure_name = "random_heart",
+}
+
+enemy{
+  name = "auto_enemy_31",
+  layer = 2,
+  x = 584,
+  y = 333,
+  direction = 3,
+  breed = "poe",
+  treasure_name = "random_heart",
+}
+
+enemy{
+  name = "auto_enemy_32",
+  layer = 2,
+  x = 696,
+  y = 333,
+  direction = 3,
+  breed = "poe",
+  treasure_name = "random_heart",
+}
+
+enemy{
+  name = "auto_enemy_33",
+  layer = 2,
+  x = 808,
+  y = 333,
+  direction = 3,
+  breed = "poe",
+  treasure_name = "random_heart",
 }
 

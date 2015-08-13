@@ -110,9 +110,10 @@ function behavior:create(enemy, properties)
     local hero = self:get_map():get_entity("hero")
     local _, _, layer = self:get_position()
     local _, _, hero_layer = hero:get_position()
-    local near_hero = layer == hero_layer
-      and self:get_distance(hero) < properties.detection_distance
-      and self:is_in_same_region(hero)
+    local near_hero =
+        (layer == hero_layer or enemy:has_layer_independent_collisions()) and
+        self:get_distance(hero) < properties.detection_distance
+        self:is_in_same_region(hero)
 
     if near_hero and not going_hero then
       self:go_hero()
