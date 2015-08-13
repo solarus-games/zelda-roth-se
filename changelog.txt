@@ -13,6 +13,7 @@ Bug fixes
 * Fix stairs arrow missing on dungeon 3 map (#49).
 * Fix ghosts under high tiles in cemetary (#52).
 * Dungeon 6: fix wrong restored position when falling in hole (#40).
+* Dungeon 9: fix boss key inacessible if Zelda is saved first.
 
 ______________________________________________________________
 

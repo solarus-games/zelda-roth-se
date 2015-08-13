@@ -162,7 +162,7 @@ sol.timer.start(zelda, 50, function()
     end
   end
 
-  if hero:get_state() == "stairs" and zelda:is_following_hero() then
+  if hero:get_state() == "stairs" and zelda:is_following_hero() and not zelda:is_far_from_hero() then
     zelda:set_position(hero:get_position())
     if hero:get_movement() ~= nil then
       sprite:set_direction(hero:get_movement():get_direction4())
