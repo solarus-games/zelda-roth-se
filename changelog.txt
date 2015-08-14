@@ -5,6 +5,7 @@ _______________________________________________________________
 
 * Fix harmless error message in Mudora cave.
 * Fix duplicate bushes (#57).
+* Fix Mesuda not supposed to be vulnerable (#58).
 
 ______________________________________________________________
 

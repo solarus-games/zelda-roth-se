@@ -12,6 +12,7 @@ function enemy:on_created()
   enemy:set_can_attack(false)
   enemy:set_optimization_distance(0)
   enemy:create_sprite("enemies/" .. enemy:get_breed())
+  enemy:set_invincible()
 
   enemy:set_shooting(true)
 end
