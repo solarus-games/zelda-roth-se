@@ -6,6 +6,7 @@ _______________________________________________________________
 * Fix harmless error message in Mudora cave.
 * Fix duplicate bushes (#57).
 * Fix Mesuda not supposed to be vulnerable (#58).
+* Fix missing separators in dungeon 3 (#59).
 
 ______________________________________________________________
 
@@ -15,7 +16,7 @@ ______________________________________________________________
 Bug fixes
 ---------
 
-* Fix door not opening when coming back from south-east
+* Fix door not opening when coming back from south-east.
 
 ______________________________________________________________
 

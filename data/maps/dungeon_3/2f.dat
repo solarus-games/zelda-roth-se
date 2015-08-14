@@ -4962,9 +4962,9 @@ separator{
 separator{
   name = "auto_separator_2",
   layer = 2,
-  x = 320,
+  x = 0,
   y = 472,
-  width = 960,
+  width = 1600,
   height = 16,
 }
 
