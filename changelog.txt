@@ -6,7 +6,8 @@ _______________________________________________________________
 * Fix harmless error message in Mudora cave.
 * Fix duplicate bushes (#57).
 * Fix Mesuda not supposed to be vulnerable (#58).
-* Fix missing separators in dungeon 3 (#59).
+* Dungeon 3: fix missing separators (#59).
+* Dungeon 7: fix room not shown as visited on the map (#62).
 
 ______________________________________________________________
 
