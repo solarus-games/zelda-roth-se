@@ -1245,6 +1245,15 @@ Désolé, mais tu n'as pas assez de rubis.
 }
 
 dialog{
+  id = "outside_a1.c_sign",
+  text = [[
+Perdu dans le désert ?
+Vous êtes ici :
+                        X
+]]
+}
+
+dialog{
   id = "outside_a1.dungeon_4_sign",
   text = [[
 Temple du Désert

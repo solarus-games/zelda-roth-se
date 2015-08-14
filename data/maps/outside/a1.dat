@@ -3524,6 +3524,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+  behavior = "dialog#outside_a1.c_sign",
 }
 
 destructible{
