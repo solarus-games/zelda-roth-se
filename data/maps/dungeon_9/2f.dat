@@ -585,6 +585,16 @@ tile{
   pattern = "floor.1",
 }
 
+wall{
+  layer = 1,
+  x = 792,
+  y = 216,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
 door{
   name = "boss_door",
   layer = 1,

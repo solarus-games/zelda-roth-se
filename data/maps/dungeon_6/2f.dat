@@ -531,6 +531,16 @@ tile{
   pattern = "floor.1",
 }
 
+wall{
+  layer = 1,
+  x = 1112,
+  y = 1656,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
 sensor{
   name = "dungeon_room_2_2",
   layer = 1,

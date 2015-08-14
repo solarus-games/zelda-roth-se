@@ -686,6 +686,26 @@ tile{
 
 wall{
   layer = 1,
+  x = 1112,
+  y = 1416,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 1416,
+  width = 16,
+  height = 48,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
   x = 1104,
   y = 1552,
   width = 32,
