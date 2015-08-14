@@ -14653,6 +14653,15 @@ tile{
 }
 
 sensor{
+  name = "reset_solid_ground_sensor_9",
+  layer = 1,
+  x = 160,
+  y = 1669,
+  width = 16,
+  height = 16,
+}
+
+sensor{
   name = "save_solid_ground_sensor_21",
   layer = 1,
   x = 976,
