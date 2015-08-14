@@ -3331,6 +3331,15 @@ tile{
   pattern = "grass.barrier.border.1",
 }
 
+tile{
+  layer = 1,
+  x = 2096,
+  y = 392,
+  width = 32,
+  height = 8,
+  pattern = "cave_entrance_blast.top",
+}
+
 sensor{
   name = "open_house_potion_door_sensor",
   layer = 1,
@@ -5120,15 +5129,6 @@ tile{
   width = 144,
   height = 288,
   pattern = "sand.soil",
-}
-
-tile{
-  layer = 2,
-  x = 2096,
-  y = 392,
-  width = 32,
-  height = 8,
-  pattern = "cave_entrance_blast.top",
 }
 
 tile{
