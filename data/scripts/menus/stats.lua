@@ -141,7 +141,7 @@ function stats_manager:new(game)
     local rank
     if death_count >= 50 then
       rank = tr("stats_menu.rank.death.1")
-    elseif percent > 95 then
+    elseif death_count > 95 then
       rank = tr("stats_menu.rank.death.2")
     end
     if rank == nil then
