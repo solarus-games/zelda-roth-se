@@ -35,7 +35,7 @@ function start_boss_sensor:on_activated()
     sol.timer.start(1000, function()
       boss:set_enabled(true)
       hero:unfreeze()
-      sol.audio.play_music("boss")
+      sol.audio.play_music("ganon_battle")
       fighting_boss = true
 
       medusa_1:set_shooting(true)
