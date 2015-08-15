@@ -4,6 +4,7 @@ Zelda Return of the Hylian, Solarus Edition 1.0.5 (2015-08-15)
 _______________________________________________________________
 
 * Dungeon 3: fix weak wall already open.
+* Dungeon 3: fix door opening too soon in the 4 torches room.
 
 _______________________________________________________________
 

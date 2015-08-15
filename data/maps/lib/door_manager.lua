@@ -76,7 +76,6 @@ function door_manager:open_when_torches_lit(door)
   local torch_prefix = "auto_torch_" .. door_prefix
 
   local map = door:get_map()
-  local torches = {}
   local remaining = 0
   local function torch_on_lit()
     if door:is_closed() then
@@ -88,15 +87,17 @@ function door_manager:open_when_torches_lit(door)
     end
   end
 
+  local has_torches = false
   for torch in map:get_entities(torch_prefix) do
     if not torch:is_lit() then
       remaining = remaining + 1
     end
     torch.on_lit = torch_on_lit
-    if remaining == 0 then
-      -- All torches of this door are already lit.
-      map:set_doors_open(door_prefix, true)
-    end
+    has_torches = true
+  end
+  if has_torches and remaining == 0 then
+    -- All torches of this door are already lit.
+    map:set_doors_open(door_prefix, true)
   end
 end
 
@@ -106,7 +107,6 @@ function door_manager:open_when_torches_unlit(door)
   local torch_prefix = "auto_torch_lit_" .. door_prefix
 
   local map = door:get_map()
-  local torches = {}
   local remaining = 0
   local function torch_on_unlit()
     if door:is_closed() then
@@ -118,15 +118,17 @@ function door_manager:open_when_torches_unlit(door)
     end
   end
 
+  local has_torches = false
   for torch in map:get_entities(torch_prefix) do
     if torch:is_lit() then
       remaining = remaining + 1
     end
     torch.on_unlit = torch_on_unlit
-    if remaining == 0 then
-      -- All torches of this door are already unlit.
-      map:set_doors_open(door_prefix, true)
-    end
+    has_torches = true
+  end
+  if has_torches and remaining == 0 then
+    -- All torches of this door are already unlit.
+    map:set_doors_open(door_prefix, true)
   end
 end
 
