@@ -7260,6 +7260,16 @@ teletransporter{
   destination_map = "shadow_village/potion_house",
 }
 
+npc{
+  name = "little_tree",
+  layer = 1,
+  x = 176,
+  y = 925,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/little_tree",
+}
+
 tile{
   layer = 2,
   x = 48,

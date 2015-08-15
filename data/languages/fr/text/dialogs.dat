@@ -597,13 +597,6 @@ dialog{
 }
 
 dialog{
-  id = "dungeon_6.one_more_crystal",
-  text = [[
-Il ne t'en manque plus qu'un seul !!!
-]]
-}
-
-dialog{
   id = "dungeon_6.welcome",
   text = [[
                    Niveau 6
@@ -1539,13 +1532,6 @@ S : Vers le Village Cocorico
 }
 
 dialog{
-  id = "outside_c2.village_sign",
-  text = [[
-Village Cocorico
-]]
-}
-
-dialog{
   id = "outside_c3.cemetary.dont_pass",
   text = [[
 Obtiens une autorisation du chef si tu veux
@@ -1593,6 +1579,14 @@ dialog{
 Les monstres du coin ne craignent pas grand
 chose, heureusement qu'ils n'attaquent que les
 humains.
+]]
+}
+
+dialog{
+  id = "outside_c3.little_tree",
+  text = [[
+On n'a pas l'habitude de voir des visiteurs par
+ici...
 ]]
 }
 

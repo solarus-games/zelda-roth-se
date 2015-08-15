@@ -14,6 +14,7 @@ function map:on_started()
   npc_walk(running_man)
   npc_walk(pink_ball)
   npc_walk(frog)
+  npc_walk(little_tree)
 
   -- Move the cemetary watcher.
   if game:get_value("shadow_village_cemetary_watcher_moved") then
@@ -57,6 +58,15 @@ function frog:on_interaction()
 
   if game:has_item("mudora_book") then
     game:start_dialog("outside_c3.frog")
+  else
+    game:start_dialog("shadow_village.non_understandable")
+  end
+end
+
+function little_tree:on_interaction()
+
+  if game:has_item("mudora_book") then
+    game:start_dialog("outside_c3.little_tree")
   else
     game:start_dialog("shadow_village.non_understandable")
   end

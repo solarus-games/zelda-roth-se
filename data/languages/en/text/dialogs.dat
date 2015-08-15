@@ -1,0 +1,1119 @@
+dialog{
+  id = "_crystal",
+  text = [[
+It's a crystal switch.
+Try to hit it with something...
+]]
+}
+
+dialog{
+  id = "_shop.amount_full",
+  text = [[
+You don't need this right now.
+]]
+}
+
+dialog{
+  id = "_treasure.boss_key.1",
+  text = [[
+You find the Boss Key!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.1",
+  text = [[
+You find an empty bottle!!!
+It will help you to keep potions!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.2",
+  text = [[
+You get a red potion!!!
+Drink it to restore your energy!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.3",
+  text = [[
+You get a green potion!!!
+Drink it to restore your magic!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.4",
+  text = [[
+You get a blue potion!!!
+Drink it to restore your energy and your
+magic!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.1",
+  text = [[
+You find an empty bottle!!!
+It will help you to keep potions!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.2",
+  text = [[
+You get a red potion!!!
+Drink it to restore your energy!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.3",
+  text = [[
+You get a green potion!!!
+Drink it to restore your magic!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.4",
+  text = [[
+You get a blue potion!!!
+Drink it to restore your energy and your
+magic!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.1",
+  text = [[
+You find an empty bottle!!!
+It will help you to keep potions!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.2",
+  text = [[
+You get a red potion!!!
+Drink it to restore your energy!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.3",
+  text = [[
+You get a green potion!!!
+Drink it to restore your magic!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.4",
+  text = [[
+You get a blue potion!!!
+Drink it to restore your energy and your
+magic!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bow.1",
+  text = [[
+You get the bow!!!
+Use it to reach a distant target.
+]]
+}
+
+dialog{
+  id = "_treasure.compass.1",
+  text = [[
+You find the Compass!!!
+You can locate the boss and chests on the plan.
+]]
+}
+
+dialog{
+  id = "_treasure.din_medallion.1",
+  text = [[
+You obtain a magic pendent!!!
+Your defense just raised!!!
+]]
+}
+
+dialog{
+  id = "_treasure.farore_medallion.1",
+  text = [[
+You obtain a magic pendent!!!
+Your defense just raised!!!
+]]
+}
+
+dialog{
+  id = "_treasure.fire_rod.1",
+  text = [[
+You find the Fire Rod!!!
+From now on you are able to shoot out powerful
+flames.
+]]
+}
+
+dialog{
+  id = "_treasure.flippers.1",
+  text = [[
+You find the Flippers!!!
+Set them up to swim in the water.
+]]
+}
+
+dialog{
+  id = "_treasure.glove.1",
+  text = [[
+You find the Gloves!!!
+Use them to lift objects by pressing the Action
+key.
+]]
+}
+
+dialog{
+  id = "_treasure.hammer.1",
+  text = [[
+You find the Magic Hammer!!!
+Use it to squash obstacles.
+]]
+}
+
+dialog{
+  id = "_treasure.hookshot.1",
+  text = [[
+You find the Hookshot!!!
+Use it to overcome obstacles.
+]]
+}
+
+dialog{
+  id = "_treasure.ice_rod.1",
+  text = [[
+You find the Ice Rod!!!
+Use it to freeze anything from some distance.
+]]
+}
+
+dialog{
+  id = "_treasure.lamp.1",
+  text = [[
+You find the Lantern!!!
+Use it to create flames.
+]]
+}
+
+dialog{
+  id = "_treasure.magic_crystal.1",
+  text = [[
+You find a Magic Crystal!!!
+]]
+}
+
+dialog{
+  id = "_treasure.map.1",
+  text = [[
+You find the Dungeon Map!!!
+Press P to see the map.
+]]
+}
+
+dialog{
+  id = "_treasure.mudora_book.1",
+  text = [[
+You find the book of Mudora!!!
+
+From now on, you are able to understand the
+ancient Hylian language!!!
+]]
+}
+
+dialog{
+  id = "_treasure.nayru_medallion.1",
+  text = [[
+You obtain a magic pendent!!!
+Your defense just raised!!!
+]]
+}
+
+dialog{
+  id = "_treasure.piece_of_heart.1",
+  text = [[
+You find a piece of heart!!!
+]]
+}
+
+dialog{
+  id = "_treasure.shield.1",
+  text = [[
+You find a shield!!!
+Your defense rises by one point!
+]]
+}
+
+dialog{
+  id = "_treasure.small_key.1",
+  text = [[
+You find a small key!!!
+Press Action near a locked door to open it.
+]]
+}
+
+dialog{
+  id = "_treasure.sword.1",
+  text = [[
+You find a sword!!!
+
+You can now fight monsters with the C key!
+
+Hold C to charge a spin attack!!!
+]]
+}
+
+dialog{
+  id = "_treasure.sword.3",
+  text = [[
+You find the Master Sword!!!
+Even Ganon could not stand up to its power!!!
+(in theory)
+]]
+}
+
+dialog{
+  id = "_treasure.triforce.1",
+  text = [[
+You find the Triforce!!!
+]]
+}
+
+dialog{
+  id = "boss_key_required",
+  text = [[
+This door leads to the Boss's Lair!
+You will need the Boss Key to open it.
+]]
+}
+
+dialog{
+  id = "bottle_merchant.done",
+  text = [[
+Sorry, that was my only bottle.
+]]
+}
+
+dialog{
+  id = "bottle_merchant.no",
+  text = [[
+Come again if you change your mind.
+]]
+}
+
+dialog{
+  id = "bottle_merchant.offer",
+  text = [[
+I am selling a bottle for 100 rupees, are you
+interested?
+                  $? Yes
+                  $? No
+]]
+}
+
+dialog{
+  id = "bottle_merchant.yes",
+  text = [[
+Thank you, here is your bottle.
+]]
+}
+
+dialog{
+  id = "crystal.1",
+  text = [[
+What can it be used for?
+]]
+}
+
+dialog{
+  id = "crystal.5",
+  text = [[
+Only 2 more to find!
+]]
+}
+
+dialog{
+  id = "crystal.6",
+  text = [[
+Only one more!
+]]
+}
+
+dialog{
+  id = "crystal.7",
+  text = [[
+You have all the crystals, run to the castle
+and save Zelda!!!
+]]
+}
+
+dialog{
+  id = "crystal.remaining",
+  text = [[
+Only $v more to find!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.almost_there",
+  text = [[
+We are almost there, follow me!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.dont_leave_castle",
+  text = [[
+Ganon is still somewhere in the castle.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.go_ganon",
+  text = [[
+Ganon is just behind that door, I will cure
+your wounds.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.go_kakariko",
+  text = [[
+I'm afraid you are not able to defeat Ganon
+with your current weapons...
+Go and speak to the chief of the village
+Kakariko, I am sure he will find a solution.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.hello",
+  text = [[
+Congratulations Link, you managed to save me!!!
+
+
+
+Let's find Ganon quickly, we have to reclaim
+the Triforce!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.secret_wall",
+  text = [[
+The secret passage behind the throne room leads
+to Ganon. Let's hurry!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.should_wait_zelda",
+  text = [[
+You should wait for Princess Zelda!!!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.weak_wall_ignored_zelda",
+  text = [[
+Don't you have the spooky feeling of forgetting
+someone by any chance???
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.zelda_waiting",
+  text = [[
+Zelda is waiting for you!!!
+]]
+}
+
+dialog{
+  id = "fairy_cave_already_done",
+  text = [[
+...
+]]
+}
+
+dialog{
+  id = "fairy_cave_desert.reward",
+  text = [[
+Congratulations Link, for finding me.
+As a reward, I give you the Din Pendent, it
+increases your defense by one point.
+]]
+}
+
+dialog{
+  id = "fairy_cave_lake.reward",
+  text = [[
+Congratulations Link, for finding me.
+As a reward, I give you the Nayru Pendent, it
+increases your defense by two points!
+]]
+}
+
+dialog{
+  id = "fairy_cave_ruins.reward",
+  text = [[
+Congratulations Link, for finding me.
+As a reward, I will double the capacity of
+your magic meter!!!
+]]
+}
+
+dialog{
+  id = "fairy_cave_ruins.treasure",
+  text = [[
+Your magic meter has doubled!!!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.first",
+  text = [[
+Find 3 more to get a new heart!!!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.fourth",
+  text = [[
+Your heart meter just increased!!!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.second",
+  text = [[
+Find 2 more to get a new heart!!!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.third",
+  text = [[
+Find 1 more to get a new heart!!!
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.yes",
+  text = [[
+Thank you, here is your potion.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.first_time",
+  text = [[
+Hello Link, I am the chief of that village, I
+was expecting you to come.
+
+
+Since this morning, monsters stride along
+Hyrule, I tried to talk about that with Zelda,
+but as you perhaps already saw, a powerful
+spell is blocking the access to the castle...
+You say Ganon is responsible for all of that?
+He stole the Triforce and he is holding
+Princess Zelda captive?
+
+Mmmm... The situation is more serious than I
+thought...
+
+
+We have to act very quickly, you must face
+Ganon again!
+
+
+How to enter the castle? I may have an idea...
+
+
+
+As you know, the power of the 7 wise men was
+locked in 7 crystals by wizard Aghanim when he
+was trying to open up the path to the Dark
+World, where Ganon was.
+Yet, even if you raised the descendants of the
+7 wise men from death after you defeated Ganon
+and found the Triforce, these crystals have
+kept their power.
+They were hidden deep in the 7 temples, gather
+them all, and you'll be able to get over
+Ganon's spell.
+
+However that won't be easy, Ganon will surely
+send his best units to protect these
+crystals...
+
+One more thing, you won't go far with your
+current equipment. Go and see the arms dealer
+and tell him that you're coming on my behalf.
+He will probably make a gesture for you.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_bow",
+  text = [[
+Go and see the arms dealer and tell him that
+you're coming on my behalf. He will probably
+make a gesture for you.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_castle",
+  text = [[
+You found the 7 crystals? Go to the castle
+right now, you have to save the princess, she
+will know better than me how to save Hyrule.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_crystals",
+  text = [[
+You have to gather the 7 crystals to have a
+chance to save Zelda and Hyrule...
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_excalibur",
+  text = [[
+Your weapons are not working against Ganon?
+Therefore, you have to find the Master Sword.
+It is said to have been concealed in a hidden
+temple.
+Besides, the way leading to the Sword of Evils
+Bane is said to cross over a village populated
+by monsters...
+
+I wonder if such a village exists...
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_glove",
+  text = [[
+However, I'm afraid that your current equipment
+is inadequate to reach this temple, maybe you
+shoud go see the blacksmith of Gerudo
+village...
+]]
+}
+
+dialog{
+  id = "kakariko.potion_house.no_bottle",
+  text = [[
+Come back when you have an empty bottle and I
+will sell you a red potion that restores
+energy.
+]]
+}
+
+dialog{
+  id = "kakariko.potion_house.offer",
+  text = [[
+A red potion for 60 rupees, are you interested?
+
+              $? Yes
+              $? No
+]]
+}
+
+dialog{
+  id = "kakariko.potion_house.yes",
+  text = [[
+Thank you, here is your potion.
+]]
+}
+
+dialog{
+  id = "kakariko.shop.reduced_bow",
+  text = [[
+What???
+You are in a mission for the chief???
+Okay, then I'm going to give you a discount for
+the bow...
+]]
+}
+
+dialog{
+  id = "kakariko.tavern.drunk_man",
+  text = [[
+-Hiccup!- A fairy is said to give enchanted
+objects... -Hiccup!- ...to adventurers who
+would find her... -Hiccup!!!-
+]]
+}
+
+dialog{
+  id = "kakariko.tavern.waiter",
+  text = [[
+Hello, what would you like to drink?
+]]
+}
+
+dialog{
+  id = "not_enough_money",
+  text = [[
+Sorry, you don't have enough rupees.
+]]
+}
+
+dialog{
+  id = "outside_a1.c_sign",
+  text = [[
+Lost in the desert?
+You are here:
+                        X
+]]
+}
+
+dialog{
+  id = "outside_a1.dungeon_4_sign",
+  text = [[
+Desert Temple
+
+Come to try our bath.
+(water is not for drinking)
+]]
+}
+
+dialog{
+  id = "outside_a1.old_lady_npc",
+  text = [[
+Did you see the blacksmith of this village?
+He is said to be very gifted to improve
+adventurers' equipment, a lot of people visit
+him.
+]]
+}
+
+dialog{
+  id = "outside_a1.s_sign",
+  text = [[
+Gerudo Village
+]]
+}
+
+dialog{
+  id = "outside_a1.se_sign",
+  text = [[
+S: Kakariko Village
+W: Desert
+E: Death Mountain
+]]
+}
+
+dialog{
+  id = "outside_a1.sw_sign",
+  text = [[
+S: To Hyrule Castle
+]]
+}
+
+dialog{
+  id = "outside_a1.thief_npc",
+  text = [[
+The Temple is in the deepest desert, in an
+ancient oasis.
+]]
+}
+
+dialog{
+  id = "outside_a2.castle_sign",
+  text = [[
+Hyrule Castle
+]]
+}
+
+dialog{
+  id = "outside_a2.sw_sign",
+  text = [[
+E: Kakariko Village
+]]
+}
+
+dialog{
+  id = "outside_a3.ne_sign",
+  text = [[
+W: Turtle Rock
+E: Lake Hylia
+]]
+}
+
+dialog{
+  id = "outside_b1.dungeon_3_sign",
+  text = [[
+Mountain Temple
+
+Not for cardiacs, scaredy-cats, and generally
+faint of heart.
+]]
+}
+
+dialog{
+  id = "outside_b1.s_sign",
+  text = [[
+N: Mountain Temple
+S: Hyrule Field
+]]
+}
+
+dialog{
+  id = "outside_b1.sw_sign",
+  text = [[
+W: Desert entrance
+N: Mountain Temple
+]]
+}
+
+dialog{
+  id = "outside_b2.broom_grandma",
+  text = [[
+What a good day!
+]]
+}
+
+dialog{
+  id = "outside_b2.chicken_boy",
+  text = [[
+Why did I accept to take care of that
+rubbish???
+I loathe hens!!!
+]]
+}
+
+dialog{
+  id = "outside_b2.n_sign",
+  text = [[
+N: Desert and Gerudo Village
+]]
+}
+
+dialog{
+  id = "outside_b2.s_sign",
+  text = [[
+S: Lake Hylia
+W: Hyrule Castle
+]]
+}
+
+dialog{
+  id = "outside_b2.sw_sign",
+  text = [[
+W: Hyrule Castle
+]]
+}
+
+dialog{
+  id = "outside_b2.village_sign",
+  text = [[
+Kakariko Village
+]]
+}
+
+dialog{
+  id = "outside_b2.village_welcome_npc",
+  text = [[
+You can find a lot of things in the shop of
+this village.
+]]
+}
+
+dialog{
+  id = "outside_b3.dungeon_2_sign",
+  text = [[
+Lake Temple
+
+Bathing cap is mandatory.
+]]
+}
+
+dialog{
+  id = "outside_b3.dungeon_7_sign",
+  text = [[
+Ice Temple
+
+The staff wishes to remind you that a dungeon
+is not an ice rink.
+]]
+}
+
+dialog{
+  id = "outside_b3.n_sign",
+  text = [[
+N: Hyrule Field
+]]
+}
+
+dialog{
+  id = "outside_b3.ne_sign",
+  text = [[
+N: Hyrule Field
+]]
+}
+
+dialog{
+  id = "outside_b3.nw_sign",
+  text = [[
+N: Kakariko Village
+]]
+}
+
+dialog{
+  id = "outside_b3.se_sign",
+  text = [[
+E: Shadow Village
+- Not for the living -
+]]
+}
+
+dialog{
+  id = "outside_b3.sw_sign",
+  text = [[
+W: Fire Land
+]]
+}
+
+dialog{
+  id = "outside_b3.w_sign",
+  text = [[
+W: Fire Land
+]]
+}
+
+dialog{
+  id = "outside_b4.dungeon_8_sign",
+  text = [[
+Hidden Temple
+
+Here rests the Sword of Evils Bane, the Master
+Sword.
+]]
+}
+
+dialog{
+  id = "outside_b4.e_sign",
+  text = [[
+N: To the Haunted Graveyard
+]]
+}
+
+dialog{
+  id = "outside_c1.dungeon_1_sign",
+  text = [[
+Forest Temple
+
+Save trees, eat beaver!!!
+]]
+}
+
+dialog{
+  id = "outside_c1.link_house_sign",
+  text = [[
+N: Link's Home
+W: Hyrule Field
+E: Forest Temple
+]]
+}
+
+dialog{
+  id = "outside_c2.ne_sign",
+  text = [[
+E: Forest Entrance
+]]
+}
+
+dialog{
+  id = "outside_c2.nw_sign",
+  text = [[
+N: Death Mountain
+]]
+}
+
+dialog{
+  id = "outside_c2.se_sign",
+  text = [[
+S: Lake Hylia
+E: Haunted Graveyard
+]]
+}
+
+dialog{
+  id = "outside_c2.sw_sign",
+  text = [[
+S: To Kakariko Village
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.dont_pass",
+  text = [[
+Wangle chief's permit if you really want to
+pass!!!
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.go_away",
+  text = [[
+Get out of my way!!!
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.leader_allowed_to_pass",
+  text = [[
+The chief allowed you to pass???
+Grrrr... So move along!!!
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary_sign",
+  text = [[
+N: Haunted Graveyard
+
+No entry
+]]
+}
+
+dialog{
+  id = "outside_c3.dungeon_sign",
+  text = [[
+Dark Temple
+
+If you are a ghost, seeking a job, you'd better
+come here to hang out with us.
+]]
+}
+
+dialog{
+  id = "outside_c3.frog",
+  text = [[
+Local monsters don't fear a lot of things,
+fortunately they only attack humans.
+]]
+}
+
+dialog{
+  id = "outside_c3.little_tree",
+  text = [[
+It's not common to have visitors around here.
+]]
+}
+
+dialog{
+  id = "outside_c3.pink_ball",
+  text = [[
+Really?
+You understand what I say?
+]]
+}
+
+dialog{
+  id = "outside_c3.running_man",
+  text = [[
+People from that village have a very strange
+dialect, I don't understand anything...
+]]
+}
+
+dialog{
+  id = "outside_c3.sw_sign",
+  text = [[
+N: Shadow Village
+W: Lake Hylia
+]]
+}
+
+dialog{
+  id = "outside_c3.village_sign",
+  text = [[
+Shadow Village
+]]
+}
+
+dialog{
+  id = "shadow_village.non_understandable",
+  text = [[
+{|{|{|{|{|{|{{{|
+{}||}{}|{}|{}|}{
+|{|{|{|}|}
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.yes",
+  text = [[
+Thank you, here is your potion.
+]]
+}
+
+dialog{
+  id = "shop.arrow.2",
+  text = [[
+5 arrows.
+]]
+}
+
+dialog{
+  id = "shop.bomb.1",
+  text = [[
+One bomb.
+]]
+}
+
+dialog{
+  id = "shop.bow.2",
+  text = [[
+A bow.
+]]
+}
+
+dialog{
+  id = "shop.choose",
+  text = [[
+Choose what you want.
+]]
+}
+
+dialog{
+  id = "shop.heart.1",
+  text = [[
+One heart.
+]]
+}
+
+dialog{
+  id = "shop.magic_flask.1",
+  text = [[
+A little bit of magic.
+]]
+}
+
+dialog{
+  id = "shop.magic_flask.2",
+  text = [[
+Some magic.
+]]
+}
+
