@@ -3,7 +3,7 @@
 local hearts_builder = {}
 
 local hearts_img = sol.surface.create("hud/hearts.png")
-local life_label_img = sol.surface.create("hud/hearts_label.png")
+local life_label_img = sol.surface.create("hearts_label.png", true)
 
 function hearts_builder:new(game)
 
