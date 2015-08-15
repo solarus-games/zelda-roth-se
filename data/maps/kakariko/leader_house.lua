@@ -15,16 +15,17 @@ function leader_npc:on_interaction()
   elseif not game:has_all_crystals() then
     game:start_dialog("kakariko.leader_house.go_crystals")
 
-  elseif not game:get_value("dungeon_9_zelda_saved") or
-      can_beat_ganon then
+  elseif not game:get_value("dungeon_9_zelda_saved") then
     game:start_dialog("kakariko.leader_house.go_castle")
 
-  else
+  elseif not can_beat_ganon then
     game:start_dialog("kakariko.leader_house.go_excalibur", function()
       if game:get_item("glove"):get_variant() < 2 then
         game:start_dialog("kakariko.leader_house.go_glove")
       end
     end)
 
+  else
+    game:start_dialog("kakariko.leader_house.go_ganon")
   end
 end

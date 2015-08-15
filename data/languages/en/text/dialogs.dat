@@ -609,6 +609,14 @@ I wonder if such a village exists...
 }
 
 dialog{
+  id = "kakariko.leader_house.go_ganon",
+  text = [[
+It's time to confront Ganon and to take the
+Triforce back!
+]]
+}
+
+dialog{
   id = "kakariko.leader_house.go_glove",
   text = [[
 However, I'm afraid that your current equipment
