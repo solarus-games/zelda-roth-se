@@ -5880,14 +5880,14 @@ tile{
   x = 1168,
   y = 520,
   width = 16,
-  height = 16,
+  height = 32,
   pattern = "ruins.3",
 }
 
 tile{
   layer = 1,
   x = 1168,
-  y = 536,
+  y = 552,
   width = 16,
   height = 8,
   pattern = "ruins.3.border.2",
