@@ -14,6 +14,73 @@ You don't need this right now.
 }
 
 dialog{
+  id = "_shop.not_enough_money",
+  text = [[
+Sorry, you don't have enough rupees
+]]
+}
+
+dialog{
+  id = "_shop.question",
+  text = [[
+Price : $v rupees. Ok ?
+    $? Yes
+    $? No
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.1",
+  text = [[
+You found an arrow!
+Use the bow and arrows to defeat tough enemies
+from afar.
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.2",
+  text = [[
+You found 5 arrows!
+Use the bow and arrows to defeat tough enemies
+from afar.
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.3",
+  text = [[
+You found 10 arrows!
+Use the bow and arrows to defeat tough enemies
+from afar.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.1",
+  text = [[
+You found a bomb!
+Use bombs to make an enemy or obstacle explode.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.2",
+  text = [[
+You found 3 bombs!
+Use bombs to make an enemy or obstacle explode.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.3",
+  text = [[
+You found 8 bombs!
+Use bombs to make an enemy or obstacle explode.
+]]
+}
+
+dialog{
   id = "_treasure.boss_key.1",
   text = [[
 You find the Boss Key!!!
@@ -128,6 +195,30 @@ Use it to reach a distant target.
 }
 
 dialog{
+  id = "_treasure.bow.2",
+  text = [[
+You get the bow!!!
+Use it to reach a distant target.
+]]
+}
+
+dialog{
+  id = "_treasure.bow_silver.1",
+  text = [[
+Your bow now shoots silver arrows with a
+cataclysmic power!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bow_silver.2",
+  text = [[
+Your bow now shoots silver arrows with a
+cataclysmic power!!!
+]]
+}
+
+dialog{
   id = "_treasure.compass.1",
   text = [[
 You find the Compass!!!
@@ -178,10 +269,25 @@ key.
 }
 
 dialog{
+  id = "_treasure.glove.2",
+  text = [[
+The power of your gloves helps you to lift
+heavy rocks.
+]]
+}
+
+dialog{
   id = "_treasure.hammer.1",
   text = [[
 You find the Magic Hammer!!!
 Use it to squash obstacles.
+]]
+}
+
+dialog{
+  id = "_treasure.heart.1",
+  text = [[
+You found a heart!
 ]]
 }
 
@@ -213,6 +319,20 @@ dialog{
   id = "_treasure.magic_crystal.1",
   text = [[
 You find a Magic Crystal!!!
+]]
+}
+
+dialog{
+  id = "_treasure.magic_flask.1",
+  text = [[
+You found a small magic jar!
+]]
+}
+
+dialog{
+  id = "_treasure.magic_flask.2",
+  text = [[
+You found a big magic jar!
 ]]
 }
 
@@ -277,6 +397,14 @@ Hold C to charge a spin attack!!!
 }
 
 dialog{
+  id = "_treasure.sword.2",
+  text = [[
+Your sword triples in power and you can now
+send back some magic attacks, so good!!!
+]]
+}
+
+dialog{
   id = "_treasure.sword.3",
   text = [[
 You find the Master Sword!!!
@@ -332,6 +460,53 @@ Thank you, here is your bottle.
 }
 
 dialog{
+  id = "chest_game.already_done",
+  text = [[
+I don't have anymore prizes to bring into play,
+sorry.
+]]
+}
+
+dialog{
+  id = "chest_game.go_chest",
+  text = [[
+Choose a chest.
+]]
+}
+
+dialog{
+  id = "chest_game.lost",
+  text = [[
+You lose! This chest is empty. Try again!
+]]
+}
+
+dialog{
+  id = "chest_game.pay_first",
+  text = [[
+Hey!
+You have to pay to open one of my chests!!!
+]]
+}
+
+dialog{
+  id = "chest_game.rules",
+  text = [[
+One of these chests contains a piece of heart,
+do you want to try for 10 rupees?
+                 $? Yes
+                 $? No
+]]
+}
+
+dialog{
+  id = "chest_game.thanks",
+  text = [[
+Thanks.
+]]
+}
+
+dialog{
   id = "crystal.1",
   text = [[
 What can it be used for?
@@ -364,6 +539,87 @@ dialog{
   id = "crystal.remaining",
   text = [[
 Only $v more to find!
+]]
+}
+
+dialog{
+  id = "dungeon_1.welcome",
+  text = [[
+                    Level 1
+
+                  Forest Temple
+]]
+}
+
+dialog{
+  id = "dungeon_2.welcome",
+  text = [[
+                    Level 2
+
+                  Water Temple
+]]
+}
+
+dialog{
+  id = "dungeon_3.welcome",
+  text = [[
+                    Level 3
+
+                 Mountain Temple
+]]
+}
+
+dialog{
+  id = "dungeon_4.welcome",
+  text = [[
+                    Level 4
+
+                  Desert Temple
+]]
+}
+
+dialog{
+  id = "dungeon_5.welcome",
+  text = [[
+                    Level 5
+
+                  Dark Temple
+]]
+}
+
+dialog{
+  id = "dungeon_6.welcome",
+  text = [[
+                    Level 6
+
+                  Fire Temple
+]]
+}
+
+dialog{
+  id = "dungeon_7.welcome",
+  text = [[
+                    Level 7
+
+                   Ice Temple
+]]
+}
+
+dialog{
+  id = "dungeon_8.welcome",
+  text = [[
+                    Level ?
+
+                 Hidden Temple
+]]
+}
+
+dialog{
+  id = "dungeon_9.welcome",
+  text = [[
+                  Last Level
+
+                 Hyrule Castle
 ]]
 }
 
@@ -442,6 +698,48 @@ Zelda is waiting for you!!!
 }
 
 dialog{
+  id = "dungeon_finished_save",
+  text = [[
+Do you want to save your game?
+
+                   $? Yes
+                   $? No
+]]
+}
+
+dialog{
+  id = "ending",
+  text = [[
+At the exact moment Link touched the Triforce,
+monsters disappeared and peace recurred.
+
+
+Then Princess Zelda made a great decision: she
+touched in turn the Triforce and made her wish.
+
+
+Triforce had always been the origin of troubles
+in the Kingdom, sooner or later, another evil
+creature would find it.
+
+Just when the princess touched the relic, it
+disappeared from Hyrule forever.
+
+
+Since that day, Hyrule people lived in peace,
+without fear of new disasters.
+
+
+Thus the legend of Zelda, of the Triforce and
+of the Golden Land is achieved.
+
+
+Master Sword is said to rest safely somewhere
+and to be the last heirloom of Link's quest...
+]]
+}
+
+dialog{
   id = "fairy_cave_already_done",
   text = [[
 ...
@@ -454,6 +752,15 @@ dialog{
 Congratulations Link, for finding me.
 As a reward, I give you the Din Pendent, it
 increases your defense by one point.
+]]
+}
+
+dialog{
+  id = "fairy_cave_forest.reward",
+  text = [[
+Congratulations Link, for finding me.
+As a reward, I give you the Farore Pendent, it
+increases your defense by one point...
 ]]
 }
 
@@ -511,9 +818,143 @@ Find 1 more to get a new heart!!!
 }
 
 dialog{
+  id = "gerudo_village.blacksmith.hello",
+  text = [[
+May I do something for you?
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.not_now",
+  text = [[
+Come back later, I am overbooked!
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_bow",
+  text = [[
+Do you want me to upgrade your bow?
+
+            $? Yes
+            $? No
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_glove",
+  text = [[
+Do you want me to upgrade your gloves?
+
+            $? Yes
+            $? No
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_sword",
+  text = [[
+Do you want me to temper your sword?
+
+            $? Yes
+            $? No
+]]
+}
+
+dialog{
+  id = "gerudo_village.leader_house.go_blacksmith",
+  text = [[
+Hello Link, I am the chief of this village.
+You should go see the blacksmith and show him
+what you want him to temper in your equipment.
+
+I have been informed of your quest, so I have
+arranged it with him.
+Everything will be free for you.
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.no_bottle",
+  text = [[
+Come back when you have an empty bottle and I
+will sell you a green potion which restores
+magic.
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.offer",
+  text = [[
+A green potion for $v rupees, are you
+interested?
+              $? Yes
+              $? No
+]]
+}
+
+dialog{
   id = "gerudo_village.potion_house.yes",
   text = [[
 Thank you, here is your potion.
+]]
+}
+
+dialog{
+  id = "gerudo_village.woman_house.woman",
+  text = [[
+Hello! If you are looking for the blacksmith,
+he lives a little further.
+]]
+}
+
+dialog{
+  id = "intro.fresco_1",
+  text = [[
+The Kingdom of Hyrule was living in peace since
+Link, the last knight of Hyrule, had defeated
+the malicious Ganon and reclaimed the precious
+Triforce to him.
+]]
+}
+
+dialog{
+  id = "intro.fresco_2",
+  text = [[
+Nobody knows what Link's wish to the Triforce
+was, but it had the effect of reunifying the
+Light and Dark World, and of upraising the 7
+wise men's descendants.
+]]
+}
+
+dialog{
+  id = "intro.fresco_3",
+  text = [[
+Next, Link handed the Triforce and Master Sword
+over to Princess Zelda, and people started to
+believe that peace would last.
+
+But the people were wrong...
+]]
+}
+
+dialog{
+  id = "intro.fresco_4",
+  text = [[
+Unfortunately, Link's wish also had negative
+effects. Ganon and his henchmen were
+resurrected and got ready to attack.
+]]
+}
+
+dialog{
+  id = "intro.fresco_5",
+  text = [[
+Somewhere in Hyrule Forest, Link is sleeping
+without suspecting that Ganon has already moved
+into the attack, until a well-known voice talks
+to him during his sleep...
 ]]
 }
 
@@ -638,7 +1079,7 @@ energy.
 dialog{
   id = "kakariko.potion_house.offer",
   text = [[
-A red potion for 60 rupees, are you interested?
+A red potion for $v rupees, are you interested?
 
               $? Yes
               $? No
@@ -675,6 +1116,97 @@ dialog{
   id = "kakariko.tavern.waiter",
   text = [[
 Hello, what would you like to drink?
+]]
+}
+
+dialog{
+  id = "link_house.zelda_message",
+  text = [[
+Help me!
+Help me!
+That's me! Zelda!
+I'm talking to you by telepathy.
+I am a prisoner in the dungeon of the castle!
+I need your help!
+Ganon is back, and he surely has already found
+the Triforce...
+Come quickly to the castle Link, you are my
+only hope...
+
+
+HELP: Press F1 to consult help.
+]]
+}
+
+dialog{
+  id = "monster_house.found_all",
+  text = [[
+I can't believe it, you managed to defeat all
+kinds of enemies!!!
+Congratulations Link!!!
+]]
+}
+
+dialog{
+  id = "monster_house.no_more_reward",
+  text = [[
+I'm sorry, but I don't have a gift for you
+anymore...
+]]
+}
+
+dialog{
+  id = "monster_house.one_remaining",
+  text = [[
+Only one enemy remaining before the next
+reward!!!
+]]
+}
+
+dialog{
+  id = "monster_house.remaining",
+  text = [[
+$v more different enemies before the next reward.
+]]
+}
+
+dialog{
+  id = "monster_house.reward",
+  text = [[
+Take this gift for your contribution to my
+project:
+]]
+}
+
+dialog{
+  id = "monster_house.welcome",
+  text = [[
+Welcome Link!
+Let me explain what I am doing here.
+
+
+As you certainly noticed, monsters appeared in
+Hyrule. It's the first time I can see monsters
+since your victory on Ganon.
+
+Well, I have decided to list all of them.
+
+
+
+Unfortunately, I'm really too fearful to meet
+them, so I need your help.
+
+
+You have to fight each kind of monster and come
+to give me your report.
+
+
+Every time you defeat 7 new kinds of enemies, I
+will give you one piece of heart.
+
+
+If you want to see what enemies you've already
+defeated, press M.
 ]]
 }
 
@@ -761,6 +1293,14 @@ E: Kakariko Village
 
 dialog{
   id = "outside_a3.ne_sign",
+  text = [[
+W: Turtle Rock
+E: Lake Hylia
+]]
+}
+
+dialog{
+  id = "outside_a3.se_sign",
   text = [[
 W: Turtle Rock
 E: Lake Hylia
@@ -1061,11 +1601,125 @@ Shadow Village
 }
 
 dialog{
+  id = "potion_not_needed",
+  text = [[
+You don't need to drink this potion now.
+]]
+}
+
+dialog{
+  id = "save_quit",
+  text = [[
+                 Already tired?
+                   $? Continue
+                 $? Save and quit
+              $? Quit without saving
+]]
+}
+
+dialog{
+  id = "shadow_village.bird_house.bird",
+  text = [[
+When you returned peace to Hyrule and reunified
+the Light World with the Golden Land, Princess
+Zelda secretly asked volunteer spirits to
+create this village to block the access to a
+very high valued object.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.about_village",
+  text = [[
+Our village was constituted in the aim to stop
+careless adventurers from reaching the temple,
+I don't allow just anyone to pass.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.enough_crystals",
+  text = [[
+Mmmm... You already found 4 crystals?
+I have to admit you impress me...
+
+
+All right, you are allowed to cross over the
+graveyard, at your own risk.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.go_cemetary",
+  text = [[
+Talk to the guard at the north of the village,
+he will let you pass.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.still_alive",
+  text = [[
+I see you're still alive...
+Surprising.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.sword_found",
+  text = [[
+So you found the Sword?
+But don't believe it is yours just like that.
+
+
+The Master Sword is among the most treasured
+heritage of Hyrule with the Triforce, you will
+have to bring it back in its sanctuary when
+your mission is completed.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.sword_hint",
+  text = [[
+The dark temple is the starting point of the
+way reaching a legendary object. This village
+just exists to dissuade adventurers from
+approaching.
+]]
+}
+
+dialog{
+  id = "shadow_village.mouse_house.mouse",
+  text = [[
+All the inhabitants of this village are spirits
+who responded to Princess Zelda's call.
+]]
+}
+
+dialog{
   id = "shadow_village.non_understandable",
   text = [[
 {|{|{|{|{|{|{{{|
 {}||}{}|{}|{}|}{
 |{|{|{|}|}
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.no_bottle",
+  text = [[
+Come back when you have an empty bottle and I
+will sell you a blue potion which restores
+energy and magic.
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.offer",
+  text = [[
+A blue potion for $v rupees, are you
+interested?
 ]]
 }
 
@@ -1122,6 +1776,14 @@ dialog{
   id = "shop.magic_flask.2",
   text = [[
 Some magic.
+]]
+}
+
+dialog{
+  id = "small_key_required",
+  text = [[
+This door is locked.
+You need a small key to open it!
 ]]
 }
 
