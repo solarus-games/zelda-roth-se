@@ -4,6 +4,7 @@ local game_manager = require("scripts/game_manager")
 local debug = require("scripts/debug")
 local quest_manager = require("scripts/quest_manager")
 
+local language_menu = require("scripts/menus/language")
 local solarus_logo = require("scripts/menus/solarus_logo")
 local presentation_screen = require("scripts/menus/presentation_screen")
 local title_screen = require("scripts/menus/title_screen")
@@ -25,12 +26,14 @@ function sol.main:on_started()
     sol.menu.start(self, debug)
   end
 
-  -- Setting a language is useful to display text and dialogs.
-  sol.language.set_language("fr")
-
   -- Show the Solarus logo initially.
   sol.menu.start(self, solarus_logo)
+
   solarus_logo.on_finished = function()
+    sol.menu.start(self, language_menu)
+  end
+
+  language_menu.on_finished = function()
     sol.menu.start(self, presentation_screen)
   end
 

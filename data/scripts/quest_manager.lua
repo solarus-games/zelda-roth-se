@@ -275,5 +275,14 @@ function quest_manager:get_dialog_font()
   return "alttp", nil
 end
 
+-- Returns the id of the font and size to use in menus
+-- depending on the current language.
+function quest_manager:get_menu_font()
+
+  -- This quest uses the "alttp" bitmap font (and therefore no size)
+  -- no matter the current language.
+  return "alttp", nil
+end
+
 return quest_manager
 
