@@ -29,6 +29,7 @@ text{ key = "help.spin_attack", value = "Spin attack:" }
 text{ key = "help.sword", value = "Use sword:" }
 text{ key = "help.title", value = "Help" }
 text{ key = "options_menu.back", value = "BACK" }
+text{ key = "options_menu.language", value = "LANGUAGE" }
 text{ key = "options_menu.music_volume", value = "MUSIC" }
 text{ key = "options_menu.sound_volume", value = "SOUND" }
 text{ key = "options_menu.title", value = "OPTIONS" }

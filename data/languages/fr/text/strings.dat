@@ -29,6 +29,7 @@ text{ key = "help.spin_attack", value = "Attaque Tornade :" }
 text{ key = "help.sword", value = "Coup d'épée :" }
 text{ key = "help.title", value = "Aide" }
 text{ key = "options_menu.back", value = "RETOUR" }
+text{ key = "options_menu.language", value = "LANGUE" }
 text{ key = "options_menu.music_volume", value = "MUSIQUE" }
 text{ key = "options_menu.sound_volume", value = "SON" }
 text{ key = "options_menu.title", value = "OPTIONS" }

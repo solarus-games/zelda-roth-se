@@ -182,6 +182,10 @@ function savegames_menu:on_key_pressed(key)
       -- Options.
       sol.audio.play_sound("pause_closed")
       sol.menu.start(savegames_menu, options_menu)
+      function options_menu:on_finished()
+        build_layout()  -- Because the language may have changed.
+        options_menu.on_finished = nil
+      end
     elseif cursor_position == 5 then
       -- Records.
       sol.audio.play_sound("pause_closed")
