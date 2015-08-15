@@ -6154,10 +6154,10 @@ custom_entity{
 }
 
 destructible{
+  name = "curtain",
   layer = 1,
   x = 800,
   y = 261,
-  treasure_name = "random",
   sprite = "entities/curtain",
   destruction_sound = "bush",
   weight = 100,

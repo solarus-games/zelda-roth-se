@@ -16,6 +16,7 @@ _______________________________________________________________
 * Dungeon 3: fix missing separators (#59).
 * Dungeon 6: fix spikes sending the hero in another room (#39).
 * Dungeon 7: fix room not shown as visited on the map (#62).
+* Dungeon 9: fix curtain coming back (#68).
 
 ______________________________________________________________
 

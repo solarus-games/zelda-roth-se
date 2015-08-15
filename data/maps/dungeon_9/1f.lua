@@ -6,6 +6,13 @@ door_manager:manage_map(map)
 local separator_manager = require("maps/lib/separator_manager")
 separator_manager:manage_map(map)
 
+function map:on_started()
+
+  if game:get_value("dungeon_9_1f_curtain") then
+    curtain:remove()
+  end
+end
+
 function map:on_opening_transition_finished(destination)
 
   if destination == from_outside then
@@ -39,4 +46,9 @@ function to_b1:on_activated()
   if zelda:is_following_hero() and zelda:is_far_from_hero() then
     zelda:hero_gone()
   end
+end
+
+function curtain:on_cut()
+
+  game:set_value("dungeon_9_1f_curtain", true)
 end
