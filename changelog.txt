@@ -11,6 +11,7 @@ _______________________________________________________________
 * Dungeon 3: fix weak wall already open.
 * Dungeon 3: fix door opening too soon in the 4 torches room.
 * Dungeon 6: add missing magic jars in pots.
+* Dungeon 9: fix final boss initial life.
 * Dungeon 9: play a different music for the final boss.
 
 ______________________________________________________________
