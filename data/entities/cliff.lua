@@ -14,6 +14,7 @@ local function cliff_collision(cliff, entity)
     hookshot = true,
     boomerang = true,
     custom_entity = true,
+    enemy = true,
   }
 
   local entity_type = entity:get_type()
@@ -24,6 +25,13 @@ local function cliff_collision(cliff, entity)
   if entity_type == "custom_entity" then
     -- Apply the layer to custom entities only if they are okay with that.
     if not entity.apply_cliffs then
+      return
+    end
+  end
+
+  if entity_type == "enemy" then
+    -- Cross cliffs for flying enemies only.
+    if entity:get_obstacle_behavior() ~= "flying" then
       return
     end
   end
