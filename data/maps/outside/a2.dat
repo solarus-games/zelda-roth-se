@@ -1700,6 +1700,15 @@ tile{
   pattern = "cliff.corner_reverse.diag.4",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 720,
+  width = 16,
+  height = 240,
+  pattern = "grass.cliff.3",
+}
+
 teletransporter{
   layer = 0,
   x = 0,
@@ -2451,7 +2460,7 @@ tile{
   x = 16,
   y = 0,
   width = 16,
-  height = 960,
+  height = 720,
   pattern = "dirt.cliff.3",
 }
 
@@ -2612,7 +2621,7 @@ tile{
   layer = 1,
   x = 64,
   y = 664,
-  width = 96,
+  width = 16,
   height = 8,
   pattern = "cliff.top.1",
 }
@@ -6683,6 +6692,15 @@ tile{
   width = 16,
   height = 24,
   pattern = "4",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 664,
+  width = 48,
+  height = 8,
+  pattern = "cliff.top.1",
 }
 
 npc{
