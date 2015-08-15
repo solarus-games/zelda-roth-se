@@ -1,8 +1,9 @@
 _______________________________________________________________
 
-Zelda Return of the Hylian, Solarus Edition 1.0.4 (in progress)
+Zelda Return of the Hylian, Solarus Edition 1.0.4 (2015-08-15)
 _______________________________________________________________
 
+* English translation from the original game (beta) (#50).
 * Fix hero stuck in a cliff near dungeon 6.
 * Fix Mesuda not supposed to be vulnerable (#58).
 * Fix missing sign dialog in the desert (#61).
