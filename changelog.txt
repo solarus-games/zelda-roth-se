@@ -3,6 +3,7 @@ _______________________________________________________________
 Zelda Return of the Hylian, Solarus Edition 1.0.5 (2015-08-15)
 _______________________________________________________________
 
+* Fix missing sign dialog near shadow village.
 * Dungeon 3: fix weak wall already open.
 * Dungeon 3: fix door opening too soon in the 4 torches room.
 * Dungeon 9: play a different music for the final boss.

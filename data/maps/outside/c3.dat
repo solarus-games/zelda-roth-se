@@ -6613,7 +6613,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#ouside_c3.village_sign",
+  behavior = "dialog#outside_c3.village_sign",
 }
 
 custom_entity{
