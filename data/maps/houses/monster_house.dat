@@ -263,15 +263,6 @@ tile{
 tile{
   layer = 1,
   x = 184,
-  y = 88,
-  width = 8,
-  height = 8,
-  pattern = "706",
-}
-
-tile{
-  layer = 1,
-  x = 184,
   y = 96,
   width = 8,
   height = 16,
@@ -294,24 +285,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "710",
-}
-
-tile{
-  layer = 1,
-  x = 128,
-  y = 88,
-  width = 8,
-  height = 8,
-  pattern = "704",
-}
-
-tile{
-  layer = 1,
-  x = 136,
-  y = 88,
-  width = 48,
-  height = 8,
-  pattern = "705",
 }
 
 destination{
@@ -394,5 +367,32 @@ tile{
   width = 32,
   height = 8,
   pattern = "door_top.2",
+}
+
+tile{
+  layer = 2,
+  x = 184,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "706",
+}
+
+tile{
+  layer = 2,
+  x = 128,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "704",
+}
+
+tile{
+  layer = 2,
+  x = 136,
+  y = 88,
+  width = 48,
+  height = 8,
+  pattern = "705",
 }
 
