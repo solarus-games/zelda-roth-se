@@ -9,6 +9,7 @@ _______________________________________________________________
 * Fix missing sign dialog in the desert (#61).
 * Fix typo in monster house dialog.
 * Fix minor tile issues.
+* Lake cave: go back to the room entrance when falling into holes
 * Dungeon 3: fix missing separators (#59).
 * Dungeon 6: fix spikes sending the hero in another room (#39).
 * Dungeon 7: fix room not shown as visited on the map (#62).
