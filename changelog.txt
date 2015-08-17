@@ -1,7 +1,7 @@
-_______________________________________________________________
+______________________________________________________________
 
-Zelda Return of the Hylian, Solarus Edition 1.0.5 (in progress)
-_______________________________________________________________
+Zelda Return of the Hylian, Solarus Edition 1.0.5 (2015-08-17)
+______________________________________________________________
 
 * Fix English dialogs exceeding the text box in intro (#76).
 * Fix missing sign dialog near shadow village.
