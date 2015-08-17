@@ -385,6 +385,13 @@ function item:on_using()
     end
   end)
 
+  local hook_point_dxy = {
+    {  8,  0 },
+    {  0, -9 },
+    { -9,  0 },
+    {  0,  8 },
+  }
+
   -- Custom collision test for hooks: there is a collision with a hook if
   -- the facing point of the hookshot overlaps the hook's bounding box.
   -- We cannot use the built-in "facing" collision mode because
@@ -394,15 +401,19 @@ function item:on_using()
   -- is not necessarily a custom entity.
   local function test_hook_collision(hookshot, entity)
 
-    local dxy = {
-      {  8,  0 },
-      {  0, -9 },
-      { -9,  0 },
-      {  0,  8 },
-    }
+    if hooked or going_back then
+      -- No need to check coordinates, we are already hooked.
+      return
+    end
+
+    if entity.is_hookable == nil or not entity:is_hookable() then
+      -- Don't bother check coordinates, we don't care about this entity.
+      return
+    end
+
     local facing_x, facing_y = hookshot:get_center_position()
-    facing_x = facing_x + dxy[direction + 1][1]
-    facing_y = facing_y + dxy[direction + 1][2]
+    facing_x = facing_x + hook_point_dxy[direction + 1][1]
+    facing_y = facing_y + hook_point_dxy[direction + 1][2]
     return entity:overlaps(facing_x, facing_y)
   end
 
