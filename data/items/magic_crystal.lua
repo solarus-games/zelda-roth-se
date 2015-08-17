@@ -19,8 +19,8 @@ local function victory_cutscene()
     hero:start_victory(function()
       game:start_dialog("dungeon_finished_save", function(answer)
         sol.audio.play_sound("danger")
-        if answer == 2 then
-         game:save()
+        if answer == 3 then
+          game:save()
         end
         hero:unfreeze()
         map:open_doors("boss_door")

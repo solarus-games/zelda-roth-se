@@ -711,6 +711,7 @@ dialog{
   id = "dungeon_finished_save",
   text = [[
 Souhaites-tu sauvegarder ta partie ?
+
                    $? Oui
                    $? Non
 ]]
