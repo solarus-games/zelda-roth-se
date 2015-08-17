@@ -1729,6 +1729,8 @@ dialog{
   text = [[
 A blue potion for $v rupees, are you
 interested?
+              $? Yes
+              $? No
 ]]
 }
 
