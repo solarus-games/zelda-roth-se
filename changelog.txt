@@ -9,6 +9,7 @@ _______________________________________________________________
 * Fix wizzrobe beam not crossing cliffs.
 * Fix death count rank on statistics screen.
 * Fix minor tile errors.
+* Fix performance of hoohshot and medusa (#19).
 * Dungeon 3: fix weak wall already open.
 * Dungeon 3: fix door opening too soon in the 4 torches room.
 * Dungeon 6: add missing magic jars in pots.

@@ -15,9 +15,10 @@ function enemy:on_created()
   enemy:set_invincible()
   enemy:set_attack_consequence("sword", "custom")
 
-  for i = 0, 2 do 
-    sprites[#sprites + 1] = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  end
+  sprites[1] = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  -- Sprites 2 and 3 do not belong to the enemy to avoid testing collisions with them.
+  sprites[2] = sol.sprite.create("enemies/" .. enemy:get_breed())
+  sprites[3] = sol.sprite.create("enemies/" .. enemy:get_breed())
 end
 
 local function go(angle)
@@ -87,3 +88,12 @@ function enemy:on_custom_attack_received(attack, sprite)
     end)
   end
 end
+
+function enemy:on_pre_draw()
+
+  local map = enemy:get_map()
+  local x, y = enemy:get_position()
+  map:draw_sprite(sprites[2], x, y)
+  map:draw_sprite(sprites[3], x, y)
+end
+
