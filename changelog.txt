@@ -3,6 +3,7 @@ _______________________________________________________________
 Zelda Return of the Hylian, Solarus Edition 1.0.5 (in progress)
 _______________________________________________________________
 
+* Fix English dialogs exceeding the text box in intro (#76).
 * Fix missing sign dialog near shadow village.
 * Fix piece of heart puzzle easier than planned near dungeon 6.
 * Fix wizzrobe beam not crossing cliffs.
