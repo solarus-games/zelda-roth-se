@@ -7,6 +7,7 @@ _______________________________________________________________
 * Fix going back to cave entrances after saving.
 * Fix game not saved at the end of dungeons in English.
 * Dungeon 6: fix unavoidable damage from fire in boss room.
+* Dungeon 9: fix ice tiles in boss room (#77).
 
 ______________________________________________________________
 

@@ -11,6 +11,24 @@ properties{
 
 tile{
   layer = 1,
+  x = 672,
+  y = 32,
+  width = 256,
+  height = 176,
+  pattern = "floor.23",
+}
+
+tile{
+  layer = 1,
+  x = 752,
+  y = 80,
+  width = 96,
+  height = 80,
+  pattern = "16",
+}
+
+tile{
+  layer = 1,
   x = 664,
   y = 264,
   width = 272,
@@ -304,24 +322,6 @@ tile{
   width = 8,
   height = 176,
   pattern = "wall_border.4",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 32,
-  width = 256,
-  height = 176,
-  pattern = "floor.23",
-}
-
-tile{
-  layer = 1,
-  x = 752,
-  y = 80,
-  width = 96,
-  height = 80,
-  pattern = "floor.24",
 }
 
 tile{
