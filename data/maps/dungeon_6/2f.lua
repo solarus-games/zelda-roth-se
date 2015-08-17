@@ -14,6 +14,9 @@ function map:on_started()
     boss:set_enabled(false)
   end
   map:set_doors_open("boss_door", true)
+
+  medusa_1:set_shooting(false)
+  medusa_2:set_shooting(false)
 end
 
 function map:on_opening_transition_finished(destination)
@@ -34,6 +37,9 @@ function start_boss_sensor:on_activated()
       hero:unfreeze()
       sol.audio.play_music("boss")
       fighting_boss = true
+
+      medusa_1:set_shooting(true)
+      medusa_2:set_shooting(true)
     end)
   end
 end
