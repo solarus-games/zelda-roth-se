@@ -3,6 +3,7 @@ properties{
   y = 1848,
   width = 960,
   height = 960,
+  world = "lake_cave",
   tileset = "cave",
   music = "cave",
 }

@@ -3,6 +3,7 @@ properties{
   y = 1720,
   width = 960,
   height = 720,
+  world = "mudora_cave",
   floor = -1,
   tileset = "cave",
   music = "cave",
