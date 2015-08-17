@@ -102,7 +102,7 @@ function stats_manager:new(game)
   local function compute_skill_rank()
 
     local rank
-    if num_deaths == 0 and
+    if death_count == 0 and
         not game:has_item("shield") and
         not game:has_item("bottle_1") and
         not game:has_item("bottle_2") and
@@ -110,8 +110,8 @@ function stats_manager:new(game)
         not game:has_item("farore_medallion") and
         not game:has_item("din_medallion") and
         not game:has_item("nayru_medallion") and
-        not game:get_max_life() == 20 and
-        not game:get_max_magic() == 32 then
+        game:get_max_life() == 20 and
+        game:get_max_magic() == 32 then
       rank = tr("stats_menu.rank.ultimate")
       records_manager:set_rank_ultimate()
       records_manager:save()

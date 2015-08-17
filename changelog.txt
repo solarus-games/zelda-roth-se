@@ -3,6 +3,7 @@ _______________________________________________________________
 Zelda Return of the Hylian, Solarus Edition 1.0.6 (in progress)
 _______________________________________________________________
 
+* Fix ultimate rank.
 * Fix going back to cave entrances after saving.
 * Fix game not saved at the end of dungeons in English.
 * Dungeon 6: fix unavoidable damage from fire in boss room.
