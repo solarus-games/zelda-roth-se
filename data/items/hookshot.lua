@@ -379,6 +379,7 @@ function item:on_using()
       if not hooked and not going_back then
         entities_cought[#entities_cought + 1] = entity
         entity:set_position(hookshot:get_position())
+        hookshot:set_modified_ground("traversable")  -- Don't let the catched entity fall in holes.
         go_back()
       end
 
