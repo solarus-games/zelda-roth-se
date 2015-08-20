@@ -117,7 +117,7 @@ function ice_beam:go(angle)
   movement:start(ice_beam)
 
   -- The head of the beam will be used to determine candidate squares,
-  -- so make sure we don't the first squares.
+  -- so make sure we don't forget the first squares.
   local ice_beam_x, ice_beam_y = ice_beam:get_position()
   local dx, dy = sprites[2]:get_xy()
   check_two_squares(ice_beam_x + dx, ice_beam_y + dy)
