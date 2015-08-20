@@ -61,7 +61,7 @@ function item:on_using()
     return true
   end)
 
-  -- Remove the ice rod and restore controlafter a delay.
+  -- Remove the ice rod and restore control after a delay.
   sol.timer.start(hero, 300, function()
     ice_rod:remove()
     item:set_finished()

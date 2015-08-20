@@ -57,7 +57,7 @@ local function check_square(x, y)
   x = math.floor(x / 16) * 16
   y = math.floor(y / 16) * 16
 
-  -- Check that the four corners of the 16x16 square are on deep water
+  -- Check that the four corners of the 16x16 square are on deep water.
   if map:get_ground(      x,      y, layer) ~= "deep_water" or
       map:get_ground(x + 15,      y, layer) ~= "deep_water" or
       map:get_ground(     x, y + 15, layer) ~= "deep_water" or
@@ -72,7 +72,6 @@ local function check_square(x, y)
     width = 16, 
     height = 16,
     direction = 0,
-    ground = "ice",
   })
   ice_path:set_origin(0, 0)
   ice_path:set_modified_ground("ice")
