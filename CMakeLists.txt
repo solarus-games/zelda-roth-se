@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
-project(ZELDA_ROTH_PLUS)
+project(ZELDA_ROTH_SE)
 
 set(quest_name "zelda_roth_se")
 
