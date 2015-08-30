@@ -47,7 +47,6 @@ end
 if boss ~= nil then
   function boss:on_dead()
     fighting_boss = false
-    map:open_doors("boss_door")
     sol.audio.play_music(music)
   end
 end
