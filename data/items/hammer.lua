@@ -13,9 +13,15 @@ function item:on_using()
   local map = game:get_map()
   local hero = map:get_hero()
 
+  -- Enable collisions after a few frames.
+  item.hammer_active = false
+  sol.timer.start(map, 150, function()
+    item.hammer_active = true
+  end)
+
   -- Handle stakes.
   item:set_pushed_stake(false)
-  sol.timer.start(item, 50, function()
+  sol.timer.start(map, 200, function()
     if item:has_pushed_stake() then
       sol.audio.play_sound("hammer_stake")  -- Successfully pushed a stake.
     else
@@ -44,6 +50,10 @@ function item:on_using()
   local entities_touched = { }
   hammer:set_origin(4, 5)
   hammer:add_collision_test("overlapping", function(hammer, entity)
+
+    if not item:is_hammer_active() then
+      return
+    end
 
     -- Hurt enemies.
     if entity:get_type() == "enemy" then
@@ -95,6 +105,10 @@ end
 
 function item:set_pushed_stake(pushed_stake)
   item.pushed_stake = pushed_stake
+end
+
+function item:is_hammer_active()
+  return item.hammer_active
 end
 
 -- Initialize the metatable of appropriate entities to work with the hammer.

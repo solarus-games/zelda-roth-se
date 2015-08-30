@@ -18,6 +18,10 @@ local function test_collision_with_hero_hammer(stake, entity)
     return false
   end
 
+  if not game:get_item("hammer"):is_hammer_active() then
+    return false
+  end
+
   -- The hero is using the hammer. Determine the exact point to test.
   local hero_direction = entity:get_direction()
   local x, y = entity:get_center_position()

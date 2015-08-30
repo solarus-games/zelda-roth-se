@@ -9,6 +9,7 @@ _______________________________________________________________
 * Fix the blue potion dialog in English (#78).
 * Fix entities falling in holes even when hooked to the hookshot.
 * Fix hero stuck in a cliff near shadow village.
+* Fix hammer stakes pushed too early (#65).
 * Fix enemies active in other regions before taking the first separator (#72).
 * Fix enemy projectiles not removed when taking a separator (#71).
 * Fix saving with life 0 during the game-over sequence (#82).
