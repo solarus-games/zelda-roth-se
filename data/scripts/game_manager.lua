@@ -178,25 +178,25 @@ function game_manager:create(file)
         end
 
       elseif key == "escape" then
-        if not game:is_paused() then
-          if not game:is_dialog_enabled() then
-            game:start_dialog("save_quit", function(answer)
-              if answer == 2 then
-                -- Continue.
-                sol.audio.play_sound("danger")
-              elseif answer == 3 then
-                -- Save and quit.
-                sol.audio.play_sound("quit")
-                game:save()
-                sol.main.reset()
-              else
-                -- Quit without saving.
-                sol.audio.play_sound("quit")
-                sol.main.reset()
-              end
-            end)
-            handled = true
-          end
+        if not game:is_paused() and
+            not game:is_dialog_enabled() and
+            game:get_life() > 0 then
+          game:start_dialog("save_quit", function(answer)
+            if answer == 2 then
+              -- Continue.
+              sol.audio.play_sound("danger")
+            elseif answer == 3 then
+              -- Save and quit.
+              sol.audio.play_sound("quit")
+              game:save()
+              sol.main.reset()
+            else
+              -- Quit without saving.
+              sol.audio.play_sound("quit")
+              sol.main.reset()
+            end
+          end)
+          handled = true
         end
       end
     end

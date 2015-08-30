@@ -7,6 +7,7 @@ _______________________________________________________________
 * Fix the blue potion dialog in English (#78).
 * Fix entities falling in holes even when hooked to the hookshot.
 * Fix hero stuck in a cliff near shadow village.
+* Fix saving with life 0 during the game-over sequence (#82).
 
 ______________________________________________________________
 
