@@ -69,18 +69,6 @@ function separator_manager:manage_map(map)
 
     local hero = map:get_hero()
 
-    -- Enemies.
-    if not map.used_separator then
-      -- First separator: remove enemies from other regions like on_activated() does.
-      -- Because on_activated() was not called when the map started.
-      for _, enemy_place in ipairs(enemy_places) do
-        local enemy = enemy_place.enemy
-        if enemy:exists() and not enemy:is_in_same_region(hero) then
-          enemy:remove()
-        end
-      end
-    end
-
     -- Destructibles.
     for _, destructible_place in ipairs(destructible_places) do
       local destructible = destructible_place.destructible
@@ -127,6 +115,11 @@ function separator_manager:manage_map(map)
       treasure = { enemy:get_treasure() },
       enemy = enemy,
     }
+
+    local hero = map:get_hero()
+    if not enemy:is_in_same_region(hero) then
+      enemy:remove()
+    end
   end
 
   local function get_destructible_sprite_name(destructible)
