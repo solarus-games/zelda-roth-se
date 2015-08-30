@@ -10,7 +10,8 @@ end
 
 function item:on_using()
 
-  local hero = game:get_hero()
+  local map = game:get_map()
+  local hero = map:get_hero()
 
   -- Handle stakes.
   item:set_pushed_stake(false)
@@ -32,7 +33,7 @@ function item:on_using()
   else y = y + 12
   end
 
-  local hammer = game:get_map():create_custom_entity{
+  local hammer = map:create_custom_entity{
     x = x,
     y = y,
     layer = layer,
@@ -40,22 +41,45 @@ function item:on_using()
     height = 8,
     direction = 0,
   }
-  local enemies_touched = { }
+  local entities_touched = { }
   hammer:set_origin(4, 5)
   hammer:add_collision_test("overlapping", function(hammer, entity)
 
-    if entity:get_type() ~= "enemy" then
-      return
-    end
+    -- Hurt enemies.
+    if entity:get_type() == "enemy" then
+      local enemy = entity
+      if entities_touched[enemy] then
+        -- If protected we don't want to play the sound repeatedly.
+        return
+      end
+      entities_touched[enemy] = true
+      local reaction = enemy:get_hammer_reaction(enemy_sprite)
+      enemy:receive_attack_consequence("hammer", reaction)
 
-    local enemy = entity
-    if enemies_touched[enemy] then
-      -- If protected we don't want to play the sound repeatedly.
-      return
+    -- Activate crystals.
+    elseif entity:get_type() == "crystal" then
+      if entities_touched[entity] then
+        -- Don't activate it repeatedly.
+        return
+      end
+      entities_touched[entity] = true
+
+      sol.audio.play_sound("switch")
+      map:change_crystal_state()
+
+    -- Activate solid switches.
+    elseif entity_type == "switch" then
+      local switch = entity
+      local sprite = switch:get_sprite()
+      if sprite ~= nil and
+         sprite:get_animation_set() == "entities/solid_switch" then
+
+        if not switch:is_activated() then
+          sol.audio.play_sound("switch")
+          switch:set_activated(true)
+        end
+      end
     end
-    enemies_touched[enemy] = true
-    local reaction = enemy:get_hammer_reaction(enemy_sprite)
-    enemy:receive_attack_consequence("hammer", reaction)
   end)
 
   -- Start the animation.
