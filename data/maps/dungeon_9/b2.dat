@@ -3212,6 +3212,7 @@ door{
   y = 1552,
   direction = 0,
   sprite = "entities/door_normal",
+  savegame_variable = "dungeon_9_b2_door_d",
 }
 
 door{
@@ -3221,6 +3222,7 @@ door{
   y = 1552,
   direction = 2,
   sprite = "entities/door_normal",
+  savegame_variable = "dungeon_9_b2_door_d",
 }
 
 wall{
