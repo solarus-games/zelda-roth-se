@@ -4,6 +4,7 @@ Zelda Return of the Hylian, Solarus Edition 1.0.7 (in progress)
 _______________________________________________________________
 
 * Use Solarus 1.4.5.
+* Add title screen music (#74).
 * Show the current floor when it changes.
 * Fix the blue potion dialog in English (#78).
 * Fix entities falling in holes even when hooked to the hookshot.

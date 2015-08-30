@@ -3,6 +3,11 @@ local title_screen = {}
 local background_img = sol.surface.create("menus/title_background.png")
 local logo_img = sol.surface.create("menus/title_logo.png")
 
+function title_screen:on_started()
+
+  sol.audio.play_music("title_screen")
+end
+
 function title_screen:on_draw(dst_surface)
 
   background_img:draw(dst_surface)
