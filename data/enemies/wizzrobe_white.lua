@@ -3,6 +3,8 @@
 local enemy = ...
 local map = enemy:get_map()
 
+local children = {}
+
 function enemy:on_created()
 
   enemy:set_life(3)
@@ -35,6 +37,7 @@ local function shoot()
     x = dxy[direction + 1][1],
     y = dxy[direction + 1][2],
   })
+  children[#children + 1] = beam
 
   if not map.wizzrobe_recent_sound then
     sol.audio.play_sound("zora")
@@ -77,4 +80,16 @@ function enemy:receive_bounced_projectile(other)
 
   enemy:hurt(3)
   other:remove()
+end
+
+local previous_on_removed = enemy.on_removed
+function enemy:on_removed()
+
+  if previous_on_removed then
+    previous_on_removed(enemy)
+  end
+
+  for _, child in ipairs(children) do
+    child:remove()
+  end
 end

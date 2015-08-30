@@ -131,7 +131,12 @@ function enemy:on_attacking_hero(hero, enemy_sprite)
   end)
 end
 
+local previous_on_removed = enemy.on_removed
 function enemy:on_removed()
+
+  if previous_on_removed then
+    enemy:previous_on_removed()
+  end
 
   if shadow ~= nil then
     shadow:remove()

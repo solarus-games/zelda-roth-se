@@ -2,6 +2,8 @@
 
 local enemy = ...
 
+local children = {}
+
 local can_shoot = true
 
 function enemy:on_created()
@@ -49,7 +51,7 @@ local function shoot()
       x = dxy[direction + 1][1],
       y = dxy[direction + 1][2],
     })
-
+    children[#children + 1] = stone
     stone:go(direction)
 
     sol.timer.start(enemy, 500, go_hero)
@@ -89,4 +91,16 @@ function enemy:on_movement_changed(movement)
   local direction4 = movement:get_direction4()
   local sprite = self:get_sprite()
   sprite:set_direction(direction4)
+end
+
+local previous_on_removed = enemy.on_removed
+function enemy:on_removed()
+
+  if previous_on_removed then
+    previous_on_removed(enemy)
+  end
+
+  for _, child in ipairs(children) do
+    child:remove()
+  end
 end

@@ -2,6 +2,8 @@
 
 local enemy = ...
 
+local children = {}
+
 function enemy:on_created()
 
   enemy:set_life(1)
@@ -36,7 +38,7 @@ function enemy:on_restarted()
         end)
       end
 
-      enemy:create_enemy({
+      children[#children + 1] = enemy:create_enemy({
         breed = "fireball_red_small",
       })
     end
@@ -47,4 +49,16 @@ end
 -- Suspends or restores shooting fireballs.
 function enemy:set_shooting(shooting)
   enemy.shooting = shooting
+end
+
+local previous_on_removed = enemy.on_removed
+function enemy:on_removed()
+
+  if previous_on_removed then
+    previous_on_removed(enemy)
+  end
+
+  for _, child in ipairs(children) do
+    child:remove()
+  end
 end

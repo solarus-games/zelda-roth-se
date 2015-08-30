@@ -3,6 +3,8 @@
 local enemy = ...
 local sprite
 
+local children = {}
+
 function enemy:on_created()
 
   enemy:set_life(1)
@@ -28,10 +30,22 @@ function enemy:on_restarted()
     if enemy:get_distance(hero) < 300 and enemy:is_in_same_region(hero)  then
       sol.audio.play_sound("zora")
       sprite:set_animation("shooting")
-      enemy:create_enemy({
+      children[#children + 1] = enemy:create_enemy({
         breed = "fireball_red_small",
       })
     end
     return true  -- Repeat the timer.
   end)
+end
+
+local previous_on_removed = enemy.on_removed
+function enemy:on_removed()
+
+  if previous_on_removed then
+    previous_on_removed(enemy)
+  end
+
+  for _, child in ipairs(children) do
+    child:remove()
+  end
 end
