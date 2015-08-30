@@ -4,6 +4,7 @@ properties{
   width = 960,
   height = 960,
   world = "lake_cave",
+  floor = 0,
   tileset = "cave",
   music = "cave",
 }
