@@ -1,0 +1,18 @@
+animation{
+  name = "stopped",
+  src_image = "menus/arrows.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 0, y = 16, frame_width = 8, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "blinking",
+  src_image = "menus/arrows.png",
+  frame_delay = 500,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 2 },
+    { x = 0, y = 16, frame_width = 8, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 2 },
+  },
+}

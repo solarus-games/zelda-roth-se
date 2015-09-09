@@ -18,6 +18,18 @@ function pause_manager:create(game)
   local pause_submenus
   local submenu_index
 
+  local arrow_sprite_left = sol.sprite.create("menus/arrow")
+  arrow_sprite_left:set_animation("blinking")
+  arrow_sprite_left:set_direction(1)
+  arrow_sprite_left:set_xy(4, 104)
+
+  local arrow_sprite_right = sol.sprite.create("menus/arrow")
+  arrow_sprite_right:set_animation("blinking")
+  arrow_sprite_right:set_direction(0)
+  arrow_sprite_right:set_xy(308, 104)
+
+  local arrows_menu = {}
+
   local function set_submenu_index(index)
 
     if pause_submenus[submenu_index] ~= nil then
@@ -26,6 +38,9 @@ function pause_manager:create(game)
     submenu_index = index
     game:set_value("pause_last_submenu", index)
     sol.menu.start(pause_menu, pause_submenus[index], false)
+
+    arrow_sprite_left:set_frame(1)
+    arrow_sprite_right:set_frame(1)
   end
 
   local function get_submenus_order()
@@ -62,6 +77,9 @@ function pause_manager:create(game)
 
     -- Show the inventory initially.
     set_submenu_index(submenus_order.inventory)
+
+    -- Show left and right arrows.
+    sol.menu.start(pause_menu, arrows_menu)
   end
 
   function pause_menu:on_finished()
@@ -123,6 +141,11 @@ function pause_manager:create(game)
       handled = true
     end
     return handled
+  end
+
+  function arrows_menu:on_draw(dst_surface)
+    arrow_sprite_left:draw(dst_surface)
+    arrow_sprite_right:draw(dst_surface)
   end
 
   return pause_menu

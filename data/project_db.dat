@@ -225,6 +225,7 @@ sprite{ id = "hero/tunic1", description = "Hero tunic 1" }
 sprite{ id = "hero/tunic2", description = "Hero tunic 2" }
 sprite{ id = "hero/tunic3", description = "Hero tunic 3" }
 sprite{ id = "hud/piece_of_heart_icon", description = "Piece of heart icon" }
+sprite{ id = "menus/arrow", description = "Arrow" }
 sprite{ id = "menus/dungeon_maps/map_1", description = "Dungeon 1 map" }
 sprite{ id = "menus/dungeon_maps/map_2", description = "Dungeon 2 map" }
 sprite{ id = "menus/dungeon_maps/map_3", description = "Dungeon 3 map" }
@@ -236,7 +237,7 @@ sprite{ id = "menus/dungeon_maps/map_8", description = "Dungeon 8 map" }
 sprite{ id = "menus/dungeon_maps/map_9", description = "Dungeon 9 map" }
 sprite{ id = "menus/hero_head", description = "Link head" }
 sprite{ id = "menus/item_cursor", description = "Item cursor" }
-sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
+sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "npc/bird_green", description = "Green bird" }
 sprite{ id = "npc/blacksmith", description = "Blacksmith" }
 sprite{ id = "npc/book_old_man", description = "Old man with book" }
