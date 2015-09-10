@@ -9,6 +9,7 @@ _______________________________________________________________
 * Show the current floor when it changes.
 * Fix the blue potion dialog in English (#78).
 * Fix entities falling in holes even when hooked to the hookshot.
+* Fix caps lock state ignored after restarting the game (#20).
 * Fix hero stuck in a cliff near shadow village.
 * Fix hammer stakes pushed too early (#65).
 * Fix enemies active in other regions before taking the first separator (#72).

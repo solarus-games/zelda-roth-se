@@ -57,6 +57,7 @@ function game_manager:create(file)
   local hud
   local pause_menu
   local previous_world
+  local update_walking_speed
 
   -- Function called when the player runs this game.
   function game:on_started()
@@ -71,7 +72,7 @@ function game_manager:create(file)
     -- Initialize the hero.
     local hero = game:get_hero()
     game:stop_rabbit()  -- In case the game was saved as a rabbit.
-    hero:set_walking_speed(normal_walking_speed)
+    update_walking_speed()
 
     -- Measure the time played.
     run_chronometer(game)
@@ -90,7 +91,7 @@ function game_manager:create(file)
 
   -- Changes the walking speed of the hero depending on whether
   -- shift is pressed or caps lock is active.
-  local function update_walking_speed()
+  function update_walking_speed()
 
     local hero = game:get_hero()
     local modifiers = sol.input.get_key_modifiers()
