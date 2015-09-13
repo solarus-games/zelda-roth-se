@@ -74,8 +74,14 @@ local function on_collision(torch, other, torch_sprite, other_sprite)
         if torch.on_lit ~= nil then
           torch:on_lit()
         end
+
+        sol.timer.start(other, 50, function()
+          other:stop_movement()
+          other:get_sprite():set_animation("stopped")
+        end)
+
       end
-      other:remove()
+
     elseif other_model == "ice_beam" then
       if torch:is_lit() then
         torch:set_lit(false)
@@ -83,7 +89,14 @@ local function on_collision(torch, other, torch_sprite, other_sprite)
           torch:on_unlit()
         end
       end
-      other:remove()
+
+      sol.timer.start(other, 50, function()
+        other:stop_movement()
+        sol.timer.start(other, 150, function()
+          other:remove()
+        end)
+      end)
+
     end
 
   elseif other:get_type() == "enemy" then

@@ -15,6 +15,7 @@ _______________________________________________________________
 * Fix enemies active in other regions before taking the first separator (#72).
 * Fix enemy projectiles not removed when taking a separator (#71).
 * Fix saving with life 0 during the game-over sequence (#82).
+* Fix collisions of fire rod and ice rod (#55).
 * Make the hammer activate crystals (#75).
 * Dungeon 9: fix door closed when leaving without Zelda after boss key (#79).
 * Dungeon 9: fix boss door reopening after killing him (#81).

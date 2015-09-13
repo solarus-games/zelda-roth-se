@@ -17,6 +17,9 @@ function item:shoot()
   local direction = hero:get_direction()
 
   local x, y, layer = hero:get_position()
+  if hero:get_direction() == 3 then
+    y = y - 5
+  end
   local ice_beam = map:create_custom_entity({
     model = "ice_beam",
     x = x,

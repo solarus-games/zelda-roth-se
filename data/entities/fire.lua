@@ -116,8 +116,10 @@ fire:add_collision_test("sprite", function(fire, entity)
     enemies_touched[enemy] = true
     local reaction = enemy:get_fire_reaction(enemy_sprite)
     enemy:receive_attack_consequence("fire", reaction)
-    fire:remove()
 
+    sol.timer.start(fire, 200, function()
+      fire:remove()
+    end)
   end
 end)
 

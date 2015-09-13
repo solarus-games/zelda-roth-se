@@ -43,7 +43,10 @@ ice_beam:add_collision_test("sprite", function(ice_beam, entity)
     enemies_touched[enemy] = true
     local reaction = enemy:get_ice_reaction(enemy_sprite)
     enemy:receive_attack_consequence("ice", reaction)
-    ice_beam:remove()
+
+    sol.timer.start(ice_beam, 200, function()
+      ice_beam:remove()
+    end)
   end
 end)
 
@@ -109,6 +112,7 @@ function ice_beam:go(angle)
   local y = -math.sin(angle) * 16
   sprites[1]:set_xy(2 * x, 2 * y)
   sprites[2]:set_xy(x, y)
+  sprites[3]:set_xy(0, 0)
 
   sprites[1]:set_animation("1")
   sprites[2]:set_animation("2")
@@ -126,6 +130,7 @@ function ice_beam:go(angle)
 end
 
 function ice_beam:on_obstacle_reached()
+
   ice_beam:remove()
 end
 
