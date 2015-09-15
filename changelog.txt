@@ -17,6 +17,7 @@ _______________________________________________________________
 * Fix saving with life 0 during the game-over sequence (#82).
 * Fix collisions of fire rod and ice rod (#55).
 * Make the hammer activate crystals (#75).
+* Improve moving the camera with Ctrl+direction (#34).
 * Dungeon 9: fix door closed when leaving without Zelda after boss key (#79).
 * Dungeon 9: fix boss door reopening after killing him (#81).
 

@@ -12,11 +12,14 @@ function camera_manager:create(game)
 
   local camera_menu = {}
 
-  local moving = false
+  local moving = false         -- If moving away from the hero.
+  local just_restored = false  -- If just got back to the hero.
   local initial_x, initial_y, camera_width, camera_height
+  local restore_camera
+  local update_camera
 
   -- Moves the camera back to the hero.
-  local function restore_camera()
+  function restore_camera()
 
     if not moving then
       return
@@ -30,18 +33,26 @@ function camera_manager:create(game)
     local hero = map:get_hero()
     local hero_x, hero_y = hero:get_center_position()
 
-    map:move_camera(hero_x, hero_y, camera_speed, function() end, 0, 0)
+    map:move_camera(hero_x, hero_y, camera_speed, function()
+      if sol.input.is_key_pressed("left control") or
+          sol.input.is_key_pressed("right control") then
+        just_restored = true
+        update_camera()
+      end
+    end, 0, 0)
     moving = false
   end
 
   -- Updates the camera movement depending on commands pressed.
-  local function update_camera()
+  function update_camera()
 
-    if game:is_suspended() and not moving then
+    if game:is_suspended() and not moving and not just_restored then
       -- The game is suspended for a reason other than us: don't
       -- do a camera movement now.
       return
     end
+
+    just_restored = false
 
     local map = game:get_map()
     if map == nil then
@@ -94,12 +105,7 @@ function camera_manager:create(game)
     local y = initial_y + camera_height / 2 + dy
 
     map:move_camera(x, y, camera_speed, function()
-      local current_x, current_y = map:get_camera_position()
-      if sol.main.get_distance(current_x, current_y, initial_x, initial_y) < 4 then
-        -- The camera did not move because of separators or because of a small map.
-        -- In this case, don't keep the game suspended but restore control to the player.
-        restore_camera()
-      end
+
     end, 0, 1e9)
   end
 
