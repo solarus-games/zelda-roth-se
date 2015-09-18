@@ -5,6 +5,7 @@ properties{
   height = 1200,
   world = "mudora_cave",
   floor = 0,
+  num_layers = 3,
   tileset = "cave",
   music = "cave",
 }
