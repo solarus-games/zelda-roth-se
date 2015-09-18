@@ -28,11 +28,6 @@ map{ id = "dungeon_9/b1", description = "Dungeon 9 B1" }
 map{ id = "dungeon_9/b2", description = "Dungeon 9 B2" }
 map{ id = "ending", description = "The end" }
 map{ id = "enemy_store", description = "Enemy Store" }
-map{ id = "gerudo/black_smith", description = "Black-smith" }
-map{ id = "gerudo/chest_game", description = "Chest game" }
-map{ id = "gerudo/green_potion_house", description = "Green potion house" }
-map{ id = "gerudo/leader_house", description = "Leader's house" }
-map{ id = "gerudo/woman_house", description = "Woman's house" }
 map{ id = "gerudo_village/blacksmith", description = "Blacksmith house" }
 map{ id = "gerudo_village/chest_game", description = "Chest game" }
 map{ id = "gerudo_village/leader_house", description = "Leader's house" }
@@ -60,7 +55,6 @@ map{ id = "outside/c1", description = "Outside C1 (Forest)" }
 map{ id = "outside/c2", description = "Outside C2 (Plains)" }
 map{ id = "outside/c3", description = "Outside C3 (Shadow Village)" }
 map{ id = "outside_store", description = "Outside Store" }
-map{ id = "shadow/chest_game", description = "Chest game" }
 map{ id = "shadow_village/bird_house", description = "Bird's house" }
 map{ id = "shadow_village/chest_game", description = "Chest game" }
 map{ id = "shadow_village/leader_house", description = "Leader's house" }
