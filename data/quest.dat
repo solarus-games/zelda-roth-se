@@ -1,5 +1,5 @@
 quest{
-  solarus_version = "1.4",
+  solarus_version = "1.5",
   write_dir = "zelda_roth_se",
   title_bar = "Zelda Return of the Hylian",
   normal_quest_size = "320x240",
