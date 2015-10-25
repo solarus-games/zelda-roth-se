@@ -179,4 +179,6 @@ function options_menu:on_key_pressed(key)
   return true
 end
 
+gui_designer:map_joypad_to_keyboard(options_menu)
+
 return options_menu

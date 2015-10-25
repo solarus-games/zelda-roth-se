@@ -130,7 +130,6 @@ function language_menu:on_joypad_hat_moved(hat, direction8)
   end
 end
 
-
 function language_menu:direction_pressed(direction8)
 
   local handled = false

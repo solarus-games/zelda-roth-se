@@ -259,6 +259,7 @@ function show_savegame_action_box(savegame_index)
     fairy_img:draw(dst_surface, 112, 72 + fairy_cursor_position * 20)
   end
 
+  gui_designer:map_joypad_to_keyboard(action_box_menu)
   sol.audio.play_sound("pause_closed")
   sol.menu.start(savegames_menu, action_box_menu)
 end
@@ -301,8 +302,12 @@ function show_confirm_delete_box(action)
     fairy_img:draw(dst_surface, 112, 92 + fairy_cursor_position * 20)
   end
 
+  gui_designer:map_joypad_to_keyboard(delete_box_menu)
+
   sol.audio.play_sound("pause_closed")
   sol.menu.start(savegames_menu, delete_box_menu)
 end
+
+gui_designer:map_joypad_to_keyboard(savegames_menu)
 
 return savegames_menu
