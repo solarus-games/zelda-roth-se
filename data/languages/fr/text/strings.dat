@@ -7,27 +7,28 @@ text{ key = "dungeon_6.name", value = "Temple du Feu" }
 text{ key = "dungeon_7.name", value = "Temple de la Glace" }
 text{ key = "dungeon_8.name", value = "Temple secret" }
 text{ key = "dungeon_9.name", value = "Château d'Hyrule" }
-text{ key = "help.action", value = "Action :" }
-text{ key = "help.ctrl_and_direction", value = "Ctrl et direction" }
-text{ key = "help.directional_keys", value = "Flèches de direction" }
+text{ key = "help.action", value = "Action" }
+text{ key = "help.action_to_configure", value = "Appuie sur Action pour changer cette commande" }
+text{ key = "help.commands", value = "Commandes" }
+text{ key = "help.ctrl_and_direction", value = "Ctrl + dir." }
+text{ key = "help.down", value = "Bas" }
 text{ key = "help.escape", value = "Echap" }
-text{ key = "help.fullscreen", value = "Plein écran :" }
-text{ key = "help.item", value = "Utiliser l'objet sélectionné :" }
-text{ key = "help.keep_pressed_then_release", value = "maintenu puis lâché" }
-text{ key = "help.lift", value = "Porter :" }
-text{ key = "help.look", value = "Regarder autour :" }
-text{ key = "help.map", value = "Afficher la carte :" }
-text{ key = "help.menus", value = "Menus : Gauche/Droite" }
-text{ key = "help.monsters", value = "Afficher les monstres vaincus :" }
-text{ key = "help.move", value = "Déplacer Link :" }
-text{ key = "help.pages", value = "Pages : Haut/Bas" }
-text{ key = "help.pause", value = "Pause :" }
-text{ key = "help.run", value = "Courir :" }
-text{ key = "help.save", value = "Sauvegarder / Quitter :" }
-text{ key = "help.shift_or_caps_lock", value = "Shift maintenu ou Caps lock" }
-text{ key = "help.spin_attack", value = "Attaque Tornade :" }
-text{ key = "help.sword", value = "Coup d'épée :" }
-text{ key = "help.title", value = "Aide" }
+text{ key = "help.fullscreen", value = "Plein écran" }
+text{ key = "help.item", value = "Utiliser objet" }
+text{ key = "help.joypad", value = "Joypad" }
+text{ key = "help.keyboard", value = "Clavier" }
+text{ key = "help.left", value = "Gauche" }
+text{ key = "help.look", value = "Regarder autour" }
+text{ key = "help.map", value = "Carte" }
+text{ key = "help.monsters", value = "Monstres vaincus" }
+text{ key = "help.move", value = "Déplacer Link" }
+text{ key = "help.pause", value = "Pause" }
+text{ key = "help.right", value = "Droite" }
+text{ key = "help.run", value = "Courir" }
+text{ key = "help.save", value = "Sauvegarder" }
+text{ key = "help.sword", value = "Epée" }
+text{ key = "help.title", value = "COMMANDES" }
+text{ key = "help.up", value = "Haut" }
 text{ key = "options_menu.back", value = "RETOUR" }
 text{ key = "options_menu.language", value = "LANGUE" }
 text{ key = "options_menu.music_volume", value = "MUSIQUE" }

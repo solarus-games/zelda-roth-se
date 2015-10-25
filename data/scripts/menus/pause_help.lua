@@ -9,104 +9,375 @@ function help_manager:new(game)
   local layout
 
   -- Like game:get_command_keyboard_binding(),
-  -- but makes the first letter uppercase.
-  -- Returns an empty string if the command has no key.
-  local function get_game_key(command)
+  -- but handles additional commands from the quest.
+  -- Returns an empty string if the command has no keyboard key.
+  local function get_command_keyboard_binding(item)
 
-    local key = game:get_command_keyboard_binding(command)
-    if key == nil then
-      return ""
+    if item.command ~= nil then
+      -- Customizable command from the engine.
+      return game:get_command_keyboard_binding(item.command) or ""
     end
-    return key:gsub("^%l", string.upper)
+
+    -- Customizable command from the quest.
+    return game:get_value("keyboard_" .. item.name) or ""
   end
-  local tr = sol.language.get_string
+
+  -- Like game:set_command_keyboard_binding(),
+  -- but handles additional commands from the quest.
+  local function set_command_keyboard_binding(item, key)
+
+    local command = item.command
+    if command == nil then
+      -- Command from the quest.
+      game:set_value("keyboard_" .. item.name, key)
+    else
+      -- Built-in command from the engine.
+      game:set_command_keyboard_binding(command, key)
+    end
+
+    -- TODO swap commands if already used
+  end
+
+  -- Like game:get_command_joypad_binding(),
+  -- but handles additional commands from the quest.
+  -- Returns an empty string if the command has no joypad action.
+  local function get_command_joypad_binding(item)
+
+    if item.command ~= nil then
+      -- Customizable command from the engine.
+      return game:get_command_joypad_binding(item.command) or ""
+    end
+
+    -- Customizable command from the quest.
+    return game:get_value("joypad_" .. item.name) or ""
+  end
+
+  -- Like game:set_command_joypad_binding(),
+  -- but handles additional commands from the quest.
+  local function set_command_joypad_binding(item, key)
+
+    local command = item.command
+    if command == nil then
+      -- Command from the quest.
+      game:set_value("joypad_" .. item.name, key)
+    else
+      -- Built-in command from the engine.
+      game:set_command_joypad_binding(command, key)
+    end
+  end
 
   local help_items = {
-    -- Name, unlocked, keyboard key.
-    { "action", true, get_game_key("action") },
-    { "move", true, tr("help.directional_keys") },
-    { "run", true, tr("help.shift_or_caps_lock") },
-    { "sword", game:has_ability("sword"), get_game_key("attack") },
-    { "spin_attack", game:has_ability("sword"), get_game_key("attack") .. " " .. tr("help.keep_pressed_then_release") },
-    { "pause", true, get_game_key("pause") },
-    { "item", true, get_game_key("item_1") },
-    { "lift", game:has_ability("lift"), get_game_key("action") },
-    { "map", true, "P" },
-    { "monsters", game:has_item("monsters_encyclopedia"), "M" },
-    { "look", true, tr("help.ctrl_and_direction") },
-    { "fullscreen", true, "F11" },
-    { "save", true, tr("help.escape") },
+    {
+      name = "action",
+      unlocked = true,
+      customizable = true,
+      command = "action"
+    },
+    {
+      name = "sword",
+      unlocked = game:has_ability("sword"),
+      customizable = true,
+      command = "attack",
+    },
+    {
+      name = "item",
+      unlocked = true,
+      customizable = true,
+      command = "item_1",
+    },
+    {
+      name = "pause",
+      unlocked = true,
+      customizable = true,
+      command = "pause",
+    },
+    {
+      name = "up",
+      unlocked = true,
+      customizable = true,
+      command = "up",
+    },
+    {
+      name = "down",
+      unlocked = true,
+      customizable = true,
+      command = "down",
+    },
+    {
+      name = "left",
+      unlocked = true,
+      customizable = true,
+      command = "left",
+    },
+    {
+      name = "right",
+      unlocked = true,
+      customizable = true,
+      command = "right",
+    },
+    {
+      name = "run",
+      unlocked = true,
+      customizable = true,
+    },
+    {
+      name = "map",
+      unlocked = true,
+      customizable = true,
+    },
+    {
+      name = "monsters",
+      unlocked = game:has_item("monsters_encyclopedia"),
+      customizable = true,
+    },
+    {
+      name = "commands",
+      unlocked = true,
+      customizable = true,
+    },
+    {
+      name = "look",
+      unlocked = true,
+      customizable = false,
+      key = sol.language.get_string("help.ctrl_and_direction")
+    },
+    {
+      name = "fullscreen",
+      unlocked = true,
+      customizable = false,
+      key = "F11",
+    },
+    {
+      name = "save",
+      unlocked = true,
+      customizable = true,
+      key = sol.language.get_string("help.escape"),
+    },
   }
 
+  local cursor_index = 1
+  local first_shown = 1
+  local max_by_page = 8
+  game.customizing_command = false
+  local customizing_timer
+  local customizing_background_displayed = true
+
+  -- Remove elements not known yet.
   for i = #help_items, 1, -1 do
     local item = help_items[i]
-    local unlocked = item[2]
-    if not unlocked then
+    if not item.unlocked then
       table.remove(help_items, i)
     end
   end
 
-  local max_by_page = 7
-  local num_pages = math.ceil(#help_items / max_by_page)
-  local page = 1
-
-  local function build_layout(page)
+  local function build_layout()
 
     layout = gui_designer:create(320, 240)
-    layout:make_wooden_frame(16, 8, 112, 32)
-    local title = tr("help.title") .. " " .. page .. "/" .. num_pages
-    layout:make_text(title, 72, 16, "center")
+
+    layout:make_wooden_frame(16, 8, 96, 32)
+    local title = sol.language.get_string("help.title")
+    layout:make_text(title, 64, 16, "center")
+
+    layout:make_wooden_frame(128, 8, 80, 32)
+    local title = sol.language.get_string("help.keyboard")
+    layout:make_text(title, 168, 16, "center")
+
+    layout:make_wooden_frame(224, 8, 80, 32)
+    local title = sol.language.get_string("help.joypad")
+    layout:make_text(title, 264, 16, "center")
 
     layout:make_wooden_frame(16, 200, 288, 32)
-    local footer = tr("help.pages") .. " - " .. tr("help.menus")
-    layout:make_text(footer, 24, 208)
+    if help_items[cursor_index].customizable then
+      local footer = sol.language.get_string("help.action_to_configure")
+      layout:make_text(footer, 24, 208)
+    end
 
-    layout:make_wooden_frame(16, 56, 288, 128)
+    layout:make_wooden_frame(16, 48, 288, 144)
 
-    local first = (page - 1) * max_by_page + 1
-    local last = first + max_by_page - 1
-
-    local y = 64
+    local first = first_shown
+    local last = math.min(#help_items, first_shown + max_by_page - 1)
+    local y = 56
     for i = first, last do
       local item = help_items[i]
       if item == nil then
         break
       end
-      local name = item[1]
-      local key = item[3]
-      local text = tr("help." .. name) .. " " .. key
-      layout:make_text(text, 24, y)
+
+      if cursor_index == i then
+        local color
+        if game.customizing_command then
+          if customizing_background_displayed then
+            color = { 255, 0, 0 }
+          end
+        else
+          color = { 0, 0, 192 }
+        end
+        if color ~= nil then
+          layout:make_color_background(color, 24, y, 272, 16)
+        end
+      end
+
+      local name = sol.language.get_string("help." .. item.name)
+      assert(name ~= nil)
+      layout:make_text(name, 24, y)
+
+      local keyboard_text
+      local joypad_text
+      if item.customizable then
+        keyboard_text = get_command_keyboard_binding(item):gsub("^%l", string.upper)
+        joypad_text = get_command_joypad_binding(item):gsub("^%l", string.upper)
+      else
+        -- Non-customizable command from the quest.
+        keyboard_text = item.key
+      end
+
+      layout:make_text(keyboard_text, 136, y)
+      if joypad_text ~= nil then
+        layout:make_text(joypad_text, 232, y)
+      end
+
       y = y + 16
     end
   end
 
-  build_layout(page)
+  local function stop_customizing()
+
+    sol.audio.play_sound("danger")
+    game.customizing_command = false
+    customizing_timer:stop()
+    build_layout()
+  end
 
   function help:on_command_pressed(command)
 
     local handled = false
+
     if command == "up" then
-      if page > 1 then
-        sol.audio.play_sound("cursor")
-        page = page - 1
-        build_layout(page)
-        handled = true
+      if cursor_index == 1 then
+        cursor_index = #help_items
+        first_shown = math.max(1, #help_items - max_by_page + 1)
+      else
+        if cursor_index == first_shown then
+          first_shown = first_shown - 1
+        end
+        cursor_index = cursor_index - 1
       end
+      sol.audio.play_sound("cursor")
+      build_layout()
+      handled = true
+
     elseif command == "down" then
-      if page < num_pages then
-        sol.audio.play_sound("cursor")
-        page = page + 1
-        build_layout(page)
+      if cursor_index == #help_items then
+        cursor_index = 1
+        first_shown = 1
+      else
+        local last_shown = math.min(#help_items, first_shown + max_by_page - 1)
+        if cursor_index == last_shown then
+          first_shown = first_shown + 1
+        end
+        cursor_index = cursor_index + 1
+      end
+      sol.audio.play_sound("cursor")
+      build_layout()
+      handled = true
+
+    elseif command == "action" then
+      if not game.customizing_command and help_items[cursor_index].customizable then  -- Customizing a game command.
+        sol.audio.play_sound("ok")
+        game.customizing_command = true
+        customizing_timer = sol.timer.start(help, 300, function()
+          -- Make the red row blink.
+          customizing_background_displayed = not customizing_background_displayed
+          build_layout()
+          return true
+        end)
+        build_layout()
         handled = true
       end
+
     end
+
     return handled
+  end
+
+  function help:on_key_pressed(key)
+
+    if not game.customizing_command then
+      return false
+    end
+
+    local item = help_items[cursor_index]
+    set_command_keyboard_binding(item, key)
+    stop_customizing()
+    return true
+  end
+
+  function help:on_joypad_button_pressed(button)
+
+    if not game.customizing_command then
+      return false
+    end
+
+    local item = help_items[cursor_index]
+    local command = item.command
+    local joypad_action = "button " .. button
+    set_command_joypad_binding(item, joypad_action)
+    stop_customizing()
+    return true
+  end
+
+  function help:on_joypad_axis_moved(axis, state)
+
+    if not game.customizing_command then
+      return false
+    end
+
+    if state == 0 then
+      return false
+    end
+
+    local item = help_items[cursor_index]
+
+    if item.command == nil then
+      -- For additional commands from the quest, joypad axis are not supported yet.
+      return false
+    end
+
+    local joypad_action = "axis " .. axis .. " " .. (state > 0 and "+" or "-")
+    set_command_joypad_binding(item, joypad_action)
+    stop_customizing()
+    return true
+  end
+
+  function help:on_joypad_hat_moved(hat, direction8)
+
+    if not game.customizing_command then
+      return false
+    end
+
+    if direction8 == -1 then
+      return false
+    end
+
+    local item = help_items[cursor_index]
+
+    if item.command == nil then
+      -- For additional commands from the quest, joypad hats are not supported yet.
+      return false
+    end
+
+    local joypad_action = "hat " .. hat .. " " .. direction8
+    set_command_joypad_binding(item, joypad_action)
+    stop_customizing()
+    return true
   end
 
   function help:on_draw(dst_surface)
 
     layout:draw(dst_surface)
   end
+
+  build_layout()
 
   return help
 end

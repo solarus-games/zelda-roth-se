@@ -4,6 +4,7 @@ Zelda Return of the Hylian, Solarus Edition 1.0.7 (in progress)
 _______________________________________________________________
 
 * Use Solarus 1.4.5.
+* Allow to customize keyboard and joypad controls (#2).
 * Add title screen music (#74).
 * Add left/right arrows in pause menus to indicate possible actions (#60).
 * Show the current floor when it changes.

@@ -24,6 +24,25 @@ local function initialize_new_savegame(game)
   game:set_value("defense", 0)
   game:set_value("time_played", 0)
   game:get_item("bombs_counter"):set_variant(1)
+  game:set_value("keyboard_commands"):set_value("f1")
+  game:set_value("keyboard_map"):set_value("p")
+  game:set_value("keyboard_monsters"):set_value("m")
+  game:set_value("keyboard_save"):set_value("escape")
+  game:set_value("keyboard_run"):set_value("left shift")
+end
+
+-- Updates values for an existing new savegame of this quest.
+local function initialize_existing_savegame(game)
+
+  if game:get_value("keyboard_save") == nil then
+    -- The savegame was created before 1.4.5,
+    -- a lot of commands are now customizable.
+    game:set_value("keyboard_commands", "f1")
+    game:set_value("keyboard_map", "p")
+    game:set_value("keyboard_monsters", "m")
+    game:set_value("keyboard_save", "escape")
+    game:set_value("keyboard_run", "left shift")
+  end
 end
 
 -- Measures the time played in this savegame.
@@ -51,6 +70,8 @@ function game_manager:create(file)
   if not exists then
     -- This is a new savegame file.
     initialize_new_savegame(game)
+  else
+    initialize_existing_savegame(game)
   end
  
   local dialog_box
@@ -90,13 +111,23 @@ function game_manager:create(file)
   end
 
   -- Changes the walking speed of the hero depending on whether
-  -- shift is pressed or caps lock is active.
+  -- run is pressed or caps lock is active.
   function update_walking_speed()
 
     local hero = game:get_hero()
-    local modifiers = sol.input.get_key_modifiers()
     local speed = normal_walking_speed
-    if modifiers["shift"] or modifiers["caps lock"] then
+    local modifiers = sol.input.get_key_modifiers()
+    local keyboard_run_pressed = sol.input.is_key_pressed(game:get_value("keyboard_run")) or modifiers["caps lock"] 
+    local joypad_run_pressed = false
+    local joypad_action = game:get_value("joypad_run")
+    if joypad_action ~= nil then
+      local button = joypad_action:match("^button (%d+)$")
+      if button ~= nil then
+        joypad_run_pressed = sol.input.is_joypad_button_pressed(button)
+      end
+    end
+    if keyboard_run_pressed or
+        joypad_run_pressed then
       speed = fast_walking_speed
     end
     if hero:get_walking_speed() ~= speed then
@@ -146,23 +177,27 @@ function game_manager:create(file)
   -- Function called when the player presses a key during the game.
   function game:on_key_pressed(key)
 
+    if game.customizing_command then
+      -- Don't treat this input normally, it will be recorded as a new command binding.
+      return false
+    end
+
     local handled = false
-    if key == "left shift"
-        or key == "right shift"
+    if key == game:get_value("keyboard_run")
         or key == "caps lock" then
       -- Run.
       update_walking_speed()
       handled = true
 
     elseif game:is_pause_allowed() then  -- Keys below are menus.
-      if key == "p" then
+      if key == game:get_value("keyboard_map") then
         -- Map.
         if not game:is_suspended() or game:is_paused() then
           game:switch_pause_menu("map")
           handled = true
         end
 
-      elseif key == "m" then
+      elseif key == game:get_value("keyboard_monsters") then
         -- Monsters.
         if not game:is_suspended() or game:is_paused() then
           if game:has_item("monsters_encyclopedia") then
@@ -171,14 +206,14 @@ function game_manager:create(file)
           end
         end
 
-      elseif key == "f1" then
+      elseif key == game:get_value("keyboard_commands") then
         -- Help.
         if not game:is_suspended() or game:is_paused() then
           game:switch_pause_menu("help")
           handled = true
         end
 
-      elseif key == "escape" then
+      elseif key == game:get_value("keyboard_save") then
         if not game:is_paused() and
             not game:is_dialog_enabled() and
             game:get_life() > 0 then
@@ -209,9 +244,95 @@ function game_manager:create(file)
   function game:on_key_released(key)
 
     local handled = false
-    if key == "left shift"
-        or key == "right shift"
+    if key == game:get_value("keyboard_run")
         or key == "caps lock" then
+      update_walking_speed()
+      handled = true
+    end
+
+    return handled
+  end
+
+  -- Function called when the player presses a joypad button during the game.
+  function game:on_joypad_button_pressed(button)
+
+    if game.customizing_command then
+      -- Don't treat this input normally, it will be recorded as a new command binding.
+      return false
+    end
+
+    local handled = false
+
+    local joypad_action = "button " .. button
+    if joypad_action == game:get_value("joypad_run") then
+      -- Run.
+      update_walking_speed()
+      handled = true
+
+    elseif game:is_pause_allowed() then  -- Keys below are menus.
+      if joypad_action == game:get_value("joypad_map") then
+        -- Map.
+        if not game:is_suspended() or game:is_paused() then
+          game:switch_pause_menu("map")
+          handled = true
+        end
+
+      elseif joypad_action == game:get_value("joypad_monsters") then
+        -- Monsters.
+        if not game:is_suspended() or game:is_paused() then
+          if game:has_item("monsters_encyclopedia") then
+            game:switch_pause_menu("monsters")
+            handled = true
+          end
+        end
+
+      elseif joypad_action == game:get_value("joypad_commands") then
+        -- Help.
+        if not game:is_suspended() or game:is_paused() then
+          game:switch_pause_menu("help")
+          handled = true
+        end
+
+      elseif joypad_action == game:get_value("joypad_save") then
+        if not game:is_paused() and
+            not game:is_dialog_enabled() and
+            game:get_life() > 0 then
+          game:start_dialog("save_quit", function(answer)
+            if answer == 2 then
+              -- Continue.
+              sol.audio.play_sound("danger")
+            elseif answer == 3 then
+              -- Save and quit.
+              sol.audio.play_sound("quit")
+              game:save()
+              sol.main.reset()
+            else
+              -- Quit without saving.
+              sol.audio.play_sound("quit")
+              sol.main.reset()
+            end
+          end)
+          handled = true
+        end
+      end
+    end
+
+    return handled
+  end
+
+  -- Function called when the player presses a joypad button during the game.
+  function game:on_joypad_button_released(button)
+
+    if game.customizing_command then
+      -- Don't treat this input normally, it will be recorded as a new command binding.
+      return false
+    end
+
+    local handled = false
+
+    local joypad_action = "button " .. button
+    if joypad_action == game:get_value("joypad_run") then
+      -- Stop running.
       update_walking_speed()
       handled = true
     end
