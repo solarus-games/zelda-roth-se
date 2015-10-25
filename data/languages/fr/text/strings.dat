@@ -23,6 +23,7 @@ text{ key = "help.map", value = "Carte" }
 text{ key = "help.monsters", value = "Monstres vaincus" }
 text{ key = "help.move", value = "Déplacer Link" }
 text{ key = "help.pause", value = "Pause" }
+text{ key = "help.press_new_key", value = "Appuie sur la nouvelle touche" }
 text{ key = "help.right", value = "Droite" }
 text{ key = "help.run", value = "Courir" }
 text{ key = "help.save", value = "Sauvegarder" }

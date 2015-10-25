@@ -188,7 +188,9 @@ function help_manager:new(game)
 
     layout:make_wooden_frame(16, 200, 288, 32)
     if help_items[cursor_index].customizable then
-      local footer = sol.language.get_string("help.action_to_configure")
+      local footer = game.customizing_command and
+          sol.language.get_string("help.press_new_key") or
+          sol.language.get_string("help.action_to_configure")
       layout:make_text(footer, 24, 208)
     end
 
