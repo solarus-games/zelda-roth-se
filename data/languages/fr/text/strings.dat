@@ -7,34 +7,33 @@ text{ key = "dungeon_6.name", value = "Temple du Feu" }
 text{ key = "dungeon_7.name", value = "Temple de la Glace" }
 text{ key = "dungeon_8.name", value = "Temple secret" }
 text{ key = "dungeon_9.name", value = "Château d'Hyrule" }
-text{ key = "help.action", value = "Action" }
-text{ key = "help.action_to_configure", value = "Appuie sur Action pour changer cette commande" }
-text{ key = "help.commands", value = "Commandes" }
-text{ key = "help.ctrl_and_direction", value = "Ctrl + dir." }
-text{ key = "help.down", value = "Bas" }
-text{ key = "help.escape", value = "Echap" }
-text{ key = "help.fullscreen", value = "Plein écran" }
-text{ key = "help.item", value = "Utiliser objet" }
-text{ key = "help.joypad", value = "Joypad" }
-text{ key = "help.keyboard", value = "Clavier" }
-text{ key = "help.left", value = "Gauche" }
-text{ key = "help.look", value = "Regarder autour" }
-text{ key = "help.map", value = "Carte" }
-text{ key = "help.monsters", value = "Monstres vaincus" }
-text{ key = "help.move", value = "Déplacer Link" }
-text{ key = "help.pause", value = "Pause" }
-text{ key = "help.press_new_key", value = "Appuie sur la nouvelle touche" }
-text{ key = "help.right", value = "Droite" }
-text{ key = "help.run", value = "Courir" }
-text{ key = "help.save", value = "Sauvegarder" }
-text{ key = "help.sword", value = "Epée" }
-text{ key = "help.title", value = "COMMANDES" }
-text{ key = "help.up", value = "Haut" }
 text{ key = "options_menu.back", value = "RETOUR" }
 text{ key = "options_menu.language", value = "LANGUE" }
 text{ key = "options_menu.music_volume", value = "MUSIQUE" }
 text{ key = "options_menu.sound_volume", value = "SON" }
 text{ key = "options_menu.title", value = "OPTIONS" }
+text{ key = "pause.commands.action", value = "Action" }
+text{ key = "pause.commands.action_to_configure", value = "Appuie sur Action pour changer cette commande" }
+text{ key = "pause.commands.commands", value = "Commandes" }
+text{ key = "pause.commands.ctrl_and_direction", value = "Ctrl + dir." }
+text{ key = "pause.commands.down", value = "Bas" }
+text{ key = "pause.commands.fullscreen", value = "Plein écran" }
+text{ key = "pause.commands.item", value = "Utiliser objet" }
+text{ key = "pause.commands.joypad", value = "Joypad" }
+text{ key = "pause.commands.keyboard", value = "Clavier" }
+text{ key = "pause.commands.left", value = "Gauche" }
+text{ key = "pause.commands.look", value = "Regarder autour" }
+text{ key = "pause.commands.map", value = "Carte" }
+text{ key = "pause.commands.monsters", value = "Monstres vaincus" }
+text{ key = "pause.commands.move", value = "Déplacer Link" }
+text{ key = "pause.commands.pause", value = "Pause" }
+text{ key = "pause.commands.press_new_key", value = "Appuie sur la nouvelle touche" }
+text{ key = "pause.commands.right", value = "Droite" }
+text{ key = "pause.commands.run", value = "Courir" }
+text{ key = "pause.commands.save", value = "Sauvegarder" }
+text{ key = "pause.commands.sword", value = "Epée" }
+text{ key = "pause.commands.title", value = "COMMANDES" }
+text{ key = "pause.commands.up", value = "Haut" }
 text{ key = "pause.inventory.crystals", value = "CRISTAUX :" }
 text{ key = "pause.inventory.defense", value = "DEFENSE" }
 text{ key = "pause.inventory.force", value = "FORCE" }

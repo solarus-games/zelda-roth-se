@@ -207,9 +207,9 @@ function game_manager:create(file)
         end
 
       elseif key == game:get_value("keyboard_commands") then
-        -- Help.
+        -- Commands.
         if not game:is_suspended() or game:is_paused() then
-          game:switch_pause_menu("help")
+          game:switch_pause_menu("commands")
           handled = true
         end
 
@@ -287,9 +287,9 @@ function game_manager:create(file)
         end
 
       elseif joypad_action == game:get_value("joypad_commands") then
-        -- Help.
+        -- Commands.
         if not game:is_suspended() or game:is_paused() then
-          game:switch_pause_menu("help")
+          game:switch_pause_menu("commands")
           handled = true
         end
 

@@ -1,10 +1,10 @@
-local help_manager = {}
+local commands_manager = {}
 
 local gui_designer = require("scripts/menus/lib/gui_designer")
 
-function help_manager:new(game)
+function commands_manager:new(game)
 
-  local help = {}
+  local commands_menu = {}
 
   local layout
 
@@ -66,7 +66,7 @@ function help_manager:new(game)
     end
   end
 
-  local help_items = {
+  local commands_items = {
     {
       name = "action",
       unlocked = true,
@@ -139,7 +139,7 @@ function help_manager:new(game)
       name = "look",
       unlocked = true,
       customizable = false,
-      key = sol.language.get_string("help.ctrl_and_direction")
+      key = sol.language.get_string("pause.commands.ctrl_and_direction")
     },
     {
       name = "fullscreen",
@@ -151,7 +151,6 @@ function help_manager:new(game)
       name = "save",
       unlocked = true,
       customizable = true,
-      key = sol.language.get_string("help.escape"),
     },
   }
 
@@ -163,10 +162,10 @@ function help_manager:new(game)
   local customizing_background_displayed = true
 
   -- Remove elements not known yet.
-  for i = #help_items, 1, -1 do
-    local item = help_items[i]
+  for i = #commands_items, 1, -1 do
+    local item = commands_items[i]
     if not item.unlocked then
-      table.remove(help_items, i)
+      table.remove(commands_items, i)
     end
   end
 
@@ -175,32 +174,32 @@ function help_manager:new(game)
     layout = gui_designer:create(320, 240)
 
     layout:make_wooden_frame(16, 8, 96, 32)
-    local title = sol.language.get_string("help.title")
+    local title = sol.language.get_string("pause.commands.title")
     layout:make_text(title, 64, 16, "center")
 
     layout:make_wooden_frame(128, 8, 80, 32)
-    local title = sol.language.get_string("help.keyboard")
+    local title = sol.language.get_string("pause.commands.keyboard")
     layout:make_text(title, 168, 16, "center")
 
     layout:make_wooden_frame(224, 8, 80, 32)
-    local title = sol.language.get_string("help.joypad")
+    local title = sol.language.get_string("pause.commands.joypad")
     layout:make_text(title, 264, 16, "center")
 
     layout:make_wooden_frame(16, 200, 288, 32)
-    if help_items[cursor_index].customizable then
+    if commands_items[cursor_index].customizable then
       local footer = game.customizing_command and
-          sol.language.get_string("help.press_new_key") or
-          sol.language.get_string("help.action_to_configure")
+          sol.language.get_string("pause.commands.press_new_key") or
+          sol.language.get_string("pause.commands.action_to_configure")
       layout:make_text(footer, 24, 208)
     end
 
     layout:make_wooden_frame(16, 48, 288, 144)
 
     local first = first_shown
-    local last = math.min(#help_items, first_shown + max_by_page - 1)
+    local last = math.min(#commands_items, first_shown + max_by_page - 1)
     local y = 56
     for i = first, last do
-      local item = help_items[i]
+      local item = commands_items[i]
       if item == nil then
         break
       end
@@ -219,7 +218,7 @@ function help_manager:new(game)
         end
       end
 
-      local name = sol.language.get_string("help." .. item.name)
+      local name = sol.language.get_string("pause.commands." .. item.name)
       assert(name ~= nil)
       layout:make_text(name, 24, y)
 
@@ -250,14 +249,14 @@ function help_manager:new(game)
     build_layout()
   end
 
-  function help:on_command_pressed(command)
+  function commands_menu:on_command_pressed(command)
 
     local handled = false
 
     if command == "up" then
       if cursor_index == 1 then
-        cursor_index = #help_items
-        first_shown = math.max(1, #help_items - max_by_page + 1)
+        cursor_index = #commands_items
+        first_shown = math.max(1, #commands_items - max_by_page + 1)
       else
         if cursor_index == first_shown then
           first_shown = first_shown - 1
@@ -269,11 +268,11 @@ function help_manager:new(game)
       handled = true
 
     elseif command == "down" then
-      if cursor_index == #help_items then
+      if cursor_index == #commands_items then
         cursor_index = 1
         first_shown = 1
       else
-        local last_shown = math.min(#help_items, first_shown + max_by_page - 1)
+        local last_shown = math.min(#commands_items, first_shown + max_by_page - 1)
         if cursor_index == last_shown then
           first_shown = first_shown + 1
         end
@@ -284,10 +283,10 @@ function help_manager:new(game)
       handled = true
 
     elseif command == "action" then
-      if not game.customizing_command and help_items[cursor_index].customizable then  -- Customizing a game command.
+      if not game.customizing_command and commands_items[cursor_index].customizable then  -- Customizing a game command.
         sol.audio.play_sound("ok")
         game.customizing_command = true
-        customizing_timer = sol.timer.start(help, 300, function()
+        customizing_timer = sol.timer.start(commands, 300, function()
           -- Make the red row blink.
           customizing_background_displayed = not customizing_background_displayed
           build_layout()
@@ -302,25 +301,25 @@ function help_manager:new(game)
     return handled
   end
 
-  function help:on_key_pressed(key)
+  function commands_menu:on_key_pressed(key)
 
     if not game.customizing_command then
       return false
     end
 
-    local item = help_items[cursor_index]
+    local item = commands_items[cursor_index]
     set_command_keyboard_binding(item, key)
     stop_customizing()
     return true
   end
 
-  function help:on_joypad_button_pressed(button)
+  function commands_menu:on_joypad_button_pressed(button)
 
     if not game.customizing_command then
       return false
     end
 
-    local item = help_items[cursor_index]
+    local item = commands_items[cursor_index]
     local command = item.command
     local joypad_action = "button " .. button
     set_command_joypad_binding(item, joypad_action)
@@ -328,7 +327,7 @@ function help_manager:new(game)
     return true
   end
 
-  function help:on_joypad_axis_moved(axis, state)
+  function commands_menu:on_joypad_axis_moved(axis, state)
 
     if not game.customizing_command then
       return false
@@ -338,7 +337,7 @@ function help_manager:new(game)
       return false
     end
 
-    local item = help_items[cursor_index]
+    local item = commands_items[cursor_index]
 
     if item.command == nil then
       -- For additional commands from the quest, joypad axis are not supported yet.
@@ -351,7 +350,7 @@ function help_manager:new(game)
     return true
   end
 
-  function help:on_joypad_hat_moved(hat, direction8)
+  function commands_menu:on_joypad_hat_moved(hat, direction8)
 
     if not game.customizing_command then
       return false
@@ -361,7 +360,7 @@ function help_manager:new(game)
       return false
     end
 
-    local item = help_items[cursor_index]
+    local item = commands_items[cursor_index]
 
     if item.command == nil then
       -- For additional commands from the quest, joypad hats are not supported yet.
@@ -374,14 +373,14 @@ function help_manager:new(game)
     return true
   end
 
-  function help:on_draw(dst_surface)
+  function commands_menu:on_draw(dst_surface)
 
     layout:draw(dst_surface)
   end
 
   build_layout()
 
-  return help
+  return commands_menu
 end
 
-return help_manager
+return commands_manager
