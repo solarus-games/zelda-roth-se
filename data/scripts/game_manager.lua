@@ -24,11 +24,11 @@ local function initialize_new_savegame(game)
   game:set_value("defense", 0)
   game:set_value("time_played", 0)
   game:get_item("bombs_counter"):set_variant(1)
-  game:set_value("keyboard_commands"):set_value("f1")
-  game:set_value("keyboard_map"):set_value("p")
-  game:set_value("keyboard_monsters"):set_value("m")
-  game:set_value("keyboard_save"):set_value("escape")
-  game:set_value("keyboard_run"):set_value("left shift")
+  game:set_value("keyboard_commands", "f1")
+  game:set_value("keyboard_map", "p")
+  game:set_value("keyboard_monsters", "m")
+  game:set_value("keyboard_save", "escape")
+  game:set_value("keyboard_run", "left shift")
 end
 
 -- Updates values for an existing new savegame of this quest.
