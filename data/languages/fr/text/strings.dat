@@ -25,7 +25,6 @@ text{ key = "pause.commands.left", value = "Gauche" }
 text{ key = "pause.commands.look", value = "Regarder autour" }
 text{ key = "pause.commands.map", value = "Carte" }
 text{ key = "pause.commands.monsters", value = "Monstres vaincus" }
-text{ key = "pause.commands.move", value = "Déplacer Link" }
 text{ key = "pause.commands.pause", value = "Pause" }
 text{ key = "pause.commands.press_new_key", value = "Appuie sur la nouvelle touche" }
 text{ key = "pause.commands.right", value = "Droite" }
