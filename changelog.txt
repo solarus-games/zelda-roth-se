@@ -20,6 +20,7 @@ _______________________________________________________________
 * Improve moving the camera with Ctrl+direction (#34).
 * Dungeon 9: fix door closed when leaving without Zelda after boss key (#79).
 * Dungeon 9: fix boss door reopening after killing him (#81).
+* Dungeon 9: update soldier sprites to the original ones.
 
 ______________________________________________________________
 
