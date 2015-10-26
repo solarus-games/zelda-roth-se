@@ -22,5 +22,10 @@ function title_screen:on_key_pressed(key)
   end
 end
 
+function title_screen:on_joypad_button_pressed(button)
+
+  return self:on_key_pressed("space")
+end
+
 return title_screen
 

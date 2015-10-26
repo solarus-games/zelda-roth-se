@@ -161,6 +161,7 @@ function show_confirm_clear_popup()
     fairy_img:draw(dst_surface, 112, 92 + fairy_cursor_position * 20)
   end
 
+  gui_designer:map_joypad_to_keyboard(clear_box_menu)
   sol.audio.play_sound("pause_closed")
   sol.menu.start(records_menu, clear_box_menu)
 end
@@ -224,8 +225,11 @@ function show_rank_info_popup()
     layout:draw(dst_surface, popup_x, popup_y)
   end
 
+  gui_designer:map_joypad_to_keyboard(popup)
   sol.audio.play_sound("pause_closed")
   sol.menu.start(records_menu, popup)
 end
+
+gui_designer:map_joypad_to_keyboard(records_menu)
 
 return records_menu

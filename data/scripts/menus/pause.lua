@@ -12,7 +12,7 @@ function pause_manager:create(game)
   local inventory_builder = require("scripts/menus/pause_inventory")
   local map_builder = require("scripts/menus/pause_map")
   local monsters_builder = require("scripts/menus/pause_monsters")
-  local help_builder = require("scripts/menus/pause_help")
+  local commands_builder = require("scripts/menus/pause_commands")
 
   local pause_menu = {}
   local pause_submenus
@@ -49,11 +49,11 @@ function pause_manager:create(game)
       inventory = 1,
       map = 2,
       monsters = 3,
-      help = 4,
+      commands = 4,
     }
     if not game:has_item("monsters_encyclopedia") then
       order.monsters = nil
-      order.help = 3
+      order.commands = 3
     end
     return order
   end
@@ -70,7 +70,7 @@ function pause_manager:create(game)
     if submenus_order.monsters ~= nil then
       pause_submenus[submenus_order.monsters] = monsters_builder:new(game)
     end
-    pause_submenus[submenus_order.help] = help_builder:new(game)
+    pause_submenus[submenus_order.commands] = commands_builder:new(game)
 
     -- Play the sound of pausing the game.
     sol.audio.play_sound("pause_open")

@@ -15,4 +15,9 @@ function presentation_screen:on_key_pressed(key)
   end
 end
 
+function presentation_screen:on_joypad_button_pressed(button)
+
+  return self:on_key_pressed("space")
+end
+
 return presentation_screen

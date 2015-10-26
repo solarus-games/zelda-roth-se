@@ -229,5 +229,42 @@ function gui_designer:create(width, height)
   return widget
 end
 
+-- Forwards joypad events of a menu to keyboard events.
+-- Joypad direction event are replaced by direction keystrokes,
+-- and any joypad button event is replaced by a spacebar keyboard event.
+function gui_designer:map_joypad_to_keyboard(menu)
+
+  function menu:on_joypad_button_pressed(button)
+    return self:on_key_pressed("space")
+  end
+
+  function menu:on_joypad_axis_moved(axis, state)
+
+    if axis % 2 == 0 then  -- Horizontal axis.
+      if state > 0 then
+        return self:on_key_pressed("right")
+      elseif state < 0 then
+        return self:on_key_pressed("left")
+      end
+    else  -- Vertical axis.
+      if state > 0 then
+        return self:on_key_pressed("down")
+      elseif state < 0 then
+        return self:on_key_pressed("up")
+      end
+    end
+  end
+
+  function menu:on_joypad_hat_moved(hat, direction8)
+
+    if direction8 == -1 or direction8 % 2 ~= 0 then
+      return false
+    end
+
+    local keys = { "right", "up", "left", "down" }
+    return self:on_key_pressed_pressed(keys[direction8 % 2])
+  end
+end
+
 return gui_designer
 
