@@ -4,10 +4,10 @@ animation{
   frame_delay = 200,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 192, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
-    { x = 0, y = 240, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
-    { x = 0, y = 288, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
-    { x = 0, y = 336, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 192, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 240, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 288, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 336, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 4 },
   },
 }
 animation{
