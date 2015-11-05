@@ -286,7 +286,7 @@ function commands_manager:new(game)
       if not game.customizing_command and commands_items[cursor_index].customizable then  -- Customizing a game command.
         sol.audio.play_sound("ok")
         game.customizing_command = true
-        customizing_timer = sol.timer.start(commands, 300, function()
+        customizing_timer = sol.timer.start(commands_menu, 300, function()
           -- Make the red row blink.
           customizing_background_displayed = not customizing_background_displayed
           build_layout()
