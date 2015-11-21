@@ -2982,7 +2982,7 @@ tile{
 tile{
   layer = 1,
   x = 328,
-  y = 1080,
+  y = 1072,
   width = 16,
   height = 16,
   pattern = "door.3",
@@ -2991,7 +2991,7 @@ tile{
 tile{
   layer = 1,
   x = 296,
-  y = 1080,
+  y = 1072,
   width = 16,
   height = 16,
   pattern = "door.4",
@@ -3000,7 +3000,7 @@ tile{
 tile{
   layer = 1,
   x = 296,
-  y = 1072,
+  y = 1064,
   width = 16,
   height = 8,
   pattern = "door.4.support.1",
@@ -3009,7 +3009,7 @@ tile{
 tile{
   layer = 1,
   x = 296,
-  y = 1096,
+  y = 1088,
   width = 16,
   height = 8,
   pattern = "door.4.support.2",
@@ -3018,7 +3018,7 @@ tile{
 tile{
   layer = 1,
   x = 328,
-  y = 1072,
+  y = 1064,
   width = 16,
   height = 8,
   pattern = "door.3.support.1",
@@ -3027,7 +3027,7 @@ tile{
 tile{
   layer = 1,
   x = 328,
-  y = 1096,
+  y = 1088,
   width = 16,
   height = 8,
   pattern = "door.3.support.2",
@@ -3036,7 +3036,7 @@ tile{
 tile{
   layer = 1,
   x = 312,
-  y = 1080,
+  y = 1072,
   width = 16,
   height = 16,
   pattern = "floor.1",
@@ -4874,7 +4874,7 @@ wall{
 wall{
   layer = 1,
   x = 296,
-  y = 1080,
+  y = 1072,
   width = 48,
   height = 16,
   stops_enemies = true,
@@ -5173,7 +5173,7 @@ custom_entity{
   name = "auto_torch_lit_auto_door_a_1",
   layer = 1,
   x = 280,
-  y = 1069,
+  y = 1061,
   direction = 1,
   sprite = "entities/torch",
   model = "torch",
@@ -5183,7 +5183,7 @@ custom_entity{
   name = "auto_torch_lit_auto_door_a_2",
   layer = 1,
   x = 280,
-  y = 1117,
+  y = 1109,
   direction = 1,
   sprite = "entities/torch",
   model = "torch",
@@ -5193,7 +5193,7 @@ door{
   name = "auto_door_a",
   layer = 1,
   x = 296,
-  y = 1080,
+  y = 1072,
   direction = 0,
   sprite = "entities/door_normal",
 }
@@ -5202,7 +5202,7 @@ door{
   name = "auto_door_a_back",
   layer = 1,
   x = 328,
-  y = 1080,
+  y = 1072,
   direction = 2,
   sprite = "entities/door_normal",
 }
@@ -5909,7 +5909,7 @@ sensor{
   name = "dungeon_room_13_2",
   layer = 1,
   x = 312,
-  y = 1093,
+  y = 1085,
   width = 16,
   height = 16,
 }
@@ -5918,7 +5918,7 @@ sensor{
   name = "dungeon_room_14_1",
   layer = 1,
   x = 328,
-  y = 1093,
+  y = 1085,
   width = 16,
   height = 16,
 }
@@ -6085,7 +6085,7 @@ tile{
 tile{
   layer = 2,
   x = 312,
-  y = 1032,
+  y = 1024,
   width = 8,
   height = 112,
   pattern = "door_cache.4",
@@ -6094,7 +6094,7 @@ tile{
 tile{
   layer = 2,
   x = 320,
-  y = 1032,
+  y = 1024,
   width = 8,
   height = 112,
   pattern = "door_cache.3",
@@ -6103,7 +6103,7 @@ tile{
 tile{
   layer = 2,
   x = 320,
-  y = 1072,
+  y = 1064,
   width = 8,
   height = 32,
   pattern = "door_top.3",
@@ -6112,7 +6112,7 @@ tile{
 tile{
   layer = 2,
   x = 312,
-  y = 1072,
+  y = 1064,
   width = 8,
   height = 32,
   pattern = "door_top.4",
