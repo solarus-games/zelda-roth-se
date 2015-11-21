@@ -41,7 +41,7 @@ local function shoot()
 
   if not map.wizzrobe_recent_sound then
     sol.audio.play_sound("zora")
-    -- Avoid loudy simultaneous sounds if there are several wizzrobes.
+    -- Avoid loud simultaneous sounds if there are several wizzrobes.
     map.wizzrobe_recent_sound = true
     sol.timer.start(map, 200, function()
       map.wizzrobe_recent_sound = nil
