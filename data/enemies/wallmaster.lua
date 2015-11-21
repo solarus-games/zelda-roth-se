@@ -135,7 +135,7 @@ local previous_on_removed = enemy.on_removed
 function enemy:on_removed()
 
   if previous_on_removed then
-    enemy:previous_on_removed()
+    previous_on_removed(enemy)
   end
 
   if shadow ~= nil then
