@@ -15,7 +15,6 @@ text{ key = "options_menu.title", value = "OPTIONS" }
 text{ key = "pause.commands.action", value = "Action" }
 text{ key = "pause.commands.action_to_configure", value = "Appuie sur Action pour changer cette commande" }
 text{ key = "pause.commands.commands", value = "Commandes" }
-text{ key = "pause.commands.ctrl_and_direction", value = "Ctrl + dir." }
 text{ key = "pause.commands.down", value = "Bas" }
 text{ key = "pause.commands.fullscreen", value = "Plein écran" }
 text{ key = "pause.commands.item", value = "Utiliser objet" }

@@ -17,6 +17,25 @@ function camera_manager:create(game)
   local initial_x, initial_y, camera_width, camera_height
   local restore_camera
   local update_camera
+  local is_looking_command_pressed
+
+  -- Returns whether the player is currently pressing the keyboard
+  -- or joypad command associated to moving the camera.
+  function is_looking_command_pressed()
+
+    local key = game:get_value("keyboard_look")
+    if key ~= nil and sol.input.is_key_pressed(key) then
+      return true
+    end
+
+    local joypad_string = game:get_value("joypad_look")
+    local button = joypad_string:match("button (%d+)")
+    if button ~= nil and sol.input.is_joypad_button_pressed(button) then
+      return true
+    end
+
+    return false
+  end
 
   -- Moves the camera back to the hero.
   function restore_camera()
@@ -34,8 +53,7 @@ function camera_manager:create(game)
     local hero_x, hero_y = hero:get_center_position()
 
     map:move_camera(hero_x, hero_y, camera_speed, function()
-      if sol.input.is_key_pressed("left control") or
-          sol.input.is_key_pressed("right control") then
+      if is_looking_command_pressed() then
         just_restored = true
         update_camera()
       end
@@ -65,9 +83,8 @@ function camera_manager:create(game)
       return
     end
 
-    if not sol.input.is_key_pressed("left control") and
-        not sol.input.is_key_pressed("right control") then
-      -- Releasing control: restore the camera.
+    if not is_looking_command_pressed() then
+      -- Releasing command: restore the camera.
       restore_camera()
       return
     end
@@ -112,8 +129,7 @@ function camera_manager:create(game)
   function camera_menu:on_command_pressed(command)
 
     local handled = false
-    local control = sol.input.is_key_pressed("left control") or sol.input.is_key_pressed("right control")
-    if control and
+    if is_looking_command_pressed() and
         (command == "right" or command == "up" or command == "left" or command == "down") then
       update_camera()
       handled = true
@@ -144,7 +160,23 @@ function camera_manager:create(game)
       return handled
     end
 
-    if key == "left control" or key == "right control" then
+    if key == game:get_value("keyboard_look") then
+      update_camera()
+      handled = true
+    end
+
+    return handled
+  end
+
+  function camera_menu:on_joypad_button_released(button)
+
+    local handled = false
+    if not moving then
+      return handled
+    end
+
+    local joypad_action = "button " .. button
+    if game:get_value("jopyad_look") == joypad_action then
       update_camera()
       handled = true
     end

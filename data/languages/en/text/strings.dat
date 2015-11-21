@@ -15,7 +15,6 @@ text{ key = "options_menu.title", value = "OPTIONS" }
 text{ key = "pause.commands.action", value = "Action" }
 text{ key = "pause.commands.action_to_configure", value = "Press Action to configure this command" }
 text{ key = "pause.commands.commands", value = "Commands" }
-text{ key = "pause.commands.ctrl_and_direction", value = "Ctrl + dir." }
 text{ key = "pause.commands.down", value = "Down" }
 text{ key = "pause.commands.fullscreen", value = "Fullscreen" }
 text{ key = "pause.commands.item", value = "Use item" }

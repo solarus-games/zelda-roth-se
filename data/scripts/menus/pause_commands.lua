@@ -138,8 +138,7 @@ function commands_manager:new(game)
     {
       name = "look",
       unlocked = true,
-      customizable = false,
-      key = sol.language.get_string("pause.commands.ctrl_and_direction")
+      customizable = true,
     },
     {
       name = "fullscreen",
