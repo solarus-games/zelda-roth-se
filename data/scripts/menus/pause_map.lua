@@ -243,14 +243,14 @@ function map_manager:new(game)
     end
   end
 
-  function map_menu:on_key_pressed(key)
+  function map_menu:on_command_pressed(command)
 
     local handled = false
     if dungeon ~= nil then
-      if key == "up" then
+      if command == "up" then
         select_floor_up()
         handled = true
-      elseif key == "down" then
+      elseif command == "down" then
         select_floor_down()
         handled = true
       end
