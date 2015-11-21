@@ -22,6 +22,7 @@ _______________________________________________________________
 * Fix weak cavern wall already open in south-east.
 * Make the hammer activate crystals (#75).
 * Improve moving the camera with Ctrl+direction (#34).
+* Remember the last savegame played.
 * Dungeon 5: fix falling hands not properly removed.
 * Dungeon 7: fix a door not correctly aligned.
 * Dungeon 9: fix door closed when leaving without Zelda after boss key (#79).

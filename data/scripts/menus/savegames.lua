@@ -20,6 +20,29 @@ local function get_savegame_file_name(index)
   return "save" .. index .. ".dat"
 end
 
+local function get_last_savegame_slot()
+
+  local file = sol.file.open("last_save.dat")
+  if file == nil then
+    return 1
+  end
+
+  local index = file:read("*n")
+  file:close()
+  if index == nil or index < 1 or index > 3 then
+    return 1
+  end
+
+  return index
+end
+
+local function set_last_savegame_slot(index)
+
+  local file = sol.file.open("last_save.dat", "w")
+  file:write(index)
+  file:close()
+end
+
 local function build_layout()
 
   layout = gui_designer:create(320, 240)
@@ -126,7 +149,7 @@ function savegames_menu:on_started()
 
   build_layout()
   read_savegames()
-  set_cursor_position(1)
+  set_cursor_position(get_last_savegame_slot())
 end
 
 function savegames_menu:on_finished()
@@ -231,6 +254,7 @@ function show_savegame_action_box(savegame_index)
       if fairy_cursor_position == 1 then
         -- Load.
         sol.audio.play_sound("pause_closed")
+        set_last_savegame_slot(cursor_position)
         sol.main:start_savegame(games[cursor_position])
 
       elseif fairy_cursor_position == 2 then

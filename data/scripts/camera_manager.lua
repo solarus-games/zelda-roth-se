@@ -29,7 +29,7 @@ function camera_manager:create(game)
     end
 
     local joypad_string = game:get_value("joypad_look")
-    local button = joypad_string:match("button (%d+)")
+    local button = joypad_string and joypad_string:match("button (%d+)")
     if button ~= nil and sol.input.is_joypad_button_pressed(button) then
       return true
     end
