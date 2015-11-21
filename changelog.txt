@@ -19,6 +19,7 @@ _______________________________________________________________
 * Fix saving with life 0 during the game-over sequence (#82).
 * Fix collisions of fire rod and ice rod (#55).
 * Fix torches staying on after game over.
+* Fix weak cavern wall already open in south-east.
 * Make the hammer activate crystals (#75).
 * Improve moving the camera with Ctrl+direction (#34).
 * Dungeon 5: fix falling hands not properly removed.
