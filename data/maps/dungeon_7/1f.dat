@@ -5,6 +5,7 @@ properties{
   height = 1200,
   world = "dungeon_7",
   floor = 0,
+  num_layers = 3,
   tileset = "ice_brightblue",
   music = "dark_world_dungeon",
 }

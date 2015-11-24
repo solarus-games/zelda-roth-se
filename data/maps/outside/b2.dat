@@ -4,6 +4,7 @@ properties{
   width = 960,
   height = 960,
   world = "outside",
+  num_layers = 3,
   tileset = "light_world",
   music = "village",
 }

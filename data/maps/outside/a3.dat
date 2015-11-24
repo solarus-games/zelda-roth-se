@@ -4,6 +4,7 @@ properties{
   width = 1920,
   height = 960,
   world = "outside",
+  num_layers = 3,
   tileset = "light_world",
   music = "dark_world",
 }

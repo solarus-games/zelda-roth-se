@@ -3,6 +3,7 @@ properties{
   y = 2520,
   width = 320,
   height = 240,
+  num_layers = 3,
   tileset = "cave",
   music = "great_fairy",
 }

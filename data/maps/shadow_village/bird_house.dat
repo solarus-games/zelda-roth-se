@@ -3,6 +3,7 @@ properties{
   y = 1992,
   width = 320,
   height = 240,
+  num_layers = 3,
   tileset = "house",
   music = "village",
 }
