@@ -1,7 +1,4 @@
-- HUD of dungeon floors
 - Title screens: Solarus Edition, Vincent Jouillat and Solarus Team
-
-- Allow to map game commands
 - Video modes
 - Modernize the HUD
 - Musics
