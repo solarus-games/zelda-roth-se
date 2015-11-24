@@ -4,6 +4,5 @@ quest{
   title_bar = "Zelda Return of the Hylian",
   normal_quest_size = "320x240",
   min_quest_size = "320x240",
-  max_quest_size = "320x240",
+  max_quest_size = "960x720",
 }
-
