@@ -10,18 +10,7 @@ animation{
     { x = 64, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
   },
 }
-animation{
-  name = "hurt",
-  src_image = "enemies/skeleton.png",
-  frame_delay = 50,
-  frame_to_loop_on = 0,
-  directions = {
-    { x = 160, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
-    { x = 160, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
-    { x = 160, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
-    { x = 160, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
-  },
-}
+
 animation{
   name = "immobilized",
   src_image = "enemies/skeleton.png",
@@ -32,6 +21,7 @@ animation{
     { x = 96, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
   },
 }
+
 animation{
   name = "shaking",
   src_image = "enemies/skeleton.png",
@@ -44,9 +34,11 @@ animation{
     { x = 96, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
   },
 }
+
 animation{
   name = "stopped_watching_left",
   src_image = "enemies/skeleton.png",
+  frame_delay = 500,
   directions = {
     { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
     { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
@@ -54,9 +46,11 @@ animation{
     { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
   },
 }
+
 animation{
   name = "stopped_watching_right",
   src_image = "enemies/skeleton.png",
+  frame_delay = 500,
   directions = {
     { x = 32, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
     { x = 32, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
@@ -64,3 +58,17 @@ animation{
     { x = 32, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
   },
 }
+
+animation{
+  name = "hurt",
+  src_image = "enemies/skeleton.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 160, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 160, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 160, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 160, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+  },
+}
+

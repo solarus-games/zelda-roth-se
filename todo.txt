@@ -1,5 +1,7 @@
+- Finish the content
 - HUD of dungeon floors
 - Title screens: Solarus Edition, Vincent Jouillat and Solarus Team
+- Check heart pieces
 
 - Allow to map game commands
 - Video modes
