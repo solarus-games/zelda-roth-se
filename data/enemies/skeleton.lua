@@ -18,6 +18,9 @@ function sprite:on_animation_finished(animation)
   end
 end
 
+assert(enemy:get_sprite() == sprite)
+assert(sprite.on_animation_finished ~= nil)
+
 -- The enemy was stopped for some reason and should restart.
 function enemy:on_restarted()
 
