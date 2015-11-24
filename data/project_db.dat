@@ -8,6 +8,7 @@ map{ id = "caves/mudora_cave/1f", description = "Mudora cave 1F" }
 map{ id = "caves/mudora_cave/b1", description = "Mudora cave B1" }
 map{ id = "dungeon_1/1f", description = "Dungeon 1 1F" }
 map{ id = "dungeon_1/b1", description = "Dungeon 1 B1" }
+map{ id = "dungeon_1/debug_room", description = "Debug room" }
 map{ id = "dungeon_2/1f", description = "Dungeon 2 1F" }
 map{ id = "dungeon_3/1f", description = "Dungeon 3 1F" }
 map{ id = "dungeon_3/2f", description = "Dungeon 3 2F" }
