@@ -8,9 +8,9 @@ local item = ...
 local probabilities = {
   [{ "bomb", 1 }]       = 5,    -- 1 bomb.
   [{ "arrow", 1 }]      = 5,    -- 1 arrow.
-  [{ "rupee", 1 }]      = 250,  -- 1 rupee.
-  [{ "rupee", 2 }]      = 150,  -- 5 rupees.
-  [{ "rupee", 3 }]      = 100,  -- 20 rupees.
+  [{ "rupee", 1 }]      = 300,  -- 1 rupee.
+  [{ "rupee", 2 }]      = 250,  -- 5 rupees.
+  [{ "rupee", 3 }]      = 250,  -- 20 rupees.
   [{ "magic_flask", 1}] = 5,    -- Small magic jar.
   [{ "heart", 1}]       = 20,   -- Heart.
 }
