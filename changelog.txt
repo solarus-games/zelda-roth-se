@@ -3,6 +3,7 @@ _______________________________________________________________
 Zelda Return of the Hylian, Solarus Edition 1.0.8 (in progress)
 _______________________________________________________________
 
+* Increase rupee drop rates (#86).
 * Fix inappropriate English translation.
 
 ______________________________________________________________
