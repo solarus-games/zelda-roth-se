@@ -7,6 +7,15 @@ _______________________________________________________________
 
 ______________________________________________________________
 
+Zelda Return of the Hylian, Solarus Edition 1.0.8 (2015-12-07)
+______________________________________________________________
+
+* Increase rupee drop rates (#86).
+* Increase chances of getting bombs before dungeon 1.
+* Fix inappropriate English translation.
+
+______________________________________________________________
+
 Zelda Return of the Hylian, Solarus Edition 1.0.7 (2015-11-22)
 ______________________________________________________________
 
