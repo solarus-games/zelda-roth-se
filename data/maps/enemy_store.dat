@@ -3,7 +3,8 @@ properties{
   y = 0,
   width = 640,
   height = 480,
-  num_layers = 3,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "dungeon_grayblue",
   music = "same",
 }

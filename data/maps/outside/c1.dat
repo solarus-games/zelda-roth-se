@@ -4,7 +4,8 @@ properties{
   width = 960,
   height = 1200,
   world = "outside",
-  num_layers = 3,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "light_world",
   music = "lost_woods",
 }
