@@ -153,13 +153,13 @@ local function initialize_sensor()
     -- TODO use a custom entity or a wall to block enemies and thrown items?
     if name:match("^layer_up_sensor") then
       local x, y, layer = hero:get_position()
-      if layer < 2 then
+      if layer < map:get_max_layers() then
         hero:set_position(x, y, layer + 1)
       end
       return
     elseif name:match("^layer_down_sensor") then
       local x, y, layer = hero:get_position()
-      if layer > 0 then
+      if layer > map:get_min_layer() then
         hero:set_position(x, y, layer - 1)
       end
       return
