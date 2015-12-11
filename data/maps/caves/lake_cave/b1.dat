@@ -5,7 +5,8 @@ properties{
   height = 960,
   world = "lake_cave",
   floor = -1,
-  num_layers = 3,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "cave",
   music = "cave",
 }
