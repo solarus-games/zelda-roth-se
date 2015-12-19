@@ -124,6 +124,11 @@ function monsters_manager:new(game)
     return monster_count
   end
 
+  function monsters:get_max_count()
+
+    return #models
+  end
+
   return monsters
 end
 
