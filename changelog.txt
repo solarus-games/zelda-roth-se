@@ -4,6 +4,7 @@ Zelda Return of the Hylian, Solarus Edition 1.1.0 (in progress)
 _______________________________________________________________
 
 * Upgrade to Solarus 1.5.
+* Fix stuck in a cliff west of the castle (#87).
 * Fix silver arrows incorrectly changing the arrow counter (#88).
 * Fix stats showing 47/46 monsters if a chicken was killed (#89).
 
