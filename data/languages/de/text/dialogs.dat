@@ -1,0 +1,1865 @@
+dialog{
+  id = "_crystal",
+  text = [[
+Es ist ein Kristallschalter.
+Versuch, ihn mit etwas zu treffen.
+]]
+}
+
+dialog{
+  id = "_shop.amount_full",
+  text = [[
+Das brauchst du jetzt nicht.
+]]
+}
+
+dialog{
+  id = "_shop.not_enough_money",
+  text = [[
+Leider hast du nicht genug Rubine.
+]]
+}
+
+dialog{
+  id = "_shop.question",
+  text = [[
+Preis: $v Rubine. OK?
+    $? Ja
+    $? Nein
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.1",
+  text = [[
+Du hast einen Pfeil gefunden!
+Benutze Pfeil und Bogen, um hartnäckige
+Gegner aus der Ferne zu besiegen.
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.2",
+  text = [[
+Du hast 5 Pfeile gefunden!
+Benutze Pfeil und Bogen, um hartnäckige
+Gegner aus der Ferne zu besiegen.
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.3",
+  text = [[
+Du hast 10 Pfeile gefunden!
+Benutze Pfeil und Bogen, um hartnäckige
+Gegner aus der Ferne zu besiegen.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.1",
+  text = [[
+Du hast eine Bombe gefunden!
+Benutze Bomben, um Gegner oder Hindernisse
+zu sprengen.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.2",
+  text = [[
+Du hast 3 Bomben gefunden!
+Benutze Bomben, um Gegner oder Hindernisse
+zu sprengen.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.3",
+  text = [[
+Du hast 8 Bomben gefunden!
+Benutze Bomben, um Gegner oder Hindernisse
+zu sprengen.
+]]
+}
+
+dialog{
+  id = "_treasure.boss_key.1",
+  text = [[
+Du hast den Endgegnerschüssel gefunden!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.1",
+  text = [[
+Du hast eine leere Flasche gefunden!
+Damit kannst du Tränke transportieren.
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.2",
+  text = [[
+Du hast einen roten Trank erhalten!
+Trinke ihn, um deine Energie wieder-
+herzustellen.
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.3",
+  text = [[
+Du hast einen grünen Trank erhalten!
+Trinke ihn, um deine Magie wieder-
+herzustellen.
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.4",
+  text = [[
+Du hast einen blauen Trank erhalten!
+Trinke ihn, um deine Energie und 
+deine Magie wiederherzustellen.
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.1",
+  text = [[
+Du hast eine leere Flasche gefunden!
+Damit kannst du Tränke transportieren.
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.2",
+  text = [[
+Du hast einen roten Trank erhalten!
+Trinke ihn, um deine Energie wieder-
+herzustellen.
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.3",
+  text = [[
+Du hast einen grünen Trank erhalten!
+Trinke ihn, um deine Magie wieder-
+herzustellen.
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.4",
+  text = [[
+Du hast einen blauen Trank erhalten!
+Trinke ihn, um deine Energie und
+deine Magie wiederherzustellen.
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.1",
+  text = [[
+Du hast eine leere Flasche gefunden!
+Damit kannst du Tränke transportieren.
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.2",
+  text = [[
+Du hast einen roten Trank erhalten!
+Trinke ihn, um deine Energie wieder-
+herzustellen.
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.3",
+  text = [[
+Du hast einen grünen Trank erhalten!
+Trinke ihn, um deine Magie wieder-
+herzustellen.
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.4",
+  text = [[
+Du hast einen blauen Trank erhalten!
+Trinke ihn, um deine Energie und
+deine Magie wiederherzustellen.
+]]
+}
+
+dialog{
+  id = "_treasure.bow.1",
+  text = [[
+Du hast den Bogen erhalten!
+Benutze ihn, um ein fernes Ziel zu
+treffen.
+]]
+}
+
+dialog{
+  id = "_treasure.bow.2",
+  text = [[
+Du hast den Bogen erhalten!
+Benutze ihn, um ein fernes Ziel zu
+treffen.
+]]
+}
+
+dialog{
+  id = "_treasure.bow_silver.1",
+  text = [[
+Dein Bogen verschießt nun Silberpfeile
+mit einer verheerenden Wirkunug!
+]]
+}
+
+dialog{
+  id = "_treasure.bow_silver.2",
+  text = [[
+Dein Bogen verschießt nun Silberpfeile
+mit einer verheerenden Wirkunug!
+]]
+}
+
+dialog{
+  id = "_treasure.compass.1",
+  text = [[
+Du hast den Kompass gefunden!
+Du kannst den Endgegner und die Truhen
+auf der Karte finden.
+]]
+}
+
+dialog{
+  id = "_treasure.din_medallion.1",
+  text = [[
+Du hast ein magisches Amulett gefunden!
+Deine Verteidigung hat sich soeben erhöht!
+]]
+}
+
+dialog{
+  id = "_treasure.farore_medallion.1",
+  text = [[
+Du hast ein magisches Amulett gefunden!
+Deine Verteidigung hat sich soeben erhöht!
+]]
+}
+
+dialog{
+  id = "_treasure.fire_rod.1",
+  text = [[
+Du hast den Feuerstab gefunden!
+Jetzt kannst du mit starken Flammen schießen.
+]]
+}
+
+dialog{
+  id = "_treasure.flippers.1",
+  text = [[
+Du hast die Schwimmflossen gefunden!
+Benutze sie, um im Wasser zu schwimmen.
+]]
+}
+
+dialog{
+  id = "_treasure.glove.1",
+  text = [[
+Du hast die Handschuhe gefunden!
+Benutze sie, um Objekte mit der Aktionstaste
+anzuheben.
+]]
+}
+
+dialog{
+  id = "_treasure.glove.2",
+  text = [[
+Die Stärke deiner Handschuhe hilft dir,
+schwere Steine zu heben.
+]]
+}
+
+dialog{
+  id = "_treasure.hammer.1",
+  text = [[
+Du hast den magischen Hammer gefunden!
+Benutze ihn, um Hinternisse zu
+zerstampfen.
+]]
+}
+
+dialog{
+  id = "_treasure.heart.1",
+  text = [[
+Du hast ein Herz gefunden!
+]]
+}
+
+dialog{
+  id = "_treasure.hookshot.1",
+  text = [[
+Du hast den Enterhaken gefunden!
+Benutze ihn, um Hindernisse zu
+überqueren.
+]]
+}
+
+dialog{
+  id = "_treasure.ice_rod.1",
+  text = [[
+Du hast den Eisstab gefunden!
+Benutze ihn, um etwas aus einer bestimmten
+Entfernung einzufrieren.
+]]
+}
+
+dialog{
+  id = "_treasure.lamp.1",
+  text = [[
+Du hast die Laterne gefunden!
+Benutze sie, um Flammen zu erzeugen.
+]]
+}
+
+dialog{
+  id = "_treasure.magic_crystal.1",
+  text = [[
+Du hast einen magischen Kristall
+gefunden!
+]]
+}
+
+dialog{
+  id = "_treasure.magic_flask.1",
+  text = [[
+Du hast ein kleines magisches
+Gefäß gefunden!
+]]
+}
+
+dialog{
+  id = "_treasure.magic_flask.2",
+  text = [[
+Du hast ein großes magisches
+Gefäß gefunden!
+]]
+}
+
+dialog{
+  id = "_treasure.map.1",
+  text = [[
+Du hast die Karte gefunden!
+Drücke P, um die Karte zu betrachten.
+]]
+}
+
+dialog{
+  id = "_treasure.mudora_book.1",
+  text = [[
+Du hast das Buch von Mudora gefunden!
+
+Ab jetzt kannst du die antike Sprache
+der Hylianer verstehen.
+]]
+}
+
+dialog{
+  id = "_treasure.nayru_medallion.1",
+  text = [[
+Du hast ein magisches Amulett erhalten!
+Deine Verteidigung hat sich soeben
+erhöht.
+]]
+}
+
+dialog{
+  id = "_treasure.piece_of_heart.1",
+  text = [[
+Du hast ein Herzteil gefunden!
+]]
+}
+
+dialog{
+  id = "_treasure.shield.1",
+  text = [[
+Du hast ein Schild gefunden!
+Deine Verteidigung erhöht sich um
+einen Punkt.
+]]
+}
+
+dialog{
+  id = "_treasure.small_key.1",
+  text = [[
+Du hast einen kleinen Schlüssel gefunden!
+Drücke die Aktionstaste vor einer ver-
+schlossenen Tür, um sie zu öffnen.
+]]
+}
+
+dialog{
+  id = "_treasure.sword.1",
+  text = [[
+Du hast ein Schwert gefunden!
+
+Jetzt kannst du Monster mit der C-Taste
+bekämpfen!
+
+Halte C gedrückt für einen Drehangriff!
+]]
+}
+
+dialog{
+  id = "_treasure.sword.2",
+  text = [[
+Deine Schwertstärke verdreifacht sich und
+nun kannst du einige magische Angriffe
+abwehren. Großartig!
+]]
+}
+
+dialog{
+  id = "_treasure.sword.3",
+  text = [[
+Du hast das Meisterschwert gefunden!
+Sogar Ganon ist dagegen nicht immun
+(theoretisch).
+]]
+}
+
+dialog{
+  id = "_treasure.triforce.1",
+  text = [[
+Du hast das Triforce gefunden!
+]]
+}
+
+dialog{
+  id = "boss_key_required",
+  text = [[
+Diese Tür führt in das Versteck
+des Endgegners. Du brauchst den
+Endgegnerschlüssel, um sie zu öffnen.
+]]
+}
+
+dialog{
+  id = "bottle_merchant.done",
+  text = [[
+Tschuldigung, dies war meine einzige
+Flasche.
+]]
+}
+
+dialog{
+  id = "bottle_merchant.no",
+  text = [[
+Komm zurück, wenn du es dir anders
+überlegt hast.
+]]
+}
+
+dialog{
+  id = "bottle_merchant.offer",
+  text = [[
+Ich verkaufe eine Flasche für 100 Rubine,
+bist du interessiert?
+                  $? Ja
+                  $? Nein
+]]
+}
+
+dialog{
+  id = "bottle_merchant.yes",
+  text = [[
+Danke, hier ist deine Flasche.
+]]
+}
+
+dialog{
+  id = "chest_game.already_done",
+  text = [[
+Tut mir Leid, aber ich habe keine weiteren
+Preise in diesem Spiel.
+]]
+}
+
+dialog{
+  id = "chest_game.go_chest",
+  text = [[
+Wähle eine Truhe.
+]]
+}
+
+dialog{
+  id = "chest_game.lost",
+  text = [[
+Du hast verloren! Diese Truhe ist leer.
+Versuch es noch mal!
+]]
+}
+
+dialog{
+  id = "chest_game.pay_first",
+  text = [[
+Hey!
+Du musst bezahlen, um eine meiner Truhen
+zu öffnen!
+]]
+}
+
+dialog{
+  id = "chest_game.rules",
+  text = [[
+Einer dieser Truhen enthält ein Herzteil,
+willst du es für 10 Rubine versuchen?
+                 $? Ja
+                 $? Nein
+]]
+}
+
+dialog{
+  id = "chest_game.thanks",
+  text = [[
+Danke.
+]]
+}
+
+dialog{
+  id = "crystal.1",
+  text = [[
+Wofür das wohl gut ist?
+]]
+}
+
+dialog{
+  id = "crystal.5",
+  text = [[
+Nur noch 2 Kristalle!
+]]
+}
+
+dialog{
+  id = "crystal.6",
+  text = [[
+Nur noch einer!
+]]
+}
+
+dialog{
+  id = "crystal.7",
+  text = [[
+Du hast alle Kristalle, renn zum Schloss
+und rette Zelda!
+]]
+}
+
+dialog{
+  id = "crystal.remaining",
+  text = [[
+Nur noch $v Kristalle zu finden!
+]]
+}
+
+dialog{
+  id = "dungeon_1.welcome",
+  text = [[
+                    Level 1
+
+                  Waldtempel
+]]
+}
+
+dialog{
+  id = "dungeon_2.welcome",
+  text = [[
+                    Level 2
+
+                  Wassertempel
+]]
+}
+
+dialog{
+  id = "dungeon_3.welcome",
+  text = [[
+                    Level 3
+
+                  Bergtempel
+]]
+}
+
+dialog{
+  id = "dungeon_4.welcome",
+  text = [[
+                    Level 4
+
+                  Wüstentempel
+]]
+}
+
+dialog{
+  id = "dungeon_5.welcome",
+  text = [[
+                    Level 5
+
+             Tempel der Dunkelheit
+]]
+}
+
+dialog{
+  id = "dungeon_6.welcome",
+  text = [[
+                    Level 6
+
+                  Feuertempel
+]]
+}
+
+dialog{
+  id = "dungeon_7.welcome",
+  text = [[
+                    Level 7
+
+                   Eistempel
+]]
+}
+
+dialog{
+  id = "dungeon_8.welcome",
+  text = [[
+                    Level ?
+
+               Versteckter Tempel
+]]
+}
+
+dialog{
+  id = "dungeon_9.welcome",
+  text = [[
+                  Letzer Level
+
+                 Schloss Hyrule
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.almost_there",
+  text = [[
+Wir sind fast da, folg mir!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.dont_leave_castle",
+  text = [[
+Ganon ist immer noch irgendwo im Schloss.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.go_ganon",
+  text = [[
+Ganon ist hinter dieser Tür, ich werde
+deine Wunden heilen.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.go_kakariko",
+  text = [[
+Ich fürchte, du kannst Ganon mit deinen
+jetzigen Waffen nicht besiegen.
+Geh und sprich mit dem Dorfältesten des
+Kakariko-Dorfs, ich bin mir sicher, dass
+er eine Lösung finden wird.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.hello",
+  text = [[
+Gratulation, Link, du hast es geschafft, mich
+zu retten!
+
+
+
+Lass uns schnell Ganon finden, wir müssen
+das Triforce wieder erhalten.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.secret_wall",
+  text = [[
+Der Geheimgang hinter dem Thron führt zu
+Gagnon. Beeilung!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.should_wait_zelda",
+  text = [[
+Du solltest auf Prinzessin Zelda warten!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.weak_wall_ignored_zelda",
+  text = [[
+Hast du nicht das unangenehme Gefühl, jemanden
+vergessen zu haben?
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.zelda_waiting",
+  text = [[
+Zelda wartet auf dich!
+]]
+}
+
+dialog{
+  id = "dungeon_finished_save",
+  text = [[
+Willst du das Spiel speichern?
+
+                   $? Ja
+                   $? Nein
+]]
+}
+
+dialog{
+  id = "ending",
+  text = [[
+Genau in dem Augenblick, in dem Link das
+Triforce berührte, verschwanden die Monster
+und Frieden ist wieder eingekehrt.
+
+
+Dann traf Prinzessin Zelda eine großartige
+Entscheidung: Sie berührte umgehend das
+Triforce und machte ihren Wunsch.
+
+
+Das Triforce war immer der Ursprung von so
+vielen Leides im Königreich, früher oder
+später würde es eine andere böse Kreatur
+finden.
+
+Kurz, nachdem die Prinzessin das Relikt
+berührte, verschwand es für immer aus
+Hyrule.
+
+
+Seit diesem Tag lebten die Leute in Hyrule
+in Frieden und ohne Angst vor neuen
+Katastrophen.
+
+
+Und das ist das Ende der Legende von Zelda,
+vom Triforce und das Goldene Zeitalter
+brach an.
+
+
+Nach der Legende ruht das Meisterschwert
+irgendwo, als die letzte Erinnerung an Links
+Abenteuer.
+]]
+}
+
+dialog{
+  id = "fairy_cave_already_done",
+  text = [[
+...
+]]
+}
+
+dialog{
+  id = "fairy_cave_desert.reward",
+  text = [[
+Gratulation, Link, dafür, dass du mich gefunden
+hast. Als Belohnung gebe ich dir das Din-
+Amulett, es erhöht deine Verteidigung um
+1 Punkt.
+]]
+}
+
+dialog{
+  id = "fairy_cave_forest.reward",
+  text = [[
+Gratulation, Link, dafür, dass du mich gefunden
+hast. Als Belohnung gebe ich dir das Farore-
+Amulett, es erhöht deine Verteidigung um
+1 Punkt.
+]]
+}
+
+dialog{
+  id = "fairy_cave_lake.reward",
+  text = [[
+Gratulation, Link, dafür, dass du mich gefunden
+hast. Als Belohnung gebe ich dir das Nayru-
+Amulett, es erhöht deine Verteidigung um
+zwei Punkte.
+]]
+}
+
+dialog{
+  id = "fairy_cave_ruins.reward",
+  text = [[
+Gratulation, Link, dafür, dass du mich gefunden
+hast. Als Belohnung verdopple ich die Kapazität
+deiner Magie.
+]]
+}
+
+dialog{
+  id = "fairy_cave_ruins.treasure",
+  text = [[
+Deine Magiekapazität hat sich verdoppelt!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.first",
+  text = [[
+Finde 3 weitere, um ein neues Herz zu erhalten!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.fourth",
+  text = [[
+Deine Gesundheit hat sich soeben erhöht!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.second",
+  text = [[
+Finde 2 weitere, um ein neues Herz zu erhalten!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.third",
+  text = [[
+Finde noch ein weiteres, um ein neues Herz
+zu erhalten!
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.hello",
+  text = [[
+Kann ich etwas für dich tun?
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.not_now",
+  text = [[
+Komm später wieder, ich hab im Moment viel
+zu tun!
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_bow",
+  text = [[
+Willst du, dass ich deinen Bogen verbessere?
+
+            $? Ja
+            $? Nein
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_glove",
+  text = [[
+Willst du, dass ich deine Handschuhe
+verbessere?
+
+            $? Ja
+            $? Nein
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_sword",
+  text = [[
+Willst du, dass ich dein Schwert
+abhärte?
+
+            $? Ja
+            $? Nein
+]]
+}
+
+dialog{
+  id = "gerudo_village.leader_house.go_blacksmith",
+  text = [[
+Hallo, Link. Ich bin der Dorfälteste. Du solltest
+zum Schmied gehen und ihm zeigen, welches Equip-
+ment du von ihm verbessert haben möchtest.
+
+Man hat mich über deine Aufgabe informiert, also
+habe ich mit ihm schon alles arrangiert.
+Alles wird für dich kostenlos sein.
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.no_bottle",
+  text = [[
+Komm zurück, wenn du eine leere Flasche hast,
+und ich werde dir einen grünen Trank ver-
+kaufen, der deine Magie wiederherstellt.
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.offer",
+  text = [[
+Ein grüner Trank für $v Rubine, bist
+du interessiert?
+              $? Ja
+              $? Nein
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.yes",
+  text = [[
+Danke, hier ist dein Trank.
+]]
+}
+
+dialog{
+  id = "gerudo_village.woman_house.woman",
+  text = [[
+Hallo! Wenn du nach dem Schmied suchst,
+er lebt etwas weiter weg.
+]]
+}
+
+dialog{
+  id = "intro.fresco_1",
+  text = [[
+Das Königreich von Hyrule lebte in
+Frieden, seit Link, der letzte
+Ritter von Hyrule den bösen Ganon
+besiegte
+
+und das wertvolle Triforce zurück-
+erhalten hat.
+]]
+}
+
+dialog{
+  id = "intro.fresco_2",
+  text = [[
+Niemand weiß, was sich Link vom Triforce
+gewünscht hat, aber er hatte die Wieder-
+vereinigung der hellen und der dunklen
+Welt zur Folge, und die Wiederauferstehung
+der Nachkommen der 7 Weisen.
+]]
+}
+
+dialog{
+  id = "intro.fresco_3",
+  text = [[
+Als nächstes händigte Link das Triforce
+und das Meisterschwert an Prinzessin
+Zelda aus, und die Leute fingen an, zu
+glauben, dass der Frieden bestehen
+bleiben würde.
+
+Doch die Leute lagen falsch ...
+]]
+}
+
+dialog{
+  id = "intro.fresco_4",
+  text = [[
+Leider hatte Links Wunsch auch negative
+Folgen.
+Ganon und seine Lakaien wurden wieder-
+belebt und bereiteten sich auf den
+Angriff vor.
+]]
+}
+
+dialog{
+  id = "intro.fresco_5",
+  text = [[
+Irgendwo im Hyrule-Wald schläft Link
+ohne den geringsten Gedanken daran,
+dass Ganon bereits zur Offensive über-
+gegangen ist, bis eine vertraute Stimme
+zu ihm in seinem Schlaf sprichst.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.first_time",
+  text = [[
+Hallo, Link. Ich bin der Dorfälteste.
+Ich hatte dich schon erwartet.
+
+
+Seit diesen Morgen ziehen Monster in
+Hyrule umher. Ich versuchte, mit Zelda darüber
+zu reden, aber wie du vielleicht schon ge-
+sehen hast, verhindert ein starker Zauber
+den Zutritt ins Schloss.
+Du sagst, dass Ganon für all das
+verantwortlich ist? Er hat das Triforce
+gestohlen und Prinzessin Zelda
+eingesperrt?
+
+
+Hmm ... Die Situation ist ernster, als ich
+dachte.
+
+
+Wir müssen sehr schnell handeln, du musst
+dich wieder gegen Ganon stellen.
+
+
+Wie man das Schloss betritt? Ich hab da so
+eine Idee ...
+
+
+Wie du weißt, wurde die Kraft der 7 Weisen
+in 7 Kristallen vom Zauberer Aghanim ein-
+gesperrt, als er versuchte, den Weg in die
+Dunkle Welt, wo Ganon war, zu öffnen.
+Doch, selbst, nachdem du die Nachkommen der
+7 Weisen vom Tod wieder zurückgeholt hattest,
+hatten diese Kristalle ihre Kraft behalten.
+Sie wurden tief in den 7 Tempeln versteckt.
+Sammel sie alle, und du solltest in der Lage
+sein, Ganons Zauber zu brechen.
+
+
+Aber das wird nicht leicht sein, Ganon wird
+sicherlich seine besten Einheiten schicken,
+um diese Kristalle zu schützen.
+
+
+Eins noch, mit deiner jetzigen Ausrüstung
+wirst du nicht weit kommen. Geh und triff
+dich mit dem Waffenhändlier und sag ihm,
+dass du in meinem Auftrag kommst. Er wird
+dir wahrscheinlich eine Geste machen.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_bow",
+  text = [[
+Geh und triff dich mit dem Waffenhändler
+und erzähl ihm, dass du in meinem Auftrag
+kommst. Er wird dir wahrscheinlich eine
+Geste machen.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_castle",
+  text = [[
+Du hast die 7 Kristalle gefunden? Geh
+sofort ins Schluss, du musst die Prinzessin
+retten, sie wird besser als ich wissen,
+wie man Hyrule retten kann.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_crystals",
+  text = [[
+Du musst die 7 Kristalle sammeln, um über-
+haupt eine Chance haben zu können, Zelda
+und Hyrule zu retten.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_excalibur",
+  text = [[
+Deine Waffen sind gegen Ganon wirkungslos?
+Dann musst du das Meisterschwert finden.
+Es wird gesagt, dass es in einem versteckten
+Tempel versteckt wird.
+
+Übrigens, man erzählt sich auch, dass der Weg
+zum Schwert des Sündenfluchs ein Dorf, das
+von Monstern bevölkert wird, kreuzt.
+
+Ich frage mich, ob ein solches Dorf existiert.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_ganon",
+  text = [[
+Es ist an der Zeit, Ganon anzugreifen und
+das Triforce zurückzuerobern!
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_glove",
+  text = [[
+Allerdings fürchte ich, dass dein aktuelles
+Equipment nicht ausreicht, um diesen Tempel
+zu erreichen. Vielleicht solltest du den
+Schmied im Gerudo-Dorf aufsuchen.
+]]
+}
+
+dialog{
+  id = "kakariko.potion_house.no_bottle",
+  text = [[
+Komm zurück, wenn du eine leere Flasche hast,
+und ich werde dir einen roten Trank, der dir
+deine Lebensenergie wiederherstellt, verkaufen.
+]]
+}
+
+dialog{
+  id = "kakariko.potion_house.offer",
+  text = [[
+Ein roter Trank für $v Rubine, bist du
+interessiert?
+
+              $? Ja
+              $? Nein
+]]
+}
+
+dialog{
+  id = "kakariko.potion_house.yes",
+  text = [[
+Danke, hier ist dein Trank.
+]]
+}
+
+dialog{
+  id = "kakariko.shop.reduced_bow",
+  text = [[
+Was!?
+Du bist im Auftrag des Dorfältesten hier?
+Na gut, dann gebe ich dir halt einen Preis-
+nachlass für den Bogen.
+]]
+}
+
+dialog{
+  id = "kakariko.tavern.drunk_man",
+  text = [[
+Hicks! Man sagt sich, dass eine Fee verzauberte
+Dinge ... Hicks! ... an Abenteurer gibt,
+die sie finden. Hicks!
+]]
+}
+
+dialog{
+  id = "kakariko.tavern.waiter",
+  text = [[
+Hallo, was möchtest du trinken?
+]]
+}
+
+dialog{
+  id = "link_house.zelda_message",
+  text = [[
+Hilf mir!
+Hilf mir!
+Ich bin es! Zelda!
+Ich spreche zu dir mittels Telepathie.
+Ich bin ein Gefangener im Kerker des
+Schlosses!
+Ich brauche deine Hilfe!
+Ganon ist zurück, und er hat wahrscheinlich
+schon das Triforce gefunden.
+Komm schnell zum Schloss, Link, du bist
+meine einzige Hoffnung.
+
+
+HILFE: Drücke F1, um die Befehle zu sehen.
+]]
+}
+
+dialog{
+  id = "monster_house.found_all",
+  text = [[
+Ich kann es nicht fassen, du hast es
+geschafft, alle Gegnerarten zu besiegen!
+Gratulation, Link!
+]]
+}
+
+dialog{
+  id = "monster_house.no_more_reward",
+  text = [[
+Es tut mir Leid, aber ich habe keine
+Geschenke mehr für dich.
+]]
+}
+
+dialog{
+  id = "monster_house.one_remaining",
+  text = [[
+Nur noch ein weiterer Gegner bis zur
+nächsten Belohnung!
+]]
+}
+
+dialog{
+  id = "monster_house.remaining",
+  text = [[
+Noch $v Gegner bis zur nächsten Belohnung.
+]]
+}
+
+dialog{
+  id = "monster_house.reward",
+  text = [[
+Nimm dieses Geschenk an für deine
+Mühen:
+]]
+}
+
+dialog{
+  id = "monster_house.welcome",
+  text = [[
+Willkommen, Link!
+Lass mich dir erklären, was ich hier tue.
+
+
+Wie du sicher gemerkt hast, sind Monster in
+Hyrule aufgetaucht. Es ist das erste mal,
+dass ich Monster seit deinem Sieg über Ganon
+sehen kann.
+
+
+Nun ja, ich hab mich entschieden, sie alle
+zu katalogisieren.
+
+
+Leider bin ich viel zu ängstlich, um sie zu
+treffen, also brauch ich deine Hilfe.
+
+
+Du musst jede Monsterart bekämpfen und zurück-
+kehren, um mir Bericht zu erstatten.
+
+
+Jedes mal, wenn du 7 neue Arten von Gegnern
+besiegt hast, geb ich dir ein Herzteil.
+
+
+Wenn du sehen möchtest, welche Gegner du
+schon besiegt hast, drücke M.
+]]
+}
+
+dialog{
+  id = "not_enough_money",
+  text = [[
+Tschuldigung, du hast nicht genügend Rubine.
+]]
+}
+
+dialog{
+  id = "outside_a1.c_sign",
+  text = [[
+Verlaufen?
+Sie befinden sich hier:
+                        X
+]]
+}
+
+dialog{
+  id = "outside_a1.dungeon_4_sign",
+  text = [[
+Wüstentempel
+
+Nehmen Sie sich ein Bad
+(kein Trinkwasser).
+]]
+}
+
+dialog{
+  id = "outside_a1.old_lady_npc",
+  text = [[
+Hast du den Schmied dieses Dorfes gesehen?
+Ich habe gehört, dass er sehr talentiert
+darin sei, das Equipment von Abenteurern zu
+verbessern. Viele Leute besuchen ihn.
+]]
+}
+
+dialog{
+  id = "outside_a1.s_sign",
+  text = [[
+Gerudo-Dorf
+]]
+}
+
+dialog{
+  id = "outside_a1.se_sign",
+  text = [[
+S: Kakariko-Dorf
+W: Wüste
+O: Todesberg
+]]
+}
+
+dialog{
+  id = "outside_a1.sw_sign",
+  text = [[
+S: Zum Schloss Hyrule
+]]
+}
+
+dialog{
+  id = "outside_a1.thief_npc",
+  text = [[
+Der Tempel ist in der tiefsten Wüste, in
+einer antiken Oase.
+]]
+}
+
+dialog{
+  id = "outside_a2.castle_sign",
+  text = [[
+Schloss Hyrule
+]]
+}
+
+dialog{
+  id = "outside_a2.sw_sign",
+  text = [[
+O: Kakariko-Dorf
+]]
+}
+
+dialog{
+  id = "outside_a3.ne_sign",
+  text = [[
+W: Schildkrötenfelsen
+O: Hylia-See
+]]
+}
+
+dialog{
+  id = "outside_a3.se_sign",
+  text = [[
+W: Schildkrötenfelsen
+O: Hylia-See
+]]
+}
+
+dialog{
+  id = "outside_b1.dungeon_3_sign",
+  text = [[
+Bergtempel
+
+Nichts für Herzkranke, Angsthasen und
+schwache Gemüter.
+]]
+}
+
+dialog{
+  id = "outside_b1.s_sign",
+  text = [[
+N: Bergtempel
+S: Hyrule-Feld
+]]
+}
+
+dialog{
+  id = "outside_b1.sw_sign",
+  text = [[
+W: Wüsteneingang
+N: Bergtempel
+]]
+}
+
+dialog{
+  id = "outside_b2.broom_grandma",
+  text = [[
+Was für ein schöner Tag!
+]]
+}
+
+dialog{
+  id = "outside_b2.chicken_boy",
+  text = [[
+Warum hab ich es bloß akzeptiert, mich
+um diesen Schwachsinn zu kümmern?
+Ich hasse Hennen!
+]]
+}
+
+dialog{
+  id = "outside_b2.n_sign",
+  text = [[
+N: Wüste und Gerudo-Dorf
+]]
+}
+
+dialog{
+  id = "outside_b2.s_sign",
+  text = [[
+S: Hylia-See
+W: Schloss Hyrule
+]]
+}
+
+dialog{
+  id = "outside_b2.sw_sign",
+  text = [[
+W: Schloss Hyrule
+]]
+}
+
+dialog{
+  id = "outside_b2.village_sign",
+  text = [[
+Kakariko-Dorf
+]]
+}
+
+dialog{
+  id = "outside_b2.village_welcome_npc",
+  text = [[
+Du kannst viele Dinge im Kaufladen des
+Dorfes finden.
+]]
+}
+
+dialog{
+  id = "outside_b3.dungeon_2_sign",
+  text = [[
+Seetempel
+
+Badekappe ist vorgeschrieben.
+]]
+}
+
+dialog{
+  id = "outside_b3.dungeon_7_sign",
+  text = [[
+Eistempel
+
+Das Personal möchte Sie daran erinnern,
+dass ein Tempel keine Eislaufhalle ist.
+]]
+}
+
+dialog{
+  id = "outside_b3.n_sign",
+  text = [[
+N: Hyrule-Feld
+]]
+}
+
+dialog{
+  id = "outside_b3.ne_sign",
+  text = [[
+N: Hyrule-Feld
+]]
+}
+
+dialog{
+  id = "outside_b3.nw_sign",
+  text = [[
+N: Kakariko-Dorf
+]]
+}
+
+dialog{
+  id = "outside_b3.se_sign",
+  text = [[
+O: Schattendorf
+- Nicht für die Lebenden -
+]]
+}
+
+dialog{
+  id = "outside_b3.sw_sign",
+  text = [[
+W: Feuerland
+]]
+}
+
+dialog{
+  id = "outside_b3.w_sign",
+  text = [[
+W: Feuerland
+]]
+}
+
+dialog{
+  id = "outside_b4.dungeon_8_sign",
+  text = [[
+Versteckter Tempel
+
+Hier ruht das Schwert des Sündenfluchs,
+das Meisterschwert.
+]]
+}
+
+dialog{
+  id = "outside_b4.e_sign",
+  text = [[
+N: Zum spukigen Friedhof
+]]
+}
+
+dialog{
+  id = "outside_c1.dungeon_1_sign",
+  text = [[
+Waldtempel
+
+Schont die Bäume, esst Grünspechte!
+]]
+}
+
+dialog{
+  id = "outside_c1.link_house_sign",
+  text = [[
+N: Links Zuhause
+W: Hyrule-Feld
+O: Waldtempel
+]]
+}
+
+dialog{
+  id = "outside_c2.ne_sign",
+  text = [[
+O: Waldeingang
+]]
+}
+
+dialog{
+  id = "outside_c2.nw_sign",
+  text = [[
+N: Todesberg
+]]
+}
+
+dialog{
+  id = "outside_c2.se_sign",
+  text = [[
+S: Hylia-See
+O: Spukiger Friedhof
+]]
+}
+
+dialog{
+  id = "outside_c2.sw_sign",
+  text = [[
+S: Zum Kakariko-Dorf
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.dont_pass",
+  text = [[
+Hol dir zuerst die Erlaubnis des
+Dorfältesten, wenn du wirklich passieren
+möchtest!
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.go_away",
+  text = [[
+Geh mir aus dem Weg!
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.leader_allowed_to_pass",
+  text = [[
+Der Dorfälteste hat dir erlaubt, zu passieren?
+Grrr ... Na, dann geh schon!
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary_sign",
+  text = [[
+N: Spukiger Friedhof
+
+Zutritt verboten.
+]]
+}
+
+dialog{
+  id = "outside_c3.dungeon_sign",
+  text = [[
+Tempel der Dunkelheit
+
+Wenn Sie ein Gespenst auf der Suche nach einer
+Arbeit sind, kommen Sie ruhig auf einen Sprung
+vorbei!
+]]
+}
+
+dialog{
+  id = "outside_c3.frog",
+  text = [[
+Die örtlichen Monster fürchten nicht vieles,
+zum Glück greifen sie nur Menschen an.
+]]
+}
+
+dialog{
+  id = "outside_c3.little_tree",
+  text = [[
+Besucher kommen nicht oft hierher.
+]]
+}
+
+dialog{
+  id = "outside_c3.pink_ball",
+  text = [[
+Wirklich?
+Du verstehst, was ich sage?
+]]
+}
+
+dialog{
+  id = "outside_c3.running_man",
+  text = [[
+Die Leute von diesem Dorf sprechen einen sehr
+seltsamen Dialekt, ich verstehe überhaupt
+nichts.
+]]
+}
+
+dialog{
+  id = "outside_c3.sw_sign",
+  text = [[
+N: Schattendorf
+W: Hylia-See
+]]
+}
+
+dialog{
+  id = "outside_c3.village_sign",
+  text = [[
+Schattendorf
+]]
+}
+
+dialog{
+  id = "potion_not_needed",
+  text = [[
+Diesen Trank brauchst du jetzt nicht
+trinken.
+]]
+}
+
+dialog{
+  id = "save_quit",
+  text = [[
+               Schon gelangweilt?
+                $? Weitermachen
+            $? Speichern und beenden
+            $? Beenden ohne Speichern
+]]
+}
+
+dialog{
+  id = "shadow_village.bird_house.bird",
+  text = [[
+Als du Frieden über Hyrule gebracht hast
+und die helle Welt mit dem goldenem Land
+vereinigt hattest, hat Prinzessin Zelda
+heimlich freiwillige Geister darum gebeten,
+dieses Dorf zu bauen, um den Zugang zu
+einem sehr wertvollen Objekt zu blockieren.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.about_village",
+  text = [[
+Unser Dorf wurde gegründet mit dem Ziel,
+unvorsichtige Abenteurer vom Tempel fern
+zu halten. Ich lass nicht einfach jeden durch.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.enough_crystals",
+  text = [[
+Hmmm ... Du hast bereits 4 Kristalle
+gefunden? Ich muss zugeben, dass du
+mich beeindruckst.
+
+
+In Ordnung, du darfst den Friedhof nun
+betreten, auf eigene Gefahr.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.go_cemetary",
+  text = [[
+Sprich mit dem Wächter im nördlichen Teil des
+Dorfes, er wird dich passieren lassen.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.still_alive",
+  text = [[
+Ich sehe, dass du immer noch lebst ...
+Überraschend.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.sword_found",
+  text = [[
+Du hast also das Schwert gefunden?
+Aber glaub ja nicht, dass es dir jetzt
+einfach so gehört.
+
+
+Das Meisterschwert ist eines der wertvollsten
+Schätze von Hyrule. Sobald du das Triforce
+hast, musst du das Schwert zurück in den
+Tempel bringen, wenn deine Mission zu Ende ist.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.sword_hint",
+  text = [[
+Der Tempel der Dunkelheit ist der Anfang 
+eines Weges, der zu einem legendären Gegen-
+stand führt. Dieses Dorf existiert nur, um
+Abenteurer von ihm fernzuhalten.
+]]
+}
+
+dialog{
+  id = "shadow_village.mouse_house.mouse",
+  text = [[
+All die Dorfbewohner sind Geister, die
+auf Prinzessin Zeldas Ruf reagiert haben.
+]]
+}
+
+dialog{
+  id = "shadow_village.non_understandable",
+  text = [[
+{|{|{|{|{|{|{{{|
+{}||}{}|{}|{}|}{
+|{|{|{|}|}
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.no_bottle",
+  text = [[
+Komm zurück, wenn du eine leere Flasche hast,
+und ich werde dir einen blauen Trank ver-
+kaufen, der Lebensenergie und Magie wieder-
+herstellt.
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.offer",
+  text = [[
+Ein blauer Trank für $v Rubine, bist du
+interessiert?
+              $? Ja
+              $? Nein
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.yes",
+  text = [[
+Danke, hier ist dein Trank.
+]]
+}
+
+dialog{
+  id = "shop.arrow.2",
+  text = [[
+5 Pfeile.
+]]
+}
+
+dialog{
+  id = "shop.bomb.1",
+  text = [[
+Eine Bombe.
+]]
+}
+
+dialog{
+  id = "shop.bow.2",
+  text = [[
+Ein Bogen.
+]]
+}
+
+dialog{
+  id = "shop.choose",
+  text = [[
+Such dir etwas aus.
+]]
+}
+
+dialog{
+  id = "shop.heart.1",
+  text = [[
+Ein Herz.
+]]
+}
+
+dialog{
+  id = "shop.magic_flask.1",
+  text = [[
+Ein kleines bisschen Magie.
+]]
+}
+
+dialog{
+  id = "shop.magic_flask.2",
+  text = [[
+Etwas Magie.
+]]
+}
+
+dialog{
+  id = "small_key_required",
+  text = [[
+Diese Tür ist abgeschlossen.
+Du brauchst einen kleinen
+Schlüssel, um sie zu öffnen!
+]]
+}
+
