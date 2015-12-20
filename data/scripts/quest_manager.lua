@@ -103,7 +103,7 @@ local function initialize_hero()
       local map = self:get_map()
       if map:get_ground(x, y - 2, layer) == "deep_water" then
         -- Starting a jump from water: this is the built-in jump of the engine
-        -- does not have the ability to swim.
+        -- when the hero does not have the ability to swim.
         -- TODO this is a hack, improve this when the engine allows to customize drowning.
         sol.timer.start(map, 1, function()
           local movement = self:get_movement()
