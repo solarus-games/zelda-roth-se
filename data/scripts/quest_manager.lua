@@ -111,7 +111,7 @@ local function initialize_hero()
         end)
       end
 
-    elseif state == "hurt" then
+    elseif state == "hurt" or state == "treasure" then
       local game = self:get_game()
       if game:is_rabbit() then
         game:stop_rabbit()

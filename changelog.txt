@@ -7,6 +7,7 @@ _______________________________________________________________
 * Fix stuck in a cliff west of the castle (#87).
 * Fix silver arrows incorrectly changing the arrow counter (#88).
 * Fix stats showing 47/46 monsters if a chicken was killed (#89).
+* Dungeon 4: fix crash when picking the crystal as rabbit (#91).
 
 ______________________________________________________________
 
