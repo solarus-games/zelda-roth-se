@@ -234,7 +234,7 @@ el mapa.
 dialog{
   id = "_treasure.din_medallion.1",
   text = [[
-¡¡¡Conseguiste un medallón mágico!!!
+¡¡¡Conseguiste un colgante mágico!!!
 ¡¡¡Tu defensa acaba de aumentar!!!
 ]]
 }
@@ -242,7 +242,7 @@ dialog{
 dialog{
   id = "_treasure.farore_medallion.1",
   text = [[
-¡¡¡Conseguiste un medallón mágico!!!
+¡¡¡Conseguiste un colgante mágico!!!
 ¡¡¡Tu defensa acaba de aumentar!!!
 ]]
 }
@@ -360,7 +360,7 @@ antiguo lenguaje Hylian.
 dialog{
   id = "_treasure.nayru_medallion.1",
   text = [[
-¡¡¡Conseguiste un medallón mágico!!!
+¡¡¡Conseguiste un colgante mágico!!!
 ¡¡¡Tu defensa acaba de aumentar!!!
 ]]
 }
@@ -392,66 +392,69 @@ para abrirla.
 dialog{
   id = "_treasure.sword.1",
   text = [[
-You find a sword!!!
+¡¡¡Encontraste una espada!!!
+  
+¡Ya puedes luchar contra monstruos presionando
+la tecla C!
 
-You can now fight monsters with the C key!
-
-Hold C to charge a spin attack!!!
+¡¡¡Mantén C presionado para realizar un
+ataque giratorio!!!
 ]]
 }
 
 dialog{
   id = "_treasure.sword.2",
   text = [[
-Your sword triples in power and you can now
-send back some magic attacks, so good!!!
+Tu espada tiene el triple de poder y ahora
+puedes devolver algunos ataques mágicos,
+¡¡¡genial!!!
 ]]
 }
 
 dialog{
   id = "_treasure.sword.3",
   text = [[
-You find the Master Sword!!!
-Even Ganon could not stand up to its power!!!
-(in theory)
+¡¡¡Encontraste la espada maestra!!!
+¡Ni siquiera Ganon podrá resistir su poder!
+(en teoría)
 ]]
 }
 
 dialog{
   id = "_treasure.triforce.1",
   text = [[
-You find the Triforce!!!
+¡¡¡Encontraste la Trifuerza!!!
 ]]
 }
 
 dialog{
   id = "boss_key_required",
   text = [[
-This door leads to the Boss's Lair!
-You will need the Boss Key to open it.
+¡Esta puerta lleva a la guarida del jefe!
+Necesitarás la llave del jefe para abrirla.
 ]]
 }
 
 dialog{
   id = "bottle_merchant.done",
   text = [[
-Sorry, that was my only bottle.
+Lo siento, esa era mi única botella.
 ]]
 }
 
 dialog{
   id = "bottle_merchant.no",
   text = [[
-Come again if you change your mind.
+Vuelve si cambias de opinión.
 ]]
 }
 
 dialog{
   id = "bottle_merchant.offer",
   text = [[
-I am selling a bottle for 100 rupees, are you
-interested?
-                  $? Yes
+Vendo una botella por 100 rupias, ¿te
+interesa?
+                  $? Sí
                   $? No
 ]]
 }
@@ -459,46 +462,47 @@ interested?
 dialog{
   id = "bottle_merchant.yes",
   text = [[
-Thank you, here is your bottle.
+Gracias, aquí tienes tu botella.
 ]]
 }
 
 dialog{
   id = "chest_game.already_done",
   text = [[
-I don't have anymore prizes to bring into play,
-sorry.
+No me quedan más premios para poner en juego,
+lo siento.
 ]]
 }
 
 dialog{
   id = "chest_game.go_chest",
   text = [[
-Choose a chest.
+Elige un cofre.
 ]]
 }
 
 dialog{
   id = "chest_game.lost",
   text = [[
-You lose! This chest is empty. Try again!
+¡Perdiste! Este cofre está vacío.
 ]]
 }
 
 dialog{
   id = "chest_game.pay_first",
   text = [[
-Hey!
-You have to pay to open one of my chests!!!
+¡Hey!
+¡¡¡Tienes que pagar para abrir uno de
+mis cofres!!!
 ]]
 }
 
 dialog{
   id = "chest_game.rules",
   text = [[
-One of these chests contains a piece of heart,
-do you want to try for 10 rupees?
-                 $? Yes
+Uno de estos cofres contiene un cuarto de
+corazón, ¿quieres probar suerte por 10 rupias?
+                 $? Sí
                  $? No
 ]]
 }
@@ -506,207 +510,207 @@ do you want to try for 10 rupees?
 dialog{
   id = "chest_game.thanks",
   text = [[
-Thanks.
+Gracias.
 ]]
 }
 
 dialog{
   id = "crystal.1",
   text = [[
-What can it be used for?
+¿Para qué servirá?
 ]]
 }
 
 dialog{
   id = "crystal.5",
   text = [[
-Only 2 more to find!
+¡Sólo quedan 2 más por encontrar!
 ]]
 }
 
 dialog{
   id = "crystal.6",
   text = [[
-Only one more!
+¡Sólo falta 1 más!
 ]]
 }
 
 dialog{
   id = "crystal.7",
   text = [[
-You have all the crystals, run to the castle
-and save Zelda!!!
+Tienes todos los cristales. ¡¡¡Corre al
+castillo y salva a Zelda!!!
 ]]
 }
 
 dialog{
   id = "crystal.remaining",
   text = [[
-Only $v more to find!
+¡Sólo quedan $v más por encontrar!
 ]]
 }
 
 dialog{
   id = "dungeon_1.welcome",
   text = [[
-                    Level 1
+                    Nivel 1
 
-                  Forest Temple
+                Templo del bosque
 ]]
 }
 
 dialog{
   id = "dungeon_2.welcome",
   text = [[
-                    Level 2
+                    Nivel 2
 
-                  Water Temple
+                Templo del agua
 ]]
 }
 
 dialog{
   id = "dungeon_3.welcome",
   text = [[
-                    Level 3
+                    Nivel 3
 
-                 Mountain Temple
+                Templo de la montaña
 ]]
 }
 
 dialog{
   id = "dungeon_4.welcome",
   text = [[
-                    Level 4
+                    Nivel 4
 
-                  Desert Temple
+                Templo del desierto
 ]]
 }
 
 dialog{
   id = "dungeon_5.welcome",
   text = [[
-                    Level 5
+                    Nivel 5
 
-                  Dark Temple
+                Templo de la oscuridad
 ]]
 }
 
 dialog{
   id = "dungeon_6.welcome",
   text = [[
-                    Level 6
+                    Nivel 6
 
-                  Fire Temple
+                Templo del fuego
 ]]
 }
 
 dialog{
   id = "dungeon_7.welcome",
   text = [[
-                    Level 7
+                    Nivel 7
 
-                   Ice Temple
+                Templo del hielo
 ]]
 }
 
 dialog{
   id = "dungeon_8.welcome",
   text = [[
-                    Level ?
+                    Nivel ¿?
 
-                 Hidden Temple
+                  Templo oculto
 ]]
 }
 
 dialog{
   id = "dungeon_9.welcome",
   text = [[
-                  Last Level
+                  Último Nivel
 
-                 Hyrule Castle
+                Castillo de Hyrule
 ]]
 }
 
 dialog{
   id = "dungeon_9.zelda.almost_there",
   text = [[
-We are almost there, follow me!
+Ya casi hemos llegado, ¡sígueme!
 ]]
 }
 
 dialog{
   id = "dungeon_9.zelda.dont_leave_castle",
   text = [[
-Ganon is still somewhere in the castle.
+Ganon aún está en algún lugar del castillo.
 ]]
 }
 
 dialog{
   id = "dungeon_9.zelda.go_ganon",
   text = [[
-Ganon is just behind that door, I will cure
-your wounds.
+Ganon está justo detrás de esa puerta,
+curaré tus heridas.
 ]]
 }
 
 dialog{
   id = "dungeon_9.zelda.go_kakariko",
   text = [[
-I'm afraid you are not able to defeat Ganon
-with your current weapons...
-Go and speak to the chief of the village
-Kakariko, I am sure he will find a solution.
+Tengo miedo de que no puedas derrotar a
+Ganon con tus armas actuales...
+Ve a hablar con el jefe de la villa
+Kakarico, estoy segura de que encontrará
+una solución.
 ]]
 }
 
 dialog{
   id = "dungeon_9.zelda.hello",
   text = [[
-Congratulations Link, you managed to save me!!!
+¡¡¡Enhorabuena Link, me salvaste!!!
 
 
-
-Let's find Ganon quickly, we have to reclaim
-the Triforce!
+Busquemos a Ganon, rápido, ¡tenemos que
+recuperar la Trifuerza!
 ]]
 }
 
 dialog{
   id = "dungeon_9.zelda.secret_wall",
   text = [[
-The secret passage behind the throne room leads
-to Ganon. Let's hurry!
+El pasadizo secreto detrás del trono lleva
+hasta Ganon. ¡Démonos prisa!
 ]]
 }
 
 dialog{
   id = "dungeon_9.zelda.should_wait_zelda",
   text = [[
-You should wait for Princess Zelda!!!
+¡¡¡Deberías esperar a la princesa Zelda!!!
 ]]
 }
 
 dialog{
   id = "dungeon_9.zelda.weak_wall_ignored_zelda",
   text = [[
-Don't you have the spooky feeling of forgetting
-someone by any chance???
+¿¿¿No tienes un extraño presentimiento de haber
+olvidado a alguien por casualidad???
 ]]
 }
 
 dialog{
   id = "dungeon_9.zelda.zelda_waiting",
   text = [[
-Zelda is waiting for you!!!
+¡¡¡Zelda te está esperando!!!
 ]]
 }
 
 dialog{
   id = "dungeon_finished_save",
   text = [[
-Do you want to save your game?
+¿Quieres guardar la partida?
 
-                   $? Yes
+                   $? Sí
                    $? No
 ]]
 }
@@ -714,32 +718,35 @@ Do you want to save your game?
 dialog{
   id = "ending",
   text = [[
-At the exact moment Link touched the Triforce,
-monsters disappeared and peace recurred.
+En el momento exacto en el que Link tocó la
+Trifuerza, desaparecieron los monstruos y
+volvió la paz.
+  
+
+Entonces la princesa Zelda tomó una gran
+decisión: a su vez tocó la Trifuerza para
+cumplir su deseo.
 
 
-Then Princess Zelda made a great decision: she
-touched in turn the Triforce and made her wish.
+La Trifuerza siempre ha sido el origen de los
+problemas del reino, y tarde o temprano otra
+criatura maligna acabará por encontrala.
+
+Justo cuando la princesa tocó la reliquia,
+desapareció para siempre de Hyrule.
 
 
-Triforce had always been the origin of troubles
-in the Kingdom, sooner or later, another evil
-creature would find it.
-
-Just when the princess touched the relic, it
-disappeared from Hyrule forever.
+Desde aquel día, la gente de Hyrule vivió en
+paz, sin temor a nuevos desastres.
 
 
-Since that day, Hyrule people lived in peace,
-without fear of new disasters.
+Así acaba la leyenda de Zelda, de la Trifuerza
+y de la Tierra Dorada.
 
 
-Thus the legend of Zelda, of the Triforce and
-of the Golden Land is achieved.
-
-
-Master Sword is said to rest safely somewhere
-and to be the last heirloom of Link's quest...
+Se dice que la espada maestra descansa segura
+en algún lugar, y que constituye el último
+recuerdo de la búsqueda de Link...
 ]]
 }
 
@@ -753,94 +760,98 @@ dialog{
 dialog{
   id = "fairy_cave_desert.reward",
   text = [[
-Congratulations Link, for finding me.
-As a reward, I give you the Din Pendent, it
-increases your defense by one point.
+Enhorabuena Link, me has encontrado.
+Como recompensa, te doy el colgante de Din,
+que aumenta 1 punto tu defensa.
 ]]
 }
 
 dialog{
   id = "fairy_cave_forest.reward",
   text = [[
-Congratulations Link, for finding me.
-As a reward, I give you the Farore Pendent, it
-increases your defense by one point...
+Enhorabuena Link, me has encontrado.
+Como recompensa, te doy el colgante de Farore,
+que aumenta 1 punto tu defensa.
 ]]
 }
 
 dialog{
   id = "fairy_cave_lake.reward",
   text = [[
-Congratulations Link, for finding me.
-As a reward, I give you the Nayru Pendent, it
-increases your defense by two points!
+Enhorabuena Link, me has encontrado.
+Como recompensa, te doy el colgante de Nayru,
+¡que aumenta 2 puntos tu defensa!
 ]]
 }
 
 dialog{
   id = "fairy_cave_ruins.reward",
   text = [[
-Congratulations Link, for finding me.
-As a reward, I will double the capacity of
-your magic meter!!!
+Enhorabuena Link, me has encontrado.
+Como recompensa, ¡¡¡duplicaré la capacidad
+de tu reserva de magia!!!
 ]]
 }
 
 dialog{
   id = "fairy_cave_ruins.treasure",
   text = [[
-Your magic meter has doubled!!!
+¡¡¡Tu reserva de magia se ha duplicado!!!
 ]]
 }
 
 dialog{
   id = "found_piece_of_heart.first",
   text = [[
-Find 3 more to get a new heart!!!
+¡¡¡Encuentra 3 más para conseguir un
+corazón adicional!!!
 ]]
 }
 
 dialog{
   id = "found_piece_of_heart.fourth",
   text = [[
-Your heart meter just increased!!!
+¡¡¡Tu número de corazones acaba de
+aumentar!!!
 ]]
 }
 
 dialog{
   id = "found_piece_of_heart.second",
   text = [[
-Find 2 more to get a new heart!!!
+¡¡¡Encuentra 2 más para conseguir un
+corazón adicional!!!
 ]]
 }
 
 dialog{
   id = "found_piece_of_heart.third",
   text = [[
-Find 1 more to get a new heart!!!
+¡¡¡Encuentra 1 más para conseguir un
+corazón adicional!!!
 ]]
 }
 
 dialog{
   id = "gerudo_village.blacksmith.hello",
   text = [[
-May I do something for you?
+¿Puedo hacer algo por ti?
 ]]
 }
 
 dialog{
   id = "gerudo_village.blacksmith.not_now",
   text = [[
-Come back later, I am overbooked!
+Vuelve más tarde, ¡estoy desbordado de trabajo!
 ]]
 }
 
 dialog{
   id = "gerudo_village.blacksmith.offer_bow",
   text = [[
-Do you want me to upgrade your bow?
+¿Quieres que mejore tu arco?
 
-            $? Yes
+            $? Sí
             $? No
 ]]
 }
@@ -848,9 +859,9 @@ Do you want me to upgrade your bow?
 dialog{
   id = "gerudo_village.blacksmith.offer_glove",
   text = [[
-Do you want me to upgrade your gloves?
+¿Quieres que mejore tus guantes?
 
-            $? Yes
+            $? Sí
             $? No
 ]]
 }
@@ -858,9 +869,9 @@ Do you want me to upgrade your gloves?
 dialog{
   id = "gerudo_village.blacksmith.offer_sword",
   text = [[
-Do you want me to temper your sword?
+¿Quieres que reforje tu espada?
 
-            $? Yes
+            $? Sí
             $? No
 ]]
 }
@@ -868,31 +879,31 @@ Do you want me to temper your sword?
 dialog{
   id = "gerudo_village.leader_house.go_blacksmith",
   text = [[
-Hello Link, I am the chief of this village.
-You should go see the blacksmith and show him
-what you want him to temper in your equipment.
-
-I have been informed of your quest, so I have
-arranged it with him.
-Everything will be free for you.
+Hola Link, soy el jefe de esta villa.
+Deberías ir a ver al herrero y mostrarle lo
+que quieras que reforje de tu equipamiento.
+  
+He sido informado de tu búsqueda, así que
+lo he organizado todo con él.
+Todo te saldrá gratis.
 ]]
 }
 
 dialog{
   id = "gerudo_village.potion_house.no_bottle",
   text = [[
-Come back when you have an empty bottle and I
-will sell you a green potion which restores
-magic.
+Vuelve cuando tengas una botella vacía y te
+venderé una poción verde que restaura la
+magia.
 ]]
 }
 
 dialog{
   id = "gerudo_village.potion_house.offer",
   text = [[
-A green potion for $v rupees, are you
-interested?
-              $? Yes
+Una poción verde por $v rupias, ¿estás
+interesado?
+              $? Sí
               $? No
 ]]
 }
@@ -900,15 +911,15 @@ interested?
 dialog{
   id = "gerudo_village.potion_house.yes",
   text = [[
-Thank you, here is your potion.
+Gracias, aquí está tu poción.
 ]]
 }
 
 dialog{
   id = "gerudo_village.woman_house.woman",
   text = [[
-Hello! If you are looking for the blacksmith,
-he lives a little further.
+¡Hola! Si buscas al herrero, vive un poco
+más lejos.
 ]]
 }
 
