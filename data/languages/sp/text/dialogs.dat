@@ -1,30 +1,31 @@
 dialog{
   id = "_crystal",
   text = [[
-It's a crystal switch.
-Try to hit it with something...
+Es un interruptor de cristal.
+Intenta golpearlo con algo...
 ]]
 }
 
 dialog{
   id = "_shop.amount_full",
   text = [[
-You don't need this right now.
+No necesitas esto ahora mismo.
 ]]
 }
 
 dialog{
   id = "_shop.not_enough_money",
   text = [[
-Sorry, you don't have enough rupees
+Lo siento, pero no tienes suficientes
+rupias.
 ]]
 }
 
 dialog{
   id = "_shop.question",
   text = [[
-Price : $v rupees. Ok ?
-    $? Yes
+Precio: $v rupias. ¿Ok?
+    $? Sí
     $? No
 ]]
 }
@@ -32,356 +33,359 @@ Price : $v rupees. Ok ?
 dialog{
   id = "_treasure.arrow.1",
   text = [[
-You found an arrow!
-Use the bow and arrows to defeat tough enemies
-from afar.
+¡Encontraste 1 flecha!
+Usa el arco y flechas para vencer enemigos
+fuertes desde lejos.
 ]]
 }
 
 dialog{
   id = "_treasure.arrow.2",
   text = [[
-You found 5 arrows!
-Use the bow and arrows to defeat tough enemies
-from afar.
+¡Encontraste 5 flechas!
+Usa el arco y flechas para vencer enemigos
+fuertes desde lejos.
 ]]
 }
 
 dialog{
   id = "_treasure.arrow.3",
   text = [[
-You found 10 arrows!
-Use the bow and arrows to defeat tough enemies
-from afar.
+¡Encontraste 10 flechas!
+Usa el arco y flechas para vencer enemigos
+fuertes desde lejos.
 ]]
 }
 
 dialog{
   id = "_treasure.bomb.1",
   text = [[
-You found a bomb!
-Use bombs to make an enemy or obstacle explode.
+¡Encontraste 1 bomba!
+Usa bombas para hacer que exploten
+enemigos u obstáculos.
 ]]
 }
 
 dialog{
   id = "_treasure.bomb.2",
   text = [[
-You found 3 bombs!
-Use bombs to make an enemy or obstacle explode.
+¡Encontraste 3 bombas!
+Usa bombas para hacer que exploten
+enemigos u obstáculos.
 ]]
 }
 
 dialog{
   id = "_treasure.bomb.3",
   text = [[
-You found 8 bombs!
-Use bombs to make an enemy or obstacle explode.
+¡Encontraste 8 bombas!
+Usa bombas para hacer que exploten
+enemigos u obstáculos.
 ]]
 }
 
 dialog{
   id = "_treasure.boss_key.1",
   text = [[
-You find the Boss Key!!!
+¡¡¡Encontraste la llave del jefe!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_1.1",
   text = [[
-You find an empty bottle!!!
-It will help you to keep potions!!!
+¡¡¡Encontraste una botella vacía!!!
+¡¡¡Te servirá para guardar pociones!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_1.2",
   text = [[
-You get a red potion!!!
-Drink it to restore your energy!!!
+¡¡¡Conseguiste una poción roja!!!
+¡¡¡Bébetela para restaurar tu energía!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_1.3",
   text = [[
-You get a green potion!!!
-Drink it to restore your magic!!!
+¡¡¡Conseguiste una poción verde!!!
+¡¡¡Bébetela para restaurar tu magia!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_1.4",
   text = [[
-You get a blue potion!!!
-Drink it to restore your energy and your
-magic!!!
+¡¡¡Conseguiste una poción azul!!!
+¡¡¡Bébetela para restaurar tu energía
+y tu magia!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_2.1",
   text = [[
-You find an empty bottle!!!
-It will help you to keep potions!!!
+¡¡¡Encontraste una botella vacía!!!
+¡¡¡Te servirá para guardar pociones!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_2.2",
   text = [[
-You get a red potion!!!
-Drink it to restore your energy!!!
+¡¡¡Conseguiste una poción roja!!!
+¡¡¡Bébetela para restaurar tu energía!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_2.3",
   text = [[
-You get a green potion!!!
-Drink it to restore your magic!!!
+¡¡¡Conseguiste una poción verde!!!
+¡¡¡Bébetela para restaurar tu magia!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_2.4",
   text = [[
-You get a blue potion!!!
-Drink it to restore your energy and your
-magic!!!
+¡¡¡Conseguiste una poción azul!!!
+¡¡¡Bébetela para restaurar tu energía
+y tu magia!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_3.1",
   text = [[
-You find an empty bottle!!!
-It will help you to keep potions!!!
+¡¡¡Encontraste una botella vacía!!!
+¡¡¡Te servirá para guardar pociones!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_3.2",
   text = [[
-You get a red potion!!!
-Drink it to restore your energy!!!
+¡¡¡Conseguiste una poción roja!!!
+¡¡¡Bébetela para restaurar tu energía!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_3.3",
   text = [[
-You get a green potion!!!
-Drink it to restore your magic!!!
+¡¡¡Conseguiste una poción verde!!!
+¡¡¡Bébetela para restaurar tu magia!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bottle_3.4",
   text = [[
-You get a blue potion!!!
-Drink it to restore your energy and your
-magic!!!
+¡¡¡Conseguiste una poción azul!!!
+¡¡¡Bébetela para restaurar tu energía
+y tu magia!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bow.1",
   text = [[
-You get the bow!!!
-Use it to reach a distant target.
+¡¡¡Conseguiste el arco!!!
+Úsalo para alcanzar objetivos distantes.
 ]]
 }
 
 dialog{
   id = "_treasure.bow.2",
   text = [[
-You get the bow!!!
-Use it to reach a distant target.
+¡¡¡Conseguiste el arco!!!
+Úsalo para alcanzar objetivos distantes.
 ]]
 }
 
 dialog{
   id = "_treasure.bow_silver.1",
   text = [[
-Your bow now shoots silver arrows with a
-cataclysmic power!!!
+¡¡¡Desde ahora tu arco dispara flechas
+de plata con una fuerza devastadora!!!
 ]]
 }
 
 dialog{
   id = "_treasure.bow_silver.2",
   text = [[
-Your bow now shoots silver arrows with a
-cataclysmic power!!!
+¡¡¡Desde ahora tu arco dispara flechas
+de plata con una fuerza devastadora!!!
 ]]
 }
 
 dialog{
   id = "_treasure.compass.1",
   text = [[
-You find the Compass!!!
-You can locate the boss and chests on the plan.
+¡¡¡Encontraste la brújula!!!
+Puedes localizar al jefe y los cofres en
+el mapa.
 ]]
 }
 
 dialog{
   id = "_treasure.din_medallion.1",
   text = [[
-You obtain a magic pendent!!!
-Your defense just raised!!!
+¡¡¡Conseguiste un medallón mágico!!!
+¡¡¡Tu defensa acaba de aumentar!!!
 ]]
 }
 
 dialog{
   id = "_treasure.farore_medallion.1",
   text = [[
-You obtain a magic pendent!!!
-Your defense just raised!!!
+¡¡¡Conseguiste un medallón mágico!!!
+¡¡¡Tu defensa acaba de aumentar!!!
 ]]
 }
 
 dialog{
   id = "_treasure.fire_rod.1",
   text = [[
-You find the Fire Rod!!!
-From now on you are able to shoot out powerful
-flames.
+¡¡¡Encontraste el cetro de fuego!!!
+Desde ahora puedes disparar llamas poderosas.
 ]]
 }
 
 dialog{
   id = "_treasure.flippers.1",
   text = [[
-You find the Flippers!!!
-Set them up to swim in the water.
+¡¡¡Encontraste las aletas!!!  
+Ya puedes nadar en agua profunda.
 ]]
 }
 
 dialog{
   id = "_treasure.glove.1",
   text = [[
-You find the Gloves!!!
-Use them to lift objects by pressing the Action
-key.
+¡¡¡Encontraste los guantes de poder!!!
+Úsalos para levantar objetos pretando la tecla
+de Acción.
 ]]
 }
 
 dialog{
   id = "_treasure.glove.2",
   text = [[
-The power of your gloves helps you to lift
-heavy rocks.
+El poder de tus guantes te permitirá levantar
+rocas pesadas.
 ]]
 }
 
 dialog{
   id = "_treasure.hammer.1",
   text = [[
-You find the Magic Hammer!!!
-Use it to squash obstacles.
+¡¡¡Encontraste el martillo mágico!!!
+Úsalo para aplastar obstáculos.
 ]]
 }
 
 dialog{
   id = "_treasure.heart.1",
   text = [[
-You found a heart!
+¡Encontraste un corazón!
 ]]
 }
 
 dialog{
   id = "_treasure.hookshot.1",
   text = [[
-You find the Hookshot!!!
-Use it to overcome obstacles.
+¡¡¡Encontraste el gancho!!!
+Úsalo para superar obstáculos.
 ]]
 }
 
 dialog{
   id = "_treasure.ice_rod.1",
   text = [[
-You find the Ice Rod!!!
-Use it to freeze anything from some distance.
+¡¡¡Encontraste el cetro de hielo!!!
+Úsalo para congelar cualquier cosa desde lejos.
 ]]
 }
 
 dialog{
   id = "_treasure.lamp.1",
   text = [[
-You find the Lantern!!!
-Use it to create flames.
+¡¡¡Encontraste la linterna!!!
+Úsala para crear llamas.
 ]]
 }
 
 dialog{
   id = "_treasure.magic_crystal.1",
   text = [[
-You find a Magic Crystal!!!
+¡¡¡Encontraste un cristal mágico!!!
 ]]
 }
 
 dialog{
   id = "_treasure.magic_flask.1",
   text = [[
-You found a small magic jar!
+¡¡¡Encontraste una jarra pequeña de magia!!!
 ]]
 }
 
 dialog{
   id = "_treasure.magic_flask.2",
   text = [[
-You found a big magic jar!
+¡¡¡Encontraste una jarra grande de magia!!!
 ]]
 }
 
 dialog{
   id = "_treasure.map.1",
   text = [[
-You find the Dungeon Map!!!
-Press P to see the map.
+¡¡¡Encontraste el mapa de la mazmorra!!!
+Presiona P para ver el mapa.
 ]]
 }
 
 dialog{
   id = "_treasure.mudora_book.1",
   text = [[
-You find the book of Mudora!!!
-
-From now on, you are able to understand the
-ancient Hylian language!!!
+¡¡¡Encontraste el libro de Mudora!!!
+¡¡¡Desde ahora puedes comprender el
+antiguo lenguaje Hylian.
 ]]
 }
 
 dialog{
   id = "_treasure.nayru_medallion.1",
   text = [[
-You obtain a magic pendent!!!
-Your defense just raised!!!
+¡¡¡Conseguiste un medallón mágico!!!
+¡¡¡Tu defensa acaba de aumentar!!!
 ]]
 }
 
 dialog{
   id = "_treasure.piece_of_heart.1",
   text = [[
-You find a piece of heart!!!
+¡¡¡Encontraste un cuarto de corazón!!!
 ]]
 }
 
 dialog{
   id = "_treasure.shield.1",
   text = [[
-You find a shield!!!
-Your defense rises by one point!
+¡¡¡Encontraste un escudo!!!
+¡Tu defensa aumenta 1 punto!
 ]]
 }
 
 dialog{
   id = "_treasure.small_key.1",
   text = [[
-You find a small key!!!
-Press Action near a locked door to open it.
+¡¡¡Encontraste una llave pequeña!!!
+Presiona Acción cerca de una puerta cerrada
+para abrirla.
 ]]
 }
 
