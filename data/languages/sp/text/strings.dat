@@ -1,0 +1,82 @@
+text{ key = "dungeon_1.name", value = "Templo del bosque" }
+text{ key = "dungeon_2.name", value = "Templo del agua" }
+text{ key = "dungeon_3.name", value = "Templo de la montaña" }
+text{ key = "dungeon_4.name", value = "Templo del desierto" }
+text{ key = "dungeon_5.name", value = "Templo de la sombra" }
+text{ key = "dungeon_6.name", value = "Templo del fuego" }
+text{ key = "dungeon_7.name", value = "Templo del hielo" }
+text{ key = "dungeon_8.name", value = "Templo secreto" }
+text{ key = "dungeon_9.name", value = "Castillo de Hyrule" }
+text{ key = "options_menu.back", value = "ATRÁS" }
+text{ key = "options_menu.language", value = "IDIOMA" }
+text{ key = "options_menu.music_volume", value = "MÚSICA" }
+text{ key = "options_menu.sound_volume", value = "SONIDO" }
+text{ key = "options_menu.title", value = "OPCIONES" }
+text{ key = "pause.commands.action", value = "Acción" }
+text{ key = "pause.commands.action_to_configure", value = "Presiona Acción para configurar este comando" }
+text{ key = "pause.commands.commands", value = "Comandos" }
+text{ key = "pause.commands.down", value = "Abajo" }
+text{ key = "pause.commands.fullscreen", value = "Pantalla Completa" }
+text{ key = "pause.commands.item", value = "Usar item" }
+text{ key = "pause.commands.joypad", value = "Mando" }
+text{ key = "pause.commands.keyboard", value = "Teclado" }
+text{ key = "pause.commands.left", value = "Izquierda" }
+text{ key = "pause.commands.look", value = "Mirar alrededor" }
+text{ key = "pause.commands.map", value = "Mapa" }
+text{ key = "pause.commands.monsters", value = "Monstruos vencidos" }
+text{ key = "pause.commands.pause", value = "Pausa" }
+text{ key = "pause.commands.press_new_key", value = "Presiona la tecla nueva" }
+text{ key = "pause.commands.right", value = "Derecha" }
+text{ key = "pause.commands.run", value = "Correr" }
+text{ key = "pause.commands.save", value = "Guardar" }
+text{ key = "pause.commands.sword", value = "Espada" }
+text{ key = "pause.commands.title", value = "COMANDOS" }
+text{ key = "pause.commands.up", value = "Up" }
+text{ key = "pause.inventory.crystals", value = "CRISTALES:" }
+text{ key = "pause.inventory.defense", value = "DEFENSA" }
+text{ key = "pause.inventory.force", value = "FUERZA" }
+text{ key = "pause.inventory.life", value = "VIDA" }
+text{ key = "pause.inventory.magic", value = "MAGIA" }
+text{ key = "pause.inventory.status", value = "ESTADO:" }
+text{ key = "pause.inventory.time", value = "TIEMPO" }
+text{ key = "pause.monsters.title", value = "MONSTRUOS" }
+text{ key = "records_menu.100_percent_rank", value = "RANGO DEL 100%" }
+text{ key = "records_menu.back", value = "ATRÁS" }
+text{ key = "records_menu.best_time", value = "MEJOR TIEMPO:" }
+text{ key = "records_menu.clear", value = "BORRAR" }
+text{ key = "records_menu.clear_question", value = "¿BORRAR?" }
+text{ key = "records_menu.no", value = "NO" }
+text{ key = "records_menu.rank_100_percent", value = "RANGO: Héroe de Hyrule$Completar el juego al 100%." }
+text{ key = "records_menu.rank_speed", value = "RANGO: Maratoniano de Hyrule$Completar el juego en menos$de dos horas." }
+text{ key = "records_menu.rank_ultimate", value = "RANGO: Vacilón$Completar el juego sin morir,$con 10 corazones como mucho,$sin hablar con las Grandes Hadas,$sin comprar botellas$y sin llevar un escudo." }
+text{ key = "records_menu.speed_rank", value = "RANGO DE VELOCIDAD" }
+text{ key = "records_menu.title", value = "RECORDS" }
+text{ key = "records_menu.ultimate_rank", value = "RANGO FINAL" }
+text{ key = "records_menu.yes", value = "SÍ" }
+text{ key = "savegames_menu.cancel", value = "CANCELAR" }
+text{ key = "savegames_menu.delete", value = "BORRAR" }
+text{ key = "savegames_menu.delete_question", value = "¿BORRAR?" }
+text{ key = "savegames_menu.load", value = "CARGAR" }
+text{ key = "savegames_menu.no", value = "NO" }
+text{ key = "savegames_menu.options", value = "OPCIONES" }
+text{ key = "savegames_menu.records", value = "RECORDS" }
+text{ key = "savegames_menu.title", value = "SELECCIONAR JUGADOR" }
+text{ key = "savegames_menu.yes", value = "SÍ" }
+text{ key = "stats_menu.death_count", value = "Muerto $v veces" }
+text{ key = "stats_menu.game_time", value = "Tiempo jugado:" }
+text{ key = "stats_menu.items", value = "Objetos:" }
+text{ key = "stats_menu.monsters", value = "Tipos de enemigos vencidos:" }
+text{ key = "stats_menu.percent", value = "Completaste el juego en un $v%, ¡enhorabuena!" }
+text{ key = "stats_menu.pieces_of_heart", value = "Cuartos de corazón:" }
+text{ key = "stats_menu.rank", value = "RANK:" }
+text{ key = "stats_menu.rank.completion.1", value = "Héroe de Hyrule" }
+text{ key = "stats_menu.rank.completion.2", value = "Perfeccionista" }
+text{ key = "stats_menu.rank.completion.3", value = "Fan de Zelda" }
+text{ key = "stats_menu.rank.completion.4", value = "Profesional del teclado" }
+text{ key = "stats_menu.rank.completion.5", value = "Experimentado" }
+text{ key = "stats_menu.rank.completion.6", value = "Principiante" }
+text{ key = "stats_menu.rank.death.1", value = "Muerto viviente" }
+text{ key = "stats_menu.rank.death.2", value = "Kamikaze" }
+text{ key = "stats_menu.rank.speed", value = "Maratoniano de Hyrule" }
+text{ key = "stats_menu.rank.ultimate", value = "Vacilón" }
+text{ key = "stats_menu.title", value = "RESULTADOS:" }
