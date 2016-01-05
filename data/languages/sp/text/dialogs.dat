@@ -656,8 +656,8 @@ curaré tus heridas.
 dialog{
   id = "dungeon_9.zelda.go_kakariko",
   text = [[
-Tengo miedo de que no puedas derrotar a
-Ganon con tus armas actuales...
+Temo que no puedas derrotar a Ganon con
+tus armas actuales...
 Ve a hablar con el jefe de la villa
 Kakarico, estoy segura de que encontrará
 una solución.
@@ -879,7 +879,7 @@ dialog{
 dialog{
   id = "gerudo_village.leader_house.go_blacksmith",
   text = [[
-Hola Link, soy el jefe de esta villa.
+Hola Link, soy el jefe de esta aldea.
 Deberías ir a ver al herrero y mostrarle lo
 que quieras que reforje de tu equipamiento.
   
@@ -926,186 +926,190 @@ más lejos.
 dialog{
   id = "intro.fresco_1",
   text = [[
-The Kingdom of Hyrule was living in
-peace since Link, the last knight of
-Hyrule, had defeated the malicious Ganon
+El reino de Hyrule vivía en paz desde
+que Link, el último caballero de Hyrule,
+derrotó al malévolo Ganon,
 
-and reclaimed the precious Triforce to
-him.
+y recuperó la preciada Trifuerza de él.
 ]]
 }
 
 dialog{
   id = "intro.fresco_2",
   text = [[
-Nobody knows what Link's wish to the
-Triforce was, but it had the effect of
-reunifying the Light and Dark World, and
+Nadie sabe cuál fue el deseo de Link al
+tocar la Trifuerza, pero tuvo el efecto
+de reunificar el mundo de la luz y el de
 
-of upraising the 7 wise men's
-descendants.
+las tinieblas, y devolvió a la vida a
+los descendientes de los 7 sabios.
 ]]
 }
 
 dialog{
   id = "intro.fresco_3",
   text = [[
-Next, Link handed the Triforce and
-Master Sword over to Princess Zelda, and
-people started to believe that peace
+Después, Link devolvió la Trifuerza y
+la espada maestra a la princesa Zelda,
+y la gente comenzó a creer que la paz
 
-would last.
-But the people were wrong...
+duraría.
+Pero la gente se equivocaba...
 ]]
 }
 
 dialog{
   id = "intro.fresco_4",
   text = [[
-Unfortunately, Link's wish also had
-negative effects.
-Ganon and his henchmen were resurrected
+Desafortunadamente, el deseo de Link
+también tuvo efectos negativos.
+Ganon y sus esbirros fueron resucitados
 
-and got ready to attack.
+y se prepararon para atacar.
 ]]
 }
 
 dialog{
   id = "intro.fresco_5",
   text = [[
-Somewhere in Hyrule Forest, Link is
-sleeping without suspecting that Ganon
-has already moved into the attack,
+En algún lugar del bosque de Hyrule,
+Link duerme sin sospechar que Ganon
+ya ha comenzado a atacar,
 
-until a well-known voice talks to him
-during his sleep...
+hasta que una voz conocida le habla
+en sus sueños...
 ]]
 }
 
 dialog{
   id = "kakariko.leader_house.first_time",
   text = [[
-Hello Link, I am the chief of that village, I
-was expecting you to come.
+Hola Link, soy el jefe de esta aldea, estaba
+esperando tu llegada.
 
 
-Since this morning, monsters stride along
-Hyrule, I tried to talk about that with Zelda,
-but as you perhaps already saw, a powerful
-spell is blocking the access to the castle...
-You say Ganon is responsible for all of that?
-He stole the Triforce and he is holding
-Princess Zelda captive?
-
-Mmmm... The situation is more serious than I
-thought...
+Desde esta mañana, monstruos han aparecido
+por todo Hyrule. Intenté hablar de esto con
+Zelda, pero como quizás ya sabes, un poderoso
+hechizo bloquea el acceso al castillo...
 
 
-We have to act very quickly, you must face
-Ganon again!
+¿Dices que Ganon es responsable de todo eso?
+¿que él robó la Trifuerza y tiene a la
+princesa Zelda como prisionera?
+
+Mmmm... La situación es más grave de lo
+que pensaba...
 
 
-How to enter the castle? I may have an idea...
+Tenemos que actuar con rapidez, ¡debes
+enfrentarte a Ganon de nuevo!
 
 
+¿Cómo entrar al castillo? Creo que tengo
+una idea...
 
-As you know, the power of the 7 wise men was
-locked in 7 crystals by wizard Aghanim when he
-was trying to open up the path to the Dark
-World, where Ganon was.
-Yet, even if you raised the descendants of the
-7 wise men from death after you defeated Ganon
-and found the Triforce, these crystals have
-kept their power.
-They were hidden deep in the 7 temples, gather
-them all, and you'll be able to get over
-Ganon's spell.
 
-However that won't be easy, Ganon will surely
-send his best units to protect these
-crystals...
+Como sabes, el poder de los 7 sabios fue
+encerrado en 7 cristales por el hechicero
+Aghanim cuando él intentó romper el sello
+que confinaba a Ganon al mundo de las
+tinieblas.
+Sin embargo, aunque hayas resucitado a los
+descendientes de los 7 sabios después de
+haber derrotado a Ganon y recuperado la
+Trifuerza, estos cristales han mantenido
+su poder.
+Fueron escondidos en los 7 templos. Reúnelos
+todos y podrás pasar sobre el hechizo de
+Ganon.
 
-One more thing, you won't go far with your
-current equipment. Go and see the arms dealer
-and tell him that you're coming on my behalf.
-He will probably make a gesture for you.
+No obstante, no va a ser tarea fácil, seguro
+que Ganon ha enviado a sus mejores secuaces
+a proteger estos cristales...
+
+Una cosa más, no llegarás muy lejos con tu
+equipamiento actual. Ve a ver al mercader
+de armas y dile que vienes de mi parte.
+Probablemente lo tendrá en cuenta.
 ]]
 }
 
 dialog{
   id = "kakariko.leader_house.go_bow",
   text = [[
-Go and see the arms dealer and tell him that
-you're coming on my behalf. He will probably
-make a gesture for you.
+Ve a ver al mercader de armas y dile que
+vienes de mi parte.
+Probablemente lo tendrá en cuenta.
 ]]
 }
 
 dialog{
   id = "kakariko.leader_house.go_castle",
   text = [[
-You found the 7 crystals? Go to the castle
-right now, you have to save the princess, she
-will know better than me how to save Hyrule.
+¿Encontraste los 7 cristales? Ve al castillo
+ahora mismo, tienes que salvar a la princesa,
+ella sabrá mejor que yo cómo salvar Hyrule.
 ]]
 }
 
 dialog{
   id = "kakariko.leader_house.go_crystals",
   text = [[
-You have to gather the 7 crystals to have a
-chance to save Zelda and Hyrule...
+Tienes que reunir los 7 cristales para tener
+posibilidades de salvar a Zelda y a Hyrule...
 ]]
 }
 
 dialog{
   id = "kakariko.leader_house.go_excalibur",
   text = [[
-Your weapons are not working against Ganon?
-Therefore, you have to find the Master Sword.
-It is said to have been concealed in a hidden
-temple.
-Besides, the way leading to the Sword of Evils
-Bane is said to cross over a village populated
-by monsters...
+¿Tus armas no sirven contra Ganon? Entonces
+tienes que encontrar la espada maestra.
+Se dice que ha sido escondida en un templo
+oculto.
+Además, se dice que el camino que lleva a la
+espada de Evils Bane cruza una aldea poblada
+por monstruos...
 
-I wonder if such a village exists...
+Me pregunto si tal aldea existirá...
 ]]
 }
 
 dialog{
   id = "kakariko.leader_house.go_ganon",
   text = [[
-It's time to confront Ganon and to take the
-Triforce back!
+¡Es hora de enfrentarse a Ganon y recuperar
+la Trifuerza!
 ]]
 }
 
 dialog{
   id = "kakariko.leader_house.go_glove",
   text = [[
-However, I'm afraid that your current equipment
-is inadequate to reach this temple, maybe you
-shoud go see the blacksmith of Gerudo
-village...
+Sin embargo, me temo que tu equipamiento actual
+es inadecuado para alcanzar este templo. Tal
+vez deberías ir a ver al herrero de la aldea
+Gerudo...
 ]]
 }
 
 dialog{
   id = "kakariko.potion_house.no_bottle",
   text = [[
-Come back when you have an empty bottle and I
-will sell you a red potion that restores
-energy.
+Vuelve cuando tengas una botella vacía y te
+venderé una poción roja que restaura la
+energía.
 ]]
 }
 
 dialog{
   id = "kakariko.potion_house.offer",
   text = [[
-A red potion for $v rupees, are you interested?
+Una poción roja por $v rupias, ¿estás
+interesado?
 
-              $? Yes
+              $? Sí
               $? No
 ]]
 }
@@ -1113,139 +1117,142 @@ A red potion for $v rupees, are you interested?
 dialog{
   id = "kakariko.potion_house.yes",
   text = [[
-Thank you, here is your potion.
+Gracias, aquí está tu poción.
 ]]
 }
 
 dialog{
   id = "kakariko.shop.reduced_bow",
   text = [[
-What???
-You are in a mission for the chief???
-Okay, then I'm going to give you a discount for
-the bow...
+¿¿¿Quéeee???
+¿¿¿Estás en una misión para el jefe???
+Vale, entonces te haré un descuento para
+el arco...
 ]]
 }
 
 dialog{
   id = "kakariko.tavern.drunk_man",
   text = [[
--Hiccup!- A fairy is said to give enchanted
-objects... -Hiccup!- ...to adventurers who
-would find her... -Hiccup!!!-
+¡Hip! Se dice que un hada da objetos
+encantados... ¡Hip! ...a aventureros
+que la encuentren... ¡¡¡Hip!!!
 ]]
 }
 
 dialog{
   id = "kakariko.tavern.waiter",
   text = [[
-Hello, what would you like to drink?
+Hola, ¿te apetece tomar algo?
 ]]
 }
 
 dialog{
   id = "link_house.zelda_message",
   text = [[
-Help me!
-Help me!
-That's me! Zelda!
-I'm talking to you by telepathy.
-I am a prisoner in the dungeon of the castle!
-I need your help!
-Ganon is back, and he surely has already found
-the Triforce...
-Come quickly to the castle Link, you are my
-only hope...
+¡Socorro!
+¡Socorro!
+¡Soy yo, Zelda!
+Te estoy hablando por telepatía.
+¡Estoy prisionera en la mazmorra del castillo!
+¡Necesito tu ayuda!
+Ganon ha vuelto, y seguramente ya ha encontrado
+la Trifuerza...
+Vuelve rápidamente al castillo, Link, eres mi
+única esperanza...
 
 
-HELP: Press F1 to consult commands.
+AYUDA: Presiona F1 para consultar las teclas.
 ]]
 }
 
 dialog{
   id = "monster_house.found_all",
   text = [[
-I can't believe it, you managed to defeat all
-kinds of enemies!!!
-Congratulations Link!!!
+No puedo creerlo, ¡conseguiste derrotar todos
+los tipos de enemigos!
+¡¡¡Enhorabuena Link!!!  
 ]]
 }
 
 dialog{
   id = "monster_house.no_more_reward",
   text = [[
-I'm sorry, but I don't have a gift for you
-anymore...
+Lo siento, pero no tengo nada más que
+ofrecerte...
 ]]
 }
 
 dialog{
   id = "monster_house.one_remaining",
   text = [[
-Only one enemy remaining before the next
-reward!!!
+¡¡¡Sólo falta 1 enemigo para la próxima
+recompensa!!!
 ]]
 }
 
 dialog{
   id = "monster_house.remaining",
   text = [[
-$v more different enemies before the next reward.
+$v enemigos diferentes más para la próxima
+recompensa.
 ]]
 }
 
 dialog{
   id = "monster_house.reward",
   text = [[
-Take this gift for your contribution to my
-project:
+Acepta este regalo por tu contribución a mi
+proyecto:
 ]]
 }
 
 dialog{
   id = "monster_house.welcome",
   text = [[
-Welcome Link!
-Let me explain what I am doing here.
+Bienvenido Link!
+Permíteme explicarte qué estoy haciendo aquí.
 
 
-As you certainly noticed, monsters appeared in
-Hyrule. It's the first time I can see monsters
-since your victory on Ganon.
+Como ya habrás observado, han aparecido
+monstruos en Hyrule. Es la primera vez que
+veo monstruos desde que derrotaste a Ganon.
 
-Well, I have decided to list all of them.
-
-
-
-Unfortunately, I'm really too fearful to meet
-them, so I need your help.
+Bueno, he decidido hacer una lista con
+todos ellos.
 
 
-You have to fight each kind of monster and come
-to give me your report.
 
 
-Every time you defeat 7 new kinds of enemies, I
-will give you one piece of heart.
+Desafortunadamente, soy demasiado miedoso como
+para ir a buscarlos, así que necesito tu ayuda.
 
 
-If you want to see what enemies you've already
-defeated, press M.
+Tienes que vencer a cada tipo de monstruo
+y venir a informarme.
+
+
+Cada vez que venzas 7 nuevos tipos de enemigos,
+te daré un cuarto de corazón.
+
+
+Si quieres ver qué enemigos has vencido ya,
+presiona M.
 ]]
 }
 
 dialog{
   id = "not_enough_money",
   text = [[
-Sorry, you don't have enough rupees.
+Lo siento, no tienes suficientes rupias.
 ]]
 }
 
 dialog{
   id = "outside_a1.c_sign",
   text = [[
-Lost in the desert?
-You are here:
+¿Perdido en el desierto?
+Estás aquí:
                         X
 ]]
 }
@@ -1253,65 +1260,66 @@ You are here:
 dialog{
   id = "outside_a1.dungeon_4_sign",
   text = [[
-Desert Temple
+Templo del desierto
 
-Come to try our bath.
-(water is not for drinking)
+Venid a probar nuestro baño.
+(agua no potable)
 ]]
 }
 
 dialog{
   id = "outside_a1.old_lady_npc",
   text = [[
-Did you see the blacksmith of this village?
-He is said to be very gifted to improve
-adventurers' equipment, a lot of people visit
-him.
+¿Viste al herrero de esta aldea?
+Se dice que tiene mucho talento para mejorar
+el equipamiento de los aventureros. Mucha
+gente le visita.
 ]]
 }
 
 dialog{
   id = "outside_a1.s_sign",
   text = [[
-Gerudo Village
+Aldea Gerudo
 ]]
 }
 
 dialog{
   id = "outside_a1.se_sign",
   text = [[
-S: Kakariko Village
-W: Desert
-E: Death Mountain
+S: Aldea Kakariko
+W: Desierto
+E: Montaña de la muerte
 ]]
 }
 
 dialog{
   id = "outside_a1.sw_sign",
   text = [[
-S: To Hyrule Castle
+S: Al castillo de Hyrule
 ]]
 }
 
 dialog{
   id = "outside_a1.thief_npc",
   text = [[
-The Temple is in the deepest desert, in an
-ancient oasis.
+El templo está en lo más profundo del
+desierto, en un antiguo oasis.
+
 ]]
 }
 
 dialog{
   id = "outside_a2.castle_sign",
   text = [[
-Hyrule Castle
+Castillo de Hyrule
 ]]
 }
 
 dialog{
   id = "outside_a2.sw_sign",
   text = [[
-E: Kakariko Village
+E: Aldea Kakariko
 ]]
 }
 
@@ -1326,106 +1334,106 @@ E: Lake Hylia
 dialog{
   id = "outside_a3.se_sign",
   text = [[
-W: Turtle Rock
-E: Lake Hylia
+W: Roca de la tortuga
+E: Lago Hylia
 ]]
 }
 
 dialog{
   id = "outside_b1.dungeon_3_sign",
   text = [[
-Mountain Temple
+Templo de la montaña
 
-Not for cardiacs, scaredy-cats, and generally
-faint of heart.
+No apto para cardíacos, miedicas, y almas
+sensibles en general.
 ]]
 }
 
 dialog{
   id = "outside_b1.s_sign",
   text = [[
-N: Mountain Temple
-S: Hyrule Field
+N: Templo de la montaña
+S: Pradera de Hyrule
 ]]
 }
 
 dialog{
   id = "outside_b1.sw_sign",
   text = [[
-W: Desert entrance
-N: Mountain Temple
+W: Entrada al desierto
+N: Templo de la montaña
 ]]
 }
 
 dialog{
   id = "outside_b2.broom_grandma",
   text = [[
-What a good day!
+¡Qué día más bueno!
 ]]
 }
 
 dialog{
   id = "outside_b2.chicken_boy",
   text = [[
-Why did I accept to take care of that
-rubbish???
-I loathe hens!!!
+¿¿¿Por qué acepté hacerme cargo de
+estas basuras???
+¡¡¡Odio las gallinas!!!
 ]]
 }
 
 dialog{
   id = "outside_b2.n_sign",
   text = [[
-N: Desert and Gerudo Village
+N: Desierto y aldea Gerudo
 ]]
 }
 
 dialog{
   id = "outside_b2.s_sign",
   text = [[
-S: Lake Hylia
-W: Hyrule Castle
+S: Lago Hylia
+W: Castillo de Hyrule
 ]]
 }
 
 dialog{
   id = "outside_b2.sw_sign",
   text = [[
-W: Hyrule Castle
+W: Castillo de Hyrule
 ]]
 }
 
 dialog{
   id = "outside_b2.village_sign",
   text = [[
-Kakariko Village
+Aldea Kakariko
 ]]
 }
 
 dialog{
   id = "outside_b2.village_welcome_npc",
   text = [[
-You can find a lot of things in the shop of
-this village.
+Puedes encontrar muchas cosas en la tienda
+de esta aldea.
 ]]
 }
 
 dialog{
   id = "outside_b3.dungeon_2_sign",
   text = [[
-Lake Temple
+Templo del lago
 
-Bathing cap is mandatory.
+El gorro de baño es obligatorio.
 ]]
 }
 
 dialog{
   id = "outside_b3.dungeon_7_sign",
   text = [[
-Ice Temple
+Templo de hielo
 
-The staff wishes to remind you that a dungeon
-is not an ice rink.
+El personal les recuerda que una mazmorra
+no es una pista de patinaje.
 ]]
 }
 
