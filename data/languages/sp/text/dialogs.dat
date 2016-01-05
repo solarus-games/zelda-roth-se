@@ -1069,7 +1069,7 @@ tienes que encontrar la espada maestra.
 Se dice que ha sido escondida en un templo
 oculto.
 Además, se dice que el camino que lleva a la
-espada de Evils Bane cruza una aldea poblada
+espada de Evil's Bane cruza una aldea poblada
 por monstruos...
 
 Me pregunto si tal aldea existirá...
@@ -1440,292 +1440,295 @@ no es una pista de patinaje.
 dialog{
   id = "outside_b3.n_sign",
   text = [[
-N: Hyrule Field
+N: Pradera de Hyrule
 ]]
 }
 
 dialog{
   id = "outside_b3.ne_sign",
   text = [[
-N: Hyrule Field
+N: Pradera de Hyrule
 ]]
 }
 
 dialog{
   id = "outside_b3.nw_sign",
   text = [[
-N: Kakariko Village
+N: Aldea Kakariko
 ]]
 }
 
 dialog{
   id = "outside_b3.se_sign",
   text = [[
-E: Shadow Village
-- Not for the living -
+E: Aldea de la sombra
+- No apta para los vivos -
 ]]
 }
 
 dialog{
   id = "outside_b3.sw_sign",
   text = [[
-W: Fire Land
+W: Tierras de fuego
 ]]
 }
 
 dialog{
   id = "outside_b3.w_sign",
   text = [[
-W: Fire Land
+W: Tierras de fuego
 ]]
 }
 
 dialog{
   id = "outside_b4.dungeon_8_sign",
   text = [[
-Hidden Temple
+Templo oculto
 
-Here rests the Sword of Evils Bane, the Master
-Sword.
+Aquí descansa la espada de Evil's Bane, la
+espada maestra.
 ]]
 }
 
 dialog{
   id = "outside_b4.e_sign",
   text = [[
-N: To the Haunted Graveyard
+N: Al cementerio encantado
 ]]
 }
 
 dialog{
   id = "outside_c1.dungeon_1_sign",
   text = [[
-Forest Temple
+Templo del bosque
 
-Save trees, eat green woodpecker!!!
+¡¡¡Salvad a los árboles, comed castores!!!
 ]]
 }
 
 dialog{
   id = "outside_c1.link_house_sign",
   text = [[
-N: Link's Home
-W: Hyrule Field
-E: Forest Temple
+N: Casa de Link
+W: Pradera de Hyrule
+E: Templo del bosque
 ]]
 }
 
 dialog{
   id = "outside_c2.ne_sign",
   text = [[
-E: Forest Entrance
+E: Entrada al bosque
 ]]
 }
 
 dialog{
   id = "outside_c2.nw_sign",
   text = [[
-N: Death Mountain
+N: Montaña de la muerte
 ]]
 }
 
 dialog{
   id = "outside_c2.se_sign",
   text = [[
-S: Lake Hylia
-E: Haunted Graveyard
+S: Lago Hylia
+E: Cementerio encantado
 ]]
 }
 
 dialog{
   id = "outside_c2.sw_sign",
   text = [[
-S: To Kakariko Village
+S: A la aldea Kakariko
 ]]
 }
 
 dialog{
   id = "outside_c3.cemetary.dont_pass",
   text = [[
-Wangle chief's permit if you really want to
-pass!!!
+¡¡¡Consigue una autorización del jefe si
+quieres pasar de verdad!!!
 ]]
 }
 
 dialog{
   id = "outside_c3.cemetary.go_away",
   text = [[
-Get out of my way!!!
+¡¡¡Fuera de mi vista!!!
 ]]
 }
 
 dialog{
   id = "outside_c3.cemetary.leader_allowed_to_pass",
   text = [[
-The chief allowed you to pass???
-Grrrr... So move along!!!
+¿¿¿El jefe te ha permitido pasar???
+Grrrr... ¡¡¡Avanza!!!
 ]]
 }
 
 dialog{
   id = "outside_c3.cemetary_sign",
   text = [[
-N: Haunted Graveyard
+N: Cementerio encantado
 
-No entry
+Prohibido el paso
 ]]
 }
 
 dialog{
   id = "outside_c3.dungeon_sign",
   text = [[
-Dark Temple
+Templo de la oscuridad
 
-If you are a ghost, seeking a job, you'd better
-come here to hang out with us.
+Si eres un fantasma y buscas trabajo, mejor
+ven aquí a pasar el rato.
 ]]
 }
 
 dialog{
   id = "outside_c3.frog",
   text = [[
-Local monsters don't fear a lot of things,
-fortunately they only attack humans.
+Los monstruos del lugar no temen casi nada.
+Afortunadamente solo atacan a los humanos.
 ]]
 }
 
 dialog{
   id = "outside_c3.little_tree",
   text = [[
-It's not common to have visitors around here.
+No estamos acostumbrados a ver visitantes
+por aquí.
 ]]
 }
 
 dialog{
   id = "outside_c3.pink_ball",
   text = [[
-Really?
-You understand what I say?
+¿De verdad?
+¿Entiendes lo que te digo?
 ]]
 }
 
 dialog{
   id = "outside_c3.running_man",
   text = [[
-People from that village have a very strange
-dialect, I don't understand anything...
+La gente de esa aldea tiene un dialecto
+muy extraño, no entiendo nada...
 ]]
 }
 
 dialog{
   id = "outside_c3.sw_sign",
   text = [[
-N: Shadow Village
-W: Lake Hylia
+N: Aldea de las sombras
+W: Lago Hylia
 ]]
 }
 
 dialog{
   id = "outside_c3.village_sign",
   text = [[
-Shadow Village
+Aldea de las sombras
 ]]
 }
 
 dialog{
   id = "potion_not_needed",
   text = [[
-You don't need to drink this potion now.
+No necesitas beber esta poción ahora.
 ]]
 }
 
 dialog{
   id = "save_quit",
   text = [[
-                 Already tired?
-                   $? Continue
-                 $? Save and quit
-              $? Quit without saving
+                 ¿Ya estás cansado?
+                   $? Continuar
+                 $? Guardar y salir
+                $? Salir sin guardar
 ]]
 }
 
 dialog{
   id = "shadow_village.bird_house.bird",
   text = [[
-When you returned peace to Hyrule and reunified
-the Light World with the Golden Land, Princess
-Zelda secretly asked volunteer spirits to
-create this village to block the access to a
-very high valued object.
+Cuando devolviste la paz a Hyrule y reunificaste
+el mundo de la luz con la Tierra Dorada, la
+princesa Zelda pidió en secreto a espíritus
+voluntarios que crearan esta aldea para bloquear
+el acceso a un objeto de muy alto valor.
 ]]
 }
 
 dialog{
   id = "shadow_village.leader_house.about_village",
   text = [[
-Our village was constituted in the aim to stop
-careless adventurers from reaching the temple,
-I don't allow just anyone to pass.
+Nuestra aldea fue fundada con la intención de
+impedir que aventureros imprudentes accedan
+al templo. No le doy autorización de pasar
+a nadie.
 ]]
 }
 
 dialog{
   id = "shadow_village.leader_house.enough_crystals",
   text = [[
-Mmmm... You already found 4 crystals?
-I have to admit you impress me...
+Mmmm... ¿Ya has encontrado 4 cristales?
+Tengo que admitir que me impresionas...
 
 
-All right, you are allowed to cross over the
-graveyard, at your own risk.
+Muy bien, tienes autorización para acceder
+al cementerio, bajo tu propia responsabilidad.
 ]]
 }
 
 dialog{
   id = "shadow_village.leader_house.go_cemetary",
   text = [[
-Talk to the guard at the north of the village,
-he will let you pass.
+Habla con el guardia al norte de la aldea,
+te dejará pasar.
 ]]
 }
 
 dialog{
   id = "shadow_village.leader_house.still_alive",
   text = [[
-I see you're still alive...
-Surprising.
+Veo que sigues vivo...
+Sorprendente.
 ]]
 }
 
 dialog{
   id = "shadow_village.leader_house.sword_found",
   text = [[
-So you found the Sword?
-But don't believe it is yours just like that.
+¿Así que encontraste la espada?
+Pero no creas que por ello va a ser tuya.
 
 
-The Master Sword is among the most treasured
-heritage of Hyrule with the Triforce, you will
-have to bring it back in its sanctuary when
-your mission is completed.
+La espada maestra se encuentra entre el patrimonio
+más preciado de Hyrule, junto a la Trifuerza.
+Deberás devolverla a su santuario cuando acabes
+tu misión.
 ]]
 }
 
 dialog{
   id = "shadow_village.leader_house.sword_hint",
   text = [[
-The dark temple is the starting point of the
-way reaching a legendary object. This village
-just exists to dissuade adventurers from
-approaching.
+El templo de la oscuridad constituye el punto
+de partida del camino que lleva a un objeto
+legendario. Esta aldea existe solo para disuadir
+a los aventureros de acercarse a él.
 ]]
 }
 
 dialog{
   id = "shadow_village.mouse_house.mouse",
   text = [[
-All the inhabitants of this village are spirits
-who responded to Princess Zelda's call.
+Todos los habitantes de esta aldea son espíritus
+que respondieron a la llamada de la princesa
+Zelda.
 ]]
 }
 
@@ -1741,18 +1744,18 @@ dialog{
 dialog{
   id = "shadow_village.potion_house.no_bottle",
   text = [[
-Come back when you have an empty bottle and I
-will sell you a blue potion which restores
-energy and magic.
+Vuelve cuando tengas una botella vacía y te
+venderé una poción azul que restaura la
+energía y la magia.
 ]]
 }
 
 dialog{
   id = "shadow_village.potion_house.offer",
   text = [[
-A blue potion for $v rupees, are you
-interested?
-              $? Yes
+Una poción azul por $v rupias, ¿estás
+interesado?
+              $? Sí
               $? No
 ]]
 }
@@ -1760,63 +1763,64 @@ interested?
 dialog{
   id = "shadow_village.potion_house.yes",
   text = [[
-Thank you, here is your potion.
+Gracias, aquí está tu poción.
 ]]
 }
 
 dialog{
   id = "shop.arrow.2",
   text = [[
-5 arrows.
+5 flechas.
 ]]
 }
 
 dialog{
   id = "shop.bomb.1",
   text = [[
-One bomb.
+Una bomba.
 ]]
 }
 
 dialog{
   id = "shop.bow.2",
   text = [[
-A bow.
+Un arco.
 ]]
 }
 
 dialog{
   id = "shop.choose",
   text = [[
-Choose what you want.
+Elige lo que quieres.
 ]]
 }
 
 dialog{
   id = "shop.heart.1",
   text = [[
-One heart.
+Un corazón.
 ]]
 }
 
 dialog{
   id = "shop.magic_flask.1",
   text = [[
-A little bit of magic.
+Un poquito de magia.
 ]]
 }
 
 dialog{
   id = "shop.magic_flask.2",
   text = [[
-Some magic.
+Algo de magia.
 ]]
 }
 
 dialog{
   id = "small_key_required",
   text = [[
-This door is locked.
-You need a small key to open it!
+Esta puerta está cerrada.
+¡Necesitas una llave pequeña 
+para abrirla!
 ]]
 }
