@@ -1,7 +1,7 @@
 dialog{
   id = "_crystal",
   text = [[
-Es un interruptor de cristal.
+Es un cristal interruptor.
 Intenta golpearlo con algo...
 ]]
 }
@@ -618,7 +618,7 @@ dialog{
   text = [[
                     Nivel ¿?
 
-                  Templo oculto
+                  Templo secreto
 ]]
 }
 
@@ -1067,7 +1067,7 @@ dialog{
 ¿Tus armas no sirven contra Ganon? Entonces
 tienes que encontrar la espada maestra.
 Se dice que ha sido escondida en un templo
-oculto.
+secreto.
 Además, se dice que el camino que lleva a la
 espada de Evil's Bane cruza una aldea poblada
 por monstruos...
@@ -1483,7 +1483,7 @@ W: Tierras de fuego
 dialog{
   id = "outside_b4.dungeon_8_sign",
   text = [[
-Templo oculto
+Templo secreto
 
 Aquí descansa la espada de Evil's Bane, la
 espada maestra.
