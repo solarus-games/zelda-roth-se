@@ -5,7 +5,7 @@ text{ key = "dungeon_4.name", value = "Templo del desierto" }
 text{ key = "dungeon_5.name", value = "Templo de la sombra" }
 text{ key = "dungeon_6.name", value = "Templo del fuego" }
 text{ key = "dungeon_7.name", value = "Templo del hielo" }
-text{ key = "dungeon_8.name", value = "Templo oculto" }
+text{ key = "dungeon_8.name", value = "Templo secreto" }
 text{ key = "dungeon_9.name", value = "Castillo de Hyrule" }
 text{ key = "options_menu.back", value = "ATRÁS" }
 text{ key = "options_menu.language", value = "IDIOMA" }
