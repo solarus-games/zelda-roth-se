@@ -7,6 +7,7 @@ function enemy:on_created()
 
   enemy:set_life(100)
   enemy:set_damage(20)
+  enemy:set_hurt_style("boss")
   enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_hurt_style("boss")
   enemy:set_pushed_back_when_hurt(false)

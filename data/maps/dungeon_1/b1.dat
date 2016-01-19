@@ -2279,7 +2279,6 @@ enemy{
   y = 109,
   direction = 0,
   breed = "mothula",
-  rank = 2,
   savegame_variable = "dungeon_1_boss",
   treasure_name = "magic_crystal",
   treasure_savegame_variable = "dungeon_1_crystal",

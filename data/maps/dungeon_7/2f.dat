@@ -8092,7 +8092,6 @@ enemy{
   y = 357,
   direction = 3,
   breed = "kholdstare",
-  rank = 2,
   savegame_variable = "dungeon_7_boss",
   treasure_name = "magic_crystal",
   treasure_savegame_variable = "dungeon_7_crystal",

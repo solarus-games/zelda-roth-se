@@ -658,7 +658,6 @@ enemy{
   y = 1549,
   direction = 0,
   breed = "blind",
-  rank = 2,
   savegame_variable = "dungeon_6_boss",
   treasure_name = "magic_crystal",
   treasure_savegame_variable = "dungeon_6_crystal",

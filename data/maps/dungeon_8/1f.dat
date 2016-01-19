@@ -5315,7 +5315,6 @@ enemy{
   y = 845,
   direction = 0,
   breed = "helmasaur_king",
-  rank = 2,
   savegame_variable = "dungeon_8_boss",
 }
 

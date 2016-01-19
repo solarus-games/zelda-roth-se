@@ -736,7 +736,6 @@ enemy{
   y = 85,
   direction = 0,
   breed = "ganon",
-  rank = 2,
   treasure_name = "triforce",
 }
 

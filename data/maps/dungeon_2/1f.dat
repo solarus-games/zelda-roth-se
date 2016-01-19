@@ -11331,7 +11331,6 @@ enemy{
   y = 1061,
   direction = 0,
   breed = "arrghus",
-  rank = 2,
   savegame_variable = "dungeon_2_boss",
   treasure_name = "magic_crystal",
   treasure_savegame_variable = "dungeon_2_crystal",
