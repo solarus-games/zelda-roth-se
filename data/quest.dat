@@ -5,9 +5,7 @@ quest{
   short_description = "Remake of the first game from Vincent Jouillat",
   long_description = [[
 Solarus remake of Vincent Jouillat's first fangame, Zelda Return of the Hylian.
-The original game was developed in C++ and was released in 2009.
-
-While this is essentially the same game, a lot of details were improved in this Solarus Edition.]],
+The original game was developed in C++ and was released in 2009.]],
   author = "Christopho",
   quest_version = "1.0.8",
   release_date = "20151207",
