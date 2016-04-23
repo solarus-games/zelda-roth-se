@@ -1,4 +1,4 @@
-![Zelda Return of the Hylian logo](zelda_roth_se_title_small.png)
+![Zelda Return of the Hylian logo](data/logos/logo.png)
 
 #  Zelda Return of the Hylian
 
