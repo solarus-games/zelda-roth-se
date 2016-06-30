@@ -6150,6 +6150,8 @@ custom_entity{
   layer = 1,
   x = 1064,
   y = 1565,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "npc/zelda",
   model = "zelda",
