@@ -64,6 +64,8 @@ function enemy:on_restarted()
       x = hero_x,
       y = hero_y,
       layer = hero_layer,
+      width = 16,
+      height = 16,
       direction = 0,
     })
     local shadow_sprite = shadow:create_sprite("enemies/" .. enemy:get_breed())

@@ -361,6 +361,8 @@ function game_manager:create(file)
       x = x,
       y = y,
       layer = layer,
+      width = 16,
+      height = 16,
       direction = 0,
       sprite = hero:get_tunic_sprite_id(),
     })
@@ -429,6 +431,8 @@ function game_manager:create(file)
       x = x,
       y = y - 5,
       layer = layer,
+      width = 16,
+      height = 16,
       direction = 0,
       sprite = "hero/rabbit_explosion",
     })

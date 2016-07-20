@@ -25,6 +25,8 @@ function item:shoot()
     x = x,
     y = y,
     layer = layer,
+    width = 16,
+    height = 16,
     direction = direction,
   })
 
@@ -45,6 +47,8 @@ function item:on_using()
     x = x,
     y = y,
     layer = layer,
+    width = 16,
+    height = 16,
     direction = direction,
     sprite = "hero/ice_rod",
   })
