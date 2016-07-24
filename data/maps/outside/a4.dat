@@ -2876,6 +2876,7 @@ custom_entity{
   x = 2264,
   y = 157,
   width = 8,
+  height = 16,
   direction = 2,
   model = "cliff",
 }
@@ -3091,6 +3092,7 @@ custom_entity{
   x = 1144,
   y = 13,
   width = 208,
+  height = 16,
   direction = 0,
   model = "hookable",
 }

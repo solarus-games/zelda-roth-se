@@ -107,7 +107,7 @@ function dialog_box_manager:create(game)
   local function compute_position()
 
     local map = game:get_map()
-    local camera_x, camera_y, camera_width, camera_height = map:get_camera_position()
+    local camera_x, camera_y, camera_width, camera_height = map:get_bounding_box()
     local top = false
     if dialog_box.position == "top" then
       top = true

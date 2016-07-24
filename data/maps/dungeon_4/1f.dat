@@ -3,10 +3,10 @@ properties{
   y = 480,
   width = 1600,
   height = 1200,
-  world = "dungeon_4",
-  floor = 0,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_4",
+  floor = 0,
   tileset = "ice_brown",
   music = "dark_world_dungeon",
 }

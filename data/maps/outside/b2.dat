@@ -5669,6 +5669,7 @@ custom_entity{
   x = 504,
   y = 781,
   width = 416,
+  height = 16,
   direction = 0,
   model = "hookable",
 }
@@ -5678,6 +5679,7 @@ custom_entity{
   x = 88,
   y = 781,
   width = 368,
+  height = 16,
   direction = 0,
   model = "hookable",
 }
@@ -5687,6 +5689,7 @@ custom_entity{
   x = 424,
   y = 237,
   width = 32,
+  height = 16,
   direction = 0,
   model = "hookable",
 }
@@ -5696,6 +5699,7 @@ custom_entity{
   x = 504,
   y = 237,
   width = 32,
+  height = 16,
   direction = 0,
   model = "hookable",
 }

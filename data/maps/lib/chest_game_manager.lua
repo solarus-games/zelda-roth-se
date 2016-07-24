@@ -70,7 +70,7 @@ function chest_game_manager:create(map, savegame_variable)
 
   for chest in map:get_entities("chest_") do
     if chest:get_type() == "chest" then
-      chest.on_empty = chest_opening
+      chest.on_opening = chest_opening
       num_chests = num_chests + 1
       if game:get_value(savegame_variable) then
         chest:set_open(true)
