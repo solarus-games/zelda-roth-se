@@ -100,7 +100,7 @@ function camera_manager:create(game)
     end
 
     if not moving then
-      initial_x, initial_y, camera_width, camera_height = map:get_bounding_box()
+      initial_x, initial_y, camera_width, camera_height = map:get_camera():get_bounding_box()
     end
     moving = true
 
