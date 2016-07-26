@@ -6,6 +6,7 @@ _______________________________________________________________
 * Upgrade to Solarus 1.5.
 * Add German translation (thanks Wuzzy2!).
 * Add Spanish translation (thanks Diarandor!).
+* Fix initial cursor position in savegame menu after a new game.
 * Fix stuck in a cliff west of the castle (#87).
 * Fix silver arrows incorrectly changing the arrow counter (#88).
 * Fix stats showing 47/46 monsters if a chicken was killed (#89).

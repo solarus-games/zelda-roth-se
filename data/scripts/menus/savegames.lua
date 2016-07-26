@@ -196,6 +196,7 @@ function savegames_menu:on_key_pressed(key)
       if games[cursor_position] == nil then
         -- Create a new savegame.
         local game = game_manager:create(get_savegame_file_name(cursor_position))
+        set_last_savegame_slot(cursor_position)
         sol.main:start_savegame(game)
       else
         -- Show actions for an existing savegame.
