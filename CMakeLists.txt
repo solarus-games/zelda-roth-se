@@ -47,7 +47,7 @@ add_custom_target(${quest_name}_data
 add_custom_command(
   OUTPUT ${quest_name}
   COMMAND echo '\#!/bin/sh' > ${quest_name}
-  COMMAND echo 'solarus_run ${CMAKE_INSTALL_PREFIX}/share/solarus/${quest_name} $*' >> ${quest_name}
+  COMMAND echo 'solarus-run ${CMAKE_INSTALL_PREFIX}/share/solarus/${quest_name} $*' >> ${quest_name}
 )
 add_custom_target(${quest_name}_command
   ALL
