@@ -6,6 +6,7 @@ function enemy:on_created()
 
   self:set_life(8)
   self:set_damage(2)
+  self:set_hurt_style("boss")
   self:create_sprite("enemies/mothula")
   self:set_hurt_style("boss")
   self:set_pushed_back_when_hurt(false)

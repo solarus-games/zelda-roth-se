@@ -4,6 +4,8 @@ properties{
   width = 2560,
   height = 240,
   world = "outside",
+  min_layer = 0,
+  max_layer = 2,
   tileset = "light_world",
   music = "dark_world",
 }
@@ -2874,6 +2876,7 @@ custom_entity{
   x = 2264,
   y = 157,
   width = 8,
+  height = 16,
   direction = 2,
   model = "cliff",
 }
@@ -3089,6 +3092,7 @@ custom_entity{
   x = 1144,
   y = 13,
   width = 208,
+  height = 16,
   direction = 0,
   model = "hookable",
 }
@@ -4256,6 +4260,8 @@ custom_entity{
   layer = 2,
   x = 1096,
   y = 141,
+  width = 16,
+  height = 16,
   direction = 0,
   sprite = "entities/hook_yellow",
   model = "hookable",
@@ -4265,6 +4271,8 @@ custom_entity{
   layer = 2,
   x = 1320,
   y = 141,
+  width = 16,
+  height = 16,
   direction = 0,
   sprite = "entities/hook_yellow",
   model = "hookable",

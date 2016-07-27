@@ -510,7 +510,9 @@ entity{ id = "ice_beam", description = "Ice beam" }
 entity{ id = "torch", description = "Torch" }
 entity{ id = "zelda", description = "Zelda" }
 
+language{ id = "de", description = "Deutsch" }
 language{ id = "en", description = "English" }
+language{ id = "es", description = "Español" }
 language{ id = "fr", description = "Français" }
 
 font{ id = "alttp", description = "alttp" }

@@ -16,12 +16,14 @@ function item:shoot()
   local hero = map:get_hero()
   local direction = hero:get_direction()
 
-  local x, y, layer = hero:get_position()
+  local x, y, layer = hero:get_center_position()
   local fire = map:create_custom_entity({
     model = "fire",
     x = x,
-    y = y,
+    y = y + 3,
     layer = layer,
+    width = 8,
+    height = 8,
     direction = direction,
   })
 
@@ -49,6 +51,8 @@ function item:on_using()
     x = x,
     y = y,
     layer = layer,
+    width = 16,
+    height = 16,
     direction = direction,
     sprite = "hero/fire_rod",
   })

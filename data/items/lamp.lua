@@ -46,6 +46,8 @@ function item:create_fire()
     x = x + dx,
     y = y + dy,
     layer = layer,
+    width = 16,
+    height = 16,
     direction = 0,
   }
 end

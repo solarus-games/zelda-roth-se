@@ -1,0 +1,1826 @@
+dialog{
+  id = "_crystal",
+  text = [[
+Es un cristal interruptor.
+Intenta golpearlo con algo...
+]]
+}
+
+dialog{
+  id = "_shop.amount_full",
+  text = [[
+No necesitas esto ahora mismo.
+]]
+}
+
+dialog{
+  id = "_shop.not_enough_money",
+  text = [[
+Lo siento, pero no tienes suficientes
+rupias.
+]]
+}
+
+dialog{
+  id = "_shop.question",
+  text = [[
+Precio: $v rupias. ¿Ok?
+    $? Sí
+    $? No
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.1",
+  text = [[
+¡Encontraste 1 flecha!
+Usa el arco y flechas para vencer enemigos
+fuertes desde lejos.
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.2",
+  text = [[
+¡Encontraste 5 flechas!
+Usa el arco y flechas para vencer enemigos
+fuertes desde lejos.
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.3",
+  text = [[
+¡Encontraste 10 flechas!
+Usa el arco y flechas para vencer enemigos
+fuertes desde lejos.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.1",
+  text = [[
+¡Encontraste 1 bomba!
+Usa bombas para hacer que exploten
+enemigos u obstáculos.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.2",
+  text = [[
+¡Encontraste 3 bombas!
+Usa bombas para hacer que exploten
+enemigos u obstáculos.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.3",
+  text = [[
+¡Encontraste 8 bombas!
+Usa bombas para hacer que exploten
+enemigos u obstáculos.
+]]
+}
+
+dialog{
+  id = "_treasure.boss_key.1",
+  text = [[
+¡¡¡Encontraste la llave del jefe!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.1",
+  text = [[
+¡¡¡Encontraste una botella vacía!!!
+¡¡¡Te servirá para guardar pociones!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.2",
+  text = [[
+¡¡¡Conseguiste una poción roja!!!
+¡¡¡Bébetela para restaurar tu energía!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.3",
+  text = [[
+¡¡¡Conseguiste una poción verde!!!
+¡¡¡Bébetela para restaurar tu magia!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.4",
+  text = [[
+¡¡¡Conseguiste una poción azul!!!
+¡¡¡Bébetela para restaurar tu energía
+y tu magia!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.1",
+  text = [[
+¡¡¡Encontraste una botella vacía!!!
+¡¡¡Te servirá para guardar pociones!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.2",
+  text = [[
+¡¡¡Conseguiste una poción roja!!!
+¡¡¡Bébetela para restaurar tu energía!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.3",
+  text = [[
+¡¡¡Conseguiste una poción verde!!!
+¡¡¡Bébetela para restaurar tu magia!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.4",
+  text = [[
+¡¡¡Conseguiste una poción azul!!!
+¡¡¡Bébetela para restaurar tu energía
+y tu magia!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.1",
+  text = [[
+¡¡¡Encontraste una botella vacía!!!
+¡¡¡Te servirá para guardar pociones!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.2",
+  text = [[
+¡¡¡Conseguiste una poción roja!!!
+¡¡¡Bébetela para restaurar tu energía!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.3",
+  text = [[
+¡¡¡Conseguiste una poción verde!!!
+¡¡¡Bébetela para restaurar tu magia!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.4",
+  text = [[
+¡¡¡Conseguiste una poción azul!!!
+¡¡¡Bébetela para restaurar tu energía
+y tu magia!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bow.1",
+  text = [[
+¡¡¡Conseguiste el arco!!!
+Úsalo para alcanzar objetivos distantes.
+]]
+}
+
+dialog{
+  id = "_treasure.bow.2",
+  text = [[
+¡¡¡Conseguiste el arco!!!
+Úsalo para alcanzar objetivos distantes.
+]]
+}
+
+dialog{
+  id = "_treasure.bow_silver.1",
+  text = [[
+¡¡¡Desde ahora tu arco dispara flechas
+de plata con una fuerza devastadora!!!
+]]
+}
+
+dialog{
+  id = "_treasure.bow_silver.2",
+  text = [[
+¡¡¡Desde ahora tu arco dispara flechas
+de plata con una fuerza devastadora!!!
+]]
+}
+
+dialog{
+  id = "_treasure.compass.1",
+  text = [[
+¡¡¡Encontraste la brújula!!!
+Puedes localizar al jefe y los cofres en
+el mapa.
+]]
+}
+
+dialog{
+  id = "_treasure.din_medallion.1",
+  text = [[
+¡¡¡Conseguiste un colgante mágico!!!
+¡¡¡Tu defensa acaba de aumentar!!!
+]]
+}
+
+dialog{
+  id = "_treasure.farore_medallion.1",
+  text = [[
+¡¡¡Conseguiste un colgante mágico!!!
+¡¡¡Tu defensa acaba de aumentar!!!
+]]
+}
+
+dialog{
+  id = "_treasure.fire_rod.1",
+  text = [[
+¡¡¡Encontraste el cetro de fuego!!!
+Desde ahora puedes disparar llamas poderosas.
+]]
+}
+
+dialog{
+  id = "_treasure.flippers.1",
+  text = [[
+¡¡¡Encontraste las aletas!!!  
+Ya puedes nadar en agua profunda.
+]]
+}
+
+dialog{
+  id = "_treasure.glove.1",
+  text = [[
+¡¡¡Encontraste los guantes de poder!!!
+Úsalos para levantar objetos pretando la tecla
+de Acción.
+]]
+}
+
+dialog{
+  id = "_treasure.glove.2",
+  text = [[
+El poder de tus guantes te permitirá levantar
+rocas pesadas.
+]]
+}
+
+dialog{
+  id = "_treasure.hammer.1",
+  text = [[
+¡¡¡Encontraste el martillo mágico!!!
+Úsalo para aplastar obstáculos.
+]]
+}
+
+dialog{
+  id = "_treasure.heart.1",
+  text = [[
+¡Encontraste un corazón!
+]]
+}
+
+dialog{
+  id = "_treasure.hookshot.1",
+  text = [[
+¡¡¡Encontraste el gancho!!!
+Úsalo para superar obstáculos.
+]]
+}
+
+dialog{
+  id = "_treasure.ice_rod.1",
+  text = [[
+¡¡¡Encontraste el cetro de hielo!!!
+Úsalo para congelar cualquier cosa desde lejos.
+]]
+}
+
+dialog{
+  id = "_treasure.lamp.1",
+  text = [[
+¡¡¡Encontraste la linterna!!!
+Úsala para crear llamas.
+]]
+}
+
+dialog{
+  id = "_treasure.magic_crystal.1",
+  text = [[
+¡¡¡Encontraste un cristal mágico!!!
+]]
+}
+
+dialog{
+  id = "_treasure.magic_flask.1",
+  text = [[
+¡¡¡Encontraste una jarra pequeña de magia!!!
+]]
+}
+
+dialog{
+  id = "_treasure.magic_flask.2",
+  text = [[
+¡¡¡Encontraste una jarra grande de magia!!!
+]]
+}
+
+dialog{
+  id = "_treasure.map.1",
+  text = [[
+¡¡¡Encontraste el mapa de la mazmorra!!!
+Presiona P para ver el mapa.
+]]
+}
+
+dialog{
+  id = "_treasure.mudora_book.1",
+  text = [[
+¡¡¡Encontraste el libro de Mudora!!!
+¡¡¡Desde ahora puedes comprender el
+antiguo lenguaje Hylian.
+]]
+}
+
+dialog{
+  id = "_treasure.nayru_medallion.1",
+  text = [[
+¡¡¡Conseguiste un colgante mágico!!!
+¡¡¡Tu defensa acaba de aumentar!!!
+]]
+}
+
+dialog{
+  id = "_treasure.piece_of_heart.1",
+  text = [[
+¡¡¡Encontraste un cuarto de corazón!!!
+]]
+}
+
+dialog{
+  id = "_treasure.shield.1",
+  text = [[
+¡¡¡Encontraste un escudo!!!
+¡Tu defensa aumenta 1 punto!
+]]
+}
+
+dialog{
+  id = "_treasure.small_key.1",
+  text = [[
+¡¡¡Encontraste una llave pequeña!!!
+Presiona Acción cerca de una puerta cerrada
+para abrirla.
+]]
+}
+
+dialog{
+  id = "_treasure.sword.1",
+  text = [[
+¡¡¡Encontraste una espada!!!
+  
+¡Ya puedes luchar contra monstruos presionando
+la tecla C!
+
+¡¡¡Mantén C presionado para realizar un
+ataque giratorio!!!
+]]
+}
+
+dialog{
+  id = "_treasure.sword.2",
+  text = [[
+Tu espada tiene el triple de poder y ahora
+puedes devolver algunos ataques mágicos,
+¡¡¡genial!!!
+]]
+}
+
+dialog{
+  id = "_treasure.sword.3",
+  text = [[
+¡¡¡Encontraste la espada maestra!!!
+¡Ni siquiera Ganon podrá resistir su poder!
+(en teoría)
+]]
+}
+
+dialog{
+  id = "_treasure.triforce.1",
+  text = [[
+¡¡¡Encontraste la Trifuerza!!!
+]]
+}
+
+dialog{
+  id = "boss_key_required",
+  text = [[
+¡Esta puerta lleva a la guarida del jefe!
+Necesitarás la llave del jefe para abrirla.
+]]
+}
+
+dialog{
+  id = "bottle_merchant.done",
+  text = [[
+Lo siento, esa era mi única botella.
+]]
+}
+
+dialog{
+  id = "bottle_merchant.no",
+  text = [[
+Vuelve si cambias de opinión.
+]]
+}
+
+dialog{
+  id = "bottle_merchant.offer",
+  text = [[
+Vendo una botella por 100 rupias, ¿te
+interesa?
+                  $? Sí
+                  $? No
+]]
+}
+
+dialog{
+  id = "bottle_merchant.yes",
+  text = [[
+Gracias, aquí tienes tu botella.
+]]
+}
+
+dialog{
+  id = "chest_game.already_done",
+  text = [[
+No me quedan más premios para poner en juego,
+lo siento.
+]]
+}
+
+dialog{
+  id = "chest_game.go_chest",
+  text = [[
+Elige un cofre.
+]]
+}
+
+dialog{
+  id = "chest_game.lost",
+  text = [[
+¡Perdiste! Este cofre está vacío.
+]]
+}
+
+dialog{
+  id = "chest_game.pay_first",
+  text = [[
+¡Hey!
+¡¡¡Tienes que pagar para abrir uno de
+mis cofres!!!
+]]
+}
+
+dialog{
+  id = "chest_game.rules",
+  text = [[
+Uno de estos cofres contiene un cuarto de
+corazón, ¿quieres probar suerte por 10 rupias?
+                 $? Sí
+                 $? No
+]]
+}
+
+dialog{
+  id = "chest_game.thanks",
+  text = [[
+Gracias.
+]]
+}
+
+dialog{
+  id = "crystal.1",
+  text = [[
+¿Para qué servirá?
+]]
+}
+
+dialog{
+  id = "crystal.5",
+  text = [[
+¡Sólo quedan 2 más por encontrar!
+]]
+}
+
+dialog{
+  id = "crystal.6",
+  text = [[
+¡Sólo falta 1 más!
+]]
+}
+
+dialog{
+  id = "crystal.7",
+  text = [[
+Tienes todos los cristales. ¡¡¡Corre al
+castillo y salva a Zelda!!!
+]]
+}
+
+dialog{
+  id = "crystal.remaining",
+  text = [[
+¡Sólo quedan $v más por encontrar!
+]]
+}
+
+dialog{
+  id = "dungeon_1.welcome",
+  text = [[
+                    Nivel 1
+
+                Templo del bosque
+]]
+}
+
+dialog{
+  id = "dungeon_2.welcome",
+  text = [[
+                    Nivel 2
+
+                Templo del agua
+]]
+}
+
+dialog{
+  id = "dungeon_3.welcome",
+  text = [[
+                    Nivel 3
+
+                Templo de la montaña
+]]
+}
+
+dialog{
+  id = "dungeon_4.welcome",
+  text = [[
+                    Nivel 4
+
+                Templo del desierto
+]]
+}
+
+dialog{
+  id = "dungeon_5.welcome",
+  text = [[
+                    Nivel 5
+
+                Templo de la oscuridad
+]]
+}
+
+dialog{
+  id = "dungeon_6.welcome",
+  text = [[
+                    Nivel 6
+
+                Templo del fuego
+]]
+}
+
+dialog{
+  id = "dungeon_7.welcome",
+  text = [[
+                    Nivel 7
+
+                Templo del hielo
+]]
+}
+
+dialog{
+  id = "dungeon_8.welcome",
+  text = [[
+                    Nivel ¿?
+
+                  Templo secreto
+]]
+}
+
+dialog{
+  id = "dungeon_9.welcome",
+  text = [[
+                  Último Nivel
+
+                Castillo de Hyrule
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.almost_there",
+  text = [[
+Ya casi hemos llegado, ¡sígueme!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.dont_leave_castle",
+  text = [[
+Ganon aún está en algún lugar del castillo.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.go_ganon",
+  text = [[
+Ganon está justo detrás de esa puerta,
+curaré tus heridas.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.go_kakariko",
+  text = [[
+Temo que no puedas derrotar a Ganon con
+tus armas actuales...
+Ve a hablar con el jefe de la villa
+Kakarico, estoy segura de que encontrará
+una solución.
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.hello",
+  text = [[
+¡¡¡Enhorabuena Link, me salvaste!!!
+
+
+Busquemos a Ganon, rápido, ¡tenemos que
+recuperar la Trifuerza!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.secret_wall",
+  text = [[
+El pasadizo secreto detrás del trono lleva
+hasta Ganon. ¡Démonos prisa!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.should_wait_zelda",
+  text = [[
+¡¡¡Deberías esperar a la princesa Zelda!!!
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.weak_wall_ignored_zelda",
+  text = [[
+¿¿¿No tienes un extraño presentimiento de haber
+olvidado a alguien por casualidad???
+]]
+}
+
+dialog{
+  id = "dungeon_9.zelda.zelda_waiting",
+  text = [[
+¡¡¡Zelda te está esperando!!!
+]]
+}
+
+dialog{
+  id = "dungeon_finished_save",
+  text = [[
+¿Quieres guardar la partida?
+
+                   $? Sí
+                   $? No
+]]
+}
+
+dialog{
+  id = "ending",
+  text = [[
+En el momento exacto en el que Link tocó la
+Trifuerza, desaparecieron los monstruos y
+volvió la paz.
+  
+
+Entonces la princesa Zelda tomó una gran
+decisión: a su vez tocó la Trifuerza para
+cumplir su deseo.
+
+
+La Trifuerza siempre ha sido el origen de los
+problemas del reino, y tarde o temprano otra
+criatura maligna acabará por encontrala.
+
+Justo cuando la princesa tocó la reliquia,
+desapareció para siempre de Hyrule.
+
+
+Desde aquel día, la gente de Hyrule vivió en
+paz, sin temor a nuevos desastres.
+
+
+Así acaba la leyenda de Zelda, de la Trifuerza
+y de la Tierra Dorada.
+
+
+Se dice que la espada maestra descansa segura
+en algún lugar, y que constituye el último
+recuerdo de la búsqueda de Link...
+]]
+}
+
+dialog{
+  id = "fairy_cave_already_done",
+  text = [[
+...
+]]
+}
+
+dialog{
+  id = "fairy_cave_desert.reward",
+  text = [[
+Enhorabuena Link, me has encontrado.
+Como recompensa, te doy el colgante de Din,
+que aumenta 1 punto tu defensa.
+]]
+}
+
+dialog{
+  id = "fairy_cave_forest.reward",
+  text = [[
+Enhorabuena Link, me has encontrado.
+Como recompensa, te doy el colgante de Farore,
+que aumenta 1 punto tu defensa.
+]]
+}
+
+dialog{
+  id = "fairy_cave_lake.reward",
+  text = [[
+Enhorabuena Link, me has encontrado.
+Como recompensa, te doy el colgante de Nayru,
+¡que aumenta 2 puntos tu defensa!
+]]
+}
+
+dialog{
+  id = "fairy_cave_ruins.reward",
+  text = [[
+Enhorabuena Link, me has encontrado.
+Como recompensa, ¡¡¡duplicaré la capacidad
+de tu reserva de magia!!!
+]]
+}
+
+dialog{
+  id = "fairy_cave_ruins.treasure",
+  text = [[
+¡¡¡Tu reserva de magia se ha duplicado!!!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.first",
+  text = [[
+¡¡¡Encuentra 3 más para conseguir un
+corazón adicional!!!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.fourth",
+  text = [[
+¡¡¡Tu número de corazones acaba de
+aumentar!!!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.second",
+  text = [[
+¡¡¡Encuentra 2 más para conseguir un
+corazón adicional!!!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.third",
+  text = [[
+¡¡¡Encuentra 1 más para conseguir un
+corazón adicional!!!
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.hello",
+  text = [[
+¿Puedo hacer algo por ti?
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.not_now",
+  text = [[
+Vuelve más tarde, ¡estoy desbordado de trabajo!
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_bow",
+  text = [[
+¿Quieres que mejore tu arco?
+
+            $? Sí
+            $? No
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_glove",
+  text = [[
+¿Quieres que mejore tus guantes?
+
+            $? Sí
+            $? No
+]]
+}
+
+dialog{
+  id = "gerudo_village.blacksmith.offer_sword",
+  text = [[
+¿Quieres que reforje tu espada?
+
+            $? Sí
+            $? No
+]]
+}
+
+dialog{
+  id = "gerudo_village.leader_house.go_blacksmith",
+  text = [[
+Hola Link, soy el jefe de esta aldea.
+Deberías ir a ver al herrero y mostrarle lo
+que quieras que reforje de tu equipamiento.
+  
+He sido informado de tu búsqueda, así que
+lo he organizado todo con él.
+Todo te saldrá gratis.
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.no_bottle",
+  text = [[
+Vuelve cuando tengas una botella vacía y te
+venderé una poción verde que restaura la
+magia.
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.offer",
+  text = [[
+Una poción verde por $v rupias, ¿estás
+interesado?
+              $? Sí
+              $? No
+]]
+}
+
+dialog{
+  id = "gerudo_village.potion_house.yes",
+  text = [[
+Gracias, aquí está tu poción.
+]]
+}
+
+dialog{
+  id = "gerudo_village.woman_house.woman",
+  text = [[
+¡Hola! Si buscas al herrero, vive un poco
+más lejos.
+]]
+}
+
+dialog{
+  id = "intro.fresco_1",
+  text = [[
+El reino de Hyrule vivía en paz desde
+que Link, el último caballero de Hyrule,
+derrotó al malévolo Ganon,
+
+y recuperó la preciada Trifuerza de él.
+]]
+}
+
+dialog{
+  id = "intro.fresco_2",
+  text = [[
+Nadie sabe cuál fue el deseo de Link al
+tocar la Trifuerza, pero tuvo el efecto
+de reunificar el mundo de la luz y el de
+
+las tinieblas, y devolvió a la vida a
+los descendientes de los 7 sabios.
+]]
+}
+
+dialog{
+  id = "intro.fresco_3",
+  text = [[
+Después, Link devolvió la Trifuerza y
+la espada maestra a la princesa Zelda,
+y la gente comenzó a creer que la paz
+
+duraría.
+Pero la gente se equivocaba...
+]]
+}
+
+dialog{
+  id = "intro.fresco_4",
+  text = [[
+Desafortunadamente, el deseo de Link
+también tuvo efectos negativos.
+Ganon y sus esbirros fueron resucitados
+
+y se prepararon para atacar.
+]]
+}
+
+dialog{
+  id = "intro.fresco_5",
+  text = [[
+En algún lugar del bosque de Hyrule,
+Link duerme sin sospechar que Ganon
+ya ha comenzado a atacar,
+
+hasta que una voz conocida le habla
+en sus sueños...
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.first_time",
+  text = [[
+Hola Link, soy el jefe de esta aldea, estaba
+esperando tu llegada.
+
+
+Desde esta mañana, monstruos han aparecido
+por todo Hyrule. Intenté hablar de esto con
+Zelda, pero como quizás ya sabes, un poderoso
+hechizo bloquea el acceso al castillo...
+
+
+¿Dices que Ganon es responsable de todo eso?
+¿que él robó la Trifuerza y tiene a la
+princesa Zelda como prisionera?
+
+Mmmm... La situación es más grave de lo
+que pensaba...
+
+
+Tenemos que actuar con rapidez, ¡debes
+enfrentarte a Ganon de nuevo!
+
+
+¿Cómo entrar al castillo? Creo que tengo
+una idea...
+
+
+Como sabes, el poder de los 7 sabios fue
+encerrado en 7 cristales por el hechicero
+Aghanim cuando él intentó romper el sello
+que confinaba a Ganon al mundo de las
+tinieblas.
+Sin embargo, aunque hayas resucitado a los
+descendientes de los 7 sabios después de
+haber derrotado a Ganon y recuperado la
+Trifuerza, estos cristales han mantenido
+su poder.
+Fueron escondidos en los 7 templos. Reúnelos
+todos y podrás pasar sobre el hechizo de
+Ganon.
+
+No obstante, no va a ser tarea fácil, seguro
+que Ganon ha enviado a sus mejores secuaces
+a proteger estos cristales...
+
+Una cosa más, no llegarás muy lejos con tu
+equipamiento actual. Ve a ver al mercader
+de armas y dile que vienes de mi parte.
+Probablemente lo tendrá en cuenta.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_bow",
+  text = [[
+Ve a ver al mercader de armas y dile que
+vienes de mi parte.
+Probablemente lo tendrá en cuenta.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_castle",
+  text = [[
+¿Encontraste los 7 cristales? Ve al castillo
+ahora mismo, tienes que salvar a la princesa,
+ella sabrá mejor que yo cómo salvar Hyrule.
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_crystals",
+  text = [[
+Tienes que reunir los 7 cristales para tener
+posibilidades de salvar a Zelda y a Hyrule...
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_excalibur",
+  text = [[
+¿Tus armas no sirven contra Ganon? Entonces
+tienes que encontrar la espada maestra.
+Se dice que ha sido escondida en un templo
+secreto.
+Además, se dice que el camino que lleva a la
+espada de Evil's Bane cruza una aldea poblada
+por monstruos...
+
+Me pregunto si tal aldea existirá...
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_ganon",
+  text = [[
+¡Es hora de enfrentarse a Ganon y recuperar
+la Trifuerza!
+]]
+}
+
+dialog{
+  id = "kakariko.leader_house.go_glove",
+  text = [[
+Sin embargo, me temo que tu equipamiento actual
+es inadecuado para alcanzar este templo. Tal
+vez deberías ir a ver al herrero de la aldea
+Gerudo...
+]]
+}
+
+dialog{
+  id = "kakariko.potion_house.no_bottle",
+  text = [[
+Vuelve cuando tengas una botella vacía y te
+venderé una poción roja que restaura la
+energía.
+]]
+}
+
+dialog{
+  id = "kakariko.potion_house.offer",
+  text = [[
+Una poción roja por $v rupias, ¿estás
+interesado?
+
+              $? Sí
+              $? No
+]]
+}
+
+dialog{
+  id = "kakariko.potion_house.yes",
+  text = [[
+Gracias, aquí está tu poción.
+]]
+}
+
+dialog{
+  id = "kakariko.shop.reduced_bow",
+  text = [[
+¿¿¿Quéeee???
+¿¿¿Estás en una misión para el jefe???
+Vale, entonces te haré un descuento para
+el arco...
+]]
+}
+
+dialog{
+  id = "kakariko.tavern.drunk_man",
+  text = [[
+¡Hip! Se dice que un hada da objetos
+encantados... ¡Hip! ...a aventureros
+que la encuentren... ¡¡¡Hip!!!
+]]
+}
+
+dialog{
+  id = "kakariko.tavern.waiter",
+  text = [[
+Hola, ¿te apetece tomar algo?
+]]
+}
+
+dialog{
+  id = "link_house.zelda_message",
+  text = [[
+¡Socorro!
+¡Socorro!
+¡Soy yo, Zelda!
+Te estoy hablando por telepatía.
+¡Estoy prisionera en la mazmorra del castillo!
+¡Necesito tu ayuda!
+Ganon ha vuelto, y seguramente ya ha encontrado
+la Trifuerza...
+Vuelve rápidamente al castillo, Link, eres mi
+única esperanza...
+
+
+AYUDA: Presiona F1 para consultar las teclas.
+]]
+}
+
+dialog{
+  id = "monster_house.found_all",
+  text = [[
+No puedo creerlo, ¡conseguiste derrotar todos
+los tipos de enemigos!
+¡¡¡Enhorabuena Link!!!  
+]]
+}
+
+dialog{
+  id = "monster_house.no_more_reward",
+  text = [[
+Lo siento, pero no tengo nada más que
+ofrecerte...
+]]
+}
+
+dialog{
+  id = "monster_house.one_remaining",
+  text = [[
+¡¡¡Sólo falta 1 enemigo para la próxima
+recompensa!!!
+]]
+}
+
+dialog{
+  id = "monster_house.remaining",
+  text = [[
+$v enemigos diferentes más para la próxima
+recompensa.
+]]
+}
+
+dialog{
+  id = "monster_house.reward",
+  text = [[
+Acepta este regalo por tu contribución a mi
+proyecto:
+]]
+}
+
+dialog{
+  id = "monster_house.welcome",
+  text = [[
+Bienvenido Link!
+Permíteme explicarte qué estoy haciendo aquí.
+
+
+Como ya habrás observado, han aparecido
+monstruos en Hyrule. Es la primera vez que
+veo monstruos desde que derrotaste a Ganon.
+
+Bueno, he decidido hacer una lista con
+todos ellos.
+
+
+
+
+Desafortunadamente, soy demasiado miedoso como
+para ir a buscarlos, así que necesito tu ayuda.
+
+
+Tienes que vencer a cada tipo de monstruo
+y venir a informarme.
+
+
+Cada vez que venzas 7 nuevos tipos de enemigos,
+te daré un cuarto de corazón.
+
+
+Si quieres ver qué enemigos has vencido ya,
+presiona M.
+]]
+}
+
+dialog{
+  id = "not_enough_money",
+  text = [[
+Lo siento, no tienes suficientes rupias.
+]]
+}
+
+dialog{
+  id = "outside_a1.c_sign",
+  text = [[
+¿Perdido en el desierto?
+Estás aquí:
+                        X
+]]
+}
+
+dialog{
+  id = "outside_a1.dungeon_4_sign",
+  text = [[
+Templo del desierto
+
+Venid a probar nuestro baño.
+(agua no potable)
+]]
+}
+
+dialog{
+  id = "outside_a1.old_lady_npc",
+  text = [[
+¿Viste al herrero de esta aldea?
+Se dice que tiene mucho talento para mejorar
+el equipamiento de los aventureros. Mucha
+gente le visita.
+]]
+}
+
+dialog{
+  id = "outside_a1.s_sign",
+  text = [[
+Aldea Gerudo
+]]
+}
+
+dialog{
+  id = "outside_a1.se_sign",
+  text = [[
+S: Aldea Kakariko
+W: Desierto
+E: Montaña de la muerte
+]]
+}
+
+dialog{
+  id = "outside_a1.sw_sign",
+  text = [[
+S: Al castillo de Hyrule
+]]
+}
+
+dialog{
+  id = "outside_a1.thief_npc",
+  text = [[
+El templo está en lo más profundo del
+desierto, en un antiguo oasis.
+
+]]
+}
+
+dialog{
+  id = "outside_a2.castle_sign",
+  text = [[
+Castillo de Hyrule
+]]
+}
+
+dialog{
+  id = "outside_a2.sw_sign",
+  text = [[
+E: Aldea Kakariko
+]]
+}
+
+dialog{
+  id = "outside_a3.ne_sign",
+  text = [[
+W: Turtle Rock
+E: Lake Hylia
+]]
+}
+
+dialog{
+  id = "outside_a3.se_sign",
+  text = [[
+W: Roca de la tortuga
+E: Lago Hylia
+]]
+}
+
+dialog{
+  id = "outside_b1.dungeon_3_sign",
+  text = [[
+Templo de la montaña
+
+No apto para cardíacos, miedicas, y almas
+sensibles en general.
+]]
+}
+
+dialog{
+  id = "outside_b1.s_sign",
+  text = [[
+N: Templo de la montaña
+S: Pradera de Hyrule
+]]
+}
+
+dialog{
+  id = "outside_b1.sw_sign",
+  text = [[
+W: Entrada al desierto
+N: Templo de la montaña
+]]
+}
+
+dialog{
+  id = "outside_b2.broom_grandma",
+  text = [[
+¡Qué día más bueno!
+]]
+}
+
+dialog{
+  id = "outside_b2.chicken_boy",
+  text = [[
+¿¿¿Por qué acepté hacerme cargo de
+estas basuras???
+¡¡¡Odio las gallinas!!!
+]]
+}
+
+dialog{
+  id = "outside_b2.n_sign",
+  text = [[
+N: Desierto y aldea Gerudo
+]]
+}
+
+dialog{
+  id = "outside_b2.s_sign",
+  text = [[
+S: Lago Hylia
+W: Castillo de Hyrule
+]]
+}
+
+dialog{
+  id = "outside_b2.sw_sign",
+  text = [[
+W: Castillo de Hyrule
+]]
+}
+
+dialog{
+  id = "outside_b2.village_sign",
+  text = [[
+Aldea Kakariko
+]]
+}
+
+dialog{
+  id = "outside_b2.village_welcome_npc",
+  text = [[
+Puedes encontrar muchas cosas en la tienda
+de esta aldea.
+]]
+}
+
+dialog{
+  id = "outside_b3.dungeon_2_sign",
+  text = [[
+Templo del lago
+
+El gorro de baño es obligatorio.
+]]
+}
+
+dialog{
+  id = "outside_b3.dungeon_7_sign",
+  text = [[
+Templo de hielo
+
+El personal les recuerda que una mazmorra
+no es una pista de patinaje.
+]]
+}
+
+dialog{
+  id = "outside_b3.n_sign",
+  text = [[
+N: Pradera de Hyrule
+]]
+}
+
+dialog{
+  id = "outside_b3.ne_sign",
+  text = [[
+N: Pradera de Hyrule
+]]
+}
+
+dialog{
+  id = "outside_b3.nw_sign",
+  text = [[
+N: Aldea Kakariko
+]]
+}
+
+dialog{
+  id = "outside_b3.se_sign",
+  text = [[
+E: Aldea de la sombra
+- No apta para los vivos -
+]]
+}
+
+dialog{
+  id = "outside_b3.sw_sign",
+  text = [[
+W: Tierras de fuego
+]]
+}
+
+dialog{
+  id = "outside_b3.w_sign",
+  text = [[
+W: Tierras de fuego
+]]
+}
+
+dialog{
+  id = "outside_b4.dungeon_8_sign",
+  text = [[
+Templo secreto
+
+Aquí descansa la espada de Evil's Bane, la
+espada maestra.
+]]
+}
+
+dialog{
+  id = "outside_b4.e_sign",
+  text = [[
+N: Al cementerio encantado
+]]
+}
+
+dialog{
+  id = "outside_c1.dungeon_1_sign",
+  text = [[
+Templo del bosque
+
+¡¡¡Salvad a los árboles, comed castores!!!
+]]
+}
+
+dialog{
+  id = "outside_c1.link_house_sign",
+  text = [[
+N: Casa de Link
+W: Pradera de Hyrule
+E: Templo del bosque
+]]
+}
+
+dialog{
+  id = "outside_c2.ne_sign",
+  text = [[
+E: Entrada al bosque
+]]
+}
+
+dialog{
+  id = "outside_c2.nw_sign",
+  text = [[
+N: Montaña de la muerte
+]]
+}
+
+dialog{
+  id = "outside_c2.se_sign",
+  text = [[
+S: Lago Hylia
+E: Cementerio encantado
+]]
+}
+
+dialog{
+  id = "outside_c2.sw_sign",
+  text = [[
+S: A la aldea Kakariko
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.dont_pass",
+  text = [[
+¡¡¡Consigue una autorización del jefe si
+quieres pasar de verdad!!!
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.go_away",
+  text = [[
+¡¡¡Fuera de mi vista!!!
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary.leader_allowed_to_pass",
+  text = [[
+¿¿¿El jefe te ha permitido pasar???
+Grrrr... ¡¡¡Avanza!!!
+]]
+}
+
+dialog{
+  id = "outside_c3.cemetary_sign",
+  text = [[
+N: Cementerio encantado
+
+Prohibido el paso
+]]
+}
+
+dialog{
+  id = "outside_c3.dungeon_sign",
+  text = [[
+Templo de la oscuridad
+
+Si eres un fantasma y buscas trabajo, mejor
+ven aquí a pasar el rato.
+]]
+}
+
+dialog{
+  id = "outside_c3.frog",
+  text = [[
+Los monstruos del lugar no temen casi nada.
+Afortunadamente solo atacan a los humanos.
+]]
+}
+
+dialog{
+  id = "outside_c3.little_tree",
+  text = [[
+No estamos acostumbrados a ver visitantes
+por aquí.
+]]
+}
+
+dialog{
+  id = "outside_c3.pink_ball",
+  text = [[
+¿De verdad?
+¿Entiendes lo que te digo?
+]]
+}
+
+dialog{
+  id = "outside_c3.running_man",
+  text = [[
+La gente de esa aldea tiene un dialecto
+muy extraño, no entiendo nada...
+]]
+}
+
+dialog{
+  id = "outside_c3.sw_sign",
+  text = [[
+N: Aldea de las sombras
+W: Lago Hylia
+]]
+}
+
+dialog{
+  id = "outside_c3.village_sign",
+  text = [[
+Aldea de las sombras
+]]
+}
+
+dialog{
+  id = "potion_not_needed",
+  text = [[
+No necesitas beber esta poción ahora.
+]]
+}
+
+dialog{
+  id = "save_quit",
+  text = [[
+                 ¿Ya estás cansado?
+                   $? Continuar
+                 $? Guardar y salir
+                $? Salir sin guardar
+]]
+}
+
+dialog{
+  id = "shadow_village.bird_house.bird",
+  text = [[
+Cuando devolviste la paz a Hyrule y reunificaste
+el mundo de la luz con la Tierra Dorada, la
+princesa Zelda pidió en secreto a espíritus
+voluntarios que crearan esta aldea para bloquear
+el acceso a un objeto de muy alto valor.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.about_village",
+  text = [[
+Nuestra aldea fue fundada con la intención de
+impedir que aventureros imprudentes accedan
+al templo. No le doy autorización de pasar
+a nadie.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.enough_crystals",
+  text = [[
+Mmmm... ¿Ya has encontrado 4 cristales?
+Tengo que admitir que me impresionas...
+
+
+Muy bien, tienes autorización para acceder
+al cementerio, bajo tu propia responsabilidad.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.go_cemetary",
+  text = [[
+Habla con el guardia al norte de la aldea,
+te dejará pasar.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.still_alive",
+  text = [[
+Veo que sigues vivo...
+Sorprendente.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.sword_found",
+  text = [[
+¿Así que encontraste la espada?
+Pero no creas que por ello va a ser tuya.
+
+
+La espada maestra se encuentra entre el patrimonio
+más preciado de Hyrule, junto a la Trifuerza.
+Deberás devolverla a su santuario cuando acabes
+tu misión.
+]]
+}
+
+dialog{
+  id = "shadow_village.leader_house.sword_hint",
+  text = [[
+El templo de la oscuridad constituye el punto
+de partida del camino que lleva a un objeto
+legendario. Esta aldea existe solo para disuadir
+a los aventureros de acercarse a él.
+]]
+}
+
+dialog{
+  id = "shadow_village.mouse_house.mouse",
+  text = [[
+Todos los habitantes de esta aldea son espíritus
+que respondieron a la llamada de la princesa
+Zelda.
+]]
+}
+
+dialog{
+  id = "shadow_village.non_understandable",
+  text = [[
+{|{|{|{|{|{|{{{|
+{}||}{}|{}|{}|}{
+|{|{|{|}|}
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.no_bottle",
+  text = [[
+Vuelve cuando tengas una botella vacía y te
+venderé una poción azul que restaura la
+energía y la magia.
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.offer",
+  text = [[
+Una poción azul por $v rupias, ¿estás
+interesado?
+              $? Sí
+              $? No
+]]
+}
+
+dialog{
+  id = "shadow_village.potion_house.yes",
+  text = [[
+Gracias, aquí está tu poción.
+]]
+}
+
+dialog{
+  id = "shop.arrow.2",
+  text = [[
+5 flechas.
+]]
+}
+
+dialog{
+  id = "shop.bomb.1",
+  text = [[
+Una bomba.
+]]
+}
+
+dialog{
+  id = "shop.bow.2",
+  text = [[
+Un arco.
+]]
+}
+
+dialog{
+  id = "shop.choose",
+  text = [[
+Elige lo que quieres.
+]]
+}
+
+dialog{
+  id = "shop.heart.1",
+  text = [[
+Un corazón.
+]]
+}
+
+dialog{
+  id = "shop.magic_flask.1",
+  text = [[
+Un poquito de magia.
+]]
+}
+
+dialog{
+  id = "shop.magic_flask.2",
+  text = [[
+Algo de magia.
+]]
+}
+
+dialog{
+  id = "small_key_required",
+  text = [[
+Esta puerta está cerrada.
+¡Necesitas una llave pequeña 
+para abrirla!
+]]
+}

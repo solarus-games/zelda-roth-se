@@ -42,6 +42,8 @@ function item:on_using()
         x = x,
         y = y,
         layer = layer,
+        width = 16,
+        height = 16,
         direction = hero:get_direction(),
         model = "arrow",
       })

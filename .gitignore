@@ -6,11 +6,8 @@ CMakeFiles/
 Makefile
 install_manifest.txt
 cmake_install.cmake
-*.luac
 data.solarus
-/zelda_roth_plus
+/zelda_roth_se
 error.txt
-stdout.txt
-stderr.txt
 work/unversioned
 

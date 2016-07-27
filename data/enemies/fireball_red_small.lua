@@ -93,7 +93,7 @@ function enemy:on_pre_draw()
 
   local map = enemy:get_map()
   local x, y = enemy:get_position()
-  map:draw_sprite(sprites[2], x, y)
-  map:draw_sprite(sprites[3], x, y)
+  map:draw_visual(sprites[2], x, y)
+  map:draw_visual(sprites[3], x, y)
 end
 

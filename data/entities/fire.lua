@@ -5,18 +5,15 @@ local sprite
 
 local enemies_touched = { }
 
-function fire:on_created()
+fire:set_size(8, 8)
+fire:set_origin(4, 5)
+sprite = fire:create_sprite("entities/fire")
+sprite:set_direction(fire:get_direction())
 
-  fire:set_size(8, 8)
-  fire:set_origin(4, 5)
-  sprite = fire:create_sprite("entities/fire")
-  sprite:set_direction(fire:get_direction())
-
-  -- Remove the sprite if the animation finishes.
-  -- Use animation "flying" if you want it to persist.
-  function sprite:on_animation_finished()
-    fire:remove()
-  end
+-- Remove the sprite if the animation finishes.
+-- Use animation "flying" if you want it to persist.
+function sprite:on_animation_finished()
+  fire:remove()
 end
 
 -- Returns the sprite of a destrucible.
@@ -38,6 +35,22 @@ local function is_bush(destructible)
   return sprite_id == "entities/bush" or sprite_id:match("^entities/bush_")
 end
 
+local function bush_collision_test(fire, other)
+
+  if other:get_type() ~= "destructible" then
+    return false
+  end
+
+  if not is_bush(other) then
+    return
+  end
+
+  -- Check if the fire box touches the one of the bush.
+  -- To do this, we extend it of one pixel in all 4 directions.
+  local x, y, width, height = fire:get_bounding_box()
+  return other:overlaps(x - 1, y - 1, width + 2, height + 2)
+end
+
 -- Traversable rules.
 fire:set_can_traverse("crystal", true)
 fire:set_can_traverse("crystal_block", true)
@@ -53,13 +66,11 @@ fire:set_can_traverse_ground("hole", true)
 fire:set_can_traverse_ground("lava", true)
 fire:set_can_traverse_ground("prickles", true)
 fire:set_can_traverse_ground("low_wall", true)
-fire:set_can_traverse("destructible", function(fire, destructible)
-  return is_bush(destructible)
-end)
+fire:set_can_traverse(true)
 fire.apply_cliffs = true
 
 -- Burn bushes.
-fire:add_collision_test("touching", function(fire, entity)
+fire:add_collision_test(bush_collision_test, function(fire, entity)
 
   local map = fire:get_map()
 

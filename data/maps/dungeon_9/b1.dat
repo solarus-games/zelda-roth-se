@@ -5,6 +5,8 @@ properties{
   height = 1680,
   world = "dungeon_9",
   floor = -1,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "temple_blue",
   music = "castle",
 }
@@ -849,6 +851,8 @@ custom_entity{
   layer = 1,
   x = 760,
   y = 1709,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "npc/zelda",
   model = "zelda",

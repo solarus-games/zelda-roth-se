@@ -5,6 +5,8 @@ properties{
   height = 1680,
   world = "dungeon_9",
   floor = 1,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "temple_yellow",
   music = "castle",
 }
@@ -617,6 +619,8 @@ custom_entity{
   layer = 1,
   x = 680,
   y = 205,
+  width = 16,
+  height = 16,
   direction = 1,
   sprite = "entities/torch",
   model = "torch",
@@ -626,6 +630,8 @@ custom_entity{
   layer = 1,
   x = 920,
   y = 205,
+  width = 16,
+  height = 16,
   direction = 1,
   sprite = "entities/torch",
   model = "torch",
@@ -722,6 +728,8 @@ custom_entity{
   layer = 1,
   x = 800,
   y = 365,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "npc/zelda",
   model = "zelda",
@@ -734,7 +742,6 @@ enemy{
   y = 85,
   direction = 0,
   breed = "ganon",
-  rank = 2,
   treasure_name = "triforce",
 }
 

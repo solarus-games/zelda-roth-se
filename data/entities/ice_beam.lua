@@ -140,6 +140,11 @@ end
 
 function ice_beam:on_position_changed()
 
+  if sprites[1] == nil then
+    -- Not initialized yet.
+    return
+  end
+
   -- Create ice if there is deep water on the leading two squares.
   local x, y = ice_beam:get_center_position()
   local head_dx, head_dy = sprites[1]:get_xy()

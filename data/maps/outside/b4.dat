@@ -4,6 +4,8 @@ properties{
   width = 2560,
   height = 240,
   world = "outside",
+  min_layer = 0,
+  max_layer = 2,
   tileset = "light_world",
   music = "dark_world",
 }
@@ -4698,6 +4700,7 @@ custom_entity{
   x = 2056,
   y = 21,
   width = 416,
+  height = 16,
   direction = 0,
   model = "hookable",
 }
@@ -4707,6 +4710,7 @@ custom_entity{
   x = 168,
   y = 13,
   width = 192,
+  height = 16,
   direction = 0,
   model = "hookable",
 }
@@ -5782,6 +5786,8 @@ custom_entity{
   layer = 2,
   x = 328,
   y = 141,
+  width = 16,
+  height = 16,
   direction = 0,
   sprite = "entities/hook_green",
   model = "hookable",
@@ -5791,6 +5797,8 @@ custom_entity{
   layer = 2,
   x = 536,
   y = 125,
+  width = 16,
+  height = 16,
   direction = 0,
   sprite = "entities/hook_green",
   model = "hookable",
