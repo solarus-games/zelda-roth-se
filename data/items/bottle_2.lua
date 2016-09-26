@@ -5,5 +5,5 @@ function item:on_created()
   self:set_savegame_variable("possession_bottle_2")
 end
 
-sol.main.load_file("items/bottle")(item)
-
+local bottle_script = require("items/bottle")
+bottle_script(item)
