@@ -1,7 +1,7 @@
 local enemy = ...
 local game = enemy:get_game()
 
--- A ghost that can traverse walls and only be killed with the third sword of the silver arrows.
+-- A ghost that can traverse walls and only be killed with the third sword or the silver arrows.
 
 local behavior = require("enemies/lib/towards_hero")
 
