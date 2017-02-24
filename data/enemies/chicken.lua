@@ -34,7 +34,7 @@ function enemy:on_restarted()
   if angry then
     enemy:go_angry()
   else
-    enemy:go_random()  
+    enemy:go_random()
     sol.timer.start(enemy, 100, function()
       if map.angry_chickens and not angry then
         enemy:go_angry()

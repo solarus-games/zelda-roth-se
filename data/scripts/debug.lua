@@ -6,7 +6,7 @@ local debug = {}
 function debug:on_started()
 
   function tp(map_id, destination_name)
-    
+
     local game = sol.main.game
     local hero = nil
     if game ~= nil and game:get_map() ~= nil then

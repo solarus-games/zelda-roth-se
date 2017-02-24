@@ -18,7 +18,7 @@ function enemy:on_created()
   enemy:set_invincible()
   enemy:set_attack_consequence("sword", "custom")
 
-  for i = 0, 2 do 
+  for i = 0, 2 do
     sprites[#sprites + 1] = enemy:create_sprite("enemies/" .. enemy:get_breed())
   end
 end

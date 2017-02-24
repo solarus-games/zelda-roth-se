@@ -9,7 +9,7 @@ function ice_beam:on_created()
 
   ice_beam:set_size(8, 8)
   ice_beam:set_origin(4, 5)
-  for i = 0, 2 do 
+  for i = 0, 2 do
     sprites[#sprites + 1] = ice_beam:create_sprite("entities/ice_beam")
   end
 end
@@ -72,7 +72,7 @@ local function check_square(x, y)
     x = x,
     y = y,
     layer = layer,
-    width = 16, 
+    width = 16,
     height = 16,
     direction = 0,
   })

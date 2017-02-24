@@ -66,7 +66,7 @@ function item:on_using()
   local hero = map:get_hero()
   local x, y, layer = hero:get_position()
   local direction = hero:get_direction()
-  local hookshot 
+  local hookshot
   local hookshot_sprite
   local link_sprite
   local entities_cought = {}

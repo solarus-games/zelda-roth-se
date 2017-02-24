@@ -82,7 +82,7 @@ local function attach_to_entity(entity)
   local entity_reached_x, entity_reached_y = entity_reached:get_position()
   local x, y = arrow:get_position()
   entity_reached_dxy = { entity_reached_x - x, entity_reached_y - y }
- 
+
   sol.timer.start(arrow, 10, function()
 
     if not entity_reached:exists() then
@@ -104,7 +104,7 @@ local function attach_to_entity(entity)
     x, y = entity_reached:get_position()
     x, y = x - entity_reached_dxy[1], y - entity_reached_dxy[2]
     arrow:set_position(x, y)
-   
+
     return true
   end)
 end

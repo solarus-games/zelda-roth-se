@@ -50,7 +50,7 @@ function bg2_movement:on_position_changed(x, y)
   if y <= -bg2_height then
     bg2_movement:set_xy(0, 0)
   end
-    
+
 end
 
 local function next_fresco()

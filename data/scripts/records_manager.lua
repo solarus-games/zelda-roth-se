@@ -15,7 +15,7 @@ local records = {}
 function records_manager:load()
 
   local file = sol.file.open("records.dat")
-  if file == nil then 
+  if file == nil then
     return
   end
 

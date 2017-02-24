@@ -205,14 +205,14 @@ local function initialize_sensor()
       hero:save_solid_ground()
       return
     end
- 
+
     -- Sensors prefixed by "reset_solid_ground_sensor" clear any place for the hero
     -- to come back when falling into a hole or other bad ground.
     if name:match("^reset_solid_ground_sensor") then
       hero:reset_solid_ground()
       return
     end
- 
+
     -- Sensors prefixed by "dungeon_room_N" save the exploration state of the
     -- room "N" of the current dungeon floor.
     local room = name:match("^dungeon_room_(%d+)")

@@ -64,7 +64,7 @@ function item:on_using()
   -- Even if he is using this item, he can move
   -- because of holes or ice.
   sol.timer.start(ice_rod, 10, function()
-    ice_rod:set_position(hero:get_position())    
+    ice_rod:set_position(hero:get_position())
     return true
   end)
 

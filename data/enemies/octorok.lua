@@ -73,7 +73,7 @@ function enemy:on_restarted()
     local x, y = enemy:get_center_position()
 
     if can_shoot then
-      local aligned = (math.abs(hero_x - x) < 16 or math.abs(hero_y - y) < 16) 
+      local aligned = (math.abs(hero_x - x) < 16 or math.abs(hero_y - y) < 16)
       if aligned and enemy:get_distance(hero) < 200 then
         shoot()
         can_shoot = false

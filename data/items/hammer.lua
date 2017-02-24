@@ -29,7 +29,7 @@ function item:on_using()
     end
     item:set_pushed_stake(false)
   end)
- 
+
   -- Detect enemies with an invisible custom entity.
   local x, y, layer = hero:get_position()
   local direction4 = hero:get_direction()
