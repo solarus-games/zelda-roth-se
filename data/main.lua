@@ -6,6 +6,7 @@ local quest_manager = require("scripts/quest_manager")
 
 local language_menu = require("scripts/menus/language")
 local solarus_logo = require("scripts/menus/solarus_logo")
+local team_logo = require("scripts/menus/team_logo")
 local presentation_screen = require("scripts/menus/presentation_screen")
 local title_screen = require("scripts/menus/title_screen")
 local savegames_menu = require("scripts/menus/savegames")
@@ -30,6 +31,10 @@ function sol.main:on_started()
   sol.menu.start(self, solarus_logo)
 
   solarus_logo.on_finished = function()
+    sol.menu.start(self, team_logo)
+  end
+
+  team_logo.on_finished = function()
     sol.menu.start(self, language_menu)
   end
 
