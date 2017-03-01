@@ -217,6 +217,7 @@ function team_logo_menu:try_skip_menu()
     team_logo_menu:go_to_step(SHINING)
     return true
   else
+    sol.menu.stop(team_logo_menu)
     return false
   end
 end
