@@ -65,7 +65,7 @@ function behavior:create(enemy, properties)
   end
   if properties.normal_animation == nil then
     properties.normal_animation = "walking"
-  end  
+  end
   if properties.ignore_obstacles == nil then
     properties.ignore_obstacles = false
   end

@@ -49,7 +49,7 @@ function map:on_started(destination)
             night_overlay:fill_color({0, 0, 64, alpha})
 
             -- Continue the timer if there is still night.
-            return alpha > 0  
+            return alpha > 0
           end)
 
         end)

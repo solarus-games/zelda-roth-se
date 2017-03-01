@@ -135,7 +135,7 @@ function inventory_manager:new(game)
   local status_widget = create_status_widget(game)
   local crystals_widget = create_crystals_widget(game)
   local pieces_of_heart_widget = create_pieces_of_heart_widget(game)
-  
+
   local item_cursor_fixed_sprite = sol.sprite.create("menus/item_cursor")
   item_cursor_fixed_sprite:set_animation("solid_fixed")
   local item_cursor_moving_sprite = sol.sprite.create("menus/item_cursor")

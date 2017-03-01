@@ -201,7 +201,7 @@ function show_rank_info_popup()
   local screen_width, screen_height = sol.video.get_quest_size()
   local popup_x = screen_width / 2 - max_width / 2
   local popup_y = screen_height / 2 - total_height / 2
-  
+
   local layout = gui_designer:create(max_width, total_height)
   layout:make_wooden_frame()
   local y = 8
@@ -211,7 +211,7 @@ function show_rank_info_popup()
   end
 
   function popup:on_key_pressed(key)
-    
+
     if key == "space" then
       sol.audio.play_sound("pause_open")
       sol.menu.stop(popup)
