@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Zelda Return of the Hylian
+GenericName=Zelda fangame for the Solarus engine
+Comment=Zelda Return of the Hylian (action rpg game)
+Exec=zelda_roth_se
+Terminal=false
+Type=Application
+Icon=zelda-roth-se
+Categories=Game;AdventureGame;
