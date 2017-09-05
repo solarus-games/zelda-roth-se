@@ -97,3 +97,9 @@ if(UNIX AND NOT APPLE)
   install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/logos/logo@2x.png
     DESTINATION ${CMAKE_INSTALL_PREFIX}/share/pixmaps RENAME zelda-roth-se.png)
 endif(UNIX AND NOT APPLE)
+
+# FreeDesktop compatible start menu launcher
+if(UNIX AND NOT APPLE)
+  install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/zelda-roth-se.desktop
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)
+endif(UNIX AND NOT APPLE)
