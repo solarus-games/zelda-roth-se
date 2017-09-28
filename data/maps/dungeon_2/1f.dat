@@ -3,10 +3,10 @@ properties{
   y = 240,
   width = 2240,
   height = 1680,
-  world = "dungeon_2",
-  floor = 0,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_2",
+  floor = 0,
   tileset = "dungeon_blue",
   music = "dark_world_dungeon",
 }
@@ -12219,7 +12219,7 @@ custom_entity{
 
 custom_entity{
   layer = 1,
-  x = 1632,
+  x = 1640,
   y = 893,
   width = 16,
   height = 16,

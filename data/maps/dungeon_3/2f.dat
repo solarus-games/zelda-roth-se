@@ -3,10 +3,10 @@ properties{
   y = 480,
   width = 1600,
   height = 1200,
-  world = "dungeon_3",
-  floor = 1,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_3",
+  floor = 1,
   tileset = "temple_green",
   music = "light_world_dungeon",
 }
@@ -4188,7 +4188,7 @@ custom_entity{
 custom_entity{
   name = "auto_torch_auto_door_a_1",
   layer = 1,
-  x = 688,
+  x = 696,
   y = 301,
   width = 16,
   height = 16,
