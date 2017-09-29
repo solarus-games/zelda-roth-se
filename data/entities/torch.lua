@@ -74,12 +74,14 @@ local function on_collision(torch, other, torch_sprite, other_sprite)
         if torch.on_lit ~= nil then
           torch:on_lit()
         end
+      end
 
+      if not other.stopped_on_torch then
+        other.stopped_on_torch = true
         sol.timer.start(other, 50, function()
           other:stop_movement()
           other:get_sprite():set_animation("stopped")
         end)
-
       end
 
     elseif other_model == "ice_beam" then
@@ -90,12 +92,15 @@ local function on_collision(torch, other, torch_sprite, other_sprite)
         end
       end
 
-      sol.timer.start(other, 50, function()
-        other:stop_movement()
-        sol.timer.start(other, 150, function()
-          other:remove()
+      if not other.stopped_on_torch then
+        other.stopped_on_torch = true
+        sol.timer.start(other, 50, function()
+          other:stop_movement()
+          sol.timer.start(other, 150, function()
+            other:remove()
+          end)
         end)
-      end)
+      end
 
     end
 

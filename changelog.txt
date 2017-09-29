@@ -6,6 +6,7 @@ _______________________________________________________________
 * Upgrade to Solarus 1.6.
 * Add Solarus Team logo.
 * Change the sound of the Solarus logo.
+* Fix fire traversing torches after they get lit (#104).
 * Fix minor torch alignment errors (#103).
 
 ______________________________________________________________
