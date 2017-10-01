@@ -1,3 +1,16 @@
+-- Adds cheating keys and a Lua console to ease debugging.
+-- Debugging is enabled if there exists a file called "debug"
+-- or "debug.lua" in the write directory.
+
+-- Usage:
+-- require("scripts/debug")
+
+-- Enable debugging features only if there exists file
+-- called "debug" or "debug.lua" in the write directory.
+if not sol.file.exists("debug") and not sol.file.exists("debug.lua") then
+  return true
+end
+
 local console = require("scripts/console")
 local game_manager = require("scripts/game_manager")
 
@@ -152,5 +165,6 @@ function debug:on_update()
   end
 end
 
-return debug
+sol.menu.start(sol.main, debug)
 
+return true

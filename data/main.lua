@@ -1,53 +1,42 @@
 -- Main Lua script of the quest.
 
-local game_manager = require("scripts/game_manager")
+local initial_menus_config = require("scripts/menus/initial_menus_config")
+local initial_menus = {}
+
 local debug = require("scripts/debug")
 local quest_manager = require("scripts/quest_manager")
 
-local language_menu = require("scripts/menus/language")
-local solarus_logo = require("scripts/menus/solarus_logo")
-local team_logo = require("scripts/menus/team_logo")
-local presentation_screen = require("scripts/menus/presentation_screen")
-local title_screen = require("scripts/menus/title_screen")
-local savegames_menu = require("scripts/menus/savegames")
-
+-- This function is called when Solarus starts.
 function sol.main:on_started()
 
+  sol.main.load_settings()
   math.randomseed(os.time())
 
   -- Make quest-specific initializations.
   quest_manager:initialize_quest()
 
-  -- Load built-in settings (audio volume, video mode, etc.).
-  sol.main.load_settings()
-
-  -- If there is a file called "debug" in the write directory,
-  -- enable debugging features.
-  if sol.file.exists("debug") then
-    sol.menu.start(self, debug)
+  -- Show the initial menus.
+  if #initial_menus_config == 0 then
+    return
   end
 
-  -- Show the Solarus logo initially.
-  sol.menu.start(self, solarus_logo)
-
-  solarus_logo.on_finished = function()
-    sol.menu.start(self, team_logo)
+  for _, menu_script in ipairs(initial_menus_config) do
+    initial_menus[#initial_menus + 1] = require(menu_script)
   end
 
-  team_logo.on_finished = function()
-    sol.menu.start(self, language_menu)
-  end
-
-  language_menu.on_finished = function()
-    sol.menu.start(self, presentation_screen)
-  end
-
-  presentation_screen.on_finished = function()
-    sol.menu.start(self, title_screen)
-  end
-
-  title_screen.on_finished = function()
-    sol.menu.start(self, savegames_menu)
+  local on_top = false  -- To keep the debug menu on top.
+  sol.menu.start(sol.main, initial_menus[1], on_top)
+  for i, menu in ipairs(initial_menus) do
+    function menu:on_finished()
+      if sol.main.game ~= nil then
+        -- A game is already running (probably quick start with a debug key).
+        return
+      end
+      local next_menu = initial_menus[i + 1]
+      if next_menu ~= nil then
+        sol.menu.start(sol.main, next_menu)
+      end
+    end
   end
 
 end
@@ -84,12 +73,10 @@ end
 function sol.main:start_savegame(game)
 
   -- Skip initial menus if any.
-  sol.menu.stop(solarus_logo)
-  sol.menu.stop(presentation_screen)
-  sol.menu.stop(title_screen)
-  sol.menu.stop(savegames_menu)
+  for _, menu in ipairs(initial_menus) do
+    sol.menu.stop(menu)
+  end
 
   sol.main.game = game
   game:start()
 end
-
