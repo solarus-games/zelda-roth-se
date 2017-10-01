@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 2240,
   height = 2400,
-  world = "dungeon_6",
-  floor = 0,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_6",
+  floor = 0,
   tileset = "cave",
   music = "dark_world_dungeon",
 }
@@ -11570,18 +11570,18 @@ tile{
 tile{
   layer = 1,
   x = 1104,
-  y = 504,
+  y = 512,
   width = 32,
-  height = 192,
+  height = 176,
   pattern = "floor.14",
 }
 
 tile{
   layer = 1,
-  x = 1056,
-  y = 552,
-  width = 128,
-  height = 96,
+  x = 1048,
+  y = 544,
+  width = 144,
+  height = 112,
   pattern = "floor.14",
 }
 
@@ -11749,170 +11749,134 @@ tile{
 
 tile{
   layer = 1,
-  x = 1096,
-  y = 536,
+  x = 1040,
+  y = 544,
   width = 8,
-  height = 8,
+  height = 112,
   pattern = "hole.4",
+}
+
+tile{
+  layer = 1,
+  x = 1224,
+  y = 504,
+  width = 8,
+  height = 24,
+  pattern = "hole.4",
+}
+
+tile{
+  layer = 1,
+  x = 1224,
+  y = 672,
+  width = 8,
+  height = 24,
+  pattern = "hole.4",
+}
+
+tile{
+  layer = 1,
+  x = 1192,
+  y = 544,
+  width = 8,
+  height = 112,
+  pattern = "hole.3",
+}
+
+tile{
+  layer = 1,
+  x = 1008,
+  y = 504,
+  width = 8,
+  height = 24,
+  pattern = "hole.3",
+}
+
+tile{
+  layer = 1,
+  x = 1008,
+  y = 672,
+  width = 8,
+  height = 24,
+  pattern = "hole.3",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 528,
+  width = 24,
+  height = 8,
+  pattern = "hole.1",
 }
 
 tile{
   layer = 1,
   x = 1048,
-  y = 552,
-  width = 8,
-  height = 96,
-  pattern = "hole.4",
-}
-
-tile{
-  layer = 1,
-  x = 1096,
   y = 656,
-  width = 8,
+  width = 48,
   height = 8,
-  pattern = "hole.4",
+  pattern = "hole.1",
 }
 
 tile{
   layer = 1,
-  x = 1224,
-  y = 504,
-  width = 8,
-  height = 24,
-  pattern = "hole.4",
+  x = 1144,
+  y = 656,
+  width = 48,
+  height = 8,
+  pattern = "hole.1",
 }
 
 tile{
   layer = 1,
-  x = 1224,
-  y = 672,
-  width = 8,
-  height = 24,
-  pattern = "hole.4",
+  x = 1232,
+  y = 528,
+  width = 24,
+  height = 8,
+  pattern = "hole.1",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 664,
+  width = 24,
+  height = 8,
+  pattern = "hole.2",
+}
+
+tile{
+  layer = 1,
+  x = 1048,
+  y = 536,
+  width = 48,
+  height = 8,
+  pattern = "hole.2",
+}
+
+tile{
+  layer = 1,
+  x = 1144,
+  y = 536,
+  width = 48,
+  height = 8,
+  pattern = "hole.2",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 664,
+  width = 24,
+  height = 8,
+  pattern = "hole.2",
 }
 
 tile{
   layer = 1,
   x = 1136,
   y = 536,
-  width = 8,
-  height = 8,
-  pattern = "hole.3",
-}
-
-tile{
-  layer = 1,
-  x = 1184,
-  y = 552,
-  width = 8,
-  height = 96,
-  pattern = "hole.3",
-}
-
-tile{
-  layer = 1,
-  x = 1136,
-  y = 656,
-  width = 8,
-  height = 8,
-  pattern = "hole.3",
-}
-
-tile{
-  layer = 1,
-  x = 1008,
-  y = 504,
-  width = 8,
-  height = 24,
-  pattern = "hole.3",
-}
-
-tile{
-  layer = 1,
-  x = 1008,
-  y = 672,
-  width = 8,
-  height = 24,
-  pattern = "hole.3",
-}
-
-tile{
-  layer = 1,
-  x = 984,
-  y = 528,
-  width = 24,
-  height = 8,
-  pattern = "hole.1",
-}
-
-tile{
-  layer = 1,
-  x = 1056,
-  y = 648,
-  width = 40,
-  height = 8,
-  pattern = "hole.1",
-}
-
-tile{
-  layer = 1,
-  x = 1144,
-  y = 648,
-  width = 40,
-  height = 8,
-  pattern = "hole.1",
-}
-
-tile{
-  layer = 1,
-  x = 1232,
-  y = 528,
-  width = 24,
-  height = 8,
-  pattern = "hole.1",
-}
-
-tile{
-  layer = 1,
-  x = 984,
-  y = 664,
-  width = 24,
-  height = 8,
-  pattern = "hole.2",
-}
-
-tile{
-  layer = 1,
-  x = 1056,
-  y = 544,
-  width = 40,
-  height = 8,
-  pattern = "hole.2",
-}
-
-tile{
-  layer = 1,
-  x = 1144,
-  y = 544,
-  width = 40,
-  height = 8,
-  pattern = "hole.2",
-}
-
-tile{
-  layer = 1,
-  x = 1232,
-  y = 664,
-  width = 24,
-  height = 8,
-  pattern = "hole.2",
-}
-
-tile{
-  layer = 1,
-  x = 1136,
-  y = 544,
   width = 8,
   height = 8,
   pattern = "hole.corner.3",
@@ -11921,7 +11885,7 @@ tile{
 tile{
   layer = 1,
   x = 1096,
-  y = 648,
+  y = 656,
   width = 8,
   height = 8,
   pattern = "hole.corner.2",
@@ -11930,7 +11894,7 @@ tile{
 tile{
   layer = 1,
   x = 1136,
-  y = 648,
+  y = 656,
   width = 8,
   height = 8,
   pattern = "hole.corner.1",
@@ -11956,8 +11920,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1048,
-  y = 648,
+  x = 1040,
+  y = 656,
   width = 8,
   height = 8,
   pattern = "hole.corner_reverse.2",
@@ -11965,8 +11929,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1184,
-  y = 648,
+  x = 1192,
+  y = 656,
   width = 8,
   height = 8,
   pattern = "hole.corner_reverse.1",
@@ -11974,8 +11938,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1184,
-  y = 544,
+  x = 1192,
+  y = 536,
   width = 8,
   height = 8,
   pattern = "hole.corner_reverse.3",
@@ -11984,7 +11948,7 @@ tile{
 tile{
   layer = 1,
   x = 1096,
-  y = 544,
+  y = 536,
   width = 8,
   height = 8,
   pattern = "hole.corner.4",
@@ -11992,8 +11956,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1048,
-  y = 544,
+  x = 1040,
+  y = 536,
   width = 8,
   height = 8,
   pattern = "hole.corner_reverse.4",
