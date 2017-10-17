@@ -7,6 +7,7 @@ _______________________________________________________________
 * Add Solarus Team logo.
 * Change the sound of the Solarus logo.
 * Dungeon 6: make medusa puzzle easier (#97).
+* Fix accents displaying in Spanish (#100).
 * Fix fire traversing torches after they get lit (#104).
 * Fix minor torch alignment errors (#103).
 
