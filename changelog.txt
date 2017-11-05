@@ -10,6 +10,7 @@ _______________________________________________________________
 * Fix accents displaying in Spanish (#100).
 * Fix fire traversing torches after they get lit (#104).
 * Fix minor torch alignment errors (#103).
+* Fix minor tile issues.
 
 ______________________________________________________________
 
