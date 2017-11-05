@@ -59,7 +59,7 @@ function map_manager:new(game)
     rooms_sprite:set_direction(0)
     rooms_sprite:draw(rooms_img)
 
-    for i = 1, rooms_sprite:get_num_directions(floor_animation) - 1 do
+    for i = 1, rooms_sprite:get_num_directions() - 1 do
       if game:has_explored_dungeon_room(dungeon_index, selected_floor, i) then
         -- If the room is visited, show it in another color.
         rooms_sprite:set_direction(i)
