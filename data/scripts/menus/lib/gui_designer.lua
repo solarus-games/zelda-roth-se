@@ -234,25 +234,35 @@ end
 -- and any joypad button event is replaced by a spacebar keyboard event.
 function gui_designer:map_joypad_to_keyboard(menu)
 
+  local last_joy_axis_move = { 0, 0 }
+
   function menu:on_joypad_button_pressed(button)
     return self:on_key_pressed("space")
   end
 
   function menu:on_joypad_axis_moved(axis, state)
 
-    if axis % 2 == 0 then  -- Horizontal axis.
-      if state > 0 then
-        return self:on_key_pressed("right")
-      elseif state < 0 then
-        return self:on_key_pressed("left")
-      end
-    else  -- Vertical axis.
-      if state > 0 then
-        return self:on_key_pressed("down")
-      elseif state < 0 then
-        return self:on_key_pressed("up")
+    -- Avoid move repetition
+    local handled = last_joy_axis_move[axis % 2] == state
+    last_joy_axis_move[axis % 2] = state
+
+    if not handled then
+        if axis % 2 == 0 then  -- Horizontal axis.
+          if state > 0 then
+            return self:on_key_pressed("right")
+          elseif state < 0 then
+            return self:on_key_pressed("left")
+          end
+        else  -- Vertical axis.
+          if state > 0 then
+            return self:on_key_pressed("down")
+          elseif state < 0 then
+            return self:on_key_pressed("up")
+        end
       end
     end
+
+    return handled
   end
 
   function menu:on_joypad_hat_moved(hat, direction8)
