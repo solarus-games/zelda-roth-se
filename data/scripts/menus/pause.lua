@@ -5,6 +5,7 @@
 -- local pause_menu = pause_manager:create(game)
 
 local pause_manager = {}
+local last_joy_axis_move = { 0, 0 }
 
 -- Creates a pause menu for the specified game.
 function pause_manager:create(game)
@@ -140,6 +141,15 @@ function pause_manager:create(game)
       game:set_paused(false)
       handled = true
     end
+    return handled
+  end
+
+  function pause_menu:on_joypad_axis_moved(axis, state)
+
+    -- Avoid move repetition
+    local handled = last_joy_axis_move[axis % 2] == state
+    last_joy_axis_move[axis % 2] = state
+
     return handled
   end
 

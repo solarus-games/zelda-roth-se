@@ -11,6 +11,7 @@ local quest_manager = require("scripts/quest_manager")
 -- Creates and sets up a dialog box for the specified game.
 function dialog_box_manager:create(game)
 
+  local last_joy_axis_move = { 0, 0 }
   local dialog_box = {
 
     -- Dialog box properties.
@@ -524,6 +525,15 @@ function dialog_box_manager:create(game)
 
     -- Don't propagate the event to anything below the dialog box.
     return true
+  end
+
+  function dialog_box:on_joypad_axis_moved(axis, state)
+
+    -- Avoid move repetition
+    local handled = last_joy_axis_move[axis % 2] == state
+    last_joy_axis_move[axis % 2] = state
+
+    return handled
   end
 
   function dialog_box:on_draw(dst_surface)
