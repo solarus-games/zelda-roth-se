@@ -271,7 +271,7 @@ function gui_designer:map_joypad_to_keyboard(menu)
       return false
     end
 
-    local keys = { "right", "up", "left", "down" }
+    local keys = { [0] = "right", [1] = "up", [2] = "left", [3] = "down" }
     return self:on_key_pressed(keys[direction8 / 2])
   end
 end
