@@ -272,7 +272,7 @@ function gui_designer:map_joypad_to_keyboard(menu)
     end
 
     local keys = { "right", "up", "left", "down" }
-    return self:on_key_pressed(keys[direction8 % 2])
+    return self:on_key_pressed(keys[direction8 / 2])
   end
 end
 
