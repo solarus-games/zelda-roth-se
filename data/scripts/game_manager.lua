@@ -32,7 +32,7 @@ local function initialize_new_savegame(game)
   game:set_value("keyboard_save", "escape")
 end
 
--- Updates values for an existing new savegame of this quest.
+-- Updates values for an existing savegame of this quest.
 local function initialize_existing_savegame(game)
 
   if game:get_value("keyboard_save") == nil then
